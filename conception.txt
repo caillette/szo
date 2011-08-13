@@ -1,0 +1,15 @@
+Structure d'une entrée de dictionnaire :
+{
+  "magyar" : [
+      "beteg"
+      "-ek"
+      "bla | bla"
+  ]
+
+  "franciaul" : {
+      "0" : "malade"
+  }
+
+}
+
+
