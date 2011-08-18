@@ -20,6 +20,16 @@ $( document ).ready( function() {
       ) ;
   } ) ;
 
+  test( "Parsing several entries", function() {
+      deepEqual(
+          parseEntries( "\nterm1\nterm2\n\nterm3\nterm4\n" ),
+          [
+              { "LANGUAGE_1" : [ "term1" ], "LANGUAGE_2" : [ "term2" ] },
+              { "LANGUAGE_1" : [ "term3" ], "LANGUAGE_2" : [ "term4" ] }
+          ]
+      ) ;
+  } ) ;
+
   test( "Entry parsing, multiterm definition", function() {
       deepEqual(
           parseEntries( "\nterm1\n definition1-1\n 1-2\nterm2\n definition2\n" ),
@@ -39,7 +49,7 @@ $( document ).ready( function() {
 </head>
 
 <body>
-<h1 id="qunit-header">QUnit example</h1>
+<h1 id="qunit-header">QUnit tests for Szótár</h1>
 
 <h2 id="qunit-banner"></h2>
 
