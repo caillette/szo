@@ -1,8 +1,7 @@
 <html>
 
 <head>
-  <script type="text/javascript" src="jquery-1_3_2_min.js" ></script>
-  <script type="text/javascript" src="jquery-ui-1_7_1_custom_min.js" ></script>
+  <script type="text/javascript" src="javascript/jquery-1.6.2.js" ></script>
   <script type="text/javascript" src="javascript/script.js" ></script>
 
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" >
@@ -13,6 +12,7 @@
   <script type="text/javascript">
 
     $( document ).ready( function() {
+      initializeThemes() ;
     } ) ;
 
     function showMessage( message ) {
@@ -25,12 +25,20 @@
 
 <body>
 
-  <dl class="themes">
-    <dt>Egészség.txt</dt>
+  <!--Add new files here. Don't use diacritics in file names. -->
+  <dl id="themes">
+    <dt>Egeszseg.txt</dt>
   </dl>
-  <div class="board" >
-    À venir...
-  </div>
+
+  <!--Placeholder for theme checkboxes.-->
+  <div id="theme-choice" ></div>
+
+
+  <!--Placeholder, where to show entries.-->
+  <div class="board" ></div>
+
+  <!--Here go resources loaded with $("#theme-buffer").load( ... ).-->
+  <p id="theme-buffer" ></p>
 
   <p id="messages" ></p>
 

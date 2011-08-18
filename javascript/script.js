@@ -1,5 +1,6 @@
-
-var THEMES = [] ; // All declared themes.
+// =======
+// Parsing
+// =======
 
 var CHECKED = "checked" ;
 var UNCHECKED = "unchecked" ;
@@ -8,11 +9,14 @@ var UNAVAILABLE = "unavailable" ;
 var LANGUAGE_1 = "LANGUAGE_1" ;
 var LANGUAGE_2 = "LANGUAGE_2" ;
 
+var ENTRIES = "ENTRIES" ;
+
 var characters = ",;!\\?\\-\\wáéíóúÁÉÚÍÓÚőűŐŰöüÜÖœàâèêëïîôûçŒÀÂÈÊËÏÎÔÛÇ" ;
 var textExp = "(?:[" + characters + "][ " + characters + "]*)" ;
 var termExp = textExp ;
 var definitionLineExp = "(?: +" + textExp + ")" ;
 var definitionLineCapturingExp = "(?: +(" + textExp + "))" ;
+
 
 // Entry: a pair of Words.
 // Word: what's in a non-indented line.
@@ -53,5 +57,65 @@ function splitDefinitionLines( term, definitionLines ) {
 
 }
 
+// Loads a theme, with various side effects on the DOM for the checkboxes and the THEMES.
+function loadTheme( themeResource ) {
+  $.get( themeResource, function( payload ) {
+    var entries = parseEntries( payload ) ;
+    THEMES[ "themeResource" ] = { ENTRIES, entries } ;
+    $( "#theme-choice" ).append(
+        "<input "
+            + "type ='checkbox' "
+            + "name ='theme-" + themeResource + "' "
+            + "onclick ='checkTheme() ; ' "
+        + ">"
+        + "<br/>"
+    ) ;
+  } ).error( function() {
+    $( "#theme-choice" ).append(
+        "<input "
+            + "type ='checkbox' "
+            + "name ='theme-" + themeResource + "' "
+            + "disabled ='disabled' "
+        + ">"
+        + "<br/>"
+    ) ;
+
+  } ) ;
+  
+}
 
 
+// ==========
+// Page setup
+// ==========
+
+// All declared themes.
+// An array of of associative arrays where each element represents a theme.
+// No guard against concurrent access needed since JavaScript is monothreaded
+// (though asynchronous).
+// http://stackoverflow.com/questions/2253586/thread-safety-in-javascript
+var THEMES = {} ;
+
+function initializeThemes() {
+
+  $( "#themes> dt" ).each( function() {
+    var theme = $( this ).text() ;
+    THEMES.push( [ theme, null ] ) ;
+  } ) ;
+
+  showMessage( "Loading themes..." ) ;
+  for( theme in THEMES ) {
+    showMessage( "Loading " + theme + "..." ) ;
+    loadTheme( theme ) ;
+  }
+}
+
+
+
+// ===============
+// Theme selection
+// ===============
+
+function checkTheme() {
+  alert( "Theme checked/unchecked" ) ;
+}
