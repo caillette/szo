@@ -12,7 +12,7 @@
 $( document ).ready( function() {
 
   test( "Simple entry parsing", function() {
-    deepEqual( parse( "line1line2" ),
+    deepEqual( parse( "\nline1\nline2\n" ),
         [ { "LANGUAGE_1": "line1", "LANGUAGE_2": "line2" } ]
     ) ;
   } ) ;
