@@ -29,26 +29,22 @@ function parseEntries( text ) {
   ) ;
 
   var array = [] ;
-  var guard = 0 ;
-
-  while( guard++ < 100 ) {
+  while( true ) {
     var match = entryExp.exec( text ) ;
     if( ! match ) break ;
-    var array1 = build( match[ 1 ], match[ 2 ] ) ;
-    var array2 = build( match[ 3 ], match[ 4 ] ) ;
-
+    var array1 = splitDefinitionLines( match[ 1 ], match[ 2 ] ) ;
+    var array2 = splitDefinitionLines( match[ 3 ], match[ 4 ] ) ;
     array.push( { LANGUAGE_1 : array1, LANGUAGE_2 : array2 } ) ;
   }
   return array ;
 }
 
 
-function build( term, definitionLines ) {
+function splitDefinitionLines( term, definitionLines ) {
   var lineExp = new RegExp( "" + definitionLineCapturingExp + "\n" ,"g" ) ;
   var array = [ term ] ;
-  var guard = 0 ;
 
-  while( guard++ < 100 ) {
+  while( true ) {
     var match = lineExp.exec( definitionLines ) ;
     if( ! match ) break ;
     array.push( match[ 1 ] ) ;
