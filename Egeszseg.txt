@@ -1,10 +1,12 @@
-bel, -et
+bel
+  -et
 sang
 
 torok
 gorge
 
-ideg, -ek
+ideg
+  -ek
 nerf
 
 nőver
