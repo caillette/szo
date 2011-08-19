@@ -1,6 +1,6 @@
-// =======
-// Parsing
-// =======
+// =======================
+// Constants for everybody
+// =======================
 
 var UNDEFINED = "undefined" ;
 var CHECKED = "checked" ;
@@ -12,16 +12,22 @@ var LANGUAGE_2 = "LANGUAGE_2" ;
 
 var ENTRIES = "ENTRIES" ;
 
+
+// =======
+// Parsing
+// =======
+
+// Entry: a pair of Words.
+// Word: what's in a non-indented line.
+// Definition: the indented lines relative to a Word.
+
+
 var characters = ",;!\\?\\-\\wáéíóúÁÉÚÍÓÚőűŐŰöüÜÖœàâèêëïîôûçŒÀÂÈÊËÏÎÔÛÇ" ;
 var textExp = "(?:[" + characters + "][ " + characters + "]*)" ;
 var termExp = textExp ;
 var definitionLineExp = "(?: +" + textExp + ")" ;
 var definitionLineCapturingExp = "(?: +(" + textExp + "))" ;
 
-
-// Entry: a pair of Words.
-// Word: what's in a non-indented line.
-// Definition: the indented lines relative to a Word.
 
 function parseEntries( text ) {
   // http://regexpal.com
@@ -115,10 +121,10 @@ function initializeThemes() {
 // Loads a theme, with various side effects on the DOM for the checkboxes and on the THEMES array.
 function loadTheme( themeKey ) {
   showMessage( "Loading " + themeKey + "..." ) ;
+  var theme = THEMES.byKey( themeKey ) ;
 
   $.get( themeKey, function( payload ) {
     var entries = parseEntries( payload ) ;
-    var theme = THEMES.byKey( themeKey ) ;
 
     theme.entries = entries ;
     theme.status = UNCHECKED ;
@@ -140,7 +146,7 @@ function loadTheme( themeKey ) {
             + "name ='theme-" + themeKey + "' "
             + "disabled ='disabled' "
         + ">"
-        + "<span {text-decoration : line-through ; }>" + themeKey + "</span>"
+        + "<span style = 'text-decoration : line-through ;' >" + themeKey + "</span>"
         + "<br/>"
     ) ;
 
