@@ -14,9 +14,9 @@ var EQUIVALENCES = "EQUIVALENCES" ;
 // Parsing
 // =======
 
-// Equivalence: a pair of Words.
-// Word: what's in a non-indented line.
-// Definition: the indented lines relative to a Word.
+// Equivalence: a pair of Terms.
+// Term: what's in a non-indented line.
+// Definition: the indented lines relative to a Term.
 
 
 var characters = ",;!\\?\\-\\wáéíóúÁÉÚÍÓÚőűŐŰöüÜÖœàâèêëïîôûçŒÀÂÈÊËÏÎÔÛÇ" ;
@@ -181,6 +181,7 @@ function checkTheme() {
   } ) ;
   showMessage( "Selected " + EQUIVALENCES.length + " equivalence(s)." ) ;
   showSomeEquivalence() ;
+  enableToolbarElements() ;
 }
 
 function showSomeEquivalence() {
@@ -193,9 +194,36 @@ function showSomeEquivalence() {
 }
 
 function showEquivalence( equivalence ) {
-  $( "#board" ).html( "<p>Selected: " + equivalence.LANGUAGE_1[ 0 ] + "</p>" ) ;
+  $( "#board" ).html( "<p>Random Equivalence: " + equivalence.LANGUAGE_1[ 0 ] + "</p>" ) ;
 }
 
 function clearBoard() {
   $( "#board" ).html( "<p>No selection.</p>" ) ;
+}
+
+
+// ================
+// Various commands
+// ================
+
+function initializeToolbar() {
+  $( "#toolbar" ).append(
+      "<button "
+          + "type = 'button' "
+          + "disabled = 'disabled' "
+          + "name = 'next-equivalence' "
+          + "onClick ='showSomeEquivalence() ;' "
+      + ">Next Equivalence</button>"
+  ) ;
+}
+
+function enableToolbarElements() {
+  $( "#toolbar [ name = 'next-equivalence' ]" ).filter( ":button").each( function() {
+    if( EQUIVALENCES.length > 0 ) {
+      $( this ).removeAttr( "disabled" ) ;
+    } else {
+      $( this ).attr( "disabled", "disabled" ) ;
+    }
+  } ) ;
+
 }

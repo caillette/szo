@@ -13,6 +13,7 @@
     $( document ).ready( function() {
       environmentSetup() ;
       initializeThemes() ;
+      initializeToolbar() ;
       clearBoard() ;
     } ) ;
   </script>
@@ -30,9 +31,25 @@
   <!--Placeholder for theme checkboxes.-->
   <div id="theme-choice" ></div>
 
+  <!--Placeholder for other commands.-->
+  <div id="toolbar" ></div>
 
   <!--Placeholder, where to show Equivalences.-->
-  <div id="board" >Board here</div>
+  <div id="board" >Board here.</div>
+
+  <div id="board-demo" >
+    <table>
+      <tr>
+        <td>Term 1</td>
+        <td>Term 2</td>
+      </tr>
+      <tr>
+        <td>Definition 1</td>
+        <td>Definition 2</td>
+      </tr>
+    </table>
+
+  </div>
 
   <!--Here go resources loaded with $("#theme-buffer").load( ... ).-->
   <p id="theme-buffer" ></p>
