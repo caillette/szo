@@ -164,19 +164,41 @@ function loadTheme( themeKey ) {
 
 
 
-// ===============
-// Theme selection
-// ===============
+// ===============================
+// Theme and equivalence selection
+// ===============================
 
-var SELECTED_THEMES = [] ;
+// All Equivalences to chose into. Same structure as a THEMES element.
+var EQUIVALENCES = [] ;
 
 // We recalculate everything each time since it's just feeding an array.
 function checkTheme() {
-  SELECTED_THEMES = [] ;
+  EQUIVALENCES = [] ;
   $( "#theme-choice :checked" ).each( function() {
     var checkboxName = $( this ).attr( "name" ) ;
-    SELECTED_THEMES.push( THEMES.byKey( checkboxName ) ) ;
+    var theme = THEMES.byKey( checkboxName ) ;
+    for( equivalenceIndex in theme ) {
+      var equivalence = theme[ equivalenceIndex ] ;
+      EQUIVALENCES.push( equivalence ) ;
+    }
   } ) ;
-  showMessage( "Selected " + SELECTED_THEMES.length + " themes." ) ;
+  showMessage( "Selected " + EQUIVALENCES.length + " equivalence(s)." ) ;
+  showSomeEquivalence() ;
+}
 
+function showSomeEquivalence() {
+  if( EQUIVALENCES.length == 0 ) {
+    clearBoard() ;
+  } else {
+    var random = Math.floor( Math.random() * EQUIVALENCES.length ) ;
+    showEquivalence( EQUIVALENCES[ random ] ) ;
+  }
+}
+
+function showEquivalence( equivalence ) {
+  $( "#theme-board" ).replaceWith( "<p>Selected: " + equivalence[ LANGUAGE_1 ][ 0 ] + "</p>" ) ;
+}
+
+function clearBoard() {
+  $( "#theme-board" ).replaceWith( "<p>No selection.</p>" ) ;
 }
