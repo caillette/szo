@@ -13,6 +13,7 @@
     $( document ).ready( function() {
       environmentSetup() ;
       initializeThemes() ;
+      clearBoard() ;
     } ) ;
   </script>
 
@@ -31,7 +32,7 @@
 
 
   <!--Placeholder, where to show Equivalences.-->
-  <div class="board" >Board here</div>
+  <div id="board" >Board here</div>
 
   <!--Here go resources loaded with $("#theme-buffer").load( ... ).-->
   <p id="theme-buffer" ></p>

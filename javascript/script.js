@@ -193,10 +193,9 @@ function showSomeEquivalence() {
 }
 
 function showEquivalence( equivalence ) {
-//  alert( equivalence.LANGUAGE_1[ 0 ] ) ;
-  $( "#theme-board" ).replaceWith( "<p>Selected: " + equivalence.LANGUAGE_1[ 0 ] + "</p>" ) ;
+  $( "#board" ).html( "<p>Selected: " + equivalence.LANGUAGE_1[ 0 ] + "</p>" ) ;
 }
 
 function clearBoard() {
-  $( "#theme-board" ).replaceWith( "<p>No selection.</p>" ) ;
+  $( "#board" ).html( "<p>No selection.</p>" ) ;
 }
