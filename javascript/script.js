@@ -7,9 +7,6 @@ var CHECKED = "checked" ;
 var UNCHECKED = "unchecked" ;
 var UNAVAILABLE = "unavailable" ;
 
-var LANGUAGE_1 = "LANGUAGE_1" ;
-var LANGUAGE_2 = "LANGUAGE_2" ;
-
 var EQUIVALENCES = "EQUIVALENCES" ;
 
 
@@ -177,8 +174,8 @@ function checkTheme() {
   $( "#theme-choice :checked" ).each( function() {
     var checkboxName = $( this ).attr( "name" ) ;
     var theme = THEMES.byKey( checkboxName ) ;
-    for( equivalenceIndex in theme ) {
-      var equivalence = theme[ equivalenceIndex ] ;
+    for( equivalenceIndex in theme.equivalences ) {
+      var equivalence = theme.equivalences[ equivalenceIndex ] ;
       EQUIVALENCES.push( equivalence ) ;
     }
   } ) ;
@@ -196,7 +193,8 @@ function showSomeEquivalence() {
 }
 
 function showEquivalence( equivalence ) {
-  $( "#theme-board" ).replaceWith( "<p>Selected: " + equivalence[ LANGUAGE_1 ][ 0 ] + "</p>" ) ;
+//  alert( equivalence.LANGUAGE_1[ 0 ] ) ;
+  $( "#theme-board" ).replaceWith( "<p>Selected: " + equivalence.LANGUAGE_1[ 0 ] + "</p>" ) ;
 }
 
 function clearBoard() {

@@ -27,7 +27,7 @@ $( document ).ready( function() {
   test( "Simple entry parsing", function() {
     deepEqual(
         parseEquivalences( "\nterm1\nterm2\n" ),
-        [ { "LANGUAGE_1" : [ "term1" ], "LANGUAGE_2" : [ "term2" ] } ]
+        [ { LANGUAGE_1 : [ "term1" ], LANGUAGE_2 : [ "term2" ] } ]
     ) ;
   } ) ;
 
@@ -35,8 +35,8 @@ $( document ).ready( function() {
     deepEqual(
         parseEquivalences( "\nterm1\nterm2\n\nterm3\nterm4\n" ),
         [
-            { "LANGUAGE_1" : [ "term1" ], "LANGUAGE_2" : [ "term2" ] },
-            { "LANGUAGE_1" : [ "term3" ], "LANGUAGE_2" : [ "term4" ] }
+            { LANGUAGE_1 : [ "term1" ], LANGUAGE_2 : [ "term2" ] },
+            { LANGUAGE_1 : [ "term3" ], LANGUAGE_2 : [ "term4" ] }
         ]
     ) ;
   } ) ;
@@ -45,8 +45,8 @@ $( document ).ready( function() {
     deepEqual(
         parseEquivalences( "\nterm1\n definition1-1\n 1-2\nterm2\n definition2\n" ),
         [ {
-            "LANGUAGE_1" : [ "term1", "definition1-1", "1-2" ],
-            "LANGUAGE_2" : [ "term2", "definition2" ]
+            LANGUAGE_1 : [ "term1", "definition1-1", "1-2" ],
+            LANGUAGE_2 : [ "term2", "definition2" ]
         } ]
     ) ;
   } ) ;
