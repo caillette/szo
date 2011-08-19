@@ -131,13 +131,15 @@ function loadTheme( themeKey ) {
 
     theme.equivalences = equivalences ;
     theme.status = UNCHECKED ;
+    var id = "checkbox-" + themeKey ;
     $( "#theme-choice" ).append(
         "<input "
-            + "type ='checkbox' "
-            + "name ='" + themeKey + "' "
+            + "type = 'checkbox' "
+            + "name = '" + themeKey + "' "
+            + "id = '" + id + "' "
             + "onclick ='checkTheme() ;' "
         + ">"
-        + "<span>" + themeKey + "</span>"
+        + "<label for='" + id + "' >" + themeKey + "</label>"
         + "<br/>"
     ) ;
 
@@ -195,21 +197,32 @@ function showSomeEquivalence() {
 
 function showEquivalence( equivalence ) {
   var max = Math.max( equivalence.LANGUAGE_1.length, equivalence.LANGUAGE_2.length ) ;
-  var html = "<table><tr>"
+  var html = "<table>\n<tr>"
       + "<td>" + equivalence.LANGUAGE_1[ 0 ] + "</td>"
       + "<td>" + equivalence.LANGUAGE_2[ 0 ] + "</td>"
-      + "</tr>"
+      + "</tr>\n"
   ;
 
-//  for( i = 1 ; i < max ; i ++ ) {
-//
-//    var element1 = i > equivalence.LANGUAGE_1.length
-//  }
+  function appendLanguage( html, language, index ) {
+    if( index < language.length ) {
+      return html + "<td>" + language[ index ] + "</td>" ;
+    } else {
+      return html + "<td>---</td>" ;
+    }
+  } ;
 
+  for( i = 1 ; i < max ; i ++ ) {
+    html += "<tr>" ;
+    html = appendLanguage( html, equivalence.LANGUAGE_1, i ) ;
+    html = appendLanguage( html, equivalence.LANGUAGE_2, i ) ;
+    html += "</tr>\n" ;
+  }
+
+  html += "</table>\n" ;
   $( "#board" ).html( html ) ;
-
-
 }
+
+
 
 function clearBoard() {
   $( "#board" ).html( "<p>No selection.</p>" ) ;
