@@ -107,7 +107,7 @@ function environmentSetup() {
 
 function initializeThemes() {
 
-  $( "#themes> dt" ).each( function() {
+  $( "#themes > dt" ).each( function() {
     var themeKey = $( this ).text() ;
     THEMES.push( { key : themeKey, status : UNDEFINED } ) ;
   } ) ;
@@ -170,6 +170,12 @@ function loadTheme( themeKey ) {
 // All Equivalences to chose into. Same structure as a THEMES element.
 var EQUIVALENCES = [] ;
 
+// Reminds last Equivalence showed for not showing twice the same in a row.
+var LAST_EQUIVALENCE = null ;
+
+// Inverts the natural order (the one in theme files).
+var INVERT_LANGUAGES = true ;
+
 // We recalculate everything each time since it's just feeding an array.
 function checkTheme() {
   EQUIVALENCES = [] ;
@@ -190,35 +196,47 @@ function showSomeEquivalence() {
   if( EQUIVALENCES.length == 0 ) {
     clearBoard() ;
   } else {
-    var random = Math.floor( Math.random() * EQUIVALENCES.length ) ;
-    showEquivalence( EQUIVALENCES[ random ] ) ;
+    do {
+      var random = Math.floor( Math.random() * EQUIVALENCES.length ) ;
+      var newEquivalence = EQUIVALENCES[ random ] ;
+    } while( newEquivalence == LAST_EQUIVALENCE ) ;
+    LAST_EQUIVALENCE = newEquivalence ;
+    showEquivalence( newEquivalence ) ;
   }
 }
 
-function showEquivalence( equivalence ) {
-  var max = Math.max( equivalence.LANGUAGE_1.length, equivalence.LANGUAGE_2.length ) ;
-  var html = "<table>\n<tr>"
-      + "<td>" + equivalence.LANGUAGE_1[ 0 ] + "</td>"
-      + "<td>" + equivalence.LANGUAGE_2[ 0 ] + "</td>"
-      + "</tr>\n"
-  ;
+function greatestArrayLength( equivalence ) {
+  return Math.max( equivalence.LANGUAGE_1.length, equivalence.LANGUAGE_2.length ) ;
+}
 
-  function appendLanguage( html, language, index ) {
+function showEquivalence( equivalence ) {
+  var max = greatestArrayLength( equivalence ) ;
+  var html = "<table><tbody>\n" ;
+
+  function appendLanguage( html, language, index, visible ) {
     if( index < language.length ) {
-      return html + "<td>" + language[ index ] + "</td>" ;
+      return html + "<td>"
+          + "<span " + ( visible ? "" : "style = 'visibility : hidden ; ' " ) + ">"
+          + language[ index ]
+          + "</span></td>" ;
     } else {
       return html + "<td>---</td>" ;
     }
   } ;
 
-  for( i = 1 ; i < max ; i ++ ) {
+  for( i = 0 ; i < max ; i ++ ) {
     html += "<tr>" ;
-    html = appendLanguage( html, equivalence.LANGUAGE_1, i ) ;
-    html = appendLanguage( html, equivalence.LANGUAGE_2, i ) ;
+    if( INVERT_LANGUAGES ) {
+      html = appendLanguage( html, equivalence.LANGUAGE_2, i, true ) ;
+      html = appendLanguage( html, equivalence.LANGUAGE_1, i, false ) ;
+    } else {
+      html = appendLanguage( html, equivalence.LANGUAGE_1, i, true ) ;
+      html = appendLanguage( html, equivalence.LANGUAGE_2, i, false ) ;
+    }
     html += "</tr>\n" ;
   }
 
-  html += "</table>\n" ;
+  html += "</tbody></table>\n" ;
   $( "#board" ).html( html ) ;
 }
 
@@ -226,6 +244,19 @@ function showEquivalence( equivalence ) {
 
 function clearBoard() {
   $( "#board" ).html( "<p>No selection.</p>" ) ;
+  LAST_EQUIVALENCE = null ;
+}
+
+
+// ==========
+// Disclosure
+// ==========
+
+var DISCLOSURE = 0 ;
+
+function disclose() {
+  var max = greatestArrayLength( LAST_EQUIVALENCE ) ;
+  
 }
 
 
@@ -241,16 +272,28 @@ function initializeToolbar() {
           + "name = 'next-equivalence' "
           + "onClick ='showSomeEquivalence() ;' "
       + ">További</button>"
+  ).append(
+      "<button "
+          + "type = 'button' "
+          + "disabled = 'disabled' "
+          + "name = 'disclose' "
+          + "onClick ='disclose() ;' "
+      + ">Felfel</button>" 
   ) ;
 }
 
 function enableToolbarElements() {
-  $( "#toolbar [ name = 'next-equivalence' ]" ).filter( ":button" ).each( function() {
-    if( EQUIVALENCES.length > 0 ) {
-      $( this ).removeAttr( "disabled" ) ;
+
+  function setEnabled( element, enabled ) {
+    if( enabled ) {
+      element.removeAttr( "disabled" ) ;
     } else {
-      $( this ).attr( "disabled", "disabled" ) ;
+      element.attr( "disabled", "disabled" ) ;
     }
+  }
+
+  $( "#toolbar *" ).filter( ":button" ).each( function() {
+    setEnabled( $( this ), EQUIVALENCES.length > 0 ) ;
   } ) ;
 
 }
