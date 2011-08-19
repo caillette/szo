@@ -75,6 +75,7 @@ function showMessage( message ) {
 
 
 // All declared themes.
+// Don't use for( i in THEMES ), use for( i in THEMES.keys() ).
 // An array of of associative arrays where each element represents a theme.
 // No guard against concurrent access needed since JavaScript is monothreaded
 // (though asynchronous).
@@ -90,8 +91,13 @@ function environmentSetup() {
         return theme ;
       }
     }
-    showMessage( "Not found: " + key ) ;
     return null ;
+  } ;
+
+  THEMES.keys = function( key ) {
+    var result = [] ;
+    for( i = 0 ; i < this.length ; i ++ ) result.push( i ) ;
+    return result ;
   } ;
 
   // http://stackoverflow.com/questions/330331/jquery-get-charset-of-reply-when-no-header-is-set
@@ -110,7 +116,7 @@ function initializeThemes() {
   } ) ;
 
   showMessage( "Loading themes..." ) ;
-  for( index in THEMES ) {
+  for( index in THEMES.keys() ) {
     var theme = THEMES[ index ] ;
     loadTheme( theme.key ) ;
   }
