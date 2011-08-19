@@ -2,6 +2,7 @@
 // Parsing
 // =======
 
+var UNDEFINED = "undefined" ;
 var CHECKED = "checked" ;
 var UNCHECKED = "unchecked" ;
 var UNAVAILABLE = "unavailable" ;
@@ -57,57 +58,94 @@ function splitDefinitionLines( term, definitionLines ) {
 
 }
 
-// Loads a theme, with various side effects on the DOM for the checkboxes and the THEMES.
-function loadTheme( themeResource ) {
-  $.get( themeResource, function( payload ) {
-    var entries = parseEntries( payload ) ;
-    THEMES[ "themeResource" ] = { ENTRIES, entries } ;
-    $( "#theme-choice" ).append(
-        "<input "
-            + "type ='checkbox' "
-            + "name ='theme-" + themeResource + "' "
-            + "onclick ='checkTheme() ; ' "
-        + ">"
-        + "<br/>"
-    ) ;
-  } ).error( function() {
-    $( "#theme-choice" ).append(
-        "<input "
-            + "type ='checkbox' "
-            + "name ='theme-" + themeResource + "' "
-            + "disabled ='disabled' "
-        + ">"
-        + "<br/>"
-    ) ;
-
-  } ) ;
-  
-}
-
-
 // ==========
 // Page setup
 // ==========
+
+function showMessage( message ) {
+  $( "p#messages" ).append( "<pre>" + message.toString() + "</pre>" ) ;
+}
+
+
 
 // All declared themes.
 // An array of of associative arrays where each element represents a theme.
 // No guard against concurrent access needed since JavaScript is monothreaded
 // (though asynchronous).
 // http://stackoverflow.com/questions/2253586/thread-safety-in-javascript
-var THEMES = {} ;
+var THEMES = [] ;
+
+function environmentSetup() {
+
+  THEMES.byKey = function( key ) {
+    for( index in this ) {
+      var theme = this[ index ] ;
+      if( theme.key == key ) {
+        return theme ;
+      }
+    }
+    showMessage( "Not found: " + key ) ;
+    return null ;
+  } ;
+
+  // http://stackoverflow.com/questions/330331/jquery-get-charset-of-reply-when-no-header-is-set
+  $.ajaxSetup( {
+    "beforeSend" : function( xhr ) {
+      xhr.overrideMimeType( "text/html; charset=UTF-8" ) ;
+    }
+  } ) ;
+}
 
 function initializeThemes() {
 
   $( "#themes> dt" ).each( function() {
-    var theme = $( this ).text() ;
-    THEMES.push( [ theme, null ] ) ;
+    var themeKey = $( this ).text() ;
+    THEMES.push( { key : themeKey, status : UNDEFINED } ) ;
   } ) ;
 
   showMessage( "Loading themes..." ) ;
-  for( theme in THEMES ) {
-    showMessage( "Loading " + theme + "..." ) ;
-    loadTheme( theme ) ;
+  for( index in THEMES ) {
+    var theme = THEMES[ index ] ;
+    loadTheme( theme.key ) ;
   }
+}
+
+
+
+// Loads a theme, with various side effects on the DOM for the checkboxes and on the THEMES array.
+function loadTheme( themeKey ) {
+  showMessage( "Loading " + themeKey + "..." ) ;
+
+  $.get( themeKey, function( payload ) {
+    var entries = parseEntries( payload ) ;
+    var theme = THEMES.byKey( themeKey ) ;
+
+    theme.entries = entries ;
+    theme.status = UNCHECKED ;
+    $( "#theme-choice" ).append(
+        "<input "
+            + "type ='checkbox' "
+            + "name ='theme-" + themeKey + "' "
+            + "onclick ='checkTheme() ; ' "
+        + ">"
+        + "<span>" + themeKey + "</span>"
+        + "<br/>"
+    ) ;
+
+  } ).error( function() {
+    theme.status = UNAVAILABLE ;
+    $( "#theme-choice" ).append(
+        "<input "
+            + "type ='checkbox' "
+            + "name ='theme-" + themeKey + "' "
+            + "disabled ='disabled' "
+        + ">"
+        + "<span {text-decoration : line-through ; }>" + themeKey + "</span>"
+        + "<br/>"
+    ) ;
+
+  } ) ;
+
 }
 
 

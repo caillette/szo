@@ -11,34 +11,46 @@
   <script type="text/javascript" >
 $( document ).ready( function() {
 
+  module( "Setup" ) ;
+
+  test( "THEMES array enrichment", function() {
+    environmentSetup() ;
+    THEMES.push( { key : "foo" } ) ;
+    var theme = THEMES.byKey( "foo" ) ;
+    deepEqual( theme, { key : "foo" } ) ;
+  } ) ;
+
+
+
   module( "Parsing" ) ;
 
   test( "Simple entry parsing", function() {
-      deepEqual(
-          parseEntries( "\nterm1\nterm2\n" ),
-          [ { "LANGUAGE_1" : [ "term1" ], "LANGUAGE_2" : [ "term2" ] } ]
-      ) ;
+    deepEqual(
+        parseEntries( "\nterm1\nterm2\n" ),
+        [ { "LANGUAGE_1" : [ "term1" ], "LANGUAGE_2" : [ "term2" ] } ]
+    ) ;
   } ) ;
 
   test( "Parsing several entries", function() {
-      deepEqual(
-          parseEntries( "\nterm1\nterm2\n\nterm3\nterm4\n" ),
-          [
-              { "LANGUAGE_1" : [ "term1" ], "LANGUAGE_2" : [ "term2" ] },
-              { "LANGUAGE_1" : [ "term3" ], "LANGUAGE_2" : [ "term4" ] }
-          ]
-      ) ;
+    deepEqual(
+        parseEntries( "\nterm1\nterm2\n\nterm3\nterm4\n" ),
+        [
+            { "LANGUAGE_1" : [ "term1" ], "LANGUAGE_2" : [ "term2" ] },
+            { "LANGUAGE_1" : [ "term3" ], "LANGUAGE_2" : [ "term4" ] }
+        ]
+    ) ;
   } ) ;
 
   test( "Entry parsing, multiterm definition", function() {
-      deepEqual(
-          parseEntries( "\nterm1\n definition1-1\n 1-2\nterm2\n definition2\n" ),
-          [ {
-              "LANGUAGE_1" : [ "term1", "definition1-1", "1-2" ],
-              "LANGUAGE_2" : [ "term2", "definition2" ]
-          } ]
-      ) ;
+    deepEqual(
+        parseEntries( "\nterm1\n definition1-1\n 1-2\nterm2\n definition2\n" ),
+        [ {
+            "LANGUAGE_1" : [ "term1", "definition1-1", "1-2" ],
+            "LANGUAGE_2" : [ "term2", "definition2" ]
+        } ]
+    ) ;
   } ) ;
+
 
 } ) ;
   </script>

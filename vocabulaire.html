@@ -12,12 +12,9 @@
   <script type="text/javascript">
 
     $( document ).ready( function() {
+      environmentSetup() ;
       initializeThemes() ;
     } ) ;
-
-    function showMessage( message ) {
-      $( "p#messages" ).append( "<pre>" + message.toString() + "</pre>" ) ;
-    }
 
   </script>
 
@@ -28,6 +25,7 @@
   <!--Add new files here. Don't use diacritics in file names. -->
   <dl id="themes">
     <dt>Egeszseg.txt</dt>
+    <dt>Nincs-jelen.txt</dt>
   </dl>
 
   <!--Placeholder for theme checkboxes.-->
