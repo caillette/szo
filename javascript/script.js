@@ -137,8 +137,8 @@ function loadTheme( themeKey ) {
     $( "#theme-choice" ).append(
         "<input "
             + "type ='checkbox' "
-            + "name ='theme-" + themeKey + "' "
-            + "onclick ='checkTheme() ; ' "
+            + "name ='" + themeKey + "' "
+            + "onclick ='checkTheme() ;' "
         + ">"
         + "<span>" + themeKey + "</span>"
         + "<br/>"
@@ -168,6 +168,15 @@ function loadTheme( themeKey ) {
 // Theme selection
 // ===============
 
+var SELECTED_THEMES = [] ;
+
+// We recalculate everything each time since it's just feeding an array.
 function checkTheme() {
-  alert( "Theme checked/unchecked" ) ;
+  SELECTED_THEMES = [] ;
+  $( "#theme-choice :checked" ).each( function() {
+    var checkboxName = $( this ).attr( "name" ) ;
+    SELECTED_THEMES.push( THEMES.byKey( checkboxName ) ) ;
+  } ) ;
+  showMessage( "Selected " + SELECTED_THEMES.length + " themes." ) ;
+
 }
