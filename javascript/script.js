@@ -194,7 +194,21 @@ function showSomeEquivalence() {
 }
 
 function showEquivalence( equivalence ) {
-  $( "#board" ).html( "<p>Random Equivalence: " + equivalence.LANGUAGE_1[ 0 ] + "</p>" ) ;
+  var max = Math.max( equivalence.LANGUAGE_1.length, equivalence.LANGUAGE_2.length ) ;
+  var html = "<table><tr>"
+      + "<td>" + equivalence.LANGUAGE_1[ 0 ] + "</td>"
+      + "<td>" + equivalence.LANGUAGE_2[ 0 ] + "</td>"
+      + "</tr>"
+  ;
+
+//  for( i = 1 ; i < max ; i ++ ) {
+//
+//    var element1 = i > equivalence.LANGUAGE_1.length
+//  }
+
+  $( "#board" ).html( html ) ;
+
+
 }
 
 function clearBoard() {
@@ -202,9 +216,9 @@ function clearBoard() {
 }
 
 
-// ================
-// Various commands
-// ================
+// ==================
+// Toolbar's commands
+// ==================
 
 function initializeToolbar() {
   $( "#toolbar" ).append(
@@ -213,12 +227,12 @@ function initializeToolbar() {
           + "disabled = 'disabled' "
           + "name = 'next-equivalence' "
           + "onClick ='showSomeEquivalence() ;' "
-      + ">Next Equivalence</button>"
+      + ">További</button>"
   ) ;
 }
 
 function enableToolbarElements() {
-  $( "#toolbar [ name = 'next-equivalence' ]" ).filter( ":button").each( function() {
+  $( "#toolbar [ name = 'next-equivalence' ]" ).filter( ":button" ).each( function() {
     if( EQUIVALENCES.length > 0 ) {
       $( this ).removeAttr( "disabled" ) ;
     } else {
