@@ -72,11 +72,8 @@ function showMessage( message ) {
 
 
 // All declared themes.
+// It's an array of of associative arrays where each element represents a theme.
 // Don't use for( i in THEMES ), use for( i in THEMES.keys() ).
-// An array of of associative arrays where each element represents a theme.
-// No guard against concurrent access needed since JavaScript is monothreaded
-// (though asynchronous).
-// http://stackoverflow.com/questions/2253586/thread-safety-in-javascript
 var THEMES = [] ;
 
 function environmentSetup() {
