@@ -10,14 +10,14 @@ var UNAVAILABLE = "unavailable" ;
 var LANGUAGE_1 = "LANGUAGE_1" ;
 var LANGUAGE_2 = "LANGUAGE_2" ;
 
-var ENTRIES = "ENTRIES" ;
+var EQUIVALENCES = "EQUIVALENCES" ;
 
 
 // =======
 // Parsing
 // =======
 
-// Entry: a pair of Words.
+// Equivalence: a pair of Words.
 // Word: what's in a non-indented line.
 // Definition: the indented lines relative to a Word.
 
@@ -29,10 +29,10 @@ var definitionLineExp = "(?: +" + textExp + ")" ;
 var definitionLineCapturingExp = "(?: +(" + textExp + "))" ;
 
 
-function parseEntries( text ) {
+function parseEquivalences( text ) {
   // http://regexpal.com
   // http://regexpal.com/?flags=m&regex=%5Cn(%5B0-9a-zA-Z%5D%5B%200-9a-zA-Z%5D*)%5Cn(%3F%3A(%3F%3A%20%2B%5B0-9a-zA-Z%5D%5B%200-9a-zA-Z%5D*)%5Cn)*(%5B0-9a-zA-Z%5D%5B%200-9a-zA-Z%5D*)%5Cn(%3F%3A(%3F%3A%20%2B%5B0-9a-zA-Z%5D%5B%200-9a-zA-Z%5D*)%5Cn)*&input=%0AFo%0AB%20ar%0A%0AWhat%0A%20ever%0A%0AFoo%0ABar%0A%20Foo%0ABar%0A%0AFoo%0A%20Bar%0AFoo%0A%20Bar%0A%0AFoo%0A%20%20Bar%0A%20%20Bar%0AFoo%20%0A%20%20Bar%0A%0AFoo%0A%20%20Bar%0AFoo%0A%20%20%0A%0A
-  var entryExp = new RegExp(
+  var equivalenceExp = new RegExp(
         "\n"
       + "(" + termExp + ")\n((?:" + definitionLineExp + "\n)*)"
       + "(" + termExp + ")\n((?:" + definitionLineExp + "\n)*)"
@@ -41,7 +41,7 @@ function parseEntries( text ) {
 
   var array = [] ;
   while( true ) {
-    var match = entryExp.exec( text ) ;
+    var match = equivalenceExp.exec( text ) ;
     if( ! match ) break ;
     var array1 = splitDefinitionLines( match[ 1 ], match[ 2 ] ) ;
     var array2 = splitDefinitionLines( match[ 3 ], match[ 4 ] ) ;
@@ -124,9 +124,9 @@ function loadTheme( themeKey ) {
   var theme = THEMES.byKey( themeKey ) ;
 
   $.get( themeKey, function( payload ) {
-    var entries = parseEntries( payload ) ;
+    var equivalences = parseEquivalences( payload ) ;
 
-    theme.entries = entries ;
+    theme.equivalences = equivalences ;
     theme.status = UNCHECKED ;
     $( "#theme-choice" ).append(
         "<input "
