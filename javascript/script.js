@@ -126,7 +126,7 @@ function initializeThemes() {
 
 // Loads a theme, with various side effects on the DOM for the checkboxes and on the THEMES array.
 function loadTheme( themeKey ) {
-  showMessage( "Loading " + themeKey + "..." ) ;
+  showMessage( "Loading '" + themeKey + "'..." ) ;
   var theme = THEMES.byKey( themeKey ) ;
 
   $.get( themeKey, function( payload ) {
@@ -144,6 +144,8 @@ function loadTheme( themeKey ) {
         + "<br/>"
     ) ;
 
+    showMessage( "Loaded " + equivalences.length + " equivalences for " + themeKey + "." ) ;
+
   } ).error( function() {
     theme.status = UNAVAILABLE ;
     $( "#theme-choice" ).append(
@@ -155,7 +157,7 @@ function loadTheme( themeKey ) {
         + "<span style = 'text-decoration : line-through ;' >" + themeKey + "</span>"
         + "<br/>"
     ) ;
-
+    showMessage( "Unavailable: '" + themeKey + "'." ) ;
   } ) ;
 
 }
