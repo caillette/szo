@@ -205,12 +205,8 @@ function showSomeEquivalence() {
   }
 }
 
-function greatestArrayLength( equivalence ) {
-  return Math.max( equivalence.LANGUAGE_1.length, equivalence.LANGUAGE_2.length ) ;
-}
-
 function showEquivalence( equivalence ) {
-  var max = greatestArrayLength( equivalence ) ;
+  var max = Math.max( equivalence.LANGUAGE_1.length, equivalence.LANGUAGE_2.length ) ;
   var html = "<table><tbody>\n" ;
 
   function appendLanguage( html, language, index, visible ) {
@@ -220,7 +216,7 @@ function showEquivalence( equivalence ) {
           + language[ index ]
           + "</span></td>" ;
     } else {
-      return html + "<td>---</td>" ;
+      return html + "<td></td>" ;
     }
   } ;
 
@@ -243,7 +239,7 @@ function showEquivalence( equivalence ) {
 
 
 function clearBoard() {
-  $( "#board" ).html( "<p>No selection.</p>" ) ;
+  $( "#board" ).html( "<p>Nincs kiválasztás.</p>" ) ;
   LAST_EQUIVALENCE = null ;
 }
 
@@ -255,8 +251,19 @@ function clearBoard() {
 var DISCLOSURE = 0 ;
 
 function disclose() {
-  var max = greatestArrayLength( LAST_EQUIVALENCE ) ;
-  
+  var max = INVERT_LANGUAGES
+      ? LAST_EQUIVALENCE.LANGUAGE_1.length : LAST_EQUIVALENCE.LANGUAGE_2.length ;
+  if( DISCLOSURE >= max ) {
+    DISCLOSURE = 0 ;
+    showSomeEquivalence() ;
+  } else {
+    // The :eq(n) pseudo-selector doesn't work as expected. 
+    $( "#board > table > tbody > tr" ).eq( DISCLOSURE ).contents()
+        .filter( "td" ).eq( 1 ).contents()
+        .filter( "span" )
+        .css( "visibility", "visible" ) ;
+    DISCLOSURE ++ ;
+  }
 }
 
 
