@@ -95,6 +95,7 @@ body {
   background : #cccccc ;
   color : #cccccc ;
   border-bottom : solid 2px #dddddd ;
+  visibility : collapse ;
 }
 
 .no-theme {
