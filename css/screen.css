@@ -22,6 +22,9 @@ body {
 
 #toolbar * {
   font-size : 120% ;
+}
+
+#toolbar *.widget {
   margin-left : 1em ;
 }
 

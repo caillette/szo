@@ -219,11 +219,6 @@ function togglePrintEquivalences() {
   enableToolbarElements() ;
 }
 
-function printEquivalences() {
-  LISTING_EQUIVALENCES = true ;
-  justPrintEquivalences() ;
-}
-
 function justPrintEquivalences() {
   var html = "" ;
   for( themeIndex in EQUIVALENCES ) {
@@ -238,7 +233,6 @@ function justPrintEquivalences() {
 }
 
 function showSomeEquivalence() {
-  LISTING_EQUIVALENCES = false ;
   if( EQUIVALENCES.length == 0 ) {
     clearBoard() ;
   } else {
@@ -335,6 +329,7 @@ function initializeToolbar() {
               + "type = 'button' "
               + "disabled = 'disabled' "
               + "name = 'select-all-themes' "
+              + "class ='widget' "
               + "onClick ='selectAllThemes( true ) ;' "
           + ">Minden</button>"
       ).append(
@@ -342,6 +337,7 @@ function initializeToolbar() {
               + "type = 'button' "
               + "disabled = 'disabled' "
               + "name = 'select-no-theme' "
+              + "class ='widget' "
               + "onClick ='selectAllThemes( false ) ;' "
           + ">Nincs</button>"
       ).append(
@@ -350,12 +346,15 @@ function initializeToolbar() {
               + "disabled = 'disabled' "
               + "name = 'disclose' "
               + "onClick ='disclose() ;' "
+              + "class ='widget' "
           + ">Felfel</button>"
       ).append(
         "<input "
             + "type = 'checkbox' "
-            + "name = 'print-equivalences' "
+            + "disabled = 'disabled' "
+            + "id = 'print-equivalences' "
             + "onclick ='togglePrintEquivalences() ;' "
+            + "class ='widget' "
         + ">"
         + "<label for='print-equivalences' >Lista</label>"
       )
@@ -376,11 +375,16 @@ function enableToolbarElements() {
       .not( "[ name |= 'select' ]" )
       .filter( ":button" )
       .each( function() {
-        setEnabled( $( this ), EQUIVALENCES.length > 0 & ! LISTING_EQUIVALENCES ) ;
+        setEnabled( $( this ), EQUIVALENCES.length > 0 && ! LISTING_EQUIVALENCES ) ;
       }
   ) ;
 
+  $( "#print-equivalences" ).each( function() {
+    setEnabled( $( this ), EQUIVALENCES.length > 0 ) ;
+  } ) ;
+
   var hasThemes =  $( "#theme-choice :checkbox" ).filter( ":enabled" ).length > 0 ;
+
   $( "#toolbar *" )
       .filter( "[ name |= 'select' ]" )
       .filter( ":button" )
@@ -388,6 +392,7 @@ function enableToolbarElements() {
         setEnabled( $( this ), hasThemes ) ;
       }
   ) ;
+
 
 
 }
