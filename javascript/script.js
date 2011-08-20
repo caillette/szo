@@ -242,8 +242,8 @@ function showEquivalence( equivalence ) {
   }
 
   html += "</tbody></table>\n" ;
-  html += "<p id='theme-key' >" + equivalence.THEME_KEY + "</p>\n" ;
   $( "#board" ).html( html ) ;
+  $( "#theme-key" ).html( "<p>" + equivalence.THEME_KEY + "</p>" ) ;
 }
 
 function selectAllThemes( enabled ) {
@@ -255,6 +255,7 @@ function selectAllThemes( enabled ) {
 
 function clearBoard() {
   $( "#board" ).html( "<p class='no-theme' >Nincs kiválasztás.</p>" ) ;
+  $( "#theme-key" ).html( "<p></p>" ) ;
   LAST_EQUIVALENCE = null ;
 }
 
