@@ -134,7 +134,7 @@ function loadTheme( themeKey ) {
             + "type = 'checkbox' "
             + "name = '" + themeKey + "' "
             + "id = '" + id + "' "
-            + "onclick ='checkTheme() ;' "
+            + "onclick ='onThemeChecked() ;' "
         + ">"
         + "<label for='" + id + "' >" + themeKey + "</label>"
         + "<br/>"
@@ -174,7 +174,7 @@ var LAST_EQUIVALENCE = null ;
 var INVERT_LANGUAGES = true ;
 
 // We recalculate everything each time since it's just feeding an array.
-function checkTheme() {
+function onThemeChecked() {
   EQUIVALENCES = [] ;
   $( "#theme-choice :checked" ).each( function() {
     var checkboxName = $( this ).attr( "name" ) ;
@@ -233,6 +233,10 @@ function showEquivalence( equivalence ) {
   $( "#board" ).html( html ) ;
 }
 
+function selectAllThemes() {
+  $( "#theme-choice :checkbox :enabled" ).prop( "checked", true ) ;
+  onThemeChecked() ;
+}
 
 
 function clearBoard() {

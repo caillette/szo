@@ -20,12 +20,11 @@ body {
 }
 
 #board {
+  margin-left : auto ;
+  margin-right : auto ;
 }
 
-#board table {
-  width : 100% ;
-}
-
-#board table  {
+#board table tr:nth-child( 1 ) {
+  font-size : bigger ;
   font-style : italic ;
 }
