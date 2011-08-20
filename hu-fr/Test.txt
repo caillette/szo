@@ -80,7 +80,7 @@ comb
 cuisse
 
 térd
-genoux
+genou
 
 lábfej
 pied
