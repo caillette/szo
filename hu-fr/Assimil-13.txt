@@ -1,0 +1,65 @@
+
+csinál
+  -t, -jon, -na
+faire, cuisiner
+
+felkel
+  -t, -jen, -ne
+se lever
+
+felőltőzik
+  -őltőzőtt, -őltőzzőn, -őltőzne
+s'habiller
+
+reggeli
+  -t, -je, -k
+petit-déjeuner
+
+aztán
+ensuite
+
+gyár
+  -at, -a, -ak
+usine
+
+gép
+  -et, -e, -ek
+machine
+
+dél
+  -t, -jen, -ne
+sud, midi
+
+majd
+après, ensuite
+
+már
+déjà
+
+tévé
+  -t, -je, -k
+télévision
+
+néz
+  -ett, -zen, -ne
+regarder, considérer
+
+levetkőzik
+  -vetkőzőtt, -vetkőzzőn, -vetkőzne
+se deshabiller
+
+lefekszik
+  -fekűdt, -fekűdjon, -fekűdne
+se coucher
+
+alszik
+  aludt, aludjon, aludna
+dormir
+
+éjjel
+  -t, -, -ek
+nuit
+
+magáműgy
+  -et, -e, -ek
+affaire privée
