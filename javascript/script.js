@@ -66,7 +66,9 @@ function splitDefinitionLines( term, definitionLines ) {
 // ==========
 
 function showMessage( message ) {
-  $( "p#messages" ).append( "<pre>" + message.toString() + "</pre>" ) ;
+  if( $( "#console" ).is( ":visible" ) ) {
+    $( "p#messages" ).append( "<pre>" + message.toString() + "</pre>" ) ;
+  }
 }
 
 

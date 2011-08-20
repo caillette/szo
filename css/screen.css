@@ -1,3 +1,8 @@
+/*
+  Sources of inspiration:
+  http://green-beast.com/blog/?p=199
+*/
+
 @import url( 'general.css' ) ;
 
 body {
@@ -76,7 +81,6 @@ body {
 .no-theme {
   text-align : center ;
   text-style : italic ;
-  margin : 2em ;
   font-size : 1.5em ;
   color : #999999 ;
 }
