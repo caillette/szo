@@ -7,8 +7,8 @@ felkel
   -t, -jen, -ne
 se lever
 
-felőltőzik
-  -őltőzőtt, -őltőzzőn, -őltőzne
+felöltözik
+  -öltözött, -öltözzön, -öltözne
 s'habiller
 
 reggeli
