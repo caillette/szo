@@ -2,7 +2,33 @@
 
 body {
   background : #dddddd ;
+  width : 100% ;
+  display : table ;
+}
+
+#toolbar {
+  margin-left : auto ;
+  margin-right : auto ;
+  height : 2em ;
+  width : 100% ;
+}
+
+#content {
 
 }
 
+#theme-choice {
+  float : left ;
+  background : #cccccc ;
+}
 
+#board {
+}
+
+#board table {
+  width : 100% ;
+}
+
+#board table  {
+  font-style : italic ;
+}

@@ -1,9 +1,18 @@
 @import url( 'reset.css' ) ;
 
+
 #themes {
   visibility : collapse ;
+  height : 0 ;
 }
 
+
+/* For a true sticky footer:
+    http://www.lwis.net/journal/2008/02/08/pure-css-sticky-footer
+    http://matthewjamestaylor.com/blog/keeping-footers-at-the-bottom-of-the-page
+*/
 #console {
   visibility : collapse ;
+  height : 0 ;
 }
+
