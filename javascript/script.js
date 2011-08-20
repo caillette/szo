@@ -221,16 +221,19 @@ function togglePrintEquivalences() {
 }
 
 function justPrintEquivalences() {
-  var html = "" ;
-  for( themeIndex in EQUIVALENCES ) {
-    var equivalence = EQUIVALENCES[ themeIndex ] ;
-    html += "<table class='equivalence-list' ><tbody>\n" ;
-    html = printEquivalence( html, equivalence, false ) ;
-    html += "</tbody></table>\n" ;
+  if( EQUIVALENCES.length == 0 ) {
+    clearBoard() ;
+  } else {
+    var html = "" ;
+    for( themeIndex in EQUIVALENCES ) {
+      var equivalence = EQUIVALENCES[ themeIndex ] ;
+      html += "<table class='equivalence-list' ><tbody>\n" ;
+      html = printEquivalence( html, equivalence, false ) ;
+      html += "</tbody></table>\n" ;
+    }
+    $( "#board" ).html( html ) ;
+    $( "#theme-key" ).html( "" ) ;
   }
-
-  $( "#board" ).html( html ) ;
-  $( "#theme-key" ).html( "" ) ;
 }
 
 function showSomeEquivalence() {
@@ -292,7 +295,7 @@ function selectAllThemes( enabled ) {
 
 
 function clearBoard() {
-  $( "#board" ).html( "<p class='no-theme' >Nincs kiválasztás.</p>" ) ;
+  $( "#board" ).html( "<p class='no-theme' >Nincs kiválasztás</p>" ) ;
   $( "#theme-key" ).html( "<p></p>" ) ;
   LAST_EQUIVALENCE = null ;
 }
