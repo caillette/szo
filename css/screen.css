@@ -37,6 +37,8 @@ body {
 #board table td {
   text-align : left ;
   font-weight : bold ;
+  width : 50% ;
+  padding : 0.2em 1em 0.2em 1em ;
 }
 
 #board table td:first-child {
