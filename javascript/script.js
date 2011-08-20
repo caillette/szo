@@ -26,7 +26,7 @@ var definitionLineExp = "(?: +" + textExp + ")" ;
 var definitionLineCapturingExp = "(?: +(" + textExp + "))" ;
 
 
-function parseEquivalences( text ) {
+function parseEquivalences( themeKey, text ) {
   // http://regexpal.com
   // http://regexpal.com/?flags=m&regex=%5Cn(%5B0-9a-zA-Z%5D%5B%200-9a-zA-Z%5D*)%5Cn(%3F%3A(%3F%3A%20%2B%5B0-9a-zA-Z%5D%5B%200-9a-zA-Z%5D*)%5Cn)*(%5B0-9a-zA-Z%5D%5B%200-9a-zA-Z%5D*)%5Cn(%3F%3A(%3F%3A%20%2B%5B0-9a-zA-Z%5D%5B%200-9a-zA-Z%5D*)%5Cn)*&input=%0AFo%0AB%20ar%0A%0AWhat%0A%20ever%0A%0AFoo%0ABar%0A%20Foo%0ABar%0A%0AFoo%0A%20Bar%0AFoo%0A%20Bar%0A%0AFoo%0A%20%20Bar%0A%20%20Bar%0AFoo%20%0A%20%20Bar%0A%0AFoo%0A%20%20Bar%0AFoo%0A%20%20%0A%0A
   var equivalenceExp = new RegExp(
@@ -42,7 +42,7 @@ function parseEquivalences( text ) {
     if( ! match ) break ;
     var array1 = splitDefinitionLines( match[ 1 ], match[ 2 ] ) ;
     var array2 = splitDefinitionLines( match[ 3 ], match[ 4 ] ) ;
-    array.push( { LANGUAGE_1 : array1, LANGUAGE_2 : array2 } ) ;
+    array.push( { THEME_KEY : themeKey, LANGUAGE_1 : array1, LANGUAGE_2 : array2 } ) ;
   }
   return array ;
 }
@@ -130,7 +130,7 @@ function loadTheme( themeKey ) {
   completionCount = 0 ;
 
   $.get( themeKey, function( payload ) {
-    var equivalences = parseEquivalences( payload ) ;
+    var equivalences = parseEquivalences( themeKey, payload ) ;
 
     theme.equivalences = equivalences ;
     theme.status = UNCHECKED ;

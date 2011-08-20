@@ -26,25 +26,26 @@ $( document ).ready( function() {
 
   test( "Simple entry parsing", function() {
     deepEqual(
-        parseEquivalences( "\nterm1\nterm2\n" ),
-        [ { LANGUAGE_1 : [ "term1" ], LANGUAGE_2 : [ "term2" ] } ]
+        parseEquivalences( "key", "\nterm1\nterm2\n" ),
+        [ { THEME_KEY : "key", LANGUAGE_1 : [ "term1" ], LANGUAGE_2 : [ "term2" ] } ]
     ) ;
   } ) ;
 
   test( "Parsing several Equivalences", function() {
     deepEqual(
-        parseEquivalences( "\nterm1\nterm2\n\nterm3\nterm4\n" ),
+        parseEquivalences( "key", "\nterm1\nterm2\n\nterm3\nterm4\n" ),
         [
-            { LANGUAGE_1 : [ "term1" ], LANGUAGE_2 : [ "term2" ] },
-            { LANGUAGE_1 : [ "term3" ], LANGUAGE_2 : [ "term4" ] }
+            { THEME_KEY : "key", LANGUAGE_1 : [ "term1" ], LANGUAGE_2 : [ "term2" ] },
+            { THEME_KEY : "key", LANGUAGE_1 : [ "term3" ], LANGUAGE_2 : [ "term4" ] }
         ]
     ) ;
   } ) ;
 
   test( "Entry parsing, multiterm definition", function() {
     deepEqual(
-        parseEquivalences( "\nterm1\n definition1-1\n 1-2\nterm2\n definition2\n" ),
+        parseEquivalences( "key", "\nterm1\n definition1-1\n 1-2\nterm2\n definition2\n" ),
         [ {
+            THEME_KEY : "key",
             LANGUAGE_1 : [ "term1", "definition1-1", "1-2" ],
             LANGUAGE_2 : [ "term2", "definition2" ]
         } ]
