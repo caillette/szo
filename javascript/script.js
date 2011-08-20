@@ -226,6 +226,7 @@ function justPrintEquivalences() {
     clearBoard() ;
   } else {
     var html = "" ;
+    html += "<p class='total' >Végösszeg: " + EQUIVALENCES.length + "</p>" ;
     for( themeIndex in EQUIVALENCES ) {
       var equivalence = EQUIVALENCES[ themeIndex ] ;
       html += "<table class='equivalence-list' ><tbody>\n" ;
