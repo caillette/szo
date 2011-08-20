@@ -218,10 +218,10 @@ function showEquivalence( equivalence ) {
 
   function appendLanguage( html, language, index, visible ) {
     if( index < language.length ) {
-      return html + "<td>"
-          + "<span " + ( visible ? "" : "class = 'undisclosed' " ) + ">"
+      return html
+          + "<td" + ( visible ? "" : " class = 'undisclosed' " ) + ">"
           + language[ index ]
-          + "</span></td>" ;
+          + "</td>" ;
     } else {
       return html + "<td></td>" ;
     }
@@ -271,9 +271,7 @@ function disclose() {
   } else {
     // The :eq(n) pseudo-selector doesn't work as expected. 
     $( "#board > table > tbody > tr" ).eq( DISCLOSURE ).contents()
-        .filter( "td" ).eq( 1 ).contents()
-        .filter( "span" )
-        .removeClass( "undisclosed" ) ;
+        .filter( "td" ).eq( 1 ) .removeClass( "undisclosed" ) ;
     DISCLOSURE ++ ;
   }
 }
