@@ -197,11 +197,48 @@ function onThemeChecked() {
     }
   } ) ;
   showMessage( "Selected " + EQUIVALENCES.length + " equivalence(s)." ) ;
-  showSomeEquivalence() ;
+  if( LISTING_EQUIVALENCES ) {
+    justPrintEquivalences() ;
+  } else {
+    showSomeEquivalence() ;
+  }
   enableToolbarElements() ;
 }
 
+
+// Tells if we entered the list-style kind of display.
+var LISTING_EQUIVALENCES = false ;
+
+function togglePrintEquivalences() {
+  LISTING_EQUIVALENCES = ! LISTING_EQUIVALENCES ;
+  if( LISTING_EQUIVALENCES ) {
+    justPrintEquivalences() ;
+  } else {
+    showSomeEquivalence() ;
+  }
+  enableToolbarElements() ;
+}
+
+function printEquivalences() {
+  LISTING_EQUIVALENCES = true ;
+  justPrintEquivalences() ;
+}
+
+function justPrintEquivalences() {
+  var html = "" ;
+  for( themeIndex in EQUIVALENCES ) {
+    var equivalence = EQUIVALENCES[ themeIndex ] ;
+    html += "<table class='equivalence-list' ><tbody>\n" ;
+    html = printEquivalence( html, equivalence, false ) ;
+    html += "</tbody></table>\n" ;
+  }
+
+  $( "#board" ).html( html ) ;
+  $( "#theme-key" ).html( "" ) ;
+}
+
 function showSomeEquivalence() {
+  LISTING_EQUIVALENCES = false ;
   if( EQUIVALENCES.length == 0 ) {
     clearBoard() ;
   } else {
@@ -314,6 +351,13 @@ function initializeToolbar() {
               + "name = 'disclose' "
               + "onClick ='disclose() ;' "
           + ">Felfel</button>"
+      ).append(
+        "<input "
+            + "type = 'checkbox' "
+            + "name = 'print-equivalences' "
+            + "onclick ='togglePrintEquivalences() ;' "
+        + ">"
+        + "<label for='print-equivalences' >Lista</label>"
       )
   ;
 }
@@ -332,7 +376,7 @@ function enableToolbarElements() {
       .not( "[ name |= 'select' ]" )
       .filter( ":button" )
       .each( function() {
-        setEnabled( $( this ), EQUIVALENCES.length > 0 ) ;
+        setEnabled( $( this ), EQUIVALENCES.length > 0 & ! LISTING_EQUIVALENCES ) ;
       }
   ) ;
 
