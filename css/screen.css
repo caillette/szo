@@ -37,6 +37,15 @@ body {
   margin : 0.3em ;
 }
 
+#theme-key {
+  position : absolute ;
+  bottom : 0 ;
+  right : 0 ;
+  padding-right : 1em ;
+  background : #dddddd ;
+  
+}
+
 #board {
   float : right ;
   width : 40em ;

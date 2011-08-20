@@ -242,6 +242,7 @@ function showEquivalence( equivalence ) {
   }
 
   html += "</tbody></table>\n" ;
+  html += "<p id='theme-key' >" + equivalence.THEME_KEY + "</p>\n" ;
   $( "#board" ).html( html ) ;
 }
 
