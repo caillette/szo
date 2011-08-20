@@ -214,6 +214,7 @@ function togglePrintEquivalences() {
   if( LISTING_EQUIVALENCES ) {
     justPrintEquivalences() ;
   } else {
+    DISCLOSURE = 0 ;
     showSomeEquivalence() ;
   }
   enableToolbarElements() ;
