@@ -4,6 +4,7 @@ body {
   background : #dddddd ;
   width : 100% ;
   display : table ;
+  font-family : Verdana, Geneva, 'DejaVu Sans', sans-serif ;
 }
 
 #toolbar {
