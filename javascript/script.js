@@ -214,9 +214,8 @@ function showSomeEquivalence() {
   }
 }
 
-function showEquivalence( equivalence ) {
+function printEquivalence( html, equivalence, mayHide ) {
   var max = Math.max( equivalence.LANGUAGE_1.length, equivalence.LANGUAGE_2.length ) ;
-  var html = "<table><tbody>\n" ;
 
   function appendLanguage( html, language, index, visible ) {
     if( index < language.length ) {
@@ -233,13 +232,20 @@ function showEquivalence( equivalence ) {
     html += "<tr>" ;
     if( INVERT_LANGUAGES ) {
       html = appendLanguage( html, equivalence.LANGUAGE_2, i, true ) ;
-      html = appendLanguage( html, equivalence.LANGUAGE_1, i, false ) ;
+      html = appendLanguage( html, equivalence.LANGUAGE_1, i, ! mayHide ) ;
     } else {
       html = appendLanguage( html, equivalence.LANGUAGE_1, i, true ) ;
-      html = appendLanguage( html, equivalence.LANGUAGE_2, i, false ) ;
+      html = appendLanguage( html, equivalence.LANGUAGE_2, i, ! mayHide ) ;
     }
     html += "</tr>\n" ;
   }
+  return html ;
+}
+
+
+function showEquivalence( equivalence ) {
+  var html = "<table><tbody>\n" ;
+  html = printEquivalence( html, equivalence, true ) ;
 
   html += "</tbody></table>\n" ;
   $( "#board" ).html( html ) ;
