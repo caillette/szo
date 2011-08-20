@@ -95,7 +95,7 @@ body {
   background : #cccccc ;
   color : #cccccc ;
   border-bottom : solid 2px #dddddd ;
-  visibility : collapse ;
+  /* visibility : collapse ; Bad: causes the cell itself to not appear. */
 }
 
 .no-theme {
