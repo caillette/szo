@@ -134,14 +134,14 @@ function loadTheme( themeKey ) {
     theme.status = UNCHECKED ;
     var id = "checkbox-" + themeKey ;
     $( "#theme-choice" ).append(
-        "<input "
+        "<p>"
+        + "<input "
             + "type = 'checkbox' "
             + "name = '" + themeKey + "' "
             + "id = '" + id + "' "
             + "onclick ='onThemeChecked() ;' "
         + ">"
         + "<label for='" + id + "' >" + themeKey + "</label>"
-        + "<br/>"
     ) ;
 
     showMessage( "Loaded " + equivalences.length + " equivalences for " + themeKey + "." ) ;
@@ -149,13 +149,13 @@ function loadTheme( themeKey ) {
   } ).error( function() {
     theme.status = UNAVAILABLE ;
     $( "#theme-choice" ).append(
-        "<input "
+        "<p>"
+        + "<input "
             + "type ='checkbox' "
             + "name ='theme-" + themeKey + "' "
             + "disabled ='disabled' "
         + ">"
         + "<span style = 'text-decoration : line-through ;' >" + themeKey + "</span>"
-        + "<br/>"
     ) ;
     showMessage( "Unavailable: '" + themeKey + "'." ) ;
   } ).complete( function() {

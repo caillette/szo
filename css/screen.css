@@ -9,14 +9,24 @@ body {
 #toolbar {
   margin-left : auto ;
   margin-right : auto ;
-  height : 2em ;
   width : 100% ;
+  margin-top : 1em ;
+  margin-bottom : 1em ;
+}
+
+#toolbar * {
+  font-size : 120% ;
+  margin-left : 1em ;
 }
 
 
 #theme-choice {
   float : left ;
   background : #cccccc ;
+}
+
+#theme-choice p {
+  margin : 0.3em ;
 }
 
 #board table {
