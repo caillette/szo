@@ -21,11 +21,10 @@ body {
 }
 
 
-#content {
-}
+#content { }
 
 #theme-choice {
-  float : right;
+  float : left ;
   background : #cccccc ;
 }
 
@@ -34,7 +33,7 @@ body {
 }
 
 #board {
-  float : left ;
+  float : right ;
   width : 40em ;
 }
 
@@ -42,7 +41,6 @@ body {
   text-align : center ;
   margin-left : auto ;
   margin-right : auto ;
-  border : solid 1px ;
 }
 
 #board > table tr {
