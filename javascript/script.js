@@ -219,7 +219,7 @@ function showEquivalence( equivalence ) {
   function appendLanguage( html, language, index, visible ) {
     if( index < language.length ) {
       return html + "<td>"
-          + "<span " + ( visible ? "" : "style = 'visibility : hidden ; ' " ) + ">"
+          + "<span " + ( visible ? "" : "class = 'undisclosed' " ) + ">"
           + language[ index ]
           + "</span></td>" ;
     } else {
@@ -273,7 +273,7 @@ function disclose() {
     $( "#board > table > tbody > tr" ).eq( DISCLOSURE ).contents()
         .filter( "td" ).eq( 1 ).contents()
         .filter( "span" )
-        .css( "visibility", "visible" ) ;
+        .removeClass( "undisclosed" ) ;
     DISCLOSURE ++ ;
   }
 }

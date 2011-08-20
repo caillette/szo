@@ -38,32 +38,35 @@ body {
   color : #999999 ;
 }
 
-#board table {
+#board > table {
   margin-left : auto ;
   margin-right : auto ;
 }
 
-#board table tr {
+#board > table tr {
   font-size : 170% ;
   font-style : italic ;
 }
 
-#board table tr:first-child {
+#board > table tr:first-child {
   font-size : 200% ;
   font-style : normal ;
 }
 
-#board table td {
+#board > table td {
   text-align : left ;
   font-weight : bold ;
   width : 50% ;
   padding : 0.2em 1em 0.2em 1em ;
 }
 
-#board table td:first-child {
+#board > table td:first-child {
   text-align : right ;
   font-weight : normal ;
 }
 
 
-
+.undisclosed {
+  background : #bbbbbb ;
+  color : #bbbbbb ;
+}
