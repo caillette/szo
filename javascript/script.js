@@ -116,12 +116,16 @@ function initializeThemes() {
   }
 }
 
+// Seems that we need to make this variable global, for visibility reasons.
+var completionCount = 0 ;
 
 
 // Loads a theme, with various side effects on the DOM for the checkboxes and on the THEMES array.
 function loadTheme( themeKey ) {
   showMessage( "Loading '" + themeKey + "'..." ) ;
   var theme = THEMES.byKey( themeKey ) ;
+  var keyCount = THEMES.keys().length ;
+  completionCount = 0 ;
 
   $.get( themeKey, function( payload ) {
     var equivalences = parseEquivalences( payload ) ;
@@ -154,6 +158,12 @@ function loadTheme( themeKey ) {
         + "<br/>"
     ) ;
     showMessage( "Unavailable: '" + themeKey + "'." ) ;
+  } ).complete( function() {
+    completionCount ++ ;
+    if( completionCount == keyCount ) {
+      showMessage( "Loaded " + completionCount + " theme(s)." ) ;
+      selectAllThemes( true ) ;
+    }
   } ) ;
 
 }
@@ -233,8 +243,9 @@ function showEquivalence( equivalence ) {
   $( "#board" ).html( html ) ;
 }
 
-function selectAllThemes() {
-  $( "#theme-choice :checkbox :enabled" ).prop( "checked", true ) ;
+function selectAllThemes( enabled ) {
+  // Filter as a workaround.
+  $( "#theme-choice :checkbox" ).filter( ":enabled" ).attr( "checked", enabled ) ;
   onThemeChecked() ;
 }
 
@@ -273,21 +284,30 @@ function disclose() {
 // ==================
 
 function initializeToolbar() {
-  $( "#toolbar" ).append(
-      "<button "
-          + "type = 'button' "
-          + "disabled = 'disabled' "
-          + "name = 'next-equivalence' "
-          + "onClick ='showSomeEquivalence() ;' "
-      + ">További</button>"
-  ).append(
-      "<button "
-          + "type = 'button' "
-          + "disabled = 'disabled' "
-          + "name = 'disclose' "
-          + "onClick ='disclose() ;' "
-      + ">Felfel</button>" 
-  ) ;
+  $( "#toolbar" )
+      .append(
+          "<button "
+              + "type = 'button' "
+              + "disabled = 'disabled' "
+              + "name = 'select-all-themes' "
+              + "onClick ='selectAllThemes( true ) ;' "
+          + ">Minden</button>"
+      ).append(
+          "<button "
+              + "type = 'button' "
+              + "disabled = 'disabled' "
+              + "name = 'select-no-theme' "
+              + "onClick ='selectAllThemes( false ) ;' "
+          + ">Nincs</button>"
+      ).append(
+          "<button "
+              + "type = 'button' "
+              + "disabled = 'disabled' "
+              + "name = 'disclose' "
+              + "onClick ='disclose() ;' "
+          + ">Felfel</button>"
+      )
+  ;
 }
 
 function enableToolbarElements() {
@@ -300,8 +320,22 @@ function enableToolbarElements() {
     }
   }
 
-  $( "#toolbar *" ).filter( ":button" ).each( function() {
-    setEnabled( $( this ), EQUIVALENCES.length > 0 ) ;
-  } ) ;
+  $( "#toolbar *" )
+      .not( "[ name |= 'select' ]" )
+      .filter( ":button" )
+      .each( function() {
+        setEnabled( $( this ), EQUIVALENCES.length > 0 ) ;
+      }
+  ) ;
+
+  var hasThemes =  $( "#theme-choice :checkbox" ).filter( ":enabled" ).length > 0 ;
+  $( "#toolbar *" )
+      .filter( "[ name |= 'select' ]" )
+      .filter( ":button" )
+      .each( function() {
+        setEnabled( $( this ), hasThemes ) ;
+      }
+  ) ;
+
 
 }
