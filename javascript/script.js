@@ -187,6 +187,7 @@ var INVERT_LANGUAGES = true ;
 
 // We recalculate everything each time since it's just feeding an array.
 function onThemeChecked() {
+  DISCLOSURE = 0 ;
   EQUIVALENCES = [] ;
   $( "#theme-choice :checked" ).each( function() {
     var checkboxName = $( this ).attr( "name" ) ;
