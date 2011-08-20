@@ -35,12 +35,13 @@ body {
 #board {
   float : right ;
   width : 40em ;
+  margin-left : 1em ;
+  margin-right : 1em ;
 }
 
 #board > table {
+  width : 100% ;
   text-align : center ;
-  margin-left : auto ;
-  margin-right : auto ;
 }
 
 #board > table tr {
