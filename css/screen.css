@@ -94,6 +94,7 @@ body {
 .undisclosed {
   background : #cccccc ;
   color : #cccccc ;
+  border-bottom : solid 2px #dddddd ;
 }
 
 .no-theme {
