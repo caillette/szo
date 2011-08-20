@@ -251,7 +251,7 @@ function selectAllThemes( enabled ) {
 
 
 function clearBoard() {
-  $( "#board" ).html( "<p>Nincs kiválasztás.</p>" ) ;
+  $( "#board" ).html( "<p class='no-theme' >Nincs kiválasztás.</p>" ) ;
   LAST_EQUIVALENCE = null ;
 }
 
