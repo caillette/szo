@@ -19,7 +19,7 @@ var EQUIVALENCES = "EQUIVALENCES" ;
 // Definition: the indented lines relative to a Term.
 
 
-var characters = "',;!\\?\\-\\(\\)/\\wáéíóúÁÉÚÍÓÚőűŐŰöüÜÖœàâèêëïîôûçŒÀÂÈÊËÏÎÔÛÇ" ;
+var characters = "'~,;!\\?\\-\\(\\)/\\wáéíóúÁÉÚÍÓÚőűŐŰöüÜÖœàâèêëïîôûçŒÀÂÈÊËÏÎÔÛÇ" ;
 var textExp = "(?:[" + characters + "][ " + characters + "]*)" ;
 var termExp = textExp ;
 var definitionLineExp = "(?: +" + textExp + ")" ;
