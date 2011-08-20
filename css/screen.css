@@ -32,7 +32,7 @@ body {
 #content { }
 
 #theme-choice {
-  float : left ;
+  display : inline-block ;
   background : #cccccc ;
 }
 
@@ -46,11 +46,11 @@ body {
   right : 2px ;
   padding-right : 1em ;
   background : #dddddd ;
-  
 }
 
 #board {
-  float : right ;
+  display : inline-block ;
+  vertical-align : top ;
   width : 40em ;
   margin-left : 1em ;
   margin-right : 1em ;
