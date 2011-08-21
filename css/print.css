@@ -1,0 +1,18 @@
+@import url( 'screen.css' ) ;
+
+body * {
+  font-size : 12pt ;
+}
+
+#theme-choice, #toolbar {
+  display : none ;
+}
+
+#board > table {
+
+  /* Bad news: only Opera seems to support it.
+      http://www.westciv.com/style_master/academy/browser_support/printing.html
+  */
+  page-break-inside : avoid ;
+
+}
