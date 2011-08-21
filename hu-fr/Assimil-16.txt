@@ -16,7 +16,7 @@ excellent
 
 kár
   -t, -a, -ok
-dommage
+dommage, tort, préjudice
 
 senki
 personne (privatif)
