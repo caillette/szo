@@ -43,11 +43,11 @@ There will be no effort to make Szótárgép run on any version of Internet Expl
 
 To say things simply, Chrome forbids access to the local filesystem by default. To circumvent this, launch Chrome like this:
 
-Mac OS X:
-  `$ /Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --allow-file-access-from-files`
+.Mac OS X
+  $ /Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --allow-file-access-from-files
 
-Windows:
-  `> chrome.exe --allow-file-access-from-files`
+.Windows
+  > chrome.exe --allow-file-access-from-files
 
 
 
