@@ -25,7 +25,7 @@ There must be a blank line at the start and at the end of the file.
 
 A term pair is made of groups of lines (at least two lines, one for the original and one line for the translation). Under each term, there can be any number of additional definitions that start with at least one space character. Additional definitions for the first language will disclose one by one.
 
-Here is a sample of vocabulary file containing two term pairs. Please note the empty lines at the beginning and at the end.
+Here is a sample of vocabulary file containing two term pairs. Don't forget the empty lines at the beginning and at the end.
 
 ----
 
