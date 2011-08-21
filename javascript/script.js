@@ -134,7 +134,14 @@ function loadTheme( themeKey ) {
   var keyCount = THEMES.keys().length ;
   completionCount = 0 ;
 
-  $.get( themeKey, function( payload ) {
+
+
+  // The 'callback=' trick tries to make Google Chrome happy.
+  // http://stackoverflow.com/questions/3595515/xmlhttprequest-error-origin-null-is-not-allowed-by-access-control-allow-origin
+  // But that's not enough.
+  // The solution turns to be switching security off:
+  // $ $ /Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --allow-file-access-from-files
+  $.get( themeKey + "?callback=?", function( payload ) {
     var equivalences = parseEquivalences( themeKey, payload ) ;
 
     theme.equivalences = equivalences ;

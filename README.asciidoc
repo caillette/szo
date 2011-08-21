@@ -1,2 +1,30 @@
-Szòtàrgép is a standalone application written in HTML and JavaScript for learning Hungarian from French.
+Szòtàrgép is a standalone application for learning Hungarian from French.
+
+It's a small piece of HTML and JavaScript, essentially using JQuery. Vocabulary files are text files that anybody can edit.
+
+== Supported configurations
+
+* Safari 5.1 on Mac OS X 10.6.8: works fine.
+* Firefox 6.0 on Mac OS X 10.6.8: works fine. Doesn't support printing more than one page.
+* Chrome 13 on Mac OS X 10.6.8: works fine with the special option described below.
+
+It's likely that any version of Internet Explorer won't work.
+
+=== Running with Chrome
+
+To say things simply, Chrome forbids access to the local filesystem by default. To circumvent this, launch Chrome like this:
+
+[source]
+----
+Mac OS X:
+$ /Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --allow-file-access-from-files
+
+Windows:
+> chrome.exe --allow-file-access-from-files
+----
+
+
+
+
+
 
