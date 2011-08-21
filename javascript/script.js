@@ -257,9 +257,11 @@ function printEquivalence( html, equivalence, mayHide ) {
   function appendLanguage( html, language, index, visible ) {
     if( index < language.length ) {
       return html
-          + "<td" + ( visible ? "" : " class = 'undisclosed' " ) + ">"
+          // Using a span to make the cell's content truly invisible.
+          // Making the cell content invisible causes other decoractions to not show.
+          + "<td" + ( visible ? "" : " class = 'undisclosed' " ) + "><span>"
           + language[ index ]
-          + "</td>" ;
+          + "</span></td>" ;
     } else {
       return html + "<td></td>" ;
     }

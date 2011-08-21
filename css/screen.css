@@ -91,12 +91,17 @@ body {
 }
 
 
-.undisclosed {
+td.undisclosed {
   background : #cccccc ;
-  color : #cccccc ;
   border-bottom : solid 2px #dddddd ;
   /* visibility : collapse ; Bad: causes the cell itself to not appear. */
 }
+
+td.undisclosed > span {
+  visibility : hidden ;
+}
+
+
 
 .no-theme {
   text-align : center ;
