@@ -1,4 +1,4 @@
-*Szótárgép* means "vocabulary machine" in Magyar (Hungarian). It is a standalone application for learning Magyar from French. You should pronounce it "soo-taarrr-gééép" with long vowels and "r" tapped like in Spanish.
+TIP: *Szótárgép* means "vocabulary machine" in Magyar (Hungarian). It is a standalone application for learning Magyar from French. You should pronounce it "soo-taarrr-gééép" with long vowels and "r" tapped like in Spanish.
 
 It's a small piece of HTML and JavaScript, essentially using JQuery. Vocabulary files are text files that anybody can edit.
 
@@ -33,6 +33,7 @@ Szótárgép HTML and JavaScript code are released under Gnu Public License vers
 Vocabulary files are released under Creative Commons license.
 
 Other libraries are subject to their original licenses:
+
 * JQuery comes with a dual license: MIT or GPL Version 2.
 * The keyboard shortcuts library is under BSD license, which probably requires a mention of its author, Binny V. A.
 
@@ -50,10 +51,12 @@ It's likely that any version of Internet Explorer won't work.
 To say things simply, Chrome forbids access to the local filesystem by default. To circumvent this, launch Chrome like this:
 
 Mac OS X:
+
 [source]
 $ /Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --allow-file-access-from-files
 
 Windows:
+
 [source]
 > chrome.exe --allow-file-access-from-files
 
