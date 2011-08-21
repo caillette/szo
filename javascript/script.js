@@ -345,7 +345,7 @@ function initializeToolbar() {
               + "name = 'select-no-theme' "
               + "class ='widget' "
               + "onClick ='selectAllThemes( false ) ;' "
-          + ">Nincs</button>"
+          + ">Semmi</button>"
       ).append(
           "<button "
               + "type = 'button' "
