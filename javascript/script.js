@@ -236,7 +236,10 @@ function justPrintEquivalences() {
       var equivalence = EQUIVALENCES[ themeIndex ] ;
       html += "<table class='equivalence-list' ><tbody>\n" ;
       html = printEquivalence( html, equivalence, false ) ;
-      html += "</tbody></table>\n" ;
+      html += "</tbody></table>" ;
+
+      // Help the Web browser to keep tables together.
+      html += "<p class='void' ></p>\n" ;
     }
     $( "#board" ).html( html ) ;
     $( "#theme-key" ).html( "" ) ;

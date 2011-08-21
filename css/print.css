@@ -2,6 +2,7 @@
 
 body * {
   font-size : 12pt ;
+  font-family : Palatino Linotype, Book Antiqua, Palatino, serif ;
 }
 
 #theme-choice, #toolbar {
@@ -15,4 +16,9 @@ body * {
   */
   page-break-inside : avoid ;
 
+}
+
+.void {
+  margin-top : -4pt ;
+  border-bottom : 0.1pt solid #efefef ;
 }
