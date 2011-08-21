@@ -103,7 +103,7 @@ function environmentSetup() {
     }
   } ) ;
 
-  shortcut.add( " ",function() {
+  shortcut.add( "return",function() {
     if( ! LISTING_EQUIVALENCES ) disclose() ;
   } ) ;
 
