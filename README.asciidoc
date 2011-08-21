@@ -1,0 +1,2 @@
+Szòtàrgép is a standalone application written in HTML and JavaScript for learning Hungarian from French.
+
