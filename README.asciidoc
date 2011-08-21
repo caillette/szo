@@ -1,6 +1,8 @@
-*Szótárgép* means "vocabulary machine" in Magyar (Hungarian). It is a standalone application for learning Magyar from French. You should pronounce it "soo-taarrr-gééép" with long vowels and "r" tapped like in Spanish.
+*Szótárgép* means "vocabulary machine" in Magyar (Hungarian). It is a standalone application for learning Magyar from French. You should pronounce it "soo-taarrr-gééép" with long vowels and "r" tapped like in Spanish, and the accent on the beginning of the word.
 
-It's a small piece of HTML and JavaScript, essentially using JQuery. Vocabulary files are text files that anybody can edit.
+Starting from a customizable vocabulary list, it choses random terms in one language, and discloses the translation at user's demand. There is also a list view with all the terms and their translations.
+
+Szótárgép is a small piece of HTML and JavaScript, essentially using JQuery. Vocabulary files are text files that anybody can edit.
 
 
 === Installation
@@ -12,7 +14,7 @@ To install Szótárgép, download the latest version from https://github.com/cai
 
 Check the vocabulary files and click on "Disclose" ("Felfel") button to see the translation. Hitting the "Enter" key produces the same effect.
 
-A pair of termes is an _equivalence_. To see the list of all checked equivalences, check "List" ("Lista").
+To see the list of all terms in checked files, check "List" ("Lista").
 
 
 === Adding or editing vocabulary files
@@ -21,11 +23,33 @@ Create some plain text file with a decent text editor like http://notepad-plus-p
 
 There must be a blank line at the start and at the end of the file.
 
-An equivalence contains at least two terms, on two adjacent lines. Under each term, there can be any number of additional definitions that start with at least one space character. Additional definitions for the first language will disclose one by one.
+A term pair is made of groups of lines (at least two lines, one for the original and one line for the translation). Under each term, there can be any number of additional definitions that start with at least one space character. Additional definitions for the first language will disclose one by one.
+
+Here is a sample of vocabulary file containing two term pairs. Please note the empty lines at the beginning and at the end.
+
+----
+
+  tetsik
+    ~vkik
+    tetszett, tetsszen, tetszene
+  plaire
+    à quelqu'un
+
+  majd
+  après, ensuite
+
+----
 
 To reference a new vocabulary file, edit `vocabulary.html` and add one `<dl>` entry. Then refresh the page in the Web browser.
 
 See existing files for examples.
+
+
+=== Using with other languages
+
+Szótárgép may be useful for learning other languages.
+
+As it reads UTF-8 vocabulary files, Szótárgép accomodates with most of character sets, but it doesn't support right-to-left writing.
 
 
 === Supported configurations
