@@ -1,4 +1,4 @@
-TIP: *Szótárgép* means "vocabulary machine" in Magyar (Hungarian). It is a standalone application for learning Magyar from French. You should pronounce it "soo-taarrr-gééép" with long vowels and "r" tapped like in Spanish.
+*Szótárgép* means "vocabulary machine" in Magyar (Hungarian). It is a standalone application for learning Magyar from French. You should pronounce it "soo-taarrr-gééép" with long vowels and "r" tapped like in Spanish.
 
 It's a small piece of HTML and JavaScript, essentially using JQuery. Vocabulary files are text files that anybody can edit.
 
@@ -26,25 +26,16 @@ An equivalence contains at least two terms, on two adjacent lines. Under each te
 To reference a new vocabulary file, edit `vocabulary.html` and add one `<dl>` entry. Then refresh the page in the Web browser.
 
 
-=== License
-
-Szótárgép HTML and JavaScript code are released under Gnu Public License version 3.
-
-Vocabulary files are released under Creative Commons license.
-
-Other libraries are subject to their original licenses:
-
-* JQuery comes with a dual license: MIT or GPL Version 2.
-* The keyboard shortcuts library is under BSD license, which probably requires a mention of its author, Binny V. A.
-
-
 === Supported configurations
 
 * Safari 5.1 on Mac OS X 10.6.8: works fine.
 * Firefox 6.0 on Mac OS X 10.6.8: works fine. Doesn't support printing more than one page.
 * Chrome 13 on Mac OS X 10.6.8: works fine with the special option described below.
 
-It's likely that any version of Internet Explorer won't work.
+Szótárgép uses very standard DHTML features so it's likely to run on Firefox with other operating systems.
+
+There will be no effort to make Szótárgép run on any version of Internet Explorer.
+
 
 ==== Running with Chrome
 
@@ -61,6 +52,18 @@ Windows:
 > chrome.exe --allow-file-access-from-files
 
 
+
+
+=== License
+
+Szótárgép HTML and JavaScript code are released under Gnu Public License version 3.
+
+Vocabulary files are released under Creative Commons license.
+
+Other libraries are subject to their original licenses:
+
+* JQuery comes with a dual license: MIT or GPL Version 2.
+* The keyboard shortcuts library is under BSD license, which probably requires a mention of its author, Binny V. A.
 
 
 
