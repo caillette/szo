@@ -102,6 +102,11 @@ function environmentSetup() {
       xhr.overrideMimeType( "text/html; charset=UTF-8" ) ;
     }
   } ) ;
+
+  shortcut.add( " ",function() {
+    if( ! LISTING_EQUIVALENCES ) disclose() ;
+  } ) ;
+
 }
 
 function initializeThemes() {
@@ -239,6 +244,10 @@ function justPrintEquivalences() {
 }
 
 function showSomeEquivalence() {
+
+  // We shouldn't get into that function if the following is true, except with a keyboard shortcut.
+  if( LISTING_EQUIVALENCES ) return ;
+
   if( EQUIVALENCES.length == 0 ) {
     clearBoard() ;
   } else {
@@ -353,6 +362,7 @@ function initializeToolbar() {
               + "type = 'button' "
               + "disabled = 'disabled' "
               + "name = 'disclose' "
+              + "id = 'disclose' "
               + "onClick ='disclose() ;' "
               + "class ='widget' "
           + ">Felfel</button>"
@@ -367,6 +377,8 @@ function initializeToolbar() {
         + "<label for='print-equivalences' >Lista</label>"
       )
   ;
+
+
 }
 
 function enableToolbarElements() {
