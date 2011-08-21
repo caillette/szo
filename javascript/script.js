@@ -19,7 +19,7 @@ var EQUIVALENCES = "EQUIVALENCES" ;
 // Definition: the indented lines relative to a Term.
 
 
-var characters = "'~,;!\\?\\-\\(\\)/\\\\\"\\wáéíóúÁÉÚÍÓÚőűŐŰöüÜÖœàâèêëïîôûçŒÀÂÈÊËÏÎÔÛÇ" ;
+var characters = "+’'~,;!…\\.\\?\\-\\(\\)/\\\\\"\\wáéíóúÁÉÚÍÓÚőűŐŰöüÜÖœàâèêëïîôûçŒÀÂÈÊËÏÎÔÛÇ" ;
 var textExp = "(?:[" + characters + "][ " + characters + "]*)" ;
 var termExp = textExp ;
 var definitionLineExp = "(?: +" + textExp + ")" ;
@@ -128,6 +128,10 @@ var completionCount = 0 ;
 
 
 // Loads a theme, with various side effects on the DOM for the checkboxes and on the THEMES array.
+// TODO: use iFrames, should work with Chrome and file:// as Chrome isn't angry after iFrames,
+// but it complains with a non-allowed cross-origin request if using XMLHttpRequest
+// (Access-Control-Allow-Origin).
+// http://stackoverflow.com/questions/205087/jquery-ready-in-a-dynamically-inserted-iframe/205221#205221
 function loadTheme( themeKey ) {
   showMessage( "Loading '" + themeKey + "'..." ) ;
   var theme = THEMES.byKey( themeKey ) ;
