@@ -2,8 +2,8 @@
 corps
 test
 
-parties du corps
-testrészek
+partie du corps
+testrész
 
 tête
 fej
