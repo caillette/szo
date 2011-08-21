@@ -257,7 +257,7 @@ function showSomeEquivalence() {
     do {
       var random = Math.floor( Math.random() * EQUIVALENCES.length ) ;
       var newEquivalence = EQUIVALENCES[ random ] ;
-    } while( newEquivalence == LAST_EQUIVALENCE ) ;
+    } while( newEquivalence == LAST_EQUIVALENCE && EQUIVALENCES.length > 1 ) ;
     LAST_EQUIVALENCE = newEquivalence ;
     showEquivalence( newEquivalence ) ;
   }
