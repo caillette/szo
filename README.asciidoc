@@ -1,6 +1,9 @@
-Szòtàrgép is a standalone application for learning Hungarian from French.
+== At a glance
+
+Szótárgép means "vocabulary machine" in Magyar (Hungarian). It is a standalone application for learning Magyar from French.
 
 It's a small piece of HTML and JavaScript, essentially using JQuery. Vocabulary files are text files that anybody can edit.
+
 
 == Supported configurations
 
@@ -14,14 +17,13 @@ It's likely that any version of Internet Explorer won't work.
 
 To say things simply, Chrome forbids access to the local filesystem by default. To circumvent this, launch Chrome like this:
 
-[source]
-----
 Mac OS X:
+[source]
 $ /Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --allow-file-access-from-files
 
 Windows:
+[source]
 > chrome.exe --allow-file-access-from-files
-----
 
 
 
