@@ -192,7 +192,7 @@ var EQUIVALENCES = [] ;
 var LAST_EQUIVALENCE = null ;
 
 // Inverts the natural order (the one in theme files).
-var INVERT_LANGUAGES = true ;
+var INVERT_LANGUAGES = false ;
 
 // We recalculate everything each time since it's just feeding an array.
 function onThemeChecked() {
@@ -221,6 +221,10 @@ var LISTING_EQUIVALENCES = false ;
 
 function togglePrintEquivalences() {
   LISTING_EQUIVALENCES = ! LISTING_EQUIVALENCES ;
+  quickRefresh() ;
+}
+
+function quickRefresh() {
   if( LISTING_EQUIVALENCES ) {
     justPrintEquivalences() ;
   } else {
@@ -313,6 +317,11 @@ function selectAllThemes( enabled ) {
   onThemeChecked() ;
 }
 
+function toggleInvertLanguages() {
+  INVERT_LANGUAGES = ! INVERT_LANGUAGES ;
+  quickRefresh() ;
+}
+
 
 function clearBoard() {
   $( "#board" ).html( "<p class='no-theme' >Nincs kiválasztás</p>" ) ;
@@ -382,6 +391,14 @@ function initializeToolbar() {
             + "class ='widget' "
         + ">"
         + "<label for='print-equivalences' >Lista</label>"
+      ).append(
+        "<input "
+            + "type = 'checkbox' "
+            + "id = 'invert-languages' "
+            + "onclick ='toggleInvertLanguages() ;' "
+            + "class ='widget' "
+        + ">"
+        + "<label for='invert-languages' >Nyelv megfordit</label>"
       )
   ;
 
