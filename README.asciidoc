@@ -1,11 +1,43 @@
-== At a glance
-
-Szótárgép means "vocabulary machine" in Magyar (Hungarian). It is a standalone application for learning Magyar from French.
+*Szótárgép* means "vocabulary machine" in Magyar (Hungarian). It is a standalone application for learning Magyar from French. You should pronounce it "soo-taarrr-gééép" with long vowels and "r" tapped like in Spanish.
 
 It's a small piece of HTML and JavaScript, essentially using JQuery. Vocabulary files are text files that anybody can edit.
 
 
-== Supported configurations
+=== Installation
+
+To install Szótárgép, download the latest version from https://github.com/caillette/szotargep (click on the "Download" button). Unzip it somewhere and double-click and open the `vocabulary.html` file.
+
+
+=== Usage
+
+Check the vocabulary files and click on "Disclose" ("Felfel") button to see the translation. Hitting the "Enter" key produces the same effect.
+
+A pair of termes is an _equivalence_. To see the list of all checked equivalences, check "List" ("Lista").
+
+
+=== Adding or editing vocabulary files
+
+Create some plain text file with a decent text editor like http://notepad-plus-plus.org[NotepadPlusPlus] and take care of chosing UTF-8 encoding.
+
+There must be a blank line at the start and at the end of the file.
+
+An equivalence contains at least two terms, on two adjacent lines. Under each term, there can be any number of additional definitions that start with at least one space character.
+
+To reference a new vocabulary file, edit `vocabulary.html` and add one `<dl>` entry. Then refresh the page in the Web browser.
+
+
+=== License
+
+Szótárgép HTML and JavaScript code are released under Gnu Public License version 3.
+
+Vocabulary files are released under Creative Commons license.
+
+Other libraries are subject to their original licenses:
+* JQuery comes with a dual license: MIT or GPL Version 2.
+* The keyboard shortcuts library is under BSD license, which probably requires a mention of its author, Binny V. A.
+
+
+=== Supported configurations
 
 * Safari 5.1 on Mac OS X 10.6.8: works fine.
 * Firefox 6.0 on Mac OS X 10.6.8: works fine. Doesn't support printing more than one page.
@@ -13,7 +45,7 @@ It's a small piece of HTML and JavaScript, essentially using JQuery. Vocabulary 
 
 It's likely that any version of Internet Explorer won't work.
 
-=== Running with Chrome
+==== Running with Chrome
 
 To say things simply, Chrome forbids access to the local filesystem by default. To circumvent this, launch Chrome like this:
 
