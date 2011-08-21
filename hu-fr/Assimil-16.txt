@@ -1,63 +1,63 @@
 
-milyen
 comment, comme !
+milyen
 
+chant
 ének
   -et, -e, -ek
-chant
 
+orchestre
 zenekar
   -t, -a, -ok
-orchestre
 
+excellent
 kitünő
   -t, -ek, -ebb
-excellent
 
+dommage, tort, préjudice
 kár
   -t, -a, -ok
-dommage, tort, préjudice
 
-senki
 personne (privatif)
+senki
 
+danser
 táncol
   -t, -jon, -na
-danser
 
+grand, élancé
 magas
   -at, -ak, -abb
-grand, élancé
 
+plaire
+  à quelqu'un
 tetsik
   ~vkik
   tetszett, tetsszen, tetszene
-plaire
-  à quelqu'un
 
+bas, petit
 alacsony
   -at, -ak, -abb
-bas, petit
 
+blond
 szőke
   szőket, szőkék, szőkebb
-blond
 
-rosszul
 mal
+rosszul
 
+mauvais
 rossz
   -at, -ak, -abb
-mauvais
 
+connaître, reconnaître
 megismer
   -t, -jen, -ne
-connaître, reconnaître
 
+se distraire
 szórakozik
   -kozott, -kozzon, -kozna
-se distraire
 
+nom
 név
   nevet, neve, nevek
-nom

@@ -1,92 +1,94 @@
-test
+
 corps
+test
 
-testrészek
 parties du corps
+testrészek
 
-fej
 tête
+fej
 
+cheveux
 haj
-cheveux 
 
-homlok
 front
+homlok
 
-szem
 œil
+szem
 
-szempilla
 cil
+szempilla
 
+sourcil
 szemöldök
-sourcil  
 
-fül
 oreille
+fül
 
-orr
 nez
+orr
 
-száj
 bouche
+száj
 
-fog
 dent
+fog
 
-nyelv
 langue
+nyelv
 
+cou
 nyak
-cou 
 
-váll
 épaule
+váll
 
-hát
 dos
+hát
 
-gerinc
 colonne vertébrale
+gerinc
 
-kar
 bras
+kar
 
-könyök
 coude
+könyök
 
-kéz
 mains
+kéz
 
-ujj
 doigt
+ujj
 
-mell
 seins
+mell
 
-mellkas
 poitrine
+mellkas
 
-has
 ventre
+has
 
-köldök
 nombril
+köldök
 
-láb
 jambe/pied
+láb
 
-comb
 cuisse
+comb
 
-térd
 genou
+térd
 
-lábfej
 pied
+lábfej
 
-sarok
 talon
+sarok
 
-köröm
 ongle
+köröm
+

@@ -1,102 +1,99 @@
 
+campagne
 vidék
   -et, -e, -ek
-campagne
 
+village
 falu
   -t, -ja, falvak
-village
 
+cher
 kedves
   -et, -ek, -ebb
-cher
 
+vieux
 öreg
   -et, -ek, -ebb
-vieux
 
-minden
 tout
+minden
 
+voisin
 szomszéd
   -ot, -ja, -ok
-voisin
 
+dame, tante
 néni
   -t, -je, -k
-dame, tante
 
+petit-fils, petite fille
 unoka
   unokát, unokája, unokák
-petit-fils, petite fille
 
+semaine
 hét
   hetet, hete, hetek
-semaine
 
-végén
 à la fin
+végén
 
+samedi
 szombat
   -ot, -ja, -ok
-samedi
 
+arriver
 megérkezik
   -kezett, -kezzen, -kezne
-arriver
 
+crier
 kiált
   -ott, -son, -ana
-crier
 
+répondre
 válaszol
   -t, -jon, -na
-répondre
 
+goûter, casser la croûte
 uzsonnázik
   -názott, -názzon, -názna
-goûter, casser la croûte
 
+demander
 kérdez
   -ett, -zen, -ne
-demander
 
+autre, l'autre
 másik
   -at
-autre, l'autre
 
+délicieux, fin
 finom
   -at, -ak, -abb
-délicieux, fin
 
+énorme, immense
 hatalmas
   -at, -ak, -abb
-énorme, immense
 
+rapide
 gyors
   -at, -ak, -abb
-rapide
 
+disparaître
 eltűnik
   -tűnt, -tűnjon, -tűnne
-disparaître
 
+avenir, prochain
 jövő
   -t, -je
-avenir, prochain
 
+venir
 eljön
   -jött, -jöjjön, -jönne
-venir
 
+jeune
 fiatal
   -t, -ok, -abb
-jeune
 
-egyik
 L'un (quelconque), l'un (des deux)
-
-
-
+egyik
 
 

@@ -1,34 +1,37 @@
-szerv
+
 organe
+szerv
 
-agy
 cerveau
+agy
 
-szív
 coeur
+szív
 
-gyomor
 estomac
+gyomor
 
-máj
 foie
+máj
 
-vese
 vessie
+vese
 
+intestin
 bél
   belek
-intestin
 
-izom
 muscle
+izom
 
+nerf
 ideg
   idegek
-nerf
 
+tendon
 izület
-tendon 
 
-vér
 sang
+vér
+
+

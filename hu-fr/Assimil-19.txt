@@ -1,145 +1,143 @@
 
+déménager
 költözik
   költözött, költözzön, költözne
-déménager
 
+nouveau
 új
   -at, -ak, -abb
-nouveau
 
+place, endroit
 hely
   -et, -e, -ek
-place, endroit
 
+désordre
 rendetlenség
   -et, -e
-désordre
 
+parent (père ou mère)
 szülő
   -t, -je, -k
-parent (père ou mère)
 
+monter quelque chose
 felhoz
   -ott, -zon, -na
-monter quelque chose
 
+porter (à l'intérieur)
 bevisz
   -vit, -viggen, -vinne
-porter (à l'intérieur)
 
+poser
 letesz
   -tett, -teggen, -tenne
-poser
 
-alá
 sous ("vers")
+alá
 
+piano
 zongora
   zongorát, zongorája, zongorák
-piano
 
+sortir quelque chose
 kihoz
   -ott, -zon, -na
-sortir quelque chose
 
+salle de bains
 fürdőszoba
   -szobát, -szobája, -szobák
-salle de bains
 
+poële
 kályha
   kályhát, kalyhája, kályhák
-poële
 
-möge
 derrière ("vers derrière")
+möge
 
+tableau
 kép
   -et, -e, -ek
-tableau
 
+mur
 fal
   -at, -a, -ak
-mur
 
+sortir quelque chose
 kivisz
   kivitt, kivigyen, kivinne
-sortir quelque chose
 
+entrée
 elöszoba
   -szobatt, -szobája, -szobák
-entrée
 
+porte
 ajtó
   -t, -ajtaja, -k
-porte
 
-mellé
 à côté ("vers à côté")
+mellé
 
+photographie
 fénykép
   -et, -e, -ek
-photographie
 
-fölé
 au-dessus ("vers au-dessus")
+fölé
 
-
+faire, mettre
 tesz
   tett, tegyen, tenne
-faire, mettre
 
+dire
 mond
   -ott -jon, -ana
-dire
 
-
+tapis
 szönyeg
  -et, -e, -ek
-tapis
 
+chambre à coucher
 hálószoba
   -szobát, -szobája, szobák
-chambre à coucher
 
-alól
 sous (non-relatif)
+alól
 
+mettre, introduire
 betesz
   -tett, -tegyen, -tenne
-mettre, introduire
 
+armoire
 szekrény
   -t, -e, -ek
-armoire
 
+jouet, jeu
 játék
   -ot, -a, -ok
-jouet, jeu
 
-közé
 entre ("vers entre")
+közé
 
+bureau
 iróasztal
   -t, -a, -ok
-bureau
 
+glace, miroir
 tükör
   tükröt, tükre, tükrök
-glace, miroir
 
+fauteuil
 fotel
   -t, -e, -ek
-fauteuil
 
+cave
 pince
   pincét, pincéje, pincék
-cave
 
+mère
 anya
   anyát, anyja, anyák
-mère
 
+chaise
 szék
   -et, -e, -ek
-chaise
 

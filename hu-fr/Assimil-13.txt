@@ -1,65 +1,65 @@
 
+faire, cuisiner
 csinál
   -t, -jon, -na
-faire, cuisiner
 
+se lever
 felkel
   -t, -jen, -ne
-se lever
 
+s'habiller
 felöltözik
   -öltözött, -öltözzön, -öltözne
-s'habiller
 
+petit-déjeuner (v)
 reggeli
   -t, -je, -k
-petit-déjeuner (v)
 
-aztán
 puis, ensuite, ultérieurement, plus tard
+aztán
 
+usine
 gyár
   -at, -a, -ak
-usine
 
+machine
 gép
   -et, -e, -ek
-machine
 
+sud, midi
 dél
   -t, -jen, -ne
-sud, midi
 
-majd
 après, ensuite
+majd
 
-már
 déjà
+már
 
+télévision
 tévé
   -t, -je, -k
-télévision
 
+regarder, considérer
 néz
   -ett, -zen, -ne
-regarder, considérer
 
+se deshabiller
 levetkőzik
   -vetkőzőtt, -vetkőzzőn, -vetkőzne
-se deshabiller
 
+se coucher
 lefekszik
   -fekűdt, -fekűdjon, -fekűdne
-se coucher
 
+dormir
 alszik
   aludt, aludjon, aludna
-dormir
 
+nuit
 éjjel
   -t, -, -ek
-nuit
 
+affaire privée
 magáműgy
   -et, -e, -ek
-affaire privée

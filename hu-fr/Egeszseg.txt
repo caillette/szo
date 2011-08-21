@@ -1,94 +1,94 @@
 
-egészség
 santé
+egészség
 
-egészséges
 en bonne santé
+egészséges
 
-beteg
 malade
+beteg
 
-sérült
 blessé
+sérült
 
-gipsz
 platre
+gipsz
 
-seb
 blessure
+seb
 
-sebhely
 cicatrice
+sebhely
 
-betegség
 maladie (1)
+betegség
 
-kór
 maladie (2)
+kór
 
-baleset
 accident
+baleset
 
-influenza
 grippe
+influenza
 
-megfázás
 rhume
+megfázás
 
-hasmenés
 diarrhée
+hasmenés
 
-láz
 fièvre (2)
+láz
 
-hőemelkedés
 fièvre (1)
+hőemelkedés
 
-lázmérő
 thermomètre
+lázmérő
 
-gyógyszer
 médicament
+gyógyszer
 
-fájdalomcsillapító
 antidouleur
+fájdalomcsillapító
 
+pharmacie
 gyógyszertár
-pharmacie 
 
-rendelő
 centre médical
+rendelő
 
-orvos
 médecin
+orvos
 
-nővér
 infirmière, sœur (2)
+nővér
 
-ápoló
 infirmier
+ápoló
 
-nő
 infirmière, sœur (1)
+nő
 
-jobbulást !
 bon rétablissement !
+jobbulást !
 
-gyógyul
 se guérir (1)
+gyógyul
 
-meggyógyul
 se guérir (2)
+meggyógyul
 
-köhög
 tousser
+köhög
 
+éternuer
 tüsszög
-éternuer 
 
-folyik az orr
 le nez coule
+folyik az orr
 
-torok
 gorge
+torok
 
