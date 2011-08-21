@@ -7,7 +7,7 @@ Szótárgép is a small piece of HTML and JavaScript, essentially using JQuery. 
 
 === Installation
 
-To install Szótárgép, download the latest version from https://github.com/caillette/szotargep (click on the "Download" button). Unzip it somewhere and open the `vocabulary.html` file in a Web browser.
+To install Szótárgép, download the latest version from https://github.com/caillette/szotargep (click on the "Download" button). Unzip it somewhere and open the `szotargep.html` file in a Web browser.
 
 
 === Usage
@@ -40,7 +40,7 @@ Here is a sample of vocabulary file containing two term pairs. Don't forget the 
 
 ----
 
-To reference a new vocabulary file, edit `vocabulary.html` and add one `<dl>` entry. Then refresh the page in the Web browser.
+To reference a new vocabulary file, edit `szotargep.html` and add one `<dl>` entry. Then refresh the page in the Web browser.
 
 See existing files for examples.
 
