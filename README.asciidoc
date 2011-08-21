@@ -5,7 +5,7 @@ It's a small piece of HTML and JavaScript, essentially using JQuery. Vocabulary 
 
 === Installation
 
-To install Szótárgép, download the latest version from https://github.com/caillette/szotargep (click on the "Download" button). Unzip it somewhere and double-click and open the `vocabulary.html` file.
+To install Szótárgép, download the latest version from https://github.com/caillette/szotargep (click on the "Download" button). Unzip it somewhere and open the `vocabulary.html` file in a Web browser.
 
 
 === Usage
@@ -21,9 +21,11 @@ Create some plain text file with a decent text editor like http://notepad-plus-p
 
 There must be a blank line at the start and at the end of the file.
 
-An equivalence contains at least two terms, on two adjacent lines. Under each term, there can be any number of additional definitions that start with at least one space character.
+An equivalence contains at least two terms, on two adjacent lines. Under each term, there can be any number of additional definitions that start with at least one space character. Additional definitions for the first language will disclose one by one.
 
 To reference a new vocabulary file, edit `vocabulary.html` and add one `<dl>` entry. Then refresh the page in the Web browser.
+
+See existing files for examples.
 
 
 === Supported configurations
@@ -43,12 +45,12 @@ To say things simply, Chrome forbids access to the local filesystem by default. 
 
 Mac OS X:
 
-[source]
+[source,text]
 $ /Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --allow-file-access-from-files
 
 Windows:
 
-[source]
+[source,text]
 > chrome.exe --allow-file-access-from-files
 
 
