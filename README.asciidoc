@@ -44,23 +44,18 @@ There will be no effort to make Szótárgép run on any version of Internet Expl
 To say things simply, Chrome forbids access to the local filesystem by default. To circumvent this, launch Chrome like this:
 
 Mac OS X:
-
-[source,text]
-$ /Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --allow-file-access-from-files
+  $ /Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --allow-file-access-from-files
 
 Windows:
-
-[source,text]
-> chrome.exe --allow-file-access-from-files
-
+  > chrome.exe --allow-file-access-from-files
 
 
 
 === License
 
-Szótárgép HTML and JavaScript code are released under Gnu Public License version 3.
+Szótárgép HTML and JavaScript code are released under GNU Public License version 3. 
 
-Vocabulary files are released under Creative Commons license.
+Vocabulary files are released under Creative Commons Attribution-ShareAlike 3.0 license. "This license lets others remix, tweak, and build upon your work even for commercial purposes, as long as they credit you and license their new creations under the identical terms."
 
 Other libraries are subject to their original licenses:
 
