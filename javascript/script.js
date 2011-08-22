@@ -246,7 +246,7 @@ function justPrintEquivalences() {
       html = printEquivalence( html, equivalence, false ) ;
       html += "</tbody></table>" ;
 
-      // Help the Web browser to keep tables together.
+      // Supposed to help the Web browser to keep tables together.
       html += "<p class='void' ></p>\n" ;
     }
     $( "#board" ).html( html ) ;

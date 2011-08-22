@@ -1,4 +1,4 @@
-@import url( 'screen.css' ) ;
+@import url( 'general.css' ) ;
 
 body * {
   font-size : 12pt ;
@@ -9,16 +9,54 @@ body * {
   display : none ;
 }
 
+.void {
+  height : 6pt ; /* Defines space between two tables. */
+}
+
+/********
+  Board
+*********/
+
+
+#board {
+  display : block ;
+}
+
+#board > table.equivalence-list {
+  /* Inherit. */
+}
+
+
 #board > table {
+
+  display : block ;
 
   /* Bad news: only Opera seems to support it.
       http://www.westciv.com/style_master/academy/browser_support/printing.html
   */
   page-break-inside : avoid ;
 
+  border-bottom : 1pt solid #efefef ;
+  margin-bottom : 0 ;
 }
 
-.void {
-  margin-top : -4pt ;
-  border-bottom : 0.1pt solid #efefef ;
+#board > table tr {
+  /* Inherit. */
 }
+
+#board > table tr:first-child {
+  /* Inherit. */
+}
+
+#board > table td {
+  padding : 2pt 6pt 2pt 6pt ;
+}
+
+#board > table td:first-child {
+  /* Inherit. */
+}
+
+#board > table tr:last-child > td {
+  padding-bottom : 6pt ; /* Defines space between last table row and bottom border. */
+}
+

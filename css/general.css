@@ -18,4 +18,54 @@
 
 .void {
   font-size : 1pt ;
+  line-height : 0.001 ;
 }
+
+
+
+
+/********
+  Board
+*********/
+
+#board {
+  vertical-align : top ;
+  width : 40em ;
+  margin-left : 1em ;
+  margin-right : 1em ;
+}
+
+#board > table.equivalence-list {
+  font-size : 60% ;
+}
+
+#board > table {
+  width : 100% ;
+  text-align : center ;
+ }
+
+#board > table tr {
+  font-size : 170% ;
+  font-style : italic ;
+}
+
+#board > table tr:first-child {
+  font-size : 200% ;
+  font-style : normal ;
+}
+
+#board > table td {
+  text-align : left ;
+  font-weight : bold ;
+  width : 50% ;
+}
+
+#board > table td:first-child {
+  text-align : right ;
+  font-weight : normal ;
+}
+
+
+
+
+
