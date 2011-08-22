@@ -103,10 +103,13 @@ function environmentSetup() {
     }
   } ) ;
 
+
+}
+
+function initializeShortcuts() {
   shortcut.add( "return",function() {
     if( ! LISTING_EQUIVALENCES ) disclose() ;
   } ) ;
-
 }
 
 function initializeThemes() {
