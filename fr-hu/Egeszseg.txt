@@ -92,3 +92,5 @@ folyik az orr
 gorge
 torok
 
+examen
+vizsgálat

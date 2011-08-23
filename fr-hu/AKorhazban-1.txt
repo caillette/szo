@@ -57,7 +57,7 @@ szobatárs
 il vaudrait mieux
 jobb volna… ha
 
-d'après, conformément, selon
+d'après, selon (postposition)
   d'après ceci
   dire la vérité
   d'après moi
@@ -65,3 +65,4 @@ szerint
   ezek ~
   igazság ~
   ~m
+
