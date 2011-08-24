@@ -5,8 +5,10 @@ rak
 printemps
 tavasz
 
-pendant quelque temps
-egy darabig
+morceau, pièce
+  pendant quelque temps
+darab
+  egy ~
 
 professer, avouer
 megvall
