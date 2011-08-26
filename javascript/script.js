@@ -37,7 +37,6 @@ function parseEquivalences( themeKey, text ) {
   ) ;
 
   var array = [] ;
-  array.push( { TITLE : parseTitle( text, themeKey ) } ) ;
 
   while( true ) {
     var match = equivalenceExp.exec( text ) ;
@@ -134,7 +133,19 @@ function initializeThemes() {
   showMessage( "Loading themes..." ) ;
   for( index in THEMES.keys() ) {
     var theme = THEMES[ index ] ;
-    loadTheme( theme.key ) ;
+    loadTheme( theme.key, function() {
+      // All themes loaded, let's do something with them.
+      THEMES.sort( function( first, second ) {
+        if( first.status == UNAVAILABLE ) return 1 ;
+        if( second.status == UNAVAILABLE ) return -1 ;
+        return first.title.localeCompare( second.title ) ;
+      } ) ;
+      for( index in THEMES.keys() ) {
+        var theme = THEMES[ index ] ;
+        populateThemeList( theme ) ;
+      }
+      selectAllThemes( true ) ;
+    } ) ;
   }
 }
 
@@ -143,11 +154,10 @@ var completionCount = 0 ;
 
 
 // Loads a theme, with various side effects on the DOM for the checkboxes and on the THEMES array.
-// TODO: use iFrames, should work with Chrome and file:// as Chrome isn't angry after iFrames,
-// but it complains with a non-allowed cross-origin request if using XMLHttpRequest
-// (Access-Control-Allow-Origin).
+// Doesn't work with Chrome , which complains with a non-allowed cross-origin request if using
+// XMLHttpRequest (Access-Control-Allow-Origin) or iframes.
 // http://stackoverflow.com/questions/205087/jquery-ready-in-a-dynamically-inserted-iframe/205221#205221
-function loadTheme( themeKey ) {
+function loadTheme( themeKey, onCompletion ) {
   showMessage( "Loading '" + themeKey + "'..." ) ;
   var theme = THEMES.byKey( themeKey ) ;
   var keyCount = THEMES.keys().length ;
@@ -158,42 +168,50 @@ function loadTheme( themeKey ) {
 
     theme.equivalences = equivalences ;
     theme.status = UNCHECKED ;
-    var id = "checkbox-" + themeKey ;
-    $( "#theme-choice" ).append(
-        "<p>"
-        + "<input "
-            + "type = 'checkbox' "
-            + "name = '" + themeKey + "' "
-            + "id = '" + id + "' "
-            + "onclick ='onThemeChecked() ;' "
-        + ">"
-        + "<label for='" + id + "' >" + equivalences[ 0 ].TITLE + "</label>"
-    ) ;
+    theme.key = themeKey ;
+    theme.title = parseTitle( payload, themeKey ) ;
 
     showMessage( "Loaded " + equivalences.length + " equivalences for " + themeKey + "." ) ;
 
   } ).error( function() {
     theme.status = UNAVAILABLE ;
-    $( "#theme-choice" ).append(
-        "<p>"
-        + "<input "
-            + "type ='checkbox' "
-            + "name ='theme-" + themeKey + "' "
-            + "disabled ='disabled' "
-        + ">"
-        + "<span style = 'text-decoration : line-through ;' >" + themeKey + "</span>"
-    ) ;
     showMessage( "Unavailable: '" + themeKey + "'." ) ;
   } ).complete( function() {
     completionCount ++ ;
     if( completionCount == keyCount ) {
       showMessage( "Loaded " + completionCount + " theme(s)." ) ;
-      selectAllThemes( true ) ;
+      onCompletion() ;
     }
   } ) ;
 
 }
 
+function populateThemeList( theme ) {
+
+  if( theme.status == UNCHECKED ) {
+    var id = "checkbox-" + theme.key ;
+    $( "#theme-choice" ).append(
+        "<p>"
+        + "<input "
+            + "type = 'checkbox' "
+            + "name = '" + theme.key + "' "
+            + "id = '" + id + "' "
+            + "onclick ='onThemeChecked() ;' "
+        + ">"
+        + "<label for='" + id + "' >" + theme.title + "</label>"
+    ) ;
+  } else {
+    $( "#theme-choice" ).append(
+        "<p>"
+        + "<input "
+            + "type ='checkbox' "
+            + "name ='theme-" + theme.key + "' "
+            + "disabled ='disabled' "
+        + ">"
+        + "<span style = 'text-decoration : line-through ;' >" + theme.key + "</span>"
+    ) ;
+  }
+}
 
 
 // ===============================
