@@ -34,6 +34,15 @@ $( document ).ready( function() {
     ) ;
   } ) ;
 
+  test( "Simple entry parsing with title", function() {
+    deepEqual(
+        parseEquivalences( "key", "title: atitle\n\nterm1\nterm2\n" ),
+        [
+            { THEME_KEY : "key", LANGUAGE_1 : [ "term1" ], LANGUAGE_2 : [ "term2" ] }
+        ]
+    ) ;
+  } ) ;
+
   test( "Parsing several Equivalences", function() {
     deepEqual(
         parseEquivalences( "key", "\nterm1\nterm2\n\nterm3\nterm4\n" ),

@@ -235,11 +235,7 @@ function onThemeChecked() {
     var checkboxName = $( this ).attr( "name" ) ;
     var theme = THEMES.byKey( checkboxName ) ;
     for( equivalenceIndex in theme.equivalences ) {
-      if( equivalenceIndex > 0 ) {
-        // Skipping first element which is theme metadata.
-        var equivalence = theme.equivalences[ equivalenceIndex ] ;
-        EQUIVALENCES.push( equivalence ) ;
-      }
+      EQUIVALENCES.push( theme.equivalences[ equivalenceIndex ] ) ;
     }
   } ) ;
   showMessage( "Selected " + EQUIVALENCES.length + " equivalence(s)." ) ;
