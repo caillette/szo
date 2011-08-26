@@ -18,8 +18,9 @@ var EQUIVALENCES = "EQUIVALENCES" ;
 // Term: what's in a non-indented line.
 // Definition: the indented lines relative to a Term.
 
-
-var characters = "+’'~,;!…\\*\\.\\?\\-\\(\\)\\[\\]/\\\\\"\\wáéíóúÁÉÚÍÓÚőűŐŰöüÜÖœàâèêëïîôûçŒÀÂÈÊËÏÎÔÛÇ" ;
+var letters = "\\wáéíóúÁÉÚÍÓÚőűŐŰöüÜÖœàâèêëïîôûçŒÀÂÈÊËÏÎÔÛÇ" ;
+var characters = "+’'~,;!…\\*\\.\\?\\-\\(\\)\\[\\]/\\\\\"" + letters ;
+var charactersMeta = characters ;
 var textExp = "(?:[" + characters + "][ " + characters + "]*)" ;
 var termExp = textExp ;
 var definitionLineExp = "(?: +" + textExp + ")" ;
@@ -28,7 +29,6 @@ var definitionLineCapturingExp = "(?: +(" + textExp + "))" ;
 
 function parseEquivalences( themeKey, text ) {
   // http://regexpal.com
-  // http://regexpal.com/?flags=m&regex=%5Cn(%5B0-9a-zA-Z%5D%5B%200-9a-zA-Z%5D*)%5Cn(%3F%3A(%3F%3A%20%2B%5B0-9a-zA-Z%5D%5B%200-9a-zA-Z%5D*)%5Cn)*(%5B0-9a-zA-Z%5D%5B%200-9a-zA-Z%5D*)%5Cn(%3F%3A(%3F%3A%20%2B%5B0-9a-zA-Z%5D%5B%200-9a-zA-Z%5D*)%5Cn)*&input=%0AFo%0AB%20ar%0A%0AWhat%0A%20ever%0A%0AFoo%0ABar%0A%20Foo%0ABar%0A%0AFoo%0A%20Bar%0AFoo%0A%20Bar%0A%0AFoo%0A%20%20Bar%0A%20%20Bar%0AFoo%20%0A%20%20Bar%0A%0AFoo%0A%20%20Bar%0AFoo%0A%20%20%0A%0A
   var equivalenceExp = new RegExp(
         "\n"
       + "(" + termExp + ")\n((?:" + definitionLineExp + "\n)*)"
@@ -37,6 +37,8 @@ function parseEquivalences( themeKey, text ) {
   ) ;
 
   var array = [] ;
+  array.push( { TITLE : parseTitle( text, themeKey ) } ) ;
+
   while( true ) {
     var match = equivalenceExp.exec( text ) ;
     if( ! match ) break ;
@@ -58,7 +60,17 @@ function splitDefinitionLines( term, definitionLines ) {
     array.push( match[ 1 ] ) ;
   }
   return array ;
+}
 
+function parseTitle( text, defaultTitle ) {
+  var title = parseMeta( "title", text ) ;
+  return  title == null ? defaultTitle : title ;
+}
+
+function parseMeta( key, text ) {
+  var lineExp = new RegExp( key + "\\s*\\:\\s*([" + charactersMeta + " ]+)\n" ) ;
+  var match = lineExp.exec( text ) ;
+  return match ? match[ 1 ] : null ;
 }
 
 // ==========
@@ -155,7 +167,7 @@ function loadTheme( themeKey ) {
             + "id = '" + id + "' "
             + "onclick ='onThemeChecked() ;' "
         + ">"
-        + "<label for='" + id + "' >" + themeKey + "</label>"
+        + "<label for='" + id + "' >" + equivalences[ 0 ].TITLE + "</label>"
     ) ;
 
     showMessage( "Loaded " + equivalences.length + " equivalences for " + themeKey + "." ) ;
@@ -205,8 +217,11 @@ function onThemeChecked() {
     var checkboxName = $( this ).attr( "name" ) ;
     var theme = THEMES.byKey( checkboxName ) ;
     for( equivalenceIndex in theme.equivalences ) {
-      var equivalence = theme.equivalences[ equivalenceIndex ] ;
-      EQUIVALENCES.push( equivalence ) ;
+      if( equivalenceIndex > 0 ) {
+        // Skipping first element which is theme metadata.
+        var equivalence = theme.equivalences[ equivalenceIndex ] ;
+        EQUIVALENCES.push( equivalence ) ;
+      }
     }
   } ) ;
   showMessage( "Selected " + EQUIVALENCES.length + " equivalence(s)." ) ;

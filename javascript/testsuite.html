@@ -4,7 +4,7 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" >
   <script src="jquery-min-1.6.2.js" type="text/javascript"></script>
-  <script type="text/javascript" src="javascript/keyboard-shortcut-2.01.B.js" ></script>
+  <script type="text/javascript" src="keyboard-shortcut-2.01.B.js" ></script>
   <link rel="stylesheet" href="../css/qunit-git.css" type="text/css" media="screen"/>
   <script type="text/javascript" src="qunit-git.js"></script>
   <script type="text/javascript" src="script.js"></script>
@@ -28,7 +28,10 @@ $( document ).ready( function() {
   test( "Simple entry parsing", function() {
     deepEqual(
         parseEquivalences( "key", "\nterm1\nterm2\n" ),
-        [ { THEME_KEY : "key", LANGUAGE_1 : [ "term1" ], LANGUAGE_2 : [ "term2" ] } ]
+        [
+            { TITLE : "key" },
+            { THEME_KEY : "key", LANGUAGE_1 : [ "term1" ], LANGUAGE_2 : [ "term2" ] }
+        ]
     ) ;
   } ) ;
 
@@ -36,6 +39,7 @@ $( document ).ready( function() {
     deepEqual(
         parseEquivalences( "key", "\nterm1\nterm2\n\nterm3\nterm4\n" ),
         [
+            { TITLE : "key" },
             { THEME_KEY : "key", LANGUAGE_1 : [ "term1" ], LANGUAGE_2 : [ "term2" ] },
             { THEME_KEY : "key", LANGUAGE_1 : [ "term3" ], LANGUAGE_2 : [ "term4" ] }
         ]
@@ -45,11 +49,28 @@ $( document ).ready( function() {
   test( "Entry parsing, multiterm definition", function() {
     deepEqual(
         parseEquivalences( "key", "\nterm1\n definition1-1\n 1-2\nterm2\n definition2\n" ),
-        [ {
-            THEME_KEY : "key",
-            LANGUAGE_1 : [ "term1", "definition1-1", "1-2" ],
-            LANGUAGE_2 : [ "term2", "definition2" ]
-        } ]
+        [
+            { TITLE : "key" },
+            {
+                THEME_KEY : "key",
+                LANGUAGE_1 : [ "term1", "definition1-1", "1-2" ],
+                LANGUAGE_2 : [ "term2", "definition2" ]
+            }
+        ]
+    ) ;
+  } ) ;
+
+  test( "Parsing correct title", function() {
+    equal(
+        parseTitle( "title: A Kórházban\n", "xxx" ),
+        "A Kórházban"
+    ) ;
+  } ) ;
+
+  test( "Parsing missing title", function() {
+    equal(
+        parseTitle( "", "xxx" ),
+        "xxx"
     ) ;
   } ) ;
 
