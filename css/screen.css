@@ -84,6 +84,7 @@ body {
 #board > table td {
   padding : 0.2em 1em 0.2em 1em ;
   margin : 0.2em 1em 0.2em 1em ;
+  border-bottom : solid 2px #dddddd ;
 }
 
 #board > table td:first-child {
@@ -93,7 +94,6 @@ body {
 
 td.undisclosed {
   background : #cccccc ;
-  border-bottom : solid 2px #dddddd ;
   /* visibility : collapse ; Bad: causes the cell itself to not appear. */
 }
 
