@@ -1,0 +1,69 @@
+title: Időjárás
+
+temps (météo)
+időjárás
+
+printemps
+  au printemps
+tavasz
+  tavassal
+
+été (saison)
+nyár
+
+automne
+  en automne
+ősz
+  őssel
+
+hiver
+tél
+
+nuage
+felhõ
+
+pluie
+  pleuvoir
+eső
+  esik az ~
+
+orage
+vihar
+
+neige
+  neiger
+hó
+  esik a ~
+
+vent
+  il y a du vent (souffle le ~)
+szél
+  fúj a ~
+
+brouillard
+köd
+
+geler
+fagy
+
+avoir froid
+  (une seule conjugaison)
+fázik
+
+froid
+  il fait froid
+hideg
+  ~ van
+
+chaud
+  il fait chaud
+meleg
+  ~ van
+
+étoile
+csillag
+
+lune
+hold
+
+

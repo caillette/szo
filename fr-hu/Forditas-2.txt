@@ -53,13 +53,8 @@ kedd
 qui tombe (adj)
 eső
 
-pluie
-eső
-
 tomber, faire une chute
-  pleuvoir
 esik
-  esik az esõ
 
 maman
 anyu
@@ -76,9 +71,6 @@ kedves
 aimer, apprécier, prendre soin de
 kedvel
   ~ vkit, ~vmit
-
-geler
-fagy
 
 en plus (adv)
   une fois de plus
