@@ -87,6 +87,15 @@ body {
   border-bottom : solid 2px #dddddd ;
 }
 
+#board > table.equivalence-list > tbody > tr {
+  border : none ;
+}
+
+#board > table.equivalence-list > tbody > tr > td {
+  border : none ;
+}
+
+
 #board > table td:first-child {
   /* Inherit. */
 }
@@ -94,6 +103,7 @@ body {
 
 td.undisclosed {
   background : #cccccc ;
+  border-bottom : solid 2px #dddddd ;
   /* visibility : collapse ; Bad: causes the cell itself to not appear. */
 }
 
