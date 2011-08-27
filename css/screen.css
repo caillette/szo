@@ -40,12 +40,18 @@ body {
   margin : 0.3em ;
 }
 
+#theme-key code {
+  font-family : Courier New, Courier New, monospace ;
+}
+
 #theme-key {
   position : fixed ;
   bottom : 2px ;
   right : 2px ;
   padding-right : 1em ;
   background : #dddddd ;
+  text-align : right ;
+  line-height : 1.4 ;
 }
 
 

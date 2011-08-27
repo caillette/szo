@@ -267,7 +267,7 @@ function quickRefresh() {
 }
 
 function justPrintEquivalences() {
-  $( "#theme-key" ).html( "" ) ;
+  showTheme() ;
   $( "#board" ).html( "" ) ;
   if( EQUIVALENCES.length == 0 ) {
     clearBoard() ;
@@ -276,9 +276,9 @@ function justPrintEquivalences() {
     // Inlining seems to share the same function with always the same themeKey.
     function addMouseHandlers( table, themeKey ) {
       $( table ).mouseenter( function() {
-        $( "#theme-key" ).html( "<p>" + themeKey + "</p>" ) ;
+        showTheme( themeKey ) ;
       } ) .mouseleave( function() {
-        $( "#theme-key" ).html( "<p></p>" ) ;
+        showTheme() ;
       } ) ;
     }
 
@@ -353,7 +353,21 @@ function showEquivalence( equivalence ) {
 
   html += "</tbody></table>\n" ;
   $( "#board" ).html( html ) ;
-  $( "#theme-key" ).html( "<p>" + equivalence.THEME_KEY + "</p>" ) ;
+  showTheme( equivalence.THEME_KEY ) ;
+}
+
+function showTheme( themeKey ) {
+  if( themeKey == undefined ) {
+    $( "#theme-key" ).html( "<p></p>" ) ;
+
+  } else {
+    var equivalence = THEMES.byKey( themeKey ) ;
+    $( "#theme-key" ).html( "<p>"
+        + ( equivalence.key == equivalence.title ? "" : "<b>" + equivalence.title + "</b><br>")
+        + "<code>" + equivalence.key + "</code>"
+        + "</p>"
+    ) ;
+  }
 }
 
 function selectAllThemes( enabled ) {
@@ -370,7 +384,7 @@ function toggleInvertLanguages() {
 
 function clearBoard() {
   $( "#board" ).html( "<p class='no-theme' >Nincs kiválasztás</p>" ) ;
-  $( "#theme-key" ).html( "<p></p>" ) ;
+  showTheme() ;
   LAST_EQUIVALENCE = null ;
 }
 
