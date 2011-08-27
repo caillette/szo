@@ -43,14 +43,14 @@ et même
 sőt
   Természetesen megnéztem a kiállîtást, sőt egy képet is vettem.
 
-non seulement … mais … aussi
+non seulement …, mais … aussi
   Non seulement la soupe était froide, mais la viande aussi.
 nemcsak …, hanem … is
   Nemcsak a leves volt hideg, hanem a hús is.
 
 d'une part …, d'autre part …  (lit)
   Je n'aime pas vivre ici. D'une part l'air est pollué, d'autre part c'est très bruyant.
-égyrészt …, masrészt
+égyrészt …, másrészt
   Nem szeretek itt látni. Egyrészt rossz a levegő, másrészt nagyon zajos.
 
 
@@ -74,10 +74,10 @@ malgré, même si
   Időben vagyok, pedig nagy volt a forgalom.
 
 en revanche (lit)
+  Il n'y avait pas de pain, en revanche j'ai acheté une bouteille de vin.
 viszont
-
-  ??? Je n'ai pas eu de pain, en revanche je jette une bouteille de vin ???
   Kenyeret nem kaptam, viszont vettem egy üveg bort.
+
 
 et pourtant (fin positive)
   Je n'avais pas mon billet, et pourtant j'ai pu entrer dans le stade.
@@ -85,16 +85,73 @@ mégis
   Nem volt jegyem, mégis bejuttotam a stadionba.
 
 et pourtant (fin négative)
-  J'avais mon billet, et pourtant je n'ai pas pu entrer dans le stade ???
+  J'avais mon billet, et pourtant je n'ai pas pu entrer dans le stade.
 mégsem
   Volt jegyem, mégsem juttotam be a stadionba.
 
 [proposition négative] mais …
 nem … hanem
-
-ennek ellenére
-
+  A gyerekek nem a nagyszüleiknél vannak, hanem külföldön nyaralnak.
+  
 bien que (lit)
+  Bien que j'aie eu mon billet, je n'ai pas pu rentrer dans le stade.
 bár
+  Bár volt jegyem, nem jutottam be a stadionba.
+
+… ou …
+vagy
+  Megjavítom az autómat, vagy veszek egy újat.
+
+ou …, ou …
+vagy … , vagy
+  Vagy megveszem ezt a könyvet, vagy kiveszem a könyvtárból.
+
+soit …, soit …
+akár … , akár
+  Akár metrón megy, akár taxiba száll, fél órán belül ott van.
 
 
+
+c'est pourquoi, par conséquent, pour cela, à cause de cela
+ezért
+  Ma nincs gáz a házban, ezért étteremben vacsorázunk.
+
+ainsi
+így
+  Tegnap későn feküdtem le, így ma álmos vagyok.
+
+ainsi, donc
+tehát
+  Imre megbetegedett, tehát nem jöhet velünk.
+
+en effet, c'est que
+ugyanis
+  Ma nem megyek dolgozni, ugyanis vasárnap van.
+
+
+
+
+puisque
+   John connaît encore très insuffisamment le hongrois, puisqu'il ne l'apprend que depuis deux semaines.
+hiszen
+  John még csak nagyon keveset ért magyarul, hiszen csak két hete tanul.
+
+de toute façon, sans cela, aussi bien (issue positive)
+  Demain j'achèterai ce livre, et de toute façon j'irai en centre-ville.
+úgyis
+  Holnap majd megveszem ezt a könyvet, úgyis bemegyek a Belvárosba.
+
+puisque (cause négative)
+  Je n'achète pas ce médicament, puisque je ne l'utilise pas.
+úgysem
+  Nem veszem be a gyógyszert, úgysem használ.
+
+c'est-à-dire, autrement dit
+  Les fillettes se comprennent bien l'une l'autre, autrement dit elles ne se disputent pas.
+vagyis
+  A lányok jól megértik egymást, vagyis nem veszekednek.
+
+c’est-à-dire
+  Beaucoup de gens regardent les matchs de football, c'est à dire qu'eux-mêmes y jouent.
+illetve
+  Sokan nézik a futballmeccseket, illetve futballoznak maguk is.
