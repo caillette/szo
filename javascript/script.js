@@ -363,7 +363,7 @@ function showTheme( themeKey ) {
   } else {
     var equivalence = THEMES.byKey( themeKey ) ;
     $( "#theme-key" ).html( "<p>"
-        + ( equivalence.key == equivalence.title ? "" : "<b>" + equivalence.title + "</b><br>")
+        + ( equivalence.key == equivalence.title ? "" : equivalence.title + "<br>")
         + "<code>" + equivalence.key + "</code>"
         + "</p>"
     ) ;
