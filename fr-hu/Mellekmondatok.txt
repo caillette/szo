@@ -34,7 +34,7 @@ sem
   Gábor Magyar, Aphonse Francia, John pedig angol.
 
 et puis (lit)
-  Á la poste j'ai expédié une lettre, et j'ai envoyé un télégramme.
+  À la poste j'ai expédié une lettre, et j'ai envoyé un télégramme.
 meg
   A postán feladok egy levelet, meg elküldök egy táviratot.
 
@@ -50,7 +50,7 @@ nemcsak …, hanem … is
 
 d'une part …, d'autre part …  (lit)
   Je n'aime pas vivre ici. D'une part l'air est pollué, d'autre part c'est très bruyant.
-égyrést …, masrészt
+égyrészt …, masrészt
   Nem szeretek itt látni. Egyrészt rossz a levegő, másrészt nagyon zajos.
 
 
@@ -63,7 +63,7 @@ mais
 de
   Az útlevelem rendben van, de nincs vízumom.
 
-mais (lit)
+toutefois, cependant (lit)
   Demain je ? chez Sophie, mais je ne serai pas à la maison.
 azonban
   Tegnap elmentem Zófihoz, azonban nem volt otthon

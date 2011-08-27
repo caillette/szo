@@ -6,7 +6,7 @@ időjárás
 printemps
   au printemps
 tavasz
-  tavassal
+  tavasszal
 
 été (saison)
 nyár
@@ -14,7 +14,7 @@ nyár
 automne
   en automne
 ősz
-  őssel
+  ősszel
 
 hiver
 tél
