@@ -41,7 +41,7 @@ body {
 }
 
 #theme-key {
-  position : absolute ;
+  position : fixed ;
   bottom : 2px ;
   right : 2px ;
   padding-right : 1em ;
