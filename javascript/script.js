@@ -267,22 +267,35 @@ function quickRefresh() {
 }
 
 function justPrintEquivalences() {
+  $( "#theme-key" ).html( "" ) ;
+  $( "#board" ).html( "" ) ;
   if( EQUIVALENCES.length == 0 ) {
     clearBoard() ;
   } else {
-    var html = "" ;
-    html += "<p class='total' >Végösszeg: " + EQUIVALENCES.length + "</p>" ;
+
+    // Inlining seems to share the same function with always the same themeKey.
+    function addMouseHandlers( table, themeKey ) {
+      $( table ).mouseenter( function() {
+        $( "#theme-key" ).html( "<p>" + themeKey + "</p>" ) ;
+      } ) .mouseleave( function() {
+        $( "#theme-key" ).html( "<p></p>" ) ;
+      } ) ;
+    }
+
+    $( "#board" ).append( "<p class='total' >Végösszeg: " + EQUIVALENCES.length + "</p>" ) ;
     for( themeIndex in EQUIVALENCES ) {
       var equivalence = EQUIVALENCES[ themeIndex ] ;
-      html += "<table class='equivalence-list' ><tbody>\n" ;
+      var html = "<table class='equivalence-list' ><tbody>\n" ;
       html = printEquivalence( html, equivalence, false ) ;
       html += "</tbody></table>" ;
+      var table = $( html ) ;
+      addMouseHandlers( table, equivalence.THEME_KEY ) ;
+      $( "#board" ).append( table ) ;
 
       // Supposed to help the Web browser to keep tables together.
-      html += "<p class='void' ></p>\n" ;
+      $( "#board" ).append( "<p class='void' ></p>\n" ) ;
+
     }
-    $( "#board" ).html( html ) ;
-    $( "#theme-key" ).html( "" ) ;
   }
 }
 
