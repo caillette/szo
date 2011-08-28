@@ -1,6 +1,6 @@
 *Szótárgép* means "vocabulary machine" in Magyar (Hungarian). It is a standalone application for learning Magyar from French. You should pronounce it "soo-taarrr-gééép" with long vowels and "r" tapped like in Spanish, and the accent on the beginning of the word.
 
-Starting from a customizable vocabulary list, it choses random terms in one language, and discloses the translation at user's demand. There is also a list view with all the terms and their translations.
+Starting from a customizable vocabulary list, it choses random terms in one language, and discloses the translation at user's demand. There is also a list view with all the terms, and a switch between prose and translation.
 
 Szótárgép is a small piece of HTML and JavaScript, essentially using JQuery. Vocabulary files are text files that anybody can edit.
 
@@ -55,24 +55,17 @@ As it reads UTF-8 vocabulary files, Szótárgép accomodates with most of charac
 === Supported configurations
 
 * Safari 5.1 on Mac OS X 10.6.8: works fine.
-* Firefox 6.0 on Mac OS X 10.6.8: works fine. Doesn't support printing more than one page.
-* Chrome 13 on Mac OS X 10.6.8: works fine with the special option described below.
+* Firefox 6.0 on Mac OS X 10.6.8: works fine, with list printing messed up.
+* Chrome 13 on Mac OS X 10.6.8: doesn't work.
 
 Szótárgép uses very standard DHTML features so it's likely to run on Firefox with other operating systems.
 
 There will be no effort to make Szótárgép run on any version of Internet Explorer.
 
 
-==== Running with Chrome
+==== The Chrome problem
 
-To say things simply, Chrome forbids access to the local filesystem by default. To circumvent this, launch Chrome like this:
-
-.Mac OS X
-  $ /Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --allow-file-access-from-files
-
-.Windows
-  > chrome.exe --allow-file-access-from-files
-
+To say things simply, Chrome forbids access to the local filesystem by default. Yes there is the `--allow-file-access-from-files` command line option, that opens access to your filesystem to every other Web page, so don't use it, period.
 
 
 === License
