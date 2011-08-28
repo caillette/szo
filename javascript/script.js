@@ -7,8 +7,6 @@ var CHECKED = "checked" ;
 var UNCHECKED = "unchecked" ;
 var UNAVAILABLE = "unavailable" ;
 
-var EQUIVALENCES = "EQUIVALENCES" ;
-
 
 // =======
 // Parsing
@@ -130,6 +128,14 @@ function initializeThemes() {
     THEMES.push( { key : themeKey, status : UNDEFINED } ) ;
   } ) ;
 
+  var checkedThemes = $.jStorage.get( "checked-themes", [] ) ;
+  function isChecked( themeKey ) {
+    for( index in checkedThemes ) {
+      if( checkedThemes[ index ] == themeKey ) return true ;
+    }
+    return false ;
+  }
+
   showMessage( "Loading themes..." ) ;
   for( index in THEMES.keys() ) {
     var theme = THEMES[ index ] ;
@@ -143,8 +149,11 @@ function initializeThemes() {
       for( index in THEMES.keys() ) {
         var theme = THEMES[ index ] ;
         populateThemeList( theme ) ;
+        if( theme.status = UNCHECKED ) {
+          theme.status = isChecked( theme.key ) ? CHECKED : UNCHECKED ;
+        }
       }
-      selectAllThemes( true ) ;
+      checkAllThemesByStatus() ;
     } ) ;
   }
 }
@@ -231,14 +240,25 @@ var INVERT_LANGUAGES = false ;
 function onThemeChecked() {
   DISCLOSURE = 0 ;
   EQUIVALENCES = [] ;
+
+  for( key in THEMES.keys() ) {
+    var theme = THEMES[ key ] ;
+    if( theme.status == CHECKED ) {
+      theme.status = UNCHECKED ;
+    }
+  }
+
   $( "#theme-choice :checked" ).each( function() {
     var checkboxName = $( this ).attr( "name" ) ;
     var theme = THEMES.byKey( checkboxName ) ;
+    theme.status = CHECKED ;
     for( equivalenceIndex in theme.equivalences ) {
       EQUIVALENCES.push( theme.equivalences[ equivalenceIndex ] ) ;
     }
   } ) ;
+  saveCheckedThemes() ;
   showMessage( "Selected " + EQUIVALENCES.length + " equivalence(s)." ) ;
+
   if( LISTING_EQUIVALENCES ) {
     justPrintEquivalences() ;
   } else {
@@ -374,6 +394,17 @@ function showTheme( themeKey ) {
 function selectAllThemes( enabled ) {
   // Filter as a workaround.
   $( "#theme-choice :checkbox" ).filter( ":enabled" ).attr( "checked", enabled ) ;
+  onThemeChecked() ;
+}
+
+function checkAllThemesByStatus() {
+  $( "#theme-choice :checkbox" ).filter( ":enabled" ).each( function() {
+    var themeKey = $( this ).attr( "name" ) ;
+    var theme = THEMES.byKey( themeKey ) ;
+    if( theme.status == CHECKED ) {
+      $( this ).attr( "checked", true ) ;
+    }
+  } ) ;
   onThemeChecked() ;
 }
 
@@ -514,4 +545,15 @@ function retrieveOptions() {
   $( "#print-equivalences" ).attr( "checked", LISTING_EQUIVALENCES ) ;
   INVERT_LANGUAGES = $.jStorage.get( "INVERT_LANGUAGES" ) ;
   $( "#invert-languages" ).attr( "checked", INVERT_LANGUAGES ) ;
+}
+
+function saveCheckedThemes() {
+  var checked = [] ;
+  for( key in THEMES.keys() ) {
+    var theme = THEMES[ key ] ;
+    if( theme.status == "checked" ) {
+      checked.push( theme.key ) ;
+    }
+  }
+  $.jStorage.set( "checked-themes", checked ) ;
 }
