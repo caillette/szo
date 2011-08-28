@@ -4,7 +4,7 @@ title: Mellekmondatok
 …, és …
 
 … aussi
-  Gábor est hongrois, Ilona l'est aussi.
+  Gábor est hongrois, Ilona l’est aussi.
 … is
   Gábor magyar, Ilona is az.
 
@@ -13,13 +13,13 @@ title: Mellekmondatok
 … is, … is
   A motor is elmorott, a fék is.
 
-aussi bien (lit)
-  Gábor est hongrois, Ilona l'est aussi bien.
+et … de même
+  Gábor est hongrois, Ilona l’est de même.
 szintén
   Gábor magyar, Ilona szintén az.
 
 …, … non plus (1)
-  Il n'est pas permis de se baigner ici, de l'autre côté non plus.
+  Il n’est pas permis de se baigner ici, de l’autre côté non plus.
 sem
   Itt nem szabad fürdeni, (és) a másik oldalon sem szabad.
 
@@ -28,18 +28,20 @@ sem
 … sem, … sem
   Én sem megyed a koncertre, (és) Maria sem.
 
-[…,]+ (fin d'énumération) …
-  Gabor est hongrois, Alphonse français, et John est anglais.
-[…,]+ pedig …
-  Gábor Magyar, Aphonse Francia, John pedig angol.
+et (ciblé)
+  Moi, je faisais la vaisselle et ma femme causait avec sa copine.
+  (toujours après le mot auquel elle se réfère)
+pedig
+  Én mosogattam, a feleségem pedig a barátnőjével beszélgetett.
 
-et puis (lit)
-  À la poste j'ai expédié une lettre, et j'ai envoyé un télégramme.
+
+et puis
+  À la poste j’ai expédié une lettre, et j’ai envoyé un télégramme.
 meg
   A postán feladok egy levelet, meg elküldök egy táviratot.
 
 et même
-  Naturellement je suis allé voir l'exposition, j'ai même acheté une photo.
+  Naturellement je suis allé voir l’exposition, j’ai même acheté une photo.
 sőt
   Természetesen megnéztem a kiállîtást, sőt egy képet is vettem.
 
@@ -48,44 +50,50 @@ non seulement …, mais … aussi
 nemcsak …, hanem … is
   Nemcsak a leves volt hideg, hanem a hús is.
 
-d'une part …, d'autre part …  (lit)
-  Je n'aime pas vivre ici. D'une part l'air est pollué, d'autre part c'est très bruyant.
+d’une part …, d’autre part …
+  Je n’aime pas vivre ici. D’une part l’air est pollué, d’autre part c’est très bruyant.
 égyrészt …, másrészt
   Nem szeretek itt látni. Egyrészt rossz a levegő, másrészt nagyon zajos.
 
+puis
+  Nous avons déjeuné, puis nous sommes allé(e)s nous reposer.
+majd
+  Megebédeltünk, majd lepihentünk.
 
-
+tantôt …, tantôt
+  Tantôt on faisait une partie d’échecs, tantôt on jouait au football.
+hol …, hol
+  Hol sakkoztunk, hol fociztunk.
 
 
 
 mais
-  Mon passeport est en règle, mais je n'ai pas de visa.
+  Mon passeport est en règle, mais je n’ai pas de visa.
 de
   Az útlevelem rendben van, de nincs vízumom.
 
-toutefois, cependant (lit)
+toutefois, cependant
   Demain je ? chez Sophie, mais je ne serai pas à la maison.
 azonban
   Tegnap elmentem Zófihoz, azonban nem volt otthon
 
 malgré, même si
-  Je suis à l'heure, même s'il y avait beaucoup de circulation.
+  Je suis à l’heure, même s’il y avait beaucoup de circulation.
 …, pedig …
   Időben vagyok, pedig nagy volt a forgalom.
 
-en revanche (lit)
-  Il n'y avait pas de pain, en revanche j'ai acheté une bouteille de vin.
+en revanche
+  Il n’y avait pas de pain, en revanche j’ai acheté une bouteille de vin.
 viszont
   Kenyeret nem kaptam, viszont vettem egy üveg bort.
 
-
 et pourtant (fin positive)
-  Je n'avais pas mon billet, et pourtant j'ai pu entrer dans le stade.
+  Je n’avais pas mon billet, et pourtant j’ai pu entrer dans le stade.
 mégis
   Nem volt jegyem, mégis bejuttotam a stadionba.
 
 et pourtant (fin négative)
-  J'avais mon billet, et pourtant je n'ai pas pu entrer dans le stade.
+  J’avais mon billet, et pourtant je n’ai pas pu entrer dans le stade.
 mégsem
   Volt jegyem, mégsem juttotam be a stadionba.
 
@@ -93,10 +101,18 @@ mégsem
 nem … hanem
   A gyerekek nem a nagyszüleiknél vannak, hanem külföldön nyaralnak.
   
-bien que (lit)
-  Bien que j'aie eu mon billet, je n'ai pas pu rentrer dans le stade.
+bien que
+  Bien que j’aie eu mon billet, je n’ai pas pu rentrer dans le stade.
 bár
   Bár volt jegyem, nem jutottam be a stadionba.
+
+seulement
+  Ce serait bon de se promener un peu, seulement l’orage menace.
+csakhogy
+  Jó lenne egy kicsit sétálni, csakhogy vihar fenyeget.
+
+
+
 
 … ou …
 vagy
@@ -110,48 +126,68 @@ soit …, soit …
 akár … , akár
   Akár metrón megy, akár taxiba száll, fél órán belül ott van.
 
+ par contre
+   Péter m’appelle régulièrement ; toi par contre, tu ne te manifestes jamais.
+ ellenben
+   Péter rendszeresen felhív, te ellenben soha nem jelentkezel.
 
+malgré cela
+  Il a plu toute la journée ; malgré cela il a fait assez chaud.
+ennek ellenére
+  Egész nap esett az eső, ennek ellenére elég meleg volt.
 
-c'est pourquoi, par conséquent, pour cela, à cause de cela
+c’est pourquoi, voilà pourquoi
+  J’ai travaillé toute la nuit, c’est pourquoi je suis très fatigué(e).
 ezért
-  Ma nincs gáz a házban, ezért étteremben vacsorázunk.
+  Egész éjszaka dolgoztam, ezért nagyon fáradt vagyok.
 
 ainsi
 így
   Tegnap későn feküdtem le, így ma álmos vagyok.
 
-ainsi, donc
+donc
 tehát
   Imre megbetegedett, tehát nem jöhet velünk.
 
-en effet, c'est que
+
+
+
+car
+  Les gens ne portent pas de manteau, car il fait beau.
 ugyanis
-  Ma nem megyek dolgozni, ugyanis vasárnap van.
-
-
-
-
-puisque
-   John connaît encore très insuffisamment le hongrois, puisqu'il ne l'apprend que depuis deux semaines.
-hiszen
-  John még csak nagyon keveset ért magyarul, hiszen csak két hete tanul.
+  Kabát nélkül járnak az emberek, ugyanis jó idő van.
 
 de toute façon, sans cela, aussi bien (issue positive)
-  Demain j'achèterai ce livre, et de toute façon j'irai en centre-ville.
+  Nous ne devons pas nous dépêcher ; nous y arriverons de toute façon.
 úgyis
-  Holnap majd megveszem ezt a könyvet, úgyis bemegyek a Belvárosba.
+  Nem kell sietnünk, úgyis odaérünk.
 
 puisque (cause négative)
-  Je n'achète pas ce médicament, puisque je ne l'utilise pas.
+  Ce n’est pas la peine de nous dépêcher ; de toute façon, nous n’y arriverons pas.
 úgysem
-  Nem veszem be a gyógyszert, úgysem használ.
+  Nem kell sietnünk, úgysem érünk oda.
 
-c'est-à-dire, autrement dit
-  Les fillettes se comprennent bien l'une l'autre, autrement dit elles ne se disputent pas.
+puisque
+  Je peux dormir tranquille jusqu’à midi, puisque je n’ai rien à faire.
+hisz(en)
+  Nyugodtan alhatok délig, hisz(en) semmi dolgom.
+
+c’est-à-dire, autrement dit
+  Les fillettes se comprennent bien l’une l’autre, autrement dit elles ne se disputent pas.
 vagyis
   A lányok jól megértik egymást, vagyis nem veszekednek.
 
 c’est-à-dire
-  Beaucoup de gens regardent les matchs de football, c'est à dire qu'eux-mêmes y jouent.
+  Beaucoup de gens regardent les matchs de football, c’est à dire qu’eux-mêmes y jouent.
 illetve
   Sokan nézik a futballmeccseket, illetve futballoznak maguk is.
+
+car
+  Zsuzsa a toujours un livre sur elle, car elle aime beaucoup lire.
+tudniillik
+  Zsuzsánál mindig van könyv, tudniillik nagyon szeret olvasni.
+
+c’est-à-dire
+  Il/Elle est né(e) pendant la guerre, c’est-à-dire dans les années ’40.
+azaz 
+  A háború alatt, azaz a negyvenes években születt. 
