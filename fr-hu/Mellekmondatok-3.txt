@@ -39,8 +39,8 @@ tehát
 
 
 
-car
-  Les gens ne portent pas de manteau, car il fait beau.
+en effet, c'est que…
+  Les gens ne portent pas de manteau, en effet il fait beau.
 ugyanis
   Kabát nélkül járnak az emberek, ugyanis jó idő van.
 
@@ -59,7 +59,7 @@ puisque
 hisz(en)
   Nyugodtan alhatok délig, hisz(en) semmi dolgom.
 
-c’est-à-dire, autrement dit
+autrement dit
   Les fillettes se comprennent bien l’une l’autre, autrement dit elles ne se disputent pas.
 vagyis
   A lányok jól megértik egymást, vagyis nem veszekednek.
@@ -69,8 +69,8 @@ c’est-à-dire (1)
 illetve
   Sokan nézik a futballmeccseket, illetve futballoznak maguk is.
 
-en effet
-  Zsuzsa a toujours un livre sur elle, en effet elle aime beaucoup lire.
+car
+  Zsuzsa a toujours un livre sur elle, car elle aime beaucoup lire.
 tudniillik
   Zsuzsánál mindig van könyv, tudniillik nagyon szeret olvasni.
 
