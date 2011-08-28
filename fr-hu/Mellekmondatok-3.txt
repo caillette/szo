@@ -50,7 +50,7 @@ de toute façon, sans cela, aussi bien (issue positive)
 úgyis
   Nem kell sietnünk, úgyis odaérünk.
 
-puisque (cause négative)
+de toute façon (issue négative)
   Ce n’est pas la peine de nous dépêcher ; de toute façon, nous n’y arriverons pas.
 úgysem
   Nem kell sietnünk, úgysem érünk oda.
