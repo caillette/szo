@@ -1,4 +1,4 @@
-*Szótárgép* means "vocabulary machine" in Magyar (Hungarian). It is a standalone application for learning Magyar from French. You should pronounce it "soo-taarrr-gééép" with long vowels and "r" tapped like in Spanish, and the accent on the beginning of the word.
+*Szótárgép* means "vocabulary machine" in Magyar (Hungarian). It is a standalone application for learning Magyar from French. You should pronounce it "so-o-taarrr-géép" with long vowels and "r" tapped like in Spanish, and the accent on the beginning of the word.
 
 Starting from a customizable vocabulary list, it choses random terms in one language, and discloses the translation at user's demand. There is also a list view with all the terms, and a switch between prose and translation.
 
