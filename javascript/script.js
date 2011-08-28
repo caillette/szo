@@ -253,6 +253,7 @@ var LISTING_EQUIVALENCES = false ;
 
 function togglePrintEquivalences() {
   LISTING_EQUIVALENCES = ! LISTING_EQUIVALENCES ;
+  $.jStorage.set( "LISTING_EQUIVALENCES", LISTING_EQUIVALENCES ) ;
   quickRefresh() ;
 }
 
@@ -378,6 +379,7 @@ function selectAllThemes( enabled ) {
 
 function toggleInvertLanguages() {
   INVERT_LANGUAGES = ! INVERT_LANGUAGES ;
+  $.jStorage.set( "INVERT_LANGUAGES", INVERT_LANGUAGES ) ;
   quickRefresh() ;
 }
 
@@ -461,7 +463,6 @@ function initializeToolbar() {
       )
   ;
 
-
 }
 
 function enableToolbarElements() {
@@ -498,4 +499,19 @@ function enableToolbarElements() {
 
 
 
+}
+
+
+
+// =======
+// Storage
+// =======
+
+// Doesn't work with Firefox along with local file:
+// https://github.com/andris9/jStorage/issues/8
+function retrieveOptions() {
+  LISTING_EQUIVALENCES = $.jStorage.get( "LISTING_EQUIVALENCES" ) ;
+  $( "#print-equivalences" ).attr( "checked", LISTING_EQUIVALENCES ) ;
+  INVERT_LANGUAGES = $.jStorage.get( "INVERT_LANGUAGES" ) ;
+  $( "#invert-languages" ).attr( "checked", INVERT_LANGUAGES ) ;
 }
