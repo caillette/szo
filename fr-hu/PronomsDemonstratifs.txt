@@ -1,0 +1,128 @@
+title: Pronoms démonstratifs
+
+Pronoms démonstratifs, nominatif
+-
+  ez
+  ezek
+  az
+  azok
+
+Pronoms démonstratifs, accusatif
+-t
+  ezt
+  ezeket
+  azt
+  azokat
+
+Pronoms démonstratifs, datif
+-nak/-nek
+  ennek
+  ezeknek
+  annak
+  azoknak
+
+Pronoms démonstratifs, instrumental-sociatif
+-val/-vel
+  ezzel
+  ezekkel
+  azzal
+  azokkal
+
+Pronoms démonstratifs, causal-final
+-ért
+  ezért
+  ezekért
+  azért
+  azokért
+
+Pronoms démonstratifs, transformatif
+-vá/-vé
+  ezzé
+  ezekké
+  azzá
+  azokká
+
+
+Pronoms démonstratifs, illatif
+-ba/-be
+  ebbe
+  ezekbe
+  abba
+  azokba
+
+Pronoms démonstratifs, inessif
+-ban/-ben
+  ebben
+  ezekben
+  abban
+  azokban
+
+Pronoms démonstratifs, élatif
+-ból/-ből
+  ebből
+  ezekből
+  abból
+  azokból
+
+Pronoms démonstratifs, sublatif
+-ra/-re
+  erre
+  ezekre
+  arra
+  azokra
+
+Pronoms démonstratifs, superessif
+-n
+  ezen
+  ezeken
+  azon
+  azokon
+
+Pronoms démonstratifs, délatif
+-ról/-ről
+  erről
+  ezekről
+  arról
+  azokról
+
+Pronoms démonstratifs, allatif
+-hoz/-hez/-hőz
+  ehhez
+  ezekhez
+  ahoz
+  azokhoz
+
+Pronoms démonstratifs, adessif
+-nál/-nél
+  ennél
+  ezeknél
+  annál
+  azoknál
+
+Pronoms démonstratifs, ablatif
+-tól/-től
+  ettől
+  ezektől
+  attól
+  azoktól
+
+Pronoms démonstratifs, terminatif
+-ig
+  eddig
+  ezekig
+  addig
+  azokig
+
+Pronoms démonstratifs, temporel
+-kor
+  ekkor
+  akkor
+  -
+  -
+
+Pronoms démonstratifs, essif-modal
+-ként
+  ekként
+  ezekként
+  akként
+  azokként
