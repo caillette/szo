@@ -128,7 +128,7 @@ function initializeThemes() {
     THEMES.push( { key : themeKey, status : UNDEFINED } ) ;
   } ) ;
 
-  var checkedThemes = $.jStorage.get( "checked-themes", [] ) ;
+  var checkedThemes = retrieve( "checked-themes", [] ) ;
   function isChecked( themeKey ) {
     for( index in checkedThemes ) {
       if( checkedThemes[ index ] == themeKey ) return true ;
@@ -273,7 +273,7 @@ var LISTING_EQUIVALENCES = false ;
 
 function togglePrintEquivalences() {
   LISTING_EQUIVALENCES = ! LISTING_EQUIVALENCES ;
-  $.jStorage.set( "LISTING_EQUIVALENCES", LISTING_EQUIVALENCES ) ;
+  store( "LISTING_EQUIVALENCES", LISTING_EQUIVALENCES ) ;
   quickRefresh() ;
 }
 
@@ -410,7 +410,7 @@ function checkAllThemesByStatus() {
 
 function toggleInvertLanguages() {
   INVERT_LANGUAGES = ! INVERT_LANGUAGES ;
-  $.jStorage.set( "INVERT_LANGUAGES", INVERT_LANGUAGES ) ;
+  store( "INVERT_LANGUAGES", INVERT_LANGUAGES ) ;
   quickRefresh() ;
 }
 
@@ -541,9 +541,9 @@ function enableToolbarElements() {
 // Doesn't work with Firefox along with local file:
 // https://github.com/andris9/jStorage/issues/8
 function retrieveOptions() {
-  LISTING_EQUIVALENCES = $.jStorage.get( "LISTING_EQUIVALENCES" ) ;
+  LISTING_EQUIVALENCES = retrieve( "LISTING_EQUIVALENCES" ) ;
   $( "#print-equivalences" ).attr( "checked", LISTING_EQUIVALENCES ) ;
-  INVERT_LANGUAGES = $.jStorage.get( "INVERT_LANGUAGES" ) ;
+  INVERT_LANGUAGES = retrieve( "INVERT_LANGUAGES" ) ;
   $( "#invert-languages" ).attr( "checked", INVERT_LANGUAGES ) ;
 }
 
@@ -555,5 +555,27 @@ function saveCheckedThemes() {
       checked.push( theme.key ) ;
     }
   }
-  $.jStorage.set( "checked-themes", checked ) ;
+  store( "checked-themes", checked ) ;
 }
+
+var useCookies = document.URL.substr( 0, 5 ) == "file:"
+    && navigator.userAgent.indexOf( "Firefox" ) > -1 ;
+
+function retrieve( key, defaultValue ) {
+  if( useCookies ) {
+    return null ;
+  } else {
+    return $.jStorage.get( key, defaultValue ) ;
+  }
+}
+
+function store( key, value ) {
+  if( useCookies ) {
+    
+  } else {
+    $.jStorage.set( key, value ) ;
+  }
+}
+
+
+
