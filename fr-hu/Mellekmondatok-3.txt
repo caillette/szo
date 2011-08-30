@@ -45,12 +45,12 @@ en effet, c'est que…
 ugyanis
   Kabát nélkül járnak az emberek, ugyanis jó idő van.
 
-de toute façon, sans cela, aussi bien (issue positive)
+de toute façon, sans cela, aussi bien [issue positive]
   Nous ne devons pas nous dépêcher ; nous y arriverons de toute façon.
 úgyis
   Nem kell sietnünk, úgyis odaérünk.
 
-de toute façon (issue négative)
+de toute façon [issue négative]
   Ce n’est pas la peine de nous dépêcher ; de toute façon, nous n’y arriverons pas.
 úgysem
   Nem kell sietnünk, úgysem érünk oda.

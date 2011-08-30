@@ -21,12 +21,12 @@ en revanche
 viszont
   Kenyeret nem kaptam, viszont vettem egy üveg bort.
 
-et pourtant (fin positive)
+et pourtant [issue positive]
   Je n’avais pas mon billet, et pourtant j’ai pu entrer dans le stade.
 mégis
   Nem volt jegyem, mégis bejuttotam a stadionba.
 
-et pourtant (fin négative)
+et pourtant [issue négative]
   J’avais mon billet, et pourtant je n’ai pas pu entrer dans le stade.
 mégsem
   Volt jegyem, mégsem juttotam be a stadionba.

@@ -14,8 +14,9 @@ source: http://fr.wikipedia.org/wiki/Syntaxe_du_hongrois_–_la_phrase_complexe#
 … is, … is
   A motor is elmorott, a fék is.
 
-et … de même
+… de même
   Gábor est hongrois, Ilona l’est de même.
+  (après le mot auquel il se réfère)
 szintén
   Gábor magyar, Ilona szintén az.
 
@@ -41,7 +42,7 @@ et puis
 meg
   A postán feladok egy levelet, meg elküldök egy táviratot.
 
-et même
+…, et même …
   Naturellement je suis allé voir l’exposition, j’ai même acheté une photo.
 sőt
   Természetesen megnéztem a kiállîtást, sőt egy képet is vettem.

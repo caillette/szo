@@ -20,7 +20,7 @@ hiver
 tél
 
 nuage
-felhõ
+felhő
 
 pluie
   pleuvoir
@@ -57,8 +57,10 @@ hideg
 
 chaud
   il fait chaud
+  avoir chaud
 meleg
   ~ van
+  melege van
 
 étoile
 csillag
@@ -66,4 +68,5 @@ csillag
 lune
 hold
 
-
+ciel, firmament
+ég

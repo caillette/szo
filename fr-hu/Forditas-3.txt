@@ -33,3 +33,6 @@ sápadt
 jouer
 játsik
   ~ vmit
+
+sourire
+mosolyog
