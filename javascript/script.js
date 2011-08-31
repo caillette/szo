@@ -112,6 +112,7 @@ function environmentSetup() {
     }
   } ) ;
 
+  populateStorageCacheFromCookie() ;
 
 }
 
@@ -538,8 +539,6 @@ function enableToolbarElements() {
 // Storage
 // =======
 
-// Doesn't work with Firefox along with local file:
-// https://github.com/andris9/jStorage/issues/8
 function retrieveOptions() {
   LISTING_EQUIVALENCES = retrieve( "LISTING_EQUIVALENCES" ) ;
   $( "#print-equivalences" ).attr( "checked", LISTING_EQUIVALENCES ) ;
@@ -558,12 +557,41 @@ function saveCheckedThemes() {
   store( "checked-themes", checked ) ;
 }
 
+// Firefox doesn't support local storage for a local file:
+// https://github.com/andris9/jStorage/issues/8
+// So we're getting dirty and using cookies.
+
 var useCookies = document.URL.substr( 0, 5 ) == "file:"
     && navigator.userAgent.indexOf( "Firefox" ) > -1 ;
 
+// JSON stuff for when using cookies.
+// Copied from jStorage plugin.
+var jsonEncode = useCookies
+    ? $.toJSON || Object.toJSON || ( window.JSON && ( JSON.encode || JSON.stringify ) )
+    : null
+;
+var jsonDecode = useCookies
+    ? $.evalJSON || ( window.JSON && (JSON.decode || JSON.parse ) ) || function( str ) {
+        return String( str ).evalJSON()
+    }
+    : null
+;
+
+var storageCache = {} ;
+
+function populateStorageCacheFromCookie() {
+  if( useCookies ) {
+    var reloaded = jsonDecode( $.cookie( "options" ) ) ;
+    storageCache = reloaded == null ? {} : reloaded ;
+  }
+}
+
 function retrieve( key, defaultValue ) {
   if( useCookies ) {
-    return null ;
+    if( key in storageCache ){
+      return storageCache[ key ] ;
+    }
+    return typeof( defaultValue ) == "undefined" ? null : defaultValue ;
   } else {
     return $.jStorage.get( key, defaultValue ) ;
   }
@@ -571,7 +599,8 @@ function retrieve( key, defaultValue ) {
 
 function store( key, value ) {
   if( useCookies ) {
-    
+    storageCache[ key ] = value ;
+    $.cookie( "options", jsonEncode( storageCache ) ) ;
   } else {
     $.jStorage.set( key, value ) ;
   }
