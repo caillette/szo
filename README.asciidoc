@@ -19,15 +19,20 @@ To see the list of all terms in checked files, check "List" ("Lista").
 
 === Adding or editing vocabulary files
 
-Create some plain text file with a decent text editor like http://notepad-plus-plus.org[NotepadPlusPlus] and take care of chosing UTF-8 encoding.
+Create some plain text file with a decent text editor like http://notepad-plus-plus.org[NotepadPlusPlus] and take care of chosing UTF-8 encoding. Do not use Window's Notepad, which messes the encoding up.
 
-There must be a blank line at the start and at the end of the file.
+An optional `title: [nicer title]` may override the filename for nicer display.
+
+There must be a blank line before and after each term pair.
 
 A term pair is made of groups of lines (at least two lines, one for the original and one line for the translation). Under each term, there can be any number of additional definitions that start with at least one space character. Additional definitions for the first language will disclose one by one.
 
-Here is a sample of vocabulary file containing two term pairs. Don't forget the empty lines at the beginning and at the end.
+Only term pairs with valid characters will show. Any non-recognized character will cause the term pair to not show.
+
+Here is a sample of vocabulary file containing a title and two term pairs. Don't forget there is an empty line at the end.
 
 ----
+  title: Sok szók!
 
   tetsik
     ~vkik
@@ -55,7 +60,7 @@ As it reads UTF-8 vocabulary files, Szótárgép accomodates with most of charac
 === Supported configurations
 
 * Safari 5.1 on Mac OS X 10.6.8: works fine.
-* Firefox 6.0 on Mac OS X 10.6.8: works fine, with list printing messed up.
+* Firefox 6.0 on Mac OS X 10.6.8: works fine.
 * Chrome 13 on Mac OS X 10.6.8: doesn't work.
 
 Szótárgép uses very standard DHTML features so it's likely to run on Firefox with other operating systems.
@@ -65,7 +70,7 @@ There will be no effort to make Szótárgép run on any version of Internet Expl
 
 ==== The Chrome problem
 
-To say things simply, Chrome forbids access to the local filesystem by default. Yes there is the `--allow-file-access-from-files` command line option, that opens access to your filesystem to every other Web page, so don't use it, period.
+(In simple words) Chrome forbids access to the local filesystem by default. Yes there is the `--allow-file-access-from-files` command line option, that opens access to your filesystem to every other Web page, so don't use it, period.
 
 
 === License
@@ -76,7 +81,7 @@ Vocabulary files are released under *Creative Commons Attribution-ShareAlike 3.0
 
 Other libraries are subject to their original licenses:
 
-* JQuery comes with a dual license: MIT or GPL Version 2.
+* JQuery and its plugins come with a dual license: MIT or GPL Version 2.
 * The keyboard shortcuts library is under BSD license, which probably requires a mention of its author, Binny V. A.
 
 
