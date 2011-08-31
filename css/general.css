@@ -41,8 +41,8 @@
 
 #board > table {
   width : 100% ;
-  text-align : center ;
- }
+  align : center ;
+}
 
 #board > table tr {
   font-size : 170% ;

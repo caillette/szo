@@ -29,8 +29,6 @@ body * {
 
 #board > table {
 
-  display : block ;
-
   /* Bad news: only Opera seems to support it.
       http://www.westciv.com/style_master/academy/browser_support/printing.html
   */
