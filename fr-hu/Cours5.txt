@@ -1,4 +1,30 @@
-title: Forditas, 2
+title: Cours particulier 5
+
+
+réponse
+válasz
+
+question
+kérdés
+
+couleur
+szín
+
+sacoche
+táska
+
+cinéma
+mozi
+
+farine
+líszt
+
+cravate
+nyakkendő
+
+voiture (fam)
+kocsi
+
 
 traduction
 fordítás
@@ -31,7 +57,7 @@ appeler au téléphone
   rection
 felhív
   ~ vkit
-  
+
 parfait, idéal, complet
 tökéletes
 
