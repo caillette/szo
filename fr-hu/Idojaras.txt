@@ -1,7 +1,20 @@
 title: Időjárás
 
 temps (météo)
+  bulletin météo
+  Quel temps fait-il ?
 időjárás
+  időjárás jelentés
+  Milyen idő van?
+
+degré, échelle, escalier
+  Quel température fait-il ?
+fok
+  Hány fok van?
+
+prévision
+előrejelzés
+
 
 printemps
   au printemps
@@ -70,3 +83,7 @@ hold
 
 ciel, firmament
 ég
+
+
+
+

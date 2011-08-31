@@ -67,9 +67,6 @@ későn
 coucher avec qqn
 lefeküdni
 
-ainsi
-így
-
 ensommeillé
 álmos
 
@@ -109,3 +106,26 @@ még
 
 devenir
 lesz
+
+manger une glace
+fagyizni
+
+
+inviter à
+elhív ???
+
+
+autre
+  avec l’autre
+  à l’autre
+  l’autre
+  les autres
+  ailleurs, autre part
+  autrement
+más
+  mással
+  máshoz
+  másik
+  mások
+  máshol
+  máshogy
