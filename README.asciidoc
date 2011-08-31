@@ -63,9 +63,7 @@ As it reads UTF-8 vocabulary files, Szótárgép accomodates with most of charac
 * Firefox 6.0 on Mac OS X 10.6.8: works fine.
 * Chrome 13 on Mac OS X 10.6.8: doesn't work.
 
-Szótárgép uses very standard DHTML features so it's likely to run on Firefox with other operating systems.
-
-There will be no effort to make Szótárgép run on any version of Internet Explorer.
+Szótárgép should work on Windows and Linux as well, using the same version of Firefox or Safari. Szótárgép might work on other configurations as well. There will be no effort to make Szótárgép run on any version of Internet Explorer.
 
 
 ==== The Chrome problem
