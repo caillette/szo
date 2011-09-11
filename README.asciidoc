@@ -34,14 +34,14 @@ Here is a sample of vocabulary file containing a title and two term pairs. Don't
 ----
   title: Sok szók!
 
+  plaire
+    à quelqu'un
   tetsik
     ~vkik
     tetszett, tetsszen, tetszene
-  plaire
-    à quelqu'un
 
-  majd
   après, ensuite
+  majd
 
 ----
 
