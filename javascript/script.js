@@ -17,7 +17,7 @@ var UNAVAILABLE = "unavailable" ;
 // Definition: the indented lines relative to a Term.
 
 var letters = "\\wáéíóúÁÉÚÍÓÚőűŐŰöüÜÖœàâèêëïîôûùçŒÀÂÈÊËÏÎÔÛÙÇ" ;
-var characters = "+’'~,;!…\\*\\.\\?\\-\\(\\)\\[\\]/\\\\\"" + letters ;
+var characters = "+’'Ø~,;!…\\*\\.\\?\\-\\(\\)\\[\\]/\\\\\"" + letters ;
 var charactersMeta = characters ;
 var textExp = "(?:[" + characters + "][ " + characters + "]*)" ;
 var termExp = textExp ;
