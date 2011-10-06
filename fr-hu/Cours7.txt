@@ -1,0 +1,33 @@
+title: Cours particulier 7
+
+
+cheval
+ló
+
+chameau
+teve
+
+nord
+észak
+
+sud
+dél
+
+ouest
+nyugat
+
+est
+kelet
+
+gare, station
+pályaudvar
+
+rez-de-chaussée
+földszint
+
+à partir de quand (postp)
+  à partir de quand jusqu'à quand
+mettől
+  mettől meddig
+
+

@@ -41,6 +41,10 @@ mosolyog
 d'accord, ça va, c'est parfait
 rendben van
 
+parler
+  de qqchose
+beszél
+  ~ vhoz
 
 
 
