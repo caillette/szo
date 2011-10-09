@@ -38,7 +38,7 @@ vár
   -t, -jon, -na
 
 police, commissariat
-rendőrszeg
+rendőrség
   -et, -e
 
 
