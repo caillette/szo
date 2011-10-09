@@ -10,3 +10,8 @@ piac
 magasin, boutique
 bolt
 
+train
+vonat
+
+souvent
+sokszor
