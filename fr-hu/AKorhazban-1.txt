@@ -2,7 +2,7 @@ title: A kórházban, 1
 
 
 hôpital
-kórházban
+kórház
 
 s'avarier, s'endommager
 megsérül
