@@ -2,80 +2,80 @@ title: Mellekmondatok 3
 source: http://fr.wikipedia.org/wiki/Syntaxe_du_hongrois_–_la_phrase_complexe#La_subordonn.C3.A9e_compl.C3.A9ment_de_degr.C3.A9.2Fmesure_.28A_fok-m.C3.A9rt.C3.A9k_hat.C3.A1roz.C3.B3i_mell.C3.A9kmondat.29
 
 
-… ou …
+… ou … (coord. disjonctive)
 vagy
   Megjavítom az autómat, vagy veszek egy újat.
 
-ou …, ou …
+ou …, ou … (coord. disjonctive)
 vagy … , vagy
   Vagy megveszem ezt a könyvet, vagy kiveszem a könyvtárból.
 
-soit …, soit …
+soit …, soit … (coord. disjonctive)
 akár … , akár
   Akár metrón megy, akár taxiba száll, fél órán belül ott van.
 
-par contre
+par contre (coord. adversative)
   Péter m’appelle régulièrement ; toi par contre, tu ne te manifestes jamais.
 ellenben
   Péter rendszeresen felhív, te ellenben soha nem jelentkezel.
 
-malgré cela
+malgré cela (coord. adversative)
   Il a plu toute la journée ; malgré cela il a fait assez chaud.
 ennek ellenére
   Egész nap esett az eső, ennek ellenére elég meleg volt.
 
-c’est pourquoi, voilà pourquoi
+c’est pourquoi, voilà pourquoi (coord. consécutive)
   J’ai travaillé toute la nuit, c’est pourquoi je suis très fatigué(e).
 ezért
   Egész éjszaka dolgoztam, ezért nagyon fáradt vagyok.
 
-ainsi
+ainsi (coord. consécutive)
 így
   Tegnap későn feküdtem le, így ma álmos vagyok.
 
-donc
+donc (coord. consécutive)
 tehát
   Imre megbetegedett, tehát nem jöhet velünk.
 
 
 
 
-en effet, c'est que…
+en effet, c'est que… (coord. explicative)
   Les gens ne portent pas de manteau, en effet il fait beau.
 ugyanis
   Kabát nélkül járnak az emberek, ugyanis jó idő van.
 
-de toute façon, sans cela, aussi bien [issue positive]
+de toute façon, sans cela, aussi bien [issue positive] (coord. explicative)
   Nous ne devons pas nous dépêcher ; nous y arriverons de toute façon.
 úgyis
   Nem kell sietnünk, úgyis odaérünk.
 
-de toute façon [issue négative]
+de toute façon [issue négative] (coord. explicative)
   Ce n’est pas la peine de nous dépêcher ; de toute façon, nous n’y arriverons pas.
 úgysem
   Nem kell sietnünk, úgysem érünk oda.
 
-puisque
+puisque (coord. explicative)
   Je peux dormir tranquille jusqu’à midi, puisque je n’ai rien à faire.
 hisz(en)
   Nyugodtan alhatok délig, hisz(en) semmi dolgom.
 
-autrement dit
+autrement dit (coord. explicative)
   Les fillettes se comprennent bien l’une l’autre, autrement dit elles ne se disputent pas.
 vagyis
   A lányok jól megértik egymást, vagyis nem veszekednek.
 
-c’est-à-dire (1)
+c’est-à-dire (1) (coord. explicative)
   Beaucoup de gens regardent les matchs de football, c’est à dire qu’eux-mêmes y jouent.
 illetve
   Sokan nézik a futballmeccseket, illetve futballoznak maguk is.
 
-car
+car (coord. explicative)
   Zsuzsa a toujours un livre sur elle, car elle aime beaucoup lire.
 tudniillik
   Zsuzsánál mindig van könyv, tudniillik nagyon szeret olvasni.
 
-c’est-à-dire (2)
+c’est-à-dire (2) (coord. explicative)
   Il/Elle est né(e) pendant la guerre, c’est-à-dire dans les années ’40.
 azaz 
   A háború alatt, azaz a negyvenes években születt. 

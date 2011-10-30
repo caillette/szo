@@ -1,46 +1,46 @@
 title: Mellekmondatok 2
 source: http://fr.wikipedia.org/wiki/Syntaxe_du_hongrois_–_la_phrase_complexe#La_subordonn.C3.A9e_compl.C3.A9ment_de_degr.C3.A9.2Fmesure_.28A_fok-m.C3.A9rt.C3.A9k_hat.C3.A1roz.C3.B3i_mell.C3.A9kmondat.29
 
-mais
+mais (coord. adversative)
   Mon passeport est en règle, mais je n’ai pas de visa.
 de
   Az útlevelem rendben van, de nincs vízumom.
 
-toutefois, cependant
+toutefois, cependant (coord. adversative)
   Demain je ? chez Sophie, mais je ne serai pas à la maison.
 azonban
   Tegnap elmentem Zófihoz, azonban nem volt otthon
 
-même si
+même si (coord. adversative)
   Je suis à l’heure, même s’il y avait beaucoup de circulation.
 …, pedig …
   Időben vagyok, pedig nagy volt a forgalom.
 
-en revanche
+en revanche (coord. adversative)
   Il n’y avait pas de pain, en revanche j’ai acheté une bouteille de vin.
 viszont
   Kenyeret nem kaptam, viszont vettem egy üveg bort.
 
-et pourtant [issue positive]
+et pourtant [issue positive]  (coord. adversative)
   Je n’avais pas mon billet, et pourtant j’ai pu entrer dans le stade.
 mégis
   Nem volt jegyem, mégis bejuttotam a stadionba.
 
-et pourtant [issue négative]
+et pourtant [issue négative] (coord. adversative)
   J’avais mon billet, et pourtant je n’ai pas pu entrer dans le stade.
 mégsem
   Volt jegyem, mégsem juttotam be a stadionba.
 
-[proposition négative] mais …
+[proposition négative] mais …  (coord. adversative)
 nem … hanem
   A gyerekek nem a nagyszüleiknél vannak, hanem külföldön nyaralnak.
 
-bien que
+bien que (coord. adversative)
   Bien que j’aie eu mon billet, je n’ai pas pu rentrer dans le stade.
 bár
   Bár volt jegyem, nem jutottam be a stadionba.
 
-seulement
+seulement (coord. adversative)
   Ce serait bon de se promener un peu, seulement l’orage menace.
 csakhogy
   Jó lenne egy kicsit sétálni, csakhogy vihar fenyeget.
