@@ -34,6 +34,7 @@ csend
   csendes
 
 aimer
+  (quand utilisé comme auxiliaire, le placement du préverbe est libre)
 szeret
   -ett, szeressen, -ne
 

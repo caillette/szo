@@ -1,22 +1,22 @@
 title: Cours particulier K02
 
 cuisiner 
-főzni
+főz
 
 fermer
-becsukni
+becsuk
 
 vers ici ; vers là-bas
 ide ; oda
 
 d'ici ; de là-bas
-innen, onnan
+innen ; onnan
 
 en avance
 előre
 
 envoyer un message
-üzenni
+üzeni
 
 considérer quelqu'un comme
 tekinteni vkit vminek
@@ -39,10 +39,10 @@ leszedni
 comédien, acteur
 sínész
 
-chataîgne
-gesitenye
+chataîgne (fruit)
+gesztenye
 
-marron
+marron (fruit)
 vadgesztenye
 
 sauvage
@@ -53,6 +53,6 @@ erkély
 
 avoir l'habitude de 
   Péter n'a pas l'habitude de lire
-szokott 
-  Péter nem szkokott olvasni
+szok
+  Péter nem szokott olvasni (toujours au passé)
   
