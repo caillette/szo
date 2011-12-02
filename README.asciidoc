@@ -7,7 +7,7 @@ Szótárgép is a small piece of HTML and JavaScript, essentially using JQuery. 
 
 === Installation
 
-To install Szótárgép, download the latest version from https://github.com/caillette/szotargep (click on the "Download" button). Unzip it somewhere and open the `szotargep.html` file in a Web browser (see "Supported configurations" below).
+To install Szótárgép, download the latest version from https://github.com/caillette/szotargep/zipball/master and unzip it somewhere and open the `szotargep.html` file in a Web browser (see "Supported configurations" below).
 
 
 === Usage
