@@ -33,7 +33,7 @@ intéresser
 joyeux
 vidám
   
-trise
+triste
 szomorú
 
 surpris (1)
@@ -96,9 +96,9 @@ naif
 naív
 
 sens de l'humour
-  nincs humorézéke
-humorézék
   il n'a pas le sens de l'humour
+humorézék
+  nincs humorézéke
 
 franc, sincère
   (rien à voir avec l'automne)
