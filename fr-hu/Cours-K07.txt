@@ -73,7 +73,7 @@ hostile
 barátsagtalan
 
 antipathique
-ellenszemves
+ellenszenves
 
 frais, récent, en forme
 friss
