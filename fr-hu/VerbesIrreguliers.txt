@@ -1,4 +1,4 @@
-title: Verbes irréguliers
+title: verbes irréguliers
 
 
 
@@ -109,14 +109,14 @@ lenni
   
 
 
-Manger, indicatif présent, subjectif
+manger, indicatif présent, subjectif
   én
   te
   ö
   mi
   ti
   ök
-Enni
+enni
   eszem
   eszel
   eszik
@@ -124,14 +124,14 @@ Enni
   esztek
   esznek
 
-Manger, indicatif présent, objectif
+manger, indicatif présent, objectif
   én
   te
   ö
   mi
   ti
   ök
-Enni
+enni
   eszem
   eszed
   eszi
@@ -139,14 +139,14 @@ Enni
   eszitek
   eszik
 
-Manger, indicatif passé, subjectif
+manger, indicatif passé, subjectif
   én
   te
   ö
   mi
   ti
   ök
-Enni
+enni
   ettem
   ettél
   evett
@@ -154,14 +154,14 @@ Enni
   ettetek
   ettek
 
-Manger, indicatif passé, objectif
+manger, indicatif passé, objectif
   én
   te
   ö
   mi
   ti
   ök
-Enni
+enni
   ettem
   etted
   ette
@@ -170,14 +170,14 @@ Enni
   ették
 
 
-Manger, conditionnel présent, subjectif
+manger, conditionnel présent, subjectif
   én
   te
   ö
   mi
   ti
   ök
-Enni
+enni
   ennék
   ennél
   enne
@@ -185,14 +185,14 @@ Enni
   ennétek
   ennének
 
-Manger, conditionnel présent, objectif
+manger, conditionnel présent, objectif
   én
   te
   ö
   mi
   ti
   ök
-Enni
+enni
   enném
   ennéd
   enné
@@ -200,14 +200,14 @@ Enni
   ennétek
   ennék
 
-Manger, subjonctif, subjectif
+manger, subjonctif, subjectif
   én
   te
   ö
   mi
   ti
   ök
-Enni
+enni
   egyek
   egyél
   egyen
@@ -215,14 +215,14 @@ Enni
   egyetek
   egyenek
 
-Manger, subjonctif, objectif
+manger, subjonctif, objectif
   én
   te
   ö
   mi
   ti
   ök
-Enni
+enni
   egyem
   egyed/edd
   egye
@@ -233,14 +233,14 @@ Enni
   
  
   
-Boire, indicatif présent, subjectif
+boire, indicatif présent, subjectif
   én
   te
   ö
   mi
   ti
   ök
-Inni
+inni
   iszom
   iszol
   iszik
@@ -248,14 +248,14 @@ Inni
   isztok
   isznak
 
-Boire, indicatif présent, objectif
+boire, indicatif présent, objectif
   én
   te
   ö
   mi
   ti
   ök
-Inni
+inni
   iszom
   iszod
   issza
@@ -263,14 +263,14 @@ Inni
   isszátok
   isszák
 
-Boire, indicatif passé, subjectif
+boire, indicatif passé, subjectif
   én
   te
   ö
   mi
   ti
   ök
-Inni
+inni
   ittam
   ittál
   ivott
@@ -278,14 +278,14 @@ Inni
   ittatok
   ittak
 
-Boire, indicatif passé, objectif
+boire, indicatif passé, objectif
   én
   te
   ö
   mi
   ti
   ök
-Inni
+inni
   ittam
   ittad
   itta
@@ -293,14 +293,14 @@ Inni
   ittátok
   itták  
 
-Boire, conditionnel présent, subjectif
+boire, conditionnel présent, subjectif
   én
   te
   ö
   mi
   ti
   ök
-Inni
+inni
   innék
   innál
   inna
@@ -308,14 +308,14 @@ Inni
   innátok
   innának
 
-Boire, conditionnel présent, objectif
+boire, conditionnel présent, objectif
   én
   te
   ö
   mi
   ti
   ök
-Inni
+inni
   innám
   innád
   inná
@@ -323,14 +323,14 @@ Inni
   innátok
   innák
 
-Boire, subjonctif, subjectif
+boire, subjonctif, subjectif
   én
   te
   ö
   mi
   ti
   ök
-Inni
+inni
   igyak
   igyál
   igyon
@@ -338,14 +338,14 @@ Inni
   igyatok
   igyanak
 
-Boire, subjonctif, objectif
+boire, subjonctif, objectif
   én
   te
   ö
   mi
   ti
   ök
-Inni
+inni
   igyam
   igyad/idd
   igya
