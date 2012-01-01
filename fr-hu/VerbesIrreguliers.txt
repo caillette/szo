@@ -1,5 +1,114 @@
 title: Verbes irréguliers
 
+
+
+être, indicatif présent
+  én
+  te
+  ö
+  mi
+  ti
+  ök
+lenni
+  vagyok
+  vagy
+  van
+  vagyunk
+  vagytok
+  vannak
+
+devenir, indicatif présent
+  én
+  te
+  ö
+  mi
+  ti
+  ök
+lenni
+  leszek
+  leszel
+  lesz
+  leszünk
+  lesztek
+  lesznek
+
+être, indicatif passé
+  én
+  te
+  ö
+  mi
+  ti
+  ök
+lenni
+  voltam
+  voltál
+  volt
+  voltunk
+  voltatok
+  voltak
+  
+devenir, indicatif passé
+  én
+  te
+  ö
+  mi
+  ti
+  ök
+lenni
+  lettem
+  lettél
+  lett
+  lettünk
+  lettetek
+  lettek
+
+être, conditionnel présent
+  én
+  te
+  ö
+  mi
+  ti
+  ök
+lenni
+  volnék
+  volnál
+  volna
+  volnánk
+  volnátok
+  volnának
+  
+être, indicatif présent
+  én
+  te
+  ö
+  mi
+  ti
+  ök
+lenni
+  lennék
+  lennél
+  lenne
+  lennénk
+  lennétek
+  lennének
+  
+devenir, impératif
+  én
+  te
+  ö
+  mi
+  ti
+  ök
+lenni
+  legyek
+  legyél
+  legyen
+  legünk
+  legyetek
+  legyenek    
+  
+
+
 Manger, indicatif présent, subjectif
   én
   te
@@ -243,4 +352,10 @@ Inni
   igyuk
   igyátok
   igyák 
+  
+
+
+
+
+
   
