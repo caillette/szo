@@ -1,0 +1,122 @@
+title: Verbes irréguliers
+
+Manger, indicatif présent, subjectif
+  én
+  te
+  ö
+  mi
+  ti
+  ök
+Enni
+  eszem
+  eszel
+  eszik
+  eszünk
+  esztek
+  esznek
+
+Manger, indicatif présent, objectif
+  én
+  te
+  ö
+  mi
+  ti
+  ök
+Enni
+  eszem
+  eszed
+  eszi
+  esszük
+  eszitek
+  eszik
+
+Manger, indicatif passé, subjectif
+  én
+  te
+  ö
+  mi
+  ti
+  ök
+Enni
+  ettem
+  ettél
+  evett
+  ettünk
+  ettetek
+  ettek
+
+Manger, indicatif passé, objectif
+  én
+  te
+  ö
+  mi
+  ti
+  ök
+Enni
+  ettem
+  etted
+  ette
+  ettük
+  ettétek
+  ették
+
+
+Manger, conditionnel présent, subjectif
+  én
+  te
+  ö
+  mi
+  ti
+  ök
+Enni
+  ennék
+  ennél
+  enne
+  ennénk
+  ennétek
+  ennének
+
+Manger, conditionnel présent, objectif
+  én
+  te
+  ö
+  mi
+  ti
+  ök
+Enni
+  enném
+  ennéd
+  enné
+  ennén
+  ennétek
+  ennék
+
+Manger, subjonctif, subjectif
+  én
+  te
+  ö
+  mi
+  ti
+  ök
+Enni
+  egyek
+  egyél
+  egyen
+  egünk
+  egyetek
+  egyenek
+
+Manger, subjonctif, objectif
+  én
+  te
+  ö
+  mi
+  ti
+  ök
+Enni
+  egyem
+  egyed/edd
+  egye
+  együk
+  egyétek
+  egyék

@@ -141,7 +141,7 @@ szállító
 décagramme (coll)
 deka
 
-fromage
+fromage 
 sajt
 
 tendre (viande)
