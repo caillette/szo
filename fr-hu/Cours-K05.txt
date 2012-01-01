@@ -21,9 +21,10 @@ rá
   ránéz
   
 acheter
-venni (vesz)  
+venni 
+  vesz
 
-expoition
+exposition
 kállitás
 
 il faut
@@ -45,7 +46,7 @@ dinde
 pulyka
 
 Noël
-Karácsony
+karácsony
 
 écossais
 skót

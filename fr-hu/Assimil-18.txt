@@ -58,9 +58,11 @@ vendég
   -et, -e, -ek
 
 s'appeler (porter pour nom)
+  utilisation impersonnelle
   rection
 hív
-  [név]nek ~
+  [név]nak/nek hívnak
+  Engem Katának hívnak
   hívott, hívjon, hívna
 
 se réjouir

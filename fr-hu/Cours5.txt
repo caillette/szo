@@ -34,10 +34,7 @@ tourner
 fordít
   -ott, -son, -ana
 
-chef-d'œuvre
-remek
-
-superbe, splendide
+chef-d'œuvre (n), superbe, splendide (adj)
 remek
 
 exactement, juste (adv)
@@ -85,10 +82,7 @@ anyu
 miraculeux, merveilleux, admirable, étonnant, mirifique, pharamineux, bizarre, extravagant, singulier
 csodálatos
 
-gentil, plaisant (pour une personne)
-kedves
-
-petit(e) ami(e), chéri(e)
+(pour une personne) gentil, plaisant (adj), petit(e) ami(e), chéri(e) (n)
 kedves
 
 aimer, apprécier, prendre soin de

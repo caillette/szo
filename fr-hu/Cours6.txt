@@ -49,7 +49,7 @@ beszél
 
 
 idée, suggestion, gag, boutade, inspiration
-őtlet
+ötlet
 
 cuisiner, faire cuire, distiller
 főz
@@ -149,9 +149,6 @@ puha
 
 par hasard
 esetleg
-
-bouteille (verre)
-üveg 
 
 recommander
 ajánl

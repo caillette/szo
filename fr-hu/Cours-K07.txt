@@ -95,10 +95,12 @@ megbízható
 naif
 naív
 
-sens de l'humour
+humour
+  sens de l'humour
   il n'a pas le sens de l'humour
-humorézék
-  nincs humorézéke
+humor 
+  humor érszég
+  nincs humor érszége
 
 franc, sincère
   (rien à voir avec l'automne)
@@ -145,7 +147,4 @@ vicc
 vraiment
 tényleg
 
-  
-  
-    
   

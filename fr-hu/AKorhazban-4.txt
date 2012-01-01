@@ -53,10 +53,7 @@ ezután
 converser, bavarder, causer de qc
 beszélget
 
-plusieurs (adj)
-néhány
-
-peu (n)
+plusieurs (adj), peu (n)
 néhány
 
 minute

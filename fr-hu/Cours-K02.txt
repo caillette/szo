@@ -19,7 +19,9 @@ envoyer un message
 üzeni
 
 considérer quelqu'un comme
-tekinteni vkit vminek
+  rection
+tekinteni 
+  ~ vkit vminek
 
 laver
 mosni

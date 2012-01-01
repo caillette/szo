@@ -54,7 +54,7 @@ fizet
   Mennyit fizetek ?
 
 coûter
-kerül vmibe	
+kerül vmibe
 
 éviter
 kerül vmit

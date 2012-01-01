@@ -3,6 +3,7 @@ title: Cours particulier 7
 
 cheval
 ló
+  lovat, lova, lovak
 
 chameau
 teve
