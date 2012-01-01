@@ -120,3 +120,127 @@ Enni
   együk
   egyétek
   egyék
+  
+  
+ 
+  
+Boire, indicatif présent, subjectif
+  én
+  te
+  ö
+  mi
+  ti
+  ök
+Inni
+  iszom
+  iszol
+  iszik
+  iszunk
+  isztok
+  isznak
+
+Boire, indicatif présent, objectif
+  én
+  te
+  ö
+  mi
+  ti
+  ök
+Inni
+  iszom
+  iszod
+  issza
+  isszuk
+  isszátok
+  isszák
+
+Boire, indicatif passé, subjectif
+  én
+  te
+  ö
+  mi
+  ti
+  ök
+Inni
+  ittam
+  ittál
+  ivott
+  ittunk
+  ittatok
+  ittak
+
+Boire, indicatif passé, objectif
+  én
+  te
+  ö
+  mi
+  ti
+  ök
+Inni
+  ittam
+  ittad
+  itta
+  ittuk
+  ittátok
+  itták  
+
+Boire, conditionnel présent, subjectif
+  én
+  te
+  ö
+  mi
+  ti
+  ök
+Inni
+  innék
+  innál
+  inna
+  innánk
+  innátok
+  innának
+
+Boire, conditionnel présent, objectif
+  én
+  te
+  ö
+  mi
+  ti
+  ök
+Inni
+  innám
+  innád
+  inná
+  innánk
+  innátok
+  innák
+
+Boire, subjonctif, subjectif
+  én
+  te
+  ö
+  mi
+  ti
+  ök
+Inni
+  igyak
+  igyál
+  igyon
+  igyunk
+  igyatok
+  igyanak
+
+Boire, subjonctif, objectif
+  én
+  te
+  ö
+  mi
+  ti
+  ök
+Inni
+  igyam
+  igyad/idd
+  igya
+  igyuk
+  igyátok
+  igyák 
+  
