@@ -16,7 +16,7 @@ var UNAVAILABLE = "unavailable" ;
 // Term: what's in a non-indented line.
 // Definition: the indented lines relative to a Term.
 
-var letters = "\\wáéíóúÁÉÚÍÓÚőűŐŰöüÜÖœàâèêëïîôûùçŒÀÂÈÊËÏÎÔÛÙÇ" ;
+var letters = "\\wáéíóúÁÉÚÍÓÚőűŐŰöüÜÖœàâèêëïîôûùçŒÀÂÈÊËÏÎÔÛÙÇß" ;
 var characters = "+’'Ø~,;!…\\*\\.\\?\\-\\(\\)\\[\\]/\\\\\"" + letters ;
 var charactersMeta = characters ;
 var textExp = "(?:[" + characters + "][ " + characters + "]*)" ;
