@@ -1,4 +1,5 @@
 title: Assimil 04
+retrofitted: yes
 
 passeport
 útlevél
@@ -16,7 +17,7 @@ difficile, lourd
 nehéz
   nehezet, nehezek, nehezebb
 
-facile
+facile, léger
 könnyű
   -t, -ek, könnyebb
 

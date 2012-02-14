@@ -1,4 +1,5 @@
 title: Assimil 13
+retrofitted: yes
 
 
 faire, cuisiner
@@ -45,7 +46,9 @@ tévé
   a ~ben
 
 regarder, considérer
+  rection
 néz
+~ vmire
   -ett, -zen, -ne
 
 se deshabiller

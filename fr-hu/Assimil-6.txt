@@ -1,4 +1,6 @@
 title: Assimil 06
+retrofitted: yes
+
 
 se promener
 sétál

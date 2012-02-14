@@ -64,7 +64,9 @@ voyager
 utázni
 
 jamais
-sosem
+  (contraction)
+soha... nem
+  sosem
 
 réveillé, vigilant
 éber

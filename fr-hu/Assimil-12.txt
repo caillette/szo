@@ -1,4 +1,5 @@
 title: Assimil 12
+retrofitted: yes
 
 visite d'une ville
 városnézés

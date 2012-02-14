@@ -1,0 +1,411 @@
+title: Szótár
+
+vouloir
+akar
+  -t, -jon, -na
+
+alors, dans ce cas
+akkor
+
+dormir
+alszik
+  aludt, aludjon, aludna
+
+tout de suite
+azonnal
+
+puis, ensuite, ultérieurement, plus tard
+aztán
+
+table
+asztal
+  -t, -a, -ok
+
+ensuite
+aztán
+
+gauche
+  à gauche
+bal
+  balra
+
+banque
+bank
+  -ot, -ja, -ot
+
+malade
+beteg
+  -et, -e, -ek
+
+vin
+bor
+  -t, -a, -ok
+
+adresse, titre
+cim
+  -et, -e, -ek
+
+chèque
+csekk
+  -et, -je -ek
+
+faire, cuisiner
+csinál
+  -t, -jon, -na
+
+poulet
+csirke
+  csirkét, csirkéje, csirkék
+
+Danube
+Duna
+
+sud, midi
+dél
+  -t, -jen, -ne
+
+matin, matinée
+délelőtt
+  -öt, -je, -ök
+
+indulgence, excuse
+elnézés
+  -t, -e
+
+avant, devant
+előtt
+
+étage
+emelet
+  -et, -e, -ek
+
+nuit
+éjjel
+  -t, -, -ek
+
+
+carte (au restaurant)
+étlap
+  -ot, -ja, -ok
+
+vivre
+él
+  -t, -jen, -ne (élni)
+
+bâtiment
+épület
+  -et, -e, -ek
+
+intéressant
+érdekes
+  -et, -ek, -ebb
+
+blanc
+fehér
+  -et, -ek, -ebb
+
+se lever
+felkel
+  -t, -jen, -ne
+
+monter
+felmegy
+  -ment, -menjen, -menne
+
+en haut
+fent
+
+s'habiller
+felöltözik
+  -öltözött, -öltözzön, -öltözne
+
+monter (dans un moyen de locomotion)
+felszáll
+  -t, -jon, -na
+
+avoir peur
+fél
+  -t, -jen, -ne
+  
+garçon, fils
+fiú
+  -t, fia, -k
+
+machine
+gép
+  -et, -e, -ek
+  
+goulache
+gulyás
+  -t
+  
+à pied
+gyalog
+
+usine
+gyár
+  -at, -a, -ak
+
+enfant
+gyerek
+  -et, -ek, -ek
+
+faux
+hamis
+  -at, -ak, -abb
+
+combien ?
+hány ?
+
+place, endroit
+helye
+ -et, -e, -ek
+
+dame
+hőlgy
+ -et, -e, -ek
+
+pont
+híd
+  hídat, -ja, hídak
+
+demain
+holnap
+ -ot, -ok
+
+où ? (vers où)
+hova 
+
+apporter
+hoz
+  -ott, -zon, -na
+
+temps
+idő
+  -t, ideje, -k
+
+directeur
+igazgató
+  -t, -ja, -k
+
+boisson
+ital
+  -t, -a, -ok
+
+marcher, aller
+jár
+  -t, -jon, -na
+
+bleu
+kék
+  -et, -ek, -ebb
+
+demander, prier
+kér
+  -t, -jen, -ne
+
+
+facile, léger
+könnyű
+  -t, -ek, könnyebb
+
+étranger
+külföldi
+  -t, -ek
+
+habiter
+lakik
+  lakott, lakjon, lakna
+
+se coucher
+lefekszik
+  -fekűdt, -fekűdjon, -fekűdne
+
+descendre (d'un moyen de locomotion)
+leszáll
+  -t, -jon, -na
+
+s'asseoir
+leül
+  -t, -jon, -ne
+
+se deshabiller
+levetkőzik
+  -vetkőzőtt, -vetkőzzőn, -vetkőzne
+
+
+ascenseur
+lift
+  -et, -e, -ek
+
+litre
+liter
+  -t
+
+tirer (avec une arme)
+lő
+
+affaire privée
+magáműgy
+  -et, -e, -ek
+
+après, ensuite
+majd
+
+déjà
+már
+
+
+s'arrêter
+megáll
+  -t, -jon, -na
+
+à côté (sans mouvement)
+mellett  
+
+mètre
+méter
+  -t, -e, -ek
+
+pourquoi ?
+miért ?
+
+tout le monde
+mindenki
+
+maintenant, à présent
+most
+
+travail
+munka
+  munkát, munkája, munkák
+
+monument
+müemlek
+  -et, -e, -ek
+
+difficile, lourd
+nehéz
+  nehezet, nehezek, nehezebb
+
+regarder, considérer
+néz vmire
+  -ett, -zen, -ne
+
+lire
+olvas
+  -ott, -son, -na
+
+heure, montre
+óra
+  órát, órajá, órak
+
+rive
+part
+  -ot, -ja, -ok
+
+argent (monnaie)
+pénz
+
+caisse (réserve d'argent)
+pénztár
+
+garçon de café
+pincér
+  -t, -e, -ek
+
+exact
+pontos
+  -at, -ak,-abb
+
+matin
+reggel
+  -t, -je, -k
+  
+petit-déjeuner (n)
+reggeli
+  -t, -je, -k
+
+petit-déjeuner (v)
+reggelizik
+
+ancien
+régi
+  -t, -ek, -bb
+
+police, commissariat
+rendőrség
+  -et, -e
+
+salade
+saláta
+  -salátát, salátája, saláták
+
+jaune
+sárga
+  sárgát, sárgák, sárgább
+
+se promener
+sétál
+  -t, -jon, -na
+
+hôtel
+szálloda
+  szállodát, szállodája, szállodák
+
+sévère
+szigorú
+  -t, -ak, -bb
+
+apprendre
+tanul
+  -t, -jon, -na (tanulni)
+
+télévision
+  à la télévision
+tévé
+  -t, -je, -k
+  a ~ben
+
+place (endroit)
+tér
+  terat, tere, terek
+
+je vous en prie, voilà
+tessék
+
+passeport
+útlevél
+  -levelet, -levele, -levelek
+
+visite d'une ville
+városnézés
+
+attendre
+vár (igék)
+  -t, -jon, -na
+
+château, forteresse
+vár (főnevek)
+  -at, -a, ak
+
+fin
+vég
+
+eau
+viz
+  vizet, vize, vizek
+
+tramway
+villamos
+  -t, -a, -ok
+
+examen
+vizsga
+  vizsgát, vizsgája, vizsgak
+
+rouge
+vörös
+  -et, -ek, -ebb
+
+

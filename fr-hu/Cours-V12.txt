@@ -54,7 +54,11 @@ fizet
   Mennyit fizetek ?
 
 coûter
-kerül vmibe
+  rection
+  Combien ça coûte ?
+kerül 
+  ~ vmibe
+  Mennyibe kerül ?
 
 éviter
 kerül vmit

@@ -1,4 +1,6 @@
 title: Assimil 08
+retrofitted: yes
+
 
 matin, matinée
 délelőtt

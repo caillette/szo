@@ -1,4 +1,6 @@
 title: Assimil 09
+retrofitted: yes
+
 
 matin
 reggel

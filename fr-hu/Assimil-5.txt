@@ -1,4 +1,5 @@
 title: Assimil 05
+retrofitted: yes
 
 garçon de café
 pincér

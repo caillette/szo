@@ -40,7 +40,9 @@ surpris (1)
 csodálkozo
 
 surpris (2)
+  surprise (subst)
 meglepett
+  meglepetés
 
 optimiste
 optimista

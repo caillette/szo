@@ -10,7 +10,7 @@ inconfortable
 kényemetlen
 
 donner des ordres
-  Tenez, voilà.
+  "Qu'est-ce que vous désirez ?"
 parancsolni
   Tessék, parancsolni
   
@@ -27,7 +27,9 @@ art
 művészet
 
 escalier
+  monter par l'escalier
 lépcső
+  a ~n felmegy
 
 russe
   en russe
@@ -40,4 +42,11 @@ tiszta
 sale
 piszkos  
 
+polonais
+lengyel
 
+lle à manger  
+étkező  
+  
+  
+  
