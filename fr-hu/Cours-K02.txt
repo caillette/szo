@@ -1,4 +1,5 @@
 title: Cours particulier K02
+retrofitted: true
 
 cuisiner 
 főz

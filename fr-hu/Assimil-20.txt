@@ -1,4 +1,5 @@
 title: Assimil 20
+retrofitted: yes
 
 campagne
 vidék

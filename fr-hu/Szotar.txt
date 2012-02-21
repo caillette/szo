@@ -55,6 +55,9 @@ banque
 bank
   -ot, -ja, -ot
 
+fermer
+becsuk
+
 malade
 beteg
   -et, -e, -ek
@@ -107,6 +110,9 @@ faire, cuisiner
 csinál
   -t, -jon, -na
 
+chaussure
+cipő
+
 poulet
 csirke
   csirkét, csirkéje, csirkék
@@ -126,8 +132,15 @@ matin, matinée
 délelőtt
   -öt, -je, -ök
 
+L'un (quelconque), l'un (des deux)
+egyik
+
 devant (vers devant)
 elé
+
+venir
+eljön
+  -jött, -jöjjön, -jönne
 
 indulgence, excuse
 elnézés
@@ -137,12 +150,25 @@ entrée
 elöszoba
   -szobatt, -szobája, -szobák
 
+en avance
+előre
+
 avant, devant
 előtt
+
+ranger
+elrakni
+
+disparaître
+eltűnik
+  -tűnt, -tűnjon, -tűnne
 
 étage
 emelet
   -et, -e, -ek
+
+balcon
+erkély
 
 soir
 este
@@ -160,7 +186,7 @@ chant
 ének
   -et, -e, -ek
 
-arriver
+arriver (action en cours)
 érkezik
   -kezett, -kezzen, -kezne
 
@@ -187,6 +213,10 @@ aliment, plat
 mur
 fal
   -at, -a, -ak
+
+village
+falu
+  -t, -ja, falvak
 
 blanc
 fehér
@@ -223,6 +253,14 @@ photographie
 fénykép
   -et, -e, -ek
 
+délicieux, fin
+finom
+  -at, -ak, -abb
+
+jeune
+fiatal
+  -t, -ok, -abb
+
 garçon, fils
 fiú
   -t, fia, -k
@@ -242,9 +280,15 @@ fotel
 au-dessus ("vers au-dessus")
 fölé
 
+cuisiner
+főz
+
 salle de bains
 fürdőszoba
   -szobát, -szobája, -szobák
+
+chataîgne (fruit)
+gesztenye
 
 machine
 gép
@@ -265,8 +309,16 @@ enfant
 gyerek
   -et, -ek, -ek
 
+rapide
+gyors
+  -at, -ak, -abb
+
 faux
 hamis
+  -at, -ak, -abb
+
+énorme, immense
+hatalmas
   -at, -ak, -abb
 
 combien ?
@@ -279,6 +331,10 @@ hálószoba
 place, endroit
 helye
  -et, -e, -ek
+
+semaine
+hét
+  hetet, hete, hetek
 
 pont
 híd
@@ -310,6 +366,9 @@ apporter
 hoz
   -ott, -zon, -na
 
+vers ici
+ide
+
 temps
 idő
   -t, ideje, -k
@@ -321,6 +380,9 @@ igazgató
 partir, se mettre en route
 indul
   -t, -jon, na
+
+d'ici
+innen
 
 bureau
 iróasztal
@@ -342,6 +404,13 @@ jouet, jeu
 játék
   -ot, -a, -ok
 
+avenir, prochain
+jövő
+  -t, -je
+
+manteau
+kabát
+
 caviar
 kaviár
   -t, -ja, -ok
@@ -357,6 +426,10 @@ kávéház
 dommage, tort, préjudice
 kár
   -t, -a, -ok
+
+cher
+kedves
+  -et, -ek, -ebb
 
 serrer la main
 kezet fog
@@ -374,6 +447,10 @@ demander, prier
 kér
   -t, -jen, -ne
 
+demander, poser une question
+kérdez
+  -ett, -zen, -ne
+
 tard
 késő
 
@@ -386,6 +463,10 @@ későn
 commencer
 kezdödik
   kezdödött, kezdödjön, kezdödne
+
+crier
+kiált
+  -ott, -son, -ana
 
 sortir quelque chose
 kihoz
@@ -418,6 +499,11 @@ közeledik
 entre ("vers entre")
 közé
 
+envoyer
+  dérivés
+küld
+  átküld, elküld, visszaküld
+
 étranger
 külföldi
   -t, -ek
@@ -437,6 +523,9 @@ lemegy
 descendre (d'un moyen de locomotion)
 leszáll
   -t, -jon, -na
+
+enlever
+leszedni
 
 poser
 letesz
@@ -477,6 +566,9 @@ majd
 déjà
 már
 
+autre, l'autre
+másik
+  -at
 
 s'arrêter
 megáll
@@ -502,6 +594,9 @@ miért ?
 comment ? comme !
 milyen
 
+tout
+minden
+
 tout le monde
 mindenki
 
@@ -515,6 +610,9 @@ miniszter
 dire
 mond
   -ott -jon, -ana
+
+laver
+mosni
 
 maintenant, à présent
 most
@@ -543,6 +641,10 @@ nehéz
 sans
 nélkül
 
+dame, tante
+néni
+  -t, -je, -k
+
 nom
 név
   nevet, neve, nevek
@@ -551,6 +653,12 @@ regarder, considérer
 néz vmire
   -ett, -zen, -ne
 
+vers là-bas
+oda
+
+de là-bas
+onnan
+
 intelligent
 okos
   -at, -ak, -abb
@@ -558,6 +666,10 @@ okos
 lire
 olvas
   -ott, -son, -na
+
+vieux (pour un être humain)
+öreg
+  -et, -ek, -ebb
 
 se réjouir
 örül
@@ -607,7 +719,11 @@ magas
 matin
 reggel
   -t, -je, -k
-  
+
+arriver (action achevée)
+megérkezik
+  -kezett, -kezzen, -kezne
+
 petit-déjeuner (n)
 reggeli
   -t, -je, -k
@@ -674,12 +790,25 @@ szék
   -et, -e, -ek
 
 sévère
+sévère
 szigorú
   -t, -ak, -bb
 
-parent (père ou mère)
-szülő
-  -t, -je, -k
+comédien, acteur
+színész
+
+avoir l'habitude de
+  Péter n'a pas l'habitude de lire
+szok
+  Péter nem szokott olvasni (toujours au passé)
+
+samedi
+szombat
+  -ot, -ja, -ok
+
+voisin
+szomszéd
+  -ot, -ja, -ok
 
 tapis
 szönyeg
@@ -697,6 +826,10 @@ blond
 szőke
   szőket, szőkék, szőkebb
 
+parent (père ou mère)
+szülő
+  -t, -je, -k
+
 rencontrer
 találkozik
   -kozott, -kozzon, -kozna
@@ -711,6 +844,9 @@ talán
 apprendre
 tanul
   -t, -jon, -na (tanulni)
+
+considérer quelqu'un comme
+tekinteni vkit vminek
 
 télévision
   à la télévision
@@ -743,6 +879,14 @@ tükör
 n'est-ce pas ?
 ugye ?
 
+petit-fils, petite fille
+unoka
+  unokát, unokája, unokák
+
+goûter, casser la croûte
+uzsonnázik
+  -názott, -názzon, -názna
+
 nouveau
 új
   -at, -ak, -abb
@@ -754,8 +898,21 @@ passeport
 útlevél
   -levelet, -levele, -levelek
 
+envoyer un message
+üzeni
+
+sauvage
+vad
+
+marron (fruit)
+vadgesztenye
+
 quelque part
 valahol
+
+répondre
+válaszol
+  -t, -jon, -na
 
 visite d'une ville
 városnézés
@@ -774,6 +931,13 @@ vendég
 
 fin
 vég
+
+finalement (référence : maintenant)
+végén
+
+campagne (lieu)
+vidék
+  -et, -e, -ek
 
 eau
 viz

@@ -1,4 +1,5 @@
 title: Assimil 19
+retrofitted: yes
 
 déménager
 költözik
