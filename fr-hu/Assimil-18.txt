@@ -1,4 +1,5 @@
 title: Assimil 18
+retrofitted: yes
 
 réception
 fogadás

@@ -1,5 +1,9 @@
 title: Szótár
 
+porte
+ajtó
+  -t, -ajtaja, -k
+
 vouloir
 akar
   -t, -jon, -na
@@ -7,9 +11,30 @@ akar
 alors, dans ce cas
 akkor
 
+bas, petit
+alacsony
+  -at, -ak, -abb
+
+sous, au-dessous (sans mouvement)
+alatt
+
+sous ("vers")
+alá
+
+sous (non-relatif)
+alól
+
 dormir
 alszik
   aludt, aludjon, aludna
+
+mère
+anya
+  anyát, anyja, anyák
+
+table
+asztal
+  -t, -a, -ok
 
 tout de suite
 azonnal
@@ -17,12 +42,9 @@ azonnal
 puis, ensuite, ultérieurement, plus tard
 aztán
 
-table
-asztal
-  -t, -a, -ok
-
-ensuite
-aztán
+lit
+ágy
+  -at, -a, -ak
 
 gauche
   à gauche
@@ -37,17 +59,49 @@ malade
 beteg
   -et, -e, -ek
 
+mettre, introduire
+betesz
+  -tett, -tegyen, -tenne
+
+porter (à l'intérieur)
+bevisz
+  -vit, -viggen, -vinne
+
+sûr, certain
+  sûrement
+biztos
+  biztosan
+
+heureux
+boldog
+  -ot, -ok, -abb
+
 vin
 bor
   -t, -a, -ok
+
+compliment
+bók
+  -ot, -ja, -ok
 
 adresse, titre
 cim
   -et, -e, -ek
 
+calme, silence
+csend
+  -et, -je
+
+calme, silencieux
+csendes
+
 chèque
 csekk
   -et, -je -ek
+
+étoile
+csillag
+  -ot, -a, -ok
 
 faire, cuisiner
 csinál
@@ -56,6 +110,10 @@ csinál
 poulet
 csirke
   csirkét, csirkéje, csirkék
+
+merveilleux
+csodálatos
+  -at, -ak, -abb
 
 Danube
 Duna
@@ -68,9 +126,16 @@ matin, matinée
 délelőtt
   -öt, -je, -ök
 
+devant (vers devant)
+elé
+
 indulgence, excuse
 elnézés
   -t, -e
+
+entrée
+elöszoba
+  -szobatt, -szobája, -szobák
 
 avant, devant
 előtt
@@ -79,10 +144,25 @@ előtt
 emelet
   -et, -e, -ek
 
+soir
+este
+  estét, estéje, esték
+
 nuit
 éjjel
   -t, -, -ek
 
+élégant
+elegáns
+  -ak, -ak, -abb
+
+chant
+ének
+  -et, -e, -ek
+
+arriver
+érkezik
+  -kezett, -kezzen, -kezne
 
 carte (au restaurant)
 étlap
@@ -100,9 +180,21 @@ intéressant
 érdekes
   -et, -ek, -ebb
 
+aliment, plat
+étel
+  -t, -e, -ek
+
+mur
+fal
+  -at, -a, -ak
+
 blanc
 fehér
   -et, -ek, -ebb
+
+monter quelque chose
+felhoz
+  -ott, -zon, -na
 
 se lever
 felkel
@@ -127,9 +219,32 @@ avoir peur
 fél
   -t, -jen, -ne
   
+photographie
+fénykép
+  -et, -e, -ek
+
 garçon, fils
 fiú
   -t, fia, -k
+
+réception
+fogadás
+  -t, -a, -ok
+
+fleuve
+folyó
+  -t, -ja, -k
+
+fauteuil
+fotel
+  -t, -e, -ek
+
+au-dessus ("vers au-dessus")
+fölé
+
+salle de bains
+fürdőszoba
+  -szobát, -szobája, -szobák
 
 machine
 gép
@@ -157,17 +272,32 @@ hamis
 combien ?
 hány ?
 
+chambre à coucher
+hálószoba
+  -szobát, -szobája, szobák
+
 place, endroit
 helye
- -et, -e, -ek
-
-dame
-hőlgy
  -et, -e, -ek
 
 pont
 híd
   hídat, -ja, hídak
+
+s'appeler (porter pour nom)
+  Je m'appelle Kata.
+  utilisation impersonnelle
+hív
+  Engem Katának hívnak.
+  [név]nak/nek hívnak
+  hívott, hívjon, hívna
+
+dame
+hőlgy
+ -et, -e, -ek
+
+comment, que
+hogy
 
 demain
 holnap
@@ -188,6 +318,18 @@ directeur
 igazgató
   -t, -ja, -k
 
+partir, se mettre en route
+indul
+  -t, -jon, na
+
+bureau
+iróasztal
+  -t, -a, -ok
+
+connaître
+ismer
+  -t, -jen, -ne
+
 boisson
 ital
   -t, -a, -ok
@@ -196,18 +338,85 @@ marcher, aller
 jár
   -t, -jon, -na
 
+jouet, jeu
+játék
+  -ot, -a, -ok
+
+caviar
+kaviár
+  -t, -ja, -ok
+
+poële (pour le chauffage)
+kályha
+  kályhát, kalyhája, kályhák
+
+café (établissement)
+kávéház
+  -at, -a, -ak
+
+dommage, tort, préjudice
+kár
+  -t, -a, -ok
+
+serrer la main
+kezet fog
+  kezet : invariable
+
 bleu
 kék
   -et, -ek, -ebb
+
+tableau
+kép
+  -et, -e, -ek
 
 demander, prier
 kér
   -t, -jen, -ne
 
+tard
+késő
+
+plus tard
+később
+
+en retard
+későn
+
+commencer
+kezdödik
+  kezdödött, kezdödjön, kezdödne
+
+sortir quelque chose
+kihoz
+  -ott, -zon, -na
+
+sortie (emplacement)
+kijárat
+  -ot, -a, -ok
+
+excellent
+kitünő
+  -t, -ek, -ebb
+
+sortir quelque chose
+kivisz
+  kivitt, kivigyen, kivinne
+
+déménager
+költözik
+  költözött, költözzön, költözne
 
 facile, léger
 könnyű
   -t, -ek, könnyebb
+
+approcher
+közeledik
+  -ledett, -ledjen, -ledne
+
+entre ("vers entre")
+közé
 
 étranger
 külföldi
@@ -221,9 +430,17 @@ se coucher
 lefekszik
   -fekűdt, -fekűdjon, -fekűdne
 
+descendre
+lemegy
+  -ment, -menjen, -menne
+
 descendre (d'un moyen de locomotion)
 leszáll
   -t, -jon, -na
+
+poser
+letesz
+  -tett, -teggen, -tenne
 
 s'asseoir
 leül
@@ -245,6 +462,11 @@ liter
 tirer (avec une arme)
 lő
 
+aujourd'hui
+  d'aujourd'hui
+ma
+  mai
+
 affaire privée
 magáműgy
   -et, -e, -ek
@@ -260,8 +482,15 @@ s'arrêter
 megáll
   -t, -jon, -na
 
+embrasser
+megcsókol
+  -t, -jon, -na
+
 à côté (sans mouvement)
 mellett  
+
+à côté ("vers à côté")
+mellé
 
 mètre
 méter
@@ -270,11 +499,31 @@ méter
 pourquoi ?
 miért ?
 
+comment ? comme !
+milyen
+
 tout le monde
 mindenki
 
+toujours
+mindig
+
+ministre
+miniszter
+  -t, -e, -ek
+
+dire
+mond
+  -ott -jon, -ana
+
 maintenant, à présent
 most
+
+derrière ("vers derrière")
+möge
+
+derrière (sans mouvement)
+mögött
 
 travail
 munka
@@ -284,17 +533,35 @@ monument
 müemlek
   -et, -e, -ek
 
+jour, soleil
+nap
+
 difficile, lourd
 nehéz
   nehezet, nehezek, nehezebb
+
+sans
+nélkül
+
+nom
+név
+  nevet, neve, nevek
 
 regarder, considérer
 néz vmire
   -ett, -zen, -ne
 
+intelligent
+okos
+  -at, -ak, -abb
+
 lire
 olvas
   -ott, -son, -na
+
+se réjouir
+örül
+  -t, -jön, -ne
 
 heure, montre
 óra
@@ -304,19 +571,38 @@ rive
 part
   -ot, -ja, -ok
 
+bien sûr
+persze
+
+
+champagne
+pezsgő
+  -t, -je, -k
+
 argent (monnaie)
 pénz
 
 caisse (réserve d'argent)
 pénztár
 
+cave
+pince
+  pincét, pincéje, pincék
+
 garçon de café
 pincér
   -t, -e, -ek
 
+plein (adj, invariable)
+tele
+
 exact
 pontos
   -at, -ak,-abb
+
+grand, élancé
+magas
+  -at, -ak, -abb
 
 matin
 reggel
@@ -329,13 +615,24 @@ reggeli
 petit-déjeuner (v)
 reggelizik
 
-ancien
-régi
-  -t, -ek, -bb
+désordre
+rendetlenség
+  -et, -e
 
 police, commissariat
 rendőrség
   -et, -e
+
+ancien
+régi
+  -t, -ek, -bb
+
+mauvais
+rossz
+  -at, -ak, -abb
+
+mal
+rosszul
 
 salade
 saláta
@@ -349,13 +646,67 @@ se promener
 sétál
   -t, -jon, -na
 
+personne (privatif)
+senki
+
+briller, faire cuire
+süt
+  -ött, süssön, -ne
+
 hôtel
 szálloda
   szállodát, szállodája, szállodák
 
+armoire
+szekrény
+  -t, -e, -ek
+
+paire de lunettes
+szemüveg
+  -et, -e, -ek
+
+aimer
+szeret
+  -ett, szeressen, -ne
+
+chaise
+szék
+  -et, -e, -ek
+
 sévère
 szigorú
   -t, -ak, -bb
+
+parent (père ou mère)
+szülő
+  -t, -je, -k
+
+tapis
+szönyeg
+ -et, -e, -ek
+
+dire
+szól
+  -t, -jon, -na
+
+se distraire
+szórakozik
+  -kozott, -kozzon, -kozna
+
+blond
+szőke
+  szőket, szőkék, szőkebb
+
+rencontrer
+találkozik
+  -kozott, -kozzon, -kozna
+
+danser
+táncol
+  -t, -jon, -na
+
+peut-être
+talán
 
 apprendre
 tanul
@@ -374,9 +725,37 @@ tér
 je vous en prie, voilà
 tessék
 
+faire, mettre
+tesz
+  tett, tegyen, tenne
+
+plaire à quelqu'un
+tetszik vkinek
+  tetszett, tetsszen, tetszene
+
+plus loin, continuer à
+tovább
+
+glace, miroir
+tükör
+  tükröt, tükre, tükrök
+
+n'est-ce pas ?
+ugye ?
+
+nouveau
+új
+  -at, -ak, -abb
+
+de nouveau
+újra
+
 passeport
 útlevél
   -levelet, -levele, -levelek
+
+quelque part
+valahol
 
 visite d'une ville
 városnézés
@@ -388,6 +767,10 @@ vár (igék)
 château, forteresse
 vár (főnevek)
   -at, -a, ak
+
+invité
+vendég
+  -et, -e, -ek
 
 fin
 vég
@@ -408,4 +791,10 @@ rouge
 vörös
   -et, -ek, -ebb
 
+orchestre
+zenekar
+  -t, -a, -ok
 
+piano
+zongora
+  zongorát, zongorája, zongorák

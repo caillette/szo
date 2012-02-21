@@ -1,4 +1,5 @@
 title: Assimil 15
+retrofitted: yes
 
 paire de lunettes
 szemüveg

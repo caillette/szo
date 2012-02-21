@@ -1,4 +1,5 @@
 title: Assimil 16
+retrofitted: yes
 
 comment, comme !
 milyen
