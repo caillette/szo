@@ -14,6 +14,9 @@ akar
 alors, dans ce cas
 akkor
 
+forme (contour) (1)
+alak
+
 bas, petit
 alacsony
   -at, -ak, -abb
@@ -31,9 +34,23 @@ dormir
 alszik
   aludt, aludjon, aludna ; aludni
 
+dormir
+  dormir suffisamment
+aludni
+  kialudni magát
+
+antonyme (2)
+antonim
+
 mère
 anya
   anyát, anyja, anyák
+
+visage
+arc
+
+dame (femme mariée)
+asszony
 
 table
 asztal
@@ -49,11 +66,23 @@ lit
 ágy
   -at, -a, -ak
 
+rêveur
+álmodoró
+
+rêve
+álom
+
+en général
+általában
+
 à travers
 át
 
 transmettre
 átadni
+
+moyen, médiocre
+átlagos
 
 traverser
 átmegy
@@ -70,6 +99,12 @@ banque
 bank
   -ot, -ja, -ot
 
+amical
+barátsagos
+
+hostile
+barátsagtalan
+
 regretter
 bán vmit
 
@@ -78,6 +113,9 @@ bátor
 
 fermer
 becsuk
+
+interne
+belső
 
 malade
 beteg
@@ -90,6 +128,9 @@ betesz
 porter (à l'intérieur)
 bevisz
   -vit, -viggen, -vinne
+
+incertain, indécis (1)
+bizonytalan
 
 sûr, certain
   sûrement
@@ -131,6 +172,12 @@ faire, cuisiner
 csinál
   -t, -jon, -na
 
+jolie, charmante (que pour les femmes)
+csinos
+
+surpris (1)
+csodálkozo
+
 chaussure
 cipő
 
@@ -153,6 +200,12 @@ matin, matinée
 délelőtt
   -öt, -je, -ök
 
+chose
+dolog
+
+fâché (1)
+dühös
+
 L'un (quelconque), l'un (des deux)
 egyik
 
@@ -161,6 +214,11 @@ ejnye
 
 devant (vers devant)
 elé
+
+satisfait, content
+  "ça suffit"
+elégedett
+  elég
 
 venir
 eljön
@@ -171,6 +229,9 @@ elküld
 
 contre (adversatif)
 ellen
+
+antipathique
+ellenszenves
 
 indulgence, excuse
 elnézés
@@ -218,8 +279,14 @@ eleven
 oublier
 elfelejt
 
+antonyme (1)
+ellentét
+
 partir
 elmegy
+
+fort
+erős
 
 réveillé, vigilant
 éber
@@ -249,6 +316,11 @@ bâtiment
 épület
   -et, -e, -ek
 
+intéresser
+  intéressé
+érdekel
+  érdeklődő
+
 intéressant
 érdekes
   -et, -ek, -ebb
@@ -268,6 +340,11 @@ falu
 blanc
 fehér
   -et, -ek, -ebb
+
+comprendre
+  lent à comprendre
+felfogás
+  lassú felfogású
 
 monter quelque chose
 felhoz
@@ -296,6 +373,11 @@ charcuterie
   voir
 felvágott
   vágni
+
+peindre
+  coloré, teint
+festeni
+  festett
 
 avoir peur
 fél
@@ -329,6 +411,9 @@ fleuve
 folyó
   -t, -ja, -k
 
+forme (2)
+forma
+
 fauteuil
 fotel
   -t, -e, -ek
@@ -341,6 +426,9 @@ fölösleges
 
 cuisiner
 főz
+
+frais, récent, en forme
+friss
 
 vite (2)
 fúrge
@@ -381,6 +469,9 @@ usine
 gyár
   -at, -a, -ak
 
+faible, chétif
+gyenge
+
 enfant
 gyerek
   -et, -ek, -ek
@@ -407,6 +498,11 @@ hálószoba
 place, endroit
 helye
  -et, -e, -ek
+
+situation
+  maître de la situation
+helyzet
+  ura a helyzetnek
 
 semaine
 hét
@@ -449,6 +545,13 @@ dame
 hőlgy
  -et, -e, -ek
 
+humour
+  sens de l'humour
+  il n'a pas le sens de l'humour
+humor
+  humor érszég
+  nincs humor érszége
+
 vers ici
 ide
 
@@ -487,6 +590,12 @@ jouet, jeu
 játék
   -ot, -a, -ok
 
+signifier quelque chose
+jelent vmit
+
+beau, charmant (que pour les hommes)
+jóképű
+
 avenir, prochain
 jövő
   -t, -je
@@ -496,6 +605,9 @@ kabát
 
 Noël
 karácsony
+
+mince
+karcsú
 
 caviar
 kaviár
@@ -519,6 +631,12 @@ kár
 cher
 kedves
   -et, -ek, -ebb
+
+agréable
+kellemes
+
+désagréable
+kellemetlen
 
 serrer la main
 kezet fog
@@ -576,6 +694,12 @@ sortir quelque chose
 kivisz
   kivitt, kivigyen, kivinne
 
+curieux (de savoir)
+kíváncsi
+
+indifférent
+közonyos
+
 déménager
 költözik
   költözött, költözzön, költözne
@@ -583,6 +707,9 @@ költözik
 facile, léger
 könnyű
   -t, -ek, könnyebb
+
+gros (pour les êtres vivants)
+kövér
 
 entre temps, pendant ce temps-là
 közben
@@ -602,6 +729,9 @@ küld
 étranger
 külföldi
   -t, -ek
+
+incertain, indécis (2)
+labilis
 
 habiter
 lakik
@@ -661,10 +791,16 @@ liter
 tirer (avec une arme)
 lő
 
+paresseux
+lusta
+
 aujourd'hui
   d'aujourd'hui
 ma
   mai
+
+sûr de lui
+magabiztos
 
 affaire privée
 magáműgy
@@ -687,9 +823,17 @@ s'arrêter
 megáll
   -t, -jon, -na
 
+en qui on peut avoir confiance
+megbízható
+
 embrasser
 megcsókol
   -t, -jon, -na
+
+surpris (2)
+  surprise (subst)
+meglepett
+  meglepetés
 
 à côté (sans mouvement)
 mellett  
@@ -702,6 +846,9 @@ mert
 
 conte
 mese
+
+fâché (2)
+mérges
 
 mètre
 méter
@@ -760,12 +907,18 @@ passé
 múlt
   múlt vasárnap
 
+naif
+naív
+
 jour, soleil
 nap
 
 difficile, lourd
 nehéz
   nehezet, nehezek, nehezebb
+
+rire
+nevet
 
 sans
 nélkül
@@ -785,6 +938,9 @@ néz vmire
 pâte à base de farine et d'œuf
 nohedli
 
+calme
+nyugodt
+
 vers là-bas
 oda
 
@@ -802,6 +958,9 @@ olvas
 comment, comme, tellement
 olyan
 
+optimiste
+optimista
+
 vieux (pour un être humain)
 öreg
   -et, -ek, -ebb
@@ -809,6 +968,13 @@ vieux (pour un être humain)
 se réjouir
 örül
   -t, -jön, -ne
+
+automne / gris-blanc (cheveux)
+ősz
+
+franc, sincère
+  (rien à voir avec l'automne)
+őszinte
 
 heure, montre
 óra
@@ -831,6 +997,9 @@ bien sûr
 persze
 
 
+pessimiste
+pesszimista
+
 champagne
 pezsgő
   -t, -je, -k
@@ -852,6 +1021,9 @@ pincér
 plein (adj, invariable)
 tele
 
+instant
+pillanat
+
 exact
 pontos
   -at, -ak,-abb
@@ -867,6 +1039,9 @@ matin
 reggel
   -t, -je, -k
 
+relatif (1)
+relatív
+
 arriver (action achevée)
 megérkezik
   -kezett, -kezzen, -kezne
@@ -876,6 +1051,9 @@ pisilni
 
 ragoût
 pörköt
+
+réaliste
+realista
 
 petit-déjeuner (n)
 reggeli
@@ -895,6 +1073,9 @@ rend
   rendet raktam a lakásamban
   rendbe raktam a lakásamat
 
+ordonné
+rendes
+
 passer commande
 rendelni
 
@@ -909,6 +1090,9 @@ rendőrség
 ancien
 régi
   -t, -ek, -bb
+
+ivre
+részeg
 
 mauvais
 rossz
@@ -942,6 +1126,12 @@ soha... nem
 
 jambon
 sonka
+
+destin, sort
+sors
+
+maigre
+sovány
 
 briller, faire cuire
 süt
@@ -987,9 +1177,16 @@ samedi
 szombat
   -ot, -ja, -ok
 
+triste
+szomorú
+
 voisin
 szomszéd
   -ot, -ja, -ok
+
+mot
+szó
+  -t, szava, szavak
 
 alors
 szóval
@@ -1037,15 +1234,8 @@ táncol
 considérer quelqu'un comme
 tekinteni vkit vminek
 
-télévision
-  à la télévision
-tévé
-  -t, -je, -k
-  a ~ben
-
-place (endroit)
-tér
-  terat, tere, terek
+nature
+természet
 
 je vous en prie, voilà
 tessék
@@ -1058,9 +1248,26 @@ plaire à quelqu'un
 tetszik vkinek
   tetszett, tetsszen, tetszene
 
+vraiment
+tényleg
+
+place (endroit)
+tér
+  terat, tere, terek
+
+télévision
+  à la télévision
+tévé
+  -t, -je, -k
+  a ~ben
+
+
 interdit
   (pas de détachement du préfixe de l'autre verbe)
 tilos
+
+adolescent
+tinédzser
 
 plus loin, continuer à
 tovább
@@ -1068,9 +1275,15 @@ tovább
 le reste
 többi
 
+qualité, caractéristique
+tuladonság
+
 glace, miroir
 tükör
   tükröt, tükre, tükrök
+
+poli, courtois
+udvarias
 
 n'est-ce pas ?
 ugye ?
@@ -1091,6 +1304,11 @@ utázni
 goûter, casser la croûte
 uzsonnázik
   -názott, -názzon, -názna
+
+de cette façon-là
+  il sent que ...
+úgy
+  úgy erzi, hogy...
 
 nouveau
 új
@@ -1147,6 +1365,13 @@ vég
 finalement (référence : maintenant)
 végén
 
+blague, histoire drôle
+vicc
+  -et, -e, -ek
+
+joyeux
+vidám
+
 campagne (lieu)
 vidék
   -et, -e, -ek
@@ -1156,6 +1381,9 @@ viselkedni
 
 renvoyer
 visszaküld
+
+relatif (2)
+viszonylagos
 
 eau
 viz
