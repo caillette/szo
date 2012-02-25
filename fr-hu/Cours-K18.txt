@@ -1,4 +1,6 @@
 title: Cours particulier K18
+retrofitted: yes
+
 
 coiffeur
 fodrász
@@ -63,6 +65,7 @@ villamosmegálló
 dehogy
 
 première fois
+először
 
 quelque (2)
 pár
@@ -71,4 +74,3 @@ pár
 "Veuillez entrer"
 tessék bemenni
 
-először  

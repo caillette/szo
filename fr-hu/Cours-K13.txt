@@ -1,4 +1,5 @@
 title: Cours particulier K13
+retrofitted: yes
 
 être debout
   se lever

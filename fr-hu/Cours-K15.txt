@@ -1,4 +1,5 @@
 title: Cours particulier K15
+retrofitted: yes
 
 poste (bureau de)
   à la poste

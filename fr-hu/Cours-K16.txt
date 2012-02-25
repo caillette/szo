@@ -1,4 +1,5 @@
 title: Cours particulier K16
+retrofitted: yes
 
 meuble (pièce de mobilier)
 bútor

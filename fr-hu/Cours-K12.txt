@@ -1,4 +1,5 @@
 title: Cours particulier K12
+retrofitted: yes
 
 bon marché (adj)
 olcsó
@@ -45,7 +46,7 @@ piszkos
 polonais
 lengyel
 
-lle à manger  
+salle à manger
 étkező  
   
   
