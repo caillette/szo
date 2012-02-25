@@ -1,5 +1,8 @@
 title: Szótár
 
+conseiller
+ajánlani
+
 porte
 ajtó
   -t, -ajtaja, -k
@@ -26,7 +29,7 @@ alól
 
 dormir
 alszik
-  aludt, aludjon, aludna
+  aludt, aludjon, aludna ; aludni
 
 mère
 anya
@@ -46,6 +49,18 @@ lit
 ágy
   -at, -a, -ak
 
+à travers
+át
+
+transmettre
+átadni
+
+traverser
+átmegy
+
+envoyer à travers
+átküld
+
 gauche
   à gauche
 bal
@@ -54,6 +69,12 @@ bal
 banque
 bank
   -ot, -ja, -ot
+
+regretter
+bán vmit
+
+courageux
+bátor
 
 fermer
 becsuk
@@ -135,12 +156,21 @@ délelőtt
 L'un (quelconque), l'un (des deux)
 egyik
 
+zut (plus réprimande)
+ejnye
+
 devant (vers devant)
 elé
 
 venir
 eljön
   -jött, -jöjjön, -jönne
+
+envoyer (avec acomplissement)
+elküld
+
+contre (adversatif)
+ellen
 
 indulgence, excuse
 elnézés
@@ -181,6 +211,23 @@ nuit
 élégant
 elegáns
   -ak, -ak, -abb
+
+vivant, actif
+eleven
+
+oublier
+elfelejt
+
+partir
+elmegy
+
+réveillé, vigilant
+éber
+
+se réveiller
+  réveiller qqun/qqchose
+ébred
+  ébreszt
 
 chant
 ének
@@ -245,6 +292,11 @@ monter (dans un moyen de locomotion)
 felszáll
   -t, -jon, -na
 
+charcuterie
+  voir
+felvágott
+  vágni
+
 avoir peur
 fél
   -t, -jen, -ne
@@ -260,6 +312,10 @@ finom
 jeune
 fiatal
   -t, -ok, -abb
+
+
+philosopher
+filozofálni
 
 garçon, fils
 fiú
@@ -280,8 +336,17 @@ fotel
 au-dessus ("vers au-dessus")
 fölé
 
+inutile, dénué de sens
+fölösleges
+
 cuisiner
 főz
+
+vite (2)
+fúrge
+
+prendre un bain
+fürteni
 
 salle de bains
 fürdőszoba
@@ -294,10 +359,21 @@ machine
 gép
   -et, -e, -ek
   
+rouler (comme une bille)
+  dérivé
+gurul
+  legurul
+
 goulache
 gulyás
   -t
-  
+
+fréquence
+gyakori
+
+souvent
+gyakran
+
 à pied
 gyalog
 
@@ -336,6 +412,9 @@ semaine
 hét
   hetet, hete, hetek
 
+tout d'un coup
+hirtelen
+
 pont
 híd
   hídat, -ja, hídak
@@ -348,9 +427,6 @@ hív
   [név]nak/nek hívnak
   hívott, hívjon, hívna
 
-dame
-hőlgy
- -et, -e, -ek
 
 comment, que
 hogy
@@ -359,12 +435,19 @@ demain
 holnap
  -ot, -ok
 
+long
+hosszú
+
 où ? (vers où)
 hova 
 
 apporter
 hoz
   -ott, -zon, -na
+
+dame
+hőlgy
+ -et, -e, -ek
 
 vers ici
 ide
@@ -411,9 +494,15 @@ jövő
 manteau
 kabát
 
+Noël
+karácsony
+
 caviar
 kaviár
   -t, -ja, -ok
+
+exposition
+kállitás
 
 poële (pour le chauffage)
 kályha
@@ -476,6 +565,9 @@ sortie (emplacement)
 kijárat
   -ot, -a, -ok
 
+déblayer
+kitakarít
+
 excellent
 kitünő
   -t, -ek, -ebb
@@ -491,6 +583,9 @@ költözik
 facile, léger
 könnyű
   -t, -ek, könnyebb
+
+entre temps, pendant ce temps-là
+közben
 
 approcher
 közeledik
@@ -512,9 +607,24 @@ habiter
 lakik
   lakott, lakjon, lakna
 
+habitant (subst.)
+lako
+
+lent
+lassú
+
 se coucher
 lefekszik
   -fekűdt, -fekűdjon, -fekűdne
+
+au moins
+legalább
+
+dévaler
+legurul
+
+"c'est possible que" (impersonnel)
+lehet
 
 descendre
 lemegy
@@ -563,6 +673,9 @@ magáműgy
 après, ensuite
 majd
 
+bœuf
+marha
+
 déjà
 már
 
@@ -583,6 +696,12 @@ mellett
 
 à côté ("vers à côté")
 mellé
+
+parce que
+mert
+
+conte
+mese
 
 mètre
 méter
@@ -627,9 +746,19 @@ travail
 munka
   munkát, munkája, munkák
 
+il faut
+  (auxiliaire non conjugué)
+  (pas de détachement du préfixe de l'autre verbe)
+muszáj
+
 monument
 müemlek
   -et, -e, -ek
+
+passé
+  le dimanche dernier
+múlt
+  múlt vasárnap
 
 jour, soleil
 nap
@@ -653,6 +782,9 @@ regarder, considérer
 néz vmire
   -ett, -zen, -ne
 
+pâte à base de farine et d'œuf
+nohedli
+
 vers là-bas
 oda
 
@@ -667,6 +799,9 @@ lire
 olvas
   -ott, -son, -na
 
+comment, comme, tellement
+olyan
+
 vieux (pour un être humain)
 öreg
   -et, -ek, -ebb
@@ -678,6 +813,15 @@ se réjouir
 heure, montre
 óra
   órát, órajá, órak
+
+là-dessus
+rá
+
+habiller
+ráad
+
+jeter un coup d'œil
+ránéz
 
 rive
 part
@@ -712,6 +856,9 @@ exact
 pontos
   -at, -ak,-abb
 
+dinde
+pulyka
+
 grand, élancé
 magas
   -at, -ak, -abb
@@ -724,12 +871,32 @@ arriver (action achevée)
 megérkezik
   -kezett, -kezzen, -kezne
 
+faire pipi
+pisilni
+
+ragoût
+pörköt
+
 petit-déjeuner (n)
 reggeli
   -t, -je, -k
 
 petit-déjeuner (v)
 reggelizik
+
+ordre (l')
+  désordre
+  ranger
+  j'ai rangé mon appartement (1)
+  j'ai rangé mon appartement (2)
+rend
+  rendetlen
+  rendet rakni
+  rendet raktam a lakásamban
+  rendbe raktam a lakásamat
+
+passer commande
+rendelni
 
 désordre
 rendetlenség
@@ -765,6 +932,17 @@ sétál
 personne (privatif)
 senki
 
+écossais
+skót
+
+jamais
+  (contraction)
+soha... nem
+  sosem
+
+jambon
+sonka
+
 briller, faire cuire
 süt
   -ött, süssön, -ne
@@ -797,6 +975,9 @@ szigorú
 comédien, acteur
 színész
 
+propre, sain
+szobatiszta
+
 avoir l'habitude de
   Péter n'a pas l'habitude de lire
 szok
@@ -809,6 +990,9 @@ szombat
 voisin
 szomszéd
   -ot, -ja, -ok
+
+alors
+szóval
 
 tapis
 szönyeg
@@ -830,13 +1014,14 @@ parent (père ou mère)
 szülő
   -t, -je, -k
 
+nettoyer, faire le ménage
+  dérivé
+takarít
+  kitakarít
+
 rencontrer
 találkozik
   -kozott, -kozzon, -kozna
-
-danser
-táncol
-  -t, -jon, -na
 
 peut-être
 talán
@@ -844,6 +1029,10 @@ talán
 apprendre
 tanul
   -t, -jon, -na (tanulni)
+
+danser
+táncol
+  -t, -jon, -na
 
 considérer quelqu'un comme
 tekinteni vkit vminek
@@ -869,8 +1058,15 @@ plaire à quelqu'un
 tetszik vkinek
   tetszett, tetsszen, tetszene
 
+interdit
+  (pas de détachement du préfixe de l'autre verbe)
+tilos
+
 plus loin, continuer à
 tovább
+
+le reste
+többi
 
 glace, miroir
 tükör
@@ -879,9 +1075,18 @@ tükör
 n'est-ce pas ?
 ugye ?
 
+ennuyeux
+unalmas
+
 petit-fils, petite fille
 unoka
   unokát, unokája, unokák
+
+voyageur
+utas
+
+voyager
+utázni
 
 goûter, casser la croûte
 uzsonnázik
@@ -910,6 +1115,9 @@ vadgesztenye
 quelque part
 valahol
 
+couper
+vágni
+
 répondre
 válaszol
   -t, -jon, -na
@@ -929,6 +1137,10 @@ invité
 vendég
   -et, -e, -ek
 
+acheter
+venni
+  vesz
+
 fin
 vég
 
@@ -938,6 +1150,12 @@ végén
 campagne (lieu)
 vidék
   -et, -e, -ek
+
+se comporter
+viselkedni
+
+renvoyer
+visszaküld
 
 eau
 viz

@@ -1,4 +1,5 @@
 title: Cours particulier K04
+retrofitted: yes
 
 alors
 szóval
@@ -10,7 +11,7 @@ ragoût (spécialité hongroise)
 pörköt
 
 bœuf
-mahar
+marha
 
 pâte à base de farine et d'œuf
 nohedli
