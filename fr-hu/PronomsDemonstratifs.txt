@@ -65,6 +65,7 @@ Pronoms démonstratifs, élatif
   azokból
 
 Pronoms démonstratifs, sublatif
+  "Par ici."
 -ra/-re
   erre
   ezekre

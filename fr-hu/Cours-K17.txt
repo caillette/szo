@@ -25,6 +25,11 @@ szomjas
 programme
 program
 
+réserver, occuper
+  "Veuillez prendre place."
+foglalni
+  Tessék helyet foglalni.
+
 rempli
 zsúfolt
 
@@ -64,10 +69,10 @@ Kit tetszik keresni ?
 montrer
 mutatni
 
-présenter quelque chose à quelqu'un
+présenter quelqu'un (à quelqu'un)
 bemutat vkit vkinek
-  Bemutatom Xxx doktor úrat
-  Bemutatom a doktor úrat
+  Bemutatom a doktor úrat (a barátomnak).
+  Bemutatom a doktor úrat.
 
 voir à travers, comprendre
 átlátni

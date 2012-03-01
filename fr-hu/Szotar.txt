@@ -36,13 +36,10 @@ sous (non-relatif)
 alól
 
 dormir
-alszik
-  aludt, aludjon, aludna ; aludni
-
-dormir
   dormir suffisamment
-aludni
+alszik
   kialudni magát
+  aludt, aludjon, aludna ; aludni
 
 antonyme (2)
 antonim
@@ -225,8 +222,10 @@ csodálatos
 
 chocolat
   chocolat chaud
-csokoláde
-  forró csokoláde
+  tablette de chocolat  
+csokoládé
+  forró csokoládé
+  tábla csokoládé
 
 Danube
 Duna
@@ -249,6 +248,7 @@ divat
 
 fumer (du tabac)
 dohányzik
+  dohányozni
 
 chose
 dolog
@@ -491,6 +491,11 @@ fodrász
 réception
 fogadás
   -t, -a, -ok
+
+réserver (une table, une chambre...), occuper (de l'espace)
+  "Veuillez prendre place."
+foglalni
+  Tessék helyet foglalni.
 
 fleuve
 folyó
@@ -1624,7 +1629,9 @@ plus loin, continuer à
 tovább
 
 le reste
+  les autres (uniquement pour des personnes)
 többi
+  a többiek "A többiek már itt vannak."
 
 verser
   passer du temps avec

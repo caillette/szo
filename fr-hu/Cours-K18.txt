@@ -7,8 +7,8 @@ fodrász
 
 chocolat
   chocolat chaud
-csokoláde
-  forró csokoláde
+csokoládé
+  forró csokoládé
   
 demander quelque chose
 kérni

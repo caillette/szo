@@ -38,7 +38,9 @@ assiette
 tányér
 
 tranche
+  une tranche de pain
 szelet
+  egy szelet kenyer
 
 viande
 marhahús 
