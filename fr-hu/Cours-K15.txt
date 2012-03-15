@@ -25,7 +25,7 @@ près de
 közel vmihez
 
 loin
-messze vmire
+messze vmitől
 
 cercle
   boulevard circulaire
@@ -53,7 +53,7 @@ természet
 mois
   par mois
   mensuel
-honap  
+hónap  
   havonta
   havi
   

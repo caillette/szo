@@ -609,8 +609,11 @@ montagne
 hegy
 
 place, endroit
+  -
+  pas au même endroit
 helye
- -et, -e, -ek
+  -et, -e, -ek
+  nem egy helyen
 
 situation
   maître de la situation
@@ -650,7 +653,7 @@ holnap
  -ot, -ok
 
 mois
-honap
+hónap
 
 long
 hosszú
@@ -678,7 +681,7 @@ ide
 
 temps
 idő
-  -t, ideje, -k
+  -t, időm időt ideje időnk időtök ideük, -k
 
 vrai
   avoir raison
@@ -1064,7 +1067,7 @@ conte
 mese
 
 loin
-messze vmire
+messze vmitől
 
 fâché (2)
 mérges
@@ -1557,7 +1560,7 @@ takarít
   kitakarít
 
 rencontrer
-találkozik
+találkozik vkivel
   -kozott, -kozzon, -kozna
 
 peut-être

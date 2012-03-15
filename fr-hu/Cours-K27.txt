@@ -44,8 +44,10 @@ remercier pour
 
 préféré, favori
   "Mon livre préféré."
+  "Ez a kedvencem."
 kedvenc vmije
-  A kedvencem könyvem.
+  A kedvencem könyv.
+  C'est mon préféré.
   
 fiancé (masculin seulement)  
 vőlengenye

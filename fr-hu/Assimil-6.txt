@@ -8,7 +8,7 @@ sétál
 
 temps
 idő
-  -t, ideje, -k
+  -t, időm időt ideje időnk időtök ideük, -k
 
 intéressant
 érdekes

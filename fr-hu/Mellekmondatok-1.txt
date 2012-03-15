@@ -4,10 +4,12 @@ source: http://fr.wikipedia.org/wiki/Syntaxe_du_hongrois_–_la_phrase_complexe#
 … et … (coord. copulative)
 …, és …
 
-… aussi (coord. copulative)
+… aussi (coord. copulative), même
   Gábor est hongrois, Ilona l’est aussi.
+  Un bon réfrigirateur peut même durer 20 ans.
 … is
   Gábor magyar, Ilona is az.
+  Egy jó hűtőszekrény húsz évig is müködik.
 
 …, … aussi (coord. copulative)
   Le moteur est en panne, le frein aussi.
