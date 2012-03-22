@@ -1,4 +1,5 @@
 title: Cours particulier K20
+retrofitted: yes
 
 faire un pas vers le haut, monter sur scène
 fellépni

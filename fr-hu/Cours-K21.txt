@@ -1,6 +1,8 @@
 title: Cours particulier K21
+retrofitted: yes
 
 mal écrire, faire une faute
+  "Je fais toujours une faute à ce mot."
   (vient toujours avec un COD) 
 elírni
   Mindig elírja ezt a szót.

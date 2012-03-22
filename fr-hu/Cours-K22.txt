@@ -1,4 +1,5 @@
 title: Cours particulier K22
+retrofitted: yes
 
 "Nous souhaitons que tu ailles mieux."
 "Jobbulást kivánunk !"
@@ -25,9 +26,6 @@ bőrönd
 appétit
 étvágy
 
-travailler
-  (pas de COD)
-dolgozik vmin
 
 voyager
   (pas de COD)

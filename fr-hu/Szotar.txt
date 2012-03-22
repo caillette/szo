@@ -87,20 +87,42 @@ en général
 à travers
 át
 
+traverser (avec arrêt une fois de l'autre côté)
+átall
+  Átall a másik oldara.
+
 transmettre
 átadni
 
-moyen, médiocre
-átlagos
-
-traverser
-átmegy
+corriger (à l'écrit)
+átír
 
 envoyer à travers
 átküld
 
+moyen, médiocre
+átlagos
+
+mettre un pied au-dessus
+átlépni vmin
+
+traverser
+átmegy
+
+regarder au travers
+átnézni
+  Átnézünk az ablakon.    
+
+effetuer une relecture
+átolvas
+
 changer (de transport)
 átszáll
+
+changer de place (assise)
+átül
+  Átülöt a másik székre.
+
 
 gauche
   à gauche
@@ -123,17 +145,36 @@ bán vmit
 courageux
 bátor
 
+entrer (sans mouvement ensuite)
+beáll
+  Beáll a garazsba.
+
 fermer
 becsuk
 
 se terminer
 befejeződik
 
+tourner tout en continuant son chemin vers une destination précise
+befordul
+
+appeler quelqu'un pour qu'il rentre
+behív
+
+écrire dans (1)
+beírni
+  Kiírom a szovakat a füzetbe.
+
 interne
 belső
 
-louer (emprunter contre paiement)
-bérelni
+regarder vers le bas
+  mépriser quelqu'un
+benéz
+    benéz vkit
+
+reprocher à quelqu'un (argot)
+beolvas vkinek
 
 malade
 beteg
@@ -146,6 +187,9 @@ betesz
 porter (à l'intérieur)
 bevisz
   -vit, -viggen, -vinne
+
+louer (emprunter contre paiement)
+bérelni
 
 timbre-poste
 bélyeg
@@ -176,6 +220,9 @@ compliment
 bók
   -ot, -ja, -ok
 
+valise
+bőrönd
+
 crayon
 ceruza
 
@@ -186,6 +233,10 @@ adresse, titre
 cím
   -et, -e, -ek
 
+introduction d'une interrogation en exprimant la surprise
+Csak nem ... ?
+  Csak nem van beteg ?
+  
 chèque
 csekk
   -et, -je -ek
@@ -227,6 +278,12 @@ csokoládé
   forró csokoládé
   tábla csokoládé
 
+sonnette
+cszengő
+
+sonner 
+czendetni
+
 Danube
 Duna
 
@@ -250,6 +307,10 @@ fumer (du tabac)
 dohányzik
   dohányozni
 
+travailler
+  (pas de COD)
+dolgozik vmin
+
 chose
 dolog
 
@@ -265,8 +326,11 @@ egészségedre!
 L'un (quelconque), l'un (des deux)
 egyik
 
-zut (plus réprimande)
+zut (avec réprimande)
 ejnye
+
+manger quelque chose devant quelqu'un
+elenni vmit vki elől
 
 devant (vers devant)
 elé
@@ -275,6 +339,16 @@ satisfait, content
   "ça suffit"
 elégedett
   elég
+
+inviter quelqu'un pour qu'il vienne (interpellation)
+elhívni
+  elhívom barátomat moziba
+
+mal écrire, faire une faute
+  "Je fais toujours une faute à ce mot."
+  (vient toujours avec un COD) 
+elírni
+  Mindig elírja ezt a szót.
 
 venir
 eljön
@@ -292,6 +366,9 @@ ellenszenves
 indulgence, excuse
 elnézés
   -t, -e
+
+lire, action achevée
+elolvas
 
 entrée
 elöszoba
@@ -323,6 +400,12 @@ erkély
 soir
 este
   estét, estéje, esték
+
+
+
+s'arrêter (impersonnel)
+eláll
+  Eláll az eső.
 
 élégant
 elegáns
@@ -403,6 +486,10 @@ aliment, plat
 étel
   -t, -e, -ek
 
+appétit
+étvágy
+
+
 mur
 fal
   -at, -a, -ak
@@ -423,20 +510,36 @@ comprendre
 felfogás
   lassú felfogású
 
+appeler quelqu'un au téléphone, ou pour qu'il monte
+felhív
+
 monter quelque chose
 felhoz
   -ott, -zon, -na
+
+écrire dans (2)
+felírni
 
 se lever
 felkel
   -t, -jen, -ne
 
+faire un pas vers le haut, monter sur scène
+fellépni
+
 monter
 felmegy
   -ment, -menjen, -menne
 
+regarder vers le haut
+felnéz
+  Felnézünk a felhőre.
+
 en haut
 fent
+
+lire à haute voix
+felolvas
 
 s'habiller
 felöltözik
@@ -496,10 +599,17 @@ réserver (une table, une chambre...), occuper (de l'espace)
   "Veuillez prendre place."
 foglalni
   Tessék helyet foglalni.
+  
+profession, occupation
+foglalkozás
+  
 
 fleuve
 folyó
   -t, -ja, -k
+
+circulation
+forgalom
 
 forme (2)
 forma
@@ -718,6 +828,11 @@ boisson
 ital
   -t, -a, -ok
 
+écrire (action en cours)
+  Je suis en train d'écrire un livre.
+ír
+  Könyvet írok.
+
 marcher, aller
 jár
   -t, -jon, -na
@@ -837,13 +952,30 @@ kész
 éditeur (de livres)
 kiadó
 
+sortir (et rester à l'arrêt ensuite)
+  Il sort dans la rue. 
+kiáll
+  Kiáll az utcára.
+
 crier
 kiált
   -ott, -son, -ana
 
+manger complètement
+  J'ai mangé toute (tout ce qu'il y avait dans) l'assiette.
+kienni
+  Kiettem a tányért.
+  
+appeler quelqu'un pour qu'il sorte
+kihív
+
 sortir quelque chose
 kihoz
   -ott, -zon, -na
+
+recopier, écrire à un endroit visible
+kiírni
+  Kiírom a szovakat a könyvből
 
 sortie (emplacement)
 kijárat
@@ -855,12 +987,26 @@ kijön
 vue, point de vue (sens propre)
 kilátás
 
+regarder dehors
+kinez
+  Kinézünk az utcára.
+
+lire complètement (ex : un livre)  
+kiolvas
+
+faire une excursion
+kirándulni
+
 déblayer
 kitakarít
 
 excellent
 kitünő
   -t, -ek, -ebb
+
+aller s'asseoir dehors 
+kiül
+  Kiül a kertbe.
 
 sortir quelque chose
 kivisz
@@ -911,6 +1057,10 @@ circulation
   bien desservi
 közlekedes
   jó közlekedes
+  
+prochain, suivant
+következő
+  
 
 envoyer
   dérivés
@@ -943,6 +1093,10 @@ látsani
   látsik
   (faux verbe en -ik)
 
+ne plus fonctionner
+leáll
+  Leállt a szamitogép.
+
 se coucher
 lefekszik
   -fekűdt, -fekűdjon, -fekűdne
@@ -956,8 +1110,20 @@ legurul
 "c'est possible que" (impersonnel)
 lehet
 
+appeler quelqu'un pour qu'il descende
+lehív
+
+écrire (action achevée)
+leír
+
+se saouler, s'en renverser dessus en buvant
+leinni maga
+
 descendre (référence en bas)
 lejön
+
+faire un pas vers le bas, "se casser" (fam)
+lelépni
 
 descendre
 lemegy
@@ -968,6 +1134,9 @@ lemez
 
 polonais
 lengyel
+
+lire (une inscription)
+leolvas
 
 descendre (d'un moyen de locomotion)
 leszáll
@@ -988,10 +1157,16 @@ se deshabiller
 levetkőzik
   -vetkőzőtt, -vetkőzzőn, -vetkőzne
 
+bâton
+léc
+
 escalier
   monter par l'escalier
 lépcső
   a ~n felmegy
+
+téléphérique
+libegő
 
 ascenseur
 lift
@@ -1046,10 +1221,21 @@ embrasser
 megcsókol
   -t, -jon, -na
 
+se retourer, tourner en restant en place ou en se déplaçant
+megfordul
+
+inviter (invitation formelle)
+  "J'invite mes amis à mon anniversaire."
+meghívni
+  Meghívtom a barátoimat a születésnapomra.
+
 surpris (2)
   surprise (subst)
 meglepett
   meglepetés
+
+regarder (action achevée)
+megnéz
 
 résoudre
 megoldani
@@ -1152,6 +1338,12 @@ naív
 jour, soleil
 nap
 
+rhume
+náthá
+
+enrhumé
+náthás
+
 carré (subst)
   mètre carré
 negyzet
@@ -1193,8 +1385,12 @@ nyugodt
 vers là-bas
 oda
 
-aller (là-bas)
-odamegy
+écrire (en précisant la destination)
+odaír
+  Odaírom a papírra.
+
+aller vers
+odamegy vmihez
 
 de là-bas
 onnan
@@ -1266,6 +1462,9 @@ parancsolni
 rive
 part
   -ot, -ja, -ok
+
+piste, terrain
+pálya
 
 quelque (2)
 pár
@@ -1354,6 +1553,9 @@ pörköt
 chandail
 pulóver
 
+marcher dessus
+rálépni vmire
+
 réaliste
 realista
 
@@ -1377,6 +1579,9 @@ rend
 
 ordonné
 rendes
+
+consultation
+rendelnés
 
 passer commande
 rendelni
@@ -1418,12 +1623,12 @@ jaune
 sárga
   sárgát, sárgák, sárgább
 
+personne (privatif)
+senki
+
 se promener
 sétál
   -t, -jon, -na
-
-personne (privatif)
-senki
 
 se dépêcher, être pressé
 sietni
@@ -1433,6 +1638,9 @@ siker
 
 funiculaire (à Budapest)
 Sikló
+
+bâton de ski
+síléc
 
 écossais
 skót
@@ -1480,6 +1688,9 @@ szeret
 rédacteur, comité de rédaction
 szerkesztő
 
+avoir la tête qui tourne
+szédülni
+
 chaise
 szék
   -et, -e, -ek
@@ -1523,6 +1734,12 @@ mot
 szó
   -t, szava, szavak
 
+amusement, divertissement
+szórakozást
+
+s'amuser
+szórakozik
+
 alors
 szóval
 
@@ -1553,6 +1770,9 @@ szükség
 parent (père ou mère)
 szülő
   -t, -je, -k
+
+pause, vacances, récréation, entracte
+szünet
 
 nettoyer, faire le ménage
   dérivé
@@ -1631,6 +1851,9 @@ toll
 plus loin, continuer à
 tovább
 
+continuer à marcher
+továbbmegy
+
 le reste
   les autres (uniquement pour des personnes)
 többi
@@ -1672,11 +1895,14 @@ petit-fils, petite fille
 unoka
   unokát, unokája, unokák
 
+piscine
+uszoda
+
 voyageur
 utas
 
 voyager
-utázni
+utazik vmire
 
 voyage
 utaz
@@ -1684,6 +1910,9 @@ utaz
 goûter, casser la croûte
 uzsonnázik
   -názott, -názzon, -názna
+
+s'asseoir
+ül
 
 de cette façon-là
   il sent que ...
@@ -1703,6 +1932,10 @@ passeport
 
 envoyer un message
 üzeni
+
+nager
+úszni
+  úsznik
 
 sauvage
 vad
