@@ -43,7 +43,7 @@ amer
 keserű
 
 orange
-rarancs
+narancs
 
 jus
   -
@@ -51,7 +51,7 @@ jus
   jus de tomate
 lé
   levet
-  rarancslé
+  narancslé
   paradicsomlé
   
 concombre
