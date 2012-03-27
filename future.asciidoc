@@ -1,0 +1,94 @@
+=== Content-aware URL
+
+Store current state within the URL instead of using cookies or HTML 5 storage API.
+
+This would have following advantages:
+* Support browser's "back" button.
+* Store various configurations (through bookmarks or whatever) instead of a single one.
+
+This blog post tells that one can use `window.location.hash`:
+http://saadnawaz.blogspot.fr/2010/10/change-url-dynamically-through.html
+
+
+
+=== Link to Wiktionary
+
+Many words do have a counterpart on Wiktionary, like this:
+http://en.wiktionary.org/wiki/szilva
+
+Compute validity in background using XMLHTTPRequest would be great when online.
+
+
+
+=== Use tags instead of files
+
+So one pair may have several tags. Use `@Ppp` as pair tag.
+
+A file may have a global tag `@@Ggg`.
+
+A tag may not contain spaces but non-breakable spaces as `_`.
+
+There is a special "tagless" tag to see orphans.
+
+Since we don't see files, there must be a message listing badly-referenced files.
+
+
+
+=== Support mobile devices
+
+Only through HTML and JavaScript, no intend to develop a mobile app for now.
+
+Loading the whole application from a website it acceptable, but what about the offline mode? Should we store something? Luckily the offline mode exists for iPhone webapps.
+
+http://www.thecssninja.com/javascript/how-to-create-offline-webapps-on-the-iphone
+http://appcachefacts.info
+
+A nice mobile-specific feature would be an "invert color" to support dark background.
+
+There are tons of crappy vocabulary-learning apps. Among the less stupid:
+
+http://www.appolicious.com/education/apps/497630-vocab-junkie-bold-learning-solutions-inc
+http://itunes.apple.com/fr/app/vocabulary-trainer/id436103462
+http://itunes.apple.com/fr/app/vocabulary-trainer-english/id377911662
+
+Vocab Pro HD mentions the "ProVoc File Format".
+http://itunes.apple.com/fr/app/vocab-pro-hd/id497950298
+ProVoc is a binary format, so it is not easy as Szótárgép. And it seems abandoned.
+
+
+
+=== Define a "deck" for pairs to repeat
+
+The detail view enables some "deck" button that includes current pair into the list of items to repeat.
+
+When current item is already in the deck, the "deck" button becomes something like "undeck".
+
+The deck is a "special" tag at the top of the list.
+
+
+
+=== Multilingual user interface
+
+Would help application adoption.
+
+
+
+=== Typographic tricks
+
+Replace `_` by non-breakable space at rendering time.
+
+
+
+=== Rearchitecture code
+
+Make the application one single object handling its own state, and delegating rendering to a specific "interface" (a set of callback) for easier testing.
+
+Use the word "card" (instead of current "equivalence").
+
+
+
+=== Still no stats
+
+Stats are a bottomlesshole for development and make people stupid.
+
+
