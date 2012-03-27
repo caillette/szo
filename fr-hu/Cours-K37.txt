@@ -21,7 +21,7 @@ csíp
 
 excuse
   Je demande pardon !
-elnézést
+elnézés
   Elnézést kérek!
 
 voleur
@@ -42,7 +42,7 @@ sec (adj)
 száráz
 
 prune
-  au goút de prune
+  au goût de prune
 szilva
   szilvás
 
