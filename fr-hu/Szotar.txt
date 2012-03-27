@@ -123,6 +123,8 @@ changer de place (assise)
 átül
   Átülöt a másik székre.
 
+moustache
+bajusz
 
 gauche
   à gauche
@@ -194,6 +196,11 @@ bérelni
 timbre-poste
 bélyeg
 
+taureau
+  "Sang de taureau de la ville d'Eger" (vin réputé)
+bika
+  Egri bikavér
+
 incertain, indécis (1)
 bizonytalan
 
@@ -244,6 +251,9 @@ csekk
 calme, silence
 csend
   -et, -je
+
+en silence
+csendben
 
 calme, silencieux
 csendes
@@ -297,7 +307,10 @@ dél
 matin, matinée
 délelőtt
   -öt, -je, -ök
-
+  
+cochon (appellation prosaïque)
+disznó
+  
 mode ("fashion")
   à la mode
 divat
@@ -336,9 +349,11 @@ devant (vers devant)
 elé
 
 satisfait, content
-  "ça suffit"
+  Ça suffit.
+  J'en ai assez de ...
 elégedett
-  elég
+  Elég.
+  Elegem van vmiből.
 
 inviter quelqu'un pour qu'il vienne (interpellation)
 elhívni
@@ -504,6 +519,9 @@ fehér
 
 se lever
 feláll
+
+consultation, entretien
+felfogadás
 
 comprendre
   lent à comprendre
@@ -737,6 +755,9 @@ hét
 tout d'un coup
 hirtelen
 
+bureau (lieu clos pour travailler)
+hivatal
+
 pont
 híd
   hídat, -ja, hídak
@@ -779,6 +800,10 @@ dame
 hőlgy
  -et, -e, -ek
 
+jeune sœur
+  (toujours avec un possessif)
+húg
+
 humour
   sens de l'humour
   il n'a pas le sens de l'humour
@@ -792,6 +817,9 @@ ide
 temps
 idő
   -t, időm időt ideje időnk időtök ideük, -k
+
+de temps en temps
+időnként
 
 vrai
   avoir raison
@@ -841,6 +869,9 @@ jouet, jeu
 játék
   -ot, -a, -ok
 
+ticket, billet
+jegy
+
 signifier quelque chose
 jelent vmit
 
@@ -882,6 +913,18 @@ dommage, tort, préjudice
 kár
   -t, -a, -ok
 
+humeur, envie
+  Il n'a pas envie
+kedv
+  Nincs kedve
+
+préféré, favori
+  "Mon livre préféré."
+  "Ez a kedvencem."
+kedvenc vmije
+  A kedvencem könyv.
+  C'est mon préféré.
+
 cher
 kedves
   -et, -ek, -ebb
@@ -892,11 +935,17 @@ kellemes
 désagréable
 kellemetlen
 
+rond
+kerek
+
 chercher
 keres
 
 jardin
 kert
+
+jardiner
+kertészkedni
 
 peu
 kevés
@@ -997,6 +1046,14 @@ kiolvas
 faire une excursion
 kirándulni
 
+petit (épithète)
+kis
+
+petit (attribut ou prédicat)
+  Mon frère est de petite taille.
+kicsi
+  A testvérem kicsi.
+
 déblayer
 kitakarít
 
@@ -1020,6 +1077,12 @@ cercle
 kör
   körül
 
+environs 
+körülbelül
+
+étre le suivant
+következik
+
 près de
 közel vmihez
 
@@ -1036,6 +1099,11 @@ könnyű
 
 environnement, alentours
 környék
+
+remercier pour 
+  Kati remercie [hors dialogue] pour le déjeûner : "Merci [dialogue] pour le déjeuner !"
+(meg)kösszönni vmit  
+  Megkösszöni Kati az ebédet : "Kösszönöm az ebédet !"
 
 conséquence
 következmény
@@ -1070,6 +1138,12 @@ küld
 étranger
 külföldi
   -t, -ek
+
+ballon
+labda
+
+jouer au ballon
+labdázik
 
 incertain, indécis (2)
 labilis
@@ -1197,6 +1271,12 @@ magáműgy
 après, ensuite
 majd
 
+cochon (appellation affectueuse)
+  J'ai de la chance.
+malac
+  Malacam van.
+
+
 bœuf
 marha
 
@@ -1245,6 +1325,9 @@ mellett
 
 à côté ("vers à côté")
 mellé
+
+fiancée (féminin seulement)
+menyasszony
 
 parce que
 mert
@@ -1372,6 +1455,9 @@ nom
 név
   nevet, neve, nevek
 
+saint-... (fête)
+névnap
+
 regarder, considérer
 néz vmire
   -ett, -zen, -ne
@@ -1420,6 +1506,10 @@ russe
 orosz
   oroszul
 
+jeune frère
+  (toujours avec un possessif)
+öcs
+
 vieux (pour un être humain)
 öreg
   -et, -ek, -ebb
@@ -1433,6 +1523,9 @@ tout équipé (pour habitation)
 
 automne / gris-blanc (cheveux)
 ősz
+
+en tout (pour une addition)
+összesen
 
 franc, sincère
   (rien à voir avec l'automne)
@@ -1506,6 +1599,12 @@ parkolni
 réceptionniste
 portás
 
+plainte
+  Qu'est-ce qui ne va pas (pour lui) ?
+panasz
+  Mi a panasza?
+
+
 plein (adj, invariable)
 tele
 
@@ -1525,13 +1624,6 @@ pulyka
 grand, élancé
 magas
   -at, -ak, -abb
-
-matin
-reggel
-  -t, -je, -k
-
-relatif (1)
-relatív
 
 arriver (action achevée)
 megérkezik
@@ -1553,11 +1645,21 @@ pörköt
 chandail
 pulóver
 
+avoir le temps, être libre
+ráérni
+
 marcher dessus
 rálépni vmire
 
 réaliste
 realista
+
+recette (de cuisine), ordonnance
+recept
+
+matin
+reggel
+  -t, -je, -k
 
 petit-déjeuner (n)
 reggeli
@@ -1565,6 +1667,9 @@ reggeli
 
 petit-déjeuner (v)
 reggelizik
+
+relatif (1)
+relatív
 
 ordre (l')
   désordre
@@ -1626,6 +1731,9 @@ sárga
 personne (privatif)
 senki
 
+cochon (pour la viande)
+sertés
+
 se promener
 sétál
   -t, -jon, -na
@@ -1659,12 +1767,25 @@ sors
 maigre
 sovány
 
+sel
+só  
+
+salé
+sós 
+
 obscur, sombre
 sötet
 
 briller, faire cuire
 süt
   -ött, süssön, -ne
+
+gâteau
+sütemény
+  -t
+
+barbe
+szaháll
 
 hôtel
 szálloda
@@ -1845,6 +1966,9 @@ tiszta
 secrétaire
 titkárnő
 
+double menton
+toka
+
 stylo
 toll
 
@@ -1911,6 +2035,9 @@ goûter, casser la croûte
 uzsonnázik
   -názott, -názzon, -názna
 
+boisson non alcoolisée
+üditő
+
 s'asseoir
 ül
 
@@ -1949,12 +2076,12 @@ valahol
 couper
 vágni
 
+désirer
+vágyik vmire
+
 répondre
 válaszol
   -t, -jon, -na
-
-visite d'une ville
-városnézés
 
 attendre
 vár (igék)
@@ -1963,6 +2090,12 @@ vár (igék)
 château, forteresse
 vár (főnevek)
   -at, -a, ak
+
+visite d'une ville
+városnézés
+
+salle d'attente
+várósterem
 
 invité
 vendég
@@ -2015,6 +2148,9 @@ viszonylagos
 clair
 világos
 
+vitamines
+vitamin
+
 eau
 viz
   vizet, vize, vizek
@@ -2034,6 +2170,9 @@ vizsga
 rouge
 vörös
   -et, -ek, -ebb
+
+fiancé (masculin seulement)  
+vőlengenye
 
 bruit
 zaj

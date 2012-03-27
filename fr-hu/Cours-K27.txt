@@ -1,4 +1,5 @@
 title: Cours particulier K27
+retrofitted: yes
 
 cochon (appellation affectueuse)
   "J'ai de la chance."

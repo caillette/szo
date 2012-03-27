@@ -23,10 +23,10 @@ fromage blanc
 túró
 
 "L'ami gris", appellation de vin
-szürkebarátot
+szürkebarát
 
 griotte
-megy
+meggy
 
 tourte
 rétes
@@ -44,7 +44,7 @@ champignon
 gomba
 
 viande hachée
-dorálthúsz
+dorálthús
 
 région plate à l'est du Tisza
 Hortobágy
@@ -78,7 +78,7 @@ szilva
 boule
 gombóc
 
-betterave
+betterave rouge
 cékla
 
 garniture

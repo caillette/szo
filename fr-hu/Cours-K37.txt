@@ -11,7 +11,7 @@ innivaló
 aliment
   voir :
 ennivaló
-  aliment
+  etel
 
 piquant (adj)
 csípős
@@ -28,9 +28,9 @@ voleur
 rabló
 
 plaire (nourriture seulement)
-  Cette soupe me plaît
+  Cette soupe me plaît.
 ízlik
-  Nekem ízlik ezt a levest.
+  Nekem ízlik ez a leves.
 
 vinaigre
 ecet
@@ -39,7 +39,7 @@ glaçon
 jég
 
 sec (adj)
-száráz
+száraz
 
 prune
   au goût de prune
