@@ -3,6 +3,7 @@
 Store current state within the URL instead of using cookies or HTML 5 storage API.
 
 This would have following advantages:
+
 * Support browser's "back" button.
 * Store various configurations (through bookmarks or whatever) instead of a single one.
 
@@ -85,6 +86,8 @@ Replace `_` by non-breakable space at rendering time.
 === Rearchitecture code
 
 Make the application one single object handling its own state, and delegating rendering to a specific "interface" (a set of callback) for easier testing.
+
+Use a JavaScript worker for rendering tasks. The worker has a simple interface passing only serializable objects (Strings).
 
 Use the word "card" (instead of current "equivalence").
 
