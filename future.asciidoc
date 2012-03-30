@@ -32,16 +32,21 @@ There is a special "tagless" tag to see orphans.
 
 Since we don't see files, there must be a message listing badly-referenced files.
 
+Tag may belong to groups. With `@Foo/Bar` and `@Foo/Baz` somewhere, infer a tag group:
+
+---
+[ ] Foo
+[ ]   Bar
+[ ]   Baz
+---
+
 
 
 === Support mobile devices
 
-Only through HTML and JavaScript, no intend to develop a mobile app for now.
+Only through HTML and JavaScript, no intend to develop a mobile app.
 
-Loading the whole application from a website it acceptable, but what about the offline mode? Should we store something? Luckily the offline mode exists for iPhone webapps.
-
-http://www.thecssninja.com/javascript/how-to-create-offline-webapps-on-the-iphone
-http://appcachefacts.info
+Loading the whole application from a website it acceptable, but what about the offline mode? Should we store something? Luckily the http://www.thecssninja.com/javascript/how-to-create-offline-webapps-on-the-iphone[offline mode] exists, thanks to http://appcachefacts.info[caching] .
 
 A nice mobile-specific feature would be an "invert color" to support dark background.
 
