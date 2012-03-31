@@ -353,6 +353,16 @@ inni
   igyátok
   igyák 
   
+saluer, indicatif présent 
+  je te salue
+  je vous salue
+  nous te saluons
+  nous vous saluons  
+üdvözni
+  üdvözlöm
+  üdvözöllek
+  üdvözlünk
+  üdvözöljük
 
 
 

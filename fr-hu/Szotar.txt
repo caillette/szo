@@ -1,5 +1,10 @@
 title: Szótár
 
+jusqu'à ce que, en attendant
+  Je joue avec lui tant qu'il se comporte bien.
+addig … amíg
+  Addig játszom vele, amíg jó.
+
 cadeau
 ajándék
   ajándékok, ajándékot
@@ -19,8 +24,10 @@ akar
 alors, dans ce cas
 akkor
 
-forme (contour) (1)
+forme (contour) 
+  voir :
 alak
+  forma
 
 bas, petit
 alacsony
@@ -29,17 +36,18 @@ alacsony
 sous, au-dessous (sans mouvement)
 alatt
 
-sous ("vers")
+vers-sous 
 alá
 
 sous (non-relatif)
 alól
 
 dormir
+  -
   dormir suffisamment
 alszik
-  kialudni magát
   aludt, aludjon, aludna ; aludni
+  kialudni magát
 
 antonyme (2)
 antonim
@@ -47,6 +55,12 @@ antonim
 mère
 anya
   anyát, anyja, anyák
+
+belle-mère
+anyós
+
+beau-père
+após
 
 visage
 arc
@@ -57,6 +71,9 @@ asszony
 table
 asztal
   -t, -a, -ok
+
+athlétisme
+atlétika
 
 tout de suite
 azonnal
@@ -83,6 +100,15 @@ rêve
 
 en général
 általában
+
+général (adj)
+általános
+
+soigner
+ápolni
+
+minéral (adj et nom)
+ásvány
 
 à travers
 át
@@ -123,6 +149,11 @@ changer de place (assise)
 átül
   Átülöt a másik székre.
 
+haricot
+  ~ vert
+bab
+  zöldbab
+
 moustache
 bajusz
 
@@ -147,7 +178,10 @@ bán vmit
 courageux
 bátor
 
-entrer (sans mouvement ensuite)
+grand-frère
+báty
+
+entrer (sans mouvement consécutif)
 beáll
   Beáll a garazsba.
 
@@ -157,7 +191,7 @@ becsuk
 se terminer
 befejeződik
 
-tourner tout en continuant son chemin vers une destination précise
+tourner (tout en continuant son chemin vers une destination précise)
 befordul
 
 appeler quelqu'un pour qu'il rentre
@@ -201,6 +235,9 @@ taureau
 bika
   Egri bikavér
 
+mouton
+birka
+
 incertain, indécis (1)
 bizonytalan
 
@@ -220,6 +257,15 @@ vin
 bor
   -t, -a, -ok
 
+côte (anatomie et cuisine)
+borda
+
+poivron
+bors
+
+pois (légumineuse)
+borsó
+
 enveloppe
 boríték
 
@@ -230,8 +276,17 @@ bók
 valise
 bőrönd
 
+pomme de terre
+burgonya
+
+veau
+borjú
+
 crayon
 ceruza
+
+chaton
+cica
 
 chaussure
 cipő
@@ -241,7 +296,7 @@ cím
   -et, -e, -ek
 
 introduction d'une interrogation en exprimant la surprise
-Csak nem ... ?
+Csak nem … ?
   Csak nem van beteg ?
   
 chèque
@@ -257,6 +312,9 @@ csendben
 
 calme, silencieux
 csendes
+
+betterave rouge
+cékla
 
 étoile
 csillag
@@ -288,6 +346,11 @@ csokoládé
   forró csokoládé
   tábla csokoládé
 
+colis, paquet
+  un paquet de cigarettes
+csomag
+  egy csomag cigaretta
+
 sonnette
 cszengő
 
@@ -311,7 +374,7 @@ délelőtt
 cochon (appellation prosaïque)
 disznó
   
-mode ("fashion")
+mode (phénomène mimétique)
   à la mode
 divat
   divatos
@@ -321,20 +384,27 @@ dohányzik
   dohányozni
 
 travailler
-  (pas de COD)
 dolgozik vmin
 
 chose
 dolog
 
+viande hachée
+dorálthús
+
 fâché (1)
 dühös
 
-déjeuner (subst)
+déjeuner (n)
 ebéd
 
-"à ta santé !"
-egészségedre!
+entièrement, assez, entier
+  assez bien
+egész
+  egész jól
+
+"À ta santé !"
+Egészségedre!
 
 L'un (quelconque), l'un (des deux)
 egyik
@@ -342,15 +412,18 @@ egyik
 zut (avec réprimande)
 ejnye
 
+vendeur
+eladó
+
 manger quelque chose devant quelqu'un
 elenni vmit vki elől
 
-devant (vers devant)
+vers devant
 elé
 
 satisfait, content
   Ça suffit.
-  J'en ai assez de ...
+  J'en ai assez de …
 elégedett
   Elég.
   Elegem van vmiből.
@@ -360,7 +433,7 @@ elhívni
   elhívom barátomat moziba
 
 mal écrire, faire une faute
-  "Je fais toujours une faute à ce mot."
+  Je fais toujours une faute à ce mot.
   (vient toujours avec un COD) 
 elírni
   Mindig elírja ezt a szót.
@@ -412,6 +485,9 @@ emelet
 balcon
 erkély
 
+soupe à base de bouillon de viande hâchée
+erősleves
+
 soir
 este
   estét, estéje, esték
@@ -441,6 +517,11 @@ elmegy
 première fois
 először
 
+premièrement, principalement
+elsősorban
+
+divorcé
+elvált
 
 fort
 erős
@@ -452,6 +533,9 @@ Ez igen !
   dans tous les cas
 eset
   mindenesetre
+
+déjeuner (v)
+ébedelni
 
 réveillé, vigilant
 éber
@@ -472,6 +556,9 @@ chant
 arriver (action en cours)
 érkezik
   -kezett, -kezzen, -kezne
+
+être expert en quelque chose
+érteni vmihez
 
 salle à manger
 étkező
@@ -497,13 +584,17 @@ intéressant
 érdekes
   -et, -ek, -ebb
 
-aliment, plat
+aliment, plat, repas
+  -
+  notre repas du jour
+  notre repas quotidien  
 étel
   -t, -e, -ek
+  mai ételeink
+  napi ételeink
 
 appétit
 étvágy
-
 
 mur
 fal
@@ -590,6 +681,17 @@ photographie
 fénykép
   -et, -e, -ek
 
+masculin
+férfias
+
+mariée (pour une femme)
+  femme mariée
+férjes 
+  férjes asszony
+
+jeune
+fiatal
+
 délicieux, fin
 finom
   -at, -ak, -abb
@@ -597,7 +699,6 @@ finom
 jeune
 fiatal
   -t, -ok, -abb
-
 
 philosopher
 filozofálni
@@ -613,7 +714,7 @@ réception
 fogadás
   -t, -a, -ok
 
-réserver (une table, une chambre...), occuper (de l'espace)
+réserver (une table, une chambre…), occuper (de l'espace)
   "Veuillez prendre place."
 foglalni
   Tessék helyet foglalni.
@@ -629,8 +730,10 @@ folyó
 circulation
 forgalom
 
-forme (2)
+forme 
+  voir :
 forma
+  alak
 
 fauteuil
 fotel
@@ -642,11 +745,23 @@ fölé
 inutile, dénué de sens
 fölösleges
 
+tête (mot ancien)
+fő
+
+capitale
+fővaros
+
 cuisiner
 főz
 
+salade russe
+franciasaláta
+
 frais, récent, en forme
 friss
+
+footballeur
+futballista
 
 vite (2)
 fúrge
@@ -664,6 +779,17 @@ független
 cahier
 füzet
 
+pâtes fraîches
+  avec du foie
+galuska
+  májgaluska
+
+exploitation agricole
+gazdaság  
+
+agriculture
+gazdálkodó
+
 chataîgne (fruit)
 gesztenye
 
@@ -674,10 +800,20 @@ gép
 taper à la machine
 gépelni
 
+bouton
+gomb
+
+champignon
+gomba
+
+boule
+gombóc
+
 rouler (comme une bille)
-  dérivé
 gurul
-  legurul
+
+dévaler
+legurul
 
 goulache
 gulyás
@@ -712,6 +848,15 @@ allumett
 gyufa
   a doboz gyufa
 
+laisser
+hagy
+
+pêcheur
+halász
+
+soupe du pêcheur
+halászlé
+
 faux
 hamis
   -at, -ak, -abb
@@ -733,6 +878,9 @@ chambre à coucher
 hálószoba
   -szobát, -szobája, szobák
 
+maîtresse de maison
+házasszony
+
 montagne
 hegy
 
@@ -751,6 +899,9 @@ helyzet
 semaine
 hét
   hetet, hete, hetek
+  
+fin de semaine
+hétvége  
 
 tout d'un coup
 hirtelen
@@ -762,7 +913,7 @@ pont
 híd
   hídat, -ja, hídak
 
-nouvelle (subst.)
+nouvelle (n)
   connu, fameux, célèbre
 hír
   híres
@@ -783,8 +934,8 @@ demain
 holnap
  -ot, -ok
 
-mois
-hónap
+région plate à l'est du Tisza
+Hortobágy
 
 long
 hosszú
@@ -796,13 +947,12 @@ apporter
 hoz
   -ott, -zon, -na
 
+mois
+hónap
+
 dame
 hőlgy
  -et, -e, -ek
-
-jeune sœur
-  (toujours avec un possessif)
-húg
 
 humour
   sens de l'humour
@@ -810,6 +960,13 @@ humour
 humor
   humor érszég
   nincs humor érszége
+
+jeune sœur
+  (toujours avec un possessif)
+húg
+
+viandes (dans le cadre d'un menu)
+húsételek
 
 vers ici
 ide
@@ -825,10 +982,16 @@ vrai
   avoir raison
 igaz
   ~[possessif] van
+  
+vraiment
+igazán  
 
 directeur
 igazgató
   -t, -ja, -k
+
+oui (poli)
+igenis
 
 partir, se mettre en route
 indul
@@ -860,6 +1023,9 @@ ital
   Je suis en train d'écrire un livre.
 ír
   Könyvet írok.
+
+"Comme c'est beau !"
+Jaj de szép !
 
 marcher, aller
 jár
@@ -914,9 +1080,11 @@ kár
   -t, -a, -ok
 
 humeur, envie
-  Il n'a pas envie
+  Il a envie de quelque chose.
+  Il n'a pas envie.
 kedv
-  Nincs kedve
+  Van kedve vmihez.
+  Nincs kedve.
 
 préféré, favori
   "Mon livre préféré."
@@ -929,6 +1097,11 @@ cher
 kedves
   -et, -ek, -ebb
 
+devoir
+  Je dois acheter une nouvelle robe.
+kell
+  Kell vennem  egy új ruhát.
+
 agréable
 kellemes
 
@@ -938,6 +1111,9 @@ kellemetlen
 rond
 kerek
 
+vélo
+kerékpar
+
 chercher
 keres
 
@@ -946,6 +1122,9 @@ kert
 
 jardiner
 kertészkedni
+
+amer
+keserű
 
 peu
 kevés
@@ -1014,6 +1193,9 @@ manger complètement
   J'ai mangé toute (tout ce qu'il y avait dans) l'assiette.
 kienni
   Kiettem a tányért.
+
+croissant (en pâte à pain)
+kifli
   
 appeler quelqu'un pour qu'il sorte
 kihív
@@ -1072,10 +1254,19 @@ kivisz
 curieux (de savoir)
 kíváncsi
 
+saucisson
+kolbász
+
+sérieux
+komoly
+
 cercle
   boulevard circulaire
 kör
   körül
+
+garniture
+körat
 
 environs 
 körülbelül
@@ -1108,6 +1299,9 @@ remercier pour
 conséquence
 következmény
 
+prochain, suivant
+következő
+  
 gros (pour les êtres vivants)
 kövér
 
@@ -1121,15 +1315,22 @@ közeledik
 entre ("vers entre")
 közé
 
+lycée
+középiskola
+
 circulation
   bien desservi
 közlekedes
   jó közlekedes
-  
-prochain, suivant
-következő
-  
 
+centre 
+  centre-ville
+központ
+  város központja
+  
+dessert à base de crème compacte
+krémes
+  
 envoyer
   dérivés
 küld
@@ -1138,6 +1339,9 @@ küld
 étranger
 külföldi
   -t, -ek
+
+particulièrement
+különösen
 
 ballon
 labda
@@ -1155,11 +1359,20 @@ habiter
 lakik
   lakott, lakjon, lakna
 
-habitant (subst.)
+habitant (n)
 lako
+
+journal
+lap
+
+éditeur (de journal)
+lapkiadó
 
 lent
 lassú
+
+chaîne
+lánc
 
 sembler (1)
   il semble
@@ -1231,6 +1444,15 @@ se deshabiller
 levetkőzik
   -vetkőzőtt, -vetkőzzőn, -vetkőzne
 
+jus
+  -
+  jus d'orange
+  jus de tomate
+lé
+  levet
+  narancslé
+  paradicsomlé
+
 bâton
 léc
 
@@ -1245,6 +1467,10 @@ libegő
 ascenseur
 lift
   -et, -e, -ek
+
+farine
+líszt
+  lísztet
 
 litre
 liter
@@ -1283,6 +1509,17 @@ marha
 déjà
 már
 
+plus que
+  "Nous n'avons plus que 10 mn à attendre."
+már csak
+  Már csak tiz percet kell várnunk.
+
+
+tout de suite
+  voir :
+máris
+  azonnal
+
 autre, l'autre
 másik
   -at
@@ -1301,8 +1538,19 @@ embrasser
 megcsókol
   -t, -jon, -na
 
+convenir (plaire)
+  "Est-ce que cette table vous convient ?"
+megfelel
+  Megfelel önnek az az asztal ?
+
 se retourer, tourner en restant en place ou en se déplaçant
 megfordul
+
+griotte
+meggy
+
+invitation
+meghívás
 
 inviter (invitation formelle)
   "J'invite mes amis à mon anniversaire."
@@ -1310,7 +1558,7 @@ meghívni
   Meghívtom a barátoimat a születésnapomra.
 
 surpris (2)
-  surprise (subst)
+  surprise (n)
 meglepett
   meglepetés
 
@@ -1325,6 +1573,12 @@ mellett
 
 à côté ("vers à côté")
 mellé
+
+"Pendant combien de temps ?"
+Mennyi ideig?
+
+belle-fille
+meny
 
 fiancée (féminin seulement)
 menyasszony
@@ -1364,6 +1618,9 @@ ministre
 miniszter
   -t, -e, -ek
 
+ministère
+minisztérium
+
 dire
 mond
   -ott -jon, -ana
@@ -1375,9 +1632,11 @@ mos
 faire la vaisselle
 mosogat
 
-
 maintenant, à présent
 most
+
+moto
+motorkerékpar
 
 derrière ("vers derrière")
 möge
@@ -1415,11 +1674,20 @@ művészet
 pantalon
 nadrág
 
+tante
+nagynéni
+
+orange (fruit)
+narancs
+
 naif
 naív
 
 jour, soleil
 nap
+
+oncle
+nágybáty
 
 rhume
 náthá
@@ -1427,7 +1695,7 @@ náthá
 enrhumé
 náthás
 
-carré (subst)
+carré (n)
   mètre carré
 negyzet
   negyzetmeter
@@ -1444,6 +1712,9 @@ nehéz
 rire
 nevet
 
+parfois
+néha
+
 sans
 nélkül
 
@@ -1455,7 +1726,7 @@ nom
 név
   nevet, neve, nevek
 
-saint-... (fête)
+saint-… (fête)
 névnap
 
 regarder, considérer
@@ -1464,6 +1735,17 @@ néz vmire
 
 pâte à base de farine et d'œuf
 nohedli
+
+marié (pour un homme)
+  homme marié
+nős
+  nős férfi
+
+célibataire (pour les hommes seulement)
+nőtlen
+
+retraité
+nyudíjas
 
 calme
 nyugodt
@@ -1521,6 +1803,9 @@ se réjouir
 tout équipé (pour habitation)
 összkomfort
 
+veuf, veuve
+özvegy
+
 automne / gris-blanc (cheveux)
 ősz
 
@@ -1547,6 +1832,9 @@ ránéz
 banc (pour s'asseoir)
 pad
 
+crêpe
+palacsinta
+
 donner des ordres
   "Qu'est-ce que vous désirez ?"
 parancsolni
@@ -1562,6 +1850,9 @@ pálya
 quelque (2)
 pár
   egy pár
+
+cuit à la vapeur
+párolt
 
 bien sûr
 persze
@@ -1615,6 +1906,9 @@ exact
 pontos
   -at, -ak,-abb
 
+poisson gras d'eau douce, pas très bon
+ponty
+
 programme
 program
 
@@ -1640,7 +1934,7 @@ postá
   ~ra menni
 
 ragoût
-pörköt
+pörkölt
 
 chandail
 pulóver
@@ -1650,6 +1944,9 @@ ráérni
 
 marcher dessus
 rálépni vmire
+
+pané (culinaire)
+rántott
 
 réaliste
 realista
@@ -1667,6 +1964,7 @@ reggeli
 
 petit-déjeuner (v)
 reggelizik
+  reggelizni
 
 relatif (1)
 relatív
@@ -1706,9 +2004,18 @@ régi
 ivre
 részeg
 
+tourte
+rétes
+
 rare
 ritka
   ritkább
+
+rarement
+ritkán
+
+proche parent
+rokon
 
 mauvais
 rossz
@@ -1720,6 +2027,18 @@ rosszul
 robe, ou vêtement en général
 ruha
 
+bâton, mât
+rúd
+
+à soi (possession accentuée)
+  "C'est mon livre à moi."
+  "Ce livre est à moi."
+  "mon propre livre"
+saját
+  Ez a saját könyvem.
+  Ez a könyv a sajátam.
+  A saját könyvem
+
 salade
 saláta
   -salátát, salátája, saláták
@@ -1727,6 +2046,15 @@ saláta
 jaune
 sárga
   sárgát, sárgák, sárgább
+
+null part
+sehol
+
+de nulle part
+sehonnan
+
+vers nulle part
+sehova
 
 personne (privatif)
 senki
@@ -1755,7 +2083,7 @@ skót
 
 jamais
   (contraction)
-soha... nem
+soha… nem
   sosem
 
 jambon
@@ -1770,11 +2098,23 @@ sovány
 sel
 só  
 
+beau-frère
+sógor
+
+belle-sœur
+sógornő
+
 salé
 sós 
 
 obscur, sombre
 sötet
+
+sportif
+sportoló
+
+cuit, grillé
+sült
 
 briller, faire cuire
 süt
@@ -1787,9 +2127,25 @@ sütemény
 barbe
 szaháll
 
+cuisinier
+  cuisinière
+szakács
+  szakácsnő
+
+salami
+  un salami (quantité unitaire)
+szalámi
+  egy rúd szalámi
+
+lard
+szalonna
+
 hôtel
 szálloda
   szállodát, szállodája, szállodák
+
+chiffre, numéro, titre (musique)
+szám
 
 nombreux
 számos
@@ -1823,6 +2179,9 @@ sévère
 szigorú
   -t, -ak, -bb
 
+prune
+szilva
+
 comédien, acteur
 színész
 
@@ -1851,15 +2210,23 @@ voisin
 szomszéd
   -ot, -ja, -ok
 
+assidû
+szorgalmas
+
 mot
 szó
   -t, szava, szavak
 
+dire
+szól
+  -t, -jon, -na
+
+s'amuser, se distraire
+szórakozik
+  -kozott, -kozzon, -kozna
+
 amusement, divertissement
 szórakozást
-
-s'amuser
-szórakozik
 
 alors
 szóval
@@ -1871,13 +2238,8 @@ tapis
 szönyeg
  -et, -e, -ek
 
-dire
-szól
-  -t, -jon, -na
-
-se distraire
-szórakozik
-  -kozott, -kozzon, -kozna
+raisin
+szőlő
 
 blond
 szőke
@@ -1888,12 +2250,18 @@ besoin
 szükség
   ~[possessif] van vmire
 
+enfanter
+szülni
+
 parent (père ou mère)
 szülő
   -t, -je, -k
 
 pause, vacances, récréation, entracte
 szünet
+
+"L'ami gris", appellation de vin
+szürkebarát
 
 nettoyer, faire le ménage
   dérivé
@@ -1917,6 +2285,15 @@ taxiállomás
 danser
 táncol
   -t, -jon, -na
+
+négocier
+tárgyal
+
+immeuble (habitation collective)
+társasház
+
+crème fraîche 
+tejföl
 
 considérer quelqu'un comme
 tekinteni vkit vminek
@@ -1946,12 +2323,14 @@ place (endroit)
 tér
   terat, tere, terek
 
+pâte (culinaire)
+tésztá
+
 télévision
   à la télévision
 tévé
   -t, -je, -k
   a ~ben
-
 
 interdit
   (pas de détachement du préfixe de l'autre verbe)
@@ -1972,6 +2351,9 @@ toka
 stylo
 toll
 
+intérprète
+tolmács
+
 plus loin, continuer à
 tovább
 
@@ -1983,13 +2365,19 @@ le reste
 többi
   a többiek "A többiek már itt vannak."
 
-verser
+verser, remplir
   passer du temps avec
 tölteni
   idő tolteni
+  
+farci
+töltött  
 
 qualité, caractéristique
 tuladonság
+
+fromage blanc
+túró
 
 glace, miroir
 tükör
@@ -2006,8 +2394,14 @@ tűzoltók
 feu (phénomène physique)
 tűz
 
+concombre
+uborka
+
 poli, courtois
 udvarias
+
+impoli
+udvariatlan
 
 n'est-ce pas ?
 ugye ?
@@ -2019,8 +2413,24 @@ petit-fils, petite fille
 unoka
   unokát, unokája, unokák
 
+neveu
+unokaöcs
+
+cousin/cousine
+unokatestvér
+
+nièce
+unokahúg
+
 piscine
 uszoda
+
+après
+  après ça
+  (voir)
+után
+  utána
+  azután
 
 voyageur
 utas
@@ -2038,13 +2448,23 @@ uzsonnázik
 boisson non alcoolisée
 üditő
 
+saluer 
+  (défectif) 
+üdvözni
+
+adroit
+ügyes
+
+maladroit
+ügyetlen
+
 s'asseoir
 ül
 
 de cette façon-là
-  il sent que ...
+  il sent que …
 úgy
-  úgy erzi, hogy...
+  úgy erzi, hogy…
 
 nouveau
 új
@@ -2056,6 +2476,9 @@ de nouveau
 passeport
 útlevél
   -levelet, -levele, -levelek
+
+fête
+ünnep
 
 envoyer un message
 üzeni
@@ -2070,6 +2493,9 @@ vad
 marron (fruit)
 vadgesztenye
 
+beurre
+vaj
+
 quelque part
 valahol
 
@@ -2082,6 +2508,15 @@ vágyik vmire
 répondre
 válaszol
   -t, -jon, -na
+  
+choisir
+választani  
+
+entreprise
+vállalat
+
+entreprendre
+vállalni vmit
 
 attendre
 vár (igék)
@@ -2097,9 +2532,15 @@ városnézés
 salle d'attente
 várósterem
 
+mixte (pour la nourriture)  
+vegyes     
+
 invité
+  -
+  être quelque part en tant qu'invité
 vendég
   -et, -e, -ek
+  vendégéségben van  
 
 acheter
 venni
@@ -2110,6 +2551,14 @@ vég
 
 finalement (référence : maintenant)
 végén
+
+opinion
+vélemény
+
+hasard
+  par hasard
+véletlen
+  véletlenül
 
 blague, histoire drôle
 vicc
@@ -2167,9 +2616,15 @@ examen
 vizsga
   vizsgát, vizsgája, vizsgak
 
-rouge
+rouge, roux
+  -
+  aux cheveux roux
 vörös
   -et, -ek, -ebb
+  vörös hajú
+
+beau-fils
+vő
 
 fiancé (masculin seulement)  
 vőlengenye
@@ -2184,9 +2639,15 @@ orchestre
 zenekar
   -t, -a, -ok
 
+musicien
+zenész
+
 piano
 zongora
   zongorát, zongorája, zongorák
+
+gras (adj)
+zsiros
 
 rempli
 zsúfolt

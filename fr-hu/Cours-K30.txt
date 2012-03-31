@@ -1,4 +1,5 @@
 title: Cours particulier K30
+retrofitted: yes
 
 hasard
   par hasard

@@ -1,4 +1,5 @@
 title: Cours particulier K29
+retrofitted: yes
 
 devoir
   "Je dois acheter..."
@@ -39,7 +40,7 @@ motorkerékpar
 vélo
 kerékpar
 
-raison
+raisin
 szőlő
 
 roux 
