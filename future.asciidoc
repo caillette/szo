@@ -34,11 +34,11 @@ Since we don't see files, there must be a message listing badly-referenced files
 
 Tag may belong to groups. With `@Foo/Bar` and `@Foo/Baz` somewhere, infer a tag group:
 
-..........................
+----
 [ ] Foo
 [ ]   Bar
 [ ]   Baz
-..........................
+----
 
 === Support mobile devices
 
