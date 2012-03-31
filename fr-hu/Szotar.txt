@@ -118,7 +118,8 @@ traverser (avec arrêt une fois de l'autre côté)
   Átall a másik oldara.
 
 transmettre
-átadni
+átad
+  átadni
 
 corriger (à l'écrit)
 átír
@@ -130,13 +131,14 @@ moyen, médiocre
 átlagos
 
 mettre un pied au-dessus
-átlépni vmin
+átlép vmin
+  átlépni 
 
 traverser
 átmegy
 
 regarder au travers
-átnézni
+átnéz
   Átnézünk az ablakon.    
 
 effetuer une relecture
@@ -181,7 +183,7 @@ bátor
 grand-frère
 báty
 
-entrer (sans mouvement consécutif)
+entrer (sans déplacement qui suit)
 beáll
   Beáll a garazsba.
 
@@ -198,10 +200,10 @@ appeler quelqu'un pour qu'il rentre
 behív
 
 écrire dans (1)
-beírni
+beír
   Kiírom a szovakat a füzetbe.
 
-interne
+interne (adj)
 belső
 
 regarder vers le bas
@@ -225,7 +227,7 @@ bevisz
   -vit, -viggen, -vinne
 
 louer (emprunter contre paiement)
-bérelni
+bérel
 
 timbre-poste
 bélyeg
@@ -355,7 +357,7 @@ sonnette
 cszengő
 
 sonner 
-czendetni
+czendet
 
 Danube
 Duna
@@ -416,7 +418,8 @@ vendeur
 eladó
 
 manger quelque chose devant quelqu'un
-elenni vmit vki elől
+eleszik vmit vki elől
+  elenni
 
 vers devant
 elé
@@ -429,13 +432,13 @@ elégedett
   Elegem van vmiből.
 
 inviter quelqu'un pour qu'il vienne (interpellation)
-elhívni
+elhív
   elhívom barátomat moziba
 
 mal écrire, faire une faute
   Je fais toujours une faute à ce mot.
   (vient toujours avec un COD) 
-elírni
+elír
   Mindig elírja ezt a szót.
 
 venir
@@ -472,7 +475,8 @@ avant, devant
 előtt
 
 ranger
-elrakni
+elrak
+  elrakni
 
 disparaître
 eltűnik
@@ -491,8 +495,6 @@ erősleves
 soir
 este
   estét, estéje, esték
-
-
 
 s'arrêter (impersonnel)
 eláll
@@ -535,7 +537,8 @@ eset
   mindenesetre
 
 déjeuner (v)
-ébedelni
+ébedel
+  ébedelni
 
 réveillé, vigilant
 éber
@@ -558,7 +561,8 @@ arriver (action en cours)
   -kezett, -kezzen, -kezne
 
 être expert en quelque chose
-érteni vmihez
+ért vmihez
+  érteni 
 
 salle à manger
 étkező
@@ -569,7 +573,7 @@ carte (au restaurant)
 
 vivre
 él
-  -t, -jen, -ne (élni)
+  -t, -jen, -ne ; élni
 
 bâtiment
 épület
@@ -634,7 +638,8 @@ felkel
   -t, -jen, -ne
 
 faire un pas vers le haut, monter sur scène
-fellépni
+fellép
+  fellépni
 
 monter
 felmegy
@@ -701,7 +706,8 @@ fiatal
   -t, -ok, -abb
 
 philosopher
-filozofálni
+filozofál
+  filozofálni
 
 garçon, fils
 fiú
@@ -767,7 +773,7 @@ vite (2)
 fúrge
 
 prendre un bain
-fürteni
+fürdik
 
 salle de bains
 fürdőszoba
@@ -798,7 +804,8 @@ gép
   -et, -e, -ek
   
 taper à la machine
-gépelni
+gépel
+  gépelni
 
 bouton
 gomb
@@ -1121,7 +1128,7 @@ jardin
 kert
 
 jardiner
-kertészkedni
+kertészkedik
 
 amer
 keserű
@@ -1160,7 +1167,7 @@ kér
 
 demander, poser une question
 kérdez
-  -ett, -zen, -ne ; kérdezni
+  -ett, -zen, -ne; kérdezni
 
 fabriquer, produire
 készít
@@ -1191,7 +1198,7 @@ kiált
 
 manger complètement
   J'ai mangé toute (tout ce qu'il y avait dans) l'assiette.
-kienni
+kieszik
   Kiettem a tányért.
 
 croissant (en pâte à pain)
@@ -1205,7 +1212,7 @@ kihoz
   -ott, -zon, -na
 
 recopier, écrire à un endroit visible
-kiírni
+kiír
   Kiírom a szovakat a könyvből
 
 sortie (emplacement)
@@ -1226,7 +1233,7 @@ lire complètement (ex : un livre)
 kiolvas
 
 faire une excursion
-kirándulni
+kirándul
 
 petit (épithète)
 kis
@@ -1332,7 +1339,7 @@ dessert à base de crème compacte
 krémes
   
 envoyer
-  dérivés
+  voir :
 küld
   átküld, elküld, visszaküld
 
@@ -1404,13 +1411,13 @@ lehív
 leír
 
 se saouler, s'en renverser dessus en buvant
-leinni maga
+leiszik maga
 
 descendre (référence en bas)
 lejön
 
 faire un pas vers le bas, "se casser" (fam)
-lelépni
+lelép
 
 descendre
 lemegy
@@ -1428,9 +1435,6 @@ leolvas
 descendre (d'un moyen de locomotion)
 leszáll
   -t, -jon, -na
-
-enlever
-leszedni
 
 poser
 letesz
@@ -1510,10 +1514,9 @@ déjà
 már
 
 plus que
-  "Nous n'avons plus que 10 mn à attendre."
+  Nous n'avons plus que 10 mn à attendre.
 már csak
   Már csak tiz percet kell várnunk.
-
 
 tout de suite
   voir :
@@ -1539,7 +1542,7 @@ megcsókol
   -t, -jon, -na
 
 convenir (plaire)
-  "Est-ce que cette table vous convient ?"
+  Est-ce que cette table vous convient ?
 megfelel
   Megfelel önnek az az asztal ?
 
@@ -1553,14 +1556,15 @@ invitation
 meghívás
 
 inviter (invitation formelle)
-  "J'invite mes amis à mon anniversaire."
-meghívni
+  J'invite mes amis à mon anniversaire.
+meghív
   Meghívtom a barátoimat a születésnapomra.
 
 surpris (2)
-  surprise (n)
 meglepett
-  meglepetés
+
+surprise (n)
+meglepetés
 
 regarder (action achevée)
 megnéz
@@ -1571,7 +1575,7 @@ megoldani
 à côté (sans mouvement)
 mellett  
 
-à côté ("vers à côté")
+vers à côté
 mellé
 
 "Pendant combien de temps ?"
@@ -1832,12 +1836,12 @@ ránéz
 banc (pour s'asseoir)
 pad
 
-crêpe
+crêpe (aliment)
 palacsinta
 
 donner des ordres
-  "Qu'est-ce que vous désirez ?"
-parancsolni
+  Qu'est-ce que vous désirez ?
+parancsol
   Tessék, parancsolni
 
 rive
@@ -1885,7 +1889,8 @@ parking
 parkoló
 
 se garer
-parkolni
+parkol
+  parkolni
 
 réceptionniste
 portás
@@ -1894,7 +1899,6 @@ plainte
   Qu'est-ce qui ne va pas (pour lui) ?
 panasz
   Mi a panasza?
-
 
 plein (adj, invariable)
 tele
@@ -1924,7 +1928,7 @@ megérkezik
   -kezett, -kezzen, -kezne
 
 faire pipi
-pisilni
+pisil
 
 poste (bureau de)
   à la poste
@@ -1972,13 +1976,13 @@ relatív
 ordre (l')
   désordre
   ranger
-  j'ai rangé mon appartement (1)
-  j'ai rangé mon appartement (2)
+  J'ai rangé mon appartement. (1)
+  J'ai rangé mon appartement. (2)
 rend
   rendetlen
   rendet rakni
-  rendet raktam a lakásamban
-  rendbe raktam a lakásamat
+  Rendet raktam a lakásamban.
+  Rendbe raktam a lakásamat.
 
 ordonné
 rendes
@@ -1987,7 +1991,7 @@ consultation
 rendelnés
 
 passer commande
-rendelni
+rendel
 
 désordre
 rendetlenség
@@ -2165,8 +2169,10 @@ szeret
 rédacteur, comité de rédaction
 szerkesztő
 
-avoir la tête qui tourne
-szédülni
+avoir la tête qui tourne, être pris de vertige
+  La tête me tourne.
+szédül
+  Szédül a fejem.
 
 chaise
 szék
@@ -2189,9 +2195,9 @@ propre, sain
 szobatiszta
 
 avoir l'habitude de
-  Péter n'a pas l'habitude de lire
+  Péter n'a pas l'habitude de lire.
 szok
-  Péter nem szokott olvasni (toujours au passé)
+  Péter nem szokott olvasni. (toujours au passé)
 
 jupe
 szoknya
@@ -2232,7 +2238,7 @@ alors
 szóval
 
 s'enfuir
-szökni
+szökik
 
 tapis
 szönyeg
@@ -2296,15 +2302,16 @@ crème fraîche
 tejföl
 
 considérer quelqu'un comme
-tekinteni vkit vminek
+tekint vkit vminek
+  tekinteni
 
 nature
   naturellement
 természet
   természetesen
 
-je vous en prie, voilà
-  "Veuillez entrer."
+"Je vous en prie." "Voilà."
+  Veuillez entrer.
 tessék
   Tessék bemenni.
 
@@ -2366,9 +2373,11 @@ többi
   a többiek "A többiek már itt vannak."
 
 verser, remplir
+  -
   passer du temps avec
-tölteni
-  idő tolteni
+tölt
+  tölteni
+  idő tolt vkivel
   
 farci
 töltött  
@@ -2385,8 +2394,8 @@ tükör
 
 sembler (2)
   il semble
-tűni
-  tűnik (faux verbe en -ik)
+tűnik
+  tűni (faux verbe en -ik)
 
 les pompiers
 tűzoltók
@@ -2481,7 +2490,8 @@ fête
 ünnep
 
 envoyer un message
-üzeni
+üzen
+  üzeni
 
 nager
 úszni
@@ -2500,7 +2510,7 @@ quelque part
 valahol
 
 couper
-vágni
+vág
 
 désirer
 vágyik vmire
@@ -2543,8 +2553,8 @@ vendég
   vendégéségben van  
 
 acheter
-venni
-  vesz
+vesz
+  venni
 
 fin
 vég
@@ -2572,15 +2582,17 @@ vidék
   -et, -e, -ek
 
 faire attention, surveiller qqun
+  -
   "fais attention à toi"
-vigyázni vkire
+vigyáz vkire
+  vigyázni
   vigyazz magadra
 
 arrêt de tramway
 villamosmegálló
 
 se comporter
-viselkedni
+viselkedik
 
 renvoyer
 visszaküld

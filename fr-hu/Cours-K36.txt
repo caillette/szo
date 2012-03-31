@@ -1,4 +1,5 @@
 title: Cours particulier K36
+retrofitted: yes
 
 fin de semaine
 hétvége
