@@ -1,4 +1,5 @@
 title: Cours particulier K38
+retrofitted: yes
 
 verglacé
   route verglacée

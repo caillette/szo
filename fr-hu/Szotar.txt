@@ -39,6 +39,9 @@ alatt
 vers-sous 
 alá
 
+alcool
+alkohol
+
 sous (non-relatif)
 alól
 
@@ -173,6 +176,9 @@ barátsagos
 
 hostile
 barátsagtalan
+
+pourboire
+barravaló
 
 regretter
 bán vmit
@@ -329,6 +335,12 @@ csinál
 jolie, charmante (que pour les femmes)
 csinos
 
+piquer
+csíp
+
+piquant (adj)
+csípős
+
 poulet
 csirke
   csirkét, csirkéje, csirkék
@@ -353,6 +365,9 @@ colis, paquet
 csomag
   egy csomag cigaretta
 
+csusza
+sorte de lasagne
+
 sonnette
 cszengő
 
@@ -364,6 +379,9 @@ Duna
 
 "Ah mais non"
 dehogy
+
+dessert
+desszert
 
 sud, midi
 dél
@@ -399,6 +417,9 @@ dühös
 
 déjeuner (n)
 ebéd
+
+vinaigre
+ecet
 
 entièrement, assez, entier
   assez bien
@@ -468,6 +489,9 @@ elöszoba
 spectacle
 előadas
 
+entrée (lors d'un repas)
+előetel
+
 en avance
 előre
 
@@ -516,6 +540,11 @@ ellentét
 partir
 elmegy
 
+excuse
+  Je demande pardon !
+elnézés
+  Elnézést kérek!
+
 première fois
 először
 
@@ -524,6 +553,11 @@ elsősorban
 
 divorcé
 elvált
+
+aliment
+  voir :
+ennivaló
+  etel
 
 fort
 erős
@@ -535,6 +569,9 @@ Ez igen !
   dans tous les cas
 eset
   mindenesetre
+
+manger quelque chose au petit déjeuner/déjeuner/dîner
+reggelire/ebédre/vacsorára eszik vmit
 
 déjeuner (v)
 ébedel
@@ -600,6 +637,9 @@ aliment, plat, repas
 appétit
 étvágy
 
+glace
+fagylalt
+
 mur
 fal
   -at, -a, -ak
@@ -649,8 +689,17 @@ regarder vers le haut
 felnéz
   Felnézünk a felhőre.
 
+grandir, devenir adulte
+felnőni
+
+adulte
+felnőtt
+
 en haut
 fent
+
+répondre quelque chose
+felel vmit
 
 lire à haute voix
 felolvas
@@ -759,6 +808,9 @@ fővaros
 
 cuisiner
 főz
+
+légumes cuisinés
+főzelek
 
 salade russe
 franciasaláta
@@ -1011,6 +1063,11 @@ ing
 d'ici
 innen
 
+boisson
+  voir :
+innivaló
+  ital
+
 bureau
 iróasztal
   -t, -a, -ok
@@ -1025,6 +1082,11 @@ Isten
 boisson
 ital
   -t, -a, -ok
+
+plaire (nourriture seulement)
+  Cette soupe me plaît.
+ízlik
+  Nekem ízlik ez a leves.
 
 écrire (action en cours)
   Je suis en train d'écrire un livre.
@@ -1042,11 +1104,19 @@ jouet, jeu
 játék
   -ot, -a, -ok
 
+verglacé
+  route verglacée
+jeges
+  jeges út
+
 ticket, billet
 jegy
 
 signifier quelque chose
 jelent vmit
+
+glaçon
+jég
 
 beau, charmant (que pour les hommes)
 jóképű
@@ -1161,12 +1231,12 @@ kép
 carte postale
 képeslap
 
-demander, prier
-kér
+demander quelque chose à quelqu'un, prier quelqu'un de
+kér vkitől vmit
   -t, -jen, -ne ; kérni
 
-demander, poser une question
-kérdez
+demander quelque chose (poser une question)
+kérdez vmit
   -ett, -zen, -ne; kérdezni
 
 fabriquer, produire
@@ -1506,6 +1576,8 @@ cochon (appellation affectueuse)
 malac
   Malacam van.
 
+rester sur quelque chose (lors d'un repas)
+vmi mellett marad
 
 bœuf
 marha
@@ -1691,7 +1763,7 @@ jour, soleil
 nap
 
 oncle
-nágybáty
+nagybáty
 
 rhume
 náthá
@@ -1713,7 +1785,7 @@ difficile, lourd
 nehéz
   nehezet, nehezek, nehezebb
 
-rire
+rire (v)
 nevet
 
 parfois
@@ -1739,6 +1811,9 @@ néz vmire
 
 pâte à base de farine et d'œuf
 nohedli
+
+grandir
+nőni
 
 marié (pour un homme)
   homme marié
@@ -1943,6 +2018,9 @@ pörkölt
 chandail
 pulóver
 
+voleur
+rabló
+
 avoir le temps, être libre
 ráérni
 
@@ -2144,6 +2222,9 @@ szalámi
 lard
 szalonna
 
+sec (adj)
+száraz
+
 hôtel
 szálloda
   szállodát, szállodája, szállodák
@@ -2186,7 +2267,9 @@ szigorú
   -t, -ak, -bb
 
 prune
+  au goût de prune
 szilva
+  szilvás
 
 comédien, acteur
 színész
@@ -2223,9 +2306,16 @@ mot
 szó
   -t, szava, szavak
 
-dire
+dire, émettre en continu des sons à l'intention d'êtres humains
+  -
+  On entend la radio.
+  Il y a de la musique.
+  La radio ne fonctionne plus.
 szól
   -t, -jon, -na
+  Szól a radió.
+  Szól a zene.
+  Nem szól a radió.
 
 s'amuser, se distraire
 szórakozik
@@ -2594,6 +2684,9 @@ villamosmegálló
 se comporter
 viselkedik
 
+redemander
+visszakér vmit
+
 renvoyer
 visszaküld
 
@@ -2639,7 +2732,7 @@ beau-fils
 vő
 
 fiancé (masculin seulement)  
-vőlengenye
+vőlegénye
 
 bruit
 zaj
