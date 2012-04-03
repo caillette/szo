@@ -21,9 +21,10 @@ hétköznapi
 utiliser
 használni
 
-avancer
-halad
-
+avancer (sur un sujet donné)
+  J'avance bien dans mon travail.
+halad vmivel
+  Jól haladok a munkámmal.
 
 "Comment ça te plaît ?" (question ouverte)
 "Hogy tetszik?"
@@ -52,15 +53,17 @@ hulámvasút
 tout de suite
 mindjárt
 
-ne... guère 
+ne… guère 
   Je ne le connais guère.
 alig
   Alig ismerem.
   
 arriver
   Ça me vient à l'esprit.
+  À ce propos…
 jut
   Eszembe jut.
+  Erről jut eszembe…
   
 lac
 tó  

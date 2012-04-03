@@ -214,7 +214,7 @@ belső
 
 regarder vers le bas
   mépriser quelqu'un
-benéz
+benéz vmibe
     benéz vkit
 
 reprocher à quelqu'un (argot)
@@ -664,7 +664,7 @@ felfogás
   lassú felfogású
 
 appeler quelqu'un au téléphone, ou pour qu'il monte
-felhív
+felhív vkit
 
 monter quelque chose
 felhoz
@@ -685,8 +685,8 @@ monter
 felmegy
   -ment, -menjen, -menne
 
-regarder vers le haut
-felnéz
+regarder vers le haut, admirer
+felnéz vmire
   Felnézünk a felhőre.
 
 grandir, devenir adulte
@@ -1639,7 +1639,7 @@ surprise (n)
 meglepetés
 
 regarder (action achevée)
-megnéz
+megnéz vmit
 
 résoudre
 megoldani
@@ -2079,9 +2079,12 @@ police, commissariat
 rendőrség
   -et, -e
 
-ancien
+ancien (objet inanimé ou abstrait)
+  -
+  Mes vieux amis
 régi
   -t, -ek, -bb
+  Rége barátaim
 
 ivre
 részeg
@@ -2616,7 +2619,8 @@ entreprise
 vállalat
 
 entreprendre
-vállalni vmit
+vállal vmit
+  vállalni
 
 attendre
 vár (igék)
