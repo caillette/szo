@@ -51,7 +51,7 @@ készül
 se préparer à devenir [profession]
   Il sera médecin
 készül vminek
-  Orvosnok készül
+  Orvosnak készül
   
 "Ils sortent ensemble."
 Együtt járni
