@@ -1585,6 +1585,11 @@ marha
 déjà
 már
 
+ne … plus
+  Depuis quelques années il n'aime plus mon mari.
+már nem
+  Néhány éve már nem szeretem a férjemet.
+
 plus que
   Nous n'avons plus que 10 mn à attendre.
 már csak
@@ -1667,6 +1672,11 @@ mese
 
 loin
 messze vmitől
+
+pas encore
+  Je m'amuse bien, je ne veux pas encore rentrer.
+még nem
+  Én nagyon jól szórakozom, még nem akarok hazamenni.
 
 fâché (2)
 mérges

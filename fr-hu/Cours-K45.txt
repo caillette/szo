@@ -1,17 +1,17 @@
 title: Cours particulier K45
 
 voir à travers quelque chose
-  Je vois à travers la fenêtre, parce qu'elle n'est pas sale.
-átlát vmit
-  Átlátok az ablakon, mert nem piszkos.
+  Je vois à travers la fenêtre.
+átlát vmin
+  Átlátok az ablakon.
 
 voir quelque chose dans son intégralité (fig. comprendre)
-  Je vois l'étendue du problème.
-átlát vmin
+  Je comprends le problème.
+átlát vmit
   Átlátom a problémát.
   
 étudiant à l'université
-egyeteni hallgátó
+egyetemi hallgátó
 
 science
 tudomány
@@ -29,7 +29,7 @@ faculté des sciences humaines
 bölcészkar
 
 droit (domaine juridique)
-job
+jog
 
 faculté de droit
 jogi kar
@@ -49,12 +49,12 @@ készül
   Elkészülök.
 
 se préparer à devenir [profession]
-  Il sera médecin
+  Il sera médecin.
 készül vminek
-  Orvosnak készül
+  Orvosnak készül.
   
 "Ils sortent ensemble."
-Együtt járni
+Együtt járnak
 
 concours
 versen
