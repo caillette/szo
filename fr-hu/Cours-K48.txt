@@ -1,10 +1,10 @@
 title: Cours particulier K48
 
-être d'accord avec quelqu'un
-  Je suis d'accord avec toi.
+être d'accord avec quelqu'un à propos de quelque chose
+  Je suis d'accord avec toi là-dessus.
   C'est avec toi que je suis d'accord.
-egyet érteni vkivel
-  Értek egyet veled.
+egyet érteni vkivel vmiben
+  Egyet értek veled ebben.
   Én veled értek egyet.
   
 sonner
@@ -22,7 +22,7 @@ közönség
 exclamation accompagnée d'un verbe
   Comme le public applaudit !
 "Hogy …"
-  Hogy tapsol a közöség!
+  Hogy tapsol a közönség!
   
 plein (adj)
   C'est plein, il n'y a plus de place.
