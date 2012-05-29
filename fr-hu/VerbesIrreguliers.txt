@@ -1,4 +1,4 @@
-title: Verbes irréguliers
+title: Verbes irréguliers 1
 
 
 
@@ -62,7 +62,7 @@ lenni
   lettetek
   lettek
 
-être, conditionnel présent
+#être, conditionnel présent
   én
   te
   ö
@@ -77,7 +77,7 @@ lenni
   volnátok
   volnának
   
-être, indicatif présent
+#être, indicatif présent
   én
   te
   ö
@@ -92,7 +92,7 @@ lenni
   lennétek
   lennének
   
-devenir, impératif
+#devenir, impératif
   én
   te
   ö
@@ -170,7 +170,7 @@ enni
   ették
 
 
-manger, conditionnel présent, subjectif
+#manger, conditionnel présent, subjectif
   én
   te
   ö
@@ -185,7 +185,7 @@ enni
   ennétek
   ennének
 
-manger, conditionnel présent, objectif
+#manger, conditionnel présent, objectif
   én
   te
   ö
@@ -200,7 +200,7 @@ enni
   ennétek
   ennék
 
-manger, subjonctif, subjectif
+#manger, subjonctif, subjectif
   én
   te
   ö
@@ -215,7 +215,7 @@ enni
   egyetek
   egyenek
 
-manger, subjonctif, objectif
+#manger, subjonctif, objectif
   én
   te
   ö
@@ -293,7 +293,7 @@ inni
   ittátok
   itták  
 
-boire, conditionnel présent, subjectif
+#boire, conditionnel présent, subjectif
   én
   te
   ö
@@ -308,7 +308,7 @@ inni
   innátok
   innának
 
-boire, conditionnel présent, objectif
+#boire, conditionnel présent, objectif
   én
   te
   ö
@@ -323,7 +323,7 @@ inni
   innátok
   innák
 
-boire, subjonctif, subjectif
+#boire, subjonctif, subjectif
   én
   te
   ö
@@ -338,7 +338,7 @@ inni
   igyatok
   igyanak
 
-boire, subjonctif, objectif
+#boire, subjonctif, objectif
   én
   te
   ö

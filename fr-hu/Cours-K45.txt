@@ -41,7 +41,8 @@ affaire
 ügy
 
 protéger
-védéni
+véd
+  védéni
 
 se préparer 
   Je me prépare, m'habille.

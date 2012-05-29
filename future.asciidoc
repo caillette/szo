@@ -9,6 +9,16 @@ This would have following advantages:
 
 This  http://saadnawaz.blogspot.fr/2010/10/change-url-dynamically-through.html[blog post] tells that one can use `window.location.hash`.
 
+The http://www.boutell.com/newfaq/misc/urllength.html[practical limit] of URL length is 2048 characters. Application state might fit, considering:
+
+* Card count (see below).
+* Tag count (see below).
+* Compression.
+* Dropping some state (like the "deck" described below).
+
+100 selected tags of an average length of 20 barely fit.
+
+Keeping the deck makes sense only when refreshing the page. As a matter of fact, deck deals with user's short term memory. So we have some "session" scope that can go outside of the URL. The good choice isn't obvious here because we don't know how to deal with URL copy-paste.
 
 
 === Link to Wiktionary

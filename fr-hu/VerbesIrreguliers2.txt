@@ -1,0 +1,62 @@
+title: Verbes irréguliers 2
+
+aller, indicatif présent
+  én
+  te
+  ö
+  mi
+  ti
+  ök
+menni
+  megyek
+  mész
+  megy
+  megyünk
+  mentek
+  mennek
+
+aller, indicatif passé
+  én
+  te
+  ö
+  mi
+  ti
+  ök
+menni
+  mentem
+  mentél
+  ment
+  mentünk
+  mentetek
+  mentek
+  
+
+venir, indicatif présent
+  én
+  te
+  ö
+  mi
+  ti
+  ök
+jönni
+  jövök
+  jössz
+  jön
+  jövünk
+  jöttök
+  jönnek
+
+venir, indicatif passé
+  én
+  te
+  ö
+  mi
+  ti
+  ök
+jönni
+  jöttem
+  jöttel
+  jött
+  jöttünk
+  jöttetek
+  jöttek
