@@ -12,11 +12,11 @@ szak
 se réjouir de
 örül vminek
 
-prendre mari
-férjhez menni
+prendre pour mari
+férjhez menni vkihez
 
-prendre épouse
-feleségül menni
+prendre pour époux
+feleségül menni vkihez
 
 époque, âge
 kor
