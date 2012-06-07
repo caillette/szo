@@ -6,9 +6,14 @@ retúr jegy
 réservation (pour une place)
 helyjegy
 
-déranger
-zavar
+déranger qqun
+  -
+  Ça ne vous dérange pas si j'ouvre la fenêtre ?
+  Ça ne te dérange pas si je fume ?
+zavar vkit
   zavarni
+  Nem zavarja, ha ablakot nyitom?
+  Nem zavar, ha dohánysom?
   
 nu, dénudé
 meztelen
@@ -29,7 +34,7 @@ le reste
 egyéb
 
 "Je n'ai rien à faire."
-Nincs semmi dolgozom.
+Nincs semmi dolgom.
 
 puisque
 hiszen
