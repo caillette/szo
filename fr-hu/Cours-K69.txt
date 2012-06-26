@@ -67,7 +67,8 @@ hát
 
 si jamais
   Prends ton parapluie, si jamais il pleut.
-Vigyél magaddal egy esernyőt, hátha esni fog.
+hátha  
+  Vigyél magaddal egy esernyőt, hátha esni fog.
 
 rater
 elront
