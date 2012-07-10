@@ -28,7 +28,7 @@ kéz
   kezet, kezek
   
 donner qqchose (dans la main)
-adni a kézetbe vmit
+adni a kezetbe vmit
 
 porte (n)
 ajtó
@@ -42,6 +42,11 @@ nuit (2)
 
 minuit
 éjfél
+
+important pour quelqu'un
+  La ponctualité, c'est important pour tout le monde.
+fontos vkinél
+  Pontosság mindenkinél fontos.
 
   
 
