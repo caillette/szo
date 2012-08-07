@@ -9,7 +9,8 @@ egy
   Gábor és Paul egy helyen dolgoznak.
 
 c'est vrai mais …
-igaz
+  C'est vrai que Judit est belle, mais elle est bête.
+igaz … de
   Igaz Judit szép, de butá.
   
 adroit
@@ -26,3 +27,4 @@ veuf
 
 rire
 nevet
+

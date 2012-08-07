@@ -14,7 +14,7 @@ enseigner
 tanít
 
 étudier
-tanúl
+tanul
 
 embellir 
 szépít
@@ -57,14 +57,14 @@ mercredi
 szerda
 
 désirer qqchose
-vág vmire
+vágyik vmire
 
 préféré
   ma fleur préférée
 kedvenc
   a kedvenc virágom
   
-menyasszony
 fiancée
+menyasszony
 
   
