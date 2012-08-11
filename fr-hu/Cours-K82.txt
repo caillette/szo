@@ -35,4 +35,9 @@ préférer
 jobban szeretni
   Jobban szeretem a salátát, mint a tortát.
   
+préférer faire quelque chose
+  Je préfère écouter la radio.
+jobban szeretni vmit csinálni
+  Jobban szeretem hallgatni a rádiót.
+
   
