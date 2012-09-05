@@ -1,7 +1,7 @@
 title: Cours particulier K92
 
 systématiquement
-rendszeresen
+rendszeressen
 
 sortir de chez soi
 elmenni otthonról
@@ -9,4 +9,9 @@ elmenni otthonról
 demander une faveur à qqun
 kérni vkitől egy szívességet
 
+sinon
+  Donne à manger aux ouvriers, sinon ils ne pourront pas travailler.
+különben
+  Adj valamit enni a munkasoknak, különben nem tudnak dolgozni.
+  
 

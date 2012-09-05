@@ -34,7 +34,7 @@ elkészül
 partie (morceau, fraction)
   dans une grande partie du monde
 rész  
-  a vilâg nagy részen
+  a világ nagy részen
   
 foule
 tömes
@@ -53,8 +53,8 @@ díszlet
 comprendre qqchose
 ért vmit  
 
-être d'accord avec qqun
-egyet ért vkivel
+être d'accord avec qqun sur qqchose
+egyet ért vkivel vmiben
 
 
   

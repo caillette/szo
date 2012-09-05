@@ -92,7 +92,7 @@ lenni
   lennétek
   lennének
   
-#devenir, impératif
+devenir, impératif
   én
   te
   ö
@@ -200,7 +200,7 @@ enni
   ennétek
   ennék
 
-#manger, subjonctif, subjectif
+manger, subjonctif, subjectif
   én
   te
   ö
@@ -215,7 +215,7 @@ enni
   egyetek
   egyenek
 
-#manger, subjonctif, objectif
+manger, subjonctif, objectif
   én
   te
   ö
@@ -323,7 +323,7 @@ inni
   innátok
   innák
 
-#boire, subjonctif, subjectif
+boire, subjonctif, subjectif
   én
   te
   ö
@@ -338,7 +338,7 @@ inni
   igyatok
   igyanak
 
-#boire, subjonctif, objectif
+boire, subjonctif, objectif
   én
   te
   ö
