@@ -4,8 +4,8 @@ céder, transférer
   Il cède sa place dans le bus.
   Je te transfère un message.
 átad
-  Átadaja a helyét a buszon.
-  Átadok neked egy üzenetek.
+  Átadja a helyét a buszon.
+  Átadok neked egy üzenetet.
 
 donner (action achevée)
 megad
@@ -28,7 +28,7 @@ apporter, amener vers ailleurs
 visz
 
 lettre, feuille (d'arbre ou de papier)
-evel
+level
 
 compliqué
 bonyolult
