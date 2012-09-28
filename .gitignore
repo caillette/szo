@@ -2,3 +2,5 @@ _*
 ide
 szotargep.tmproj
 *.iml
+.DS_Store
+.idea
