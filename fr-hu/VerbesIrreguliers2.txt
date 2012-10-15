@@ -29,6 +29,22 @@ menni
   mentünk
   mentetek
   mentek
+
+aller, impératif
+  én
+  te
+  ö
+  mi
+  ti
+  ök
+menni
+  menjek
+  menjél
+  menjen
+  menjünk
+  menjetek
+  menjenek
+
   
 
 venir, indicatif présent
@@ -60,3 +76,19 @@ jönni
   jöttünk
   jöttetek
   jöttek
+
+venir, impératif
+  én
+  te
+  ö
+  mi
+  ti
+  ök
+jönni
+  jöjjek
+  jöjjél
+  jöjjön
+  jöjjünk
+  jöjjetek
+  jöjjenek
+
