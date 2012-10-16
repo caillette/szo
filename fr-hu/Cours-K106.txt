@@ -10,10 +10,12 @@ jogosítvány
 commettre une faute
 hibát elkövetni
 
-au maximum
+au maximum (adv)
   Je roulais au maximum à 100.
+  Je bois au maximum un verre d'eau.
 legfeljebb
   Legfeljebb százzal mentem.
+  Legfeljebb egy pohár vizet iszom.
 
 vitesse
 sebesség
