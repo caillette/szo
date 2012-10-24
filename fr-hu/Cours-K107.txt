@@ -19,7 +19,7 @@ n'importe quoi
 bármi
 
 utiliser qqchose
-hasnál vmit
+használ vmit
 
 concours, course
 verseny
@@ -27,13 +27,10 @@ verseny
 s'inquiéter
   Ne t'inquiète pas !
 izgul
-  Ni izgulj!
+  Ne izgulj!
 
 [Exclamation de surprise]
 A mindenit!
-
-se caramboler
-vmi összeütközött
 
 se caramboler avec
 vmi/vki összeütközött vmivel/vkivel
@@ -44,7 +41,7 @@ szalad
 grave (adj)
   Il y a plusieurs blessés graves.
 szúlyos
-  Több sülyos sérult van.
+  Több szúlyos sérult van.
 
 
 direction
