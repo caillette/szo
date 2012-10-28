@@ -12,7 +12,7 @@ fölé
 s'envoler
 elszáll
 
-monter dans un véhicule
+monter dans qqchose (un véhicule)
 felszáll vmire
 
 cabine téléphonique
@@ -49,12 +49,11 @@ betart vmit
   Betart vmit.
 
 consommer qqchose
-fogyaszt vmi
+fogyaszt vmit
   fogyasztani
 
 consommation
-fogyaztmas
-
+fogyasztás
 
 
 

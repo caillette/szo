@@ -14,7 +14,7 @@ ennyi
 vérifier, contrôler
   Je ne veux pas que le contrôleur vérifie mon billet.
 ellenőriz
-Nem akarom, hogy az ellenőr a jegyem ellenőrizze.
+  Nem akarom, hogy az ellenőr a jegyem ellenőrizze.
 
 jouer aux cartes
  kártyázik
