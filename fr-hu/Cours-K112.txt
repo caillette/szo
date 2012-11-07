@@ -1,0 +1,45 @@
+title: Cours particulier K112
+
+statue
+szobor
+  szobrot
+
+biscuit
+keksz
+
+dangereux
+veszélyes
+
+jeter qqchose à la poubelle
+kidob vmit
+
+préféré
+  mon livre préféré
+kedvenc
+  a kedvenc könvem
+
+appuyer sur qqchose
+  Appuyez sur le bouton !
+megnyom vmit
+  Nyomja meg a gombot!
+
+utile
+hásznas
+
+poussière, poudre
+por
+
+lessive
+mosópor
+
+choisir (parmi)
+kiválaszt
+
+élire
+  Aujourd'hui ils ont élu Obama.
+megválaszt
+  Ma meg válastották Obamát.
+
+démarrer qqchose, faire marcher
+  elindít vmit
+
