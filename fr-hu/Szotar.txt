@@ -24,10 +24,8 @@ akar
 alors, dans ce cas
 akkor
 
-forme (contour) 
-  voir :
+forme (contour) (1)
 alak
-  forma
 
 bas, petit
 alacsony
@@ -113,7 +111,7 @@ général (adj)
 általános
 
 soigner
-ápolni
+ápol
 
 minéral (adj et nom)
 ásvány
@@ -138,7 +136,7 @@ envoyer à travers
 moyen, médiocre
 átlagos
 
-mettre un pied au-dessus
+mettre un pied au-dessus de qqchose
 átlép vmin
   átlépni 
 
@@ -146,6 +144,7 @@ traverser
 átmegy
 
 regarder au travers
+  Nous regardons à travers la fenêtre.
 átnéz
   Átnézünk az ablakon.    
 
@@ -160,9 +159,7 @@ changer de place (assise)
   Átülöt a másik székre.
 
 haricot
-  ~ vert
 bab
-  zöldbab
 
 moustache
 bajusz
@@ -195,6 +192,7 @@ grand-frère
 báty
 
 entrer (sans déplacement qui suit)
+  Il entre dans le garage.
 beáll
   Beáll a garazsba.
 
@@ -217,10 +215,11 @@ beír
 interne (adj)
 belső
 
-regarder vers le bas
-  mépriser quelqu'un
+regarder qqchose d'en haut
 benéz vmibe
-    benéz vkit
+
+mépriser quelqu'un
+benéz vkit
 
 reprocher à quelqu'un (argot)
 beolvas vkinek
@@ -233,7 +232,7 @@ mettre, introduire
 betesz
   -tett, -tegyen, -tenne
 
-porter (à l'intérieur)
+porter à l'intérieur
 bevisz
   -vit, -viggen, -vinne
 
@@ -244,9 +243,7 @@ timbre-poste
 bélyeg
 
 taureau
-  "Sang de taureau de la ville d'Eger" (vin réputé)
 bika
-  Egri bikavér
 
 mouton
 birka
@@ -255,9 +252,10 @@ incertain, indécis (1)
 bizonytalan
 
 sûr, certain
-  sûrement
 biztos
-  biztosan
+
+sûrement
+biztosan
 
 corsage
 bluz
@@ -272,6 +270,9 @@ bor
 
 côte (anatomie et cuisine)
 borda
+
+veau
+borjú
 
 poivron
 bors
@@ -291,9 +292,6 @@ bőrönd
 
 pomme de terre
 burgonya
-
-veau
-borjú
 
 crayon
 ceruza
@@ -350,7 +348,6 @@ poulet
 csirke
   csirkét, csirkéje, csirkék
 
-
 surpris (1)
 csodálkozo
 
@@ -359,28 +356,21 @@ csodálatos
   -at, -ak, -abb
 
 chocolat
-  chocolat chaud
-  tablette de chocolat  
 csokoládé
-  forró csokoládé
-  tábla csokoládé
 
 colis, paquet
   un paquet de cigarettes
 csomag
   egy csomag cigaretta
 
-csusza
 sorte de lasagne
+csusza
 
 sonnette
 cszengő
 
 sonner 
 czendet
-
-Danube
-Duna
 
 "Ah mais non"
 dehogy
@@ -400,15 +390,16 @@ cochon (appellation prosaïque)
 disznó
   
 mode (phénomène mimétique)
-  à la mode
 divat
-  divatos
+
+à la mode
+divatos
 
 fumer (du tabac)
 dohányzik
   dohányozni
 
-travailler
+travailler dans qqchose
 dolgozik vmin
 
 chose
@@ -437,11 +428,23 @@ Egészségedre!
 L'un (quelconque), l'un (des deux)
 egyik
 
-zut (avec réprimande)
-ejnye
+"Zut !" (avec réprimande)
+Ejnye!
 
 vendeur
 eladó
+
+s'arrêter (impersonnel)
+  La pluie d'arrête.
+eláll
+  Eláll az eső.
+
+élégant
+elegáns
+  -ak, -ak, -abb
+
+vivant, actif
+eleven
 
 manger quelque chose devant quelqu'un
 eleszik vmit vki elől
@@ -452,12 +455,16 @@ elé
 
 satisfait, content
   Ça suffit.
-  J'en ai assez de …
+  J'en ai assez de qqchose.
 elégedett
   Elég.
   Elegem van vmiből.
 
+oublier
+elfelejt
+
 inviter quelqu'un pour qu'il vienne (interpellation)
+  Je propose à mon ami de venir au cinéma.
 elhív
   elhívom barátomat moziba
 
@@ -474,11 +481,22 @@ eljön
 envoyer (avec acomplissement)
 elküld
 
-contre (adversatif)
+contre (adversatif, postp)
 ellen
+
+antonyme (1)
+ellentét
 
 antipathique
 ellenszenves
+
+partir
+elmegy
+
+excuse
+  Je demande pardon !
+elnézés
+  Elnézést kérek!
 
 indulgence, excuse
 elnézés
@@ -486,10 +504,6 @@ elnézés
 
 lire, action achevée
 elolvas
-
-entrée
-elöszoba
-  -szobatt, -szobája, -szobák
 
 spectacle
 előadas
@@ -499,6 +513,10 @@ előetel
 
 en avance
 előre
+
+entrée
+előszoba
+  -szobatt, -szobája, -szobák
 
 avant, devant
 előtt
@@ -511,45 +529,6 @@ disparaître
 eltűnik
   -tűnt, -tűnjon, -tűnne
 
-étage
-emelet
-  -et, -e, -ek
-
-balcon
-erkély
-
-soupe à base de bouillon de viande hâchée
-erősleves
-
-soir
-este
-  estét, estéje, esték
-
-s'arrêter (impersonnel)
-eláll
-  Eláll az eső.
-
-élégant
-elegáns
-  -ak, -ak, -abb
-
-vivant, actif
-eleven
-
-oublier
-elfelejt
-
-antonyme (1)
-ellentét
-
-partir
-elmegy
-
-excuse
-  Je demande pardon !
-elnézés
-  Elnézést kérek!
-
 première fois
 először
 
@@ -559,21 +538,35 @@ elsősorban
 divorcé
 elvált
 
+étage
+emelet
+  -et, -e, -ek
+
 aliment
   voir :
 ennivaló
   etel
 
+balcon
+erkély
+
 fort
 erős
 
-"Félicitations !"
-Ez igen !
+soupe à base de bouillon de viande hâchée
+erősleves
 
 événement, occasion
   dans tous les cas
 eset
   mindenesetre
+
+soir
+este
+  estét, estéje, esték
+
+"Félicitations !"
+Ez igen !
 
 manger quelque chose au petit déjeuner/déjeuner/dîner
 reggelire/ebédre/vacsorára eszik vmit
@@ -594,28 +587,13 @@ nuit
 éjjel
   -t, -, -ek
 
-chant
-ének
-  -et, -e, -ek
-
-arriver (action en cours)
-érkezik
-  -kezett, -kezzen, -kezne
-
-être expert en quelque chose
-ért vmihez
-  érteni 
-
-salle à manger
-étkező
-
-carte (au restaurant)
-étlap
-  -ot, -ja, -ok
-
 vivre
 él
   -t, -jen, -ne ; élni
+
+chant
+ének
+  -et, -e, -ek
 
 bâtiment
 épület
@@ -632,6 +610,21 @@ intéresser
 intéressant
 érdekes
   -et, -ek, -ebb
+
+arriver (action en cours)
+érkezik
+  -kezett, -kezzen, -kezne
+
+être expert en quelque chose
+ért vmihez
+  érteni 
+
+salle à manger
+étkező
+
+carte (au restaurant)
+étlap
+  -ot, -ja, -ok
 
 aliment, plat, repas
   -
@@ -701,7 +694,8 @@ felnéz vmire
   Felnézünk a felhőre.
 
 grandir, devenir adulte
-felnőni
+felnő
+  felnőni
 
 adulte
 felnőtt
@@ -796,16 +790,19 @@ folyó
 circulation
 forgalom
 
-forme 
-  voir :
+forme (contour) (2)
 forma
-  alak
+
+chaud, en fusion
+  chocolat chaud
+forró
+  forró csokoládé
 
 fauteuil
 fotel
   -t, -e, -ek
 
-au-dessus ("vers au-dessus")
+vers au-dessus
 fölé
 
 inutile, dénué de sens
@@ -852,9 +849,7 @@ cahier
 füzet
 
 pâtes fraîches
-  avec du foie
 galuska
-  májgaluska
 
 exploitation agricole
 gazdaság  
@@ -885,9 +880,6 @@ gombóc
 rouler (comme une bille)
 gurul
 
-dévaler
-legurul
-
 goulache
 gulyás
   -t
@@ -916,15 +908,15 @@ rapide
 gyors
   -at, -ak, -abb
 
-allumett
+allumette
   une boîte d'allumettes
 gyufa
-  a doboz gyufa
+  egy doboz gyufa
 
 laisser
 hagy
 
-avancer (sur un sujet donné)
+avancer sur qqchose
   J'avance bien dans mon travail.
 halad vmivel
   Jól haladok a munkámmal.
@@ -1636,6 +1628,9 @@ vmi mellett marad
 
 bœuf
 marha
+
+pâtes fraîches avec du foie
+májgaluska
 
 déjà
 már
@@ -2454,6 +2449,9 @@ szünet
 "L'ami gris", appellation de vin
 szürkebarát
 
+tablette de chocolat
+tábla csokoládé
+
 nettoyer, faire le ménage
   dérivé
 takarít
@@ -2863,6 +2861,9 @@ zenekar
 
 musicien
 zenész
+
+haricot vert
+zöldbab
 
 piano
 zongora
