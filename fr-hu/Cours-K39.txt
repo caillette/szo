@@ -1,4 +1,5 @@
 title: Cours particulier K39
+retrofitted: yes
 
 grand parc près de la Place des héros
 Városliget

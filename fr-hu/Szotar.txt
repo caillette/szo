@@ -39,6 +39,11 @@ alatt
 vers-sous 
 alá
 
+ne… guère
+  Je ne le connais guère.
+alig
+  Alig ismerem.
+
 alcool
 alkohol
 
@@ -616,10 +621,13 @@ bâtiment
 épület
   -et, -e, -ek
 
+intéressé
+érdeklődő
+
 intéresser
-  intéressé
+  L'exposition les intéresse.
 érdekel
-  érdeklődő
+  A kiállitás önt érdekli.
 
 intéressant
 érdekes
@@ -643,6 +651,9 @@ fagylalt
 mur
 fal
   -at, -a, -ak
+
+bouchée (quantité de nourriture)
+falat
 
 village
 falu
@@ -803,6 +814,9 @@ fölösleges
 tête (mot ancien)
 fő
 
+principalement
+főleg
+
 capitale
 fővaros
 
@@ -910,6 +924,11 @@ gyufa
 laisser
 hagy
 
+avancer (sur un sujet donné)
+  J'avance bien dans mon travail.
+halad vmivel
+  Jól haladok a munkámmal.
+
 pêcheur
 halász
 
@@ -919,6 +938,10 @@ halászlé
 faux
 hamis
   -at, -ak, -abb
+
+utiliser
+használ
+  használni
 
 énorme, immense
 hatalmas
@@ -959,6 +982,12 @@ semaine
 hét
   hetet, hete, hetek
   
+jour de semaine
+hétköznap
+
+quotidien (n)
+hétköznapi
+
 fin de semaine
 hétvége  
 
@@ -989,12 +1018,12 @@ hív
 comment, que
 hogy
 
+"Comment ça te plaît ?" (question ouverte)
+"Hogy tetszik?"
+
 demain
 holnap
  -ot, -ok
-
-région plate à l'est du Tisza
-Hortobágy
 
 long
 hosszú
@@ -1012,6 +1041,12 @@ hónap
 dame
 hőlgy
  -et, -e, -ek
+
+vague (n)
+hulám
+
+montagnes russes (attraction foraine)
+hulámvasút
 
 humour
   sens de l'humour
@@ -1125,6 +1160,13 @@ prochain, futur, à venir
 jövő
   -t, -je
 
+arriver
+  Ça me vient à l'esprit.
+  À ce propos…
+jut
+  Eszembe jut.
+  Erről jut eszembe…
+
 manteau
 kabát
 
@@ -1193,6 +1235,7 @@ kerékpar
 
 chercher
 keres
+  keresni
 
 jardin
 kert
@@ -1241,6 +1284,7 @@ kérdez vmit
 
 fabriquer, produire
 készít
+  készíteni
 
 tard
 késő
@@ -1299,7 +1343,10 @@ regarder dehors
 kinez
   Kinézünk az utcára.
 
-lire complètement (ex : un livre)  
+ouvrir
+kinyitni
+
+lire complètement (ex : un livre)
 kiolvas
 
 faire une excursion
@@ -1394,6 +1441,9 @@ közé
 
 lycée
 középiskola
+
+économiste
+közgazdász
 
 circulation
   bien desservi
@@ -1571,6 +1621,11 @@ magáműgy
 après, ensuite
 majd
 
+presque
+  "J'ai failli m'endormir."
+majdnem
+  Majdnem elaludtam.
+
 cochon (appellation affectueuse)
   J'ai de la chance.
 malac
@@ -1604,6 +1659,12 @@ autre, l'autre
 másik
   -at
 
+ours
+medve
+
+convenir
+megfelel
+
 s'arrêter
 megáll
   -t, -jon, -na
@@ -1636,6 +1697,9 @@ inviter (invitation formelle)
   J'invite mes amis à mon anniversaire.
 meghív
   Meghívtom a barátoimat a születésnapomra.
+
+visiter
+meglátogatni
 
 surpris (2)
 meglepett
@@ -1699,6 +1763,9 @@ mindenki
 
 toujours
 mindig
+
+tout de suite
+mindjárt
 
 ministre
 miniszter
@@ -1808,6 +1875,12 @@ dame, tante
 néni
   -t, -je, -k
 
+peuple
+nép
+
+populaire
+népszérű
+
 nom
 név
   nevet, neve, nevek
@@ -1872,10 +1945,16 @@ olyan
 optimiste
 optimista
 
+grande roue (attraction foraine)
+oriáskerék
+
 russe
   en russe
 orosz
   oroszul
+
+lion
+oroszlána
 
 jeune frère
   (toujours avec un possessif)
@@ -2252,6 +2331,9 @@ armoire
 szekrény
   -t, -e, -ek
 
+personne (individu)
+személy
+
 paire de lunettes
 szemüveg
   -et, -e, -ek
@@ -2455,6 +2537,9 @@ tiszta
 secrétaire
 titkárnő
 
+lac
+tó
+
 double menton
 toka
 
@@ -2557,22 +2642,6 @@ goûter, casser la croûte
 uzsonnázik
   -názott, -názzon, -názna
 
-boisson non alcoolisée
-üditő
-
-saluer 
-  (défectif) 
-üdvözni
-
-adroit
-ügyes
-
-maladroit
-ügyetlen
-
-s'asseoir
-ül
-
 de cette façon-là
   il sent que …
 úgy
@@ -2589,6 +2658,26 @@ passeport
 útlevél
   -levelet, -levele, -levelek
 
+nager
+úszni
+  úsznik
+
+boisson non alcoolisée
+üditő
+
+saluer 
+  (défectif) 
+üdvözni
+
+adroit
+ügyes
+
+maladroit
+ügyetlen
+
+s'asseoir
+ül
+
 fête
 ünnep
 
@@ -2596,9 +2685,11 @@ envoyer un message
 üzen
   üzeni
 
-nager
-úszni
-  úsznik
+affaire, magasin
+üzlet
+
+homme d'affaires
+üzletember
 
 sauvage
 vad
@@ -2611,6 +2702,15 @@ vaj
 
 quelque part
 valahol
+
+en réalité
+valójobam
+
+réalité
+valóság
+
+chemin de fer
+vasút
 
 couper
 vág
@@ -2659,6 +2759,9 @@ vendég
 acheter
 vesz
   venni
+
+conduire
+vezetni
 
 fin
 vég
