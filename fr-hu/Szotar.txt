@@ -556,6 +556,9 @@ erős
 soupe à base de bouillon de viande hâchée
 erősleves
 
+"À ce propos…"
+Erről jut eszembe…
+
 événement, occasion
   dans tous les cas
 eset
@@ -1846,6 +1849,11 @@ művészet
 pantalon
 nadrág
 
+"De rien"
+  Merci pour l'eau - De rien.
+Nagyon szívesen
+  Köszonöm a vizet - Nagyon szívesen.
+
 tante
 nagynéni
 
@@ -1880,6 +1888,9 @@ nehány
 difficile, lourd
 nehéz
   nehezet, nehezek, nehezebb
+
+nation
+nemzet
 
 rire (v)
 nevet
@@ -2517,6 +2528,9 @@ tejföl
 considérer quelqu'un comme
 tekint vkit vminek
   tekinteni
+
+téléphoner à quelqu'un
+telefonálni vkinek
 
 nature
   naturellement
