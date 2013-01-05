@@ -811,6 +811,9 @@ fölösleges
 tête (mot ancien)
 fő
 
+école supérieure
+főiskola
+
 principalement
 főleg
 
@@ -926,6 +929,9 @@ halász
 
 soupe du pêcheur
 halászlé
+
+entendre
+hall
 
 faux
 hamis
@@ -1171,6 +1177,9 @@ karácsony
 mince
 karcsú
 
+cathédrale (2)
+katedrális
+
 caviar
 kaviár
   -t, -ja, -ok
@@ -1221,6 +1230,12 @@ kellemetlen
 
 rond
 kerek
+
+croix
+kerest
+
+chrétien
+kerestény
 
 vélo
 kerékpar
@@ -1340,6 +1355,9 @@ kinyitni
 
 lire complètement (ex : un livre)
 kiolvas
+
+palais royal
+király palata
 
 faire une excursion
 kirándul
@@ -1693,6 +1711,9 @@ inviter (invitation formelle)
 meghív
   Meghívtom a barátoimat a születésnapomra.
 
+goûter (v)
+megkóstol
+
 visiter
 meglátogatni
 
@@ -1749,6 +1770,9 @@ miért ?
 
 comment ? comme !
 milyen
+
+minaret
+minaret
 
 tout
 minden
@@ -2282,6 +2306,9 @@ sötet
 sportif
 sportoló
 
+etc.
+stb. (és a többi)
+
 cuit, grillé
 sült
 
@@ -2348,6 +2375,9 @@ szédül
 chaise
 szék
   -et, -e, -ek
+
+cathédrale (1)
+székesegyház
 
 íle
 sziget
@@ -2501,6 +2531,9 @@ tessék
 faire, mettre, poser, faire (agir)
 tesz vmit
   tett, tegyen, tenne ; tenni
+
+toit
+tető
 
 plaire à quelqu'un
 tetszik vkinek
