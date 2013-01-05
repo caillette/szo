@@ -45,6 +45,9 @@ alig
 alcool
 alkohol
 
+place debout
+allóhelye
+
 sous (non-relatif)
 alól
 
@@ -123,7 +126,7 @@ traverser (avec arrêt une fois de l'autre côté)
 átall
   Átall a másik oldara.
 
-transmettre
+transmettre, céder
 átad
   átadni
 
@@ -239,6 +242,10 @@ bevisz
 louer (emprunter contre paiement)
 bérel
 
+carte, abonnement
+bérlet
+
+
 timbre-poste
 bélyeg
 
@@ -292,6 +299,9 @@ bőrönd
 
 pomme de terre
 burgonya
+
+amende
+büntetés
 
 crayon
 ceruza
@@ -425,8 +435,23 @@ egész
 "À ta santé !"
 Egészségedre!
 
+pas du tout
+  Je ne bois pas du tout de vin blanc.
+egyáltalán … nem
+  Egyáltalán nem szeretek feher bort.
+
+directement, tout droit
+  La femme a regardé Paul droit dans les yeux.
+egyenesen
+  A nő egyenesen Paul szemébe nézett.
+
 L'un (quelconque), l'un (des deux)
 egyik
+
+l'un l'autre, réciproquement
+  Ils s'aiment.
+egymás
+  Szeretik egymást.
 
 "Zut !" (avec réprimande)
 Ejnye!
@@ -478,11 +503,23 @@ venir
 eljön
   -jött, -jöjjön, -jönne
 
+arriver quelque part
+eljut vhol
+
 envoyer (avec acomplissement)
 elküld
 
 contre (adversatif, postp)
 ellen
+
+contrôleur
+ellenőr
+
+contrôler
+ellenőriz
+
+contrôle, vérification
+ellenőrzés
 
 antonyme (1)
 ellentét
@@ -505,11 +542,21 @@ elnézés
 lire, action achevée
 elolvas
 
+vers devant (préverbe)
+elő
+
 spectacle
 előadas
 
 entrée (lors d'un repas)
 előetel
+
+préparer (apprêter pour utilisation ultérieure)
+előkészít
+  előkészítani
+
+faire un pas vers devant
+előlép
 
 en avance
 előre
@@ -520,6 +567,9 @@ előszoba
 
 avant, devant
 előtt
+
+doubler (en voiture)
+előz
 
 ranger
 elrak
@@ -659,6 +709,11 @@ blanc
 fehér
   -et, -ek, -ebb
 
+envoyer par la poste
+  Il envoie la lettre.
+felad
+  Felad a levelet.
+
 se lever
 feláll
 
@@ -739,9 +794,15 @@ demi
 fél
   másfél
 
+lumière
+fény
+
 photographie
 fénykép
   -et, -e, -ek
+
+photographier
+fényképez
 
 masculin
 férfias
@@ -816,6 +877,9 @@ fő
 
 école supérieure
 főiskola
+
+métro (petit modèle, spécifique à Budapest)
+földalatti
 
 principalement
 főleg
@@ -1088,6 +1152,9 @@ igazgató
 oui (poli)
 igenis
 
+"Et voilà" ou "C'est comme ça !" (pour signifier une action achevée)
+Így ni!
+
 partir, se mettre en route
 indul
   -t, -jon, na
@@ -1164,9 +1231,12 @@ jövő
 arriver
   Ça me vient à l'esprit.
   À ce propos…
+  "Comment vais-je à … ?"
 jut
   Eszembe jut.
   Erről jut eszembe…
+  Hogy jutok el vmire?
+
 
 manteau
 kabát
@@ -1267,6 +1337,11 @@ commencer
 kezdödik
   kezdödött, kezdödjön, kezdödne
 
+traiter
+  Il traite la maladie.
+kezel
+  Kezel a beteget.
+
 bleu
 kék
   -et, -ek, -ebb
@@ -1277,7 +1352,7 @@ kényelmes
 inconfortable
 kényemetlen
 
-tableau
+tableau, image
 kép
   -et, -e, -ek
 
@@ -1308,6 +1383,9 @@ későn
 prêt
 kész
 
+appareil
+készülék
+
 éditeur (de livres)
 kiadó
 
@@ -1319,6 +1397,11 @@ kiáll
 crier
 kiált
   -ott, -son, -ana
+
+petit (attribut ou prédicat)
+  Mon frère est de petite taille.
+kicsi
+  A testvérem kicsi.
 
 manger complètement
   J'ai mangé toute (tout ce qu'il y avait dans) l'assiette.
@@ -1368,10 +1451,8 @@ kirándul
 petit (épithète)
 kis
 
-petit (attribut ou prédicat)
-  Mon frère est de petite taille.
-kicsi
-  A testvérem kicsi.
+femme enceinte
+kismáma
 
 déblayer
 kitakarít
@@ -1619,6 +1700,13 @@ lő
 paresseux
 lusta
 
+trou
+lyuk
+
+percer
+lyukaszt
+  lyukasztani
+
 aujourd'hui
   d'aujourd'hui
 ma
@@ -1681,6 +1769,9 @@ medve
 convenir
 megfelel
 
+se baigner
+megfürdik
+
 s'arrêter
 megáll
   -t, -jon, -na
@@ -1690,6 +1781,9 @@ megálló
 
 en qui on peut avoir confiance
 megbízható
+
+punir, faire payer une amende
+megbüntet
 
 embrasser
 megcsókol
@@ -1755,6 +1849,9 @@ mese
 
 loin de
 messze vmitől
+
+station de métro
+metróállomás
 
 pas encore
   Je m'amuse bien, je ne veux pas encore rentrer.
@@ -1998,6 +2095,9 @@ se réjouir
 örül
   -t, -jön, -ne
 
+se réjouir de quelque chose
+örül vkinek
+
 tout équipé (pour habitation)
 összkomfort
 
@@ -2023,6 +2123,9 @@ rá
 
 habiller
 ráad
+
+allumer une cigarette
+rágyút
 
 jeter un coup d'œil
 ránéz
@@ -2106,6 +2209,9 @@ pontos
 
 poisson gras d'eau douce, pas très bon
 ponty
+
+boîte aux lettres
+postaláda
 
 programme
 program
@@ -2347,6 +2453,12 @@ szalámi
 lard
 szalonna
 
+compter
+számol
+
+calculatrice
+számológép
+
 sec (adj)
 száraz
 
@@ -2370,6 +2482,12 @@ személy
 paire de lunettes
 szemüveg
   -et, -e, -ek
+
+réparer
+szerel
+
+mécanicien, réparateur
+szerelő
 
 aimer
 szeret
@@ -2522,7 +2640,13 @@ tárgyal
 immeuble (habitation collective)
 társasház
 
-crème fraîche 
+fardeau
+teher
+
+camion
+teheraúto
+
+crème fraîche
 tejföl
 
 considérer quelqu'un comme
@@ -2615,6 +2739,9 @@ tölt
 farci
 töltött  
 
+bureau de tabac
+trafik
+
 qualité, caractéristique
 tuladonság
 
@@ -2647,6 +2774,9 @@ udvariatlan
 
 n'est-ce pas ?
 ugye ?
+
+vendeur de journaux
+újságos
 
 ennuyeux
 unalmas
@@ -2722,6 +2852,9 @@ maladroit
 
 s'asseoir
 ül
+
+place assise
+ülőhelye
 
 fête
 ünnep
@@ -2810,6 +2943,9 @@ vezetni
 
 fin
 vég
+
+terminus
+végállomas
 
 finalement (référence : maintenant)
 végén

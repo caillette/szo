@@ -1,4 +1,5 @@
 title: Cours particulier K42
+retrofitted: yes
 
 vers devant (préverbe)
 elő 
@@ -100,7 +101,7 @@ transmettre, céder
 átad
 
 arriver quelque part
-ejut vhol
+eljut vhol
 
 doubler (en voiture)
 előz
