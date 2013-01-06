@@ -1,4 +1,5 @@
 title: Cours particulier K44
+retrofitted: yes
 
 au milieu de
   Kati est assise au milieu de la pièce.

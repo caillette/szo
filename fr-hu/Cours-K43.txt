@@ -1,4 +1,5 @@
 title: Cours particulier K43
+retrofitted: yes
 
 d'abord
 először

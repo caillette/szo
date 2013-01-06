@@ -1,4 +1,5 @@
 title: Cours particulier K46
+retrofitted: true
 
 transports en commun
   les transports parisiens
@@ -7,6 +8,7 @@ tömegközlekedés
   a párizsi tömegközlekedés
   
 coûter
+  Les tickets coûte 1,80 €.
 kerül vmibe
   A jegyek 1 euró 80-ba kerülnek.
   
