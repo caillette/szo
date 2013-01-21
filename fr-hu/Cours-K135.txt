@@ -1,0 +1,62 @@
+title: Cours particulier K135
+
+compagnie du gaz
+gazművek
+
+odeur
+  odeur de gaz
+szag
+  gazszag
+
+fermer (avec le robinet)
+  Arrêtez le gaz !
+elszár
+  Szár el a gazt!
+
+fermer (une porte)
+beszár
+
+toucher qqchose
+  Ne touchez pas à la cuisinière !
+hozzányúl vmihez
+  Ne nyúljanak a tűzhelyhez!
+
+éteindre (un appareil électrique) (1)
+lekapcsol
+
+éteindre (un appareil électrique) (2)
+kikapcsol
+
+se réchauffer
+melegszik
+
+dégager de la fumée
+füstöl
+
+fumée
+füst
+
+bruit continu, bourdonnement
+  le grondement du tonnerre
+  le bruit du vent
+  le ronronnement du poële
+zúg
+  a tengerzúg
+  a szél zúg
+  zúg a gazkalyha
+
+électricité
+villany
+
+courant électrique
+áram
+
+brûler
+ég
+
+nettoyer une surface en frottant
+  Nettoyez votre plaque électrique.
+lemos
+  Mossa le a villánytüzhelyét.
+
+
