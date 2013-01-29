@@ -19,13 +19,13 @@ ebrészt vmit/vkit
 appartenir à qqchose/qun, faire partie de qqchose
   Il m'appartient.
   Ils font partie des meilleurs du monde.
-  A csapatba tartoznak.
+  Ils font partie de l'équipe.
 tartozik vhova/vkihez
   Ő hozzam tartozik.
-  A legjobbak közé tartozik.
+  A legjobbak közé tartoznak.
   A csapatba tartoznak.
 
-avoir de l'expérience dans qqchose
+avoir de l'expérience dans qqchose (activité)
 tapasztal vmit
 
 habitude
@@ -33,7 +33,7 @@ rutin
 
 susceptible de gagner qqchose
   Les deux autres compétiteurs sont susceptibles de gagner la médaille d'or.
-esélyes
+esélyes vmire
   A másik két versenyző az aranyémre is esélyes.
 
 gagner (une compétition, un prix)
@@ -51,7 +51,7 @@ ellenfel
 coéquipier
 csapattárs
 
-vaincre qqun
+vaincre qqun (COD obligatoire)
   Ils ne peuvent pas me vaincre.
 legyőz vkit
   Nem fognak legyőzni (engem).
