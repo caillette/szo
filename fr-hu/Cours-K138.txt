@@ -34,7 +34,7 @@ rutin
 susceptible de gagner qqchose
   Les deux autres compétiteurs sont susceptibles de gagner la médaille d'or.
 esélyes vmire
-  A másik két versenyző az aranyémre is esélyes.
+  A másik két versenyző az aranyémre esélyes.
 
 gagner (une compétition, un prix)
 nyer
