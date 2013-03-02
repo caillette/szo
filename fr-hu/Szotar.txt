@@ -116,6 +116,9 @@ général (adj)
 soigner
 ápol
 
+petite monnaie
+aprópénz
+
 minéral (adj et nom)
 ásvány
 
@@ -156,7 +159,7 @@ mettre un pied au-dessus de qqchose
 traverser
 átmegy
 
-regarder au travers
+regarder au travers, parcourir (lire rapidement)
   Nous regardons à travers la fenêtre.
 átnéz
   Átnézünk az ablakon.    
@@ -194,6 +197,9 @@ barátsagtalan
 
 pourboire
 barravaló
+
+marionnette (tenue par le bas)
+bábszínház
 
 regretter
 bán vmit
@@ -269,6 +275,9 @@ bika
 
 mouton
 birka
+
+"en effet", "sûrement", "oui c'est vrai"
+bizony
 
 incertain, indécis (1)
 bizonytalan
@@ -364,6 +373,9 @@ csendben
 calme, silencieux
 csendes
 
+sonner
+csenget
+
 betterave rouge
 cékla
 
@@ -435,6 +447,9 @@ divat
 à la mode
 divatos
 
+décoration
+díszlet
+
 fumer (du tabac)
 dohányzik
   dohányozni
@@ -456,6 +471,11 @@ ebéd
 
 vinaigre
 ecet
+
+ensemble (association)
+  mon argent avec (en même temps que) mon passeport
+vmivel együtt
+  a pénzemmel együtt az útlevelem is
 
 entièrement, assez, entier
   assez bien
@@ -482,7 +502,9 @@ egyenesen
 egyetemi hallgátó
 
 L'un (quelconque), l'un (des deux)
+  L'une des deux femmes mangeait un sandwich, l'autre buvait de l'eau.
 egyik
+  Az egyik nő szendvicset evett, a másik vizet ivott.
 
 l'un l'autre, réciproquement
   Ils s'aiment.
@@ -511,6 +533,11 @@ elbúcsúzik
 élégant
 elegáns
   -ak, -ak, -abb
+
+plutôt
+  J'aime plutôt l'Opéra.
+eléggé
+  Eléggé szeretem az operát.
 
 vivant, actif
 eleven
@@ -571,6 +598,9 @@ ellentét
 antipathique
 ellenszenves
 
+voler, dérober
+ellop
+
 partir
 elmegy
 
@@ -618,9 +648,15 @@ előtt
 doubler (en voiture)
 előz
 
+perdre (un objet, un enjeu…)
+elveszít
+
 ranger
 elrak
   elrakni
+
+rater
+elrontani
 
 disparaître
 eltűnik
@@ -632,12 +668,22 @@ először
 premièrement, principalement
 elsősorban
 
+s'enfuir
+elszalad
+
 divorcé
 elvált
 
 étage
 emelet
   -et, -e, -ek
+
+souvenir (n)
+emlék
+
+se souvenir de qqchose
+emlékszik vmire
+  emlékezni
 
 aliment
   voir :
@@ -660,6 +706,9 @@ Erről jut eszembe…
   dans tous les cas
 eset
   mindenesetre
+
+ramer, canoter
+evez
 
 soir
 este
@@ -717,7 +766,19 @@ arriver (action en cours)
 
 être expert en quelque chose
 ért vmihez
-  érteni 
+  érteni
+
+valable
+  Mon billet n'est plus valable.
+érvényes
+  Berletem nem érvényes.
+
+être d'accord avec quelqu'un à propos de quelque chose
+  Je suis d'accord avec toi là-dessus.
+  C'est avec toi que je suis d'accord.
+egyet érteni vkivel vmiben
+  Egyet értek veled ebben.
+  Én veled értek egyet.
 
 salle à manger
 étkező
@@ -787,6 +848,9 @@ felhoz
 
 écrire dans (2)
 felírni
+
+saisir, attrapper
+felkap
 
 se lever
 felkel
@@ -867,6 +931,9 @@ férjes
 
 jeune
 fiatal
+
+faire attention à
+figyel vmire
 
 délicieux, fin
 finom
@@ -958,6 +1025,9 @@ franciasaláta
 frais, récent, en forme
 friss
 
+coiffure
+frizura
+
 footballeur
 futballista
 
@@ -1005,6 +1075,12 @@ gép
 taper à la machine
 gépel
   gépelni
+
+bille
+golyó
+
+stylo à bille
+golyóstoll
 
 bouton
 gomb
@@ -1072,7 +1148,11 @@ silencieux
 halk
 
 entendre
+  -
+  Qu'as-tu vu à l'opéra?
 hall
+  hallott; hallani
+  Mit hallott az Operában?
 
 faux
 hamis
@@ -1138,6 +1218,9 @@ hétköznapi
 
 fin de semaine
 hétvége  
+
+en vain
+hiába
 
 tout d'un coup
 hirtelen
@@ -1213,6 +1296,9 @@ húsételek
 vers ici
 ide
 
+cette année
+az idén
+
 temps
 idő
   -t, időm időt ideje időnk időtök ideük, -k
@@ -1235,6 +1321,9 @@ igazgató
 oui (poli)
 igenis
 
+promettre quelque chose à quelqu'un
+igér vmit vkinek
+
 "Et voilà" ou "C'est comme ça !" (pour signifier une action achevée)
 Így ni!
 
@@ -1242,6 +1331,9 @@ il convient de …
   Il convient d'être élégant pour aller à l'opéra.
 illik vmit csinálni
   Az opéraba illik elegánsan menni.
+
+adorer
+imád
 
 partir, se mettre en route
 indul
@@ -1506,6 +1598,11 @@ készülék
 éditeur (de livres)
 kiadó
 
+s'éteindre
+  La lumière s'éteint.
+kialszik
+  Kialszik a fény.
+
 sortir (et rester à l'arrêt ensuite)
   Il sort dans la rue. 
 kiáll
@@ -1519,6 +1616,11 @@ petit (attribut ou prédicat)
   Mon frère est de petite taille.
 kicsi
   A testvérem kicsi.
+
+devenir clair, se révéler
+  Le secret se dévoile.
+kiderül
+  kiderül a titok
 
 manger complètement
   J'ai mangé toute (tout ce qu'il y avait dans) l'assiette.
@@ -1601,13 +1703,24 @@ kollégium
 sérieux
 komoly
 
+musique classique
+komoly zene
+
 déménager
 költözik
   költözött, költözzön, költözne
 
+frais, dépense
+  frais de transport
+költség
+  szállitási költség
+
 facile, léger
 könnyű
   -t, -ek, könnyebb
+
+musique sauf classique
+könnyűzene
 
 cercle
   boulevard circulaire
@@ -1620,8 +1733,13 @@ körat
 environnement, alentours
 környék
 
-environs
+aux environs de
+  autour de 4 heures
+  abbréviation :
+  (pas une postposition)
 körülbelül
+  körülbelül négy órakor
+  kb.
 
 remercier pour
   Kati remercie [hors dialogue] pour le déjeûner : "Merci [dialogue] pour le déjeuner !"
@@ -1643,11 +1761,20 @@ kövér
 près de
 közel vmihez
 
-indifférent
-közonyos
+code de la route
+  acronyme
+közlehedése szabály
+  KRETSZ
 
 entre temps, pendant ce temps-là
 közben
+
+environs
+  près de toi
+  aux environs de l'hôtel
+közel
+  közeledben
+  a szálloda közelében
 
 approcher
 közeledik
@@ -1672,7 +1799,13 @@ circulation
 közlekedes
   jó közlekedes
 
-centre 
+public (n)
+közönség
+
+indifférent
+közönyös
+
+centre
   centre-ville
 központ
   város központja
@@ -1723,11 +1856,19 @@ lassú
 chaîne
 lánc
 
+pair de jumelles
+látcsö
+
 sembler (1)
   il semble
 látsani
   látsik
   (faux verbe en -ik)
+
+se voir sur quelqu'un
+  Ça se voit sur toi que tu es malade
+látszik vkin
+  Látszik rajtad, hogy beteg vagy.
 
 ne plus fonctionner
 leáll
@@ -1847,6 +1988,9 @@ affaire privée
 magáműgy
   -et, -e, -ek
 
+magnétoscope
+magnó
+
 après, ensuite
 majd
 
@@ -1871,6 +2015,9 @@ májgaluska
 
 déjà
 már
+
+marque (de fabrique)
+márka
 
 ne … plus
   Depuis quelques années il n'aime plus mon mari.
@@ -1936,6 +2083,9 @@ inviter (invitation formelle)
 meghív
   Meghívtom a barátoimat a születésnapomra.
 
+en plus
+méghozza
+
 goûter (v)
 megkóstol
 
@@ -1953,6 +2103,11 @@ megnéz vmit
 
 résoudre
 megoldani
+
+changer (devenir autre)
+  Tu as changé.
+megváltozik
+  Megváltoztál.
 
 acheter (action terminer)
 megvesz
@@ -2038,6 +2193,9 @@ mosakodik
 faire la vaisselle
 mosogat
 
+sourire (v)
+mosolyog
+
 maintenant, à présent
 most
 
@@ -2094,6 +2252,9 @@ Nagyon szívesen
 tante
 nagynéni
 
+exclamation pour souligner ce que dit l'autre est évident
+Na hallod!
+
 orange (fruit)
 narancs
 
@@ -2102,6 +2263,9 @@ naív
 
 jour, soleil
 nap
+
+bronzer
+napoz
 
 oncle
 nagybáty
@@ -2195,6 +2359,11 @@ odaír
 aller vers
 odamegy vmihez
 
+désirer (dans la formule de politesse uniquement)
+  Qu'est-ce que vous désirez ?
+ohajt
+  Mit ohajt?
+
 de là-bas
 onnan
 
@@ -2208,12 +2377,18 @@ olcsó
 côté, page
 oldal
 
+paire de ciseaux
+olló
+
 lire
 olvas
   -ott, -son, -na
 
 comment, comme, tellement
 olyan
+
+classe, catégorie, rayon
+osztály
 
 optimiste
 optimista
@@ -2246,6 +2421,9 @@ se réjouir de quelque chose
 
 tout équipé (pour habitation)
 összkomfort
+
+créatif
+ötletes
 
 veuf, veuve
 özvegy
@@ -2352,7 +2530,7 @@ tele
 instant
 pillanat
 
-très mauvais, très moche
+affreux, très mauvais, très moche
 pocsék
 
 exact
@@ -2378,6 +2556,9 @@ magas
 arriver (action achevée)
 megérkezik
   -kezett, -kezzen, -kezne
+
+porte-monnaie, portefeuille
+pénztárca
 
 faire pipi
 pisil
@@ -2455,9 +2636,15 @@ désordre
 rendetlenség
   -et, -e
 
+mise en scène
+rendezés
+
 police, commissariat
 rendőrség
   -et, -e
+
+numéro d'immatriculation
+rendszám
 
 systématiquement, régulièrement
 rendszeresen
@@ -2514,6 +2701,11 @@ saját
   Ez a saját könyvem.
   Ez a könyv a sajátam.
   A saját könyvem
+
+se désoler
+  Je suis désolé que ça ne (te) plaise pas.
+sajnal
+  Sajnalom hogy nem tetszik.
 
 salade
 saláta
@@ -2606,6 +2798,15 @@ gâteau
 sütemény
   -t
 
+couper (vest.)
+szab
+
+règle, prescription
+szabály
+
+coupe (vest.)
+szabás
+
 barbe
 szaháll
 
@@ -2631,6 +2832,9 @@ számológép
 sec (adj)
 száraz
 
+transport (n)
+szállitas
+
 hôtel
 szálloda
   szállodát, szállodája, szállodák
@@ -2650,6 +2854,9 @@ szekrény
 
 personne (individu)
 személy
+
+carte d'identité
+szemely igazolvány
 
 paire de lunettes
 szemüveg
@@ -2694,6 +2901,9 @@ szilva
 
 comédien, acteur
 színész
+
+service, faveur
+szívesség
 
 propre, sain
 szobatiszta
@@ -2792,12 +3002,23 @@ rencontrer
 találkozik vkivel
   -kozott, -kozzon, -kozna
 
+service des objets trouvés
+talált tárgyak
+
 peut-être
 talán
 
 apprendre
 tanul
   -t, -jon, -na (tanulni)
+
+étudier
+tanulmányoz
+
+applaudir
+  Comme le public applaudit !
+tapsol
+  Hogy tapsol a közönség!
 
 station de taxi
 taxiállomás
@@ -2811,6 +3032,9 @@ tárgyal
 
 immeuble (habitation collective)
 társasház
+
+lointain
+távoli
 
 fardeau
 teher
@@ -2827,6 +3051,14 @@ tekint vkit vminek
 
 téléphoner à quelqu'un
 telefonálni vkinek
+
+complètement
+teljesen
+
+plein (adj)
+  C'est plein, il n'y a plus de place.
+telt
+  Telt haz van.
 
 nature
   naturellement
@@ -2849,6 +3081,9 @@ plaire à quelqu'un
 tetszik vkinek
   tetszett, tetsszen, tetszene
 
+"il y a un an"/"depuis un an"
+egy teve
+
 vraiment
 tényleg
 
@@ -2858,6 +3093,11 @@ tér
 
 pâte (culinaire)
 tésztá
+
+avoir tort
+  Vous avez tort.
+téved
+  Ön téved.
 
 télévision
   à la télévision
@@ -2878,6 +3118,9 @@ tiszta
 secrétaire
 titkárnő
 
+secret (n)
+titok
+
 lac
 tó
 
@@ -2896,6 +3139,11 @@ tovább
 continuer à marcher
 továbbmegy
 
+plus jamais
+  Ils ne se sont plus jamais rencontrés.
+többet
+  Többet nem találkoztam.
+
 le reste
   les autres (uniquement pour des personnes)
 többi
@@ -2908,8 +3156,17 @@ tölt
   tölteni
   idő tolt vkivel
   
+stylà à plume
+töltőtoll
+
 farci
 töltött  
+
+foule
+tömeg
+
+cassé (adj)
+törött
 
 bureau de tabac
 trafik
@@ -2929,6 +3186,11 @@ túró
 glace, miroir
 tükör
   tükröt, tükre, tükrök
+
+patience
+  Je demande un peu de patience.
+türelem
+  Kis türelemet kérek.
 
 sembler (2)
   il semble
@@ -2988,6 +3250,12 @@ utazik vmire
 voyage
 utaz
 
+détester qqchose
+utál vmit
+
+pour la dernière fois
+utoljára
+
 dernier
 utolsó
 
@@ -3046,6 +3314,9 @@ place assise
 fête
 ünnep
 
+vide
+üres
+
 envoyer un message
 üzen
   üzeni
@@ -3067,6 +3338,17 @@ vaj
 
 quelque part
 valahol
+
+espèce de, sorte de
+  Il y avait là une espèce de panneau.
+valamilyen
+  Volt ott egy valamilyen táblá.
+
+vérité
+való
+
+vraiment
+valóban
 
 en réalité
 valójobam

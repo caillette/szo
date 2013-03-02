@@ -1,8 +1,9 @@
 title: Cours particulier K51
+retrofitted: yes
 
 
 se tromper 
-teved
+téved
   tevedett; tevedni
 
 dormir

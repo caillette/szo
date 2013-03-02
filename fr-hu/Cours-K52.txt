@@ -1,4 +1,5 @@
 title: Cours particulier K52
+retrofitted: yes
 
 perdre (un objet, un enjeu…)
 elveszít

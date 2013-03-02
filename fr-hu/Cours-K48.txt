@@ -1,4 +1,5 @@
 title: Cours particulier K48
+retrofitted: yes
 
 être d'accord avec quelqu'un à propos de quelque chose
   Je suis d'accord avec toi là-dessus.
