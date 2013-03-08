@@ -119,6 +119,9 @@ général (adj)
 soigner
 ápol
 
+infirmier
+ápoló
+
 petite monnaie
 aprópénz
 
@@ -188,6 +191,9 @@ gauche
 bal
   balra
 
+accident
+baleset
+
 banque
 bank
   -ot, -ja, -ot
@@ -254,6 +260,9 @@ beolvas vkinek
 malade
 beteg
   -et, -e, -ek
+
+maladie (1)
+betegség
 
 mettre, introduire
 betesz
@@ -479,10 +488,8 @@ ebéd
 vinaigre
 ecet
 
-ensemble (association)
-  mon argent avec (en même temps que) mon passeport
-vmivel együtt
-  a pénzemmel együtt az útlevelem is
+santé
+egészség
 
 entièrement, assez, entier
   assez bien
@@ -494,6 +501,11 @@ Egészségedre!
 
 bon pour la santé, en bonne santé
 egészéges
+
+ensemble (association)
+  mon argent avec (en même temps que) mon passeport
+vmivel együtt
+  a pénzemmel együtt az útlevelem is
 
 pas du tout
   Je ne bois pas du tout de vin blanc.
@@ -823,6 +835,9 @@ falu
 sculpté
 faragott
 
+antidouleur
+fájdalomcsillapító
+
 avoir froid
 fázik
 
@@ -1083,6 +1098,9 @@ taper à la machine
 gépel
   gépelni
 
+platre
+gipsz
+
 bille
 golyó
 
@@ -1135,6 +1153,15 @@ rapide
 gyors
   -at, -ak, -abb
 
+médicament
+gyógyszer
+
+pharmacie
+gyógyszertár
+
+se guérir (1)
+gyógyul
+
 allumette
   une boîte d'allumettes
 gyufa
@@ -1170,6 +1197,9 @@ hamis
 
 concert (musique classique seulement)
 hangverseny
+
+diarrhée
+hasmenés
 
 utiliser
 használ
@@ -1279,6 +1309,9 @@ hoz
 mois
 hónap
 
+fièvre (1)
+hőemelkedés
+
 dame
 hőlgy
  -et, -e, -ek
@@ -1353,6 +1386,9 @@ partir, se mettre en route
 indul
   -t, -jon, na
 
+grippe
+influenza
+
 chemise
 ing
   inget
@@ -1423,6 +1459,9 @@ jelent vmit
 
 glaçon
 jég
+
+"Bon rétablissement !"
+Jobbulást!
 
 droit (domaine juridique)
 jog
@@ -1726,6 +1765,12 @@ komoly
 musique classique
 komoly zene
 
+maladie (2)
+kór
+
+tousser
+köhög
+
 déménager
 költözik
   költözött, költözzön, költözne
@@ -1889,6 +1934,12 @@ se voir sur quelqu'un
   Ça se voit sur toi que tu es malade
 látszik vkin
   Látszik rajtad, hogy beteg vagy.
+
+fièvre (2)
+láz
+
+thermomètre
+lázmérő
 
 ne plus fonctionner
 leáll
@@ -2087,6 +2138,9 @@ embrasser
 megcsókol
   -t, -jon, -na
 
+rhume
+megfázás
+
 convenir (plaire)
   Est-ce que cette table vous convient ?
 megfelel
@@ -2097,6 +2151,9 @@ megfordul
 
 griotte
 meggy
+
+se guérir (2)
+meggyógyul
 
 invitation
 meghívás
@@ -2349,8 +2406,11 @@ néz vmire
 pâte à base de farine et d'œuf
 nohedli
 
+infirmière, sœur (1)
+nő
+
 grandir
-nőni
+nő
 
 marié (pour un homme)
   homme marié
@@ -2359,6 +2419,9 @@ nős
 
 célibataire (pour les hommes seulement)
 nőtlen
+
+infirmière, sœur (2)
+nővér
 
 retraité
 nyudíjas
@@ -2409,6 +2472,14 @@ olvas
 
 comment, comme, tellement
 olyan
+
+nez
+ Il a le nez qui coule.
+orr
+  Folyik az orra.
+
+médecin
+orvos
 
 classe, catégorie, rayon
 osztály
@@ -2652,6 +2723,9 @@ rendel
 consultation
 rendelnés
 
+centre médical
+rendelő
+
 ordonné
 rendes
 
@@ -2738,6 +2812,12 @@ jaune
 sárga
   sárgát, sárgák, sárgább
 
+blessure
+seb
+
+cicatrice
+sebhely
+
 null part
 sehol
 
@@ -2752,6 +2832,9 @@ senki
 
 cochon (pour la viande)
 sertés
+
+blessé
+sérült
 
 se promener
 sétál
@@ -3150,9 +3233,6 @@ titkárnő
 secret (n)
 titok
 
-lac
-tó
-
 double menton
 toka
 
@@ -3162,11 +3242,17 @@ toll
 intérprète
 tolmács
 
+gorge
+torok
+
 plus loin, continuer à
 tovább
 
 continuer à marcher
 továbbmegy
+
+lac
+tó
 
 plus jamais
   Ils ne se sont plus jamais rencontrés.
@@ -3220,6 +3306,9 @@ patience
   Je demande un peu de patience.
 türelem
   Kis türelemet kérek.
+
+éternuer
+tüsszög
 
 sembler (2)
   il semble
@@ -3528,9 +3617,12 @@ amener
 visz
   vinni
 
-examen
+examen scolaire
 vizsga
   vizsgát, vizsgája, vizsgak
+
+examen médical
+vizsgálat
 
 rouge, roux
   -
