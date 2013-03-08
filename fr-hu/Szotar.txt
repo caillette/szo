@@ -445,8 +445,11 @@ dessert
 desszert
 
 sud, midi
+  -
+  à midi
 dél
   -t, -jen, -ne
+  délben
 
 matin, matinée
 délelőtt
@@ -749,9 +752,14 @@ se réveiller
 ébred
   ébreszt
 
-nuit
-éjjel
+la nuit
+  dans la nuit
+éj
+  éjjel
   -t, -, -ek
+
+nuit
+éjszaka
 
 vivre
 él
@@ -1168,6 +1176,11 @@ gyufa
 laisser
 hagy
 
+aube
+  à l’aube
+hajnal
+  hajnalban
+
 avancer sur qqchose
   J'avance bien dans mon travail.
 halad vmivel
@@ -1582,6 +1595,9 @@ kerül vmibe
 amer
 keserű
 
+tard
+késő
+
 peu
 kevés
 
@@ -1767,6 +1783,9 @@ komoly
 
 musique classique
 komoly zene
+
+tôt
+korán
 
 maladie (2)
 kór
@@ -2347,8 +2366,19 @@ naív
 jour, soleil
 nap
 
+lever du soleil
+napfelkelte
+
+coucher du soleil
+naplemente
+
 bronzer
 napoz
+
+journée
+  dans la journée
+nappal
+  napközben
 
 oncle
 nagybáty
