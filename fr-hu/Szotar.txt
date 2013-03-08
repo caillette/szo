@@ -5,6 +5,9 @@ jusqu'à ce que, en attendant
 addig … amíg
   Addig játszom vele, amíg jó.
 
+cerveau
+agy
+
 cadeau
 ajándék
   ajándékok, ajándékot
@@ -259,6 +262,10 @@ betesz
 porter à l'intérieur
 bevisz
   -vit, -viggen, -vinne
+
+intestin
+bél
+  belek
 
 louer (emprunter contre paiement)
 bérel
@@ -1121,6 +1128,9 @@ gyerek
 lycée
 gymnazium
 
+estomac
+gyomor
+
 rapide
 gyors
   -at, -ak, -abb
@@ -1299,6 +1309,10 @@ ide
 cette année
 az idén
 
+nerf
+ideg
+  idegek
+
 temps
 idő
   -t, időm időt ideje időnk időtök ideük, -k
@@ -1365,6 +1379,12 @@ Isten
 boisson
 ital
   -t, -a, -ok
+
+muscle
+izom
+
+tendon
+izület
 
 plaire (nourriture seulement)
   Cette soupe me plaît.
@@ -2009,6 +2029,9 @@ vmi mellett marad
 
 bœuf
 marha
+
+foie
+máj
 
 pâtes fraîches avec du foie
 májgaluska
@@ -2875,6 +2898,9 @@ szeret
 rédacteur, comité de rédaction
 szerkesztő
 
+organe
+szerv
+
 avoir la tête qui tourne, être pris de vertige
   La tête me tourne.
 szédül
@@ -2901,6 +2927,9 @@ szilva
 
 comédien, acteur
 színész
+
+coeur
+szív
 
 service, faveur
 szívesség
@@ -3406,6 +3435,9 @@ vendég
   -et, -e, -ek
   vendégéségben van  
 
+vessie
+vese
+
 acheter
 vesz
   venni
@@ -3435,6 +3467,9 @@ hasard
   par hasard
 véletlen
   véletlenül
+
+sang
+vér
 
 blague, histoire drôle
 vicc
