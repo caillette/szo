@@ -70,7 +70,7 @@ nem tehet vmiről
 envahir
   L'eau a tout envahi.
 elönt
-  Mindent eltöntött a víz.
+  Mindent elöntött a víz.
 
 promenade, marche à pied
   Ça fait seulement 10 mn de marche.

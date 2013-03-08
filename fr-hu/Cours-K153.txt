@@ -7,7 +7,7 @@ inventer qqchose
 feltalál vmit
 
 invention
-találmàny
+találmány
 
 "Ça sert à quoi ?"
 Mire való?
@@ -33,7 +33,7 @@ megborotvalkozik
 pile électrique
 elem
 
-glace (phase solide)
+glace (phase ou aliment)
 fagylalt
 
 laver
@@ -45,7 +45,7 @@ mosogat
 lavabo
 mosdó
 
-évire
+évier
 mosogató
 
 machine à laver
