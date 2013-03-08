@@ -56,10 +56,8 @@ alól
 
 dormir
   -
-  dormir suffisamment
 alszik
   aludt, aludjon, aludna ; aludni
-  kialudni magát
 
 antonyme (2)
 antonim
@@ -1661,6 +1659,11 @@ s'éteindre
   La lumière s'éteint.
 kialszik
   Kialszik a fény.
+
+dormir suffisamment
+  Je n'ai pas dormi suffisamment.
+kialudni magát
+  Nem aludtam ki magamat.
 
 sortir (et rester à l'arrêt ensuite)
   Il sort dans la rue. 
