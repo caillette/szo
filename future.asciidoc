@@ -1,3 +1,25 @@
+
+== Use tags instead of files
+
+One card may have several tags. Use `@Ppp` as pair tag.
+
+A file may have a global tag `@@Ggg` that affects all contained cards.
+
+A tag may not contain spaces but non-breakable spaces as `_`.
+
+There is a special "tagless" tag to see orphans.
+
+Since we don't see files, there must be a message listing badly-referenced files.
+
+Tag may belong to groups. With `@Foo/Bar` and `@Foo/Baz` somewhere, infer a tag group:
+
+----
+[ ] Foo
+[ ]   Bar
+[ ]   Baz
+----
+
+
 == Content-aware URL
 
 Store current state within the URL instead of using cookies or HTML 5 storage API.
@@ -16,12 +38,14 @@ The http://www.boutell.com/newfaq/misc/urllength.html[practical limit] of URL le
 * Compression.
 * Dropping some state (like the "deck" described below).
 
-100 selected tags of an average length of 20 barely fit.
+100 selected tags of an average length of 20 barely fit. Hierarchical selection can reduce the number of selected tags.
 
-Keeping the deck makes sense only when refreshing the page. As a matter of fact, deck deals with user's short term memory. So we have some "session" scope that can go outside of the URL. The good choice isn't obvious here because we don't know how to deal with URL copy-paste.
+Keeping the deck makes sense only when refreshing the page (not even sure). As a matter of fact, deck deals with user's short term memory. So we have some "session" scope that can go outside of the URL. The good choice isn't obvious here because we don't know how to deal with URL copy-paste.
 
 
 == Link to Wiktionary
+
+Links to Wiktionary only appear in a card detail.
 
 Many words do appear on Wiktionary, http://hu.wiktionary.org/wiki/szilva[through] http://en.wiktionary.org/wiki/szilva[various] http://fr.wiktionary.org/wiki/szilva[languages]. It turns out that French is the most incomplete. The Hungarian is probably the best average choice.
 
@@ -29,33 +53,14 @@ A link validity check makes the link to Wiktionary appear if valid.
 
 This is an option, disabled by default for saving queries on a mobile device.
 
+Because of potential high number of cards, there is no check until the card detail appears. The check occurs in background using `XmlHttpRequest` but not in the Worker, which would make the update difficult.
 
-
-== Use tags instead of files
-
-So one pair may have several tags. Use `@Ppp` as pair tag.
-
-A file may have a global tag `@@Ggg`.
-
-A tag may not contain spaces but non-breakable spaces as `_`.
-
-There is a special "tagless" tag to see orphans.
-
-Since we don't see files, there must be a message listing badly-referenced files.
-
-Tag may belong to groups. With `@Foo/Bar` and `@Foo/Baz` somewhere, infer a tag group:
-
-----
-[ ] Foo
-[ ]   Bar
-[ ]   Baz
-----
-
+There is a map for every card telling if the check did occur, and its success. Even better: use browser's local storage to keep this on the long term.
 
 
 == Support mobile devices
 
-Only through HTML and JavaScript, no intend to develop a mobile app.
+There is no intent to develop a mobile app, mobile support occurs only through HTML and JavaScript.
 
 Loading the whole application from a website it acceptable, but what about the offline mode? Should we store something? Luckily the http://www.thecssninja.com/javascript/how-to-create-offline-webapps-on-the-iphone[offline mode] exists, thanks to http://appcachefacts.info[caching] .
 
@@ -72,13 +77,13 @@ ProVoc is a binary format, so it is not easy as Szótárgép. And it seems aband
 
 
 
-=== Define a "deck" for pairs to repeat
+== Define a "deck" for pairs to repeat
 
-The detail view enables some "deck" button that includes current pair into the list of items to repeat.
+The detail view enables a "deck" button that includes current pair into the list of items to repeat.
 
 When current item is already in the deck, the "deck" button becomes something like "undeck".
 
-The deck is a "special" tag at the top of the list.
+The deck is a "special" tag at the top of the list. Selecting it deselect all other tags.
 
 
 
@@ -98,12 +103,32 @@ Replace `_` by non-breakable space at rendering time.
 
 Insert URL (along with current content-aware URL) as a QR code.
 
-http://jeromeetienne.github.com/jquery-qrcode
+There are means to generate QR codes http://jeromeetienne.github.com/jquery-qrcode[offline with JavaScript].
 
 
 == Still no stats
 
 Stats are a bottomlesshole for development and make people stupid.
+
+
+== Summary of controls
+
+Top-level buttons:
+
+* All
+* None
+* Next
+* Add to deck
+* List view/Card view
+* Invert
+
+Settings:
+
+* Skin (day, night)
+* Wiktionary links (yes, no)
+* Button to clear Wiktionary link cache.
+* Language (French, English, Hungarian)
+
 
 
 
@@ -167,14 +192,8 @@ The fadeout:
 * Gives some time to the worker to perform its computation before starting the spinning wheel. When switching simple cards, the spinning wheel would appear in an unpleasant blink.
 
 
-=== Links to Wiktionary
 
-Links to Wiktionary only appear in a card detail. Because of potential high number of cards, there is no check until the card detail appears. The check occurs in background using `XmlHttpRequest` but not in the Worker, which would make the update difficult.
-
-There is a map for every card telling if the check did occur, and its success. Even better: use browser's local storage to keep this on the long term.
-
-
-== Terms
+== Glossary
 
 "Equivalence" sucks.
 
