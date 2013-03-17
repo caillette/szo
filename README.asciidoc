@@ -32,7 +32,7 @@ Only term pairs with valid characters will show. Any non-recognized character wi
 Here is a sample of vocabulary file containing a title and two term pairs. Don't forget there is an empty line at the end.
 
 ----
-  title: Sok szók!
+  title: Sok szó!
 
   plaire
     à quelqu'un
