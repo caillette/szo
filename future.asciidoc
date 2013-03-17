@@ -1,4 +1,4 @@
-=== Content-aware URL
+== Content-aware URL
 
 Store current state within the URL instead of using cookies or HTML 5 storage API.
 
@@ -21,7 +21,7 @@ The http://www.boutell.com/newfaq/misc/urllength.html[practical limit] of URL le
 Keeping the deck makes sense only when refreshing the page. As a matter of fact, deck deals with user's short term memory. So we have some "session" scope that can go outside of the URL. The good choice isn't obvious here because we don't know how to deal with URL copy-paste.
 
 
-=== Link to Wiktionary
+== Link to Wiktionary
 
 Many words do have a counterpart on Wiktionary, like this:
 http://en.wiktionary.org/wiki/szilva
@@ -30,7 +30,7 @@ Compute validity in background using XMLHTTPRequest would be great when online.
 
 
 
-=== Use tags instead of files
+== Use tags instead of files
 
 So one pair may have several tags. Use `@Ppp` as pair tag.
 
@@ -52,7 +52,7 @@ Tag may belong to groups. With `@Foo/Bar` and `@Foo/Baz` somewhere, infer a tag 
 
 
 
-=== Support mobile devices
+== Support mobile devices
 
 Only through HTML and JavaScript, no intend to develop a mobile app.
 
@@ -81,19 +81,32 @@ The deck is a "special" tag at the top of the list.
 
 
 
-=== Multilingual user interface
+== Multilingual user interface
 
-Would help application adoption.
+Would look serious while this doesn't seem to be such important.
 
 
 
-=== Typographic tricks
+== Typographic tricks
 
 Replace `_` by non-breakable space at rendering time.
 
 
 
-=== Rearchitecture code
+== Print enhancements
+
+Insert URL (along with current content-aware URL) as a QR code.
+
+http://jeromeetienne.github.com/jquery-qrcode
+
+
+== Still no stats
+
+Stats are a bottomlesshole for development and make people stupid.
+
+
+
+== Rearchitecture code
 
 Make the application one single object handling its own state, and delegating rendering to a specific "interface" (a set of callback) for easier testing.
 
@@ -102,9 +115,55 @@ Use a JavaScript worker for rendering tasks. The worker has a simple interface p
 Use the word "card" (instead of current "equivalence").
 
 
+=== Logic encapsulation
 
-=== Still no stats
+Main object containing the whole logic could be instantiated like this (simulating private scope):
+http://stackoverflow.com/a/1597560/1923328
 
-Stats are a bottomlesshole for development and make people stupid.
+About object instantiation, see also:
+http://pivotallabs.com/javascript-constructors-prototypes-and-the-new-keyword
+http://ejohn.org/blog/simple-class-instantiation/#postcomment
+
+
+=== Separate list of vocabulary files
+
+Such format would be more comfortable than HTML to edit, and it would dissociate technical features from vocabulary changes:
+
+----
+my/file1=File one
+my/other/file=File two
+----
+
+Unix line feeds preferred but regex should easily support usual suspects: `\r\n?|\n` .
+
+
+=== Use a real parser
+
+ANTLR is the boss. It would raise nice errors instead of silently failing like regex does.
+
+Guys http://stackoverflow.com/questions/2540429/antlr-javascript-target[say] that ANTLR-3.3 is getting it right.
+
+
+=== Error feedback for broken files
+
+Because of tags files no longer have obvious visual counterpart.
+
+Instead, a link "There are errors" unfolds the whole list with file name and details (like file not found or parsing errors).
+
+
+=== Parallel DOM computation
+
+The worker endorses all DOM computations for:
+
+* List of tags.
+* Current cards.
+
+Each click on a button triggers an asynchronous request with button name, then starts a fade out of the current cards. At the end of the fade out, the new DOM fragment may be already available. If it is not, there are chances that the computation will take a long and it's time to show a spinning wheel. Ideally there are smooth transitions for everything.
+
+The fadeout:
+
+* Gives immediate feedback on user's action so he's less tempted to click again.
+* Gives some time to the worker to perform its computation before starting the spinning wheel. When switching simple cards, the spinning wheel would appear in an unpleasant blink.
+
 
 
