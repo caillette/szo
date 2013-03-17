@@ -77,7 +77,7 @@ ProVoc is a binary format, so it is not easy as Szótárgép. And it seems aband
 
 
 
-== Define a "deck" for pairs to repeat
+== Deck: showing some cards more often
 
 The detail view enables a "deck" button that includes current pair into the list of items to repeat.
 
@@ -108,7 +108,7 @@ There are means to generate QR codes http://jeromeetienne.github.com/jquery-qrco
 
 == Still no stats
 
-Stats are a bottomlesshole for development and make people stupid.
+Stats are a bottomless hole for development and make people stupid.
 
 
 == Summary of controls
@@ -118,7 +118,7 @@ Top-level buttons:
 * All
 * None
 * Next
-* Add to deck
+* Add to Deck/Remove from Deck
 * List view/Card view
 * Invert
 
