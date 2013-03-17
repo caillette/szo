@@ -175,6 +175,7 @@ changer (de transport)
 átszáll
 
 changer de place (assise)
+  Il a changé de place pour l'autre chaise.
 átül
   Átülöt a másik székre.
 
@@ -274,7 +275,7 @@ intestin
 bél
   belek
 
-louer (emprunter contre paiement)
+louer (logement uniquement)
 bérel
 
 carte, abonnement
@@ -497,8 +498,12 @@ entièrement, assez, entier
 egész
   egész jól
 
-"À ta santé !"
-Egészségedre!
+À {possessif} santé !
+  À ta santé !
+  À votre santé !
+Egészsége{}re!
+  Egészségedre!
+  Egészségére!
 
 bon pour la santé, en bonne santé
 egészéges
@@ -1334,11 +1339,12 @@ montagnes russes (attraction foraine)
 hulámvasút
 
 humour
-  sens de l'humour
-  il n'a pas le sens de l'humour
 humor
-  humor érszég
-  nincs humor érszége
+
+sens de l'humour
+  Il n'a pas le sens de l'humour.
+humor érszég
+  Nincs humor érszége.
 
 jeune sœur
   (toujours avec un possessif)
@@ -1365,9 +1371,12 @@ de temps en temps
 időnként
 
 vrai
-  avoir raison
 igaz
-  ~[possessif] van
+
+avoir raison
+  Tu as raison.
+igaz{} van
+  Igazad van.
   
 vraiment
 igazán  
@@ -1523,7 +1532,7 @@ poële (pour le chauffage)
 kályha
   kályhát, kalyhája, kályhák
 
-café (établissement)
+café (établissement) (1)
 kávéház
   -at, -a, -ak
 
@@ -1544,11 +1553,11 @@ kedve van vmihez
   Mihez van kedved?
 
 préféré, favori
-  "Mon livre préféré."
-  "Ez a kedvencem."
-kedvenc vmije
-  A kedvencem könyv.
+  Mon livre préféré.
   C'est mon préféré.
+kedvenc vmije
+  A kedvenc könyvem.
+  Ez a kedvencem.
 
 cher
 kedves
@@ -1833,7 +1842,7 @@ remercier pour
 (meg)kösszönni vmit
   Megkösszöni Kati az ebédet : "Kösszönöm az ebédet !"
 
-étre le suivant
+être le suivant
 következik
 
 conséquence
@@ -2116,8 +2125,8 @@ marque (de fabrique)
 márka
 
 ne … plus
-  Depuis quelques années il n'aime plus mon mari.
-már nem
+  Depuis quelques années je n'aime plus mon mari.
+már nem …
   Néhány éve már nem szeretem a férjemet.
 
 plus que
@@ -2591,9 +2600,9 @@ crêpe (aliment)
 palacsinta
 
 donner des ordres
-  Qu'est-ce que vous désirez ?
+  Que désirez-vous ? (Je vous prie d'ordonner.)
 parancsol
-  Tessék, parancsolni
+  Tessék, parancsolni.
 
 rive
 part
@@ -2700,7 +2709,7 @@ postá
 ragoût
 pörkölt
 
-café (établissement)
+café (établissement) (2)
 presszó
 
 chandail
@@ -2740,15 +2749,7 @@ relatif (1)
 relatív
 
 ordre (l')
-  désordre
-  ranger
-  J'ai rangé mon appartement. (1)
-  J'ai rangé mon appartement. (2)
 rend
-  rendetlen
-  rendet rakni
-  Rendet raktam a lakásamban.
-  Rendbe raktam a lakásamat.
 
 passer commande
 rendel
@@ -2762,9 +2763,19 @@ rendelő
 ordonné
 rendes
 
+désordonné
+rendetlen
+
 désordre
 rendetlenség
   -et, -e
+
+ranger
+  J'ai rangé mon appartement. (1)
+  J'ai rangé mon appartement. (2)
+rendet rakni
+  Rendet raktam a lakásamban.
+  Rendbe raktam a lakásamat.
 
 mise en scène
 rendezés
@@ -3132,9 +3143,6 @@ szülő
 pause, vacances, récréation, entracte
 szünet
 
-"L'ami gris", appellation de vin
-szürkebarát
-
 tablette de chocolat
 tábla csokoládé
 
@@ -3210,9 +3218,9 @@ nature
 természet
   természetesen
 
-"Je vous en prie." "Voilà."
+"Je vous en prie, …"
   Veuillez entrer.
-tessék
+tessék …
   Tessék bemenni.
 
 faire, mettre, poser, faire (agir)
@@ -3245,6 +3253,7 @@ téved
   Ön téved.
 
 télévision
+  -
   à la télévision
 tévé
   -t, -je, -k
@@ -3363,8 +3372,8 @@ udvarias
 impoli
 udvariatlan
 
-n'est-ce pas ?
-ugye ?
+"n'est-ce pas ?"
+ugye?
 
 ennuyeux
 unalmas
@@ -3639,7 +3648,7 @@ vitamines
 vitamin
 
 eau
-viz
+víz
   vizet, vize, vizek
 
 tramway
