@@ -23,10 +23,11 @@ Keeping the deck makes sense only when refreshing the page. As a matter of fact,
 
 == Link to Wiktionary
 
-Many words do have a counterpart on Wiktionary, like this:
-http://en.wiktionary.org/wiki/szilva
+Many words do appear on Wiktionary, http://hu.wiktionary.org/wiki/szilva[through] http://en.wiktionary.org/wiki/szilva[various] http://fr.wiktionary.org/wiki/szilva[languages]. It turns out that French is the most incomplete. The Hungarian is probably the best average choice.
 
-Compute validity in background using XMLHTTPRequest would be great when online.
+A link validity check makes the link to Wiktionary appear if valid.
+
+This is an option, disabled by default for saving queries on a mobile device.
 
 
 
@@ -166,11 +167,24 @@ The fadeout:
 * Gives some time to the worker to perform its computation before starting the spinning wheel. When switching simple cards, the spinning wheel would appear in an unpleasant blink.
 
 
+=== Links to Wiktionary
+
+Links to Wiktionary only appear in a card detail. Because of potential high number of cards, there is no check until the card detail appears. The check occurs in background using `XmlHttpRequest` but not in the Worker, which would make the update difficult.
+
+There is a map for every card telling if the check did occur, and its success. Even better: use browser's local storage to keep this on the long term.
+
 
 == Terms
 
-"Equivalence" sucks. "Card" sucks.
+"Equivalence" sucks.
 
 The real word for a dictionary entry seems to be "entry" (at least in a hardcover Harrap's Shorter) which is "article" in French.
+
+"Card" is not so bad.
+
+Wikipedia/Wiktionary use "article".
+
+
+How to describe the line-column system inside an "entry"?
 
 
