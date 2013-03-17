@@ -1,7 +1,13 @@
+This document describes the features of the next major version of Szótárgép.
+
 
 == Use tags instead of files
 
-One card may have several tags. Use `@Ppp` as pair tag.
+A tag is a special marker attached to a card or a file. Each can have several tags. A tags represents some learning theme.
+
+The purpose is to select tags instead of files, because the same theme may appear across different files and the same card may appear in different themes.
+
+Syntax of a tag: `@Ccc`.
 
 A file may have a global tag `@@Ggg` that affects all contained cards.
 
@@ -29,7 +35,7 @@ This would have following advantages:
 * Support browser's "back" button.
 * Store various configurations (through bookmarks or whatever) instead of a single one.
 
-This  http://saadnawaz.blogspot.fr/2010/10/change-url-dynamically-through.html[blog post] tells that one can use `window.location.hash`.
+This  http://saadnawaz.blogspot.fr/2010/10/change-url-dynamically-through.html[blog post] tells that one can use `window.location.hash` and there are http://stackoverflow.com/a/3354511/1923328[tricks] to prevent the page from reloading then.
 
 The http://www.boutell.com/newfaq/misc/urllength.html[practical limit] of URL length is 2048 characters. Application state might fit, considering:
 
@@ -184,7 +190,14 @@ The worker endorses all DOM computations for:
 * List of tags.
 * Current cards.
 
-Each click on a button triggers an asynchronous request with button name, then starts a fade out of the current cards. At the end of the fade out, the new DOM fragment may be already available. If it is not, there are chances that the computation will take a long and it's time to show a spinning wheel. Ideally there are smooth transitions for everything.
+The Worker receives messages with the button name. It sends back messages containing:
+
+* DOM fragment.
+* The id of the HTML element to update with the DOM fragment.
+
+Because user's action may not have immediate effect this requires some additional care.
+
+Each click on a button triggering Worker's job also starts a fade out of the current cards. At the end of the fade out, the new DOM fragment may be already available. If it is not, there are chances that the computation will take a long and it's time to show a spinning wheel. Ideally there are smooth transitions for everything.
 
 The fadeout:
 
