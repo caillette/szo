@@ -33,7 +33,7 @@ megborotvalkozik
 pile électrique
 elem
 
-glace (phase ou aliment)
+glace (eau à l'état solide ou aliment)
 fagylalt
 
 laver

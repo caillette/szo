@@ -2596,7 +2596,7 @@ ránéz
 banc (pour s'asseoir)
 pad
 
-crêpe (aliment)
+crêpe (mets)
 palacsinta
 
 donner des ordres
@@ -2803,7 +2803,7 @@ régi
 partie
   dans une grande partie du monde
 rész
-  a világ nagy részen
+  a világ nagy részén
 
 ivre
 részeg
@@ -2825,7 +2825,7 @@ mauvais
 rossz
   -at, -ak, -abb
 
-mal
+mal (adv)
 rosszul
 
 robe, ou vêtement en général

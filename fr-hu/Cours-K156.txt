@@ -11,7 +11,7 @@ jutalom
 le début de qqchose
   Veux-tu lire la leçon depuis le début ?
 vminek az eleje
-  Akarod a leckét az elejetől olvasni?
+  Akarod a leckét az elejétől olvasni?
 
 d'une façon ou d'une autre
 valahogyan
@@ -48,9 +48,6 @@ tulajdonképpen
 
 envier qqun
 irigyel vkit
-
-comme je voudrais …
-bárcsak
 
 outil
 szerszám
