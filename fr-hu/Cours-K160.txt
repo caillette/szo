@@ -37,13 +37,13 @@ vaggyon
 beauté
   J'ai payé une fortune pour être belle.
 szépség
-  Egy vagyont fizettem a szépségemért.
+  Egy vaggyont fizettem a szépségemért.
 
 économiser
 megtakarít
 
-pâli, élimé, déteint (pour un tissu)
-  Les rideaux ont déteint.
+pâli, élimé, passé, déteint (pour un tissu)
+  Les rideaux ont passé.
 kopott
   A függönyök kopottak.
 
