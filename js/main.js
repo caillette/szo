@@ -1,7 +1,7 @@
 
 
-function checkBrowserFeatures() {
-  $( '#required-features' ).append( '<h3>Checking required features…</h3>' ) ;
+function verifyBrowserFeatures() {
+  reportHtml( '<h3>Checking browser features…</h3>' ) ;
   var required = [ 'applicationcache', 'history', 'webworkers' ] ;
 
   var allGood = true ;
@@ -10,6 +10,7 @@ function checkBrowserFeatures() {
     allGood = false ;
     reportHtml( '<p>Google Chrome <b>doesn\'t support file://</b> properly</p>' ) ;
   } else {
+    // Workers don't work on Chrome with file:// so we don't send wrong message.
     for( var i in required ) {
       var supported = eval( 'Modernizr.' + required[ i ] ) ;
       report( required[ i ], supported ) ;
@@ -30,7 +31,7 @@ function checkBrowserFeatures() {
   }
 
   function reportHtml( featureMessageHtml ) {
-    $( '#required-features' ).append( featureMessageHtml ) ;
+    $( '#browser-features' ).append( featureMessageHtml ) ;
   }
 
 

@@ -17,9 +17,9 @@
 
   <script type='text/javascript'>
     $( document ).ready( function() {
-      var capabilities = checkBrowserFeatures() ;
+      var capabilities = verifyBrowserFeatures() ;
       if( capabilities.capable ) {
-        $( '#required-features' ).hide() ;
+        $( '#browser-features' ).hide() ;
       }
     } ) ;
   </script>
@@ -28,7 +28,7 @@
 
 <body>
 
-  <div id='required-features' >
+  <div id='browser-features' >
     <p id='no-javascript'>
       Please enable JavaScript.
     </p>
