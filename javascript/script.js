@@ -304,20 +304,24 @@ function justPrintEquivalences() {
       } ) ;
     }
 
-    $( "#board" ).append( "<p class='total' >Végösszeg: " + EQUIVALENCES.length + "</p>" ) ;
+    var html = "<p class='total' >Végösszeg: " + EQUIVALENCES.length + "</p>" ;
+
     for( themeIndex in EQUIVALENCES ) {
       var equivalence = EQUIVALENCES[ themeIndex ] ;
-      var html = "<table class='equivalence-list' ><tbody>\n" ;
+      html += "<table class='equivalence-list' " ;
+      html += "onmouseover='showTheme(\"" + equivalence.THEME_KEY + "\");' " ;
+      html += "onmouseout='showTheme()' " ;
+      html += "><tbody>\n"
       html = printEquivalence( html, equivalence, false ) ;
-      html += "</tbody></table>" ;
-      var table = $( html ) ;
-      addMouseHandlers( table, equivalence.THEME_KEY ) ;
-      $( "#board" ).append( table ) ;
+      html += "</tbody></table>\n" ;
 
       // Supposed to help the Web browser to keep tables together.
-      $( "#board" ).append( "<p class='void' ></p>\n" ) ;
-
+      html += "<p class='void' ></p>\n" ;
     }
+
+    // Adding HTML in one single pass is insanely faster than several calls
+    // to $( '#board' ).append().
+    $( "#board" ).html( html ) ;
   }
 }
 
