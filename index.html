@@ -17,9 +17,9 @@
 
   <script type='text/javascript'>
     $( document ).ready( function() {
-      if( checkBrowserFeatures() ) {
+      var capabilities = checkBrowserFeatures() ;
+      if( capabilities.capable ) {
         $( '#required-features' ).hide() ;
-
       }
     } ) ;
   </script>

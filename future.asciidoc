@@ -136,6 +136,20 @@ Settings:
 * Language (French, English, Hungarian)
 
 
+== Github-based hosting
+
+No more `rsync` to SourceForge! Github hosts static pages as https://github.com/blog/272-github-pages[explained here].
+
+Development must occur in`gh-pages` branch.
+
+URL will be: http://caillette.github.com/szotargep
+
+
+== Pameterized vocabulary file in the URL
+
+Use a `?vocabulary=my-file.txt` parameter in the URL (yes it works with `file://`). Default is `vocabulary.txt`.
+
+
 
 
 == Rearchitecture code
@@ -183,6 +197,16 @@ Because of tags files no longer have obvious visual counterpart.
 Instead, a link "There are errors" unfolds the whole list with file name and details (like file not found or parsing errors).
 
 
+=== Feature check
+
+Use Modernizr to detect if required features are present and fail gracefully if they aren't.
+
+
+Sadly Modernizr doesn't detect transferrable objects. See an http://html5-demos.appspot.com/static/workers/transferables/index.html[example1] and http://updates.html5rocks.com/2011/12/Transferable-Objects-Lightning-Fast[example2] of detection.
+
+
+
+
 === Parallel DOM computation
 
 The worker endorses all DOM computations for:
@@ -204,7 +228,7 @@ The fadeout:
 * Gives immediate feedback on user's action so he's less tempted to click again.
 * Gives some time to the worker to perform its computation before starting the spinning wheel. When switching simple cards, the spinning wheel would appear in an unpleasant blink.
 
-
+Things are more complicated for making bursts of clicks on tags not queue unnecessary work. There is a "step-by-step processing" object and the Worker posts itelfs a message to continue its job if there was no message requesting a new multistep computation meanwhile.
 
 == Glossary
 
@@ -216,7 +240,10 @@ The real word for a dictionary entry seems to be "entry" (at least in a hardcove
 
 Wikipedia/Wiktionary use "article".
 
-
 How to describe the line-column system inside an "entry"?
+
+A Pack represents a file containing a list of Cards, and reading/parsing errors.
+
+The whole set of Cards and Packs is a Vocabulary.
 
 
