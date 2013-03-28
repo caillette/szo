@@ -77,14 +77,24 @@ function documentReady( browserCapabilities ) {
         case 'echo' :
           alert( e.data.message ) ;
           break ;
+        case 'computation-continue' :
+          worker.postMessage( e.data ) ;
+        case 'computation-complete' :
+          $( '#board' ).html( e.data.html ) ;
       }
     }, false ) ;
     worker.postMessage() ; // Start it up.
 
     $( '#top' )
-        .append( '<button type="button" name="feed worker" >Feed the Worker</button>' )
+        .append( '<button type="button" name="worker-hi" >Say hi to Worker</button>' )
         .click( function() {
           worker.postMessage( { command : 'echo', payload : 'hi' } ) ;
+        } )
+    ;
+    $( '#top' )
+        .append( '<button type="button" name="worker-compute" >Multi-step computation</button>' )
+        .click( function() {
+          worker.postMessage( { command : 'computation-start' } ) ;
         } )
     ;
   }
