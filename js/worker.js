@@ -18,8 +18,9 @@ self.addEventListener( 'message', function( e ) {
     case 'computation-start' :
       currentComputation = new Computation( {
           url : 'whatever',
+          batchSize : 200,
           onStepComplete : function() {
-            // A Worker can't post messages to itself so we ask our caller to "bounce" messages.
+            // Message bouncing.
             self.postMessage( {
                 command : 'computation-continue'
             } ) ;
@@ -46,6 +47,8 @@ var currentComputation = null ;
 
 // Encapsulates a computation that takes several steps to complete.
 // Breaking it into steps allows cancellation of the ongoing one when user requests another.
+// Because a Worker can't post messages to itself it asks the caller (through the 'context')
+// to repost messages. That's quite heavy so we perform several ('batchSize') steps in sequence.
 var Computation = function() {
 
   var computationIdGenerator = 0 ;
@@ -55,15 +58,26 @@ var Computation = function() {
     var step = 0 ;
     var html = 'Initialized as computation #' + id + '<br>' ;
 
+    function isComplete() {
+      return step >= 100000
+    }
+
+    function singleStep() {
+      html += 'We are at step ' + step + '<br>\n' ;
+      step ++ ;
+    }
+
     this.step = function() {
-      if( step < 10000 ) {
-        html += 'We are at step ' + step + '<br>\n' ;
-        step ++ ;
-        context.onStepComplete() ;
-        return this ;
-      } else {
+      if( isComplete() ) {
         context.onComputationComplete( html ) ;
         return null ;
+      } else {
+        for( var i = 0 ; i < context.batchSize ; i ++ ) {
+          singleStep() ;
+          if( isComplete() ) break ;
+        }
+        context.onStepComplete() ;
+        return this ;
       }
     }
 
