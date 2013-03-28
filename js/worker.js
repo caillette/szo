@@ -67,14 +67,21 @@ var Computation = function() {
   var constructor = function Computation( context ) {
     var id = computationIdGenerator ++ ;
     var step = 0 ;
-    var html = 'Initialized as computation #' + id + '<br>' ;
+    var html = '<p>Initialized as computation #' + id + '</p>' ;
 
     function isComplete() {
-      return step >= 1000000 ;
+      return step >= 10000 ;
     }
 
     function singleStep() {
-      html += 'We are at step ' + step + '<br>\n' ;
+      html += '<table>' ;
+      html += '  <tbody>' ;
+      html += '    <tr>' ;
+      html += '      <td>Step</td>' ;
+      html += '      <td>' + step + '</td>' ;
+      html += '    </tr>' ;
+      html += '  </tbody>' ;
+      html += '</table>' ;
       step ++ ;
     }
 
