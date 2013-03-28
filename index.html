@@ -17,10 +17,7 @@
 
   <script type='text/javascript'>
     $( document ).ready( function() {
-      var capabilities = verifyBrowserFeatures() ;
-      if( capabilities.capable ) {
-        $( '#browser-features' ).hide() ;
-      }
+      documentReady() ;
     } ) ;
   </script>
   <title>Szótárgép - 2.0 dev</title>
@@ -37,6 +34,7 @@
 
   <div id='top' ></div>
 
+  <div id='board' ></div>
 
   <!--Where showMessage() outputs to. -->
   <div id='console' ></div>

@@ -47,7 +47,7 @@ function verifyBrowserFeatures() {
       worker.postMessage = worker.webkitPostMessage || worker.postMessage ;
 
       var ab = new ArrayBuffer( 1 ) ; // TODO: use magic value to tell real worker it's dummy.
-      worker.postMessage( ab, [ ab ] ) ;
+      worker.postMessage( { command : 'feature-detection' }, [ ab ] ) ;
       if( ab.byteLength ) {
         return false ;
       } else {
@@ -57,5 +57,38 @@ function verifyBrowserFeatures() {
       return false ;
     }
   }
+
+}
+
+
+function documentReady( browserCapabilities ) {
+  var capabilities = verifyBrowserFeatures() ;
+  if( capabilities.capable ) {
+    $( '#browser-features' ).hide() ;
+
+    console.log( 'Initializing…' ) ;
+
+    var worker = new Worker( 'js/worker.js' ) ;
+    worker.addEventListener( 'message', function( e ) {
+      switch( e.data.command ) {
+        case 'log' :
+          console.log( e.data.message ) ;
+          break ;
+        case 'echo' :
+          alert( e.data.message ) ;
+          break ;
+      }
+    }, false ) ;
+    worker.postMessage() ; // Start it up.
+
+    $( '#top' )
+        .append( '<button type="button" name="feed worker" >Feed the Worker</button>' )
+        .click( function() {
+          worker.postMessage( { command : 'echo', payload : 'hi' } ) ;
+        } )
+    ;
+  }
+
+
 
 }
