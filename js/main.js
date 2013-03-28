@@ -46,7 +46,7 @@ function verifyBrowserFeatures() {
       // http://updates.html5rocks.com/2011/12/Transferable-Objects-Lightning-Fast
       worker.postMessage = worker.webkitPostMessage || worker.postMessage ;
 
-      var ab = new ArrayBuffer( 1 ) ; // TODO: use magic value to tell real worker it's dummy.
+      var ab = new ArrayBuffer( 1 ) ;
       worker.postMessage( { command : 'feature-detection' }, [ ab ] ) ;
       if( ab.byteLength ) {
         return false ;
@@ -78,6 +78,7 @@ function documentReady( browserCapabilities ) {
           alert( e.data.message ) ;
           break ;
         case 'computation-continue' :
+          // Bouncing message to the Worker which wants to trigger next computation step.
           worker.postMessage( e.data ) ;
         case 'computation-complete' :
           $( '#board' ).html( e.data.html ) ;
@@ -85,18 +86,21 @@ function documentReady( browserCapabilities ) {
     }, false ) ;
     worker.postMessage() ; // Start it up.
 
-    $( '#top' )
-        .append( '<button type="button" name="worker-hi" >Say hi to Worker</button>' )
-        .click( function() {
-          worker.postMessage( { command : 'echo', payload : 'hi' } ) ;
-        } )
-    ;
-    $( '#top' )
-        .append( '<button type="button" name="worker-compute" >Multi-step computation</button>' )
+    $( '<button>Multi-step computation</button>' )
         .click( function() {
           worker.postMessage( { command : 'computation-start' } ) ;
         } )
+        .appendTo( '#top' )
     ;
+    $( '<button>Say hi to Worker</button>' )
+        .click( function() {
+          worker.postMessage( { command : 'echo', payload : 'hi' } ) ;
+        } )
+        .appendTo( '#top' )
+    ;
+
+    console.log( 'Initialization complete.' ) ;
+
   }
 
 

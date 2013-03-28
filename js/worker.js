@@ -19,6 +19,7 @@ self.addEventListener( 'message', function( e ) {
       currentComputation = new Computation( {
           url : 'whatever',
           onStepComplete : function() {
+            // A Worker can't post messages to itself so we ask our caller to "bounce" messages.
             self.postMessage( {
                 command : 'computation-continue'
             } ) ;
@@ -51,8 +52,6 @@ var Computation = function() {
 
   var constructor = function Computation( context ) {
     var id = computationIdGenerator ++ ;
-    this.id = function() { return id ; }
-
     var step = 0 ;
     var html = 'Initialized as computation #' + id + '<br>' ;
 
@@ -66,10 +65,6 @@ var Computation = function() {
         context.onComputationComplete( html ) ;
         return null ;
       }
-    }
-
-    this.html = function() {
-      return html ;
     }
 
   } ;
