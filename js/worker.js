@@ -4,6 +4,18 @@ function log( message ) {
   self.postMessage( { command : 'log', message : message } ) ;
 }
 
+
+// http://updates.html5rocks.com/2012/06/How-to-convert-ArrayBuffer-to-and-from-String
+function stringToArrayBuffer( string ) {
+  var arrayBuffer = new ArrayBuffer( string.length * 2 ) ; // 2 bytes for each char.
+  var bufferView = new Uint16Array( arrayBuffer ) ;
+  for( var i = 0, stringLength = string.length ; i < stringLength ; i++ ) {
+    bufferView[ i ] = string.charCodeAt( i ) ;
+  }
+  return arrayBuffer ;
+}
+
+
 self.addEventListener( 'message', function( e ) {
   switch( e.data && e.data.command ) {
 
@@ -18,18 +30,17 @@ self.addEventListener( 'message', function( e ) {
     case 'computation-start' :
       currentComputation = new Computation( {
           url : 'whatever',
-          batchSize : 200,
+          batchSize : 1000,
           onStepComplete : function() {
-            // Message bouncing.
+            // Causes re-posting of this message.
             self.postMessage( {
                 command : 'computation-continue'
             } ) ;
           },
           onComputationComplete : function( html ) {
-            self.postMessage( {
-                command : 'computation-complete',
-                html : html
-            } ) ;
+            var arrayBuffer = stringToArrayBuffer( html ) ;
+            // http://updates.html5rocks.com/2011/12/Transferable-Objects-Lightning-Fast
+            self.postMessage( arrayBuffer, [ arrayBuffer ] ) ;
           }
       } ).step() ;
       break ;
@@ -59,7 +70,7 @@ var Computation = function() {
     var html = 'Initialized as computation #' + id + '<br>' ;
 
     function isComplete() {
-      return step >= 100000
+      return step >= 1000000 ;
     }
 
     function singleStep() {
@@ -69,6 +80,7 @@ var Computation = function() {
 
     this.step = function() {
       if( isComplete() ) {
+        log( 'Worker completed computation ' + id + '.')
         context.onComputationComplete( html ) ;
         return null ;
       } else {

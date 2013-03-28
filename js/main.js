@@ -70,21 +70,48 @@ function documentReady( browserCapabilities ) {
 
     var worker = new Worker( 'js/worker.js' ) ;
     worker.addEventListener( 'message', function( e ) {
-      switch( e.data.command ) {
+
+    var payload ;
+
+    if( e.data instanceof ArrayBuffer ) {
+      // Dirty trick that works as long as we use ArrayBuffer in only one single case.
+      payload = {} ;
+      payload.command = 'computation-complete' ;
+      payload.html = arrayBufferToString( e.data ) ;
+    } else {
+      payload = e.data ;
+    }
+
+      switch( payload.command ) {
         case 'log' :
-          console.log( e.data.message ) ;
+          console.log( payload.message ) ;
           break ;
         case 'echo' :
-          alert( e.data.message ) ;
+          alert( payload.message ) ;
           break ;
         case 'computation-continue' :
-          // Bouncing message to the Worker which wants to trigger next computation step.
-          worker.postMessage( e.data ) ;
+          // Re-post to the Worker which wants to trigger next computation steps.
+          worker.postMessage( payload ) ;
+          break ;
         case 'computation-complete' :
-          $( '#board' ).html( e.data.html ) ;
+          $( '#board' ).html( payload.html ) ;
+          console.log( 'JQuery added HTML.' ) ;
       }
     }, false ) ;
     worker.postMessage() ; // Start it up.
+
+    // http://jsperf.com/string-fromcharcode-apply-vs-for-loop
+    // Doesn't work (know stack overflow problem):
+    //   http://updates.html5rocks.com/2012/06/How-to-convert-ArrayBuffer-to-and-from-String
+    function arrayBufferToString( arrayBuffer ) {
+      var string = '' ;
+      var bufferView = new Uint16Array( arrayBuffer ) ;
+      for( var i = 0 ; i < bufferView.length ; i++ ) {
+        string += String.fromCharCode( bufferView[ i ] ) ;
+      }
+      return string ;
+    }
+
 
     $( '<button>Multi-step computation</button>' )
         .click( function() {
@@ -98,6 +125,7 @@ function documentReady( browserCapabilities ) {
         } )
         .appendTo( '#top' )
     ;
+
 
     console.log( 'Initialization complete.' ) ;
 
