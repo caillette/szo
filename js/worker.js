@@ -77,11 +77,16 @@ var Computation = function() {
       html += '<table>' ;
       html += '  <tbody>' ;
       html += '    <tr>' ;
+      html += '      <td>Computation</td>' ;
+      html += '      <td>' + id + '</td>' ;
+      html += '    </tr>' ;
+      html += '    <tr>' ;
       html += '      <td>Step</td>' ;
       html += '      <td>' + step + '</td>' ;
       html += '    </tr>' ;
       html += '  </tbody>' ;
       html += '</table>' ;
+      html += '<p></p>'
       step ++ ;
     }
 
