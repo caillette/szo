@@ -1,0 +1,45 @@
+<html class='no-js' >
+<head>
+  <meta http-equiv='Content-Type' content='text/html; charset=UTF-8' >
+
+  <script type='text/javascript' src='js/jquery-1.9.1.js' ></script>
+  <script type='text/javascript' src='js/modernizr-2.6.2.js' ></script>
+
+  <style type='text/css' name='global-dynamic-style' ></style>
+
+  <script type='text/javascript' >
+    <!-- Quickly hide the #no-javascript without waiting for page load to complete. -->
+    $( 'style[ name = "global-dynamic-style" ] ').html(
+        '#no-javascript{ display : none ; }' ) ;
+  </script>
+
+  <script type='text/javascript' src='js/main.js' ></script>
+
+  <script type='text/javascript'>
+    $( document ).ready( function() {
+      documentReady() ;
+    } ) ;
+  </script>
+  <title>Szótárgép - 2.0 dev</title>
+</head>
+
+<body>
+
+  <div id='browser-features' >
+    <p id='no-javascript'>
+      Please enable JavaScript.
+    </p>
+    <!-- Placeholder for other messages. -->
+  </div>
+
+  <div id='top' ></div>
+
+  <div id='computation-in-progress' style='visibility : hidden ;' >Computation in progress…</div>
+
+  <div id='board' ></div>
+
+  <!--Where showMessage() outputs to. -->
+  <div id='console' ></div>
+
+</body>
+</html>
