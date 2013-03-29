@@ -15,22 +15,25 @@ self.addEventListener( 'message', function( e ) {
 
     case 'computation-start' :
       self.postMessage( { command : 'computation-start' } ) ; // Trigger board cleanup.
-      currentComputation = new Computation( {
-          batchSize : 10,
-          onBatchComplete : function( html ) {
-            // Will cause sending back a 'computation-continue' message.
-            self.postMessage( {
-                command : 'computation-progress',
-                // Don't use Transferable Objects, it's just a rather small String here,
-                // and we would have to rebuild it on the other side.
-                html : html
-            } ) ;
+      currentComputation = new ComputationLoop(
+          {
+            batchSize : 100,
+            onBatchComplete : function( html ) {
+              // Will cause sending back a 'computation-continue' message.
+              self.postMessage( {
+                  command : 'computation-progress',
+                  // Don't use Transferable Objects, it's just a rather small String here,
+                  // and we would have to rebuild it on the other side.
+                  html : html
+              } ) ;
+            },
+            onComputationComplete : function() {
+              self.postMessage( { command : 'computation-complete' } ) ;
+              currentComputation = null ;
+            }
           },
-          onComputationComplete : function() {
-            self.postMessage( { command : 'computation-complete' } ) ;
-            currentComputation = null ;
-          }
-      } ).batch() ;
+          new DummyComputation( 10000 )
+      ).batch() ;
       break ;
 
     case 'computation-continue' :
@@ -49,22 +52,51 @@ var currentComputation = null ;
 // The result of each batch feeds the main thread for DOM update, so new HTML flows smoothly.
 // The Computation asks to the main thread to trigger next batch (a Worker can't post events to
 // itself), so another Computation may start and cancel the running one.
-var Computation = function() {
+var ComputationLoop = function() {
 
   var computationIdGenerator = 0 ;
 
-  var constructor = function Computation( context ) {
+  var constructor = function ComputationLoop( context, stepper ) {
 
     var id = computationIdGenerator ++ ;
-    var step = 0 ;
     var batch = 0 ;
-    var html = '<p>Initialized as computation #' + id + '</p>' ;
 
-    function isComplete() {
-      return step >= 10000 ;
+    this.batch = function() {
+      if( stepper.isComplete() ) {
+        log( 'Worker completed computation ' + id + '.' )
+        context.onComputationComplete() ;
+        return null ;
+      } else {
+        for( var i = 0 ; i < context.batchSize ; i ++ ) {
+          stepper.singleStep( id, batch ) ;
+          if( stepper.isComplete() ) break ;
+        }
+        context.onBatchComplete( stepper.html() ) ;
+        batch ++ ;
+        return this ;
+      }
     }
 
-    function singleStep() {
+    this.toString = function() {
+      return this.constructor.name + '{id=' + id + '}' ;
+    }
+  } ;
+
+  return constructor ;
+}() ;
+
+var DummyComputation = function() {
+
+  var constructor = function DummyComputation( stepCount ) {
+
+    var step = 0 ;
+    var html = '<p>Initialized ' + this.constructor.name + '</p>' ;
+
+    this.isComplete = function() {
+      return step >= stepCount ;
+    }
+
+    this.singleStep = function( id, batch ) {
       html += '<table>' ;
       html += '  <tbody>' ;
       html += '    <tr>' ;
@@ -81,32 +113,15 @@ var Computation = function() {
       html += '    </tr>' ;
       html += '  </tbody>' ;
       html += '</table>' ;
-      html += '<p></p>'
+      html += '<p></p>' ;
       step ++ ;
     }
 
-    this.batch = function() {
-      if( isComplete() ) {
-        log( 'Worker completed computation ' + id + '.' )
-        context.onComputationComplete() ;
-        return null ;
-      } else {
-        for( var i = 0 ; i < context.batchSize ; i ++ ) {
-          singleStep() ;
-          if( isComplete() ) break ;
-        }
-        context.onBatchComplete( html ) ;
-        html = '' ;
-        batch ++ ;
-        return this ;
-      }
+    this.html = function() {
+      return html ;
     }
 
-    this.toString = function() {
-      return this.constructor.name + '{id=' + id + '}' ;
-    }
-  } ;
+  }
 
   return constructor ;
 }() ;
-
