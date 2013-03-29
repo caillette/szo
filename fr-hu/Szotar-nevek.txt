@@ -15,3 +15,5 @@ Városliget
 "L'ami gris", appellation de vin
 szürkebarát
 
+Place des Héros
+Hősök tere
