@@ -73,7 +73,7 @@ function documentReady( browserCapabilities ) {
       }
 
     }, false ) ;
-    worker.postMessage() ; // Start it up.
+    worker.postMessage( '' ) ; // Start it up.
 
 
     $( '<button>Multi-step computation</button>' )
@@ -84,7 +84,7 @@ function documentReady( browserCapabilities ) {
     ;
     $( '<button>Say hi to Worker</button>' )
         .click( function() {
-          worker.postMessage( { command : 'echo', e.data : 'hi' } ) ;
+          worker.postMessage( { command : 'echo', message : 'hi' } ) ;
         } )
         .appendTo( '#top' )
     ;
