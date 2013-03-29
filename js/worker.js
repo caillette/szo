@@ -10,7 +10,7 @@ self.addEventListener( 'message', function( e ) {
   switch( e.data && e.data.command ) {
 
     case 'echo' :
-      log( 'echo: ' + e.data.payload ) ;
+      log( 'echo: ' + e.data.message ) ;
       break ;
 
     case 'computation-start' :
@@ -44,11 +44,11 @@ self.addEventListener( 'message', function( e ) {
 
 var currentComputation = null ;
 
-// Encapsulates a computation that takes several steps to complete.
-// Several steps occurs in a batch.
+// Encapsulates a computation that takes many steps to complete.
+// Step execution occurs by batch of parameterized size.
 // The result of each batch feeds the main thread for DOM update, so new HTML flows smoothly.
-// The Computation asks to the main thread to trigger next batch, so another Computation
-// may start and cancel the running one.
+// The Computation asks to the main thread to trigger next batch (a Worker can't post events to
+// itself), so another Computation may start and cancel the running one.
 var Computation = function() {
 
   var computationIdGenerator = 0 ;
