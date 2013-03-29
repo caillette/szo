@@ -16,7 +16,7 @@ self.addEventListener( 'message', function( e ) {
     case 'computation-start' :
       self.postMessage( { command : 'computation-start' } ) ; // Trigger board cleanup.
       currentComputation = new Computation( {
-          batchSize : 100,
+          batchSize : 10,
           onBatchComplete : function( html ) {
             // Will cause sending back a 'computation-continue' message.
             self.postMessage( {

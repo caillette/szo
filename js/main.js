@@ -61,6 +61,8 @@ function documentReady() {
             alert( e.data.message ) ;
             break ;
           case 'computation-start' :
+            // Do it here after the Worker said it started. When doing it before it gets polluted
+            // by some yet-uncancelled computation.
             $( '#board' ).empty() ;
             break ;
           case 'computation-progress' :
