@@ -17,7 +17,6 @@ function verifyBrowserFeatures() {
       allGood = allGood && supported ;
     }
 
-    report( 'transferableobjects', detectTransferable() ) ; // Not mandatory.
   }
 
   // Future:
@@ -40,24 +39,6 @@ function verifyBrowserFeatures() {
         && window.navigator.userAgent.indexOf( 'Chrome' ) >= 0 ;
   }
 
-  function detectTransferable() {
-    try {
-      var worker = new Worker( 'js/worker.js' ) ;
-      // http://updates.html5rocks.com/2011/12/Transferable-Objects-Lightning-Fast
-      worker.postMessage = worker.webkitPostMessage || worker.postMessage ;
-
-      var ab = new ArrayBuffer( 1 ) ;
-      worker.postMessage( { command : 'feature-detection' }, [ ab ] ) ;
-      if( ab.byteLength ) {
-        return false ;
-      } else {
-        return true ;
-      }
-    } catch( e ) {
-      return false ;
-    }
-  }
-
 }
 
 
@@ -71,46 +52,28 @@ function documentReady( browserCapabilities ) {
     var worker = new Worker( 'js/worker.js' ) ;
     worker.addEventListener( 'message', function( e ) {
 
-    var payload ;
-
-    if( e.data instanceof ArrayBuffer ) {
-      // Dirty trick that works as long as we use ArrayBuffer in only one single case.
-      payload = {} ;
-      payload.command = 'computation-complete' ;
-      payload.html = arrayBufferToString( e.data ) ;
-    } else {
-      payload = e.data ;
-    }
-
-      switch( payload.command ) {
+      switch( e.data.command ) {
         case 'log' :
-          console.log( payload.message ) ;
+          console.log( e.data.message ) ;
           break ;
         case 'echo' :
-          alert( payload.message ) ;
+          alert( e.data.message ) ;
           break ;
-        case 'computation-continue' :
-          // Re-post to the Worker which wants to trigger next computation steps.
-          worker.postMessage( payload ) ;
+        case 'computation-start' :
+          $( '#board' ).empty() ;
+          break ;
+        case 'computation-progress' :
+          // Re-post to the Worker for triggering next computation steps.
+          worker.postMessage( { command : 'computation-continue' } ) ;
+          $( '#board' ).append( e.data.html ) ;
+          console.log( 'JQuery added some HTML.' ) ;
           break ;
         case 'computation-complete' :
-          $( '#board' ).html( payload.html ) ;
-          console.log( 'JQuery added HTML.' ) ;
+          console.log( 'Computation complete.' ) ;
       }
+
     }, false ) ;
     worker.postMessage() ; // Start it up.
-
-    // http://jsperf.com/string-fromcharcode-apply-vs-for-loop
-    // Doesn't work (know stack overflow problem):
-    //   http://updates.html5rocks.com/2012/06/How-to-convert-ArrayBuffer-to-and-from-String
-    function arrayBufferToString( arrayBuffer ) {
-      var string = '' ;
-      var bufferView = new Uint16Array( arrayBuffer ) ;
-      for( var i = 0 ; i < bufferView.length ; i++ ) {
-        string += String.fromCharCode( bufferView[ i ] ) ;
-      }
-      return string ;
-    }
 
 
     $( '<button>Multi-step computation</button>' )
@@ -121,7 +84,7 @@ function documentReady( browserCapabilities ) {
     ;
     $( '<button>Say hi to Worker</button>' )
         .click( function() {
-          worker.postMessage( { command : 'echo', payload : 'hi' } ) ;
+          worker.postMessage( { command : 'echo', e.data : 'hi' } ) ;
         } )
         .appendTo( '#top' )
     ;
