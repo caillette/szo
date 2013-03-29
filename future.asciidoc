@@ -204,7 +204,7 @@ Use Modernizr to detect if required features are present and fail gracefully if 
 
 Sadly Modernizr doesn't detect transferrable objects. See an http://html5-demos.appspot.com/static/workers/transferables/index.html[example1] and http://updates.html5rocks.com/2011/12/Transferable-Objects-Lightning-Fast[example2] of detection.
 
-
+(Update: we don't need Transferrable Objects.)
 
 
 === Parallel DOM computation

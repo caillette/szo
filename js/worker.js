@@ -87,7 +87,7 @@ var Computation = function() {
 
     this.batch = function() {
       if( isComplete() ) {
-        log( 'Worker completed computation ' + id + '.')
+        log( 'Worker completed computation ' + id + '.' )
         context.onComputationComplete() ;
         return null ;
       } else {
@@ -100,6 +100,10 @@ var Computation = function() {
         batch ++ ;
         return this ;
       }
+    }
+
+    this.toString = function() {
+      return this.constructor.name + '{id=' + id + '}' ;
     }
   } ;
 
