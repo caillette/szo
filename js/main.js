@@ -55,14 +55,13 @@ function documentReady() {
 
         switch( e.data.command ) {
           case 'log' :
-            console.log( e.data.message ) ;
+            console.log( '[Worker] ' + e.data.message ) ;
             break ;
           case 'echo' :
             alert( e.data.message ) ;
             break ;
           case 'computation-start' :
             $( '#board' ).empty() ;
-            $( '#computation-in-progress' ).css( 'visibility', 'visible') ;
             break ;
           case 'computation-progress' :
             // Re-post to the Worker for triggering next computation steps.
@@ -84,6 +83,7 @@ function documentReady() {
 
     $( '<button>Multi-step computation</button>' )
         .click( function() {
+          $( '#computation-in-progress' ).css( 'visibility', 'visible') ;
           worker.postMessage( { command : 'computation-start' } ) ;
         } )
         .appendTo( '#top' )
