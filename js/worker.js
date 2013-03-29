@@ -34,7 +34,9 @@ self.addEventListener( 'message', function( e ) {
       break ;
 
     case 'computation-continue' :
-      currentComputation = currentComputation.batch() ;
+      if( currentComputation ) {
+        currentComputation = currentComputation.batch() ;
+      }
       break ;
 
   }
