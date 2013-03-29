@@ -1,7 +1,7 @@
 
 
-function verifyBrowserFeatures() {
-  reportHtml( '<h3>Checking browser features…</h3>' ) ;
+function verifyBrowserFeatures( div ) {
+  reportHtml( '<h3>Verifying browser features…</h3>' ) ;
   var required = [ 'applicationcache', 'history', 'webworkers' ] ;
 
   var allGood = true ;
@@ -19,9 +19,8 @@ function verifyBrowserFeatures() {
 
   }
 
-  // Future:
+  // In the future:
   // - Browser display (small or large).
-  // ?
   return { capable : allGood } ;
 
 
@@ -30,9 +29,8 @@ function verifyBrowserFeatures() {
   }
 
   function reportHtml( featureMessageHtml ) {
-    $( '#browser-features' ).append( featureMessageHtml ) ;
+    $( div ).append( featureMessageHtml ) ;
   }
-
 
   function isChromeUsingFileOrigin() {
     return window.location.origin == 'file://'
@@ -42,37 +40,45 @@ function verifyBrowserFeatures() {
 }
 
 
-function documentReady( browserCapabilities ) {
-  var capabilities = verifyBrowserFeatures() ;
+function documentReady() {
+
+  var capabilities = verifyBrowserFeatures( '#browser-features' ) ;
   if( capabilities.capable ) {
     $( '#browser-features' ).hide() ;
 
     console.log( 'Initializing…' ) ;
 
     var worker = new Worker( 'js/worker.js' ) ;
-    worker.addEventListener( 'message', function( e ) {
+    worker.addEventListener(
+      'message',
+      function( e ) {
 
-      switch( e.data.command ) {
-        case 'log' :
-          console.log( e.data.message ) ;
-          break ;
-        case 'echo' :
-          alert( e.data.message ) ;
-          break ;
-        case 'computation-start' :
-          $( '#board' ).empty() ;
-          break ;
-        case 'computation-progress' :
-          // Re-post to the Worker for triggering next computation steps.
-          worker.postMessage( { command : 'computation-continue' } ) ;
-          $( '#board' ).append( e.data.html ) ;
-          console.log( 'JQuery added some HTML.' ) ;
-          break ;
-        case 'computation-complete' :
-          console.log( 'Computation complete.' ) ;
-      }
+        switch( e.data.command ) {
+          case 'log' :
+            console.log( e.data.message ) ;
+            break ;
+          case 'echo' :
+            alert( e.data.message ) ;
+            break ;
+          case 'computation-start' :
+            $( '#board' ).empty() ;
+            $( '#computation-in-progress' ).css( 'visibility', 'visible') ;
+            break ;
+          case 'computation-progress' :
+            // Re-post to the Worker for triggering next computation steps.
+            worker.postMessage( { command : 'computation-continue' } ) ;
+            $( '#board' ).append( e.data.html ) ;
+            // console.log( 'JQuery added some HTML.' ) ;
+            break ;
+          case 'computation-complete' :
+            $( '#computation-in-progress' ).css( 'visibility', 'hidden') ;
+            console.log( 'Computation complete.' ) ;
+            break ;
+        }
 
-    }, false ) ;
+      },
+      false
+    ) ;
     worker.postMessage( '' ) ; // Start it up.
 
 
@@ -89,11 +95,7 @@ function documentReady( browserCapabilities ) {
         .appendTo( '#top' )
     ;
 
-
     console.log( 'Initialization complete.' ) ;
-
   }
-
-
 
 }
