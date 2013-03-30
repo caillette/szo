@@ -124,7 +124,7 @@ function documentReady() {
           // Add only on the first widget, omit checkbox label that comes second.
           $widget.first().click( function( parameters ) {
             // Capturing outer value with a JavaScript closure.
-            // This prevents a side-effect where parameters were messed up.
+            // This prevents a side-effect messing up parameters.
             // Normal use of JQuery obtains the same result.
             return function( event ) {
               startComputation( event, parameters ) ;
