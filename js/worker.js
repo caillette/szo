@@ -19,11 +19,11 @@ self.addEventListener( 'message', function( e ) {
           widgetDefinitions : [
               {
                   html : '<button id="long-dummy-computation" >Long dummy computation</button>',
-                  operation : { computation : 'long-dummy' },
+                  clickParameters : { computation : 'long-dummy' },
                   target : '#top'
               }, {
                   html : '<button id="short-dummy-computation" >Single-step computation</button>',
-                  operation : { computation : 'short-dummy' },
+                  clickParameters : { computation : 'short-dummy' },
                   target : '#top'
               }
           ]
