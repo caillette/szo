@@ -102,12 +102,16 @@ function documentReady() {
         .appendTo( '#top' )
     ;
 
-    function startComputation( parameters ) {
+    function startComputation( event, parameters ) {
       start = new Date() ;
       console.debug( 'Starting computation...' ) ;
       computationInProgress( true ) ;
       parameters.command = 'computation-start' ;
       worker.postMessage( parameters ) ;
+      if( event.currentTarget.type == 'checkbox' ) {
+        // If this is a checkbox we let the worker trigger its state change.
+        event.preventDefault() ;
+      }
     }
 
     function addWidgets( widgetDefinitions ) {
@@ -116,12 +120,13 @@ function documentReady() {
         var $widget = $( widgetDefinition.html )
         $widget.appendTo( widgetDefinition.target ) ;
         if( widgetDefinition.clickParameters ) {
-          // Capturing outer value with a JavaScript closure.
-          // This prevents a side-effect where parameters were messed up.
-          // Normal use of JQuery obtains the same result.
-          $widget.click( function( parameters ) {
-            return function() {
-              startComputation( parameters ) ;
+          // Add only on the first widget, omit checkbox label that comes second.
+          $widget.first().click( function( parameters ) {
+            // Capturing outer value with a JavaScript closure.
+            // This prevents a side-effect where parameters were messed up.
+            // Normal use of JQuery obtains the same result.
+            return function( event ) {
+              startComputation( event, parameters ) ;
             } ;
           }( widgetDefinition.clickParameters ) ) ;
         }

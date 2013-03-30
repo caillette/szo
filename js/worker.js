@@ -18,11 +18,17 @@ self.addEventListener( 'message', function( e ) {
           command : 'configure',
           widgetDefinitions : [
               {
-                  html : '<button id="long-dummy-computation" >Long dummy computation</button>',
+                  html : '<button id="long-dummy-computation" >Multi-step computation</button>',
                   clickParameters : { computation : 'long-dummy' },
                   target : '#top'
               }, {
-                  html : '<button id="short-dummy-computation" >Single-step computation</button>',
+                  html : '<input '
+                      + 'type="checkbox" '
+                      + 'id="short-dummy-computation" '
+                      + 'name="short-dummy-computation" '
+                      + '></input>'
+                      + '<label for="short-dummy-computation" >Single-step computation</label>'
+                  ,
                   clickParameters : { computation : 'short-dummy' },
                   target : '#top'
               }
@@ -46,19 +52,17 @@ self.addEventListener( 'message', function( e ) {
       currentLoop = new ComputationLoop(
           {
             batchSize : 100,
-            onBatchComplete : function( html ) {
+            onBatchComplete : function( result ) {
               // Will cause sending back a 'computation-continue' message.
-              self.postMessage( {
-                  command : 'computation-progress',
-                  // Don't use Transferable Objects, it's just a rather small String here,
-                  // and we would have to rebuild it on the other side.
-                  html : html
-              } ) ;
+              result.command = 'computation-progress' ;
+              self.postMessage( result ) ;
+              // Don't use Transferable Objects, it's just a rather small String here,
+              // and we would have to rebuild it on the other side.
             },
-            onComputationComplete : function( html ) {
-              var e = { command : 'computation-complete' } ;
-              if( html ) e.html = html ;
-              self.postMessage( e ) ;
+            onComputationComplete : function( result ) {
+              result = typeof result == 'undefined' ? {} : result ;
+              result.command = 'computation-complete' ;
+              self.postMessage( result ) ;
               currentLoop = null ;
             }
           },
@@ -158,7 +162,7 @@ var LongDummyComputation = function() {
     }
 
     this.batchResult = function() {
-      return html ;
+      return { html : html } ;
     }
 
   }
@@ -169,7 +173,7 @@ var LongDummyComputation = function() {
 
 var ShortDummyComputation = function() {
 
-  var constructor = function ShortDummyComputation( stepCount ) {
+  var constructor = function ShortDummyComputation( flag ) {
 
     this.singleStep = function( id ) {
       var html = '<p>Initialized ' + this.constructor.name + '</p>' ;
@@ -179,12 +183,38 @@ var ShortDummyComputation = function() {
       html += '      <td>Computation</td>' ;
       html += '      <td>' + id + '</td>' ;
       html += '    </tr>' ;
+      html += '    <tr>' ;
+      html += '      <td>Flag</td>' ;
+      html += '      <td>' + flag + '</td>' ;
+      html += '    </tr>' ;
       html += '  </tbody>' ;
       html += '</table>' ;
       html += '<p></p>' ;
-      return html ;
+      return { html : html } ;
     }
   }
 
   return constructor ;
 }() ;
+
+// Represents the state that user put the application into by its various actions.
+var Advance = function() {
+  var constructor = function Advance() {
+
+    var flagRaised = false ;
+
+    this.flag = function() {
+      return flagRaised ;
+    }
+
+    this.invertFlag = function() {
+      flagRaised = ! flagRaised ;
+      return flagRaised ;
+    }
+
+  }
+  return constructor ;
+}
+
+var advance = new Advance() ;
+
