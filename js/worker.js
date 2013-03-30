@@ -88,7 +88,6 @@ var ComputationLoop = function() {
       } else if( stepper.isComplete() ) {
         context.onComputationComplete() ;
         log( 'Completed multi-step computation ' + id + '.' )
-        return null ;
       } else {
         for( var i = 0 ; i < context.batchSize ; i ++ ) {
           stepper.step( i == 0, id, batch ) ;
@@ -98,6 +97,7 @@ var ComputationLoop = function() {
         batch ++ ;
         return this ;
       }
+      return null ; // Computation complete.
     }
 
     this.toString = function() {
