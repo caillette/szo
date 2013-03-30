@@ -190,7 +190,14 @@ var ShortDummyComputation = function() {
       html += '  </tbody>' ;
       html += '</table>' ;
       html += '<p></p>' ;
-      return { html : html } ;
+      return {
+          html : html,
+          propertyChanges : [ {
+              selector : '#short-dummy-computation',
+              propertyName : 'checked',
+              value : true
+          } ]
+      } ;
     }
   }
 

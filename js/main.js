@@ -80,6 +80,7 @@ function documentReady() {
             if( e.data.html ) {
               // Worker was running a single-step computation.
               $( '#board' ).html( e.data.html ) ;
+              applyPropertyChanges( e.data.propertyChanges ) ;
             }
             computationInProgress( false ) ;
             setTimeout( function() {
@@ -135,7 +136,8 @@ function documentReady() {
 
     function applyPropertyChanges( propertyChanges ) {
       if( propertyChanges ) {
-        for( propertyChange in propertyChanges ) {
+        for( i in propertyChanges ) {
+          var propertyChange = propertyChanges[ i ] ;
           $( propertyChange.selector ).prop( propertyChange.propertyName, propertyChange.value ) ;
         }
       }
