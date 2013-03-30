@@ -115,7 +115,7 @@ function documentReady() {
         var widgetDefinition = widgetDefinitions[ i ] ;
         var $widget = $( widgetDefinition.html )
         $widget.appendTo( widgetDefinition.target ) ;
-        if( widgetDefinition.startComputationWith ) {
+        if( widgetDefinition.operation ) {
           // Capturing outer value with a JavaScript closure.
           // This prevents a side-effect where parameters were messed up.
           // Normal use of JQuery obtains the same result.
@@ -123,7 +123,7 @@ function documentReady() {
             return function() {
               startComputation( parameters ) ;
             } ;
-          }( widgetDefinition.startComputationWith ) ) ;
+          }( widgetDefinition.operation ) ) ;
         }
       }
     }
