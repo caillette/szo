@@ -76,7 +76,7 @@ function documentReady() {
               // Worker was running a single-step computation.
               $( '#board' ).html( e.data.html ) ;
             }
-            $( '#computation-in-progress' ).css( 'visibility', 'hidden') ;
+            computationInProgress( false ) ;
             setTimeout( function() {
               console.log( 'Computation completed in ' + elapsed( start ) + ', DOM updated.' ) ;
               start = null ;
@@ -94,7 +94,7 @@ function documentReady() {
         .click( function() {
           start = new Date() ;
           console.log( 'Starting computation ...' ) ;
-          $( '#computation-in-progress' ).css( 'visibility', 'visible') ;
+          computationInProgress( true ) ;
           worker.postMessage( { command : 'computation-start', computation : 'long-dummy' } ) ;
         } )
         .appendTo( '#top' )
@@ -102,7 +102,7 @@ function documentReady() {
     $( '<button>Single-step computation</button>' )
         .click( function() {
           console.log( 'Starting computation...' ) ;
-          $( '#computation-in-progress' ).css( 'visibility', 'visible') ;
+          computationInProgress( true ) ;
           start = new Date() ;
           worker.postMessage( { command : 'computation-start', computation : 'short-dummy' } ) ;
         } )
@@ -114,6 +114,14 @@ function documentReady() {
         } )
         .appendTo( '#top' )
     ;
+
+    function computationInProgress( visible ) {
+      $( '#computation-in-progress' )
+          .stop( true, true )
+          .delay( visible ? 2 : 0 ) // Delay saves from blinking when computation is quick.
+          .animate( { opacity : ( visible ? 1 : 0 ) }, 100 )
+      ;
+    }
 
     console.log( 'Initialization complete.' ) ;
   }
