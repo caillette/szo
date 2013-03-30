@@ -68,7 +68,7 @@ var currentLoop = null ;
 // DOM and sends a message for continuing the computation if possible (a Worker can't post messages
 // to itself). The ComputationLoop sends a message to the main thread upon computation completion.
 // If the main thread wants to interrupt current computation, it just starts another one.
-// The case where the computation occurs in one unique step is just a simplification of the
+// The case where the computation occurs in one single step is just a simplification of the
 // multi-step case.
 var ComputationLoop = function() {
 
@@ -81,12 +81,13 @@ var ComputationLoop = function() {
 
     this.batch = function() {
       if( batch == 0 ) log( 'Starting computation ' + id + '…' ) ;
-      if( stepper.uniqueStep ) {
-        stepper.uniqueStep( id ) ;
+      if( stepper.singleStep ) {
+        stepper.singleStep( id ) ;
         context.onComputationComplete( stepper.html() ) ;
+        log( 'Completed single-step computation ' + id + '.' )
       } else if( stepper.isComplete() ) {
-        log( 'Completed multi-step computation ' + id + '.' )
         context.onComputationComplete() ;
+        log( 'Completed multi-step computation ' + id + '.' )
         return null ;
       } else {
         for( var i = 0 ; i < context.batchSize ; i ++ ) {
@@ -157,7 +158,7 @@ var ShortDummyComputation = function() {
 
     var html = '<p>Initialized ' + this.constructor.name + '</p>' ;
 
-    this.uniqueStep = function( id ) {
+    this.singleStep = function( id ) {
       html += '<table>' ;
       html += '  <tbody>' ;
       html += '    <tr>' ;
