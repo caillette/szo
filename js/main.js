@@ -77,8 +77,10 @@ function documentReady() {
               $( '#board' ).html( e.data.html ) ;
             }
             $( '#computation-in-progress' ).css( 'visibility', 'hidden') ;
-            console.log( 'Computation completed in ' + elapsed( start ) + ', DOM updated.' ) ;
-            start = null ;
+            setTimeout( function() {
+              console.log( 'Computation completed in ' + elapsed( start ) + ', DOM updated.' ) ;
+              start = null ;
+            }, 1 ) ; // Get sure this occurs after some plausible behind-the-scene DOM update.
             break ;
         }
 
