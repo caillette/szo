@@ -58,14 +58,16 @@ self.addEventListener( 'message', function( e ) {
 
 var currentLoop = null ;
 
-// Encapsulates a computation that takes many steps to complete.
-// Step execution occurs by batch of parameterized size.
-// The result of each batch feeds the main thread for DOM update, so new HTML flows smoothly.
-// When able to take several steps (by defining 'singleStep' and 'isComplete' functions)
-// the Computation asks to the main thread to trigger next batch (a Worker can't post events to
-// itself), so another Computation may start and cancel the running one.
-// The case where the Computation occurs in a unique step (defining 'uniqueStep' function)
-// is a simplification of the former.
+// Encapsulates a computation that streams HTML to the main thread (a Worker can't modify the DOM).
+// Because such computation may take time, the main thread may "interrupt" it.
+// But Workers don't directly job cancellation, the computation breaks down itself into steps.
+// The ComputationLoop batches steps execution. When a batch is complete, the ComputationLoop
+// notifies the main thread, passing the new HTML fragment. Then main thread then updates the
+// DOM and sends a message for continuing the computation if possible (a Worker can't post messages
+// to itself). The ComputationLoop sends a message to the main thread upon computation completion.
+// If the main thread wants to interrupt current computation, it just starts another one.
+// The case where the computation occurs in one unique step is just a simplification of the
+// multi-step case.
 var ComputationLoop = function() {
 
   var computationIdGenerator = 0 ;
@@ -89,7 +91,7 @@ var ComputationLoop = function() {
         return null ;
       } else {
         for( var i = 0 ; i < context.batchSize ; i ++ ) {
-          stepper.singleStep( i == 0, id, batch ) ;
+          stepper.step( i == 0, id, batch ) ;
           if( stepper.isComplete() ) break ;
         }
         context.onBatchComplete( stepper.html() ) ;
@@ -110,14 +112,14 @@ var LongDummyComputation = function() {
 
   var constructor = function LongDummyComputation( stepCount ) {
 
-    var step = 0 ;
+    var currentStep = 0 ;
     var html ;
 
     this.isComplete = function() {
-      return step >= stepCount ;
+      return currentStep >= stepCount ;
     }
 
-    this.singleStep = function( newBatch, id, batch ) {
+    this.step = function( newBatch, id, batch ) {
       if( newBatch ) html = '<p>Initialized ' + this.constructor.name + '</p>' ;
 
       html += '<table>' ;
@@ -132,12 +134,12 @@ var LongDummyComputation = function() {
       html += '    </tr>' ;
       html += '    <tr>' ;
       html += '      <td>Step</td>' ;
-      html += '      <td>' + step + '</td>' ;
+      html += '      <td>' + currentStep + '</td>' ;
       html += '    </tr>' ;
       html += '  </tbody>' ;
       html += '</table>' ;
       html += '<p></p>' ;
-      step ++ ;
+      currentStep ++ ;
     }
 
     this.html = function() {
