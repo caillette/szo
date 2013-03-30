@@ -72,10 +72,11 @@ function documentReady() {
             break ;
           case 'computation-complete' :
             if( e.data.html ) {
+              // Worker was running a computation with a unique step.
               $( '#board' ).html( e.data.html ) ;
             }
             $( '#computation-in-progress' ).css( 'visibility', 'hidden') ;
-            console.log( 'Computation complete.' ) ;
+            console.log( 'Computation complete, DOM updated.' ) ;
             break ;
         }
 

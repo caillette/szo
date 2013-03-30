@@ -80,6 +80,7 @@ var ComputationLoop = function() {
     var batch = 0 ;
 
     this.batch = function() {
+      if( batch == 0 ) log( 'Starting computation ' + id + '…' ) ;
       if( stepper.uniqueStep ) {
         stepper.uniqueStep( id ) ;
         context.onComputationComplete( stepper.html() ) ;
