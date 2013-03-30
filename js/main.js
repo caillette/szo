@@ -69,9 +69,11 @@ function documentReady() {
             // Re-post to the Worker for triggering next computation steps.
             worker.postMessage( { command : 'computation-continue' } ) ;
             $( '#board' ).append( e.data.html ) ;
-            // console.log( 'JQuery added some HTML.' ) ;
             break ;
           case 'computation-complete' :
+            if( e.data.html ) {
+              $( '#board' ).html( e.data.html ) ;
+            }
             $( '#computation-in-progress' ).css( 'visibility', 'hidden') ;
             console.log( 'Computation complete.' ) ;
             break ;

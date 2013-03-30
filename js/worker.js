@@ -38,8 +38,10 @@ self.addEventListener( 'message', function( e ) {
                   html : html
               } ) ;
             },
-            onComputationComplete : function() {
-              self.postMessage( { command : 'computation-complete' } ) ;
+            onComputationComplete : function( html ) {
+              var e = { command : 'computation-complete' } ;
+              if( html ) e.html = html ;
+              self.postMessage( e ) ;
               currentLoop = null ;
             }
           },
@@ -58,7 +60,7 @@ self.addEventListener( 'message', function( e ) {
 
 var currentLoop = null ;
 
-// Encapsulates a computation that streams HTML to the main thread (a Worker can't modify the DOM).
+// Runs a computation that streams HTML to the main thread (a Worker can't modify the DOM).
 // Because such computation may take time, the main thread may "interrupt" it.
 // But Workers don't directly job cancellation, the computation breaks down itself into steps.
 // The ComputationLoop batches steps execution. When a batch is complete, the ComputationLoop
@@ -78,15 +80,11 @@ var ComputationLoop = function() {
     var batch = 0 ;
 
     this.batch = function() {
-      if( stepper.uniqueStep && typeof( stepper.uniqueStep ) == "function" ) {
-        if( batch > -1 ) {
-          batch = -1 ;
-          stepper.uniqueStep( id ) ;
-          context.onBatchComplete( stepper.html() ) ;
-          context.onComputationComplete() ;
-        }
+      if( stepper.uniqueStep ) {
+        stepper.uniqueStep( id ) ;
+        context.onComputationComplete( stepper.html() ) ;
       } else if( stepper.isComplete() ) {
-        log( 'Worker completed computation ' + id + '.' )
+        log( 'Completed multi-step computation ' + id + '.' )
         context.onComputationComplete() ;
         return null ;
       } else {
