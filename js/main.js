@@ -116,11 +116,13 @@ function documentReady() {
         var $widget = $( widgetDefinition.html )
         $widget.appendTo( widgetDefinition.target ) ;
         if( widgetDefinition.startComputationWith ) {
-          $widget.click( function( parameters ) { // Closure capturing outer value.
-            var f = function() {
+          // Capturing outer value with a JavaScript closure.
+          // This prevents a side-effect where parameters were messed up.
+          // Normal use of JQuery obtains the same result.
+          $widget.click( function( parameters ) {
+            return function() {
               startComputation( parameters ) ;
             } ;
-            return f ;
           }( widgetDefinition.startComputationWith ) ) ;
         }
       }
