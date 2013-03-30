@@ -46,7 +46,7 @@ function documentReady() {
   if( capabilities.capable ) {
     $( '#browser-features' ).hide() ;
 
-    console.log( 'Initializing ...' ) ;
+    console.debug( 'Initializing ...' ) ;
     var start ;
 
     var worker = new Worker( 'js/worker.js' ) ;
@@ -56,10 +56,15 @@ function documentReady() {
 
         switch( e.data.command ) {
           case 'log' :
-            console.log( '[Worker] ' + e.data.message ) ;
+            console.debug( '[Worker] ' + e.data.message ) ;
             break ;
           case 'echo' :
             alert( e.data.message ) ;
+            break ;
+          case 'configure' :
+            console.debug( "Configuring ..." ) ;
+            addWidgets( e.data.widgetDefinitions ) ;
+            console.debug( "Configuration complete." ) ;
             break ;
           case 'computation-start' :
             // Do that only after Worker said it started.
@@ -78,7 +83,7 @@ function documentReady() {
             }
             computationInProgress( false ) ;
             setTimeout( function() {
-              console.log( 'Computation completed in ' + elapsed( start ) + ', DOM updated.' ) ;
+              console.debug( 'Computation completed in ' + elapsed( start ) + ', DOM updated.' ) ;
               start = null ;
             }, 1 ) ; // Delay guarantees this occurs after processing pending DOM updates.
             break ;
@@ -88,32 +93,46 @@ function documentReady() {
       false
     ) ;
     worker.postMessage( '' ) ; // Start it up.
+    worker.postMessage( { command : 'configure' } ) ;
 
-
-    $( '<button>Multi-step computation</button>' )
-        .click( function() {
-          start = new Date() ;
-          console.log( 'Starting computation ...' ) ;
-          computationInProgress( true ) ;
-          worker.postMessage( { command : 'computation-start', computation : 'long-dummy' } ) ;
-        } )
-        .appendTo( '#top' )
-    ;
-    $( '<button>Single-step computation</button>' )
-        .click( function() {
-          console.log( 'Starting computation...' ) ;
-          computationInProgress( true ) ;
-          start = new Date() ;
-          worker.postMessage( { command : 'computation-start', computation : 'short-dummy' } ) ;
-        } )
-        .appendTo( '#top' )
-    ;
     $( '<button>Say hi to Worker</button>' )
         .click( function() {
           worker.postMessage( { command : 'echo', message : 'hi' } ) ;
         } )
         .appendTo( '#top' )
     ;
+
+    function startComputation( parameters ) {
+      start = new Date() ;
+      console.debug( 'Starting computation...' ) ;
+      computationInProgress( true ) ;
+      parameters.command = 'computation-start' ;
+      worker.postMessage( parameters ) ;
+    }
+
+    function addWidgets( widgetDefinitions ) {
+      for( i in widgetDefinitions ) {
+        var widgetDefinition = widgetDefinitions[ i ] ;
+        var $widget = $( widgetDefinition.html )
+        $widget.appendTo( widgetDefinition.target ) ;
+        if( widgetDefinition.startComputationWith ) {
+          $widget.click( function( parameters ) { // Closure capturing outer value.
+            var f = function() {
+              startComputation( parameters ) ;
+            } ;
+            return f ;
+          }( widgetDefinition.startComputationWith ) ) ;
+        }
+      }
+    }
+
+    function applyPropertyChanges( propertyChanges ) {
+      if( propertyChanges ) {
+        for( propertyChange in propertyChanges ) {
+          $( propertyChange.selector ).prop( propertyChange.propertyName, propertyChange.value ) ;
+        }
+      }
+    }
 
     function computationInProgress( visible ) {
       $( '#computation-in-progress' )

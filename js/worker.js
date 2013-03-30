@@ -12,6 +12,24 @@ self.addEventListener( 'message', function( e ) {
       log( 'echo: ' + e.data.message ) ;
       break ;
 
+    case 'configure' :
+      log( 'Configuring ...' ) ;
+      self.postMessage( {
+          command : 'configure',
+          widgetDefinitions : [
+              {
+                  html : '<button id="long-dummy-computation" >Long dummy computation</button>',
+                  startComputationWith : { computation : 'long-dummy' },
+                  target : '#top'
+              }, {
+                  html : '<button id="short-dummy-computation" >Single-step computation</button>',
+                  startComputationWith : { computation : 'short-dummy' },
+                  target : '#top'
+              }
+          ]
+      } ) ;
+      break ;
+
     case 'computation-start' :
       self.postMessage( { command : 'computation-start' } ) ; // Trigger board cleanup.
       
