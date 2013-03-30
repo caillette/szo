@@ -82,8 +82,7 @@ var ComputationLoop = function() {
     this.batch = function() {
       if( batch == 0 ) log( 'Starting computation ' + id + '…' ) ;
       if( stepper.singleStep ) {
-        stepper.singleStep( id ) ;
-        context.onComputationComplete( stepper.html() ) ;
+        context.onComputationComplete( stepper.singleStep( id ) ) ;
         log( 'Completed single-step computation ' + id + '.' )
       } else if( stepper.isComplete() ) {
         context.onComputationComplete() ;
@@ -93,16 +92,13 @@ var ComputationLoop = function() {
           stepper.step( i == 0, id, batch ) ;
           if( stepper.isComplete() ) break ;
         }
-        context.onBatchComplete( stepper.html() ) ;
+        context.onBatchComplete( stepper.batchResult() ) ;
         batch ++ ;
         return this ;
       }
       return null ; // Computation complete.
     }
 
-    this.toString = function() {
-      return this.constructor.name + '{id=' + id + '}' ;
-    }
   } ;
 
   return constructor ;
@@ -142,7 +138,7 @@ var LongDummyComputation = function() {
       currentStep ++ ;
     }
 
-    this.html = function() {
+    this.batchResult = function() {
       return html ;
     }
 
@@ -156,9 +152,8 @@ var ShortDummyComputation = function() {
 
   var constructor = function ShortDummyComputation( stepCount ) {
 
-    var html = '<p>Initialized ' + this.constructor.name + '</p>' ;
-
     this.singleStep = function( id ) {
+      var html = '<p>Initialized ' + this.constructor.name + '</p>' ;
       html += '<table>' ;
       html += '  <tbody>' ;
       html += '    <tr>' ;
@@ -168,12 +163,8 @@ var ShortDummyComputation = function() {
       html += '  </tbody>' ;
       html += '</table>' ;
       html += '<p></p>' ;
-    }
-
-    this.html = function() {
       return html ;
     }
-
   }
 
   return constructor ;
