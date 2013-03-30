@@ -86,7 +86,14 @@ function documentReady() {
     $( '<button>Multi-step computation</button>' )
         .click( function() {
           $( '#computation-in-progress' ).css( 'visibility', 'visible') ;
-          worker.postMessage( { command : 'computation-start' } ) ;
+          worker.postMessage( { command : 'computation-start', computation : 'long-dummy' } ) ;
+        } )
+        .appendTo( '#top' )
+    ;
+    $( '<button>Single-step computation</button>' )
+        .click( function() {
+          $( '#computation-in-progress' ).css( 'visibility', 'visible') ;
+          worker.postMessage( { command : 'computation-start', computation : 'short-dummy' } ) ;
         } )
         .appendTo( '#top' )
     ;
