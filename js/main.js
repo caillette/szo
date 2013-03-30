@@ -61,18 +61,18 @@ function documentReady() {
             alert( e.data.message ) ;
             break ;
           case 'computation-start' :
-            // Do it here after the Worker said it started. When doing it before it gets polluted
-            // by some yet-uncancelled computation.
+            // Do that only after Worker said it started.
+            // Doing it before doesn't work as there may be still-running computation sending HTML.
             $( '#board' ).empty() ;
             break ;
           case 'computation-progress' :
-            // Re-post to the Worker for triggering next computation steps.
+            // Re-post to the Worker for triggering next computation batch.
             worker.postMessage( { command : 'computation-continue' } ) ;
             $( '#board' ).append( e.data.html ) ;
             break ;
           case 'computation-complete' :
             if( e.data.html ) {
-              // Worker was running a computation with a unique step.
+              // Worker was running a single-step computation.
               $( '#board' ).html( e.data.html ) ;
             }
             $( '#computation-in-progress' ).css( 'visibility', 'hidden') ;
