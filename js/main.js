@@ -1,7 +1,7 @@
 
 
 function verifyBrowserFeatures( div ) {
-  reportHtml( '<h3>Verifying browser features…</h3>' ) ;
+  reportHtml( '<h3>Verifying browser features...</h3>' ) ;
   var required = [ 'applicationcache', 'history', 'webworkers' ] ;
 
   var allGood = true ;
@@ -46,7 +46,8 @@ function documentReady() {
   if( capabilities.capable ) {
     $( '#browser-features' ).hide() ;
 
-    console.log( 'Initializing…' ) ;
+    console.log( 'Initializing ...' ) ;
+    var start ;
 
     var worker = new Worker( 'js/worker.js' ) ;
     worker.addEventListener(
@@ -76,7 +77,8 @@ function documentReady() {
               $( '#board' ).html( e.data.html ) ;
             }
             $( '#computation-in-progress' ).css( 'visibility', 'hidden') ;
-            console.log( 'Computation complete, DOM updated.' ) ;
+            console.log( 'Computation completed in ' + elapsed( start ) + ', DOM updated.' ) ;
+            start = null ;
             break ;
         }
 
@@ -88,6 +90,8 @@ function documentReady() {
 
     $( '<button>Multi-step computation</button>' )
         .click( function() {
+          start = new Date() ;
+          console.log( 'Starting computation ...' ) ;
           $( '#computation-in-progress' ).css( 'visibility', 'visible') ;
           worker.postMessage( { command : 'computation-start', computation : 'long-dummy' } ) ;
         } )
@@ -95,7 +99,9 @@ function documentReady() {
     ;
     $( '<button>Single-step computation</button>' )
         .click( function() {
+          console.log( 'Starting computation...' ) ;
           $( '#computation-in-progress' ).css( 'visibility', 'visible') ;
+          start = new Date() ;
           worker.postMessage( { command : 'computation-start', computation : 'short-dummy' } ) ;
         } )
         .appendTo( '#top' )

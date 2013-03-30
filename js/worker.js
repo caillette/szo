@@ -1,10 +1,9 @@
+importScripts( 'shared.js' ) ;
 
 function log( message ) {
   // A Worker can't log using window.console so it delegates to main thread.
   self.postMessage( { command : 'log', message : message } ) ;
 }
-
-
 
 self.addEventListener( 'message', function( e ) {
   switch( e.data && e.data.command ) {
@@ -78,15 +77,17 @@ var ComputationLoop = function() {
 
     var id = computationIdGenerator ++ ;
     var batch = 0 ;
+    var start = new Date() ;
+
 
     this.batch = function() {
-      if( batch == 0 ) log( 'Starting computation ' + id + '…' ) ;
+      if( batch == 0 ) log( 'Starting computation ' + id + ' ...' ) ;
       if( stepper.singleStep ) {
         context.onComputationComplete( stepper.singleStep( id ) ) ;
-        log( 'Completed single-step computation ' + id + '.' )
+        log( 'Completed single-step computation ' + id + ' in ' + elapsed( start ) + '.' ) ;
       } else if( stepper.isComplete() ) {
         context.onComputationComplete() ;
-        log( 'Completed multi-step computation ' + id + '.' )
+        log( 'Completed multi-step computation ' + id + ' in ' + elapsed( start ) + '.' ) ;
       } else {
         for( var i = 0 ; i < context.batchSize ; i ++ ) {
           stepper.step( i == 0, id, batch ) ;

@@ -230,6 +230,18 @@ The fadeout:
 
 Things are more complicated for making bursts of clicks on tags not queue unnecessary work. There is a "step-by-step processing" object and the Worker posts itelfs a message to continue its job if there was no message requesting a new multistep computation meanwhile.
 
+=== Deferred widget update
+
+It's risky to update widgets (like checkboxes) directly. Best is to let the Worker chose the update.
+
+Ça repose sur un
+http://stackoverflow.com/questions/5944889/intercepting-checkbox-click-to-confirm-the-change
+$('.mycheckbox').on('click', function( ev ){ ev.preventDefault() ; /* ... */ ; return ; } ) ;
+
+Et puis après :
+$( '#checkBox' ).attr( 'checked', true ) ;
+
+
 == Glossary
 
 "Equivalence" sucks.
