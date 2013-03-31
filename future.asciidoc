@@ -234,12 +234,18 @@ Things are more complicated for making bursts of clicks on tags not queue unnece
 
 It's risky to update widgets (like checkboxes) directly. Best is to let the Worker chose the update.
 
-Ça repose sur un
-http://stackoverflow.com/questions/5944889/intercepting-checkbox-click-to-confirm-the-change
-$('.mycheckbox').on('click', function( ev ){ ev.preventDefault() ; /* ... */ ; return ; } ) ;
 
-Et puis après :
-$( '#checkBox' ).attr( 'checked', true ) ;
+=== Checkbox tree
+
+The ultimate (GPL-licensed):
+https://code.google.com/p/dynatree
+
+Sample of partial checked checkboxes:
+http://wwwendt.de/tech/dynatree/doc/sample-select.html#tree3
+
+Dynatree-1.2.4 behaves well with JQuery-1.9.
+
+Minified version weights 45 kb.
 
 
 == Glossary
