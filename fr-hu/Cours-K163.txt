@@ -1,0 +1,97 @@
+title: Cours particulier K163
+
+dialogue
+párbeszél
+
+répéter
+ismétel
+
+presque
+szinte
+
+veuf (nom/adj)
+özvegy
+
+chanter (une chanson)
+énekel
+
+chanter (une chanson) jusqu'au bout
+elénekel
+
+siècle, centième
+százod
+
+manquer, être absent
+hiányzik
+
+tour (bâtiment)
+torony
+
+organiser
+szervez
+
+groupe
+csoportok
+
+Puisque…
+Mivel …
+
+dentifrice
+fogkrém
+
+élégant, distingué
+előkelő
+
+rangée d'arbres
+fasor
+
+chaque
+  Chaque étage a 20 chambres.
+minden
+  Minden emeleten husz szoba van.
+
+sorcière
+boszorkány
+
+grenouille/crapaud
+béka
+
+exception
+  Toutes les chambres donnent sur le Danube sans exception.
+kivétel
+  Kivétel nélkül minden szobája a Dunára néz.
+
+se faire détruire (pour un animal)
+vmi elpusztul
+
+détruire qqchose (un animal)
+elpusztít
+
+devenir qqchose
+  Il est presque devenu Hongrois.
+válik vmivé
+  Szinte magyarrá vált.
+
+reconstruire qqchose en qqchose
+  On a transformé le palais en musée.
+átépít vmit vmivé
+  A palotát muzeummá epítteték át.
+
+changer l'arrangement, l'organisation de qqchose
+átalakít vmit vmivé
+
+changer qqchose en qqchose (modifier une caractéristique)
+változtat vmit vmivé
+
+se reconstruire en qqchose
+átépül vmivé
+
+transformer qqchose, effectuer un tour de magie
+  La sorcière transforme le fils du roi en crapaud.
+varászol vmit
+  A boszorkány a királyfit békává varászolta.
+
+rendre (faire devenir) {adjectif/nom}
+  Tu me rends heureux.
+tesz {}vé
+  Bodoggá teszel.
