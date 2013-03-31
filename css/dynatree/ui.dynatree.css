@@ -54,7 +54,9 @@ ul.dynatree-no-connector > li
 {
 	opacity: 0.5;
 /*	filter: alpha(opacity=50); /* Yields a css warning */
+/*
 	background-color: silver;
+*/
 }
 
 /*******************************************************************************
@@ -188,7 +190,6 @@ ul.dynatree-container a:hover
 {
 /*	text-decoration: underline; */
 	background-color: #F2F7FD; /* light blue */
-	border-color: #B8D6FB; /* darker light blue */
 }
 
 span.dynatree-node a
