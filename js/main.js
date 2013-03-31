@@ -156,29 +156,3 @@ function documentReady() {
 
 }
 
-$( function(){
-  $( '#tree' ).dynatree( {
-      checkbox : true,
-      selectMode : 3,
-      persist : false,
-      debugLevel : 2,      // 0: quiet, 1: normal, 2: debug
-      clickFolderMode : 1, // 1: activate, 2: expand, 3: activate and expand
-
-      children : [
-          { title : 'Item 1' },
-          { 
-              title : 'Folder 2', 
-              isFolder : true,
-              children : [
-                  { title : 'Sub-item 2.1' },
-                  { title : 'Sub-item 2.2' }
-              ]
-          },
-          { title: 'Item 3' }
-      ]      
-  } ) ;
-
-  $( '#tree' ).dynatree( 'getRoot' ).visit( function( node ) {
-      node.expand( true ) ;
-  } ) ;
-} ) ;
