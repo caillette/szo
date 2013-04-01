@@ -12,14 +12,16 @@ var Pack = function() {
     if( isArray( content ) ) {
       cards = content ;
     } else if( content instanceof String ) {
-      throw 'Not implemented :(' ;
+      throw 'Not implemented' ;
     } else {
       throw 'Unsupported content' ;
     }
 
-    this.cards = function() {
-      return cards ;
-    } ;
+    this.visitCards = function( visitor ) {
+      for( var c = 0 ; c < cards.length ; c ++ ) {
+        visitor( cards[ c ] ) ;
+      }
+    }
 
     // The unique id of this Pack.
     // A Card displays its originating Pack. Since Cards and Packs go through an HTML representation
@@ -39,6 +41,16 @@ var Pack = function() {
   constructor.prototype.toString = function() {
     return 'Pack{' + this.cards().length + ';' + this.url() + '}' ;
   }
+
+  constructor.prototype.cards = function() {
+    var result = new Array() ;
+    this.visitCards( function( card ) {
+      result.push( card ) ;
+    } ) ;
+    return result ;
+  } ;
+
+
 
   return constructor ;
 }() ;
@@ -96,8 +108,10 @@ var Vocabulary = function() {
 
   var constructor = function Vocabulary( packs ) {
 
-    this.packs = function() {
-      return packs ;
+    this.visitPacks = function( visitor ) {
+      for( var p = 0 ; p < packs.length ; p++ ) {
+        visitor( packs[ p ] ) ;
+      }
     }
 
     // Returns an array containing the tags, with no duplicates.
@@ -105,18 +119,15 @@ var Vocabulary = function() {
     // the same name as reserved object members.
     this.tags = function() {
       var result = new Array() ;
-      for( var p = 0 ; p < packs.length ; p++ ) {
-        var cards = packs[ p ].cards() ;
-        for( var c = 0 ; c < cards.length ; c++ ) {
-          var tags = cards[ c ].tags() ;
-          for( var t = 0 ; t < tags.length ; t++ ) {
-            var tag = tags[ t ] ;
-            if( result.indexOf( tag ) < 0 ) {
-              result.push( tag ) ;
-            }
+      this.visitCards( function( card ) {
+        var tags = card.tags() ;
+        for( var t = 0 ; t < tags.length ; t++ ) {
+          var tag = tags[ t ] ;
+          if( result.indexOf( tag ) < 0 ) {
+            result.push( tag ) ;
           }
         }
-      }
+      } ) ;
       return result ;
     }
 
@@ -127,15 +138,11 @@ var Vocabulary = function() {
     // - No value for all the Cards.
     this.cards = function( tags ) {
       var result = new Array() ;
-      for( var p = 0 ; p < packs.length ; p++ ) {
-        var cards = packs[ p ].cards() ;
-        for( var c = 0 ; c < cards.length ; c++ ) {
-          var card = cards[ c ] ;
-          if( typeof tags === 'undefined' || card.hasTag( tags ) ) {
-            result.push( card ) ;
-          }
+      this.visitCards( function( card ) {
+        if( typeof tags === 'undefined' || card.hasTag( tags ) ) {
+          result.push( card ) ;
         }
-      }
+      } ) ;
       return result ;
     }
 
@@ -147,6 +154,23 @@ var Vocabulary = function() {
         + this.cards().length + ';'
         + this.tags().length +  '}'
     ;
+  }
+
+  constructor.prototype.visitCards = function( visitor ) {
+    this.visitPacks( function( pack ) {
+      var cards = pack.cards() ;
+      for( var c = 0 ; c < cards.length ; c++ ) {
+        visitor( cards[ c ] ) ;
+      }
+    } ) ;
+  }
+
+  constructor.prototype.packs = function() {
+    var result = new Array() ;
+    this.visitPacks( function( pack ) {
+      result.push( pack ) ;
+    } ) ;
+    return result ;
   }
 
   return constructor ;
