@@ -99,17 +99,23 @@ var ComputationLoop = function() {
 
     var id = computationIdGenerator ++ ;
     var batch = 0 ;
-    var start = new Date() ;
+    var totalTime = 0 ;
 
 
     this.batch = function() {
+
+      function logCompletion( computation, totalTime ) {
+        log( 'Completed ' + computation + ' computation ' + id + ' in ' + totalTime + ' ms.' ) ;
+      }
+
+      var start = new Date() ;
       if( batch == 0 ) log( 'Starting computation ' + id + ' ...' ) ;
       if( stepper.singleStep ) {
         context.onComputationComplete( stepper.singleStep( id ) ) ;
-        log( 'Completed single-step computation ' + id + ' in ' + elapsed( start ) + '.' ) ;
+        logCompletion( 'single-step', new Date() - start ) ;
       } else if( stepper.isComplete() ) {
         context.onComputationComplete() ;
-        log( 'Completed multi-step computation ' + id + ' in ' + elapsed( start ) + '.' ) ;
+        logCompletion( 'multi-step', totalTime ) ;
       } else {
         for( var i = 0 ; i < context.batchSize ; i ++ ) {
           stepper.step( i == 0, id, batch ) ;
@@ -117,6 +123,7 @@ var ComputationLoop = function() {
         }
         context.onBatchComplete( stepper.batchResult() ) ;
         batch ++ ;
+        totalTime += new Date() - start ;
         return this ;
       }
       return null ; // Computation complete.
