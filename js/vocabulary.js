@@ -37,7 +37,7 @@ var Pack = function() {
   }
 
   constructor.prototype.toString = function() {
-    return 'Pack{' + this.url() + '}' ;
+    return 'Pack{' + this.cards().length + ';' + this.url() + '}' ;
   }
 
   return constructor ;
@@ -46,17 +46,20 @@ var Pack = function() {
 
 var Card = function() {
 
-  var constructor = function Card( questions, answers, tags, pack ) {
+  var constructor = function Card( questions, answers, tags, pack, lineInPack ) {
     this.tags = function() {
       return tags ;
     }
     this.pack = function() {
       return pack ;
     }
+    this.lineInPack = function() {
+      return lineInPack ;
+    }
   }
 
   constructor.prototype.toString = function() {
-    throw 'Not implemented' ;
+    return( 'Card{' + this.lineInPack() + '@' + this.pack().url() + '}' ) ;
   }
 
   constructor.prototype.toHtml = function( standalone, inverted ) {
@@ -118,6 +121,7 @@ var Vocabulary = function() {
     }
 
     // tags: one of the following.
+    //   - One single String representing tag wanted.
     //   - An array of non-null Strings representing tags wanted.
     //   - null for cards with no tag.
     //   - No value for all the Cards.
@@ -138,7 +142,11 @@ var Vocabulary = function() {
   }
 
   constructor.prototype.toString = function() {
-    throw 'Not implemented' ;
+    return 'Vocabulary{'
+        + this.packs().length + ';'
+        + this.cards().length + ';'
+        + this.tags().length +  '}'
+    ;
   }
 
   return constructor ;
