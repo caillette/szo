@@ -41,3 +41,25 @@ Circle.prototype.valuesToString = function() {
 Circle.prototype.toString = function() {
   return 'Circle{' + this.valuesToString() + '}' ;
 }
+
+
+
+
+// Let's try the closure-based approach with no inheritance but functions in the prototype.
+var Length = function() {
+  var constructor = function Length( value ) {
+    value = value ? value : 0 ;
+
+    this.value = function() {
+      return value ;
+    } ;
+  }
+
+  constructor.prototype.toString = function() {
+    return 'Length{' + this.value() + '}' ;
+  }
+
+  return constructor ;
+}() ;
+
+
