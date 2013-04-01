@@ -77,7 +77,7 @@ var Card = function() {
     } else if( typeof tag === 'string' ) {
       return this.tags().indexOf( tag ) >= 0 ;
     } else if( isArray( tag ) ) {
-      for( t in tag ) {
+      for( var t = 0 ; t < tag.length ; t++ ) {
         if( this.hasTag( tag[ t ] ) ) {
           return true ;
         }
@@ -105,11 +105,11 @@ var Vocabulary = function() {
     // the same name as reserved object members.
     this.tags = function() {
       var result = new Array() ;
-      for( p in packs ) {
+      for( var p = 0 ; p < packs.length ; p++ ) {
         var pack = packs[ p ] ;
-        for( c in pack.cards() ) {
+        for( var c = 0 ; c < pack.cards().length ; c++ ) {
           var card = pack.cards()[ c ] ;
-          for( t in card.tags() ) {
+          for( var t = 0 ; t < card.tags().length ; t++ ) {
             var tag = card.tags()[ t ] ;
             if( result.indexOf( tag ) < 0 ) {
               result.push( tag ) ;
@@ -127,9 +127,9 @@ var Vocabulary = function() {
     //   - No value for all the Cards.
     this.cards = function( tags ) {
       var result = new Array() ;
-      for( p in packs ) {
+      for( var p = 0 ; p < packs.length ; p++ ) {
         var pack = packs[ p ] ;
-        for( c in pack.cards() ) {
+        for( var c = 0 ; c < pack.cards().length ; c++ ) {
           var card = pack.cards()[ c ] ;
           if( typeof tags === 'undefined' || card.hasTag( tags ) ) {
             result.push( card ) ;
