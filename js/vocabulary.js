@@ -1,4 +1,4 @@
-
+// A loadable resource containing Cards.
 var Pack = function() {
 
   // content:
@@ -43,7 +43,7 @@ var Pack = function() {
   return constructor ;
 }() ;
 
-
+// A set of questions and answers that came out from a Pack.
 var Card = function() {
 
   var constructor = function Card( questions, answers, tags, pack, lineInPack ) {
@@ -66,11 +66,11 @@ var Card = function() {
     throw 'Not implemented' ;
   }
 
-  // tags: one of the following.
-  // - An array of non-null Strings representing tags. Method returns true if there is at least
-  //   one of the given tags that appear in the Card.
+  // tag: one of the following.
+  // - An array of non-null Strings representing tags.
+  //   This method returns true if at least one of the given tags appears in the Card.
+  // - A String representing a tag. Method returns true if Card has this tag.
   // - null. Method returns true if Card has no tag at all.
-
   constructor.prototype.hasTag = function( tag ) {
     if( tag === null ) {
       return this.tags().length === 0 ;
@@ -91,7 +91,7 @@ var Card = function() {
   return constructor ;
 }() ;
 
-
+// A queryable collection of Cards.
 var Vocabulary = function() {
 
   var constructor = function Vocabulary( packs ) {
@@ -121,10 +121,10 @@ var Vocabulary = function() {
     }
 
     // tags: one of the following.
-    //   - One single String representing tag wanted.
-    //   - An array of non-null Strings representing tags wanted.
-    //   - null for cards with no tag.
-    //   - No value for all the Cards.
+    // - One single String representing tag wanted.
+    // - An array of non-null Strings representing tags wanted.
+    // - null for cards with no tag.
+    // - No value for all the Cards.
     this.cards = function( tags ) {
       var result = new Array() ;
       for( var p = 0 ; p < packs.length ; p++ ) {
