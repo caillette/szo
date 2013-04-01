@@ -106,11 +106,11 @@ var Vocabulary = function() {
     this.tags = function() {
       var result = new Array() ;
       for( var p = 0 ; p < packs.length ; p++ ) {
-        var pack = packs[ p ] ;
-        for( var c = 0 ; c < pack.cards().length ; c++ ) {
-          var card = pack.cards()[ c ] ;
-          for( var t = 0 ; t < card.tags().length ; t++ ) {
-            var tag = card.tags()[ t ] ;
+        var cards = packs[ p ].cards() ;
+        for( var c = 0 ; c < cards.length ; c++ ) {
+          var tags = cards[ c ].tags() ;
+          for( var t = 0 ; t < tags.length ; t++ ) {
+            var tag = tags[ t ] ;
             if( result.indexOf( tag ) < 0 ) {
               result.push( tag ) ;
             }
@@ -128,9 +128,9 @@ var Vocabulary = function() {
     this.cards = function( tags ) {
       var result = new Array() ;
       for( var p = 0 ; p < packs.length ; p++ ) {
-        var pack = packs[ p ] ;
-        for( var c = 0 ; c < pack.cards().length ; c++ ) {
-          var card = pack.cards()[ c ] ;
+        var cards = packs[ p ].cards() ;
+        for( var c = 0 ; c < cards.length ; c++ ) {
+          var card = cards[ c ] ;
           if( typeof tags === 'undefined' || card.hasTag( tags ) ) {
             result.push( card ) ;
           }
