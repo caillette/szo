@@ -61,28 +61,12 @@ function documentReady() {
       }
     }() ;
 
-    function startComputation( event, parameters ) {
+    function startComputation( event, computation ) {
       start = new Date() ;
       console.debug( 'Starting computation...' ) ;
       computationInProgress( true ) ;
       $( '#board' ).empty() ;
-      parameters.command = 'computation-start' ;
-/*
-      if( event.currentTarget.type == 'checkbox' ) {
-        // If this is a checkbox we let the worker trigger its state change.
-        event.preventDefault() ;
-      }
-*/
 
-      var computation ;
-      switch( parameters.computation ) {
-        case 'long-dummy' :
-          computation = new LongDummyComputation( 10000 ) ;
-          break ;
-        case 'short-dummy' :
-          computation = new ShortDummyComputation() ;
-          break ;
-      }
       currentLoop = new ComputationLoop(
           {
             id : nextComputationId(),
@@ -123,7 +107,7 @@ function documentReady() {
     function addWidgets() {
       $( '<button id="long-dummy-computation" >Multi-step computation</button>' )
           .click( function( event ) {
-              startComputation( event, { computation : 'long-dummy' } ) ;
+              startComputation( event, new LongDummyComputation( 10000 ) ) ;
           } )
           .appendTo( '#top' )
       ;
@@ -134,7 +118,7 @@ function documentReady() {
           + '></input>'
       )
           .click( function( event ) {
-              startComputation( event, { computation : 'short-dummy' } ) ;
+              startComputation( event, new ShortDummyComputation() ) ;
           } )
           .appendTo( '#top' )
       ;
