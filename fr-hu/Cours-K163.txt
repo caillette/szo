@@ -94,4 +94,4 @@ varászol vmit
 rendre (faire devenir) {adjectif/nom}
   Tu me rends heureux.
 tesz {}vé
-  Bodoggá teszel.
+  Boldoggá teszel.
