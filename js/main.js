@@ -11,12 +11,11 @@ function verifyBrowserFeatures( div ) {
     reportHtml( '<p>Google Chrome <b>doesn\'t support file://</b> properly</p>' ) ;
   } else {
     // Workers don't work on Chrome with file:// so we don't send wrong message.
-    for( var i in required ) {
+    for( var i  = 0 ; i < required.length ; i ++ ) {
       var supported = eval( 'Modernizr.' + required[ i ] ) ;
       report( required[ i ], supported ) ;
       allGood = allGood && supported ;
     }
-
   }
 
   // In the future:
@@ -49,94 +48,96 @@ function documentReady() {
     console.debug( 'Initializing ...' ) ;
     var start ;
 
-    var worker = new Worker( 'js/worker.js' ) ;
-    worker.addEventListener(
-      'message',
-      function( e ) {
-
-        switch( e.data.command ) {
-          case 'log' :
-            console.debug( '[Worker] ' + e.data.message ) ;
-            break ;
-          case 'echo' :
-            alert( e.data.message ) ;
-            break ;
-          case 'configure' :
-            console.debug( "Configuring ..." ) ;
-            addWidgets( e.data.widgetDefinitions ) ;
-            console.debug( "Configuration complete." ) ;
-            break ;
-          case 'computation-start' :
-            // Do that only after Worker said it started.
-            // Doing it before doesn't work as there may be still-running computation sending HTML.
-            $( '#board' ).empty() ;
-            break ;
-          case 'computation-progress' :
-            // Re-post to the Worker for triggering next computation batch.
-            worker.postMessage( { command : 'computation-continue' } ) ;
-            $( '#board' ).append( e.data.html ) ;
-            break ;
-          case 'computation-complete' :
-            if( e.data.html ) {
-              // Worker was running a single-step computation.
-              $( '#board' ).html( e.data.html ) ;
-              applyPropertyChanges( e.data.propertyChanges ) ;
-            }
-            computationInProgress( false ) ;
-            setTimeout( function() {
-              console.debug( 'Computation completed in ' + elapsed( start ) + ', DOM updated.' ) ;
-              start = null ;
-            }, 1 ) ; // Delay guarantees this occurs after processing pending DOM updates.
-            break ;
-        }
-
-      },
-      false
-    ) ;
-    worker.postMessage( '' ) ; // Start it up.
-    worker.postMessage( { command : 'configure' } ) ;
-
-    $( '<button>Say hi to Worker</button>' )
-        .click( function() {
-          worker.postMessage( { command : 'echo', message : 'hi' } ) ;
-        } )
-        .appendTo( '#top' )
-    ;
+    addWidgets() ;
 
     function elapsed( start ) {
       return ( new Date() - start ) + ' ms' ;
     }
 
+    var nextComputationId = function() {
+      var computationId = 0 ;
+      return function() {
+        return computationId ++ ;
+      }
+    }() ;
 
     function startComputation( event, parameters ) {
       start = new Date() ;
       console.debug( 'Starting computation...' ) ;
       computationInProgress( true ) ;
+      $( '#board' ).empty() ;
       parameters.command = 'computation-start' ;
-      worker.postMessage( parameters ) ;
       if( event.currentTarget.type == 'checkbox' ) {
         // If this is a checkbox we let the worker trigger its state change.
         event.preventDefault() ;
       }
+
+      var computation ;
+      switch( parameters.computation ) {
+        case 'long-dummy' :
+          computation = new LongDummyComputation( 10000 ) ;
+          break ;
+        case 'short-dummy' :
+          computation = new ShortDummyComputation() ;
+          break ;
+      }
+      currentLoop = new ComputationLoop(
+          {
+            id : nextComputationId(),
+            batchSize : 100,
+            onBatchComplete : function( result ) {
+              $( '#board' ).append( result.html ) ;
+              setTimeout(
+                  function() {
+                    if( currentLoop ) currentLoop = currentLoop.batch() ;
+                  },
+                  1 // Let window thread take a breath.
+              ) ;
+            },
+            onComputationComplete : function( result ) {
+              result = typeof result === 'undefined' ? {} : result ;
+              if( result.html ) {
+                // Worker was running a single-step computation.
+                $( '#board' ).html( result.html ) ;
+                applyPropertyChanges( result.propertyChanges ) ;
+              }
+              currentLoop = null ;
+              computationInProgress( false ) ;
+
+            },
+            log : function( message ) {
+                console.debug( message ) ;
+            }
+          },
+          computation
+      ).batch() ;
+
     }
 
-    function addWidgets( widgetDefinitions ) {
-      for( i in widgetDefinitions ) {
-        var widgetDefinition = widgetDefinitions[ i ] ;
-        var $widget = $( widgetDefinition.html )
-        $widget.appendTo( widgetDefinition.target ) ;
-        if( widgetDefinition.clickParameters ) {
-          // Add only on the first widget, omit checkbox label that comes second.
-          $widget.first().click( function( parameters ) {
-            // Capturing outer value with a JavaScript closure.
-            // This prevents a side-effect messing up parameters.
-            // Normal use of JQuery obtains the same result.
-            return function( event ) {
-              startComputation( event, parameters ) ;
-            } ;
-          }( widgetDefinition.clickParameters ) ) ;
-        }
-      }
+    var currentLoop = null ;
+
+
+    function addWidgets() {
+      $( '<button id="long-dummy-computation" >Multi-step computation</button>' )
+          .click( function( event ) {
+              startComputation( event, { computation : 'long-dummy' } ) ;
+          } )
+          .appendTo( '#top' )
+      ;
+      $( '<input '
+          + 'type="checkbox" '
+          + 'id="short-dummy-computation" '
+          + 'name="short-dummy-computation" '
+          + '></input>'
+      )
+          .click( function( event ) {
+              startComputation( event, { computation : 'short-dummy' } ) ;
+          } )
+          .appendTo( '#top' )
+      ;
+      $( '<label for="short-dummy-computation" >Single-step computation</label>' )
+          .appendTo( '#top' )
+      ;
     }
 
     function applyPropertyChanges( propertyChanges ) {
@@ -151,7 +152,6 @@ function documentReady() {
     function computationInProgress( visible ) {
       $( '#computation-in-progress' )
           .stop( true, true )
-          .delay( visible ? 2 : 0 ) // Delay saves from blinking when computation is quick.
           .animate( { opacity : ( visible ? 1 : 0 ) }, 100 )
       ;
     }
