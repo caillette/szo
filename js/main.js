@@ -71,8 +71,7 @@ function documentReady() {
           {
             id : nextActionId(),
             batchSize : 100,
-            onBatchComplete : function( result ) {
-              $( '#board' ).append( result.html ) ;
+            onBatchComplete : function() {
               setTimeout(
                   function() {
                     if( actionPerformer ) actionPerformer = actionPerformer.perform() ;
@@ -81,16 +80,9 @@ function documentReady() {
               ) ;
             },
             onActionComplete : function( result ) {
-              result = typeof result === 'undefined' ? {} : result ;
-              if( result.html ) {
-                // Worker was running a single-step action.
-                $( '#board' ).html( result.html ) ;
-                applyPropertyChanges( result.propertyChanges ) ;
-              }
               actionPerformer = null ;
               actionInProgress( false ) ;
               console.debug( 'Completed action in ' + elapsed( start ) + '.' ) ;
-
             },
             log : function( message ) {
                 console.debug( message ) ;
@@ -127,14 +119,6 @@ function documentReady() {
       ;
     }
 
-    function applyPropertyChanges( propertyChanges ) {
-      if( propertyChanges ) {
-        for( i in propertyChanges ) {
-          var propertyChange = propertyChanges[ i ] ;
-          $( propertyChange.selector ).prop( propertyChange.propertyName, propertyChange.value ) ;
-        }
-      }
-    }
 
     function actionInProgress( visible ) {
       $( '#action-performing' )

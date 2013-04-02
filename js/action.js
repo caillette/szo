@@ -1,13 +1,14 @@
-// Runs an action that takes several steps to complete.
+// Performs an action that may take several steps to complete.
 // This lets window thread decide to start the next step, or simply not because another action
-// superceded this one.
-// This is useful when selecting a lot of Cards (10.000 or more), one single DOM update would
+// superceded this one. When selecting a lot of Cards (10.000 or more), one single DOM update would
 // choke the browser for several seconds. Instead, small incremental updates, while taking
-// longer in cumulated time, let user adjust his choice before he gets the complete result.
+// longer in cumulated time, let the window thread "breath" and quickly respond to the user
+// adjusting his choice, before the whole result finished a lengthy DOM update.
+// For avoiding too small increments, the ActionPerformer executes steps in batches.
 // The ActionPerformer supports single-stepped actions as a simplification of the multi-step case.
 var ActionPerformer = function() {
 
-  var constructor = function ActionPerformer( context, stepper ) {
+  var constructor = function ActionPerformer( context, action ) {
 
     var batch = 0 ;
     var totalTime = 0 ;
@@ -21,18 +22,19 @@ var ActionPerformer = function() {
 
       var start = new Date() ;
       if( batch == 0 ) context.log( 'Starting action ' + context.id + ' ...' ) ;
-      if( stepper.singleStep ) {
-        context.onActionComplete( stepper.singleStep( context.id ) ) ;
+      if( action.singleStep ) {
+        action.singleStep( context.id ) ;
+        context.onActionComplete() ;
         logCompletion( 'single-step', new Date() - start ) ;
-      } else if( stepper.isComplete() ) {
+      } else if( action.isComplete() ) {
         context.onActionComplete() ;
         logCompletion( 'multi-step', totalTime ) ;
       } else {
         for( var i = 0 ; i < context.batchSize ; i ++ ) {
-          stepper.step( i == 0, context.id, batch ) ;
-          if( stepper.isComplete() ) break ;
+          action.step( i == 0, context.id, batch ) ;
+          if( action.isComplete() ) break ;
         }
-        context.onBatchComplete( stepper.batchResult() ) ;
+        context.onBatchComplete() ;
         batch ++ ;
         totalTime += new Date() - start ;
         return this ;
@@ -50,14 +52,13 @@ var LongDummyAction = function() {
   var constructor = function LongDummyAction( stepCount ) {
 
     var currentStep = 0 ;
-    var html ;
 
     this.isComplete = function() {
       return currentStep >= stepCount ;
     }
 
     this.step = function( newBatch, id, batch ) {
-      if( newBatch ) html = '<p>Initialized ' + this.constructor.name + '</p>' ;
+      var html = newBatch ? '' : '<p>Initialized ' + this.constructor.name + '</p>' ;
 
       html += '<table>' ;
       html += '  <tbody>' ;
@@ -76,12 +77,11 @@ var LongDummyAction = function() {
       html += '  </tbody>' ;
       html += '</table>' ;
       html += '<p></p>' ;
+
+      $( '#board' ).append( html ) ;
       currentStep ++ ;
     }
 
-    this.batchResult = function() {
-      return { html : html } ;
-    }
 
   }
 
@@ -108,9 +108,8 @@ var ShortDummyAction = function() {
       html += '  </tbody>' ;
       html += '</table>' ;
       html += '<p></p>' ;
-      return {
-          html : html
-      } ;
+
+      $( '#board' ).html( html ) ;
     }
   }
 
