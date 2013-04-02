@@ -1,35 +1,31 @@
-// Runs a computation that streams HTML to the main thread (a Worker can't modify the DOM).
-// Because such computation may take time, the main thread may "interrupt" it.
-// But Workers don't directly job cancellation, the computation breaks down itself into steps.
-// The ComputationLoop batches steps execution. When a batch is complete, the ComputationLoop
-// notifies the main thread, passing the new HTML fragment. Then main thread then updates the
-// DOM and sends a message for continuing the computation if possible (a Worker can't post messages
-// to itself). The ComputationLoop sends a message to the main thread upon computation completion.
-// If the main thread wants to interrupt current computation, it just starts another one.
-// The case where the computation occurs in one single step is just a simplification of the
-// multi-step case.
-var ComputationLoop = function() {
+// Runs an action that takes several steps to complete.
+// This lets window thread decide to start the next step, or simply not because another action
+// superceded this one.
+// This is useful when selecting a lot of Cards (10.000 or more), one single DOM update would
+// choke the browser for several seconds. Instead, small incremental updates, while taking
+// longer in cumulated time, let user adjust his choice before he gets the complete result.
+// The ActionPerformer supports single-stepped actions as a simplification of the multi-step case.
+var ActionPerformer = function() {
 
-  var constructor = function ComputationLoop( context, stepper ) {
+  var constructor = function ActionPerformer( context, stepper ) {
 
     var batch = 0 ;
     var totalTime = 0 ;
 
+    this.perform = function() {
 
-    this.batch = function() {
-
-      function logCompletion( computation, totalTime ) {
-        context.log( 'Completed ' + computation + ' computation ' + context.id
+      function logCompletion( action, totalTime ) {
+        context.log( 'ActionPerformer completed ' + action + ' action ' + context.id
             + ' in ' + totalTime + ' ms.' ) ;
       }
 
       var start = new Date() ;
-      if( batch == 0 ) context.log( 'Starting computation ' + context.id + ' ...' ) ;
+      if( batch == 0 ) context.log( 'Starting action ' + context.id + ' ...' ) ;
       if( stepper.singleStep ) {
-        context.onComputationComplete( stepper.singleStep( context.id ) ) ;
+        context.onActionComplete( stepper.singleStep( context.id ) ) ;
         logCompletion( 'single-step', new Date() - start ) ;
       } else if( stepper.isComplete() ) {
-        context.onComputationComplete() ;
+        context.onActionComplete() ;
         logCompletion( 'multi-step', totalTime ) ;
       } else {
         for( var i = 0 ; i < context.batchSize ; i ++ ) {
@@ -41,7 +37,7 @@ var ComputationLoop = function() {
         totalTime += new Date() - start ;
         return this ;
       }
-      return null ; // Computation complete.
+      return null ; // Action complete.
     }
 
   } ;
@@ -49,9 +45,9 @@ var ComputationLoop = function() {
   return constructor ;
 }() ;
 
-var LongDummyComputation = function() {
+var LongDummyAction = function() {
 
-  var constructor = function LongDummyComputation( stepCount ) {
+  var constructor = function LongDummyAction( stepCount ) {
 
     var currentStep = 0 ;
     var html ;
@@ -66,7 +62,7 @@ var LongDummyComputation = function() {
       html += '<table>' ;
       html += '  <tbody>' ;
       html += '    <tr>' ;
-      html += '      <td>Computation</td>' ;
+      html += '      <td>Action</td>' ;
       html += '      <td>' + id + '</td>' ;
       html += '    </tr>' ;
       html += '    <tr>' ;
@@ -93,16 +89,16 @@ var LongDummyComputation = function() {
 }() ;
 
 
-var ShortDummyComputation = function() {
+var ShortDummyAction = function() {
 
-  var constructor = function ShortDummyComputation( flag ) {
+  var constructor = function ShortDummyAction( flag ) {
 
     this.singleStep = function( id ) {
       var html = '<p>Initialized ' + this.constructor.name + '</p>' ;
       html += '<table>' ;
       html += '  <tbody>' ;
       html += '    <tr>' ;
-      html += '      <td>Computation</td>' ;
+      html += '      <td>Action</td>' ;
       html += '      <td>' + id + '</td>' ;
       html += '    </tr>' ;
       html += '    <tr>' ;
@@ -113,14 +109,7 @@ var ShortDummyComputation = function() {
       html += '</table>' ;
       html += '<p></p>' ;
       return {
-          html : html,
-/*
-          propertyChanges : [ {
-              selector : '#short-dummy-computation',
-              propertyName : 'checked',
-              value : true
-          } ]
-*/
+          html : html
       } ;
     }
   }

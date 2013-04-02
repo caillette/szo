@@ -54,75 +54,75 @@ function documentReady() {
       return ( new Date() - start ) + ' ms' ;
     }
 
-    var nextComputationId = function() {
-      var computationId = 0 ;
+    var nextActionId = function() {
+      var actionId = 0 ;
       return function() {
-        return computationId ++ ;
+        return actionId ++ ;
       }
     }() ;
 
-    function startComputation( event, computation ) {
+    function performAction( event, action ) {
       start = new Date() ;
-      console.debug( 'Starting computation...' ) ;
-      computationInProgress( true ) ;
+      console.debug( 'Starting action...' ) ;
+      actionInProgress( true ) ;
       $( '#board' ).empty() ;
 
-      currentLoop = new ComputationLoop(
+      actionPerformer = new ActionPerformer(
           {
-            id : nextComputationId(),
+            id : nextActionId(),
             batchSize : 100,
             onBatchComplete : function( result ) {
               $( '#board' ).append( result.html ) ;
               setTimeout(
                   function() {
-                    if( currentLoop ) currentLoop = currentLoop.batch() ;
+                    if( actionPerformer ) actionPerformer = actionPerformer.perform() ;
                   },
                   1 // Let window thread take a breath.
               ) ;
             },
-            onComputationComplete : function( result ) {
+            onActionComplete : function( result ) {
               result = typeof result === 'undefined' ? {} : result ;
               if( result.html ) {
-                // Worker was running a single-step computation.
+                // Worker was running a single-step action.
                 $( '#board' ).html( result.html ) ;
                 applyPropertyChanges( result.propertyChanges ) ;
               }
-              currentLoop = null ;
-              computationInProgress( false ) ;
-              console.debug( 'Completed computation in ' + elapsed( start ) + '.' ) ;
+              actionPerformer = null ;
+              actionInProgress( false ) ;
+              console.debug( 'Completed action in ' + elapsed( start ) + '.' ) ;
 
             },
             log : function( message ) {
                 console.debug( message ) ;
             }
           },
-          computation
-      ).batch() ;
+          action
+      ).perform() ;
 
     }
 
-    var currentLoop = null ;
+    var actionPerformer = null ;
 
 
     function addWidgets() {
-      $( '<button id="long-dummy-computation" >Multi-step computation</button>' )
+      $( '<button id="multi-step-action" >Multi-step action</button>' )
           .click( function( event ) {
-              startComputation( event, new LongDummyComputation( 10000 ) ) ;
+              performAction( event, new LongDummyAction( 10000 ) ) ;
           } )
           .appendTo( '#top' )
       ;
       $( '<input '
           + 'type="checkbox" '
-          + 'id="short-dummy-computation" '
-          + 'name="short-dummy-computation" '
+          + 'id="single-step-action" '
+          + 'name="single-step-action" '
           + '></input>'
       )
           .click( function( event ) {
-              startComputation( event, new ShortDummyComputation() ) ;
+              performAction( event, new ShortDummyAction() ) ;
           } )
           .appendTo( '#top' )
       ;
-      $( '<label for="short-dummy-computation" >Single-step computation</label>' )
+      $( '<label for="single-step-action" >Single-step action</label>' )
           .appendTo( '#top' )
       ;
     }
@@ -136,10 +136,10 @@ function documentReady() {
       }
     }
 
-    function computationInProgress( visible ) {
-      $( '#computation-in-progress' )
+    function actionInProgress( visible ) {
+      $( '#action-performing' )
           .stop( true, true )
-          .delay( visible ? 2 : 0 ) // Delay saves from blinking when computation is quick.
+          .delay( visible ? 2 : 0 ) // Delay saves from blinking when action is quick.
           .animate( { opacity : ( visible ? 1 : 0 ) }, 100 )
       ;
     }
