@@ -114,11 +114,13 @@ var ShortDummyComputation = function() {
       html += '<p></p>' ;
       return {
           html : html,
+/*
           propertyChanges : [ {
               selector : '#short-dummy-computation',
               propertyName : 'checked',
               value : true
           } ]
+*/
       } ;
     }
   }

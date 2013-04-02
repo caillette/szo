@@ -67,10 +67,12 @@ function documentReady() {
       computationInProgress( true ) ;
       $( '#board' ).empty() ;
       parameters.command = 'computation-start' ;
+/*
       if( event.currentTarget.type == 'checkbox' ) {
         // If this is a checkbox we let the worker trigger its state change.
         event.preventDefault() ;
       }
+*/
 
       var computation ;
       switch( parameters.computation ) {
@@ -103,6 +105,7 @@ function documentReady() {
               }
               currentLoop = null ;
               computationInProgress( false ) ;
+              console.debug( 'Completed computation in ' + elapsed( start ) + '.' ) ;
 
             },
             log : function( message ) {
@@ -152,6 +155,7 @@ function documentReady() {
     function computationInProgress( visible ) {
       $( '#computation-in-progress' )
           .stop( true, true )
+          .delay( visible ? 2 : 0 ) // Delay saves from blinking when computation is quick.
           .animate( { opacity : ( visible ? 1 : 0 ) }, 100 )
       ;
     }
