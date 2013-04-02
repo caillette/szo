@@ -1,7 +1,4 @@
 
-function elapsed( start ) {
-  return ( new Date() - start ) + ' ms' ;
-}
 
 // Seems only needed by IE8 and below.
 // http://stackoverflow.com/a/1181586

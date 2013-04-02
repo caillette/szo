@@ -103,6 +103,11 @@ function documentReady() {
         .appendTo( '#top' )
     ;
 
+    function elapsed( start ) {
+      return ( new Date() - start ) + ' ms' ;
+    }
+
+
     function startComputation( event, parameters ) {
       start = new Date() ;
       console.debug( 'Starting computation...' ) ;
