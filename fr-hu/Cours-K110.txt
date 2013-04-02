@@ -98,7 +98,7 @@ bőr
 trace
   Il ne reste presque pas de traces.
 nyom
-  Szinte semi nyoma sem marad.
+  Szinte semmi nyoma sem marad.
 
 commencer
 kezd

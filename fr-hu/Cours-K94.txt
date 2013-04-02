@@ -6,7 +6,7 @@ század
 région (tout ce qui n'est pas la capitale)
 vidék
 
-une ville du pays qui n'est pas la capitale
+ville (dans un pays donné, à l'exception de la capitale)
 vidék város
 
 se réveiller

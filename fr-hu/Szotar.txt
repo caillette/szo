@@ -753,9 +753,10 @@ réveillé, vigilant
 éber
 
 se réveiller
-  réveiller qqun/qqchose
 ébred
-  ébreszt
+
+réveiller qqun/qqchose
+ébreszt vkit/vmit
 
 la nuit
   dans la nuit
@@ -1837,10 +1838,10 @@ körülbelül
   körülbelül négy órakor
   kb.
 
-remercier pour
-  Kati remercie [hors dialogue] pour le déjeûner : "Merci [dialogue] pour le déjeuner !"
-(meg)kösszönni vmit
-  Megkösszöni Kati az ebédet : "Kösszönöm az ebédet !"
+remercier pour (dialogue)
+  Merci pour le déjeuner !
+kösszön vmit
+  Kösszönöm az ebédet!
 
 être le suivant
 következik
@@ -2199,6 +2200,11 @@ méghozza
 
 goûter (v)
 megkóstol
+
+remercier pour (hors dialogue)
+  Kati remercie pour le déjeûner.
+megkösszön vmit
+  Megkösszöni Kati az ebédet.
 
 visiter
 meglátogatni
@@ -2889,9 +2895,6 @@ sietni
 
 succès, épanouissement
 siker
-
-funiculaire (à Budapest)
-Sikló
 
 bâton de ski
 síléc
