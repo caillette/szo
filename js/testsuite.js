@@ -64,3 +64,19 @@ test( 'Instantiate Vocabulary from predefined Cards', function() {
   equal( v.vocabulary.toString(), 'Vocabulary{1;3;2}', 'Vocabulary\'s toString' ) ;
 } ) ;
 
+
+module( 'Advance' ) ;
+
+function advance1( fixedRandomValue ) {
+  if( typeof fixedRandomValue === 'undefined' ) {
+    fixedRandomValue = 0 ;
+  }
+  return new Advance( vocabulary1(), '', function() { return fixedRandomValue ; } ) ;
+}
+
+test( 'viewAsList', function() {
+  var a = advance1() ;
+  ok( a.viewAsList( true ) ) ;
+  ok( ! a.viewAsList( false ) ) ;
+} ) ;
+
