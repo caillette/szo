@@ -1,14 +1,34 @@
 
 function documentReady() {
 
-  var capabilities = verifyBrowserFeatures( '#browser-features' ) ;
-  if( capabilities.capable ) {
-    $( '#browser-features' ).hide() ;
+  if( new BrowserCapabilities( '#browser-capabilities' ).capable() ) {
+    $( '#browser-capabilities' ).hide() ;
 
     console.debug( 'Initializing ...' ) ;
     var start ;
 
-    addWidgets() ;
+    { // Firefox 19.0.2 wants this code block here.
+      $( '<button id="multi-step-action" >Multi-step action</button>' )
+          .click( function( event ) {
+              performAction( event, new LongDummyAction( 10000 ) ) ;
+          } )
+          .appendTo( '#top' )
+      ;
+      $( '<input '
+          + 'type="checkbox" '
+          + 'id="single-step-action" '
+          + 'name="single-step-action" '
+          + '></input>'
+      )
+          .click( function( event ) {
+              performAction( event, new ShortDummyAction() ) ;
+          } )
+          .appendTo( '#top' )
+      ;
+      $( '<label for="single-step-action" >Single-step action</label>' )
+          .appendTo( '#top' )
+      ;
+    }
 
     function elapsed( start ) {
       return ( new Date() - start ) + ' ms' ;
@@ -56,28 +76,6 @@ function documentReady() {
     var actionPerformer = null ;
 
 
-    function addWidgets() {
-      $( '<button id="multi-step-action" >Multi-step action</button>' )
-          .click( function( event ) {
-              performAction( event, new LongDummyAction( 10000 ) ) ;
-          } )
-          .appendTo( '#top' )
-      ;
-      $( '<input '
-          + 'type="checkbox" '
-          + 'id="single-step-action" '
-          + 'name="single-step-action" '
-          + '></input>'
-      )
-          .click( function( event ) {
-              performAction( event, new ShortDummyAction() ) ;
-          } )
-          .appendTo( '#top' )
-      ;
-      $( '<label for="single-step-action" >Single-step action</label>' )
-          .appendTo( '#top' )
-      ;
-    }
 
 
     function actionInProgress( visible ) {
