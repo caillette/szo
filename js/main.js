@@ -49,7 +49,7 @@ function documentReady() {
 
       actionPerformer = new ActionPerformer(
           {
-            id : nextActionId(),
+            id : nextActionId(), // Just for debugging.
             batchSize : 100,
             onBatchComplete : function() {
               setTimeout(

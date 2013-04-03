@@ -21,7 +21,7 @@ var ActionPerformer = function() {
       }
 
       var start = new Date() ;
-      if( batch == 0 ) context.log( 'Starting action ' + context.id + ' ...' ) ;
+      if( batch == 0 ) context.log( 'ActionPerformer starting action ' + context.id + ' ...' ) ;
       if( action.singleStep ) {
         action.singleStep( context.id ) ;
         context.onActionComplete() ;
