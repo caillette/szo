@@ -59,6 +59,11 @@ var Pack = function() {
 var Card = function() {
 
   var constructor = function Card( questions, answers, tags, pack, lineInPack ) {
+    if( ! isArray( questions ) ) throw 'Not an array: ' + questions ;
+    if( ! isArray( answers ) ) throw 'Not an array: ' + answers ;
+    if( tags === null ) tags = [] ;
+    if( typeof tags === 'string' ) tags = [ tags ] ;
+
     this.tags = function() {
       return tags ;
     }
@@ -67,6 +72,12 @@ var Card = function() {
     }
     this.lineInPack = function() {
       return lineInPack ;
+    }
+    this.questions = function() {
+      return questions.slice( 0 ) ;
+    }
+    this.answers = function() {
+      return answers.slice( 0 ) ;
     }
   }
 
@@ -79,8 +90,9 @@ var Card = function() {
   }
 
   // tag: one of the following.
-  // - An array of non-null Strings representing tags.
+  // - A non-empty array of non-null Strings representing tags.
   //   This method returns true if at least one of the given tags appears in the Card.
+  // - An empty array. This methods returns true.
   // - A String representing a tag. Method returns true if Card has this tag.
   // - null. Method returns true if Card has no tag at all.
   constructor.prototype.hasTag = function( tag ) {
@@ -89,9 +101,13 @@ var Card = function() {
     } else if( typeof tag === 'string' ) {
       return this.tags().indexOf( tag ) >= 0 ;
     } else if( isArray( tag ) ) {
-      for( var t = 0 ; t < tag.length ; t++ ) {
-        if( this.hasTag( tag[ t ] ) ) {
-          return true ;
+      if( tag.length === 0 ) {
+        return true ;
+      } else {
+        for( var t = 0 ; t < tag.length ; t++ ) {
+          if( this.hasTag( tag[ t ] ) ) {
+            return true ;
+          }
         }
       }
     } else {

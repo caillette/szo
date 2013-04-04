@@ -17,7 +17,7 @@ var Advance = function() {
     var cards = [] ;
     var currentCard = null ;
     var disclosure = 0 ;
-    var viewAsList = false ;
+    var asList ;
 
     // TODO use uriParameters.
 
@@ -26,8 +26,12 @@ var Advance = function() {
     this.selectTags = function( tags ) {
       if( typeof tags === 'string' ) {
         this.tags = [ tags ] ;
-      } else {
+      } else if( isArray( tags ) ) {
         this.tags = tags.slice( 0 ) ;
+      } else if( tags === null ) {
+        tags = null ;
+      } else {
+        throw 'Unsupported: ' + tags ;
       }
       var previousCard = currentCard ;
       currentCard = null ;
@@ -40,37 +44,52 @@ var Advance = function() {
           currentCard = previousCard ;
         }
       }
-      if( currentCard == null ) pickRandomCard() ;
+      if( currentCard == null ) this.pickRandomCard() ;
     }
 
     this.pickRandomCard = function() {
-      throw 'Not implemented' ;
+      disclosure = 0 ;
+      currentCard = cards === null ? null : cards[ random( cards.length ) ] ;
     }
 
     // Returns a Card object when switching to the next Card (may be null).
     // When disclosing the next answer, returns 0 or greater as answer index.
     this.nextAnswerOrCard = function() {
-      if( this.viewAsList() ) throw 'Illegal state: viewing as a list' ;
-      throw 'Not implemented' ;
+      checkViewAsList( false ) ;
+      if( ! currentCard || disclosure >= currentCard.answers().length ) {
+        this.pickRandomCard() ;
+      } else {
+        disclosure ++ ;
+      }
+      return disclosure ;
     }
 
     // Returns the Card instance corresponding to the current Card.
-    // Returns null if viewing as a list or if there is no Card selected.
+    // Returns null if there is no Card selected.
     this.currentCard = function() {
-      throw 'Not implemented' ;
+      checkViewAsList( false ) ;
+      return currentCard ;
     }
 
     this.disclosure = function() {
+      checkViewAsList( false ) ;
       if( this.currentCard() == null ) throw 'No current Card' ;
-      if( disclosure < 0 ) throw 'Internal error, disclosure=' + disclosure ;
+      if( disclosure < 0 ) throw 'Internal error: disclosure=' + disclosure ;
       return disclosure ;
     }
 
     // asList: boolean, optional, method has no side-effect if asList is not set.
     // Returns the updated value.
-    this.viewAsList = function( asList ) {
-      if( typeof asList != 'undefined' ) {
-        viewAsList = asList ;
+    this.viewAsList = function( viewAsList ) {
+      var oldAsList = asList ;
+      if( typeof viewAsList === 'boolean' ) {
+        asList = viewAsList ;
+      }
+      if( asList ) {
+        currentCard = null ;
+        disclosure = -1 ;
+      } else if( oldAsList ) {
+        this.pickRandomCard() ;
       }
       return asList ;
     }
@@ -90,6 +109,14 @@ var Advance = function() {
         visitor( cards[ c ] ) ;
       }
     }
+
+    function checkViewAsList( expected ) {
+      if( asList != expected ) throw 'Unexpected state: currently viewing as list' ;
+    }
+
+    // Show all the Cards as a list.
+    this.selectTags( [] ) ;
+    this.viewAsList( true ) ;
 
   }
   return constructor ;
