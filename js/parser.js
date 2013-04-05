@@ -83,11 +83,14 @@ Parser.createParsers = function( grammarSourceUris, onCompletion ) {
   }
 }
 
-Parser.PACK_GRAMMAR_URI = 'js/pack.peg.txt' ;
 Parser.VOCABULARY_GRAMMAR_URI = 'js/vocabulary.peg.txt' ;
+Parser.PACK_GRAMMAR_URI = 'js/pack.peg.txt' ;
 
 Parser.createDefaultParsers = function( onCompletion ) {
-  Parser.createParsers( [ Parser.VOCABULARY_GRAMMAR_URI, Parser.PACK_GRAMMAR_URI ], onCompletion ) ;
+  Parser.createParsers(
+      [ Parser.VOCABULARY_GRAMMAR_URI, Parser.PACK_GRAMMAR_URI ],
+      onCompletion
+  ) ;
 }
 
 
