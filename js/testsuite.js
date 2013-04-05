@@ -127,6 +127,8 @@ asyncTest( 'Can\'t parse grammar', function() {
   ) ;
 } ) ;
 
+module( 'Grammar' ) ;
+
 function parseEqual( testName, text, tree ) {
   test( testName, function() {
     expect( 1 ) ;
@@ -175,11 +177,32 @@ parseEqual( 'Canonical Card',
           ]
       ]
   ]
-)
+) ;
+
+parseEqual( 'Empty Card',
+  ''
+  ,
+  [
+      [],
+      [],
+      []
+  ]
+) ;
+
+parseEqual( 'Empty Card with whitespaces and line breaks',
+  '  \n\n \n'
+  ,
+  [
+      [],
+      [],
+      []
+  ]
+) ;
 
 parseEqual( 'Minimal Card',
     'Q\n'
-  + 'A',
+  + 'A'
+  ,
   [
       [],
       [],
@@ -191,4 +214,25 @@ parseEqual( 'Minimal Card',
           ]
       ]
   ]
-)
+) ;
+
+parseEqual( 'Minimal Card surrounded by blanks',
+    '\n'
+  + ' \n'
+  + 'Q \n'
+  + 'A  \n'
+  + ' \n'
+  ,
+  [
+      [],
+      [],
+      [
+          [
+              [],
+              [ 'Q' ],
+              [ 'A' ]
+          ]
+      ]
+  ]
+) ;
+
