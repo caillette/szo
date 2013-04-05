@@ -20,7 +20,10 @@ var Parser = function() {
     }
 
     this.parse = function( text ) {
-      return this.healthy() ? pegParser.parse( text ) : 'PEG parser did not initialize properly' ;
+      return this.healthy()
+          ? pegParser.parse( text )
+          : 'PEG parser instantiation failed: ' + problem
+      ;
     } ;
 
     this.healthy = function() {
