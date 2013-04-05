@@ -92,3 +92,46 @@ test( 'nextAnswerOrCard', function() {
   equal( a.currentCard().lineInPack(), v.card2.lineInPack(), 'currentCard' ) ;
 } ) ;
 
+
+
+module( 'Parser' )
+
+asyncTest( 'Simple parser loading', function() {
+  var parser = new Parser(
+      function() {
+          ok( parser.loaded(), 'parser loaded' ) ;
+          deepEqual( parser.parse( 'A' ), 'A', 'simple parsing' ) ;
+          start() ;
+      },
+      URL.createObjectURL( new Blob( [ 'a = "A" ' ] ) ) // No real need to revoke.
+  ) ;
+} ) ;
+
+asyncTest( 'Can\' load grammar', function() {
+  new Parser(
+      function( parser ) {
+          try {
+            parser.parse( 'A' ) ;
+          } catch( e ) {
+            equal( e, '', 'parsing exception')
+            start() ;
+          }
+      },
+      'bad:url'
+  ) ;
+} ) ;
+
+asyncTest( 'Failed parser loading', function() {
+  var parser = new Parser(
+      function() {
+          ok( parser.loaded(), 'parser loaded' ) ;
+          try {
+            parser.parse( 'A' ) ;
+          } catch( e ) {
+            equal( e, '', 'parsing exception')
+            start() ;
+          }
+      },
+      URL.createObjectURL( new Blob( [ 'bad grammar' ] ) ) // No real need to revoke.
+  ) ;
+} ) ;
