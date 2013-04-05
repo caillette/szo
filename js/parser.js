@@ -24,8 +24,6 @@ var Parser = function() {
 }() ;
 
 Parser.createParser = function( grammarSourceUri, onCompletion ) {
-  var parser ;
-
   $.get( grammarSourceUri, function( parserSource ) {
     try {
       onCompletion( new Parser( parserSource ) ) ;
@@ -34,9 +32,31 @@ Parser.createParser = function( grammarSourceUri, onCompletion ) {
     }
   } )
   .fail( function( jqXhr, textStatus, errorThrown ) {
-    maybeParser = 'Could not load parser source: ' + textStatus + ' ' + errorThrown ;
     onCompletion( null ) ;
   } ) ;
   // JQuery already logs failed GET errors.
+}
+
+Parser.createParsers = function( grammarSourceUris, onCompletion ) {
+
+  var parsers = new Array( grammarSourceUris.length ) ;
+  var completion = 0 ;
+
+  // Emulates a counting semaphore which calls 'onCompletion' after loading all the grammars.
+  // Grammar loading occurs in parallel with AJAX.
+  for( var i = 0 ; i < grammarSourceUris.length ; i ++ ) {
+    Parser.createParser(
+        grammarSourceUris[ i ],
+        function( index ) {
+          return function( parser ) {
+            parsers[ index ] = parser ;
+            completion ++ ;
+            if( completion == grammarSourceUris.length ) {
+              onCompletion( parsers ) ;
+            }
+          } ;
+        }( i )
+    ) ;
+  }
 }
 
