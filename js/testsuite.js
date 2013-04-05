@@ -98,52 +98,60 @@ module( 'Parser' )
 
 asyncTest( 'Simple parser loading', function() {
   Parser.createParser(
+      URL.createObjectURL( new Blob( [ 'a = "A" ' ] ) ), // No real need to revoke.
       function( parser ) {
         deepEqual( parser.parse( 'A' ), 'A', 'simple parsing' ) ;
         start() ;
-      },
-      URL.createObjectURL( new Blob( [ 'a = "A" ' ] ) ) // No real need to revoke.
+      }
   ) ;
 } ) ;
 
 
 asyncTest( 'Can\'t load grammar', function() {
   Parser.createParser(
+      'bad:url',
       function( parser ) {
         equal( parser, null, 'null parser' ) ;
         start() ;
-      },
-      'bad:url'
+      }
   ) ;
 } ) ;
 
 asyncTest( 'Can\'t parse grammar', function() {
   Parser.createParser(
+      URL.createObjectURL( new Blob( [ 'bad grammar' ] ) ), // No real need to revoke.
       function( parser ) {
         equal( parser, null, 'null parser' ) ;
         start() ;
-      },
-      URL.createObjectURL( new Blob( [ 'bad grammar' ] ) ) // No real need to revoke.
+      }
   ) ;
 } ) ;
 
-module( 'Grammar' ) ;
+module( 'Pack grammar' ) ;
 
-function parseEqual( testName, text, tree ) {
+function parseEqual( testName, grammarUri, text, tree ) {
   test( testName, function() {
     expect( 1 ) ;
     stop() ;
     Parser.createParser(
+        grammarUri,
         function( parser ) {
           deepEqual( parser.parse( text ), tree, 'text parsing' ) ;
           start() ;
-        },
-        'peg.txt'
+        }
     ) ;
   } ) ;
 }
 
-parseEqual( 'Canonical Card',
+function parsePackEqual( testName, text, tree ) {
+  parseEqual( testName, 'pack.peg.txt', text, tree ) ;
+}
+
+function parseVocabularyEqual( testName, text, tree ) {
+  parseEqual( testName, 'vocabulary.peg.txt', text, tree ) ;
+}
+
+parsePackEqual( 'Canonical Pack',
     'd1:v1\n'
   + 'd2:v2'
   + '\n'
@@ -179,7 +187,7 @@ parseEqual( 'Canonical Card',
   ]
 ) ;
 
-parseEqual( 'Empty Card',
+parsePackEqual( 'Empty Pack',
   ''
   ,
   [
@@ -189,7 +197,7 @@ parseEqual( 'Empty Card',
   ]
 ) ;
 
-parseEqual( 'Empty Card with whitespaces and line breaks',
+parsePackEqual( 'Empty Pack with whitespaces and line breaks',
   '  \n\n \n'
   ,
   [
@@ -199,7 +207,7 @@ parseEqual( 'Empty Card with whitespaces and line breaks',
   ]
 ) ;
 
-parseEqual( 'Minimal Card',
+parsePackEqual( 'Minimal Card',
     'Q\n'
   + 'A'
   ,
@@ -216,7 +224,7 @@ parseEqual( 'Minimal Card',
   ]
 ) ;
 
-parseEqual( 'Minimal Card surrounded by blanks',
+parsePackEqual( 'Minimal Card surrounded by blanks',
     '\n'
   + ' \n'
   + 'Q \n'
@@ -235,4 +243,17 @@ parseEqual( 'Minimal Card surrounded by blanks',
       ]
   ]
 ) ;
+
+module( 'Vocabulary list grammar' ) ;
+
+parseVocabularyEqual( 'Simple Vocabulary list',
+    'x.txt\n'
+  + 'x/yz.txt'
+  ,
+  [
+      'x.txt',
+      'x/yz.txt'
+  ]
+) ;
+
 

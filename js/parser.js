@@ -23,8 +23,7 @@ var Parser = function() {
 
 }() ;
 
-Parser.createParser = function( onCompletion, grammarSourceUri ) {
-  grammarSourceUri = typeof grammarSourceUri === 'undefined' ? 'js/peg.txt' : grammarSourceUri ;
+Parser.createParser = function( grammarSourceUri, onCompletion ) {
   var parser ;
 
   $.get( grammarSourceUri, function( parserSource ) {
