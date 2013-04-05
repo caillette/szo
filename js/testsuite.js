@@ -129,8 +129,7 @@ asyncTest( 'Can\'t parse grammar', function() {
 } ) ;
 
 asyncTest( 'Parallel parser loading', function() {
-  Parser.createParsers(
-      [ 'pack.peg.txt', 'vocabulary.peg.txt' ],
+  Parser.createDefaultParsers(
       function( parsers ) {
         equal( parsers.length, 2, 'Parser count' ) ;
         ok( parsers[ 0 ] != null, 'Non-null parser[ 0 ]' ) ;
@@ -158,7 +157,7 @@ function parseEqual( testName, grammarUri, text, tree ) {
 }
 
 function parsePackEqual( testName, text, tree ) {
-  parseEqual( testName, 'pack.peg.txt', text, tree ) ;
+  parseEqual( testName, Parser.PACK_GRAMMAR_URI, text, tree ) ;
 }
 
 parsePackEqual( 'Canonical Pack',
@@ -257,7 +256,7 @@ parsePackEqual( 'Minimal Card surrounded by blanks',
 module( 'Vocabulary list grammar' ) ;
 
 function parseVocabularyEqual( testName, text, tree ) {
-  parseEqual( testName, 'vocabulary.peg.txt', text, tree ) ;
+  parseEqual( testName, Parser.VOCABULARY_GRAMMAR_URI, text, tree ) ;
 }
 
 parseVocabularyEqual( 'Simple Vocabulary list',
