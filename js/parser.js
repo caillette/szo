@@ -2,6 +2,14 @@
 // Because grammar loading occurs with AJAX there must be a callback to tell it's ready.
 var Parser = function() {
 
+  function pegExceptionToString( e, uri ) {
+    return e.toString()
+        + ' @'
+        + ( typeof uri === 'undefined' ? '' : uri + ':' )
+        + ( e.line ? e.line : '?' ) + ':' + ( e.column ? e.column : '?' )
+    ;
+  }
+
   var constructor = function Parser( grammar, uri ) {
 
     var pegParser ;
@@ -11,11 +19,7 @@ var Parser = function() {
       pegParser = PEG.buildParser( grammar ) ;
     } catch( e ) {
       pegParser = null ;
-      problem = e.toString()
-          + ' @'
-          + ( typeof uri === 'undefined' ? '' : uri + ':' )
-          + ( e.line ? e.line : '?' ) + ':' + ( e.column ? e.column : '?' )
-      ;
+      problem = pegExceptionToString( e, uri ) ;
       window.console.error( problem ) ;
     }
 
@@ -48,6 +52,7 @@ Parser.createParser = function( grammarSourceUri, onCompletion ) {
   } ) ;
   // JQuery already logs failed GET errors.
 }
+
 
 Parser.createParsers = function( grammarSourceUris, onCompletion ) {
 
