@@ -1,0 +1,42 @@
+// PEG.js grammar
+// http://pegjs.majda.cz/online
+
+cards =
+  first : card 
+  rest : ( bigbreak card : card { return card } )*
+  bigbreak*
+  { return [ first ].concat( rest ) }
+
+card =
+  tags : tags?
+  questions : side 
+  smallbreak
+  answers : side
+  { return [ tags, questions, answers ] }
+
+tags = 
+    tags : ( ' '+ tag : tag { return tag } )* 
+    ' '* smallbreak 
+    { return tags }
+
+tag = '@' name : [0-9a-zA-Z\-_/]+ { return name.join( '' ) }
+
+side =
+  first : line
+  rest : ( smallbreak ' '+ line : line { return line } )*
+  { return [ first ].concat( rest ) }
+
+line = 
+    first : character 
+    rest : ( 
+        space : ' '* 
+        c : character { return space.concat( c ).join( '' ) } 
+    )* 
+    ' '*
+    { return first + rest.join( '' ) }
+
+character = [0-9a-zA-Z]
+
+smallbreak = '\n'
+
+bigbreak = '\n' ( ' ' * '\n' )*
