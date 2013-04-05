@@ -33,6 +33,10 @@ var Parser = function() {
     this.healthy = function() {
       return pegParser != null ;
     }
+
+    this.problem = function() {
+      return problem === null ? '' : problem ;
+    }
   } ;
 
   return constructor ;
@@ -42,7 +46,9 @@ var Parser = function() {
 Parser.createParser = function( grammarSourceUri, onCompletion ) {
   $.get( grammarSourceUri, function( parserSource ) {
     try {
-      onCompletion( new Parser( parserSource, grammarSourceUri ) ) ;
+      var parser = new Parser( parserSource, grammarSourceUri ) ;
+      window.console.debug( 'Successfully created parser from ' + grammarSourceUri ) ;
+      onCompletion( parser ) ;
     } catch( e ) {
       onCompletion( null ) ;
     }

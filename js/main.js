@@ -5,6 +5,28 @@ function documentReady() {
     $( '#browser-capabilities' ).hide() ;
 
     console.debug( 'Initializing ...' ) ;
+
+    Parser.createDefaultParsers(
+        function( parsers ) {
+          var parsersHealthy = true ;
+          for( p = 0 ; p < parsers.length ; p ++ ) {
+            if( ! parsers[ p ].healthy() ) {
+              $( '#problems' ).append( '<p>' + parsers[ p ].problem() + '</p>')
+              parsersHealthy = false ;
+            }
+          }
+
+          if( parsersHealthy ) {
+            configureWidgets() ;
+            console.log( 'Initialization complete.' ) ;
+          }
+
+        }
+    ) ;
+
+  }
+
+  function configureWidgets() {
     var start ;
 
     { // Firefox 19.0.2 wants this code block here.
@@ -86,8 +108,9 @@ function documentReady() {
       ;
     }
 
-    console.log( 'Initialization complete.' ) ;
+
   }
+
 
 }
 
