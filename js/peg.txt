@@ -4,11 +4,16 @@ pack =
     emptyline* 
     descriptors : descriptors?
     globaltags : globaltags?
-    cards : cards 
-    { return [ ( descriptors === '' ? [] : descriptors ), globaltags, cards ] }
+    cards : cards?
+    { return [ 
+        ( descriptors === '' ? [] : descriptors ), 
+        ( globaltags === '' ? [] : globaltags ), 
+        ( cards === '' ? [] : cards )
+      ] 
+    }
 
 
-descriptors 'descriptors' = 
+descriptors 'descriptors ("key:value", each on one line)' = 
   first : descriptor 
   rest : ( bigbreak+ descriptor : descriptor { return descriptor } )*
   bigbreak*
@@ -17,7 +22,7 @@ descriptors 'descriptors' =
 descriptor 'descriptor (key:value)' = 
   name : [0-9a-zA-Z-_]+ ':' value : line { return [ name.join( '' ), value ] }
 
-globaltags = 
+globaltags 'Global tags (@T1 @T2 ... ) (on one line, no indent)' = 
   tags : tags bigbreak
   { return tags }
 
@@ -34,14 +39,14 @@ card 'Card (tags, questions, answers)'=
   answers : side
   { return [ tagline === '' ? [] : tagline, questions, answers ] }
 
-tagline 'Tag line ( @tag1 @tag2 ...)' =
+tagline 'Tag line ( @tag1 @tag2 ...) (on one line, indented)' =
   ' '+ tags : tags smallbreak
   { return tags }
 
 tags 'Tags (@tag1 @tag2 ...)' = 
   first : tag
   rest : ( ' '+ tag : tag { return tag } )*
-  ' '* smallbreak 
+  ' '* 
   { return [ first ].concat( rest ) }
 
 tag '("@tagname", separated by spaces)' = 
