@@ -1,7 +1,12 @@
 // PEG.js grammar for Szótárgép
 // http://pegjs.majda.cz/online
-pack = bigbreak* cards : cards { return cards }
+pack = emptyline* cards : cards { return cards }
 
+/*
+descriptors =
+  first : descriptor 
+  rest : descriptor
+*/
 cards =
   first : card 
   rest : ( bigbreak+ card : card { return card } )*
@@ -41,3 +46,5 @@ character = [0-9a-zA-Z]
 smallbreak = '\n'
 
 bigbreak = '\n' ( ' ' * '\n' )*
+
+emptyline = ' ' * '\n' 
