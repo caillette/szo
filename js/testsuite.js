@@ -127,3 +127,68 @@ asyncTest( 'Can\'t parse grammar', function() {
   ) ;
 } ) ;
 
+function parseEqual( testName, text, tree ) {
+  test( testName, function() {
+    expect( 1 ) ;
+    stop() ;
+    Parser.createParser(
+        function( parser ) {
+          deepEqual( parser.parse( text ), tree, 'text parsing' ) ;
+          start() ;
+        },
+        'peg.txt'
+    ) ;
+  } ) ;
+}
+
+parseEqual( 'Canonical Card',
+    'd1:v1\n'
+  + 'd2:v2'
+  + '\n'
+  + '@T1 @T2\n'
+  + '\n'
+  + '  @t @tt\n'
+  + 'Q1\n'
+  + '  q1\n'
+  + 'A1\n'
+  + '  a1\n'
+  + '\n'
+  + 'Q2\n'
+  + 'A2\n'
+  ,
+  [
+      [
+          [ 'd1', 'v1' ],
+          [ 'd2', 'v2' ]
+      ],
+      [ 'T1', 'T2' ],
+      [
+          [
+              [ 't', 'tt' ],
+              [ 'Q1', 'q1' ],
+              [ 'A1', 'a1' ]
+          ],
+          [
+              [],
+              [ 'Q2' ],
+              [ 'A2' ]
+          ]
+      ]
+  ]
+)
+
+parseEqual( 'Minimal Card',
+    'Q\n'
+  + 'A',
+  [
+      [],
+      [],
+      [
+          [
+              [],
+              [ 'Q' ],
+              [ 'A' ]
+          ]
+      ]
+  ]
+)
