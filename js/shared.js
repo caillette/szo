@@ -26,3 +26,24 @@ Array.prototype.remove = function( from, to ) {
 function isArray( object ) {
   return Object.prototype.toString.apply( object ) === '[object Array]' ;
 }
+
+// [ sources ] -> constructor( source, callback ) -> onCompletion[ results ]
+function semaphore( sources, constructor, onCompletion ) {
+  var results = new Array( sources.length ) ;
+  var completion = 0 ;
+
+  for( var i = 0 ; i < sources.length ; i ++ ) {
+    constructor(
+        sources[ i ],
+        function( index ) {
+          return function( result ) {
+            results[ index ] = result ;
+            completion ++ ;
+            if( completion == sources.length ) {
+              onCompletion( results ) ;
+            }
+          } ;
+        }( i )
+    ) ;
+  }
+}

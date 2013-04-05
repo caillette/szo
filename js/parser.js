@@ -45,6 +45,7 @@ var Parser = function() {
 
 Parser.createParser = function( grammarSourceUri, onCompletion ) {
   $.get( grammarSourceUri, function( parserSource ) {
+  // TODO: instantiate a non-healthy Parser carrying the problem for further reporting.
     try {
       var parser = new Parser( parserSource, grammarSourceUri ) ;
       window.console.debug( 'Successfully created parser from ' + grammarSourceUri ) ;
@@ -60,28 +61,17 @@ Parser.createParser = function( grammarSourceUri, onCompletion ) {
 }
 
 
-Parser.createParsers = function( grammarSourceUris, onCompletion ) {
-
-  var parsers = new Array( grammarSourceUris.length ) ;
-  var completion = 0 ;
-
-  // Emulates a counting semaphore which calls 'onCompletion' after loading all the grammars.
-  // Grammar loading occurs in parallel with AJAX.
-  for( var i = 0 ; i < grammarSourceUris.length ; i ++ ) {
-    Parser.createParser(
-        grammarSourceUris[ i ],
-        function( index ) {
-          return function( parser ) {
-            parsers[ index ] = parser ;
-            completion ++ ;
-            if( completion == grammarSourceUris.length ) {
-              onCompletion( parsers ) ;
-            }
-          } ;
-        }( i )
-    ) ;
-  }
+Parser.createParsers = function( grammarSourceUris, onGeneralCompletion ) {
+  semaphore(
+      grammarSourceUris,
+      function( grammarSourceUri, onSingleCompletion ) {
+        return Parser.createParser( grammarSourceUri, onSingleCompletion ) ;
+      },
+      onGeneralCompletion
+  ) ;
 }
+
+
 
 Parser.VOCABULARY_GRAMMAR_URI = 'js/vocabulary.peg.txt' ;
 Parser.PACK_GRAMMAR_URI = 'js/pack.peg.txt' ;
