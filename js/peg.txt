@@ -2,40 +2,46 @@
 // http://pegjs.majda.cz/online
 pack = 
     emptyline* 
-    ( descriptors : descriptors { return descriptors } )?
-//    ( tags emptyline* )?
-    cards : cards { return cards }
+    descriptors : descriptors
+    globaltags : ( tags emptyline+ )?
+    cards : cards 
+    { return [ descriptors, globaltags, cards ] }
 
 
-descriptors =
+descriptors 'descriptors' = 
   first : descriptor 
   rest : ( bigbreak+ descriptor : descriptor { return descriptor } )*
   bigbreak*
   { return [ first ].concat( rest ) }
 
-descriptor = name : [0-9a-zA-Z-_]+ ':' value : line { return [ name, value ] }
+descriptor 'descriptor (key:value)' = 
+  name : [0-9a-zA-Z-_]+ ':' value : line { return [ name, value ] }
 
 
-cards =
+cards 'Cards' =
   first : card 
   rest : ( bigbreak+ card : card { return card } )*
   bigbreak*
   { return [ first ].concat( rest ) }
 
-card =
-  tags : tags?
+card 'Card (tags, questions, answers)'=
+  tagline : tagline
   questions : side 
   smallbreak
   answers : side
-  { return [ tags === '' ? [] : tags, questions, answers ] }
+  { return [ tagline === '' ? [] : tagline, questions, answers ] }
 
+tagline 'Tag line ( @tag1 @tag2 ...)' =
+  ' '+ tags : tags { return tags }
 
-tags = 
-    tags : ( ' '+ tag : tag { return tag } )* 
-    ' '* smallbreak 
-    { return tags }
+tags 'Tags (@tag1 @tag2 ...)' = 
+  first : tag
+  rest : ( ' '+ tag { return tag } )*
+  ' '* smallbreak 
+  { return [ first ].concat( rest ) }
 
-tag = '@' name : [0-9a-zA-Z\-_/]+ { return name.join( '' ) }
+tag '("@tagname", separated by spaces)' = 
+  '@' name : [0-9a-zA-Z\-_/]+ { return name.join( '' ) }
 
 
 side =
@@ -59,4 +65,4 @@ smallbreak = '\n'
 
 bigbreak = '\n' ( ' ' * '\n' )*
 
-emptyline = ' ' * '\n' 
+emptyline 'empty line' = ' ' * '\n' 
