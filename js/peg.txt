@@ -5,7 +5,7 @@ pack =
     descriptors : descriptors?
     globaltags : globaltags?
     cards : cards 
-    { return [ descriptors, globaltags, cards ] }
+    { return [ ( descriptors === '' ? [] : descriptors ), globaltags, cards ] }
 
 
 descriptors 'descriptors' = 
@@ -15,7 +15,7 @@ descriptors 'descriptors' =
   { return [ first ].concat( rest ) }
 
 descriptor 'descriptor (key:value)' = 
-  name : [0-9a-zA-Z-_]+ ':' value : line { return [ name, value ] }
+  name : [0-9a-zA-Z-_]+ ':' value : line { return [ name.join( '' ), value ] }
 
 globaltags = 
   tags : tags bigbreak
