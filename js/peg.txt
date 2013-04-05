@@ -1,9 +1,10 @@
 // PEG.js grammar for Szótárgép
 // http://pegjs.majda.cz/online
+pack = bigbreak* cards : cards { return cards }
 
 cards =
   first : card 
-  rest : ( bigbreak card : card { return card } )*
+  rest : ( bigbreak+ card : card { return card } )*
   bigbreak*
   { return [ first ].concat( rest ) }
 
@@ -12,7 +13,7 @@ card =
   questions : side 
   smallbreak
   answers : side
-  { return [ tags, questions, answers ] }
+  { return [ tags === '' ? [] : tags, questions, answers ] }
 
 tags = 
     tags : ( ' '+ tag : tag { return tag } )* 
