@@ -2,21 +2,30 @@
 // Because grammar loading occurs with AJAX there must be a callback to tell it's ready.
 var Parser = function() {
 
-  var constructor = function Parser( grammar ) {
+  var constructor = function Parser( grammar, uri ) {
 
     var pegParser ;
+    var problem = null ;
 
     try {
       pegParser = PEG.buildParser( grammar ) ;
     } catch( e ) {
       pegParser = null ;
-      window.console.error( e ) ;
-      throw e ;
+      problem = e.toString()
+          + ' @'
+          + ( typeof uri === 'undefined' ? '' : uri + ':' )
+          + ( e.line ? e.line : '?' ) + ':' + ( e.column ? e.column : '?' )
+      ;
+      window.console.error( problem ) ;
     }
 
     this.parse = function( text ) {
-      return pegParser.parse( text ) ;
+      return this.healthy() ? pegParser.parse( text ) : 'PEG parser did not initialize properly' ;
     } ;
+
+    this.healthy = function() {
+      return pegParser != null ;
+    }
   } ;
 
   return constructor ;
@@ -26,7 +35,7 @@ var Parser = function() {
 Parser.createParser = function( grammarSourceUri, onCompletion ) {
   $.get( grammarSourceUri, function( parserSource ) {
     try {
-      onCompletion( new Parser( parserSource ) ) ;
+      onCompletion( new Parser( parserSource, grammarSourceUri ) ) ;
     } catch( e ) {
       onCompletion( null ) ;
     }

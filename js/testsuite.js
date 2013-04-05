@@ -100,6 +100,7 @@ asyncTest( 'Simple parser loading', function() {
   Parser.createParser(
       URL.createObjectURL( new Blob( [ 'a = "A" ' ] ) ), // No real need to revoke.
       function( parser ) {
+        ok( parser.healthy() ) ;
         deepEqual( parser.parse( 'A' ), 'A', 'simple parsing' ) ;
         start() ;
       }
@@ -121,7 +122,7 @@ asyncTest( 'Can\'t parse grammar', function() {
   Parser.createParser(
       URL.createObjectURL( new Blob( [ 'bad grammar' ] ) ), // No real need to revoke.
       function( parser ) {
-        equal( parser, null, 'null parser' ) ;
+        ok( ! parser.healthy(), 'null parser' ) ;
         start() ;
       }
   ) ;
