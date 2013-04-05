@@ -1,12 +1,21 @@
 // PEG.js grammar for Szótárgép
 // http://pegjs.majda.cz/online
-pack = emptyline* cards : cards { return cards }
+pack = 
+    emptyline* 
+    ( descriptors : descriptors { return descriptors } )?
+//    ( tags emptyline* )?
+    cards : cards { return cards }
 
-/*
+
 descriptors =
   first : descriptor 
-  rest : descriptor
-*/
+  rest : ( bigbreak+ descriptor : descriptor { return descriptor } )*
+  bigbreak*
+  { return [ first ].concat( rest ) }
+
+descriptor = name : [0-9a-zA-Z-_]+ ':' value : line { return [ name, value ] }
+
+
 cards =
   first : card 
   rest : ( bigbreak+ card : card { return card } )*
@@ -20,6 +29,7 @@ card =
   answers : side
   { return [ tags === '' ? [] : tags, questions, answers ] }
 
+
 tags = 
     tags : ( ' '+ tag : tag { return tag } )* 
     ' '* smallbreak 
@@ -27,10 +37,12 @@ tags =
 
 tag = '@' name : [0-9a-zA-Z\-_/]+ { return name.join( '' ) }
 
+
 side =
   first : line
   rest : ( smallbreak ' '+ line : line { return line } )*
   { return [ first ].concat( rest ) }
+
 
 line = 
     first : character 
