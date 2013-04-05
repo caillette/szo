@@ -2,39 +2,42 @@
 // Because grammar loading occurs with AJAX there must be a callback to tell it's ready.
 var Parser = function() {
 
-  var constructor = function Parser( onParserLoaded, grammarSourceUri ) {
+  var constructor = function Parser( grammar ) {
 
-    var maybeParser = null ;
-    var that = this ;
+    var pegParser ;
 
-    grammarSourceUri = typeof grammarSourceUri === 'undefined' ? 'js/peg.txt' : grammarSourceUri ;
-
-    $.get( grammarSourceUri, function( parserSource ) {
-      try {
-        maybeParser = PEG.buildParser( parserSource ) ;
-      } catch( e ) {
-        maybeParser = e ;
-      }
-      onParserLoaded( that ) ;
-    } )
-    .fail( function( jqXhr, textStatus, errorThrown ) {
-      maybeParser = 'Could not load parser source: ' + textStatus + ' ' + errorThrown ;
-      onParserLoaded( that ) ;
-    } ) ;
-    // JQuery already logs failed GET errors.
-
-    this.loaded = function() {
-      return maybeParser != null ;
-    } ;
+    try {
+      pegParser = PEG.buildParser( grammar ) ;
+    } catch( e ) {
+      pegParser = null ;
+      window.console.error( e ) ;
+      throw e ;
+    }
 
     this.parse = function( text ) {
-      if( typeof maybeParser === 'string' ) {
-        throw 'Parser not available. ' + maybeParser ;
-      }
-      return maybeParser.parse( text ) ;
+      return pegParser.parse( text ) ;
     } ;
   } ;
 
   return constructor ;
 
 }() ;
+
+Parser.createParser = function( onCompletion, grammarSourceUri ) {
+  grammarSourceUri = typeof grammarSourceUri === 'undefined' ? 'js/peg.txt' : grammarSourceUri ;
+  var parser ;
+
+  $.get( grammarSourceUri, function( parserSource ) {
+    try {
+      onCompletion( new Parser( parserSource ) ) ;
+    } catch( e ) {
+      onCompletion( null ) ;
+    }
+  } )
+  .fail( function( jqXhr, textStatus, errorThrown ) {
+    maybeParser = 'Could not load parser source: ' + textStatus + ' ' + errorThrown ;
+    onCompletion( null ) ;
+  } ) ;
+  // JQuery already logs failed GET errors.
+}
+
