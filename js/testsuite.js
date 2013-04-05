@@ -112,7 +112,7 @@ asyncTest( 'Can\'t load grammar', function() {
   Parser.createParser(
       'bad:url',
       function( parser ) {
-        equal( parser, null, 'null parser' ) ;
+        ok( ! parser.healthy(), 'Unhealthy parser' ) ;
         start() ;
       }
   ) ;
@@ -122,7 +122,7 @@ asyncTest( 'Can\'t parse grammar', function() {
   Parser.createParser(
       'js/peg-fixture/broken.peg.txt',
       function( parser ) {
-        ok( ! parser.healthy(), 'null parser' ) ;
+        ok( ! parser.healthy(), 'Null parser' ) ;
         start() ;
       }
   ) ;

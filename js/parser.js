@@ -15,12 +15,17 @@ var Parser = function() {
     var pegParser ;
     var problem = null ;
 
-    try {
-      pegParser = PEG.buildParser( grammar ) ;
-    } catch( e ) {
+    if( grammar ) {
+      try {
+        pegParser = PEG.buildParser( grammar ) ;
+      } catch( e ) {
+        pegParser = null ;
+        problem = pegExceptionToString( e, uri ) ;
+        window.console.error( problem ) ;
+      }
+    } else {
       pegParser = null ;
-      problem = pegExceptionToString( e, uri ) ;
-      window.console.error( problem ) ;
+      problem = 'Could not load ' + uri ;
     }
 
     this.parse = function( text ) {
@@ -45,19 +50,17 @@ var Parser = function() {
 
 Parser.createParser = function( grammarSourceUri, onCompletion ) {
   $.get( grammarSourceUri, function( parserSource ) {
-  // TODO: instantiate a non-healthy Parser carrying the problem for further reporting.
     try {
-      var parser = new Parser( parserSource, grammarSourceUri ) ;
       window.console.debug( 'Successfully created parser from ' + grammarSourceUri ) ;
-      onCompletion( parser ) ;
+      onCompletion( new Parser( parserSource, grammarSourceUri ) ) ;
     } catch( e ) {
-      onCompletion( null ) ;
+      onCompletion( new Parser( null, grammarSourceUri ) ) ;
     }
   } )
   .fail( function( jqXhr, textStatus, errorThrown ) {
-    onCompletion( null ) ;
+    onCompletion( new Parser( null, grammarSourceUri ) ) ;
+    // JQuery already logs failed GET errors.
   } ) ;
-  // JQuery already logs failed GET errors.
 }
 
 
