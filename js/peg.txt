@@ -2,8 +2,8 @@
 // http://pegjs.majda.cz/online
 pack = 
     emptyline* 
-    descriptors : descriptors
-    globaltags : ( tags emptyline+ )?
+    descriptors : descriptors?
+    globaltags : globaltags?
     cards : cards 
     { return [ descriptors, globaltags, cards ] }
 
@@ -17,6 +17,9 @@ descriptors 'descriptors' =
 descriptor 'descriptor (key:value)' = 
   name : [0-9a-zA-Z-_]+ ':' value : line { return [ name, value ] }
 
+globaltags = 
+  tags : tags bigbreak
+  { return tags }
 
 cards 'Cards' =
   first : card 
@@ -25,18 +28,19 @@ cards 'Cards' =
   { return [ first ].concat( rest ) }
 
 card 'Card (tags, questions, answers)'=
-  tagline : tagline
+  tagline : tagline?
   questions : side 
   smallbreak
   answers : side
   { return [ tagline === '' ? [] : tagline, questions, answers ] }
 
 tagline 'Tag line ( @tag1 @tag2 ...)' =
-  ' '+ tags : tags { return tags }
+  ' '+ tags : tags smallbreak
+  { return tags }
 
 tags 'Tags (@tag1 @tag2 ...)' = 
   first : tag
-  rest : ( ' '+ tag { return tag } )*
+  rest : ( ' '+ tag : tag { return tag } )*
   ' '* smallbreak 
   { return [ first ].concat( rest ) }
 
@@ -61,8 +65,8 @@ line =
 
 character = [0-9a-zA-Z]
 
-smallbreak = '\n'
+smallbreak 'Single line break' = '\n'
 
-bigbreak = '\n' ( ' ' * '\n' )*
+bigbreak 'One line break or more' = '\n' ( ' ' * '\n' )*
 
-emptyline 'empty line' = ' ' * '\n' 
+emptyline 'Empty line' = ' ' * '\n' 
