@@ -10,7 +10,7 @@ function documentReady() {
         function( parsers ) {
           var parsersHealthy = true ;
           for( p = 0 ; p < parsers.length ; p ++ ) {
-            if( ! parsers[ p ].healthy() ) {
+            if( parsers[ p ].problem() ) {
               $( '#problems' ).append( '<p>' + parsers[ p ].problem() + '</p>')
               parsersHealthy = false ;
             }
