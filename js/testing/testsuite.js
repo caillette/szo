@@ -72,12 +72,17 @@ test( 'Instantiate Pack from parsed content', function() {
   ok( ! pack.problem(), 'pack.problem()' ) ;
   equal( pack.url(), 'url:whatever', 'pack.url()' ) ;
 
-//  var card0 = pack.cards()[ 0 ] ;
-//  equal( card0.lineInPack(), 11, 'Card\'s lineInPack' ) ;
-//  deepEqual( card0.tags(), [ 't', 'tt' ], 'Card\'s tags' ) ;
-//  deepEqual( card0.questions(), [ 'Q0', 'q0' ], 'Card\' questions' ) ;
-//  deepEqual( card0.answers(), [ 'Q0', 'q0' ], 'Card\' answers' ) ;
+  var card0 = pack.cards()[ 0 ] ;
+  equal( card0.lineInPack(), 10, 'Card\'s lineInPack' ) ;
+  deepEqual( card0.tags(), [ 'T0', 'T1', 't', 'tt' ], 'Card\'s tags' ) ;
+  deepEqual( card0.questions(), [ 'Q0', 'q0' ], 'Card\' questions' ) ;
+  deepEqual( card0.answers(), [ 'A0', 'a0' ], 'Card\' answers' ) ;
 
+  var card1 = pack.cards()[ 1 ] ;
+  equal( card1.lineInPack(), 11, 'Card\'s lineInPack' ) ;
+  deepEqual( card1.tags(), [ 'T0', 'T1' ], 'Card\'s tags' ) ;
+  deepEqual( card1.questions(), [ 'Q1' ], 'Card\' questions' ) ;
+  deepEqual( card1.answers(), [ 'A1' ], 'Card\' answers' ) ;
 
 } ) ;
 

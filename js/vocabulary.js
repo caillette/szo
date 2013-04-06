@@ -14,10 +14,26 @@ var Pack = function() {
 
     if( isArray( content ) ) {
       cards = content ;
+    } else if( parser === null ) {
+      problem = content ;
+      cards = [] ;
     } else {
       try {
         var parsedContent = parser.parse( content ) ;
-        // TODO feed object members.
+        var descriptors = parsedContent[ 0 ] ;
+        var globalTags = parsedContent[ 1 ] ;
+        var cardsAsArray = parsedContent[ 2 ] ;
+        cards = new Array( cardsAsArray.length ) ;
+        for( cardIndex = 0 ; cardIndex < cardsAsArray.length ; cardIndex ++ ) {
+          var cardAsArray = cardsAsArray[ cardIndex ] ;
+          cards[ cardIndex ] = new Card(
+              cardAsArray[ 2 ],
+              cardAsArray[ 3 ],
+              globalTags.slice( 0 ).concat( cardAsArray[ 1 ] ),
+              this,
+              cardAsArray[ 0 ]
+          ) ;
+        }
       } catch( e ) {
         problem = e ;
         cards = [] ;
