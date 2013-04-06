@@ -41,9 +41,22 @@ test( 'Instantiate Vocabulary from predefined Cards', function() {
 
 } ) ;
 
+test( 'Instantiate Pack with problem', function() {
+  var pack1 = new Pack(
+      'url:whatever',
+      'ignored content',
+      { problem : function() { return  'Problem here' } }
+  ) ;
+  equal( pack1.problem(), 'Problem here', 'Propagate Parser problem to the Pack' ) ;
+
+  var pack2 = new Pack( 'url:whatever', 'My problem', null ) ;
+  equal( pack2.problem(), 'My problem', 'Support null parser' ) ;
+} ) ;
+
 test( 'Instantiate Pack from parsed content', function() {
 
   var pack = new Pack( 'url:whatever', 'any content', {
+    problem : function() { return null ; },
     parse : function( text ) {
       return [
           [

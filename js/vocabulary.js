@@ -17,6 +17,9 @@ var Pack = function() {
     } else if( parser === null ) {
       problem = content ;
       cards = [] ;
+    } else if( parser.problem() ) {
+      problem = parser.problem() ;
+      cards = []
     } else {
       try {
         var parsedContent = parser.parse( content ) ;
