@@ -1,20 +1,27 @@
 // A loadable resource containing Cards.
 var Pack = function() {
 
+  // url: originating URL (for humans only).
   // content:
   // - If 'content instanceof Array' evaluates to true, treated as an array of Card objects.
   // - If 'content instanceof String' evaluates to true, treated as a parseable String.
   // - Throws an exception otherwise.
-  var constructor = function Pack( id, url, content ) {
+  // parser: an healthy Parser instance.
+  var constructor = function Pack( url, content, parser ) {
 
     var cards ;
+    var problem = null ;
 
     if( isArray( content ) ) {
       cards = content ;
-    } else if( content instanceof String ) {
-      throw 'Not implemented' ;
     } else {
-      throw 'Unsupported content' ;
+      try {
+        var parsedContent = parser.parse( content ) ;
+        // TODO feed object members.
+      } catch( e ) {
+        problem = e ;
+        cards = [] ;
+      }
     }
 
     this.visitCards = function( visitor ) {
@@ -23,18 +30,12 @@ var Pack = function() {
       }
     }
 
-    // The unique id of this Pack.
-    // A Card displays its originating Pack. Since Cards and Packs go through an HTML representation
-    // serialized to get out from Worker's thread, copying the whole Pack object would end up with
-    // lots of duplications.
-    // Pack's id allows to get back Card's pack on window thread.
-    // Worker should send the id-indexed array of all Packs once it loaded them.
-    this.id = function() {
-      return id ;
-    }
-
     this.url = function() {
       return url ;
+    }
+
+    this.problem = function() {
+      return problem ;
     }
   }
 

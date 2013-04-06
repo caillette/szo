@@ -29,10 +29,11 @@ var Parser = function() {
     }
 
     this.parse = function( text ) {
-      return this.healthy()
-          ? pegParser.parse( text )
-          : 'PEG parser instantiation failed: ' + problem
-      ;
+      if( this.healthy() ) {
+        return pegParser.parse( text ) ;
+      } else {
+        throw 'PEG parser instantiation previously failed: ' + problem ;
+      }
     } ;
 
     this.healthy = function() {

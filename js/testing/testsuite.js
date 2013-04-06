@@ -12,7 +12,7 @@ function vocabulary1() {
   var card1 = new Card( [ 'Question', 'And more' ], [ 'Választ' ], 'Jó', fakePackA, 1 ) ;
   var card2 = new Card( [ 'rien' ], [ 'semmi' ], [ 'Rossz', 'Rémes', 'Pocsék' ], fakePackA, 2 ) ;
   var card3 = new Card( [ 'Sans étiquette' ], [ 'jegy nélkül' ], [], fakePackA, 3 ) ;
-  var packA = new Pack( 1, 'some://where', [ card1, card2, card3 ] ) ;
+  var packA = new Pack( 'some://where', [ card1, card2, card3 ] ) ;
 
   return {
     fakePackA : fakePackA,
