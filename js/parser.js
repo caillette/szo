@@ -65,7 +65,7 @@ Parser.createParser = function( grammarSourceUri, onCompletion ) {
 
 
 Parser.createParsers = function( grammarSourceUris, onGeneralCompletion ) {
-  semaphore(
+  new BatchApply(
       grammarSourceUris,
       function( grammarSourceUri, onSingleCompletion ) {
         return Parser.createParser( grammarSourceUri, onSingleCompletion ) ;

@@ -27,23 +27,60 @@ function isArray( object ) {
   return Object.prototype.toString.apply( object ) === '[object Array]' ;
 }
 
-// [ sources ] -> constructor( source, callback ) -> onCompletion[ results ]
-function semaphore( sources, constructor, onCompletion ) {
-  var results = new Array( sources.length ) ;
-  var completion = 0 ;
 
-  for( var i = 0 ; i < sources.length ; i ++ ) {
-    constructor(
-        sources[ i ],
-        function( index ) {
-          return function( result ) {
-            results[ index ] = result ;
-            completion ++ ;
-            if( completion == sources.length ) {
-              onCompletion( results ) ;
-            }
-          } ;
-        }( i )
-    ) ;
+// [ operands ] -> operator( operand, operatorCompletion ) -> onCompletion[ results ]
+var BatchApply = function() {
+
+  var constructor = function BatchApply( operands, operator, onCompletion ) {
+    var results = new Array( operands.length ) ;
+    var completion = 0 ;
+
+    for( var i = 0 ; i < operands.length ; i ++ ) {
+      operator(
+          operands[ i ],
+          function( index ) {
+            return function( result ) {
+              results[ index ] = result ;
+              completion ++ ;
+              if( completion == operands.length ) {
+                onCompletion( results ) ;
+              }
+            } ;
+          }( i )
+      ) ;
+    }
+
+    this.inspectResults = function( visitor, propagatedValue ) {
+      for( var i = 0 ; i < results.length ; i ++ ) {
+        propagatedValue = visitor( result[ i ], propagatedValue ) ;
+      }
+      return propagatedValue ;
+    }
   }
-}
+
+  return constructor ;
+}() ;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
