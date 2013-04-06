@@ -100,7 +100,7 @@ asyncTest( 'Simple parser loading', function() {
   Parser.createParser(
       'js/testing/simplest.peg.txt',
       function( parser ) {
-        ok( parser.healthy() ) ;
+        ok( ! parser.problem() ) ;
         deepEqual( parser.parse( 'A' ), 'A', 'simple parsing' ) ;
         start() ;
       }
@@ -112,7 +112,7 @@ asyncTest( 'Can\'t load grammar', function() {
   Parser.createParser(
       'bad:url',
       function( parser ) {
-        ok( ! parser.healthy(), 'Unhealthy parser' ) ;
+        ok( parser.problem(), 'Parser has problem' ) ;
         start() ;
       }
   ) ;
@@ -122,7 +122,7 @@ asyncTest( 'Can\'t parse grammar', function() {
   Parser.createParser(
       'js/testing/broken.peg.txt',
       function( parser ) {
-        ok( ! parser.healthy(), 'Null parser' ) ;
+        ok( parser.problem(), 'Parser has problem' ) ;
         start() ;
       }
   ) ;

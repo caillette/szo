@@ -29,19 +29,19 @@ var Parser = function() {
     }
 
     this.parse = function( text ) {
-      if( this.healthy() ) {
-        return pegParser.parse( text ) ;
-      } else {
+      if( this.problem() ) {
         throw 'PEG parser instantiation previously failed: ' + problem ;
+      } else {
+        return pegParser.parse( text ) ;
       }
     } ;
 
-    this.healthy = function() {
-      return pegParser != null ;
-    }
-
     this.problem = function() {
-      return problem === null ? '' : problem ;
+      return pegParser === null
+          // Ultra defensive, this handles bad problem catching at initialization.
+          ? ( problem === null ? 'Could not initialize parser' : problem )
+          : null
+      ;
     }
   } ;
 
