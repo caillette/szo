@@ -41,6 +41,43 @@ test( 'Instantiate Vocabulary from predefined Cards', function() {
 
 } ) ;
 
+test( 'Instantiate Pack from parsed content', function() {
+
+  var pack = new Pack( 'url:whatever', 'any content', {
+    parse : function( text ) {
+      return [
+          [
+              [ 'd0', 'v0' ],
+              [ 'd0', 'v0' ]
+          ],
+          [ 'T0', 'T1' ],
+          [
+              [
+                  [ 't', 'tt' ],
+                  [ 'Q0', 'q0' ],
+                  [ 'A0', 'a0' ]
+              ],
+              [
+                  [],
+                  [ 'Q1' ],
+                  [ 'A1' ]
+              ]
+          ]
+      ] ;
+    }
+  } ) ;
+
+  ok( ! pack.problem(), 'pack.problem()' ) ;
+  equal( pack.url(), 'url:whatever', 'pack.url()' ) ;
+
+//  var card0 = pack.cards()[ 0 ] ;
+//  equal( card0.lineInPack(), 11, 'Card\'s lineInPack' ) ;
+//  deepEqual( card0.tags(), [ 't', 'tt' ], 'Card\'s tags' ) ;
+//  deepEqual( card0.questions(), [ 'Q0', 'q0' ], 'Card\' questions' ) ;
+//  deepEqual( card0.answers(), [ 'Q0', 'q0' ], 'Card\' answers' ) ;
+
+
+} ) ;
 
 module( 'Advance' ) ;
 
