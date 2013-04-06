@@ -147,23 +147,6 @@ var Vocabulary = function() {
       }
     }
 
-    // Returns an array containing the tags, with no duplicates.
-    // Using an array (keys are ints, values are tags) handles the case where tags do have
-    // the same name as reserved object members.
-    this.tags = function() {
-      var result = new Array() ;
-      this.visitCards( function( card ) {
-        var tags = card.tags() ;
-        for( var t = 0 ; t < tags.length ; t++ ) {
-          var tag = tags[ t ] ;
-          if( result.indexOf( tag ) < 0 ) {
-            result.push( tag ) ;
-          }
-        }
-      } ) ;
-      return result ;
-    }
-
     // tags: one of the following.
     // - One single String representing tag wanted.
     // - An array of non-null Strings representing tags wanted.
@@ -187,6 +170,23 @@ var Vocabulary = function() {
         + this.cards().length + ';'
         + this.tags().length +  '}'
     ;
+  }
+
+  // Returns an array containing the tags, with no duplicates.
+  // Using an array (keys are ints, values are tags) handles the case where tags do have
+  // the same name as reserved object members.
+  constructor.prototype.tags = function() {
+    var result = new Array() ;
+    this.visitCards( function( card ) {
+      var tags = card.tags() ;
+      for( var t = 0 ; t < tags.length ; t++ ) {
+        var tag = tags[ t ] ;
+        if( result.indexOf( tag ) < 0 ) {
+          result.push( tag ) ;
+        }
+      }
+    } ) ;
+    return result ;
   }
 
   constructor.prototype.visitCards = function( visitor ) {
