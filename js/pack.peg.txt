@@ -37,7 +37,7 @@ card 'Card (tags, questions, answers)'=
   questions : side 
   smallbreak
   answers : side
-  { return [ tagline === '' ? [] : tagline, questions, answers ] }
+  { return [ line, tagline === '' ? [] : tagline, questions, answers ] }
 
 tagline 'Tag line ( @tag1 @tag2 ...) (on one line, indented)' =
   ' '+ tags : tags smallbreak

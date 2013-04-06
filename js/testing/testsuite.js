@@ -53,11 +53,13 @@ test( 'Instantiate Pack from parsed content', function() {
           [ 'T0', 'T1' ],
           [
               [
+                  10,
                   [ 't', 'tt' ],
                   [ 'Q0', 'q0' ],
                   [ 'A0', 'a0' ]
               ],
               [
+                  11,
                   [],
                   [ 'Q1' ],
                   [ 'A1' ]
@@ -220,11 +222,13 @@ parsePackEqual( 'Canonical Pack',
       [ 'T1', 'T2' ],
       [
           [
+              5,
               [ 't', 'tt' ],
               [ 'Q1', 'q1' ],
               [ 'A1', 'a1' ]
           ],
           [
+              11,
               [],
               [ 'Q2' ],
               [ 'A2' ]
@@ -262,6 +266,7 @@ parsePackEqual( 'Minimal Card',
       [],
       [
           [
+              1,
               [],
               [ 'Q' ],
               [ 'A' ]
@@ -282,6 +287,7 @@ parsePackEqual( 'Minimal Card surrounded by blanks',
       [],
       [
           [
+              3,
               [],
               [ 'Q' ],
               [ 'A' ]

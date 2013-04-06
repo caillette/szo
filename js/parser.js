@@ -17,7 +17,7 @@ var Parser = function() {
 
     if( grammar ) {
       try {
-        pegParser = PEG.buildParser( grammar ) ;
+        pegParser = PEG.buildParser( grammar, { trackLineAndColumn : true } ) ;
       } catch( e ) {
         pegParser = null ;
         problem = pegExceptionToString( e, uri ) ;
