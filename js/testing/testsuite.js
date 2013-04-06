@@ -98,7 +98,7 @@ module( 'Parser' )
 
 asyncTest( 'Simple parser loading', function() {
   Parser.createParser(
-      'js/peg-fixture/simplest.peg.txt',
+      'js/testing/simplest.peg.txt',
       function( parser ) {
         ok( parser.healthy() ) ;
         deepEqual( parser.parse( 'A' ), 'A', 'simple parsing' ) ;
@@ -120,7 +120,7 @@ asyncTest( 'Can\'t load grammar', function() {
 
 asyncTest( 'Can\'t parse grammar', function() {
   Parser.createParser(
-      'js/peg-fixture/broken.peg.txt',
+      'js/testing/broken.peg.txt',
       function( parser ) {
         ok( ! parser.healthy(), 'Null parser' ) ;
         start() ;
