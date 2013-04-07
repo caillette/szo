@@ -8,6 +8,7 @@ function documentReady() {
 
     loadResources(
         '#problems',
+        window.location.search,
         function( vocabulary ) {
           configureWidgets() ;
           console.log( 'Initialization complete.' ) ;

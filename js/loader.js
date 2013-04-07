@@ -1,4 +1,4 @@
-function loadResources( div, onSuccess, onFailure ) {
+function loadResources( div, search, onSuccess, onFailure ) {
 
   Parser.createDefaultParsers(
     function( parsers ) {
