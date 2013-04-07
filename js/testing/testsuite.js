@@ -9,10 +9,14 @@ function vocabulary1() {
     url : function() { return 'some://where' }
   } ;
 
-  var card1 = new Card( [ 'Question', 'And more' ], [ 'Választ' ], 'Jó', fakePackA, 1 ) ;
-  var card2 = new Card( [ 'rien' ], [ 'semmi' ], [ 'Rossz', 'Rémes', 'Pocsék' ], fakePackA, 2 ) ;
-  var card3 = new Card( [ 'Sans étiquette' ], [ 'jegy nélkül' ], [], fakePackA, 3 ) ;
-  var packA = new Pack( 'some://where', [ card1, card2, card3 ] ) ;
+  var card1 = new szotargep.vocabulary.Card(
+      [ 'Question', 'And more' ], [ 'Választ' ], 'Jó', fakePackA, 1 ) ;
+  var card2 = new szotargep.vocabulary.Card(
+      [ 'rien' ], [ 'semmi' ], [ 'Rossz', 'Rémes', 'Pocsék' ], fakePackA, 2 ) ;
+  var card3 = new szotargep.vocabulary.Card(
+      [ 'Sans étiquette' ], [ 'jegy nélkül' ], [], fakePackA, 3 ) ;
+  var packA = new szotargep.vocabulary.Pack(
+      'some://where', [ card1, card2, card3 ] ) ;
 
   return {
     fakePackA : fakePackA,
@@ -20,7 +24,7 @@ function vocabulary1() {
     card2 : card2,
     card3 : card3,
     packA : packA,
-    vocabulary : new Vocabulary( [ packA ] )
+    vocabulary : new szotargep.vocabulary.Vocabulary( [ packA ] )
   }
 }
 
@@ -42,20 +46,20 @@ test( 'Instantiate Vocabulary from predefined Cards', function() {
 } ) ;
 
 test( 'Instantiate Pack with problem', function() {
-  var pack1 = new Pack(
+  var pack1 = new szotargep.vocabulary.Pack(
       'url:whatever',
       'ignored content',
       { problem : function() { return  'Problem here' } }
   ) ;
   equal( pack1.problem(), 'Problem here', 'Propagate Parser problem to the Pack' ) ;
 
-  var pack2 = new Pack( 'url:whatever', 'My problem', null ) ;
+  var pack2 = new szotargep.vocabulary.Pack( 'url:whatever', 'My problem', null ) ;
   equal( pack2.problem(), 'My problem', 'Support null parser' ) ;
 } ) ;
 
 test( 'Instantiate Pack from parsed content', function() {
 
-  var pack = new Pack( 'url:whatever', 'any content', {
+  var pack = new szotargep.vocabulary.Pack( 'url:whatever', 'any content', {
     problem : function() { return null ; },
     parse : function( text ) {
       return [
@@ -116,7 +120,7 @@ function advance( vocabulary, random ) {
   } else if( typeof random === 'number' ) {
     random = createRandomFunction( random ) ;
   }
-  return new Advance( vocabulary, '', random ) ;
+  return new szotargep.advance.Advance( vocabulary, '', random ) ;
 }
 
 test( 'viewAsList', function() {
@@ -154,7 +158,7 @@ test( 'nextAnswerOrCard', function() {
 module( 'Parser' )
 
 asyncTest( 'Simple parser loading', function() {
-  Parser.createParsers(
+  szotargep.parser.createParsers(
       [ 'js/testing/simplest.peg.txt' ],
       function( parsers ) {
         ok( ! parsers[ 0 ].problem() ) ;
@@ -166,7 +170,7 @@ asyncTest( 'Simple parser loading', function() {
 
 
 asyncTest( 'Can\'t load grammar', function() {
-  Parser.createParsers(
+  szotargep.parser.createParsers(
       [ 'bad:url' ],
       function( parsers ) {
         ok( parsers[ 0 ].problem(), 'Parser has problem' ) ;
@@ -176,7 +180,7 @@ asyncTest( 'Can\'t load grammar', function() {
 } ) ;
 
 asyncTest( 'Can\'t parse grammar', function() {
-  Parser.createParsers(
+  szotargep.parser.createParsers(
       [ 'js/testing/broken.peg.txt' ],
       function( parsers ) {
         ok( parsers[ 0 ].problem(), 'Parser has problem' ) ;
@@ -186,7 +190,7 @@ asyncTest( 'Can\'t parse grammar', function() {
 } ) ;
 
 asyncTest( 'Parallel parser loading', function() {
-  Parser.createDefaultParsers(
+  szotargep.parser.createDefaultParsers(
       function( parsers ) {
         equal( parsers.length, 3, 'Parser count' ) ;
         ok( parsers[ 0 ] != null, 'Non-null parser[ 0 ]' ) ;
@@ -204,7 +208,7 @@ function parseEqual( testName, grammarUri, text, tree ) {
   test( testName, function() {
     expect( 1 ) ;
     stop() ;
-    Parser.createParsers(
+    szotargep.parser.createParsers(
         [ grammarUri ],
         function( parsers ) {
           deepEqual( parsers[ 0 ].parse( text ), tree, 'text parsing' ) ;
@@ -215,7 +219,7 @@ function parseEqual( testName, grammarUri, text, tree ) {
 }
 
 function parsePackEqual( testName, text, tree ) {
-  parseEqual( testName, Parser.PACK_GRAMMAR_URI, text, tree ) ;
+  parseEqual( testName, szotargep.parser.PACK_GRAMMAR_URI, text, tree ) ;
 }
 
 parsePackEqual( 'Canonical Pack',
@@ -318,7 +322,7 @@ parsePackEqual( 'Minimal Card surrounded by blanks',
 module( 'Vocabulary list grammar' ) ;
 
 function parseVocabularyEqual( testName, text, tree ) {
-  parseEqual( testName, Parser.VOCABULARY_GRAMMAR_URI, text, tree ) ;
+  parseEqual( testName, szotargep.parser.VOCABULARY_GRAMMAR_URI, text, tree ) ;
 }
 
 parseVocabularyEqual( 'Simple Vocabulary list',
@@ -335,7 +339,7 @@ parseVocabularyEqual( 'Simple Vocabulary list',
 module( 'Search parameters grammar' ) ;
 
 function parseSearchEqual( testName, text, tree ) {
-  parseEqual( testName, Parser.SEARCH_GRAMMAR_URI, text, tree ) ;
+  parseEqual( testName, szotargep.parser.SEARCH_GRAMMAR_URI, text, tree ) ;
 }
 
 parseSearchEqual( 'Empty search', '' , [] ) ;
@@ -349,12 +353,12 @@ parseSearchEqual( 'HTTP URI', '?v=http://foo/bar.txt' , [  [ 'v', 'http://foo/ba
 module( 'Location Search' ) ;
 
 test( 'Default vocabulary', function() {
-  equal( new LocationSearch( [] ).vocabulary(), 'vocabulary.txt' ) ;
+  equal( new szotargep.loader.LocationSearch( [] ).vocabulary(), 'vocabulary.txt' ) ;
 } ) ;
 
 test( 'Explicit vocabulary', function() {
   equal(
-      new LocationSearch( [ [ 'v', 'myvocabulary.txt' ] ] ).vocabulary(),
+      new szotargep.loader.LocationSearch( [ [ 'v', 'myvocabulary.txt' ] ] ).vocabulary(),
       'myvocabulary.txt'
   ) ;
 } ) ;

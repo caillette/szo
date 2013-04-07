@@ -170,6 +170,8 @@ About object instantiation, see also:
 http://pivotallabs.com/javascript-constructors-prototypes-and-the-new-keyword
 http://ejohn.org/blog/simple-class-instantiation/#postcomment
 
+There is a great post about namespacing:
+http://stackoverflow.com/a/5947280
 
 === Separate list of vocabulary files
 

@@ -1,4 +1,6 @@
-
+// ========================
+// Array.prototype patching
+// ========================
 
 // Seems only needed by IE8 and below.
 // http://stackoverflow.com/a/1181586
@@ -28,90 +30,79 @@ Array.prototype.isArray = function ( object ) {
 }
 
 
-// [ operands ] --> operator( operand, operatorCompletion ) --> onCompletion[ results ]
-function batchApply( operands, operator, onCompletion ) {
-  var results = new Array( operands.length ) ;
-  var completion = 0 ;
 
-  for( var i = 0 ; i < operands.length ; i ++ ) {
-    operator(
-        operands[ i ],
-        function( index ) {
-          return function( result ) {
-            results[ index ] = result ;
-            completion ++ ;
-            if( completion == operands.length ) {
-              onCompletion( results ) ;
-            }
-          } ;
-        }( i )
+// ===========
+// Namespacing
+// ===========
+
+
+( function ( szotargep ) {
+
+  szotargep.resource = {} ;
+
+  // [ operands ] --> operator( operand, operatorCompletion ) --> onCompletion[ results ]
+  szotargep.resource.batchApply = function( operands, operator, onCompletion ) {
+    var results = new Array( operands.length ) ;
+    var completion = 0 ;
+
+    for( var i = 0 ; i < operands.length ; i ++ ) {
+      operator(
+          operands[ i ],
+          function( index ) {
+            return function( result ) {
+              results[ index ] = result ;
+              completion ++ ;
+              if( completion == operands.length ) {
+                onCompletion( results ) ;
+              }
+            } ;
+          }( i )
+      ) ;
+    }
+  } ;
+
+  szotargep.resource.loadResources = function( uris, onCompletion ) {
+    szotargep.resource.processResources( uris, function( any ) { return any }, onCompletion ) ;
+  }
+
+  // Given an array of URIs, loads each of them as a text resource using AJAX,
+  // applies transformation and notifies of completion with an array of objects.
+  //
+  //     [ uri, ... ]
+  // --> transformer( { uri, content, problem } ) --> transformed
+  // --> [ transformed, ... ]
+  szotargep.resource.processResources = function( uris, transformer, onCompletion ) {
+
+    szotargep.resource.batchApply(
+        uris,
+        function( uri, notifyBatchApply ) {
+          $.get(
+              uri,
+              null,
+              function( localUri ) {
+                return function( content ) {
+                  var loaded ;
+                  try {
+                    window.console.debug( 'Successfully loaded ' + localUri ) ;
+                    loaded = transformer( { uri : localUri, content : content, problem : null } ) ;
+                  } catch( e ) {
+                    window.console.error( 'Internal error: transformation failed with ' + e ) ;
+                  }
+                  notifyBatchApply( loaded ) ;
+                }
+              }( uri ),
+              'text'
+          )
+          .fail( function( jqXhr, textStatus, errorThrown ) {
+            var problem = textStatus + '\n' + errorThrown ;
+            var transformed = transformer( { uri : uri, content : null, problem : problem } ) ;
+            notifyBatchApply( transformed ) ;
+          } ) ;
+
+        },
+        onCompletion
     ) ;
   }
-} ;
-
-function loadResources( uris, onCompletion ) {
-  processResources( uris, function( any ) { return any }, onCompletion ) ;
-}
-
-// Given an array of URIs, loads each of them as a text resource using AJAX,
-// applies transformation and notifies of completion with an array of objects.
-//
-//     [ uri, ... ]
-// --> transformer( { uri, content, problem } ) --> transformed
-// --> [ transformed, ... ]
-function processResources( uris, transformer, onCompletion ) {
-
-  batchApply(
-      uris,
-      function( uri, notifyBatchApply ) {
-        $.get(
-            uri,
-            null,
-            function( localUri ) {
-              return function( content ) {
-                var loaded ;
-                try {
-                  window.console.debug( 'Successfully loaded ' + localUri ) ;
-                  loaded = transformer( { uri : localUri, content : content, problem : null } ) ;
-                } catch( e ) {
-                  window.console.error( 'Internal error: transformation failed with ' + e ) ;
-                }
-                notifyBatchApply( loaded ) ;
-              }
-            }( uri ),
-            'text'
-        )
-        .fail( function( jqXhr, textStatus, errorThrown ) {
-          var problem = textStatus + '\n' + errorThrown ;
-          var transformed = transformer( { uri : uri, content : null, problem : problem } ) ;
-          notifyBatchApply( transformed ) ;
-        } ) ;
-
-      },
-      onCompletion
-  ) ;
-}
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+} ( window.szotargep = window.szotargep || {} ) ) ;
