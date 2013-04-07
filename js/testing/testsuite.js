@@ -362,3 +362,22 @@ test( 'Explicit vocabulary', function() {
       'myvocabulary.txt'
   ) ;
 } ) ;
+
+
+module( 'Loader' ) ;
+
+asyncTest( 'Load vocabulary', function() {
+  expect( 1 ) ;
+  szotargep.loader.load(
+      null,
+      '?v=js/testing/vocabulary-mixed.txt',
+      function( vocabulary ) {
+        equal( vocabulary.cards().length, 3, 'Check Cards loaded' ) ;
+        start() ;
+      },
+      function() {
+        ok( false, 'Unexpected load problem' ) ;
+        start() ;
+      }
+  ) ;
+} ) ;

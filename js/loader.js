@@ -5,7 +5,9 @@
   szotargep.loader.load = function( div, search, onSuccess, onFailure ) {
 
     function report( problem ) {
-      $( div ).append( '<p>' + problem + '</p>') ;
+      if( div != null ) {
+        $( div ).append( '<p>' + problem + '</p>') ;
+      }
       window.console.error( problem ) ;
     }
 
