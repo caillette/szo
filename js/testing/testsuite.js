@@ -133,11 +133,18 @@ test( 'initialState', function() {
   var v = vocabulary1() ;
   var a = advance1() ;
   ok( a.viewAsList() ) ;
+  deepEqual( a.cards(), v.vocabulary.cards(), 'all Cards selected' ) ;
+
+
   a.viewAsList( false ) ;
   equal( a.disclosure(), 0, 'disclosure' ) ;
 
   // For some unknown reason, strictEqual tells that Card references are not the same.
-  equal( a.currentCard().lineInPack(), v.card1.lineInPack(), 'currentCard' ) ;
+  deepEqual( a.currentCard(), v.card1, 'currentCard' ) ;
+
+  deepEqual( a.tagSelection(), [], 'all tags selected (using an empty array)' ) ;
+
+
 } ) ;
 
 test( 'nextAnswerOrCard', function() {
