@@ -36,7 +36,7 @@
             cards[ cardIndex ] = new szotargep.vocabulary.Card(
                 cardAsArray[ 2 ],
                 cardAsArray[ 3 ],
-                globalTags.slice( 0 ).concat( cardAsArray[ 1 ] ),
+                merge( globalTags, cardAsArray[ 1 ] ),
                 this,
                 cardAsArray[ 0 ]
             ) ;
@@ -46,6 +46,15 @@
           cards = [] ;
           console.error( 'Could not interpret ' + url + ': ' + problem ) ;
         }
+      }
+
+      function merge( array1, array2 ) {
+        var result = array1.slice( 0 ) ;
+        for( var i = 0 ; i < array2.length ; i ++ ) {
+          var element = array2[ i ] ;
+          if( result.indexOf( element ) < 0 ) result.push( element ) ;
+        }
+        return result ;
       }
 
       this.visitCards = function( visitor ) {

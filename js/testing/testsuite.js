@@ -260,6 +260,7 @@ parsePackEqual( 'Canonical Pack',
   ]
 ) ;
 
+
 parsePackEqual( 'Empty Pack',
   ''
   ,
@@ -318,6 +319,27 @@ parsePackEqual( 'Minimal Card surrounded by blanks',
       ]
   ]
 ) ;
+
+asyncTest( 'Merge global and local tags', function() {
+  expect( 1 ) ;
+
+  var packAsText =
+      '@t\n'
+    + '\n'
+    + '  @t @tt\n'
+    + 'Q1\n'
+    + 'A1'
+  ;
+
+  szotargep.parser.createParsers(
+      [ szotargep.parser.PACK_GRAMMAR_URI ],
+      function( parsers ) {
+        var pack = new szotargep.vocabulary.Pack( 'some-uri', packAsText, parsers[ 0 ] ) ;
+        deepEqual( pack.cards()[ 0 ].tags(), [ 't', 'tt' ]  ) ;
+        start() ;
+      }
+  ) ;
+} ) ;
 
 module( 'Vocabulary list grammar' ) ;
 
