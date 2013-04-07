@@ -10,10 +10,9 @@ var Parser = function() {
     ;
   }
 
-  var constructor = function Parser( grammar, uri ) {
+  var constructor = function Parser( grammar, uri, problem ) {
 
     var pegParser ;
-    var problem = null ;
 
     if( grammar ) {
       try {
@@ -25,23 +24,27 @@ var Parser = function() {
       }
     } else {
       pegParser = null ;
-      problem = 'Could not load ' + uri ;
     }
 
     this.parse = function( text ) {
-      if( this.problem() ) {
-        throw 'PEG parser instantiation previously failed: ' + problem ;
-      } else {
+      if( pegParser ) {
         return pegParser.parse( text ) ;
+      } else {
+        throw 'PEG parser instantiation previously failed. ' + this.problem() ;
       }
     } ;
 
     this.problem = function() {
       return pegParser === null
           // Ultra defensive, this handles bad problem catching at initialization.
-          ? ( problem === null ? 'Could not initialize parser' : problem )
+          ? ( typeof problem === 'undefined' || problem === null
+              ? 'Could not initialize parser ' + uri : problem )
           : null
       ;
+    }
+
+    this.uri = function() {
+      return uri ;
     }
   } ;
 
@@ -49,35 +52,17 @@ var Parser = function() {
 
 }() ;
 
-Parser.createParser = function( grammarSourceUri, onCompletion ) {
-  $.get(
-      grammarSourceUri,
-      null,
-      function( parserSource ) {
-        try {
-          window.console.debug( 'Successfully created parser from ' + grammarSourceUri ) ;
-          onCompletion( new Parser( parserSource, grammarSourceUri ) ) ;
-        } catch( e ) {
-          onCompletion( new Parser( null, grammarSourceUri + ' ' + e ) ) ;
-        }
-      },
-      'text'
-  )
-  .fail( function( jqXhr, textStatus, errorThrown ) {
-    grammarSourceUri += ': ' + textStatus + '\n' + errorThrown ;
-    onCompletion( new Parser( null, grammarSourceUri ) ) ;
-    // JQuery already logs some failed GET errors, but forgets some corner-cases
-    // like unrecognized XML with Firefox.
-    window.console.error( 'Could not load ' + grammarSourceUri ) ;
-  } ) ;
-}
 
-
+// [ uri, ... ] --> [ parser, ... ]
 Parser.createParsers = function( grammarSourceUris, onGeneralCompletion ) {
-  batchApply(
+  processResources(
       grammarSourceUris,
-      function( grammarSourceUri, onSingleCompletion ) {
-        return Parser.createParser( grammarSourceUri, onSingleCompletion ) ;
+      function( transformable ) {
+        if( transformable.problem ) {
+          return new Parser( null, transformable.uri, transformable.problem )
+        } else {
+          return new Parser( transformable.content, transformable.uri ) ;
+        }
       },
       onGeneralCompletion
   ) ;

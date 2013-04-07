@@ -6,7 +6,7 @@ function documentReady() {
 
     console.debug( 'Initializing ...' ) ;
 
-    loadResources(
+    load(
         '#problems',
         window.location.search,
         function( vocabulary ) {

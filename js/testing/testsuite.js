@@ -154,11 +154,11 @@ test( 'nextAnswerOrCard', function() {
 module( 'Parser' )
 
 asyncTest( 'Simple parser loading', function() {
-  Parser.createParser(
-      'js/testing/simplest.peg.txt',
-      function( parser ) {
-        ok( ! parser.problem() ) ;
-        deepEqual( parser.parse( 'A' ), 'A', 'simple parsing' ) ;
+  Parser.createParsers(
+      [ 'js/testing/simplest.peg.txt' ],
+      function( parsers ) {
+        ok( ! parsers[ 0 ].problem() ) ;
+        deepEqual( parsers[ 0 ].parse( 'A' ), 'A', 'simple parsing' ) ;
         start() ;
       }
   ) ;
@@ -166,20 +166,20 @@ asyncTest( 'Simple parser loading', function() {
 
 
 asyncTest( 'Can\'t load grammar', function() {
-  Parser.createParser(
-      'bad:url',
-      function( parser ) {
-        ok( parser.problem(), 'Parser has problem' ) ;
+  Parser.createParsers(
+      [ 'bad:url' ],
+      function( parsers ) {
+        ok( parsers[ 0 ].problem(), 'Parser has problem' ) ;
         start() ;
       }
   ) ;
 } ) ;
 
 asyncTest( 'Can\'t parse grammar', function() {
-  Parser.createParser(
-      'js/testing/broken.peg.txt',
-      function( parser ) {
-        ok( parser.problem(), 'Parser has problem' ) ;
+  Parser.createParsers(
+      [ 'js/testing/broken.peg.txt' ],
+      function( parsers ) {
+        ok( parsers[ 0 ].problem(), 'Parser has problem' ) ;
         start() ;
       }
   ) ;
@@ -204,10 +204,10 @@ function parseEqual( testName, grammarUri, text, tree ) {
   test( testName, function() {
     expect( 1 ) ;
     stop() ;
-    Parser.createParser(
-        grammarUri,
-        function( parser ) {
-          deepEqual( parser.parse( text ), tree, 'text parsing' ) ;
+    Parser.createParsers(
+        [ grammarUri ],
+        function( parsers ) {
+          deepEqual( parsers[ 0 ].parse( text ), tree, 'text parsing' ) ;
           start() ;
         }
     ) ;

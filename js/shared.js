@@ -28,7 +28,7 @@ function isArray( object ) {
 }
 
 
-// [ operands ] -> operator( operand, operatorCompletion ) -> onCompletion[ results ]
+// [ operands ] --> operator( operand, operatorCompletion ) --> onCompletion[ results ]
 function batchApply( operands, operator, onCompletion ) {
   var results = new Array( operands.length ) ;
   var completion = 0 ;
@@ -50,32 +50,41 @@ function batchApply( operands, operator, onCompletion ) {
 } ;
 
 function loadResources( uris, onCompletion ) {
+  processResources( uris, function( any ) { return any }, onCompletion ) ;
+}
+
+// Given an array of URIs, loads each of them as a text resource using AJAX,
+// applies transformation and notifies of completion with an array of objects.
+//
+//     [ uri, ... ]
+// --> transformer( { uri, content, problem } ) --> transformed
+// --> [ transformed, ... ]
+function processResources( uris, transformer, onCompletion ) {
+
   batchApply(
       uris,
       function( uri, notifyBatchApply ) {
         $.get(
             uri,
             null,
-            function( content ) {
-              try {
-                window.console.debug( 'Successfully loaded ' + uri ) ;
-                notifyBatchApply( { source : uri, content : content, problem : null } ) ;
-              } catch( e ) {
-                notifyBatchApply( { source : uri, content : null, problem : e } ) ;
+            function( localUri ) {
+              return function( content ) {
+                var loaded ;
+                try {
+                  window.console.debug( 'Successfully loaded ' + localUri ) ;
+                  loaded = transformer( { uri : localUri, content : content, problem : null } ) ;
+                } catch( e ) {
+                  window.console.error( 'Internal error: transformation failed with ' + e ) ;
+                }
+                notifyBatchApply( loaded ) ;
               }
-            },
+            }( uri ),
             'text'
         )
         .fail( function( jqXhr, textStatus, errorThrown ) {
           var problem = textStatus + '\n' + errorThrown ;
-          notifyBatchApply( {
-              source : uri,
-              content : null,
-              problem : problem
-          } ) ;
-          // JQuery already logs some failed GET errors, but forgets some corner-cases
-          // like unrecognized XML with Firefox.
-          window.console.error( 'Could not load ' + uri + '\n' + problem ) ;
+          var transformed = transformer( { uri : uri, content : null, problem : problem } ) ;
+          notifyBatchApply( transformed ) ;
         } ) ;
 
       },
