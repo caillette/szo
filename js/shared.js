@@ -29,37 +29,59 @@ function isArray( object ) {
 
 
 // [ operands ] -> operator( operand, operatorCompletion ) -> onCompletion[ results ]
-var BatchApply = function() {
+function batchApply( operands, operator, onCompletion ) {
+  var results = new Array( operands.length ) ;
+  var completion = 0 ;
 
-  var constructor = function BatchApply( operands, operator, onCompletion ) {
-    var results = new Array( operands.length ) ;
-    var completion = 0 ;
-
-    for( var i = 0 ; i < operands.length ; i ++ ) {
-      operator(
-          operands[ i ],
-          function( index ) {
-            return function( result ) {
-              results[ index ] = result ;
-              completion ++ ;
-              if( completion == operands.length ) {
-                onCompletion( results ) ;
-              }
-            } ;
-          }( i )
-      ) ;
-    }
-
-    this.inspectResults = function( visitor, propagatedValue ) {
-      for( var i = 0 ; i < results.length ; i ++ ) {
-        propagatedValue = visitor( result[ i ], propagatedValue ) ;
-      }
-      return propagatedValue ;
-    }
+  for( var i = 0 ; i < operands.length ; i ++ ) {
+    operator(
+        operands[ i ],
+        function( index ) {
+          return function( result ) {
+            results[ index ] = result ;
+            completion ++ ;
+            if( completion == operands.length ) {
+              onCompletion( results ) ;
+            }
+          } ;
+        }( i )
+    ) ;
   }
+} ;
 
-  return constructor ;
-}() ;
+function loadResources( uris, onCompletion ) {
+  batchApply(
+      uris,
+      function( uri, notifyBatchApply ) {
+        $.get(
+            uri,
+            null,
+            function( content ) {
+              try {
+                window.console.debug( 'Successfully loaded ' + uri ) ;
+                notifyBatchApply( { source : uri, content : content, problem : null } ) ;
+              } catch( e ) {
+                notifyBatchApply( { source : uri, content : null, problem : e } ) ;
+              }
+            },
+            'text'
+        )
+        .fail( function( jqXhr, textStatus, errorThrown ) {
+          var problem = textStatus + '\n' + errorThrown ;
+          notifyBatchApply( {
+              source : uri,
+              content : null,
+              problem : problem
+          } ) ;
+          // JQuery already logs some failed GET errors, but forgets some corner-cases
+          // like unrecognized XML with Firefox.
+          window.console.error( 'Could not load ' + uri + '\n' + problem ) ;
+        } ) ;
+
+      },
+      onCompletion
+  ) ;
+}
 
 
 

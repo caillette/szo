@@ -74,7 +74,7 @@ Parser.createParser = function( grammarSourceUri, onCompletion ) {
 
 
 Parser.createParsers = function( grammarSourceUris, onGeneralCompletion ) {
-  new BatchApply(
+  batchApply(
       grammarSourceUris,
       function( grammarSourceUri, onSingleCompletion ) {
         return Parser.createParser( grammarSourceUri, onSingleCompletion ) ;
