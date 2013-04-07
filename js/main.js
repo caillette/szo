@@ -6,24 +6,16 @@ function documentReady() {
 
     console.debug( 'Initializing ...' ) ;
 
-    Parser.createDefaultParsers(
-        function( parsers ) {
-          var parsersHealthy = true ;
-          for( p = 0 ; p < parsers.length ; p ++ ) {
-            if( parsers[ p ].problem() ) {
-              $( '#problems' ).append( '<p>' + parsers[ p ].problem() + '</p>')
-              parsersHealthy = false ;
-            }
-          }
-
-          if( parsersHealthy ) {
-            configureWidgets() ;
-            console.log( 'Initialization complete.' ) ;
-          }
-
+    loadResources(
+        '#problems',
+        function( vocabulary ) {
+          configureWidgets() ;
+          console.log( 'Initialization complete.' ) ;
+        },
+        function() {
+          console.log( 'Initialization failed.' ) ;
         }
     ) ;
-
   }
 
   function configureWidgets() {
