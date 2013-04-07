@@ -20,7 +20,7 @@ descriptors 'descriptors ("key:value", each on one line)' =
   { return [ first ].concat( rest ) }
 
 descriptor 'descriptor (key:value)' = 
-  name : [0-9a-zA-Z-_]+ ':' value : line { return [ name.join( '' ), value ] }
+  name : [0-9a-zA-Z-_]+ ':' ' '* value : line { return [ name.join( '' ), value ] }
 
 globaltags 'Global tags (@T1 @T2 ... ) (on one line, no indent)' = 
   tags : tags bigbreak
