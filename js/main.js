@@ -4,8 +4,6 @@
 
   szotargep.main.documentReady = function() {
 
-    $( '#no-javascript' ).remove() ;
-
     if( new szotargep.browser.Capabilities( '#browser-capabilities' ).capable() ) {
       $( '#browser-capabilities' ).hide() ;
 

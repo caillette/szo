@@ -5,13 +5,9 @@
   <script type='text/javascript' src='js/jquery-1.9.1.js' ></script>
   <script type='text/javascript' src='js/modernizr-2.6.2.js' ></script>
 
-  <style type='text/css' name='global-dynamic-style' ></style>
-
   <script type='text/javascript' >
-    <!-- Quickly hide the #no-javascript without waiting for JQuery or the whole page
-        to load. Removal occurs after (once JQuery available). -->
-    $( 'style[ name = "global-dynamic-style" ] ').html(
-        '#no-javascript{ display : none ; }' ) ;
+    <!-- Quickly hide the #no-javascript without waiting for the whole page to load. -->
+    $( '#no-javascript' ).remove() ;
   </script>
 
   <script type='text/javascript' src='js/peg-0.7.0.js' ></script>
