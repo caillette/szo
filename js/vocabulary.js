@@ -44,6 +44,7 @@
         } catch( e ) {
           problem = e ;
           cards = [] ;
+          console.error( 'Could not interpret ' + url + ': ' + problem ) ;
         }
       }
 
@@ -89,7 +90,7 @@
       if( typeof tags === 'string' ) tags = [ tags ] ;
 
       this.tags = function() {
-        return tags ;
+        return tags.slice( 0 ) ;
       }
       this.pack = function() {
         return pack ;

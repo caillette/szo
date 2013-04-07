@@ -14,12 +14,29 @@
           window.location.search,
           function( vocabulary ) {
             configureWidgets() ;
+            configureTags( vocabulary.tags() ) ;
             console.log( 'Initialization complete.' ) ;
           },
           function() {
             console.log( 'Initialization failed.' ) ;
           }
       ) ;
+    }
+
+    function configureTags( tags ) {
+      for( var t = 0 ; t < tags.length ; t ++ ) {
+        var tag = tags[ t ] ;
+        $( '<input '
+            + 'type="checkbox" '
+            + 'id="tag$' + tag + '" '
+            + '</input>'
+        ).appendTo( '#tags' ) ;
+        $( '<label '
+            + 'for="tag$' + tag + '" >'
+            + tag
+            + '</label><br>'
+        ).appendTo( '#tags' ) ;
+      }
     }
 
     function configureWidgets() {
