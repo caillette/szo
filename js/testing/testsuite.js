@@ -345,3 +345,16 @@ parseSearchEqual( 'Relative URI', '?v=foo/bar.txt' , [  [ 'v', 'foo/bar.txt' ] ]
 parseSearchEqual( 'HTTP URI', '?v=http://foo/bar.txt' , [  [ 'v', 'http://foo/bar.txt' ] ] ) ;
 
 
+
+module( 'Location Search' ) ;
+
+test( 'Default vocabulary', function() {
+  equal( new LocationSearch( [] ).vocabulary(), 'vocabulary.txt' ) ;
+} ) ;
+
+test( 'Explicit vocabulary', function() {
+  equal(
+      new LocationSearch( [ [ 'v', 'myvocabulary.txt' ] ] ).vocabulary(),
+      'myvocabulary.txt'
+  ) ;
+} ) ;

@@ -101,3 +101,11 @@ Parser.createDefaultParsers = function( onCompletion ) {
 }
 
 
+Parser.findParser = function( parsers, uri ) {
+  for( var i = 0 ; i < parsers.length ; i ++ ) {
+    if( parsers[ i ].uri() === uri ) {
+      return parsers[ i ] ;
+    }
+  }
+  throw 'Unknown uri "' + uri + '" in ' + parsers ;
+}
