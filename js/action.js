@@ -35,7 +35,7 @@
           logCompletion( 'multi-step', totalTime ) ;
         } else {
           for( var i = 0 ; i < context.batchSize ; i ++ ) {
-            action.step( i == 0, context.id, batch ) ;
+            action.step( batch == 0 && i == 0, context.id, batch ) ;
             if( action.isComplete() ) break ;
           }
           context.onBatchComplete() ;
@@ -61,8 +61,8 @@
         return currentStep >= stepCount ;
       }
 
-      this.step = function( newBatch, id, batch ) {
-        var html = newBatch ? '' : '<p>Initialized ' + this.constructor.name + '</p>' ;
+      this.step = function( firstStep, id, batch ) {
+        var html = firstStep ? '<p>Initialized ' + this.constructor.name + '</p>' : '' ;
 
         html += '<table>' ;
         html += '  <tbody>' ;
