@@ -13,8 +13,9 @@
           '#problems',
           window.location.search,
           function( vocabulary ) {
-            configureWidgets() ;
-            configureTags( vocabulary.tags() ) ;
+            var advance = new szotargep.advance.Advance( vocabulary, window.location.searh ) ;
+            configureWidgets( advance ) ;
+            configureTags( advance ) ;
             console.log( 'Initialization complete.' ) ;
           },
           function() {
@@ -23,7 +24,8 @@
       ) ;
     }
 
-    function configureTags( tags ) {
+    function configureTags( advance ) {
+      var tags = advance.vocabulary().tags() ;
       for( var t = 0 ; t < tags.length ; t ++ ) {
         var tag = tags[ t ] ;
         $( '<input '
@@ -39,7 +41,7 @@
       }
     }
 
-    function configureWidgets() {
+    function configureWidgets( advance ) {
       var start ;
 
       { // Firefox 19.0.2 wants this code block here.

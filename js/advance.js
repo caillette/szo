@@ -16,7 +16,7 @@
         }
       }
 
-      var tags = [] ;
+      var tagSelection = [] ;
       var cards = [] ;
       var currentCard = null ;
       var disclosure = 0 ;
@@ -28,11 +28,11 @@
       // Throws an exception if the tag is unknown.
       this.selectTags = function( tags ) {
         if( typeof tags === 'string' ) {
-          this.tags = [ tags ] ;
+          tagSelection = [ tags ] ;
         } else if( Array.isArray( tags ) ) {
-          this.tags = tags.slice( 0 ) ;
+          tagSelection = tags.slice( 0 ) ;
         } else if( tags === null ) {
-          tags = null ;
+          tagSelection = null ;
         } else {
           throw 'Unsupported: ' + tags ;
         }
@@ -97,9 +97,9 @@
         return asList ;
       }
 
-      // Returns array copy. Not a great deal as we use it only for debugging.
-      this.tags = function() {
-        return tags.slice( 0 ) ;
+      // Returns array copy. Not a great deal as we don't call it often.
+      this.tagSelection = function() {
+        return tagSelection.slice( 0 ) ;
       }
 
       // Returns array copy. Not a great deal as we use it only for debugging.
@@ -111,6 +111,10 @@
         for( var c = 0 ; c < cards.length ; c ++ ) {
           visitor( cards[ c ] ) ;
         }
+      }
+
+      this.vocabulary = function() {
+        return vocabulary ;
       }
 
       function checkViewAsList( expected ) {
