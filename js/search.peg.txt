@@ -1,0 +1,31 @@
+// PEG.js grammar for Szótárgép
+// http://pegjs.majda.cz/online
+
+maybeSearch = search : search?
+  { return search === '' ? [] : [ search ] }
+
+search =
+  ( '?' first : parameter { return first } )
+
+
+parameter =
+  key : 'v' '=' uri : uri { return [ key, uri ] }
+
+
+uri =
+  scheme : ( 'http://' / 'https://' / 'file://' )?
+  path : path
+  { return scheme + path }
+
+
+path =
+  first : segment
+  rest : ( separator : '/' segment : segment { return separator + segment } )*
+  extension : extension
+  { return first + rest.join( '' ) + extension }
+
+segment "Directory or file name" =
+  name : [0-9a-zA-Z\-_]+ { return name.join( '' ) }
+
+extension 'Extension (must be ".txt")' = '.txt'
+

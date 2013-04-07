@@ -188,9 +188,10 @@ asyncTest( 'Can\'t parse grammar', function() {
 asyncTest( 'Parallel parser loading', function() {
   Parser.createDefaultParsers(
       function( parsers ) {
-        equal( parsers.length, 2, 'Parser count' ) ;
+        equal( parsers.length, 3, 'Parser count' ) ;
         ok( parsers[ 0 ] != null, 'Non-null parser[ 0 ]' ) ;
         ok( parsers[ 1 ] != null, 'Non-null parser[ 1 ]' ) ;
+        ok( parsers[ 2 ] != null, 'Non-null parser[ 2 ]' ) ;
         start() ;
       }
   ) ;
@@ -329,5 +330,18 @@ parseVocabularyEqual( 'Simple Vocabulary list',
       'x/yz.txt'
   ]
 ) ;
+
+
+module( 'Search parameters grammar' ) ;
+
+function parseSearchEqual( testName, text, tree ) {
+  parseEqual( testName, Parser.SEARCH_GRAMMAR_URI, text, tree ) ;
+}
+
+parseSearchEqual( 'Empty search', '' , [] ) ;
+
+parseSearchEqual( 'Relative URI', '?v=foo/bar.txt' , [  [ 'v', 'foo/bar.txt' ] ] ) ;
+
+parseSearchEqual( 'HTTP URI', '?v=http://foo/bar.txt' , [  [ 'v', 'http://foo/bar.txt' ] ] ) ;
 
 
