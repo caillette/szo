@@ -12,7 +12,7 @@ var Pack = function() {
     var cards ;
     var problem = null ;
 
-    if( isArray( content ) ) {
+    if( Array.isArray( content ) ) {
       cards = content ;
     } else if( parser === null ) {
       problem = content ;
@@ -79,8 +79,8 @@ var Pack = function() {
 var Card = function() {
 
   var constructor = function Card( questions, answers, tags, pack, lineInPack ) {
-    if( ! isArray( questions ) ) throw 'Not an array: ' + questions ;
-    if( ! isArray( answers ) ) throw 'Not an array: ' + answers ;
+    if( ! Array.isArray( questions ) ) throw 'Not an array: ' + questions ;
+    if( ! Array.isArray( answers ) ) throw 'Not an array: ' + answers ;
     if( tags === null ) tags = [] ;
     if( typeof tags === 'string' ) tags = [ tags ] ;
 
@@ -120,7 +120,7 @@ var Card = function() {
       return this.tags().length === 0 ;
     } else if( typeof tag === 'string' ) {
       return this.tags().indexOf( tag ) >= 0 ;
-    } else if( isArray( tag ) ) {
+    } else if( Array.isArray( tag ) ) {
       if( tag.length === 0 ) {
         return true ;
       } else {

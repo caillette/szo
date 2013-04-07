@@ -23,7 +23,7 @@ Array.prototype.remove = function( from, to ) {
 
 // The correct way to check Array-ness:
 // http://studiokoi.com/blog/article/typechecking_arrays_in_javascript
-function isArray( object ) {
+Array.prototype.isArray = function ( object ) {
   return Object.prototype.toString.apply( object ) === '[object Array]' ;
 }
 

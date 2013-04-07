@@ -26,7 +26,7 @@ var Advance = function() {
     this.selectTags = function( tags ) {
       if( typeof tags === 'string' ) {
         this.tags = [ tags ] ;
-      } else if( isArray( tags ) ) {
+      } else if( Array.isArray( tags ) ) {
         this.tags = tags.slice( 0 ) ;
       } else if( tags === null ) {
         tags = null ;
