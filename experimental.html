@@ -2,14 +2,6 @@
 <head>
   <meta http-equiv='Content-Type' content='text/html; charset=UTF-8' >
 
-  <script type='text/javascript' >
-    {
-      // Quickly hide the #no-javascript without waiting for the whole page to load.
-      var element = document.getElementById( '#no-javascript' ) ;
-      element.parentNode.removeChild( element ) ;
-    }
-  </script>
-
   <script type='text/javascript' src='js/jquery-1.9.1.js' ></script>
   <script type='text/javascript' src='js/modernizr-2.6.2.js' ></script>
   <script type='text/javascript' src='js/peg-0.7.0.js' ></script>
@@ -33,9 +25,16 @@
 <body>
 
   <div id='browser-capabilities' >
-    <p id='no-javascript'>
+    <p id='no-javascript' >
       Please enable JavaScript.
     </p>
+    <script type='text/javascript' >
+      {
+        // Quickly hide #no-javascript without waiting for the whole page to load.
+        var element = document.getElementById( 'no-javascript' ) ;
+        element.parentNode.removeChild( element ) ;
+      }
+    </script>
     <!-- Placeholder for other messages. -->
   </div>
 
