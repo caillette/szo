@@ -1,1 +1,1 @@
-minimal-pack.txt
+js/testing/minimal-pack.txt

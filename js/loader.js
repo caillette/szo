@@ -34,7 +34,22 @@ function load( div, search, onSuccess, onFailure ) {
                   onFailure() ;
                 } else {
                   var parsedVocabulary = vocabularyParser.parse( vocabularyList ) ;
-                  window.console.debug( 'Loaded ' + parsedVocabulary.length + ' pack entries' ) ;
+                  window.console.debug( 'Loaded ' + parsedVocabulary.length +
+                    ' pack reference' + ( parsedVocabulary.length > 1 ? 's' : '' ) ) ;
+
+                  processResources(
+                      parsedVocabulary,
+                      function( transformable ) {
+                        if( transformable.problem ) {
+                          return new Pack( transformable.uri, transformable.problem, null ) ;
+                        } else {
+                          return new Pack( transformable.uri, transformable.content, packParser ) ;
+                        }
+                      },
+                      function( packs ) {
+                        onSuccess( new Vocabulary( packs ) ) ;
+                      }
+                  )
                 }
               }
           ) ;
@@ -43,7 +58,6 @@ function load( div, search, onSuccess, onFailure ) {
           report( e ) ;
           onFailure() ;
         }
-//        onSuccess( /*TODO: Vocabulary object*/ ) ;
       } else {
         onFailure() ;
       }
