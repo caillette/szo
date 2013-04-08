@@ -137,10 +137,6 @@
       return answerCount ;
     }
 
-    constructor.prototype.toHtml = function( standalone, inverted ) {
-      throw 'Not implemented' ;
-    }
-
     // tag: one of the following.
     // - A non-empty array of non-null Strings representing tags.
     //   This method returns true if at least one of the given tags appears in the Card.

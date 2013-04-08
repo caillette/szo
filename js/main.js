@@ -14,7 +14,8 @@
           window.location.search,
           function( vocabulary ) {
             var advance = new szotargep.advance.Advance( vocabulary, window.location.searh ) ;
-            configureWidgets( advance ) ;
+            createWidgets( advance ) ;
+            initialUpdate( advance ) ;
             configureTags( advance ) ;
             console.log( 'Initialization complete.' ) ;
           },
@@ -40,41 +41,54 @@
         ).appendTo( '#tags' ) ;
       }
     }
+    
+    function initialUpdate( advance ) {
+      $( '#toggle-list-or-single' ).prop( 'checked', advance.viewAsList() ) ;
+      updateBoard( advance ) ;
+    }
 
-    function configureWidgets( advance ) {
-      var start ;
-
-      { // Firefox 19.0.2 wants this code block here.
-        $( '<button id="toggle-list-or-single" >Show Cards</button>' )
-            .click( function( event ) {
-                performAction( event, new szotargep.action.ShowList( advance ) ) ;
-            } )
-            .appendTo( '#top' )
-        ;
-        $( '<button id="multi-step-action" >Multi-step action</button>' )
-            .click( function( event ) {
-                performAction( event, new szotargep.action.LongDummyAction( 10000 ) ) ;
-            } )
-            .appendTo( '#top' )
-        ;
-        $( '<input '
-            + 'type="checkbox" '
-            + 'id="single-step-action" '
-            + 'name="single-step-action" '
-            + '></input>'
-        )
-            .click( function( event ) {
-                performAction( event, new szotargep.action.ShortDummyAction() ) ;
-            } )
-            .appendTo( '#top' )
-        ;
-        $( '<label for="single-step-action" >Single-step action</label>' )
-            .appendTo( '#top' )
-        ;
+    function updateBoard( advance ) {
+      if( advance.viewAsList() ) {
+        performAction( new szotargep.action.ShowList( advance ) ) ;
+      } else {
+        performAction( new szotargep.action.ShowSingleCard( advance ) ) ;
       }
+    }
+
+    function createWidgets( advance ) {
+
+      $( '<input '
+          + 'type="checkbox"'
+          + 'id="toggle-list-or-single"'
+          + '></input>'
+      )
+          .click( function( event ) {
+            advance.viewAsList( $( '#toggle-list-or-single' ).prop( 'checked' ) ) ;
+            updateBoard( advance ) ;
+          } )
+          .appendTo( '#top' )
+      ;
+
+      $( '<label for="toggle-list-or-single" >List</label>' )
+          .appendTo( '#top' ) ;
+    }
+
+
+
+    var performAction = function( action ) {
+      var start ;
+      var performer = null ;
 
       function elapsed( start ) {
         return ( new Date() - start ) + ' ms' ;
+      }
+
+      function actionInProgress( visible ) {
+        $( '#action-performing' )
+            .stop( true, true )
+            .delay( visible ? 2 : 0 ) // Delay saves from blinking when action is quick.
+            .animate( { opacity : ( visible ? 1 : 0 ) }, 100 )
+        ;
       }
 
       var nextActionId = function() {
@@ -84,7 +98,7 @@
         }
       }() ;
 
-      function performAction( event, action ) {
+      return function( action ) {
         start = new Date() ;
         console.debug( 'Starting action...' ) ;
         actionInProgress( true ) ;
@@ -109,25 +123,8 @@
             },
             action
         ).perform() ;
-
       }
-
-      var performer = null ;
-
-
-
-
-      function actionInProgress( visible ) {
-        $( '#action-performing' )
-            .stop( true, true )
-            .delay( visible ? 2 : 0 ) // Delay saves from blinking when action is quick.
-            .animate( { opacity : ( visible ? 1 : 0 ) }, 100 )
-        ;
-      }
-
-
-    }
-
+    }() ;
 
   }
 

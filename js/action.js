@@ -67,24 +67,11 @@
 
         advance.visitCards(
             function( card, last ) {
-              html += '<table>' ;
-              html += '  <tbody>' ;
-
-              card.visitStages( function( question, answer ) {
-                html += '    <tr>' ;
-                html += '      <td>' + ( question ? question : '' ) + '</td>' ;
-                html += '      <td>' + ( answer ? answer : '' ) + '</td>' ;
-                html += '    </tr>' ;
-              } ) ;
-
-              html += '  </tbody>' ;
-              html += '</table>' ;
-              html += '<p></p>' ; // Formatting trick for printing.
-
+              html += cardAsHtml( card ) ;
               complete = last ;
             },
             cardIndex,
-            batchSize
+            cardIndex + batchSize
         ) ;
 
         $( '#board' ).append( html ) ;
@@ -97,27 +84,38 @@
   }() ;
 
 
-  szotargep.action.ShortDummyAction = function() {
+  szotargep.action.ShowSingleCard = function() {
 
-    var constructor = function ShortDummyAction() {
+    var constructor = function ShowSingleCard( advance ) {
 
       this.singleStep = function( id ) {
         var html = '<p>Initialized ' + this.constructor.name + '</p>' ;
-        html += '<table>' ;
-        html += '  <tbody>' ;
-        html += '    <tr>' ;
-        html += '      <td>Action</td>' ;
-        html += '      <td>' + id + '</td>' ;
-        html += '    </tr>' ;
-        html += '  </tbody>' ;
-        html += '</table>' ;
-        html += '<p></p>' ;
-
+        var card = advance.currentCard() ;
+        html += cardAsHtml( card ) ;
         $( '#board' ).html( html ) ;
       }
     }
 
     return constructor ;
   }() ;
+
+
+  function cardAsHtml( card ) {
+    html  = '<table>' ;
+    html += '  <tbody>' ;
+
+    card.visitStages( function( question, answer ) {
+      html += '    <tr>' ;
+      html += '      <td>' + ( question ? question : '' ) + '</td>' ;
+      html += '      <td>' + ( answer ? answer : '' ) + '</td>' ;
+      html += '    </tr>' ;
+    } ) ;
+
+    html += '  </tbody>' ;
+    html += '</table>' ;
+    html += '<p></p>' ; // Formatting trick for printing.
+
+    return html ;
+  }
 
 } ( window.szotargep = window.szotargep || {} ) ) ;
