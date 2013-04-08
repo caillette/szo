@@ -89,14 +89,21 @@
     return constructor ;
   }() ;
 
+  // Magic tag representing there is no tag.
+  szotargep.vocabulary.UNTAGGED = '$Untagged' ;
+
+
   // A set of questions and answers that came out from a Pack.
   szotargep.vocabulary.Card = function() {
 
     var constructor = function Card( questions, answers, tags, pack, lineInPack ) {
       if( ! Array.isArray( questions ) ) throw 'Not an array: ' + questions ;
       if( ! Array.isArray( answers ) ) throw 'Not an array: ' + answers ;
-      if( tags === null ) tags = [] ;
+      if( ! tags ) tags = [] ;
       if( typeof tags === 'string' ) tags = [ tags ] ;
+      if( tags.indexOf( szotargep.vocabulary.UNTAGGED ) >= 0 ) {
+        throw 'Don\'t create a Card with UNTAGGED tag' ;
+      }
 
       this.visitTags = function( visitor ) {
         for( var t = 0 ; t < tags.length ; t ++ ) {
@@ -145,31 +152,27 @@
       return answerCount ;
     }
 
-    // tag: one of the following.
-    // - A non-empty array of non-null Strings representing tags.
-    //   This method returns true if at least one of the given tags appears in the Card.
-    // - An empty array. This methods returns true.
-    // - A String representing a tag. Method returns true if Card has this tag.
-    // - null. Method returns true if Card has no tag at all.
-    constructor.prototype.hasTag = function( tag ) {
-      if( tag === null ) {
-        return this.tags().length === 0 ;
-      } else if( typeof tag === 'string' ) {
-        return this.tags().indexOf( tag ) >= 0 ;
-      } else if( Array.isArray( tag ) ) {
-        if( tag.length === 0 ) {
-          return true ;
-        } else {
-          for( var t = 0 ; t < tag.length ; t++ ) {
-            if( this.hasTag( tag[ t ] ) ) {
-              return true ;
-            }
-          }
-        }
+
+    // tags: a non-null array of tags (as Strings).
+    // Every tag must already exist as defined tag (in the array returned by vocabulary.tags() )
+    // or be the magic tag value UNTAGGED.
+    // A card that contains one of the listed tags (or that have no tag at all if UNTAGGED
+    // appears in the array) get selected.
+    // If tags is an empty array, this function always returns false.
+    constructor.prototype.hasTag = function( tags ) {
+      if( tags.length === 0 ) {
+        return false ;
       } else {
-        throw 'Unsupported tag type: ' + tag ;
+        var tagCount = 0 ;
+        var found = false ;
+        this.visitTags( function( cardTag ) {
+          tagCount ++ ;
+          if( tags.indexOf( cardTag ) >= 0 ) {
+            found = true ;
+          }
+        } ) ;
+        return found || ( tagCount === 0 && tags.indexOf( szotargep.vocabulary.UNTAGGED ) >= 0 ) ;
       }
-      return false ;
     }
 
     return constructor ;
@@ -186,15 +189,11 @@
         }
       }
 
-      // tags: one of the following.
-      // - One single String representing tag wanted.
-      // - An array of non-null Strings representing tags wanted.
-      // - null for cards with no tag.
-      // - No value for all the Cards.
+      // tags: as understood by Card.hasTag(), or an undefined value meaning all cards.
       this.cards = function( tags ) {
         var result = new Array() ;
         this.visitCards( function( card ) {
-          if( typeof tags === 'undefined' || card.hasTag( tags ) ) {
+          if( ! tags || card.hasTag( tags ) ) {
             result.push( card ) ;
           }
         } ) ;

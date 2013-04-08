@@ -22,17 +22,13 @@
       var disclosure = 0 ;
       var asList ;
 
+
       // TODO use uriParameters.
 
-      // tags: an array of tags to select or one single String representing a tag.
-      // Throws an exception if the tag is unknown.
+      // tags: a value understood by Card.hasTag method.
       this.selectTags = function( tags ) {
-        if( typeof tags === 'string' ) {
-          tagSelection = [ tags ] ;
-        } else if( Array.isArray( tags ) ) {
+        if( Array.isArray( tags ) ) {
           tagSelection = tags.slice( 0 ) ;
-        } else if( tags === null ) {
-          tagSelection = null ;
         } else {
           throw 'Unsupported: ' + tags ;
         }
@@ -53,7 +49,7 @@
       this.toggleTag = function( tag, selected ) {
         if( selected != this.isTagSelected( tag ) ) {
           var newSelection = this.tagSelection() ; // Does a copy.
-          newSelection = newSelection === null ? [] : newSelection ;
+//          newSelection = newSelection === null ? [] : newSelection ;
           if( selected ) {
             newSelection.push( tag ) ;
           } else {
@@ -112,11 +108,11 @@
 
       // Returns array copy. Not a great deal as we don't call it often.
       this.tagSelection = function() {
-        return tagSelection === null ? null : tagSelection.slice( 0 ) ;
+        return tagSelection.slice( 0 ) ;
       }
 
       this.isTagSelected = function( tag ) {
-        return tagSelection === null ? tag === null : tagSelection.indexOf( tag ) >= 0 ;
+        return tagSelection.indexOf( tag ) >= 0 ;
       }
 
       // Returns array copy. Not a great deal as we use it only for debugging.
@@ -124,7 +120,7 @@
         return cards.slice( 0 ) ;
       }
 
-      this.visitCards = function( visitor, first, last ) {
+      this.visitCards = function( visitor, onComplete, first, last ) {
         first = typeof first === 'number' ? first : 0 ;
         last = typeof last === 'number' ? Math.min( last, cards.length - 1 ) : cards.length - 1 ;
         var c = first ;
@@ -132,10 +128,11 @@
           if( c > last ) {
             break
           } else {
-            visitor( cards[ c ], c == last ) ;
+            visitor( cards[ c ] ) ;
             c ++ ;
           }
         }
+        onComplete() ;
       }
 
       this.vocabulary = function() {
@@ -147,7 +144,8 @@
       }
 
       // Show all the Cards as a list.
-      this.selectTags( [] ) ;
+      this.selectTags( vocabulary.tags() ) ;
+      this.toggleTag( szotargep.vocabulary.UNTAGGED, true ) ;
       this.viewAsList( true ) ;
 
     }

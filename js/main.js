@@ -13,7 +13,7 @@
           '#problems',
           window.location.search,
           function( vocabulary ) {
-            var advance = new szotargep.advance.Advance( vocabulary, window.location.searh ) ;
+            var advance = new szotargep.advance.Advance( vocabulary, window.location.search ) ;
             createTagWidgets( advance ) ;
             createTopWidgets( advance ) ;
             initialUpdate( advance ) ;
@@ -27,7 +27,7 @@
 
     function createTagWidgets( advance ) {
 
-      function createTagWidget( tag, special ) {
+      function createTagWidget( tag, title, special ) {
         var click = function( localTag, localSpecial ) {
           return function( event ) {
             var checked = $( this ).prop( 'checked' ) ;
@@ -53,7 +53,7 @@
 
         $( '<label '
             + 'for="' + id + '" >'
-            + ( special ? '<i>' + tag + '</i>' : tag )
+            + ( title ? '<i>' + title + '</i>' : tag )
             + '</label><br>'
         ).appendTo( '#tags' ) ;
       }
@@ -63,7 +63,11 @@
         var tag = tags[ t ] ;
         createTagWidget( tag )
       }
-      createTagWidget( 'Untagged', function() { advance.selectTags( null ) } ) ;
+      createTagWidget(
+          szotargep.vocabulary.UNTAGGED,
+          'Untagged',
+          function( checked ) { advance.toggleTag( szotargep.vocabulary.UNTAGGED, checked ) }
+      ) ;
     }
     
     function initialUpdate( advance ) {
