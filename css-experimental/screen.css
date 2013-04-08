@@ -1,0 +1,142 @@
+/*
+  Sources of inspiration:
+  http://green-beast.com/blog/?p=199
+*/
+
+@import url( 'general.css' ) ;
+
+body {
+  background : #dddddd ;
+  font-family : Verdana, Geneva, 'DejaVu Sans', sans-serif ;
+}
+
+#container {
+  position : relative ;
+}
+
+#top {
+  min-width : 50em ;
+  margin-top : 1em ;
+  margin-bottom : 1em ;
+}
+
+#top * {
+  font-size : 120% ;
+}
+
+#top *.widget {
+  margin-left : 1em ;
+}
+
+#tags {
+  display : inline-block ;
+  background : #cccccc ;
+}
+
+#tags p {
+  margin : 0.3em ;
+}
+
+#card-location code {
+  font-family : Courier New, Courier New, monospace ;
+}
+
+#card-location {
+  position : fixed ;
+  bottom : 2px ;
+  right : 2px ;
+  padding-right : 1em ;
+  background : #dddddd ;
+  text-align : right ;
+  line-height : 1.4 ;
+}
+
+
+
+
+/********
+  Board
+*********/
+
+
+#board {
+  display : inline-block ;
+  vertical-align : top ;
+  width : 40em ;
+  margin-left : 1em ;
+  margin-right : 1em ;
+}
+
+#board > table.card-list {
+  background : #eeeeee ;
+}
+
+#board > table {
+  margin-bottom : 1em ;
+
+}
+
+#board > table tr {
+  /* Inherit. */
+}
+
+#board > table tr:first-child {
+  /* Inherit. */
+}
+
+#board > table td {
+  padding : 0.2em 1em 0.2em 1em ;
+  margin : 0.2em 1em 0.2em 1em ;
+  border-bottom : solid 2px #dddddd ;
+}
+
+#board > table.card-list > tbody > tr {
+  border : none ;
+}
+
+#board > table.card-list > tbody > tr > td {
+  border : none ;
+}
+
+
+#board > table td:first-child {
+  /* Inherit. */
+}
+
+
+td.undisclosed {
+  background : #cccccc ;
+  border-bottom : solid 2px #dddddd ;
+  /* visibility : collapse ; Bad: causes the cell itself to not appear. */
+}
+
+td.undisclosed > span {
+  visibility : hidden ;
+}
+
+
+
+
+
+/********
+  Other
+*********/
+
+
+
+.no-theme {
+  text-align : center ;
+  text-style : italic ;
+  font-size : 1.5em ;
+  color : #999999 ;
+}
+
+.total {
+  font-size : 80% ;
+  margin-bottom : 0.5em ;
+}
+
+#disclose {
+  font-weight : bold ;
+}
+

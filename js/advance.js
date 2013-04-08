@@ -64,8 +64,7 @@
         currentCard = cards === null ? null : cards[ random( cards.length ) ] ;
       }
 
-      // Returns a Card object when switching to the next Card (may be null).
-      // When disclosing the next answer, returns 0 or greater as answer index.
+      // Returns 0 when disclosing a new Card, a greater value (starting by 1) otherwise.
       this.nextAnswerOrCard = function() {
         checkViewAsList( false ) ;
         if( ! currentCard || disclosure >= currentCard.answerCount() ) {

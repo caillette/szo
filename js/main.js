@@ -88,8 +88,9 @@
     function createTopWidgets( advance ) {
 
       $( '<input '
-          + 'type="checkbox"'
-          + 'id="toggle-list-or-single"'
+          + 'type="checkbox" '
+          + 'id="toggle-list-or-single" '
+          + 'class="widget" '
           + '></input>'
       )
           .click( function( event ) {
@@ -101,17 +102,30 @@
 
       $( '<label for="toggle-list-or-single" >List</label>' ) .appendTo( '#top' ) ;
 
-      $( '<button type="button" id="next-answer-or-card" >Next</button>' )
+      $( '<button type="button" id="next-answer-or-card" class="widget" >Next</button>' )
           .click( function( event ) {
-              advance.nextAnswerOrCard() ;
-              updateBoard( advance ) ;
+              var next = advance.nextAnswerOrCard() ;
+              console.debug( 'next: ' + next ) ;
+              if( next == 0 ) {
+                updateBoard( advance ) ;
+              } else {
+                disclose( next ) ;
+              }
           } )
           .appendTo( '#top' ) 
       ;
 
     }
 
-
+    function disclose( next ) {
+      $( "#board > table > tbody > tr" )
+          .eq( next - 1 )
+          .contents()
+          .filter( "td" )
+          .eq( 1 )
+          .removeClass( "undisclosed" )
+      ;
+    }
 
     var performAction = function( action ) {
       var start ;

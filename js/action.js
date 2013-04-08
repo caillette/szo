@@ -114,13 +114,13 @@
     html = '' ;
 
     if( card != null ) {
-      card.visitTags( function( tag ) {
-          html += tag ;
-          html += ' ' ;
-      } ) ;
+//      card.visitTags( function( tag ) {
+//          html += tag ;
+//          html += ' ' ;
+//      } ) ;
       html += '<br>\n' ;
 
-      html += '<table>\n' ;
+      html += '<table' + ( listView ? ' class="card-list"' : '' ) + '>\n' ;
       html += '<tbody>\n' ;
 
       card.visitStages( function( question, answer ) {
@@ -132,7 +132,7 @@
 
       html += '</tbody>\n' ;
       html += '</table>\n' ;
-      html += '<p></p>\n' ; // Formatting trick for printing.
+      html += '<p class="void" ></p>\n' ; // Formatting trick for printing.
     }
 
     html = html === '' ? '<p>No Card to show</p>' : html ;
