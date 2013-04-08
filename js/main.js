@@ -14,9 +14,9 @@
           window.location.search,
           function( vocabulary ) {
             var advance = new szotargep.advance.Advance( vocabulary, window.location.searh ) ;
-            createWidgets( advance ) ;
+            createTagWidgets( advance ) ;
+            createTopWidgets( advance ) ;
             initialUpdate( advance ) ;
-            configureTags( advance ) ;
             console.log( 'Initialization complete.' ) ;
           },
           function() {
@@ -25,21 +25,45 @@
       ) ;
     }
 
-    function configureTags( advance ) {
-      var tags = advance.vocabulary().tags() ;
-      for( var t = 0 ; t < tags.length ; t ++ ) {
-        var tag = tags[ t ] ;
+    function createTagWidgets( advance ) {
+
+      function createTagWidget( tag, special ) {
+        var click = function( localTag, localSpecial ) {
+          return function( event ) {
+            var checked = $( this ).prop( 'checked' ) ;
+            if( localSpecial ) {
+              localSpecial( checked ) ;
+            } else {
+              advance.toggleTag( localTag, checked ) ;
+            }
+            updateBoard( advance ) ;
+          }
+        }( tag, special ) ;
+
+        var id = 'tag$' + ( special ? '$' : '' ) + tag ;
         $( '<input '
             + 'type="checkbox" '
-            + 'id="tag$' + tag + '" '
+            + 'id="' + id + '"'
             + '</input>'
-        ).appendTo( '#tags' ) ;
+        )
+          .prop( 'checked', advance.isTagSelected( tag ) )
+          .click( click )
+          .appendTo( '#tags' )
+        ;
+
         $( '<label '
-            + 'for="tag$' + tag + '" >'
-            + tag
+            + 'for="' + id + '" >'
+            + ( special ? '<i>' + tag + '</i>' : tag )
             + '</label><br>'
         ).appendTo( '#tags' ) ;
       }
+
+      var tags = advance.vocabulary().tags() ;
+      for( var t = 0 ; t < tags.length ; t ++ ) {
+        var tag = tags[ t ] ;
+        createTagWidget( tag )
+      }
+      createTagWidget( 'Untagged', function() { advance.selectTags( null ) } ) ;
     }
     
     function initialUpdate( advance ) {
@@ -57,7 +81,7 @@
       $( '#next-answer-or-card' ).prop( 'disabled', advance.viewAsList() ) ;
     }
 
-    function createWidgets( advance ) {
+    function createTopWidgets( advance ) {
 
       $( '<input '
           + 'type="checkbox"'
@@ -71,15 +95,15 @@
           .appendTo( '#top' )
       ;
 
-      $( '<label for="toggle-list-or-single" >List</label>' )
-          .appendTo( '#top' ) ;
+      $( '<label for="toggle-list-or-single" >List</label>' ) .appendTo( '#top' ) ;
 
       $( '<button type="button" id="next-answer-or-card" >Next</button>' )
           .click( function( event ) {
               advance.nextAnswerOrCard() ;
               updateBoard( advance ) ;
           } )
-          .appendTo( '#top' ) ;
+          .appendTo( '#top' ) 
+      ;
 
     }
 
@@ -96,7 +120,7 @@
       function actionInProgress( visible ) {
         $( '#action-performing' )
             .stop( true, true )
-            .delay( visible ? 2 : 0 ) // Delay saves from blinking when action is quick.
+//            .delay( visible ? 2 : 0 ) // Delay saves from blinking when action is quick.
             .animate( { opacity : ( visible ? 1 : 0 ) }, 100 )
         ;
       }

@@ -50,6 +50,19 @@
         if( currentCard == null ) this.pickRandomCard() ;
       }
 
+      this.toggleTag = function( tag, selected ) {
+        if( selected != this.isTagSelected( tag ) ) {
+          var newSelection = this.tagSelection() ; // Does a copy.
+          newSelection = newSelection === null ? [] : newSelection ;
+          if( selected ) {
+            newSelection.push( tag ) ;
+          } else {
+            newSelection.remove( newSelection.indexOf( tag ) )
+          }
+          this.selectTags( newSelection ) ;
+        }
+      }
+
       this.pickRandomCard = function() {
         disclosure = 0 ;
         currentCard = cards === null ? null : cards[ random( cards.length ) ] ;
@@ -99,7 +112,11 @@
 
       // Returns array copy. Not a great deal as we don't call it often.
       this.tagSelection = function() {
-        return tagSelection.slice( 0 ) ;
+        return tagSelection === null ? null : tagSelection.slice( 0 ) ;
+      }
+
+      this.isTagSelected = function( tag ) {
+        return tagSelection === null ? tag === null : tagSelection.indexOf( tag ) >= 0 ;
       }
 
       // Returns array copy. Not a great deal as we use it only for debugging.

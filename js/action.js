@@ -101,7 +101,13 @@
 
 
   function cardAsHtml( card ) {
-    html  = '<table>' ;
+    html = '' ;
+
+
+    card.visitTags( function( tag ) { html += tag ; html += ' ' } ) ;
+    html += '<br>' ;
+
+    html += '<table>' ;
     html += '  <tbody>' ;
 
     card.visitStages( function( question, answer ) {

@@ -98,8 +98,10 @@
       if( tags === null ) tags = [] ;
       if( typeof tags === 'string' ) tags = [ tags ] ;
 
-      this.tags = function() {
-        return tags.slice( 0 ) ;
+      this.visitTags = function( visitor ) {
+        for( var t = 0 ; t < tags.length ; t ++ ) {
+          visitor( tags[ t ] ) ;
+        }
       }
       this.pack = function() {
         return pack ;
@@ -127,6 +129,12 @@
 
     constructor.prototype.toString = function() {
       return( 'Card{' + this.lineInPack() + '@' + this.pack().url() + '}' ) ;
+    }
+
+    constructor.prototype.tags = function() {
+      var result = [] ;
+      this.visitTags( function( tag ) { result.push( tag ) } ) ;
+      return result ;
     }
 
     constructor.prototype.answerCount = function() {
