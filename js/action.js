@@ -114,12 +114,6 @@
     html = '' ;
 
     if( card != null ) {
-//      card.visitTags( function( tag ) {
-//          html += tag ;
-//          html += ' ' ;
-//      } ) ;
-      html += '<br>\n' ;
-
       html += '<table' + ( listView ? ' class="card-list"' : '' ) + '>\n' ;
       html += '<tbody>\n' ;
 
@@ -132,7 +126,7 @@
 
       html += '</tbody>\n' ;
       html += '</table>\n' ;
-      html += '<p class="void" ></p>\n' ; // Formatting trick for printing.
+      html += '<p class="void no-selection" ></p>\n' ; // Formatting trick for printing.
     }
 
     html = html === '' ? '<p>No Card to show</p>' : html ;
