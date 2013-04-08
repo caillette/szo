@@ -53,6 +53,8 @@
       } else {
         performAction( new szotargep.action.ShowSingleCard( advance ) ) ;
       }
+
+      $( '#next-answer-or-card' ).prop( 'disabled', advance.viewAsList() ) ;
     }
 
     function createWidgets( advance ) {
@@ -71,6 +73,14 @@
 
       $( '<label for="toggle-list-or-single" >List</label>' )
           .appendTo( '#top' ) ;
+
+      $( '<button type="button" id="next-answer-or-card" >Next</button>' )
+          .click( function( event ) {
+              advance.nextAnswerOrCard() ;
+              updateBoard( advance ) ;
+          } )
+          .appendTo( '#top' ) ;
+
     }
 
 
