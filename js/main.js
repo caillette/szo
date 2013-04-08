@@ -45,6 +45,12 @@
       var start ;
 
       { // Firefox 19.0.2 wants this code block here.
+        $( '<button id="toggle-list-or-single" >Show Cards</button>' )
+            .click( function( event ) {
+                performAction( event, new szotargep.action.ShowList( advance ) ) ;
+            } )
+            .appendTo( '#top' )
+        ;
         $( '<button id="multi-step-action" >Multi-step action</button>' )
             .click( function( event ) {
                 performAction( event, new szotargep.action.LongDummyAction( 10000 ) ) ;
@@ -84,25 +90,21 @@
         actionInProgress( true ) ;
         $( '#board' ).empty() ;
 
-        actionPerformer = new szotargep.action.ActionPerformer(
+        performer = new szotargep.action.Performer(
             {
               id : nextActionId(), // Just for debugging.
-              batchSize : 100,
-              onBatchComplete : function() {
+              onStepComplete : function() {
                 setTimeout(
                     function() {
-                      if( actionPerformer ) actionPerformer = actionPerformer.perform() ;
+                      if( performer ) performer = performer.perform() ;
                     },
                     1 // Let window thread take a breath.
                 ) ;
               },
               onActionComplete : function( result ) {
-                actionPerformer = null ;
+                performer = null ;
                 actionInProgress( false ) ;
                 console.debug( 'Completed action in ' + elapsed( start ) + '.' ) ;
-              },
-              log : function( message ) {
-                  console.debug( message ) ;
               }
             },
             action
@@ -110,7 +112,7 @@
 
       }
 
-      var actionPerformer = null ;
+      var performer = null ;
 
 
 

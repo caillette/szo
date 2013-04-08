@@ -5,43 +5,40 @@
   // Performs an action that may take several steps to complete.
   // This lets window thread decide to start the next step, or simply not because another action
   // superceded this one. When selecting a lot of Cards (10.000 or more), one single DOM update
-  // would // choke the browser for several seconds. Instead, small incremental updates, while
-  // taking // longer in cumulated time, let the window thread "breath" and quickly respond to
+  // would choke the browser for several seconds. Instead, small incremental updates, while
+  // taking longer in cumulated time, let the window thread "breath" and quickly respond to
   // the user adjusting his choice, before the whole result finished a lengthy DOM update.
-  // For avoiding too small increments, the ActionPerformer executes steps in batches.
   // The ActionPerformer supports single-stepped actions as a simplification of the multi-step case.
-  szotargep.action.ActionPerformer = function() {
+  szotargep.action.Performer = function() {
 
-    var constructor = function ActionPerformer( context, action ) {
+    var constructor = function Performer( context, action ) {
 
-      var batch = 0 ;
+      var step = 0 ;
       var totalTime = 0 ;
 
       this.perform = function() {
 
         function logCompletion( action, totalTime ) {
-          context.log( 'ActionPerformer completed ' + action + ' action ' + context.id
+          console.debug( 'ActionPerformer completed ' + action + ' action ' + context.id
               + ' in ' + totalTime + ' ms.' ) ;
         }
 
         var start = new Date() ;
-        if( batch == 0 ) context.log( 'ActionPerformer starting action ' + context.id + ' ...' ) ;
+        if( step == 0 ) console.debug( 'ActionPerformer starting action ' + context.id + ' ...' ) ;
         if( action.singleStep ) {
           action.singleStep( context.id ) ;
           context.onActionComplete() ;
           logCompletion( 'single-step', new Date() - start ) ;
-        } else if( action.isComplete() ) {
-          context.onActionComplete() ;
-          logCompletion( 'multi-step', totalTime ) ;
         } else {
-          for( var i = 0 ; i < context.batchSize ; i ++ ) {
-            action.step( batch == 0 && i == 0, context.id, batch ) ;
-            if( action.isComplete() ) break ;
+          action.step( step == 0, context.id ) ;
+          if( action.isComplete() ) {
+            totalTime += new Date() - start ;
+            context.onActionComplete() ;
+            logCompletion( 'multi-step', totalTime ) ;
+          } else {
+            context.onStepComplete() ;
+            return this ;
           }
-          context.onBatchComplete() ;
-          batch ++ ;
-          totalTime += new Date() - start ;
-          return this ;
         }
         return null ; // Action complete.
       }
@@ -51,41 +48,48 @@
     return constructor ;
   }() ;
 
-  szotargep.action.LongDummyAction = function() {
 
-    var constructor = function LongDummyAction( stepCount ) {
+  szotargep.action.ShowList = function() {
 
-      var currentStep = 0 ;
+    var batchSize = 100 ;
+
+    var constructor = function ShowList( advance ) {
+
+      var cardIndex = 0 ;
+      var complete = false ;
 
       this.isComplete = function() {
-        return currentStep >= stepCount ;
+        return complete ;
       }
 
-      this.step = function( firstStep, id, batch ) {
-        var html = firstStep ? '<p>Initialized ' + this.constructor.name + '</p>' : '' ;
+      this.step = function() {
+        var html = '' ;
 
-        html += '<table>' ;
-        html += '  <tbody>' ;
-        html += '    <tr>' ;
-        html += '      <td>Action</td>' ;
-        html += '      <td>' + id + '</td>' ;
-        html += '    </tr>' ;
-        html += '    <tr>' ;
-        html += '      <td>Batch</td>' ;
-        html += '      <td>' + batch + '</td>' ;
-        html += '    </tr>' ;
-        html += '    <tr>' ;
-        html += '      <td>Step</td>' ;
-        html += '      <td>' + currentStep + '</td>' ;
-        html += '    </tr>' ;
-        html += '  </tbody>' ;
-        html += '</table>' ;
-        html += '<p></p>' ;
+        advance.visitCards(
+            function( card, last ) {
+              html += '<table>' ;
+              html += '  <tbody>' ;
+
+              card.visitStages( function( question, answer ) {
+                html += '    <tr>' ;
+                html += '      <td>' + ( question ? question : '' ) + '</td>' ;
+                html += '      <td>' + ( answer ? answer : '' ) + '</td>' ;
+                html += '    </tr>' ;
+              } ) ;
+
+              html += '  </tbody>' ;
+              html += '</table>' ;
+              html += '<p></p>' ; // Formatting trick for printing.
+
+              complete = last ;
+            },
+            cardIndex,
+            batchSize
+        ) ;
 
         $( '#board' ).append( html ) ;
-        currentStep ++ ;
+        cardIndex += batchSize ;
       }
-
 
     }
 
@@ -95,7 +99,7 @@
 
   szotargep.action.ShortDummyAction = function() {
 
-    var constructor = function ShortDummyAction( flag ) {
+    var constructor = function ShortDummyAction() {
 
       this.singleStep = function( id ) {
         var html = '<p>Initialized ' + this.constructor.name + '</p>' ;
@@ -104,10 +108,6 @@
         html += '    <tr>' ;
         html += '      <td>Action</td>' ;
         html += '      <td>' + id + '</td>' ;
-        html += '    </tr>' ;
-        html += '    <tr>' ;
-        html += '      <td>Flag</td>' ;
-        html += '      <td>' + flag + '</td>' ;
         html += '    </tr>' ;
         html += '  </tbody>' ;
         html += '</table>' ;

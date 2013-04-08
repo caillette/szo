@@ -59,7 +59,7 @@
       // When disclosing the next answer, returns 0 or greater as answer index.
       this.nextAnswerOrCard = function() {
         checkViewAsList( false ) ;
-        if( ! currentCard || disclosure >= currentCard.answers().length ) {
+        if( ! currentCard || disclosure >= currentCard.answerCount() ) {
           this.pickRandomCard() ;
         } else {
           disclosure ++ ;
@@ -107,9 +107,17 @@
         return cards.slice( 0 ) ;
       }
 
-      this.visitCards = function( visitor ) {
-        for( var c = 0 ; c < cards.length ; c ++ ) {
-          visitor( cards[ c ] ) ;
+      this.visitCards = function( visitor, first, last ) {
+        first = typeof first === 'number' ? first : 0 ;
+        last = typeof last === 'number' ? Math.min( last, cards.length - 1 ) : cards.length - 1 ;
+        var c = first ;
+        while( true ) {
+          if( c > last ) {
+            break
+          } else {
+            visitor( cards[ c ], c == last ) ;
+            c ++ ;
+          }
         }
       }
 

@@ -45,6 +45,27 @@ test( 'Instantiate Vocabulary from predefined Cards', function() {
 
 } ) ;
 
+test( 'Visiting Card stages', function() {
+  var questions = [] ;
+  var answers = [] ;
+  vocabulary1().card1.visitStages( function( question, answer ) {
+    if( question ) questions.push( question ) ;
+    if( answer ) answers.push( answer ) ;
+  } ) ;
+  deepEqual( questions, [ 'Question', 'And more' ] ) ;
+  deepEqual( answers, [ 'Választ' ] ) ;
+} ) ;
+
+test( 'Visiting Vocabulary cards', function() {
+  var v = vocabulary1() ;
+  var cards = [] ;
+  v.vocabulary.visitCards( function( card ) {
+    cards.push( card ) ;
+  } ) ;
+  deepEqual( cards, [ v.card1, v.card2, v.card3 ] ) ;
+} ) ;
+
+
 test( 'Instantiate Pack with problem', function() {
   var pack1 = new szotargep.vocabulary.Pack(
       'url:whatever',
@@ -156,8 +177,59 @@ test( 'nextAnswerOrCard', function() {
   equal( a.nextAnswerOrCard(), 1, 'nextAnswerOrCard' ) ; // Next answer.
   equal( a.nextAnswerOrCard(), 0, 'nextAnswerOrCard' ) ; // Next Card.
 
-  // For some unknown reason, strictEqual tells that Card references are not the same.
+  // For some unknown reason, strictEqual or deepEqual tell that Card references are not the same.
   equal( a.currentCard().lineInPack(), v.card2.lineInPack(), 'currentCard' ) ;
+} ) ;
+
+test( 'Visiting selected Cards in Advance', function() {
+  var v = vocabulary1() ;
+  var a = advance1() ;
+
+  var visited1 = [] ;
+  a.visitCards(
+      function( card, finished ) {
+          visited1.push( [ card.lineInPack(), finished ] )
+      }
+  ) ;
+  deepEqual(
+      visited1,
+      [
+          [ v.card1.lineInPack(), false ],
+          [ v.card2.lineInPack(), false ],
+          [ v.card3.lineInPack(), true ]
+      ],
+      'all Cards (all are selected by default)'
+  ) ;
+
+  var visited2 = [] ;
+  a.visitCards(
+      function( card, finished ) { visited2.push( [ card.lineInPack(), finished ] ) },
+      1, 1
+  ) ;
+  deepEqual( visited2, [ [ v.card2.lineInPack(), true ] ], 'visit with range' ) ;
+
+  var visited3 = [] ;
+  a.visitCards(
+      function( card, finished ) { visited3.push( [ card.lineInPack(), finished ] ) ; },
+      1, 2
+  ) ;
+  deepEqual(
+      visited3,
+      [ [ v.card2.lineInPack(), false ], [ v.card3.lineInPack(), true ] ],
+      'visit with range'
+  ) ;
+
+  var visited4 = [] ;
+  a.visitCards(
+      function( card, finished ) { visited4.push( [ card.lineInPack(), finished ] ) ; },
+      1, 1000
+  ) ;
+  deepEqual(
+      visited4,
+      [ [ v.card2.lineInPack(), false ], [ v.card3.lineInPack(), true ] ],
+      'visit with excessive range'
+  ) ;
+
 } ) ;
 
 

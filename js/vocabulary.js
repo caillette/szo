@@ -110,6 +110,16 @@
       this.questions = function() {
         return questions.slice( 0 ) ;
       }
+      this.visitStages = function( visitor ) {
+        var stageCount = Math.max( questions.length, answers.length ) ;
+        for( var s = 0 ; s < stageCount ; s ++ ) {
+          visitor(
+              s >= questions.length ? null : questions[ s ],
+              s >= answers.length ? null : answers[ s ]
+          ) ;
+        }
+      }
+      // Deprecated
       this.answers = function() {
         return answers.slice( 0 ) ;
       }
@@ -117,6 +127,14 @@
 
     constructor.prototype.toString = function() {
       return( 'Card{' + this.lineInPack() + '@' + this.pack().url() + '}' ) ;
+    }
+
+    constructor.prototype.answerCount = function() {
+      var answerCount = 0 ;
+      this.visitStages( function( question, answer ) {
+        if( answer != null ) answerCount ++ ;
+      } ) ;
+      return answerCount ;
     }
 
     constructor.prototype.toHtml = function( standalone, inverted ) {
