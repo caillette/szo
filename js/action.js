@@ -66,7 +66,7 @@
         var html = '' ;
 
         advance.visitCards(
-            function( card ) { html += cardAsHtml( card ) ; },
+            function( card ) { html += cardAsHtml( card, advance.viewAsList() ) ; },
             function() { complete = true },
             cardIndex,
             cardIndex + batchSize
@@ -91,7 +91,7 @@
       this.singleStep = function( id ) {
         var html = '' ;
         var card = advance.currentCard() ;
-        html += cardAsHtml( card ) ;
+        html += cardAsHtml( card, advance.viewAsList() ) ;
         $( '#board' ).html( html ) ;
       }
     }
@@ -100,26 +100,39 @@
   }() ;
 
 
-  function cardAsHtml( card ) {
+  function cardAsHtml( card, listView ) {
+
+    function sectionAsTableDivision( section, undisclosed ) {
+      var td =
+          '<td' + ( ( undisclosed && ! listView ) ? ' class="undisclosed" ' : '' ) + '>'
+        + ( section ? '<span>' + section + '</span>' : '' )
+        + '</td>\n'
+      ;
+      return td ;
+    }
+
     html = '' ;
 
     if( card != null ) {
-      card.visitTags( function( tag ) { html += tag ; html += ' ' } ) ;
-      html += '<br>' ;
+      card.visitTags( function( tag ) {
+          html += tag ;
+          html += ' ' ;
+      } ) ;
+      html += '<br>\n' ;
 
-      html += '<table>' ;
-      html += '  <tbody>' ;
+      html += '<table>\n' ;
+      html += '<tbody>\n' ;
 
       card.visitStages( function( question, answer ) {
-        html += '    <tr>' ;
-        html += '      <td>' + ( question ? question : '' ) + '</td>' ;
-        html += '      <td>' + ( answer ? answer : '' ) + '</td>' ;
-        html += '    </tr>' ;
+        html += '<tr>\n' ;
+        html += sectionAsTableDivision( question, false ) ;
+        html += sectionAsTableDivision( answer, true ) ;
+        html += '</tr>\n' ;
       } ) ;
 
-      html += '  </tbody>' ;
-      html += '</table>' ;
-      html += '<p></p>' ; // Formatting trick for printing.
+      html += '</tbody>\n' ;
+      html += '</table>\n' ;
+      html += '<p></p>\n' ; // Formatting trick for printing.
     }
 
     html = html === '' ? '<p>No Card to show</p>' : html ;
