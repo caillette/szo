@@ -29,8 +29,13 @@
             var searchParser = find( parsers, szotargep.parser.SEARCH_GRAMMAR_URI ) ;
             var vocabularyParser = find( parsers, szotargep.parser.VOCABULARY_GRAMMAR_URI ) ;
             var packParser = find( parsers, szotargep.parser.PACK_GRAMMAR_URI ) ;
-            var locationSearch =
-                new szotargep.loader.LocationSearch( searchParser.parse( search ) ) ;
+            try {
+              var locationSearch =
+                  new szotargep.loader.LocationSearch( searchParser.parse( search ) ) ;
+            } catch( e ) {
+              report( 'Could not interpret URL: ' + e ) ;
+              return ;
+            }
             var vocabularyUri = locationSearch.vocabulary() ;
             window.console.info( 'Loading vocabulary from ' + vocabularyUri + ' ...' ) ;
 
