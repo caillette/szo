@@ -163,8 +163,7 @@ td.undisclosed > span {
   margin : 1em ;
 }
 
-/*JQuery Collapse plugin seems to require this trick.*/
-/*#problem-disclosure > h2 > */a:-webkit-any-link {
+#problem-disclosure > a {
   font-weight : bold ;
   text-decoration : none ;
   color : #cc0000 ;
