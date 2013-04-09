@@ -14,6 +14,7 @@
           window.location.search,
           function( vocabulary ) {
             var advance = new szotargep.advance.Advance( vocabulary, window.location.search ) ;
+            reportProblems( vocabulary ) ;
             createCardIndex( vocabulary ) ;
             createTagWidgets( advance ) ;
             createTopWidgets( advance ) ;
@@ -24,6 +25,28 @@
             console.log( 'Initialization failed.' ) ;
           }
       ) ;
+    }
+
+    function reportProblems( vocabulary ) {
+      var html = '' ;
+      vocabulary.visitPacks( function( pack ) {
+        if( pack.problem() )
+            html += '<p><code>' + pack.url() + '</code><br>' + pack.problem() + '</p>' ;
+      } ) ;
+      if( html != '' ) {
+        $( '<div id="problem-list" >' + html + '</div>' )
+            .appendTo( '#problems' ) ;
+        $( '<h2 id="problem-disclosure" >Could not load all the Vocabulary</h2>' )
+            .click( function() {  } )
+            .prependTo( '#problems' )
+        ;
+        $( '#problems' ).collapse( {
+            accordion : true,
+            open: function() { this.slideDown( 150 ) },
+            close: function() { this.slideUp( 150 ) }
+        } ) ;
+
+      }
     }
 
     function createCardIndex( vocabulary ) {

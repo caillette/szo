@@ -155,6 +155,38 @@ td.undisclosed > span {
 }
 
 
+/***********
+  Problems
+************/
+
+#problems {
+  margin : 1em ;
+}
+
+/*JQuery Collapse plugin seems to require this trick.*/
+/*#problem-disclosure > h2 > */a:-webkit-any-link {
+  font-weight : bold ;
+  text-decoration : none ;
+  color : #cc0000 ;
+}
+
+#problem-disclosure :hover {
+  color : #ff1111 ;
+}
+
+#problem-list > p {
+  margin : 0.5em ;
+  font-size : 80% ;
+}
+
+#problem-list > p > code {
+  font-weight : bold ;
+  font-family : Courier New, Courier New, monospace ;
+}
+
+
+
+
 /********
   Other
 *********/
