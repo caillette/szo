@@ -155,10 +155,32 @@ test( 'viewAsList', function() {
   ok( ! a.viewAsList( false ) ) ;
 } ) ;
 
+test( 'viewFlip, basic', function() {
+  var a = advance1() ;
+  ok( a.viewFlip( true ) ) ;
+  ok( ! a.viewFlip( false ) ) ;
+} ) ;
+
+test( 'viewFlip, reset disclosure', function() {
+  var nextRandom = 0 ;
+  var v = vocabulary1() ;
+  var a = advance( v.vocabulary, function( upperIndex ) { return nextRandom } ) ;
+  a.viewAsList( false ) ; // Triggers a Card pick.
+  nextRandom = 2 ;
+  equal( a.nextAnswerOrCard(), 1, 'nextAnswerOrCard' ) ; // Next answer.
+
+  nextRandom = "No more random now" ;
+  ok( a.viewFlip( true ) ) ;
+
+  // Next answer would be 2 without disclosure reset.
+  equal( a.nextAnswerOrCard(), 1, 'nextAnswerOrCard' ) ;
+} ) ;
+
 test( 'initialState', function() {
   var v = vocabulary1() ;
   var a = advance1() ;
   ok( a.viewAsList() ) ;
+  ok( ! a.viewFlip() ) ;
   deepEqual( a.cards(), v.vocabulary.cards(), 'all Cards selected' ) ;
 
 
