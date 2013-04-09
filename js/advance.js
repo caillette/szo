@@ -111,6 +111,7 @@
       this.viewFlip = function( flip ) {
         if( typeof flip === 'boolean' ) {
           flipView = flip ;
+          disclosure = 0 ;
         }
         return flipView ;
       }
