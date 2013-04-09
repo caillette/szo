@@ -14,6 +14,7 @@
           window.location.search,
           function( vocabulary ) {
             var advance = new szotargep.advance.Advance( vocabulary, window.location.search ) ;
+            createCardIndex( vocabulary ) ;
             createTagWidgets( advance ) ;
             createTopWidgets( advance ) ;
             initialUpdate( advance ) ;
@@ -23,6 +24,21 @@
             console.log( 'Initialization failed.' ) ;
           }
       ) ;
+    }
+
+    function createCardIndex( vocabulary ) {
+      var cards = vocabulary.cards() ;
+
+      szotargep.index.cardOfIndex = function( index ) {
+        return cards[ index ] ;
+      } ;
+
+      szotargep.index.indexOfCard = function( card ) {
+        var index = cards.indexOf( card ) ;
+        if( index < 0 ) throw 'Unknown Card: ' + card ;
+        return index ;
+      }
+
     }
 
     function createTagWidgets( advance ) {

@@ -31,12 +31,13 @@ Array.prototype.isArray = function ( object ) {
 
 
 
-// ===========
-// Namespacing
-// ===========
 
 
 ( function ( szotargep ) {
+
+// =========
+// Resources
+// =========
 
   szotargep.resource = {} ;
 
@@ -104,5 +105,41 @@ Array.prototype.isArray = function ( object ) {
     ) ;
   }
 
+// =====
+// Index
+// =====
+
+  // Enriched with useful functions by szotargep.main after vocabulary loaded.
+  szotargep.index = {} ;
+
+
+// ====
+// HTML
+// ====
+
+  szotargep.html = {} ;
+
+  szotargep.html.showCardDetail = function( card ) {
+    if( typeof card === 'number' ) card = szotargep.index.cardOfIndex( card ) ;
+
+    var html = '' ;
+    if( card ) {
+      html += '<p>' ;
+      html += '<code>' + card.pack().url() + ' line ' + card.lineInPack() + '</code><br>' ;
+      var tagsHtml = '' ;
+      card.visitTags( function( tag ) {
+        tagsHtml += '<span>' + tag + '</span>' ;
+      } ) ;
+      tagsHtml = tagsHtml === '' ? '<em>Untagged</em>' : tagsHtml ;
+      html += tagsHtml ;
+    }
+    $( '#card-location' ).html( html ) ;
+  }
+
 
 } ( window.szotargep = window.szotargep || {} ) ) ;
+
+
+
+
+

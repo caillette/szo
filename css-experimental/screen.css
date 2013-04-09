@@ -59,21 +59,34 @@ body {
   font-style : italic ;
 }
 
-#card-location code {
-  font-family : Courier New, Courier New, monospace ;
-}
-
 #card-location {
   position : fixed ;
-  bottom : 2px ;
-  right : 2px ;
-  padding-right : 1em ;
-  background : #dddddd ;
+  bottom : 0.6em ;
+  right : 0.6em ;
+  font-size : 100% ;
   text-align : right ;
   line-height : 1.4 ;
 }
 
+#card-location code {
+  font-family : Courier New, Courier New, monospace ;
+}
 
+#card-location span, em {
+  font-size : 90% ;
+  padding : 0.1em 0.3em ;
+  margin-left : 0.4em ;
+}
+
+#card-location em {
+  font-style : italic ;
+  margin : 0.2em ;
+  border : 1px none ;
+}
+
+#card-location span {
+  border : 1px solid black ;
+}
 
 
 /********

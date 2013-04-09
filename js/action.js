@@ -93,6 +93,7 @@
         var card = advance.currentCard() ;
         html += cardAsHtml( card, advance.viewAsList() ) ;
         $( '#board' ).html( html ) ;
+        szotargep.html.showCardDetail( card ) ;
       }
     }
 
@@ -113,8 +114,19 @@
 
     html = '' ;
 
-    if( card != null ) {
-      html += '<table' + ( listView ? ' class="card-list"' : '' ) + '>\n' ;
+    if( card == null ) {
+      html += '<p>No Card to show</p>' ;
+    } else {
+
+      var tableAttributes = '' ;
+      if( listView ) {
+        tableAttributes += ' class="card-list" ' ;
+        tableAttributes += 'onMouseOver="szotargep.html.showCardDetail('
+            + szotargep.index.indexOfCard( card ) + ')" ' ;
+        tableAttributes += 'onMouseOut="szotargep.html.showCardDetail()" ' ;
+      }
+
+      html += '<table' + tableAttributes + '>\n' ;
       html += '<tbody>\n' ;
 
       card.visitStages( function( question, answer ) {
@@ -129,7 +141,6 @@
       html += '<p class="void no-selection" ></p>\n' ; // Formatting trick for printing.
     }
 
-    html = html === '' ? '<p>No Card to show</p>' : html ;
 
     return html ;
   }
