@@ -97,6 +97,12 @@ The deck is a "special" tag at the top of the list. Selecting it deselect all ot
 
 Would look serious while this doesn't seem to be such important.
 
+Use http://en.wikipedia.org/wiki/ISO_639-2[ISO 639-2/T] codes internally:
+
+* hun : Hungarian "Magyar"
+* fra : French "Français"
+* eng : English "English"
+
 
 
 == Typographic tricks
