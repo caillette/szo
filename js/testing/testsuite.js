@@ -169,7 +169,15 @@ function advance( vocabulary, random ) {
   } else if( typeof random === 'number' ) {
     random = createRandomFunction( random ) ;
   }
-  return new szotargep.advance.Advance( vocabulary, '', random ) ;
+  return new szotargep.advance.Advance(
+      vocabulary,
+      {
+          tags : function() { return null },
+          single : function() { return false },
+          flip : function() { return false }
+      },
+      random
+  ) ;
 }
 
 test( 'viewAsList', function() {
@@ -190,7 +198,7 @@ test( 'viewFlip, reset disclosure', function() {
   var a = advance( v.vocabulary, function( upperIndex ) { return nextRandom } ) ;
   a.viewAsList( false ) ; // Triggers a Card pick.
   nextRandom = 2 ;
-  equal( a.nextAnswerOrCard(), 1, 'nextAnswerOrCard' ) ; // Next answer.
+  equal( a.disclosure(), 0, 'nextAnswerOrCard' ) ; // Next answer.
 
   nextRandom = "No more random now" ;
   ok( a.viewFlip( true ) ) ;
@@ -274,7 +282,7 @@ test( 'Visiting selected Cards in Advance', function() {
   var visited3 = [] ;
   a.visitCards(
       function( card ) { visited3.push( card.lineInPack() ) ; },
-      function() { ok( true ) },
+      function() { ok( true, 'completion happens' ) },
       1, 2
   ) ;
   deepEqual(
@@ -295,6 +303,12 @@ test( 'Visiting selected Cards in Advance', function() {
       'visit with excessive range'
   ) ;
 
+  var visited5 = [] ;
+  a.visitCards(
+      function( card ) { visited3.push( card.lineInPack() ) ; },
+      function() { ok( false, 'completion must not happen, end not reached' ) },
+      0, 1
+  ) ;
 } ) ;
 
 

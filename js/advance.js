@@ -140,7 +140,7 @@
             c ++ ;
           }
         }
-        onComplete() ;
+        if( c >= cards.length ) onComplete() ;
       }
 
       this.selectAllTags = function() {
