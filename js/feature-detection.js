@@ -6,7 +6,7 @@
     var constructor = function( div ) {
 
       reportHtml( '<h3>Verifying browser features...</h3>' ) ;
-      var required = [ 'applicationcache', 'history', 'webworkers' ] ;
+      var required = [ 'applicationcache', 'history' ] ;
 
       var allGood = true ;
 
