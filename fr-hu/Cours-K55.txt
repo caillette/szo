@@ -30,5 +30,3 @@ admettre, recevoir
 felvesz
   felvenni
   Felvettek az egyetemre.
-  
-  

@@ -63,7 +63,8 @@ abbahagy
 coudre
 varr
 
-machine à coudre varrógép
+machine à coudre
+varrógép
 
 parier
 fogad

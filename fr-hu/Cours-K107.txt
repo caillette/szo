@@ -75,6 +75,7 @@ biztonság
 ceinture
 öv
 
+ceinture de sécurité
 biztonsági öv
 
 essuyer

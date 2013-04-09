@@ -17,7 +17,7 @@ ellenőriz
   Nem akarom, hogy az ellenőr a jegyem ellenőrizze.
 
 jouer aux cartes
- kártyázik
+kártyázik
 
 acheter qqchose (emphatique)
 megvásárol vmit

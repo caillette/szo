@@ -43,6 +43,8 @@
           }
         } catch( e ) {
           problem = e ;
+          if( e[ 'line' ] != null ) problem += ' Location: line=' + e.line ;
+          if( e[ 'column' ] != null ) problem += ', column=' + e.column ;
           cards = [] ;
           console.error( 'Could not interpret ' + url + ': ' + problem ) ;
         }

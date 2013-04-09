@@ -5,7 +5,8 @@ vám
 
 déclarer à la douane
   Est-ce que vous avez quelque chose à déclarer ?
-  Van valami elvámolnivalója?
+elvámol
+  Van valami elvámolni valója?
 
 puisque
 hiszen
