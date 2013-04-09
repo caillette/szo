@@ -37,7 +37,6 @@
         $( '<div id="problem-list" >' + html + '</div>' )
             .appendTo( '#problems' ) ;
         $( '<h2 id="problem-disclosure" >Could not load all the Vocabulary</h2>' )
-            .click( function() {  } )
             .prependTo( '#problems' )
         ;
         $( '#problems' ).collapse( {
