@@ -124,7 +124,6 @@ Array.prototype.isArray = function ( object ) {
 
     var html = '' ;
     if( card ) {
-      html += '<p>' ;
       html += '<code>' + card.pack().url() + ' line ' + card.lineInPack() + '</code><br>' ;
       var tagsHtml = '' ;
       card.visitTags( function( tag ) {

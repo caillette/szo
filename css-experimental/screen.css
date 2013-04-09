@@ -68,23 +68,23 @@ body {
   line-height : 1.4 ;
 }
 
-#card-location code {
+#card-location > code {
   font-family : Courier New, Courier New, monospace ;
 }
 
-#card-location span, em {
+#card-location > span, #card-location > em {
   font-size : 90% ;
   padding : 0.1em 0.3em ;
   margin-left : 0.4em ;
 }
 
-#card-location em {
+#card-location > em {
   font-style : italic ;
   margin : 0.2em ;
   border : 1px none ;
 }
 
-#card-location span {
+#card-location > span {
   border : 1px solid black ;
 }
 
