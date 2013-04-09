@@ -159,8 +159,10 @@ td.undisclosed > span {
   Problems
 ************/
 
+
 #problems {
-  margin : 1em ;
+  margin-left : 1em ;
+  padding-bottom : 1em ; /* Vertical margins mess up the Collapse plugin. */
 }
 
 #problem-disclosure > a {

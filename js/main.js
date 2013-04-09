@@ -42,8 +42,8 @@
         ;
         $( '#problems' ).collapse( {
             accordion : true,
-            open: function() { this.slideDown( 150 ) },
-            close: function() { this.slideUp( 150 ) }
+            open : function() { this.slideDown( 150 ) },
+            close : function() { this.slideUp( 150 ) }
         } ) ;
 
       }
