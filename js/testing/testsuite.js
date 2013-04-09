@@ -172,7 +172,7 @@ test( 'viewFlip, reset disclosure', function() {
   nextRandom = "No more random now" ;
   ok( a.viewFlip( true ) ) ;
 
-  // Next answer would be 2 without disclosure reset.
+  // Next answer would be 0 (next Card) without disclosure reset.
   equal( a.nextAnswerOrCard(), 1, 'nextAnswerOrCard' ) ;
 } ) ;
 
