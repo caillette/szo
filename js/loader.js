@@ -13,11 +13,9 @@
       html += message ;
       html += '</p>' ;
 
-      $( '<div>' + html + '</div>' )
-          .appendTo( div ) ;
+      $( '<div>' + html + '</div>' ).appendTo( div ) ;
 
-      $( '<h2>Could not initialize the application</h2>' )
-          .prependTo( div )
+      $( '<h2>Could not initialize the application</h2>' ).prependTo( div )
 
     }
 
@@ -27,7 +25,7 @@
         for( p = 0 ; p < parsers.length ; p ++ ) {
           if( parsers[ p ].problem() ) {
             report( parsers[ p ].problem(),
-                'Could not interpret grammar in: ' + parsers[ p ].uri() ) ;
+                'Could not find/interpret grammar in: ' + parsers[ p ].uri() ) ;
             parsersHealthy = false ;
           }
         }
