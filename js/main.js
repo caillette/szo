@@ -40,7 +40,7 @@
           }
         }( tag, special ) ;
 
-        var id = 'tag$' + ( special ? '$' : '' ) + tag ;
+        var id = 'tag$' + tag ;
         $( '<input '
             + 'type="checkbox" '
             + 'id="' + id + '"'
@@ -53,21 +53,21 @@
 
         $( '<label '
             + 'for="' + id + '" >'
-            + ( title ? '<i>' + title + '</i>' : tag )
+            + ( title ? '<em>' + title + '</em>' : tag )
             + '</label><br>'
         ).appendTo( '#tags' ) ;
       }
 
-      var tags = advance.vocabulary().tags() ;
-      for( var t = 0 ; t < tags.length ; t ++ ) {
-        var tag = tags[ t ] ;
-        createTagWidget( tag )
-      }
       createTagWidget(
           szotargep.vocabulary.UNTAGGED,
           'Untagged',
           function( checked ) { advance.toggleTag( szotargep.vocabulary.UNTAGGED, checked ) }
       ) ;
+      var tags = advance.vocabulary().tags() ;
+      for( var t = 0 ; t < tags.length ; t ++ ) {
+        var tag = tags[ t ] ;
+        createTagWidget( tag )
+      }
     }
     
     function initialUpdate( advance ) {

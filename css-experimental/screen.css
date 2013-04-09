@@ -53,6 +53,10 @@ body {
   margin : 0.3em ;
 }
 
+#tags em {
+  font-style : italic ;
+}
+
 #card-location code {
   font-family : Courier New, Courier New, monospace ;
 }
