@@ -1,10 +1,4 @@
-import url( 'reset.css' ) ;
-
-
-#tags {
-  visibility : collapse ;
-  height : 0 ;
-}
+@import url( 'reset.css' ) ;
 
 
 .void {

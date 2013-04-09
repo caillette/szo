@@ -105,7 +105,6 @@
       $( '<button type="button" id="next-answer-or-card" class="widget" >Next</button>' )
           .click( function( event ) {
               var next = advance.nextAnswerOrCard() ;
-              console.debug( 'next: ' + next ) ;
               if( next == 0 ) {
                 updateBoard( advance ) ;
               } else {

@@ -2,9 +2,9 @@
 <head>
   <meta http-equiv='Content-Type' content='text/html; charset=UTF-8' >
 
-  <link rel='stylesheet' href='../css-experimental/general.css' type='text/css' media='screen' />
-  <link rel='stylesheet' href='../css-experimental/screen.css' type='text/css' media='screen' />
-  <link rel="stylesheet" href="../css-experimental/print.css" type="text/css" media="print" />
+  <link rel='stylesheet' href='css-experimental/general.css' type='text/css' media='screen' />
+  <link rel='stylesheet' href='css-experimental/screen.css' type='text/css' media='screen' />
+  <link rel="stylesheet" href="css-experimental/print.css" type="text/css" media="print" />
 
   <script type='text/javascript' src='js/jquery-1.9.1.js' ></script>
   <script type='text/javascript' src='js/modernizr-2.6.2.js' ></script>
@@ -46,17 +46,22 @@
 
   <div id='container'>
 
-    <div id='top' class='no-selection' ></div>
+    <div id='top' class='no-selection' >
+      <div id='action-performing' class='no-selection' style='opacity : 0 ;' >
+        <!-- http://spiffygif.com/?width=2&radius=8&color=757575&bgColor=DDDDDD&halo=false -->
+        <img src='images/spiffygif_32x32_thinner.gif' >
+      </div>
+
+    </div>
+
 
     <div id='tags' class='no-selection' ></div>
-
-    <div id='action-performing' class='no-selection' style='opacity : 0 ;' >Action in progress…</div>
 
     <div id='board' ></div>
 
   </div>
 
-  <div id='card-location' ></div>
+  <div id='card-location' >Location goes here</div>
 
 </body>
 </html>

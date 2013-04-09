@@ -5,13 +5,21 @@ body * {
   font-family : Palatino Linotype, Book Antiqua, Palatino, serif ;
 }
 
-#theme-choice, #theme-key, #toolbar {
+#tags, #card-location, #top {
   display : none ;
 }
 
 .void {
   height : 6pt ; /* Defines space between two tables. */
 }
+
+
+#tags {
+  visibility : collapse ;
+  height : 0 ;
+}
+
+
 
 /********
   Board
