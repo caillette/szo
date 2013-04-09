@@ -180,6 +180,22 @@
           .appendTo( '#top' ) 
       ;
 
+      $( '<input '
+          + 'type="checkbox" '
+          + 'id="toggle-flip" '
+          + 'class="widget" '
+          + '></input>'
+      )
+          .click( function( event ) {
+            advance.viewFlip( $( '#toggle-flip' ).prop( 'checked' ) ) ;
+            updateBoard( advance ) ;
+          } )
+          .appendTo( '#top' )
+      ;
+
+      $( '<label for="toggle-flip" >Flip</label>' ) .appendTo( '#top' ) ;
+
+
     }
 
     function disclose( next ) {

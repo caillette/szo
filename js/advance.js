@@ -21,6 +21,7 @@
       var currentCard = null ;
       var disclosure = 0 ;
       var asList ;
+      var flipView ;
 
 
       // TODO use uriParameters.
@@ -105,6 +106,15 @@
         return asList ;
       }
 
+      // flip: boolean, optional, method has no side-effect if asList is not set.
+      // Returns the updated value.
+      this.viewFlip = function( flip ) {
+        if( typeof flip === 'boolean' ) {
+          flipView = flip ;
+        }
+        return flipView ;
+      }
+
       // Returns array copy. Not a great deal as we don't call it often.
       this.tagSelection = function() {
         return tagSelection.slice( 0 ) ;
@@ -153,6 +163,7 @@
 
       this.selectAllTags() ;
       this.viewAsList( true ) ;
+      this.viewFlip( false ) ;
 
     }
     return constructor ;

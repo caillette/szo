@@ -68,7 +68,9 @@
         var html = '' ;
 
         advance.visitCards(
-            function( card ) { html += cardAsHtml( card, advance.viewAsList() ) ; },
+            function( card ) {
+                html += cardAsHtml( card, advance.viewAsList(), advance.viewFlip() )
+            },
             function() { complete = true },
             cardIndex,
             cardIndex + batchSize
@@ -93,7 +95,7 @@
       this.singleStep = function( id ) {
         var html = '' ;
         var card = advance.currentCard() ;
-        html += cardAsHtml( card, advance.viewAsList() ) ;
+        html += cardAsHtml( card, advance.viewAsList(), advance.viewFlip() ) ;
         $( '#board' ).html( html ) ;
         szotargep.html.showCardDetail( card ) ;
       }
@@ -106,7 +108,7 @@
     return '<p class="empty" >Nothing to show</p>' ;
   }
 
-  function cardAsHtml( card, listView ) {
+  function cardAsHtml( card, listView, viewFlip ) {
 
     function sectionAsTableDivision( section, undisclosed ) {
       var td =
@@ -134,12 +136,18 @@
       html += '<table' + tableAttributes + '>\n' ;
       html += '<tbody>\n' ;
 
-      card.visitStages( function( question, answer ) {
-        html += '<tr>\n' ;
-        html += sectionAsTableDivision( question, false ) ;
-        html += sectionAsTableDivision( answer, true ) ;
-        html += '</tr>\n' ;
-      } ) ;
+      var stageVisitor = function( question, answer ) {
+         html += '<tr>\n' ;
+         html += sectionAsTableDivision( question, false ) ;
+         html += sectionAsTableDivision( answer, true ) ;
+         html += '</tr>\n' ;
+       } ;
+
+      card.visitStages(
+          viewFlip
+          ? function( question, answer ) { stageVisitor( answer, question ) }
+          : stageVisitor
+      ) ;
 
       html += '</tbody>\n' ;
       html += '</table>\n' ;
