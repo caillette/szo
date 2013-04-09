@@ -4,11 +4,21 @@
 
   szotargep.loader.load = function( div, search, onSuccess, onFailure ) {
 
-    function report( problem ) {
-      if( div != null ) {
-        $( div ).append( '<p>' + problem + '</p>') ;
+    function report( exception, message ) {
+      html = '<p>' ;
+      if( exception ) {
+        window.console.error( exception ) ;
+        html += '<code>' + exception + '</code><br>' ;
       }
-      window.console.error( problem ) ;
+      html += message ;
+      html += '</p>' ;
+
+      $( '<div>' + html + '</div>' )
+          .appendTo( div ) ;
+
+      $( '<h2>Could not initialize the application</h2>' )
+          .prependTo( div )
+
     }
 
     szotargep.parser.createDefaultParsers(
@@ -16,7 +26,8 @@
         var parsersHealthy = true ;
         for( p = 0 ; p < parsers.length ; p ++ ) {
           if( parsers[ p ].problem() ) {
-            report( parsers[ p ].problem() ) ;
+            report( parsers[ p ].problem(),
+                'Could not interpret grammar in: ' + parsers[ p ].uri() ) ;
             parsersHealthy = false ;
           }
         }
@@ -33,7 +44,7 @@
               var locationSearch =
                   new szotargep.loader.LocationSearch( searchParser.parse( search ) ) ;
             } catch( e ) {
-              report( 'Could not interpret URL: ' + e ) ;
+              report( e, 'Could not interpret this part of the URL: ' + search ) ;
               return ;
             }
             var vocabularyUri = locationSearch.vocabulary() ;
@@ -44,7 +55,7 @@
                 function( resources ) {
                   var vocabularyList = resources[ 0 ].content ;
                   if( typeof vocabularyList === 'undefined' || vocabularyList === null ) {
-                    report( 'Could not load ' + vocabularyUri ) ;
+                    report( '', 'Could not load ' + vocabularyUri ) ;
                     onFailure() ;
                   } else {
                     var parsedVocabulary = vocabularyParser.parse( vocabularyList ) ;
@@ -74,7 +85,7 @@
             ) ;
 
           } catch( e ) {
-            report( e ) ;
+            report( e, 'Unknown error' ) ;
             onFailure() ;
           }
         } else {

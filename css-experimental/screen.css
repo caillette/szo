@@ -165,22 +165,23 @@ td.undisclosed > span {
   padding-bottom : 1em ; /* Vertical margins mess up the Collapse plugin. */
 }
 
-#problem-disclosure > a {
+#problems > h2, #problems > h2 > a {
   font-weight : bold ;
   text-decoration : none ;
   color : #cc0000 ;
 }
 
-#problem-disclosure :hover {
+#problems > h2 :hover {
   color : #ff1111 ;
 }
 
-#problem-list > p {
+/* Need the div for collapsing. */
+#problems > div > p {
   margin : 0.5em ;
   font-size : 80% ;
 }
 
-#problem-list > p > code {
+#problems > div > p > code {
   font-weight : bold ;
   font-family : Courier New, Courier New, monospace ;
 }

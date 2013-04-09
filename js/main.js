@@ -34,9 +34,9 @@
             html += '<p><code>' + pack.url() + '</code><br>' + pack.problem() + '</p>' ;
       } ) ;
       if( html != '' ) {
-        $( '<div id="problem-list" >' + html + '</div>' )
+        $( '<div>' + html + '</div>' )
             .appendTo( '#problems' ) ;
-        $( '<h2 id="problem-disclosure" >Could not load all the Vocabulary</h2>' )
+        $( '<h2>Could not load all the Vocabulary</h2>' )
             .prependTo( '#problems' )
         ;
         $( '#problems' ).collapse( {
