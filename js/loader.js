@@ -56,7 +56,13 @@
                     report( '', 'Could not load ' + vocabularyUri ) ;
                     onFailure() ;
                   } else {
-                    var parsedVocabulary = vocabularyParser.parse( vocabularyList ) ;
+                    var parsedVocabulary ;
+                    try {
+                      parsedVocabulary = vocabularyParser.parse( vocabularyList ) ;
+                    } catch( e ) {
+                      report( e, 'Could not parse Vocabulary' ) ;
+                      return ;
+                    }
                     window.console.debug( 'Loaded ' + parsedVocabulary.length +
                       ' pack reference' + ( parsedVocabulary.length > 1 ? 's' : '' ) ) ;
 
