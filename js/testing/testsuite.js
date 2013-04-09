@@ -24,8 +24,31 @@ function vocabulary1() {
     card2 : card2,
     card3 : card3,
     packA : packA,
-    vocabulary : new szotargep.vocabulary.Vocabulary( [ packA ] ),
+    vocabulary : new szotargep.vocabulary.Vocabulary( 'some://vocabulary', [ packA ] ),
     allDeclaredTags : [ 'Jó', 'Rossz', 'Rémes', 'Pocsék' ]
+  }
+}
+
+// So we can create a fresh instance for each test.
+function vocabularyBundle2() {
+  var fakePack = {
+    id : function() { return 1 ; },
+    url : function() { return 'some://pack' }
+  }
+
+  var packA = new szotargep.vocabulary.Pack(
+      'some://pack',
+      [ new szotargep.vocabulary.Card(
+          [ 'Question' ],
+          [ 'Answer' ],
+          [ 't1', 't2' ],
+          fakePack,
+          1
+      ) ]
+  ) ;
+
+  return {
+    vocabulary : new szotargep.vocabulary.Vocabulary( 'vocabulary.txt', [ packA ] )
   }
 }
 
@@ -171,16 +194,16 @@ test( 'viewFlip, reset disclosure', function() {
 
   nextRandom = "No more random now" ;
   ok( a.viewFlip( true ) ) ;
-
-  // Next answer would be 0 (next Card) without disclosure reset.
-  equal( a.nextAnswerOrCard(), 1, 'nextAnswerOrCard' ) ;
+  equal( a.disclosure(), 0, 'reset occured' ) ;
 } ) ;
 
 test( 'initialState', function() {
   var v = vocabulary1() ;
   var a = advance1() ;
+
   ok( a.viewAsList() ) ;
   ok( ! a.viewFlip() ) ;
+  equal( a.locationSearch(), '?v=some://vocabulary' ) ;
   deepEqual( a.cards(), v.vocabulary.cards(), 'all Cards selected' ) ;
 
 
@@ -194,7 +217,21 @@ test( 'initialState', function() {
       a.tagSelection(),
       [].concat( v.allDeclaredTags ).concat( szotargep.vocabulary.UNTAGGED ),
       'all tags selected (using an empty array)' ) ;
+} ) ;
 
+test( 'location seach and tag selection', function() {
+  var a = advance( vocabularyBundle2().vocabulary ) ;
+  a.deselectAllTags() ;
+  equal( a.locationSearch(), '?tags=' ) ;
+
+  a.toggleTag( szotargep.vocabulary.UNTAGGED, true ) ;
+  equal( a.locationSearch(), '?tags=$Untagged' ) ;
+
+  a.toggleTag( 't1', true ) ;
+  equal( a.locationSearch(), '?tags=$Untagged;t1' ) ;
+
+  a.toggleTag( 't2', true ) ;
+  equal( a.locationSearch(), '' ) ;
 
 } ) ;
 
@@ -477,18 +514,46 @@ parseSearchEqual( 'Relative URI', '?v=foo/bar.txt' , [  [ 'v', 'foo/bar.txt' ] ]
 
 parseSearchEqual( 'HTTP URI', '?v=http://foo/bar.txt' , [  [ 'v', 'http://foo/bar.txt' ] ] ) ;
 
+parseSearchEqual( 'Flip', '?flip' , [  [ 'flip' ] ] ) ;
+
+parseSearchEqual( 'Single', '?single' , [  [ 'single' ] ] ) ;
+
+parseSearchEqual( 'Tags, 0', '?tags=' , [  [ 'tags', [] ] ] ) ;
+
+parseSearchEqual( 'Tags, 1', '?tags=foo' , [  [ 'tags', [ 'foo' ] ] ] ) ;
+
+parseSearchEqual( 'Tags, 2', '?tags=foo;bar' , [  [ 'tags', [ 'foo', 'bar' ] ] ] ) ;
+
 
 
 module( 'Location Search' ) ;
 
-test( 'Default vocabulary', function() {
+test( 'Defaults', function() {
   equal( new szotargep.loader.LocationSearch( [] ).vocabulary(), 'vocabulary.txt' ) ;
+  equal( new szotargep.loader.LocationSearch( []  ).tags(), null ) ;
+  equal( new szotargep.loader.LocationSearch( []  ).single(), false ) ;
+  equal( new szotargep.loader.LocationSearch( []  ).flip(), false ) ;
 } ) ;
 
 test( 'Explicit vocabulary', function() {
   equal(
       new szotargep.loader.LocationSearch( [ [ 'v', 'myvocabulary.txt' ] ] ).vocabulary(),
       'myvocabulary.txt'
+  ) ;
+} ) ;
+
+test( 'Skip', function() {
+  equal( new szotargep.loader.LocationSearch( [ [ 'flip' ] ]  ).flip(), true ) ;
+} ) ;
+
+test( 'Single', function() {
+  equal( new szotargep.loader.LocationSearch( [ [ 'single' ] ]  ).single(), true ) ;
+} ) ;
+
+test( 'Tags', function() {
+  deepEqual(
+      new szotargep.loader.LocationSearch( [ [ 'tags', [ 't' ] ] ]  ).tags(),
+      [ 't' ]
   ) ;
 } ) ;
 

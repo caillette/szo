@@ -6,9 +6,9 @@
   // There is no notification because the HTML-bound part controls the whole kinematics.
   szotargep.advance.Advance = function() {
     // vocabulary: a Vocabulary instance.
-    // uriParameters: value of window.location.search that reflects the state in another session.
+    // locationSearch: reflects the state of another session.
     // random: an optional random generator for testing.
-    var constructor = function Advance( vocabulary, uriParameters, random ) {
+    var constructor = function Advance( vocabulary, locationSearch, random ) {
 
       if( typeof random === 'undefined' ) {
         random = function( upperIndex ) {
@@ -16,15 +16,13 @@
         }
       }
 
+      var vocabularyTags = vocabulary.tags() ; // Shortcut.
       var tagSelection = [] ;
       var cards = [] ;
       var currentCard = null ;
       var disclosure = 0 ;
       var asList ;
       var flipView ;
-
-
-      // TODO use uriParameters.
 
       // tags: a value understood by Card.hasTag method.
       this.selectTags = function( tags ) {
@@ -146,7 +144,7 @@
       }
 
       this.selectAllTags = function() {
-        this.selectTags( vocabulary.tags() ) ;
+        this.selectTags( vocabularyTags ) ;
         this.toggleTag( szotargep.vocabulary.UNTAGGED, true ) ;
       }
 
@@ -158,13 +156,43 @@
         return vocabulary ;
       }
 
+      // Returns a string that is valid as 'window.location.search' value,
+      // representing the current state of this Advance object.
+      this.locationSearch = function() {
+        var result = [] ;
+        if( ! szotargep.loader.isDefaultVocabulary( vocabulary.url() ) ) {
+          result.push( 'v=' + vocabulary.url() ) ;
+        }
+        if( ! this.viewAsList() ) result.push( 'single' ) ;
+        if( this.viewFlip() ) result.push( 'flip' ) ;
+        if( tagSelection.length <= vocabularyTags.length ) {
+          result.push( 'tags=' + tagSelection.join( ';' ) ) ;
+        }
+        return result.length == 0 ? '' : '?' + result.join( '&' ) ;
+      }
+
       function checkViewAsList( expected ) {
         if( asList != expected ) throw 'Unexpected state: currently viewing as list' ;
       }
 
-      this.selectAllTags() ;
-      this.viewAsList( true ) ;
-      this.viewFlip( false ) ;
+      var requestedTags = locationSearch.tags() ;
+      if( requestedTags ) {
+        if( requestedTags.length == 0 ) {
+          this.deselectAllTags() ;
+        } else {
+          for( var t = 0 ; t < requestedTags.length ; t ++ ) {
+            var requestedTag = requestedTags[ t ] ;
+            if( vocabularyTags.indexOf( requestedTag ) >= 0 ) {
+              this.toggleTag( requestedTag, true ) ;
+            }
+          }
+        }
+      } else {
+        this.selectAllTags() ;
+      }
+
+      this.viewAsList( ! locationSearch.single() ) ;
+      this.viewFlip( locationSearch.flip() ) ;
 
     }
     return constructor ;

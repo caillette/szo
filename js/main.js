@@ -12,8 +12,8 @@
       szotargep.loader.load(
           '#problems',
           window.location.search,
-          function( vocabulary ) {
-            var advance = new szotargep.advance.Advance( vocabulary, window.location.search ) ;
+          function( vocabulary, locationSearch ) {
+            var advance = new szotargep.advance.Advance( vocabulary, locationSearch ) ;
             reportProblems( vocabulary ) ;
             createCardIndex( vocabulary ) ;
             createTagWidgets( advance ) ;
@@ -133,6 +133,10 @@
       updateTagCheckedState( advance ) ;
 
       $( '#next-answer-or-card' ).prop( 'disabled', advance.viewAsList() ) ;
+      $( '#toggle-list-or-single' ).prop( 'checked', advance.viewAsList() ) ;
+      $( '#toggle-flip' ).prop( 'checked', advance.viewFlip() ) ;
+
+      window.history.pushState( null, null, advance.locationSearch() ) ;
     }
 
     function createTopWidgets( advance ) {

@@ -2,14 +2,19 @@
 // http://pegjs.majda.cz/online
 
 maybeSearch = search : search?
-  { return search === '' ? [] : [ search ] }
+  { return search === '' ? [] : [].concat( search ) }
 
 search =
-  ( '?' first : parameter { return first } )
+  first : ( '?' parameter : parameter { return parameter } )
+  rest : ( '&' parameter : parameter { return parameter } )*
+  { return first ? [ first ].concat( rest ) : []  }
 
 
 parameter =
-  key : 'v' '=' uri : uri { return [ key, uri ] }
+    key : 'v' '=' uri : uri { return [ key, uri ] }
+  / key : 'tags' '=' tags : tags? { return [ key, tags ? tags : [] ] }
+  / key : 'flip' { return [ key ] }
+  / key : 'single' { return [ key ] }
 
 
 uri =
@@ -29,3 +34,10 @@ segment "Directory or file name" =
 
 extension 'Extension (must be ".txt")' = '.txt'
 
+
+tags =
+  first : tag
+  rest : ( ';' tag : tag { return tag } )*
+  { return first ? [ first ].concat( rest ) : [] }
+
+tag = tag : [0-9a-zA-Z\-_$]+ { return tag.join( '' ) ; }

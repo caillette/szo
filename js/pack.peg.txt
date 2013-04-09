@@ -51,7 +51,7 @@ tags 'Tags (@tag1 @tag2 ...)' =
 
 tag '("@tagname", separated by spaces)' =
   // Never include '$' that we reserve for magic tag names.
-  '@' name : [0-9a-zA-Z\-_/]+ { return name.join( '' ) }
+  '@' name : [0-9a-zA-Z\-_]+ { return name.join( '' ) }
 
 
 side =

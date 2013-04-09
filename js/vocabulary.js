@@ -181,7 +181,7 @@
   // A queryable collection of Cards.
   szotargep.vocabulary.Vocabulary = function() {
 
-    var constructor = function Vocabulary( packs ) {
+    var constructor = function Vocabulary( url, packs ) {
 
       this.visitPacks = function( visitor ) {
         for( var p = 0 ; p < packs.length ; p++ ) {
@@ -198,6 +198,10 @@
           }
         } ) ;
         return result ;
+      }
+
+      this.url = function() {
+        return url ;
       }
 
     }

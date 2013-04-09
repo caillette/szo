@@ -58,7 +58,10 @@
                           }
                         },
                         function( packs ) {
-                          onSuccess( new szotargep.vocabulary.Vocabulary( packs ) ) ;
+                          onSuccess(
+                              new szotargep.vocabulary.Vocabulary( vocabularyUri, packs ),
+                              locationSearch
+                          ) ;
                         }
                     )
                   }
@@ -77,15 +80,23 @@
 
   }
 
+  var defaultVocabulary = 'vocabulary.txt' ;
+
+  szotargep.loader.isDefaultVocabulary = function( string ) {
+    return defaultVocabulary === string ;
+  }
+
+
   // JavaScript defines window.location.search as the way to get the parameters of window's URL.
   szotargep.loader.LocationSearch = function() {
+
     var constructor = function LocationSearch( parseResult ) {
 
       function byKey( key ) {
         for( var i = 0 ; i < parseResult.length ; i ++ ) {
           var entry = parseResult[ i ] ;
           if( entry[ 0 ] == key ) {
-            return entry[ 1 ] ;
+            return entry.length > 1 ? entry[ 1 ] : true ;
           }
         }
         return null ;
@@ -93,9 +104,23 @@
 
       this.vocabulary = function() {
         var v = byKey( 'v' ) ;
-        return v ? v : 'vocabulary.txt' ;
+        return v ? v : defaultVocabulary ;
+      }
+
+      this.flip = function() {
+        return byKey( 'flip' ) != null ;
+      }
+
+      this.single = function() {
+        return byKey( 'single' ) != null ;
+      }
+
+      this.tags = function() {
+        var knownTags = byKey( 'tags' ) ;
+        return knownTags ? knownTags.slice( 0 ) : null ;
       }
     }
+
     return constructor ;
   }() ;
 
