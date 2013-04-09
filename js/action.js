@@ -55,6 +55,8 @@
 
     var constructor = function ShowList( advance ) {
 
+      szotargep.html.showCardDetail( null ) ;
+
       var cardIndex = 0 ;
       var complete = false ;
 
