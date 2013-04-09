@@ -182,7 +182,9 @@
         } else {
           for( var t = 0 ; t < requestedTags.length ; t ++ ) {
             var requestedTag = requestedTags[ t ] ;
-            if( vocabularyTags.indexOf( requestedTag ) >= 0 ) {
+            if( requestedTag === szotargep.vocabulary.UNTAGGED
+             || vocabularyTags.indexOf( requestedTag ) >= 0
+            ) {
               this.toggleTag( requestedTag, true ) ;
             }
           }

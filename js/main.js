@@ -223,7 +223,7 @@
       function actionInProgress( visible ) {
         $( '#action-performing' )
             .stop( true, true )
-//            .delay( visible ? 2 : 0 ) // Delay saves from blinking when action is quick.
+            .delay( visible ? 1 : 0 ) // Delay saves from blinking when action is quick.
             .animate( { opacity : ( visible ? 1 : 0 ) }, 100 )
         ;
       }
