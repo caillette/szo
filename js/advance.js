@@ -134,6 +134,15 @@
         onComplete() ;
       }
 
+      this.selectAllTags = function() {
+        this.selectTags( vocabulary.tags() ) ;
+        this.toggleTag( szotargep.vocabulary.UNTAGGED, true ) ;
+      }
+
+      this.deselectAllTags = function() {
+        this.selectTags( [] ) ;
+      }
+
       this.vocabulary = function() {
         return vocabulary ;
       }
@@ -142,9 +151,7 @@
         if( asList != expected ) throw 'Unexpected state: currently viewing as list' ;
       }
 
-      // Show all the Cards as a list.
-      this.selectTags( vocabulary.tags() ) ;
-      this.toggleTag( szotargep.vocabulary.UNTAGGED, true ) ;
+      this.selectAllTags() ;
       this.viewAsList( true ) ;
 
     }

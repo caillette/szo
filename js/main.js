@@ -41,6 +41,17 @@
 
     }
 
+
+    function updateTagCheckedState( advance ) {
+      $( '#tags :checkbox').each( function( ) {
+        var $this = $( this ) ;
+        var tag = $this.attr( 'id' ) ;
+        tag = tag.substring( 'tag$'.length ) ;
+        $( this ).prop( 'checked', advance.isTagSelected( tag ) )
+      } ) ;
+
+    }
+
     function createTagWidgets( advance ) {
 
       function createTagWidget( tag, title, special ) {
@@ -62,7 +73,6 @@
             + 'id="' + id + '"'
             + '</input>'
         )
-          .prop( 'checked', advance.isTagSelected( tag ) )
           .click( click )
           .appendTo( '#tags' )
         ;
@@ -72,6 +82,7 @@
             + ( title ? '<em>' + title + '</em>' : tag )
             + '</label><br>'
         ).appendTo( '#tags' ) ;
+
       }
 
       createTagWidget(
@@ -97,6 +108,7 @@
       } else {
         performAction( new szotargep.action.ShowSingleCard( advance ) ) ;
       }
+      updateTagCheckedState( advance ) ;
 
       $( '#next-answer-or-card' ).prop( 'disabled', advance.viewAsList() ) ;
     }
@@ -118,7 +130,23 @@
 
       $( '<label for="toggle-list-or-single" >List</label>' ) .appendTo( '#top' ) ;
 
-      $( '<button type="button" id="next-answer-or-card" class="widget" >Next</button>' )
+      $( '<button type="button" id="select-all-tags" class="widget" >All</button>' )
+          .click( function( event ) {
+              advance.selectAllTags() ;
+              updateBoard( advance ) ;
+          } )
+          .appendTo( '#top' )
+      ;
+
+      $( '<button type="button" id="deselect-all-tags" class="widget" >None</button>' )
+          .click( function( event ) {
+              advance.deselectAllTags() ;
+              updateBoard( advance ) ;
+          } )
+          .appendTo( '#top' )
+      ;
+
+      $( '<button type="button" id="next-answer-or-card" class="widget" ><b>Next</b></button>' )
           .click( function( event ) {
               var next = advance.nextAnswerOrCard() ;
               if( next == 0 ) {
