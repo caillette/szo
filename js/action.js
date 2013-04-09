@@ -72,7 +72,7 @@
             cardIndex + batchSize
         ) ;
 
-        html = html === '' ? '<p>Nothing to show</p>' : html ;
+        html = html === '' ? noCardMessageHtml() : html ;
 
         $( '#board' ).append( html ) ;
         cardIndex += batchSize ;
@@ -100,6 +100,9 @@
     return constructor ;
   }() ;
 
+  function noCardMessageHtml() {
+    return '<p class="empty" >Nothing to show</p>' ;
+  }
 
   function cardAsHtml( card, listView ) {
 
@@ -115,7 +118,7 @@
     html = '' ;
 
     if( card == null ) {
-      html += '<p>No Card to show</p>' ;
+      html += noCardMessageHtml() ;
     } else {
 
       var tableAttributes = '' ;
