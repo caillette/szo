@@ -174,9 +174,12 @@
         if( ! this.viewAsList() ) result.push( 'single' ) ;
         if( this.viewFlip() ) result.push( 'flip' ) ;
         if( tagSelection.length <= vocabularyTags.length ) {
-          result.push( 'tags=' + tagSelection.join( ';' ) ) ;
+          var newTags = 'tags=' + tagSelection.join( ';' ) ;
+          result.push( newTags ) ;
         }
-        return result.length == 0 ? '' : '?' + result.join( '&' ) ;
+        result = result.length == 0 ? '' : '?' + result.join( '&' ) ;
+//        console.debug( 'New computed search: "' + result + '"' ) ;
+        return result ;
       }
 
       function checkViewAsList( expected ) {

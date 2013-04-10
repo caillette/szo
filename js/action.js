@@ -19,12 +19,12 @@
       this.perform = function() {
 
         function logCompletion( action, totalTime ) {
-          console.debug( 'ActionPerformer completed ' + action + ' action ' + context.id
-              + ' in ' + totalTime + ' ms.' ) ;
+//          console.debug( 'ActionPerformer completed ' + action + ' action ' + context.id
+//              + ' in ' + totalTime + ' ms.' ) ;
         }
 
         var start = new Date() ;
-        if( step == 0 ) console.debug( 'ActionPerformer starting action ' + context.id + ' ...' ) ;
+//        if( step == 0 ) console.debug( 'ActionPerformer starting action ' + context.id + ' ...' ) ;
         if( action.singleStep ) {
           action.singleStep( context.id ) ;
           context.onActionComplete() ;

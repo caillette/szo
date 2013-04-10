@@ -146,7 +146,17 @@
       $( '#toggle-list' ).prop( 'checked', advance.viewAsList() ) ;
       $( '#toggle-flip' ).prop( 'checked', advance.viewFlip() ) ;
 
-      window.history.pushState( null, null, advance.locationSearch() ) ;
+      // At least Chrome 26.0.1410.43 doesn't push well an empty string.
+      var newLocationSearch =
+          ( window.location.origin
+              ? window.location.origin
+              : window.location.host ? window.location.host : '' // Firefox, doesn't work anyways.
+          )
+        + ( window.location.pathname ? window.location.pathname : '' )
+        + advance.locationSearch()
+      ;
+
+      window.history.pushState( null, null, newLocationSearch ) ;
     }
 
     function createTopWidgets( advance ) {
@@ -278,7 +288,7 @@
 
       return function( action ) {
         start = new Date() ;
-        console.debug( 'Starting action...' ) ;
+//        console.debug( 'Starting action...' ) ;
         actionInProgress( true ) ;
         $( '#board' ).empty() ;
 
@@ -296,7 +306,7 @@
               onActionComplete : function( result ) {
                 performer = null ;
                 actionInProgress( false ) ;
-                console.debug( 'Completed action in ' + elapsed( start ) + '.' ) ;
+//                console.debug( 'Completed action in ' + elapsed( start ) + '.' ) ;
               }
             },
             action
