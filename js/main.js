@@ -225,13 +225,7 @@
 
       $( '<label id="label-toggle-flip" for="toggle-flip" >-flip-</label>' ).appendTo( '#top' ) ;
 
-
-      $(  '<select id="language-selection" class="widget" >'
-        + '  <option value="hun">Magyar</option>'
-        + '  <option value="eng">English</option>'
-        + '  <option value="fra">Français</option>'
-        + '</select>'
-      )
+      $(  '<select id="language-selection" class="widget" >' )
           .change( function( event ) {
               advance.i18nCode( $( this ).val() ) ;
               updateLabels() ;
@@ -243,6 +237,11 @@
           } )
           .appendTo( '#top' )
       ;
+
+      szotargep.i18n.visitLanguages( function( language ) {
+        $( '#language-selection').append(
+            '<option value="' + language.code639_1 + '" >' + language.name + '</option>' ) ;
+      } ) ;
 
     }
 

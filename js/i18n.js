@@ -2,7 +2,23 @@
 
   szotargep.i18n = {} ;
 
-  szotargep.i18n.defaultLanguage = function() { return 'hun' }
+  szotargep.i18n.defaultLanguage = function() { return 'hu' }
+
+  szotargep.i18n.visitLanguages = function( visitor ) {
+    for( var l = 0 ; l < languages.length ; l ++ ) {
+      var language = languages[ l ] ;
+      visitor( language ) ;
+    }
+  }
+
+  var languages = [
+      { code639_1 : 'hu', name : 'Magyar' },
+      { code639_1 : 'en', name : 'English' },
+      { code639_1 : 'fr', name : 'Français' }
+  ] ;
+
+
+
 
   var codeSupplier ;
 
@@ -17,40 +33,40 @@
 
   var resources = {
     list : {
-      eng : 'List',
-      fra : 'Liste',
-      hun : 'Lista'
+      en : 'List',
+      fr : 'Liste',
+      hu : 'Lista'
     },
     untagged : {
-      eng : 'Untagged',
-      fra : 'Sans étiquette',
-      hun : 'Jegy nélkül'
+      en : 'Untagged',
+      fr : 'Sans étiquette',
+      hu : 'Jegy nélkül'
     },
     all : {
-      eng : 'All',
-      fra : 'Tout',
-      hun : 'Minden'
+      en : 'All',
+      fr : 'Tout',
+      hu : 'Minden'
     },
     none : {
-      eng : 'None',
-      fra : 'Rien',
-      hun : 'Semmi'
+      en : 'None',
+      fr : 'Rien',
+      hu : 'Semmi'
     },
     next : {
-      eng : 'Next',
-      fra : 'Suivant',
-      hun : 'Felfel'
+      en : 'Next',
+      fr : 'Suivant',
+      hu : 'Felfel'
     },
     flip : {
-      eng : 'Flip',
-      fra : 'Inverser',
-      hun : 'Megfordít'
+      en : 'Flip',
+      fr : 'Inverser',
+      hu : 'Megfordít'
 
     },
     total : {
-      eng : 'Total',
-      fra : 'Total',
-      hun : 'Összesen'
+      en : 'Total',
+      fr : 'Total',
+      hu : 'Összesen'
     }
   }
 
