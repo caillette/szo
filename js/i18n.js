@@ -27,6 +27,10 @@
     szotargep.i18n.initialize = null ; // So nobody will call it again.
   }
 
+  szotargep.i18n.currentI18nCode = function() {
+    return codeSupplier.i18nCode() ;
+  }
+
   szotargep.i18n.resource = function( key ) {
     return resources[ key ][ codeSupplier.i18nCode() ] ;
   }

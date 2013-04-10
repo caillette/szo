@@ -160,6 +160,7 @@
       this.i18nCode = function( code ) {
         if( typeof code != 'undefined' ) {
           currentI18nCode = code ;
+          moment.lang( code ) ;
         }
         return currentI18nCode ;
       }
