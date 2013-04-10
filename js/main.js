@@ -19,7 +19,7 @@
             createCardIndex( vocabulary ) ;
             createTagWidgets( advance ) ;
             createTopWidgets( advance ) ;
-            updateLabels() ;
+            updateLabels( advance.i18nCode() ) ;
             initialUpdate( advance ) ;
             console.log( 'Initialization complete.' ) ;
           },
@@ -30,8 +30,7 @@
     }
 
     function initializeI18n( i18nSupplier ) {
-      // That's very dark magic but we don't need the Table class further that point.
-      szotargep.i18n = new szotargep.i18n.Table( i18nSupplier ) ;
+      szotargep.i18n.initialize( i18nSupplier ) ;
     }
 
     function reportProblems( vocabulary ) {
@@ -146,6 +145,10 @@
       $( '#toggle-list' ).prop( 'checked', advance.viewAsList() ) ;
       $( '#toggle-flip' ).prop( 'checked', advance.viewFlip() ) ;
 
+      updateBrowserHistory( advance ) ;
+    }
+
+    function updateBrowserHistory( advance ) {
       var newLocationSearch =
           ( window.location.origin   // Firefox doesn't know 'origin'.
               ? window.location.origin
@@ -236,13 +239,14 @@
                 // The list may contain some elements subject to change.
                 performAction( new szotargep.action.ShowList( advance ) ) ;
               }
+              updateBrowserHistory( advance )
           } )
           .appendTo( '#top' )
       ;
 
     }
 
-    function updateLabels() {
+    function updateLabels( i18nCode ) {
       $( '#select-all-tags' ).text( szotargep.i18n.resource( 'all' ) ) ;
       $( '#deselect-all-tags' ).text( szotargep.i18n.resource( 'none' ) ) ;
       $( '#next-answer-or-card' ).text( szotargep.i18n.resource( 'next' ) ) ;
@@ -251,6 +255,8 @@
 
       $( '#label-' + szotargep.vocabulary.UNTAGGED.replace( '$', '\\$' ) )
           .html( '<em>' + szotargep.i18n.resource( 'untagged' ) + '</em>' ) ;
+
+      if( i18nCode ) $( '#language-selection' ).val( i18nCode ) ;
     }
 
     function disclose( next ) {

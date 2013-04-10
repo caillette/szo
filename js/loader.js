@@ -105,6 +105,7 @@
   }
 
   var defaultVocabulary = 'vocabulary.txt' ;
+  var defaultLanguage = 'hun' ;
 
   szotargep.loader.isDefaultVocabulary = function( string ) {
     return defaultVocabulary === string ;
@@ -129,6 +130,11 @@
       this.vocabulary = function() {
         var v = byKey( 'v' ) ;
         return v ? v : defaultVocabulary ;
+      }
+
+      this.language = function() {
+        var l = byKey( 'lang' ) ;
+        return l ? l : defaultLanguage ;
       }
 
       this.flip = function() {

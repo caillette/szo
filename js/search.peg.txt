@@ -15,6 +15,7 @@ parameter =
   / key : 'tags' '=' tags : tags? { return [ key, tags ? tags : [] ] }
   / key : 'flip' { return [ key ] }
   / key : 'single' { return [ key ] }
+  / key : 'lang' '=' language : language { return [ key, language ] }
 
 
 uri =
@@ -41,3 +42,6 @@ tags =
   { return first ? [ first ].concat( rest ) : [] }
 
 tag = tag : [0-9a-zA-Z\-_$]+ { return tag.join( '' ) ; }
+
+
+language = language : [a-z]+ { return language.join( '' ) ; }

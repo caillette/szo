@@ -164,6 +164,10 @@ function advance1( fixedRandomValue ) {
 
 function advance( vocabulary, random ) {
 
+  if( szotargep.i18n.initialize ) {
+    szotargep.i18n.initialize( { i18nCode : function() { return 'def' } } ) ;
+  }
+
   function createRandomFunction( fixedRandomValue ) {
     return function( upperIndex ) { return fixedRandomValue ; } ;
   }
@@ -178,7 +182,9 @@ function advance( vocabulary, random ) {
       {
           tags : function() { return null },
           single : function() { return false },
-          flip : function() { return false }
+          flip : function() { return false },
+          language : function() { return 'lan' },
+          defaultLanguage : function() { return 'def' }
       },
       random
   ) ;
@@ -564,6 +570,8 @@ parseSearchEqual( 'Tags, 1', '?tags=foo' , [  [ 'tags', [ 'foo' ] ] ] ) ;
 
 parseSearchEqual( 'Tags, 2', '?tags=foo;bar' , [  [ 'tags', [ 'foo', 'bar' ] ] ] ) ;
 
+parseSearchEqual( 'Language', '?lang=hun' , [  [ 'lang', 'hun' ] ] ) ;
+
 
 
 module( 'Location Search' ) ;
@@ -594,6 +602,13 @@ test( 'Tags', function() {
   deepEqual(
       new szotargep.loader.LocationSearch( [ [ 'tags', [ 't' ] ] ]  ).tags(),
       [ 't' ]
+  ) ;
+} ) ;
+
+test( 'Language', function() {
+  deepEqual(
+      new szotargep.loader.LocationSearch( [ [ 'lang', 'foo' ] ]  ).language(),
+      'foo'
   ) ;
 } ) ;
 

@@ -23,7 +23,7 @@
       var disclosure = 0 ;
       var asList ;
       var flipView ;
-      var currentI18nCode = 'hun' ;
+      var currentI18nCode = szotargep.i18n.defaultLanguage() ;
 
       // tags: a value understood by Card.hasTag method.
       this.selectTags = function( tags ) {
@@ -173,6 +173,9 @@
         }
         if( ! this.viewAsList() ) result.push( 'single' ) ;
         if( this.viewFlip() ) result.push( 'flip' ) ;
+        if( this.i18nCode() != szotargep.i18n.defaultLanguage() ) {
+          result.push( 'lang=' + this.i18nCode() ) ;
+        }
         if( tagSelection.length <= vocabularyTags.length ) {
           var newTags = 'tags=' + tagSelection.join( ';' ) ;
           result.push( newTags ) ;
@@ -205,6 +208,7 @@
 
       this.viewAsList( ! locationSearch.single() ) ;
       this.viewFlip( locationSearch.flip() ) ;
+      this.i18nCode( locationSearch.language() ) ;
 
     }
     return constructor ;
