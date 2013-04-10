@@ -23,6 +23,7 @@
       var disclosure = 0 ;
       var asList ;
       var flipView ;
+      var currentI18nCode = 'hun' ;
 
       // tags: a value understood by Card.hasTag method.
       this.selectTags = function( tags ) {
@@ -154,6 +155,13 @@
 
       this.vocabulary = function() {
         return vocabulary ;
+      }
+
+      this.i18nCode = function( code ) {
+        if( typeof code != 'undefined' ) {
+          currentI18nCode = code ;
+        }
+        return currentI18nCode ;
       }
 
       // Returns a string that is valid as 'window.location.search' value,

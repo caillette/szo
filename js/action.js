@@ -74,7 +74,8 @@
               function() {},
               0
           ) ;
-          $( '#board' ).append( '<p class="total" >Total ' + total + '</p>' ) ;
+          $( '#board' ).append( '<p class="total" >'
+              + szotargep.i18n.resource( 'total' ) + ' ' + total + '</p>' ) ;
         }
 
         advance.visitCards(

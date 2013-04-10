@@ -14,10 +14,12 @@
           window.location.search,
           function( vocabulary, locationSearch ) {
             var advance = new szotargep.advance.Advance( vocabulary, locationSearch ) ;
+            initializeI18n( advance ) ;
             reportProblems( vocabulary ) ;
             createCardIndex( vocabulary ) ;
             createTagWidgets( advance ) ;
             createTopWidgets( advance ) ;
+            updateLabels() ;
             initialUpdate( advance ) ;
             console.log( 'Initialization complete.' ) ;
           },
@@ -25,6 +27,11 @@
             console.log( 'Initialization failed.' ) ;
           }
       ) ;
+    }
+
+    function initializeI18n( i18nSupplier ) {
+      // That's very dark magic but we don't need the Table class further that point.
+      szotargep.i18n = new szotargep.i18n.Table( i18nSupplier ) ;
     }
 
     function reportProblems( vocabulary ) {
@@ -100,6 +107,7 @@
         ;
 
         $( '<label '
+            + ( special ? 'id="label-' + tag + '"' : '' )
             + 'for="' + id + '" >'
             + ( special ? '<em>' + title + '</em>' : title )
             + '</label><br>'
@@ -109,7 +117,7 @@
 
       createTagWidget(
           szotargep.vocabulary.UNTAGGED,
-          'Untagged',
+          '-untagged-',
           function( checked ) { advance.toggleTag( szotargep.vocabulary.UNTAGGED, checked ) }
       ) ;
       var tags = advance.vocabulary().tags() ;
@@ -145,7 +153,7 @@
 
       $( '<input '
           + 'type="checkbox" '
-          + 'id="toggle-list-or-single" '
+          + 'id="toggle-list" '
           + 'class="widget" '
           + '></input>'
       )
@@ -156,9 +164,11 @@
           .appendTo( '#top' )
       ;
 
-      $( '<label for="toggle-list-or-single" >List</label>' ) .appendTo( '#top' ) ;
+      $( '<label id="label-toggle-list" for="toggle-list" >-list-</label>' )
+          .appendTo( '#top' ) ;
 
-      $( '<button type="button" id="select-all-tags" class="widget" >All</button>' )
+      $( '<button type="button" id="select-all-tags" class="widget" >-all-</button>'
+      )
           .click( function( event ) {
               advance.selectAllTags() ;
               updateBoard( advance ) ;
@@ -166,7 +176,7 @@
           .appendTo( '#top' )
       ;
 
-      $( '<button type="button" id="deselect-all-tags" class="widget" >None</button>' )
+      $( '<button type="button" id="deselect-all-tags" class="widget" >-none-</button>' )
           .click( function( event ) {
               advance.deselectAllTags() ;
               updateBoard( advance ) ;
@@ -174,7 +184,8 @@
           .appendTo( '#top' )
       ;
 
-      $( '<button type="button" id="next-answer-or-card" class="widget" ><b>Next</b></button>' )
+      $( '<button type="button" id="next-answer-or-card" class="widget" ><b>-next-</b></button>'
+      )
           .click( function( event ) {
               var next = advance.nextAnswerOrCard() ;
               if( next == 0 ) {
@@ -199,9 +210,37 @@
           .appendTo( '#top' )
       ;
 
-      $( '<label for="toggle-flip" >Flip</label>' ) .appendTo( '#top' ) ;
+      $( '<label id="label-toggle-flip" for="toggle-flip" >-flip-</label>' ).appendTo( '#top' ) ;
 
 
+      $(  '<select id="language-selection" class="widget" >'
+        + '  <option value="hun">Magyar</option>'
+        + '  <option value="eng">English</option>'
+        + '  <option value="fra">Français</option>'
+        + '</select>'
+      )
+          .change( function( event ) {
+              advance.i18nCode( $( this ).val() ) ;
+              updateLabels() ;
+              if( advance.viewAsList() ) {
+                // The list may contain some elements subject to change.
+                performAction( new szotargep.action.ShowList( advance ) ) ;
+              }
+          } )
+          .appendTo( '#top' )
+      ;
+
+    }
+
+    function updateLabels() {
+      $( '#select-all-tags' ).text( szotargep.i18n.resource( 'all' ) ) ;
+      $( '#deselect-all-tags' ).text( szotargep.i18n.resource( 'none' ) ) ;
+      $( '#next-answer-or-card' ).text( szotargep.i18n.resource( 'next' ) ) ;
+      $( '#label-toggle-list' ).text( szotargep.i18n.resource( 'list' ) ) ;
+      $( '#label-toggle-flip' ).text( szotargep.i18n.resource( 'flip' ) ) ;
+
+      $( '#label-' + szotargep.vocabulary.UNTAGGED.replace( '$', '\\$' ) )
+          .text( szotargep.i18n.resource( 'untagged' ) ) ;
     }
 
     function disclose( next ) {
