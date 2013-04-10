@@ -1,17 +1,25 @@
 // PEG.js grammar for Szótárgép
 // http://pegjs.majda.cz/online
 
-vocabularyList =
+vocabulary =
+  packUris : packUris    
+  tagDefinitions : 
+      ( bigbreak+ tagDefinitions : tagDefinitions { return tagDefinitions } )?      
+  bigbreak* ' '*
+  { return [ packUris, tagDefinitions == '' ? [] : tagDefinitions ] }
+
+
+packUris =
   emptyline* 
   first : pack
   rest : ( ' '* '\n'+ pack : pack { return pack } )*
-  bigbreak*
   { return first ? [ first ].concat( rest ) : [] }
 
 pack 'Pack file name (allows "/", must end by ".txt")' =
   first : segment
   rest : ( separator : '/' segment : segment { return separator + segment } )* 
   extension : extension
+  ' '*
   { return first + rest.join( '' ) + extension }
 
 segment "Directory or file name" = name : [0-9a-zA-Z\-_]+ { return name.join( '' ) }
@@ -24,3 +32,30 @@ smallbreak 'Single line break' = '\n'
 bigbreak 'One line break or more' = '\n' ( ' ' * '\n' )*
 
 emptyline 'Empty line' = ' ' * '\n' 
+
+tagDefinitions =
+  first : tagDefinition
+  rest : ( bigbreak tagDefinition : tagDefinition { return tagDefinition } )*
+  { return first ? [ first ].concat( rest ) : [] }
+
+tagDefinition =
+  tag : tag ' ' line : line 
+  { return [ tag, line ] }
+
+line = 
+    first : character 
+    rest : ( 
+        space : ' '* 
+        c : character { return space.concat( c ).join( '' ) } 
+    )* 
+    ' '*
+    { return first + rest.join( '' ) }
+
+character = [0-9a-zA-ZáéíóúÁÉÚÍÓÚ????öőüűÜŰÖŐœæàâèêëïîôûùçŒÆÀÂÈÊËÏÎÔÛÙÇß€+’'#Ø~,;!—…–_:*.°/?(){}[\]\-" ]
+
+
+tag '("@tagname", separated by spaces)' =
+  // Never include '$' that we reserve for magic tag names.
+  '@' name : [0-9a-zA-Z\-_]+ { return name.join( '' ) }
+
+bigbreak 'One line break or more' = '\n' ( ' ' * '\n' )*

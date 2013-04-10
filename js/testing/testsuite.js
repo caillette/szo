@@ -507,11 +507,26 @@ function parseVocabularyEqual( testName, text, tree ) {
 
 parseVocabularyEqual( 'Simple Vocabulary list',
     'x.txt\n'
-  + 'x/yz.txt'
+  + 'x/yz.txt\n'
+  + '\n'
+  + '@foo Foo\n'
+  + '@bar Bar *! Ű#\n'
   ,
   [
-      'x.txt',
-      'x/yz.txt'
+      [
+          'x.txt',
+          'x/yz.txt'
+      ],
+      [
+          [
+              'foo',
+              'Foo'
+          ],
+          [
+              'bar',
+              'Bar *! Ű#'
+          ]
+      ]
   ]
 ) ;
 

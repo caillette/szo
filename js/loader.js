@@ -67,7 +67,7 @@
                       ' pack reference' + ( parsedVocabulary.length > 1 ? 's' : '' ) ) ;
 
                     szotargep.resource.processResources(
-                        parsedVocabulary,
+                        parsedVocabulary[ 0 ],
                         function( transformable ) {
                           if( transformable.problem ) {
                             return new szotargep.vocabulary.Pack(
