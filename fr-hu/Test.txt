@@ -1,6 +1,6 @@
 title: A testrészek
 
-@PartieDuCorps
+@Anatomie
 
 corps
 test

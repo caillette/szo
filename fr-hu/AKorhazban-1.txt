@@ -1,12 +1,14 @@
 title: A kórházban, 1
 
-
+  @Medecine
 hôpital
 kórház
 
+  @Medecine
 s'avarier, s'endommager
 megsérül
 
+  @Anatomie
 colonne vertébrale
 gerinc
 

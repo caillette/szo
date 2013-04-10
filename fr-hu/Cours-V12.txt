@@ -10,21 +10,27 @@ pohár
 bocal, cruche, pot
 korsó 
 
+  @Alimentation
 bière (boisson)
 sör
 
+  @Alimentation
 café (boisson)
 kávé
 
+  @Alimentation
 thé
 tea
 
+  @Alimentation
 salami
 szalámi
 
+  @Alimentation
 pomme (fruit)
 alma
 
+  @Alimentation
 sucre, bonbon
 cukor
 
@@ -33,18 +39,23 @@ deci
 
 
 
+  @Alimentation @Religion
 nue, ciel, paradis, tomate
 paradicsom
 
+  @Alimentation
 fraise
 eper
 
+  @Alimentation
 champignon
 gomba
 
+  @Alimentation
 banane
 banán
 
+  @Alimentation
 chignon, petit pain
 zsemle 
 

@@ -1,6 +1,8 @@
 title: Mellekmondatok 1
 source: http://fr.wikipedia.org/wiki/Syntaxe_du_hongrois_–_la_phrase_complexe#La_subordonn.C3.A9e_compl.C3.A9ment_de_degr.C3.A9.2Fmesure_.28A_fok-m.C3.A9rt.C3.A9k_hat.C3.A1roz.C3.B3i_mell.C3.A9kmondat.29
 
+@Coordination
+
 … et … (coord. copulative)
 …, és …
 
