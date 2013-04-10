@@ -125,3 +125,6 @@ fr-hu/Magyarora-10.txt
 fr-hu/Magyarora-Janikovsky.txt
 fr-hu/Szotar.txt
 fr-hu/Szotar-nevek.txt
+
+
+@PartieDuCorps Testrész

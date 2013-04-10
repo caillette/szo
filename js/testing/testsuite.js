@@ -24,7 +24,7 @@ function vocabulary1() {
     card2 : card2,
     card3 : card3,
     packA : packA,
-    vocabulary : new szotargep.vocabulary.Vocabulary( 'some://vocabulary', [ packA ] ),
+    vocabulary : new szotargep.vocabulary.Vocabulary( 'some://vocabulary', [ packA ], [] ),
     allDeclaredTags : [ 'Jó', 'Rossz', 'Rémes', 'Pocsék' ]
   }
 }
@@ -48,7 +48,11 @@ function vocabularyBundle2() {
   ) ;
 
   return {
-    vocabulary : new szotargep.vocabulary.Vocabulary( 'vocabulary.txt', [ packA ] )
+    vocabulary : new szotargep.vocabulary.Vocabulary(
+        'vocabulary.txt',
+        [ packA ],
+        [ [ 't1', 'Tag one' ], [ 't2', 'Tag two' ] ]
+    )
   }
 }
 
@@ -241,6 +245,13 @@ test( 'location seach and tag selection', function() {
   a.toggleTag( 't2', true ) ;
   equal( a.locationSearch(), '' ) ;
 
+} ) ;
+
+test( 'tagAppellation', function() {
+  var v = vocabularyBundle2().vocabulary ;
+  equal( v.tagAppellation( 't1' ), 'Tag one' ) ;
+  equal( v.tagAppellation( 't2' ), 'Tag two' ) ;
+  equal( v.tagAppellation( 'does not exist' ), null ) ;
 } ) ;
 
 test( 'nextAnswerOrCard', function() {

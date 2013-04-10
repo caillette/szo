@@ -79,7 +79,11 @@
                         },
                         function( packs ) {
                           onSuccess(
-                              new szotargep.vocabulary.Vocabulary( vocabularyUri, packs ),
+                              new szotargep.vocabulary.Vocabulary(
+                                  vocabularyUri,
+                                  packs,
+                                  parsedVocabulary[ 1 ]
+                              ),
                               locationSearch
                           ) ;
                         }

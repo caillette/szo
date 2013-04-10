@@ -183,7 +183,7 @@
   // A queryable collection of Cards.
   szotargep.vocabulary.Vocabulary = function() {
 
-    var constructor = function Vocabulary( url, packs ) {
+    var constructor = function Vocabulary( url, packs, tagAppellations ) {
 
       this.visitPacks = function( visitor ) {
         for( var p = 0 ; p < packs.length ; p++ ) {
@@ -204,6 +204,15 @@
 
       this.url = function() {
         return url ;
+      }
+
+      this.tagAppellation = function( tag ) {
+        // Unsafe implementation, no defensive copy etc.
+        for( var i = 0 ; i < tagAppellations.length ; i ++ ) {
+          var entry = tagAppellations[ i ] ;
+          if( entry[ 0 ] === tag ) return entry[ 1 ] ;
+        }
+        return null ;
       }
 
     }

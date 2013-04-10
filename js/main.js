@@ -101,7 +101,7 @@
 
         $( '<label '
             + 'for="' + id + '" >'
-            + ( title ? '<em>' + title + '</em>' : tag )
+            + ( special ? '<em>' + title + '</em>' : title )
             + '</label><br>'
         ).appendTo( '#tags' ) ;
 
@@ -115,7 +115,9 @@
       var tags = advance.vocabulary().tags() ;
       for( var t = 0 ; t < tags.length ; t ++ ) {
         var tag = tags[ t ] ;
-        createTagWidget( tag )
+        var title = advance.vocabulary().tagAppellation( tag ) ;
+        title = title ? title : tag ;
+        createTagWidget( tag, title ) ;
       }
     }
     
