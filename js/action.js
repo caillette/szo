@@ -67,6 +67,16 @@
       this.step = function() {
         var html = '' ;
 
+        if( cardIndex == 0 ) {
+          var total = 0 ;
+          advance.visitCards(
+              function( card ) { total ++ },
+              function() {},
+              0
+          ) ;
+          $( '#board' ).append( '<p class="total" >Total ' + total + '</p>' ) ;
+        }
+
         advance.visitCards(
             function( card ) {
                 html += cardAsHtml( card, advance.viewAsList(), advance.viewFlip() )
