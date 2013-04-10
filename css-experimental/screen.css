@@ -196,24 +196,21 @@ td.undisclosed > span {
   Other
 *********/
 
-.total {
+.report-header {
   height : 1em ;
   ligne-height : 1 ;
   margin-top : -1.5em ;
   margin-bottom : 0 ;
   text-align : right ;
+  font-size : 70% ;
 }
 
-.no-theme {
-  text-align : center ;
-  text-style : italic ;
-  font-size : 1.5em ;
-  color : #999999 ;
-}
-
-.total {
-  font-size : 80% ;
+.report-header {
   margin-bottom : 0.5em ;
+}
+
+.print-only {
+  display : none ;
 }
 
 #disclose {

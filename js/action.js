@@ -65,18 +65,29 @@
       }
 
       this.step = function() {
-        var html = '' ;
 
         if( cardIndex == 0 ) {
           var total = 0 ;
-          advance.visitCards(
-              function( card ) { total ++ },
-              function() {},
-              0
-          ) ;
-          $( '#board' ).append( '<p class="total" >'
-              + szotargep.i18n.resource( 'total' ) + ' ' + total + '</p>' ) ;
+          advance.visitCards( function( card ) { total ++ }, function() {}, 0 ) ;
+
+          var html = '' ;
+          html += '<p class="report-header" >' ;
+
+          html += '<span class="screen-only" >' ;
+          html += szotargep.i18n.resource( 'total' ) + ' ' ;
+          html += total ;
+          html += '</span>' ;
+
+          html += '<span class="print-only" >' ;
+          html += moment().format('MMMM Do YYYY, dddd, h:mm:ss a') ;
+          html += '</span>' ;
+
+          html += '</p>' ;
+
+          $( '#board' ).append( html ) ;
         }
+
+        var html = '' ;
 
         advance.visitCards(
             function( card ) {
