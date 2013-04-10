@@ -183,8 +183,8 @@ function advance( vocabulary, random ) {
           tags : function() { return null },
           single : function() { return false },
           flip : function() { return false },
-          language : function() { return 'lan' },
-          defaultLanguage : function() { return 'def' }
+          language : function() { return 'hu' },
+          defaultLanguage : function() { return 'hu' }
       },
       random
   ) ;
