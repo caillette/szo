@@ -178,7 +178,6 @@
           result.push( newTags ) ;
         }
         result = result.length == 0 ? '' : '?' + result.join( '&' ) ;
-//        console.debug( 'New computed search: "' + result + '"' ) ;
         return result ;
       }
 

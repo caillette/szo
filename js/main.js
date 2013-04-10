@@ -146,12 +146,12 @@
       $( '#toggle-list' ).prop( 'checked', advance.viewAsList() ) ;
       $( '#toggle-flip' ).prop( 'checked', advance.viewFlip() ) ;
 
-      // At least Chrome 26.0.1410.43 doesn't push well an empty string.
       var newLocationSearch =
-          ( window.location.origin
+          ( window.location.origin   // Firefox doesn't know 'origin'.
               ? window.location.origin
-              : window.location.host ? window.location.host : '' // Firefox, doesn't work anyways.
+              : window.location.host ? window.location.host : ''
           )
+          // At least Chrome 26.0.1410.43 doesn't push well an empty string.
         + ( window.location.pathname ? window.location.pathname : '' )
         + advance.locationSearch()
       ;
