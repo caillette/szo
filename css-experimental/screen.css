@@ -70,10 +70,12 @@ body {
 
 #card-location > code {
   font-family : Courier New, Courier New, monospace ;
+  margin-bottom : 0.3em ;
 }
 
 #card-location > span, #card-location > em {
-  font-size : 90% ;
+  color : #555555 ;
+  font-size : 80% ;
   padding : 0.1em 0.3em ;
   margin-left : 0.4em ;
 }
@@ -85,7 +87,8 @@ body {
 }
 
 #card-location > span {
-  border : 1px solid black ;
+  border : 1px solid grey ;
+  border-radius : 0.3em ;
 }
 
 
