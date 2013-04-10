@@ -130,7 +130,7 @@
     }
     
     function initialUpdate( advance ) {
-      $( '#toggle-list-or-single' ).prop( 'checked', advance.viewAsList() ) ;
+      $( '#toggle-list' ).prop( 'checked', advance.viewAsList() ) ;
       updateBoard( advance ) ;
     }
 
@@ -143,7 +143,7 @@
       updateTagCheckedState( advance ) ;
 
       $( '#next-answer-or-card' ).prop( 'disabled', advance.viewAsList() ) ;
-      $( '#toggle-list-or-single' ).prop( 'checked', advance.viewAsList() ) ;
+      $( '#toggle-list' ).prop( 'checked', advance.viewAsList() ) ;
       $( '#toggle-flip' ).prop( 'checked', advance.viewFlip() ) ;
 
       window.history.pushState( null, null, advance.locationSearch() ) ;
@@ -158,7 +158,7 @@
           + '></input>'
       )
           .click( function( event ) {
-            advance.viewAsList( $( '#toggle-list-or-single' ).prop( 'checked' ) ) ;
+            advance.viewAsList( $( '#toggle-list' ).prop( 'checked' ) ) ;
             updateBoard( advance ) ;
           } )
           .appendTo( '#top' )
@@ -240,7 +240,7 @@
       $( '#label-toggle-flip' ).text( szotargep.i18n.resource( 'flip' ) ) ;
 
       $( '#label-' + szotargep.vocabulary.UNTAGGED.replace( '$', '\\$' ) )
-          .text( szotargep.i18n.resource( 'untagged' ) ) ;
+          .html( '<em>' + szotargep.i18n.resource( 'untagged' ) + '</em>' ) ;
     }
 
     function disclose( next ) {

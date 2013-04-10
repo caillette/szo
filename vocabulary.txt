@@ -127,4 +127,11 @@ fr-hu/Szotar.txt
 fr-hu/Szotar-nevek.txt
 
 
-@PartieDuCorps Testrész
+@Anatomie Testrész
+@Coordination Mellekmondatok
+@Meteorologie Időjárás
+@Saison Évszak
+@Medecine Gyógyszer
+@Alimentation Élelmezés
+@Montagne Hegység
+@Religion Vallás
