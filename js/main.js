@@ -179,21 +179,22 @@
 
     function createTopWidgets( advance ) {
 
+
       $( '<input '
           + 'type="checkbox" '
-          + 'id="toggle-list" '
+          + 'id="toggle-flip" '
           + 'class="widget" '
           + '></input>'
       )
           .click( function( event ) {
-            advance.viewAsList( $( '#toggle-list' ).prop( 'checked' ) ) ;
+            advance.viewFlip( $( '#toggle-flip' ).prop( 'checked' ) ) ;
             updateBoard( advance ) ;
           } )
           .appendTo( '#top' )
       ;
 
-      $( '<label id="label-toggle-list" for="toggle-list" >-list-</label>' )
-          .appendTo( '#top' ) ;
+      $( '<label id="label-toggle-flip" for="toggle-flip" >-flip-</label>' ).appendTo( '#top' ) ;
+
 
       $( '<button type="button" id="select-all-tags" class="widget" >-all-</button>'
       )
@@ -214,18 +215,19 @@
 
       $( '<input '
           + 'type="checkbox" '
-          + 'id="toggle-flip" '
+          + 'id="toggle-list" '
           + 'class="widget" '
           + '></input>'
       )
           .click( function( event ) {
-            advance.viewFlip( $( '#toggle-flip' ).prop( 'checked' ) ) ;
+            advance.viewAsList( $( '#toggle-list' ).prop( 'checked' ) ) ;
             updateBoard( advance ) ;
           } )
           .appendTo( '#top' )
       ;
 
-      $( '<label id="label-toggle-flip" for="toggle-flip" >-flip-</label>' ).appendTo( '#top' ) ;
+      $( '<label id="label-toggle-list" for="toggle-list" >-list-</label>' )
+          .appendTo( '#top' ) ;
 
 
       $( '<button type="button" id="next-answer-or-card" class="widget" ><b>-next-</b></button>' )
