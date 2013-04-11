@@ -33,7 +33,9 @@
         } else {
           throw 'Unsupported: ' + tags ;
         }
-        feedCardsFromTagSelection( this, tags ) ;
+        if( ! this.deckEnabled() ) {
+          feedCardsFromTagSelection( this, tags ) ;
+        }
       }
 
       function feedCardsFromTagSelection( that, tags ) {

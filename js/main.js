@@ -146,6 +146,8 @@
       $( '#next-answer-or-card' ).prop( 'disabled', advance.viewAsList() ) ;
       $( '#toggle-list' ).prop( 'checked', advance.viewAsList() ) ;
       $( '#toggle-flip' ).prop( 'checked', advance.viewFlip() ) ;
+      $( '#add-to-deck' ).prop( 'disabled', advance.viewAsList() ) ;
+      $( '#remove-from-deck' ).prop( 'disabled', advance.viewAsList() ) ;
 
       updateBrowserHistory( advance ) ;
     }
@@ -227,6 +229,42 @@
 
       $( '<label id="label-toggle-flip" for="toggle-flip" >-flip-</label>' ).appendTo( '#top' ) ;
 
+
+      $( '<input '
+          + 'type="checkbox" '
+          + 'id="toggle-deck" '
+          + 'class="widget" '
+          + '></input>'
+      )
+          .click( function( event ) {
+            advance.deckEnabled( $( '#toggle-deck' ).prop( 'checked' ) ) ;
+            updateBoard( advance ) ;
+          } )
+          .appendTo( '#top' )
+      ;
+
+      $( '<label id="label-toggle-deck" for="toggle-deck" >-deck-</label>' ).appendTo( '#top' ) ;
+
+      $( '<button type="button" id="add-to-deck" class="widget" >- + -</button>'
+      )
+          .click( function( event ) {
+              advance.addToDeck( advance.currentCard() ) ;
+          } )
+          .appendTo( '#top' )
+      ;
+
+      $( '<button type="button" id="remove-from-deck" class="widget" >- - -</button>'
+      )
+          .click( function( event ) {
+              advance.removeFromDeck( advance.currentCard() ) ;
+          } )
+          .appendTo( '#top' )
+      ;
+
+
+
+
+
       if( showLanguageSelector ) {
         $(  '<select id="language-selection" class="widget" >' )
             .change( function( event ) {
@@ -256,6 +294,10 @@
       $( '#next-answer-or-card' ).text( szotargep.i18n.resource( 'next' ) ) ;
       $( '#label-toggle-list' ).text( szotargep.i18n.resource( 'list' ) ) ;
       $( '#label-toggle-flip' ).text( szotargep.i18n.resource( 'flip' ) ) ;
+
+      $( '#label-toggle-deck' ).text( szotargep.i18n.resource( 'deck' ) ) ;
+      $( '#add-to-deck' ).text( szotargep.i18n.resource( 'addToDeck' ) ) ;
+      $( '#remove-from-deck' ).text( szotargep.i18n.resource( 'removeFromDeck' ) ) ;
 
       $( '#label-' + szotargep.vocabulary.UNTAGGED.replace( '$', '\\$' ) )
           .html( '<em>' + szotargep.i18n.resource( 'untagged' ) + '</em>' ) ;

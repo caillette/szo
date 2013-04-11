@@ -28,7 +28,7 @@
   }
 
   szotargep.i18n.currentI18nCode = function() {
-    return codeSupplier.i18nCode() ;
+
   }
 
   szotargep.i18n.resource = function( key ) {
@@ -71,6 +71,21 @@
       en : 'Total',
       fr : 'Total',
       hu : 'Összesen'
+    },
+    deck : {
+      en : 'Deck',
+      fr : 'Coin',
+      hu : 'Sarok'
+    },
+    removeFromDeck : {
+      en : '-',
+      fr : '-',
+      hu : '-'
+    },
+    addToDeck : {
+      en : '+',
+      fr : '+',
+      hu : '+'
     }
   }
 
