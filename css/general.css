@@ -1,21 +1,6 @@
 @import url( 'reset.css' ) ;
 
 
-#themes {
-  visibility : collapse ;
-  height : 0 ;
-}
-
-
-/* For a true sticky footer:
-    http://www.lwis.net/journal/2008/02/08/pure-css-sticky-footer
-    http://matthewjamestaylor.com/blog/keeping-footers-at-the-bottom-of-the-page
-*/
-#console {
-  display : none ;
-  height : 0 ;
-}
-
 .void {
   font-size : 1pt ;
   line-height : 0.001 ;
@@ -35,7 +20,7 @@
   margin-right : 1em ;
 }
 
-#board > table.equivalence-list {
+#board > table.card-list {
   font-size : 60% ;
 }
 

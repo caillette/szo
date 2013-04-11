@@ -135,3 +135,4 @@ fr-hu/Szotar-nevek.txt
 @Alimentation Élelmezés
 @Montagne Hegység
 @Religion Vallás
+@Dictionnaire Szótár

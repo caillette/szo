@@ -5,13 +5,34 @@ body * {
   font-family : Palatino Linotype, Book Antiqua, Palatino, serif ;
 }
 
-#theme-choice, #theme-key, #toolbar {
+#tags, #card-location, #top {
   display : none ;
 }
 
 .void {
   height : 6pt ; /* Defines space between two tables. */
 }
+
+
+#tags {
+  visibility : collapse ;
+  height : 0 ;
+}
+
+.screen-only {
+  display : none ;
+}
+
+p.report-header {
+  text-align : right ;
+  padding-bottom : 1em ;
+}
+
+p.report-header > span {
+  ligne-height : 1 ;
+  font-size : 9pt ;
+}
+
 
 /********
   Board
