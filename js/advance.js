@@ -19,6 +19,7 @@
       var vocabularyTags = vocabulary.tags() ; // Shortcut.
       var tagSelection = [] ;
       var cards = [] ;
+      var deck = [] ;
       var currentCard = null ;
       var disclosure = 0 ;
       var asList ;
@@ -32,6 +33,10 @@
         } else {
           throw 'Unsupported: ' + tags ;
         }
+        feedCardsFromTagSelection( this, tags ) ;
+      }
+
+      function feedCardsFromTagSelection( that, tags ) {
         var previousCard = currentCard ;
         currentCard = null ;
         cards = [] ;
@@ -43,13 +48,40 @@
             currentCard = previousCard ;
           }
         }
-        if( currentCard == null ) this.pickRandomCard() ;
+        if( currentCard == null ) that.pickRandomCard() ;
       }
+
+      this.addToDeck = function( card ) {
+        if( ! this.deckContains( card ) ) {
+          deck.push( card ) ;
+        }
+      }
+
+      this.removeFromDeck = function( card ) {
+        var index = deck.indexOf( card ) ;
+        if( index >= 0 ) deck.remove( index ) ;
+      }
+
+      this.deckContains = function( card ) {
+        return deck.indexOf( card ) >= 0 ;
+      }
+
+      this.deckEnabled = function( enabled ) {
+        if( typeof enabled != 'undefined' ) {
+          if( enabled ) {
+            cards = deck ;
+          } else {
+            feedCardsFromTagSelection( this, tagSelection ) ;
+          }
+        }
+        return cards === deck ;
+      }
+
+
 
       this.toggleTag = function( tag, selected ) {
         if( selected != this.isTagSelected( tag ) ) {
           var newSelection = this.tagSelection() ; // Does a copy.
-//          newSelection = newSelection === null ? [] : newSelection ;
           if( selected ) {
             newSelection.push( tag ) ;
           } else {

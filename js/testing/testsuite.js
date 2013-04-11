@@ -190,6 +190,25 @@ function advance( vocabulary, random ) {
   ) ;
 }
 
+function verifyCurrentCards( advance, cards ) {
+  var visited = [] ;
+  advance.visitCards(
+      function( card ) { visited.push( card.lineInPack() ) ; },
+      function() { ok( true ) },
+      0, 1000
+  ) ;
+
+  var expectedCardLines = [] ;
+  for( var c = 0 ; c < cards.length ; c ++ ) {
+    expectedCardLines.push( typeof cards[ c ] === 'number' ? cards[ c ] : cards[ c ].lineInPack ) ;
+  }
+
+  // strictEqual tells that Card references are not the same because of the fake Pack.
+  deepEqual( expectedCardLines, visited, 'current cards are the one expected' ) ;
+}
+
+
+
 test( 'viewAsList', function() {
   var a = advance1() ;
   ok( a.viewAsList( true ) ) ;
@@ -221,6 +240,7 @@ test( 'initialState', function() {
 
   ok( a.viewAsList() ) ;
   ok( ! a.viewFlip() ) ;
+  ok( ! a.deckEnabled() ) ;
   equal( a.locationSearch(), '?v=some://vocabulary' ) ;
   deepEqual( a.cards(), v.vocabulary.cards(), 'all Cards selected' ) ;
 
@@ -228,7 +248,7 @@ test( 'initialState', function() {
   a.viewAsList( false ) ;
   equal( a.disclosure(), 0, 'disclosure' ) ;
 
-  // For some unknown reason, strictEqual tells that Card references are not the same.
+  // strictEqual tells that Card references are not the same because of the fake Pack.
   deepEqual( a.currentCard(), v.card1, 'currentCard' ) ;
 
   deepEqual(
@@ -269,7 +289,7 @@ test( 'nextAnswerOrCard', function() {
   equal( a.nextAnswerOrCard(), 1, 'nextAnswerOrCard' ) ; // Next answer.
   equal( a.nextAnswerOrCard(), 0, 'nextAnswerOrCard' ) ; // Next Card.
 
-  // For some unknown reason, strictEqual or deepEqual tell that Card references are not the same.
+  // strictEqual tells that Card references are not the same because of the fake Pack.
   equal( a.currentCard().lineInPack(), v.card2.lineInPack(), 'currentCard' ) ;
 } ) ;
 
@@ -328,6 +348,26 @@ test( 'Visiting selected Cards in Advance', function() {
   ) ;
 } ) ;
 
+test( 'deck ', function() {
+  var b = vocabulary1() ;
+  var a = advance( b.vocabulary ) ;
+
+  a.addToDeck( b.card1 ) ;
+  ok( a.deckContains( b.card1 ) ) ;
+  verifyCurrentCards( a, [ 1, 2, 3 ] ) ;
+
+  a.deckEnabled( true ) ;
+  ok( a.deckContains( b.card1 ) ) ;
+  verifyCurrentCards( a, [ 1 ] ) ;
+
+  a.removeFromDeck( b.card1 ) ;
+  ok( ! a.deckContains( b.card1 ) ) ;
+
+  a.deckEnabled( false ) ;
+  ok( ! a.deckContains( b.card1 ) ) ;
+  verifyCurrentCards( a, [ 1, 2, 3 ] ) ;
+
+} ) ;
 
 
 module( 'Parser' )
