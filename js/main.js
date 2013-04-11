@@ -146,20 +146,21 @@
       $( '#next-answer-or-card' ).prop( 'disabled', advance.viewAsList() ) ;
       $( '#toggle-list' ).prop( 'checked', advance.viewAsList() ) ;
       $( '#toggle-flip' ).prop( 'checked', advance.viewFlip() ) ;
-      updateDeckContentChangeButtons( advance ) ;
 
-      updateBrowserHistory( advance ) ;
-    }
-
-    function updateDeckContentChangeButtons( advance ) {
       $( '#add-to-deck' ).prop(
           'disabled',
-          advance.viewAsList() || advance.deckContains( advance.currentCard() )
+          advance.viewAsList()
+          ||  advance.currentCard() == null
+          || advance.deckContains( advance.currentCard() )
       ) ;
       $( '#remove-from-deck' ).prop(
           'disabled',
-          advance.viewAsList() || ! advance.deckContains( advance.currentCard() )
+          advance.viewAsList()
+          ||  advance.currentCard() == null
+          || ! advance.deckContains( advance.currentCard() )
       ) ;
+
+      updateBrowserHistory( advance ) ;
     }
 
     function updateBrowserHistory( advance ) {
@@ -258,7 +259,7 @@
       )
           .click( function( event ) {
               if( advance.addToDeck( advance.currentCard() ) ) animateColor( $( this ) ) ;
-              updateDeckContentChangeButtons( advance ) ;
+              updateBoard( advance ) ;
           } )
           .appendTo( '#top' )
       ;
@@ -267,7 +268,7 @@
       )
           .click( function( event ) {
               if( advance.removeFromDeck( advance.currentCard() ) ) animateColor( $( this ) ) ;
-              updateDeckContentChangeButtons( advance ) ;
+              updateBoard( advance ) ;
           } )
           .appendTo( '#top' )
       ;

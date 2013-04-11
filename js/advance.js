@@ -50,7 +50,7 @@
             currentCard = previousCard ;
           }
         }
-        if( currentCard == null ) that.pickRandomCard() ;
+        that.pickRandomCard() ;
       }
 
       this.addToDeck = function( card ) {
@@ -66,6 +66,8 @@
         var index = deck.indexOf( card ) ;
         if( index >= 0 ) {
           deck.remove( index ) ;
+          if( deck.length == 0 ) currentCard = null ;
+          this.pickRandomCard() ;
           return true ;
         } else {
           return false ;
@@ -103,7 +105,7 @@
 
       this.pickRandomCard = function() {
         disclosure = 0 ;
-        currentCard = cards === null ? null : cards[ random( cards.length ) ] ;
+        currentCard = cards.length == 0 ? null : cards[ random( cards.length ) ] ;
       }
 
       // Returns 0 when disclosing a new Card, a greater value (starting by 1) otherwise.
