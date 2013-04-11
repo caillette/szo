@@ -127,7 +127,7 @@
   }() ;
 
   function noCardMessageHtml() {
-    return '<p class="empty" >Nothing to show</p>' ;
+    return '<p class="empty" >' + szotargep.i18n.resource( 'noSelection' ) + '</p>' ;
   }
 
   function cardAsHtml( card, listView, viewFlip ) {

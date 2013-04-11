@@ -67,6 +67,11 @@
       hu : 'Megfordít'
 
     },
+    noSelection : {
+      en : 'Nothing to show',
+      fr : 'Aucune sélection',
+      hu : 'Nincs kiválasztás'
+    },
     total : {
       en : 'Total',
       fr : 'Total',
