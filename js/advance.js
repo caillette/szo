@@ -111,7 +111,13 @@
       // Returns 0 when disclosing a new Card, a greater value (starting by 1) otherwise.
       this.nextAnswerOrCard = function() {
         checkViewAsList( false ) ;
-        if( ! currentCard || disclosure >= currentCard.answerCount() ) {
+        if( ! currentCard
+            || disclosure >= (
+                this.viewFlip()
+                ? currentCard.questionCount()
+                : currentCard.answerCount()
+            )
+        ) {
           this.pickRandomCard() ;
         } else {
           disclosure ++ ;

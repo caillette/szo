@@ -134,7 +134,7 @@
 
     function sectionAsTableDivision( section, undisclosed ) {
       var td =
-          '<td' + ( ( undisclosed && ! listView ) ? ' class="undisclosed" ' : '' ) + '>'
+          '<td' + ( ( undisclosed && ! listView && section ) ? ' class="undisclosed" ' : '' ) + '>'
         + ( section ? '<span>' + section + '</span>' : '' )
         + '</td>\n'
       ;

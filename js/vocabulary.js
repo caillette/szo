@@ -146,6 +146,14 @@
       return result ;
     }
 
+    constructor.prototype.questionCount = function() {
+      var questionCount = 0 ;
+      this.visitStages( function( question, answer ) {
+        if( question != null ) questionCount ++ ;
+      } ) ;
+      return questionCount ;
+    }
+
     constructor.prototype.answerCount = function() {
       var answerCount = 0 ;
       this.visitStages( function( question, answer ) {
