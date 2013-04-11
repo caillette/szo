@@ -146,6 +146,7 @@
       $( '#next-answer-or-card' ).prop( 'disabled', advance.viewAsList() ) ;
       $( '#toggle-list' ).prop( 'checked', advance.viewAsList() ) ;
       $( '#toggle-flip' ).prop( 'checked', advance.viewFlip() ) ;
+      $( '#toggle-deck' ).prop( 'checked', advance.deckEnabled() ) ;
 
       updateDeckChangingWidgets( advance ) ;
       updateBrowserHistory( advance ) ;
@@ -220,8 +221,7 @@
           + '></input>'
       )
           .click( function( event ) {
-            advance.viewAsList( $( '#toggle-list' ).prop( 'checked' ) ) ;
-            updateBoard( advance ) ;
+            toggleViewAsList() ;
           } )
           .appendTo( '#top' )
       ;
@@ -232,12 +232,7 @@
 
       $( '<button type="button" id="next-answer-or-card" class="widget" ><b>-next-</b></button>' )
           .click( function( event ) {
-              var next = advance.nextAnswerOrCard() ;
-              if( next == 0 ) {
-                updateBoard( advance ) ;
-              } else {
-                disclose( next ) ;
-              }
+            nextAnswerOrCard() ;
           } )
           .appendTo( '#top' ) 
       ;
@@ -248,44 +243,22 @@
           + 'class="widget" '
           + '></input>'
       )
-          .click( function( event ) {
-            advance.deckEnabled( $( '#toggle-deck' ).prop( 'checked' ) ) ;
-            updateBoard( advance ) ;
-          } )
+          .click( function( event ) { toggleDeck() } )
           .appendTo( '#top' )
       ;
 
       $( '<label id="label-toggle-deck" for="toggle-deck" >-deck-</label>' ).appendTo( '#top' ) ;
 
-      $( '<button type="button" id="add-to-deck" class="widget" >- + -</button>'
-      )
-          .click( function( event ) {
-              if( advance.addToDeck( advance.currentCard() ) ) animateColor( $( this ) ) ;
-              updateDeckChangingWidgets( advance ) ;
-          } )
+      $( '<button type="button" id="add-to-deck" class="widget" >- + -</button>' )
+          .click( function( event ) { addToDeck( $( this ) ) } )
           .appendTo( '#top' )
       ;
 
       $( '<button type="button" id="remove-from-deck" class="widget" >- - -</button>'
       )
-          .click( function( event ) {
-              if( advance.removeFromDeck( advance.currentCard() ) ) animateColor( $( this ) ) ;
-              if( advance.deckEnabled() ) {
-                updateBoard( advance ) ;
-              } else {
-              updateDeckChangingWidgets( advance ) ;
-              }
-          } )
+          .click( function( event ) { removeFromDeck( $( this ) ) } )
           .appendTo( '#top' )
       ;
-
-      function animateColor( $this ) {
-          $this
-              .animate( { color: "#cccccc" }, 50 )
-              .animate( { color: "#000000" }, 500 )
-          ;
-      }
-
 
 
       if( showLanguageSelector ) {
@@ -307,6 +280,65 @@
               '<option value="' + language.code639_1 + '" >' + language.name + '</option>' ) ;
         } ) ;
       }
+
+      function nextAnswerOrCard() {
+        if( ! advance.viewAsList() ) {
+          var next = advance.nextAnswerOrCard() ;
+          if( next == 0 ) {
+            updateBoard( advance ) ;
+          } else {
+            disclose( next ) ;
+          }
+        }
+      }
+
+      function addToDeck( $this ) {
+        if( ! advance.viewAsList() ) {
+          if( advance.addToDeck( advance.currentCard() ) ) animateColor( $this ) ;
+          updateDeckChangingWidgets( advance ) ;
+        }
+      }
+
+      function removeFromDeck( $this ) {
+        if( ! advance.viewAsList() ) {
+          if( advance.removeFromDeck( advance.currentCard() ) ) animateColor( $this ) ;
+          if( advance.deckEnabled() ) {
+            updateBoard( advance ) ;
+          } else {
+            updateDeckChangingWidgets( advance ) ;
+          }
+        }
+      }
+
+      function toggleDeck() {
+        advance.deckEnabled( ! advance.deckEnabled() ) ;
+        updateBoard( advance ) ;
+      }
+
+      function toggleViewAsList() {
+        advance.viewAsList( ! advance.viewAsList() ) ;
+        updateBoard( advance ) ;
+      }
+
+      function animateColor( $this ) {
+          $this
+              .animate( { color: "#cccccc" }, 50 )
+              .animate( { color: "#000000" }, 500 )
+          ;
+      }
+
+      $( document ).bind( 'keydown', 'right', function() { nextAnswerOrCard() } ) ;
+      $( document ).bind(
+          'keydown', 'down',
+          function() { addToDeck( $( '#add-to-deck' ) ) }
+      ) ;
+      $( document ).bind(
+          'keydown', 'up',
+          function() { removeFromDeck( $( '#remove-from-deck' ) ) }
+      ) ;
+      $( document ).bind( 'keydown', 'left', function() { toggleDeck() } ) ;
+
+      $( document ).bind( 'keydown', 'return', function() { toggleViewAsList() } ) ;
 
 
     }
