@@ -66,8 +66,10 @@
         var index = deck.indexOf( card ) ;
         if( index >= 0 ) {
           deck.remove( index ) ;
-          if( deck.length == 0 ) currentCard = null ;
-          this.pickRandomCard() ;
+          if( this.deckEnabled() ) {
+            if( deck.length == 0 ) currentCard = null ;
+            this.pickRandomCard() ;
+          }
           return true ;
         } else {
           return false ;
@@ -82,6 +84,7 @@
         if( typeof enabled != 'undefined' ) {
           if( enabled ) {
             cards = deck ;
+            this.pickRandomCard() ;
           } else {
             feedCardsFromTagSelection( this, tagSelection ) ;
           }

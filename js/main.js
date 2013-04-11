@@ -268,7 +268,11 @@
       )
           .click( function( event ) {
               if( advance.removeFromDeck( advance.currentCard() ) ) animateColor( $( this ) ) ;
-              updateBoard( advance ) ;
+              if( advance.deckEnabled() ) {
+                updateBoard( advance ) ;
+              } else {
+              updateDeckChangingWidgets( advance ) ;
+              }
           } )
           .appendTo( '#top' )
       ;
