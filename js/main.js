@@ -201,19 +201,6 @@
           .appendTo( '#top' )
       ;
 
-      $( '<button type="button" id="next-answer-or-card" class="widget" ><b>-next-</b></button>'
-      )
-          .click( function( event ) {
-              var next = advance.nextAnswerOrCard() ;
-              if( next == 0 ) {
-                updateBoard( advance ) ;
-              } else {
-                disclose( next ) ;
-              }
-          } )
-          .appendTo( '#top' ) 
-      ;
-
       $( '<input '
           + 'type="checkbox" '
           + 'id="toggle-flip" '
@@ -229,6 +216,18 @@
 
       $( '<label id="label-toggle-flip" for="toggle-flip" >-flip-</label>' ).appendTo( '#top' ) ;
 
+
+      $( '<button type="button" id="next-answer-or-card" class="widget" ><b>-next-</b></button>' )
+          .click( function( event ) {
+              var next = advance.nextAnswerOrCard() ;
+              if( next == 0 ) {
+                updateBoard( advance ) ;
+              } else {
+                disclose( next ) ;
+              }
+          } )
+          .appendTo( '#top' ) 
+      ;
 
       $( '<input '
           + 'type="checkbox" '
@@ -291,7 +290,7 @@
     function updateLabels( i18nCode ) {
       $( '#select-all-tags' ).text( szotargep.i18n.resource( 'all' ) ) ;
       $( '#deselect-all-tags' ).text( szotargep.i18n.resource( 'none' ) ) ;
-      $( '#next-answer-or-card' ).text( szotargep.i18n.resource( 'next' ) ) ;
+      $( '#next-answer-or-card' ).html( '<b>' + szotargep.i18n.resource( 'next' ) + '</b>' ) ;
       $( '#label-toggle-list' ).text( szotargep.i18n.resource( 'list' ) ) ;
       $( '#label-toggle-flip' ).text( szotargep.i18n.resource( 'flip' ) ) ;
 
