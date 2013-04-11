@@ -147,20 +147,20 @@
       $( '#toggle-list' ).prop( 'checked', advance.viewAsList() ) ;
       $( '#toggle-flip' ).prop( 'checked', advance.viewFlip() ) ;
 
+      updateDeckChangingWidgets( advance ) ;
+      updateBrowserHistory( advance ) ;
+    }
+
+    function updateDeckChangingWidgets( advance ) {
+      var noDeckAction = advance.viewAsList() || advance.currentCard() == null ;
       $( '#add-to-deck' ).prop(
           'disabled',
-          advance.viewAsList()
-          ||  advance.currentCard() == null
-          || advance.deckContains( advance.currentCard() )
+          noDeckAction || advance.deckContains( advance.currentCard() )
       ) ;
       $( '#remove-from-deck' ).prop(
           'disabled',
-          advance.viewAsList()
-          ||  advance.currentCard() == null
-          || ! advance.deckContains( advance.currentCard() )
+          noDeckAction || ! advance.deckContains( advance.currentCard() )
       ) ;
-
-      updateBrowserHistory( advance ) ;
     }
 
     function updateBrowserHistory( advance ) {
@@ -259,7 +259,7 @@
       )
           .click( function( event ) {
               if( advance.addToDeck( advance.currentCard() ) ) animateColor( $( this ) ) ;
-              updateBoard( advance ) ;
+              updateDeckChangingWidgets( advance ) ;
           } )
           .appendTo( '#top' )
       ;
