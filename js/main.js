@@ -4,6 +4,8 @@
 
   szotargep.main.documentReady = function() {
 
+    var showLanguageSelector = false ;
+
     if( new szotargep.browser.Capabilities( '#browser-capabilities' ).capable() ) {
       $( '#browser-capabilities' ).hide() ;
 
@@ -225,23 +227,26 @@
 
       $( '<label id="label-toggle-flip" for="toggle-flip" >-flip-</label>' ).appendTo( '#top' ) ;
 
-      $(  '<select id="language-selection" class="widget" >' )
-          .change( function( event ) {
-              advance.i18nCode( $( this ).val() ) ;
-              updateLabels() ;
-              if( advance.viewAsList() ) {
-                // The list may contain some elements subject to change.
-                performAction( new szotargep.action.ShowList( advance ) ) ;
-              }
-              updateBrowserHistory( advance )
-          } )
-          .appendTo( '#top' )
-      ;
+      if( showLanguageSelector ) {
+        $(  '<select id="language-selection" class="widget" >' )
+            .change( function( event ) {
+                advance.i18nCode( $( this ).val() ) ;
+                updateLabels() ;
+                if( advance.viewAsList() ) {
+                  // The list may contain some elements subject to change.
+                  performAction( new szotargep.action.ShowList( advance ) ) ;
+                }
+                updateBrowserHistory( advance )
+            } )
+            .appendTo( '#top' )
+        ;
 
-      szotargep.i18n.visitLanguages( function( language ) {
-        $( '#language-selection').append(
-            '<option value="' + language.code639_1 + '" >' + language.name + '</option>' ) ;
-      } ) ;
+        szotargep.i18n.visitLanguages( function( language ) {
+          $( '#language-selection').append(
+              '<option value="' + language.code639_1 + '" >' + language.name + '</option>' ) ;
+        } ) ;
+      }
+
 
     }
 
