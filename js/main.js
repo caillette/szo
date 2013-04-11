@@ -146,10 +146,20 @@
       $( '#next-answer-or-card' ).prop( 'disabled', advance.viewAsList() ) ;
       $( '#toggle-list' ).prop( 'checked', advance.viewAsList() ) ;
       $( '#toggle-flip' ).prop( 'checked', advance.viewFlip() ) ;
-      $( '#add-to-deck' ).prop( 'disabled', advance.viewAsList() ) ;
-      $( '#remove-from-deck' ).prop( 'disabled', advance.viewAsList() ) ;
+      updateDeckContentChangeButtons( advance ) ;
 
       updateBrowserHistory( advance ) ;
+    }
+
+    function updateDeckContentChangeButtons( advance ) {
+      $( '#add-to-deck' ).prop(
+          'disabled',
+          advance.viewAsList() || advance.deckContains( advance.currentCard() )
+      ) ;
+      $( '#remove-from-deck' ).prop(
+          'disabled',
+          advance.viewAsList() || ! advance.deckContains( advance.currentCard() )
+      ) ;
     }
 
     function updateBrowserHistory( advance ) {
@@ -247,7 +257,8 @@
       $( '<button type="button" id="add-to-deck" class="widget" >- + -</button>'
       )
           .click( function( event ) {
-              advance.addToDeck( advance.currentCard() ) ;
+              if( advance.addToDeck( advance.currentCard() ) ) animateColor( $( this ) ) ;
+              updateDeckContentChangeButtons( advance ) ;
           } )
           .appendTo( '#top' )
       ;
@@ -255,12 +266,18 @@
       $( '<button type="button" id="remove-from-deck" class="widget" >- - -</button>'
       )
           .click( function( event ) {
-              advance.removeFromDeck( advance.currentCard() ) ;
+              if( advance.removeFromDeck( advance.currentCard() ) ) animateColor( $( this ) ) ;
+              updateDeckContentChangeButtons( advance ) ;
           } )
           .appendTo( '#top' )
       ;
 
-
+      function animateColor( $this ) {
+          $this
+              .animate( { color: "#cccccc" }, 50 )
+              .animate( { color: "#000000" }, 500 )
+          ;
+      }
 
 
 

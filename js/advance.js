@@ -54,14 +54,22 @@
       }
 
       this.addToDeck = function( card ) {
-        if( ! this.deckContains( card ) ) {
+        if( this.deckContains( card ) ) {
+          return false ;
+        } else {
           deck.push( card ) ;
+          return true ;
         }
       }
 
       this.removeFromDeck = function( card ) {
         var index = deck.indexOf( card ) ;
-        if( index >= 0 ) deck.remove( index ) ;
+        if( index >= 0 ) {
+          deck.remove( index ) ;
+          return true ;
+        } else {
+          return false ;
+        }
       }
 
       this.deckContains = function( card ) {
