@@ -165,6 +165,8 @@
       ) ;
     }
 
+    var oldLocationSearch = null ;
+
     function updateBrowserHistory( advance ) {
       var newLocationSearch =
           ( window.location.origin   // Firefox doesn't know 'origin'.
@@ -176,7 +178,10 @@
         + advance.locationSearch()
       ;
 
-      window.history.pushState( null, null, newLocationSearch ) ;
+      if( newLocationSearch != oldLocationSearch ) {
+        window.history.pushState( null, null, newLocationSearch ) ;
+        oldLocationSearch = newLocationSearch ;
+      }
     }
 
     function createTopWidgets( advance ) {
