@@ -171,7 +171,7 @@ transmettre, céder
 átad
   átadni
 
-  @Enseignement
+  @Redactionnel
 corriger (à l'écrit)
 átír
 
@@ -204,13 +204,13 @@ mettre un pied au-dessus de qqchose
 traverser
 átmegy
 
-  @Perception @Enseignement
+  @Perception
 regarder au travers, parcourir (lire rapidement)
   Nous regardons à travers la fenêtre.
 átnéz
   Átnézünk az ablakon.    
 
-  @Enseignement
+  @Redactionnel
 effetuer une relecture
 átolvas
 
@@ -1314,7 +1314,6 @@ fürdőszoba
 indépendant
 független
 
-  @Enseignement
 cahier
 füzet
 
@@ -1391,7 +1390,7 @@ gyerek
   -et, -ek, -ek
 
   @Enseignement
-lycée
+lycée (1)
 gymnazium
 
   @Anatomie
@@ -1719,7 +1718,7 @@ bureau
 iróasztal
   -t, -a, -ok
 
-  @Enseignement @Socialisation
+  @Socialisation
 connaître
 ismer
   -t, -jen, -ne
@@ -2268,7 +2267,7 @@ entre ("vers entre")
 közé
 
   @Enseignement
-lycée
+lycée (2)
 középiskola
 
   @Metier
@@ -3155,8 +3154,8 @@ cuit à la vapeur
 párolt
 
   @Expression
-bien sûr
-persze
+Bien sûr, …
+Persze, …
 
   
 pessimiste
