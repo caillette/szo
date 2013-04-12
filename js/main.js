@@ -15,6 +15,7 @@
           '#problems',
           window.location.search,
           function( vocabulary, locationSearch ) {
+            $( '.initialization' ).css( 'display', 'none' ) ;
             var advance = new szotargep.advance.Advance( vocabulary, locationSearch ) ;
             initializeI18n( advance ) ;
             reportProblems( vocabulary ) ;
