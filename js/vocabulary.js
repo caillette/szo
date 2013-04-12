@@ -247,6 +247,16 @@
           }
         }
       } ) ;
+      var that = this ;
+      result.sort( function( first, second ) {
+        var firstAppellation = that.tagAppellation( first ) ;
+        var secondAppellation = that.tagAppellation( second ) ;
+        if( firstAppellation ) first = firstAppellation ;
+        if( secondAppellation ) second = secondAppellation ;
+        if( first < second ) return -1 ;
+        if( first > second ) return 1 ;
+        return 0 ;
+      } )
       return result ;
     }
 
