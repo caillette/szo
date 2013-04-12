@@ -334,18 +334,19 @@
 
       $( document ).bind(
           'keydown', 'right',
-          function() { nextAnswerOrCard( $( '#next-answer-or-card' ) ) } ) ;
+          function() { nextAnswerOrCard( $( '#next-answer-or-card' ) ) ; return false }
+      ) ;
       $( document ).bind(
           'keydown', 'down',
-          function() { addToDeck( $( '#add-to-deck' ) ) }
+          function() { addToDeck( $( '#add-to-deck' ) ) ; return false }
       ) ;
       $( document ).bind(
           'keydown', 'up',
-          function() { removeFromDeck( $( '#remove-from-deck' ) ) }
+          function() { removeFromDeck( $( '#remove-from-deck' ) ) ; return false }
       ) ;
-      $( document ).bind( 'keydown', 'left', function() { toggleDeck() } ) ;
+      $( document ).bind( 'keydown', 'left', function() { toggleDeck() ; return false } ) ;
 
-      $( document ).bind( 'keydown', 'return', function() { toggleViewAsList() } ) ;
+      $( document ).bind( 'keydown', 'return', function() { toggleViewAsList() ; return false } ) ;
 
 
     }
