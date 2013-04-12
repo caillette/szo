@@ -3744,7 +3744,7 @@ szórakozik
   -kozott, -kozzon, -kozna
 
 amusement, divertissement
-szórakozást
+szórakozás
 
 alors
 szóval
