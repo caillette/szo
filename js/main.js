@@ -202,6 +202,7 @@
           .click( function( event ) {
               advance.selectAllTags() ;
               updateBoard( advance ) ;
+              animateColor( $( this ) ) ;
           } )
           .appendTo( '#top' )
       ;
@@ -210,6 +211,7 @@
           .click( function( event ) {
               advance.deselectAllTags() ;
               updateBoard( advance ) ;
+              animateColor( $( this ) ) ;
           } )
           .appendTo( '#top' )
       ;
@@ -232,7 +234,7 @@
 
       $( '<button type="button" id="next-answer-or-card" class="widget" ><b>-next-</b></button>' )
           .click( function( event ) {
-            nextAnswerOrCard() ;
+            nextAnswerOrCard( $( this ) ) ;
           } )
           .appendTo( '#top' ) 
       ;
@@ -281,7 +283,7 @@
         } ) ;
       }
 
-      function nextAnswerOrCard() {
+      function nextAnswerOrCard( $this ) {
         if( ! advance.viewAsList() ) {
           var next = advance.nextAnswerOrCard() ;
           if( next == 0 ) {
@@ -289,6 +291,7 @@
           } else {
             disclose( next ) ;
           }
+          animateColor( $this ) ;
         }
       }
 
@@ -322,12 +325,15 @@
 
       function animateColor( $this ) {
           $this
+              .stop( true, true )
               .animate( { color: "#cccccc" }, 50 )
               .animate( { color: "#000000" }, 500 )
           ;
       }
 
-      $( document ).bind( 'keydown', 'right', function() { nextAnswerOrCard() } ) ;
+      $( document ).bind(
+          'keydown', 'right',
+          function() { nextAnswerOrCard( $( '#next-answer-or-card' ) ) } ) ;
       $( document ).bind(
           'keydown', 'down',
           function() { addToDeck( $( '#add-to-deck' ) ) }
