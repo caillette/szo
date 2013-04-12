@@ -1,111 +1,138 @@
-title: Szótár
-
-@Dictionnaire
-
+  @Temporalite @Causalite
 jusqu'à ce que, en attendant
   Je joue avec lui tant qu'il se comporte bien.
 addig … amíg
   Addig játszom vele, amíg jó.
 
+  @Anatomie
 cerveau
 agy
 
+  @Socialisation
 cadeau
 ajándék
   ajándékok, ajándékot
 
+  @Socialisation
 conseiller
 ajánl
   ajánlani
 
+  @Architecture
 porte
 ajtó
   -t, -ajtaja, -k
 
+  @Intention
 vouloir
 akar
   -t, -jon, -na
 
+  @Causalite
 alors, dans ce cas
 akkor
 
+  
 forme (contour) (1)
 alak
 
+  
 bas, petit
 alacsony
   -at, -ak, -abb
 
+  @Postposition
 sous, au-dessous (sans mouvement)
 alatt
 
+  @Postposition
 vers-sous 
 alá
 
+  @Negation
 ne… guère
   Je ne le connais guère.
 alig
   Alig ismerem.
 
+  @Alimentation
 alcool
 alkohol
 
+  @Position
 place debout
 allóhelye
 
+  @Postposition
 sous (non-relatif)
 alól
 
+  @CycleBiologique
 dormir
   -
 alszik
   aludt, aludjon, aludna ; aludni
 
+  @Grammaire
 antonyme (2)
 antonim
 
+  @Famille
 mère
 anya
   anyát, anyja, anyák
 
+  @Famille
 belle-mère
 anyós
 
+  @Famille
 beau-père
 após
 
+  @Anatomie
 visage
 arc
 
+  @Famille
 dame (femme mariée)
 asszony
 
+  @Mobilier
 table
 asztal
   -t, -a, -ok
 
+  @Sport
 athlétisme
 atlétika
 
+  @Temporalite
 tout de suite
 azonnal
 
+  @Temporalite
 puis, ensuite, ultérieurement, plus tard
 aztán
 
+  @Mobilier
 lit
 ágy
   -at, -a, -ak
 
+  @Position
 être debout
 áll
   állni
 
+  @Faune
 animal, créature
 állat
 
+  
 rêveur
 álmodoró
+
 
 rêve
 álom
@@ -116,9 +143,11 @@ en général
 général (adj)
 általános
 
+  @Medecine
 soigner
 ápol
 
+  @Medecine @Metier
 infirmier
 ápoló
 
@@ -128,98 +157,126 @@ aprópénz
 minéral (adj et nom)
 ásvány
 
+  @Deplacement
 à travers
 át
 
+  @Deplacement @Position
 traverser (avec arrêt une fois de l'autre côté)
 átall
   Átall a másik oldara.
 
+  @Economie
 transmettre, céder
 átad
   átadni
 
+  @Enseignement
 corriger (à l'écrit)
 átír
 
+  @Deplacement
 envoyer à travers
 átküld
 
+  
 moyen, médiocre
 átlagos
 
+  @Perception
 voir à travers quelque chose
   Je vois à travers la fenêtre.
 átlát vmin
   Átlátok az ablakon.
 
+  @Perception
 voir quelque chose dans son intégralité (fig. comprendre)
   Je comprends le problème.
 átlát vmit
   Átlátom a problémát.
 
+  @Deplacement
 mettre un pied au-dessus de qqchose
 átlép vmin
   átlépni 
 
+  @Deplacement
 traverser
 átmegy
 
+  @Perception @Enseignement
 regarder au travers, parcourir (lire rapidement)
   Nous regardons à travers la fenêtre.
 átnéz
   Átnézünk az ablakon.    
 
+  @Enseignement
 effetuer une relecture
 átolvas
 
+  @Transport
 changer (de transport)
 átszáll
 
+  @Deplacement
 changer de place (assise)
   Il a changé de place pour l'autre chaise.
 átül
   Átülöt a másik székre.
 
+  @Alimentation
 haricot
 bab
 
+  @Anatomie
 moustache
 bajusz
 
+  @Position
 gauche
-  à gauche
 bal
-  balra
+
+  @Position @Deplacement
+à gauche
+balra
 
 accident
 baleset
 
+  @Economie
 banque
 bank
   -ot, -ja, -ot
 
+  @Socialisation 
 amical
 barátsagos
 
+  @Socialisation 
 hostile
 barátsagtalan
 
+  @Economie @Socialisation
 pourboire
 barravaló
 
+  @Amusement
 marionnette (tenue par le bas)
 bábszínház
 
+  @Socialisation
 regretter
 bán vmit
 
+  
 courageux
 bátor
 
+  @Famille
 grand-frère
 báty
 
+  @Deplacement @Position
 entrer (sans déplacement qui suit)
   Il entre dans le garage.
 beáll
@@ -231,116 +288,145 @@ becsuk
 se terminer
 befejeződik
 
+  @Deplacement @Position
 tourner (tout en continuant son chemin vers une destination précise)
 befordul
 
+  @Deplacement @Socialisation
 appeler quelqu'un pour qu'il rentre
 behív
 
+  @Redactionnel
 écrire dans (1)
 beír
   Kiírom a szovakat a füzetbe.
 
+  @Nation
 interne au territoire national (pour les choses uniquement) (1)
   tourisme intérieur
 belföldi
   belföldi turiszmus
 
+   @Anatomie
 interne (adj)
 belső
 
+  @Perception @Position
 regarder qqchose d'en haut
 benéz vmibe
 
+  @Perception @Socialisation
 mépriser quelqu'un
 benéz vkit
 
+  @Perception @Socialisation
 reprocher à quelqu'un (argot)
 beolvas vkinek
 
+  @Medecine
 malade
 beteg
   -et, -e, -ek
 
+  @Medecine
 maladie (1)
 betegség
 
+  @Deplacement @Position
 mettre, introduire
 betesz
   -tett, -tegyen, -tenne
 
+  @Deplacement @Position
 porter à l'intérieur
 bevisz
   -vit, -viggen, -vinne
 
+  @Anatomie
 intestin
 bél
   belek
 
+  @Economie
 louer (logement uniquement)
 bérel
 
 carte, abonnement
 bérlet
 
-
 timbre-poste
 bélyeg
 
+  @Faune
 taureau
 bika
 
+  @Faune
 mouton
 birka
 
 "en effet", "sûrement", "oui c'est vrai"
 bizony
 
+  
 incertain, indécis (1)
 bizonytalan
 
+  @Comprehension
 sûr, certain
 biztos
 
 sûrement
 biztosan
 
+  @Habillement
 corsage
 bluz
 
+  
 heureux
 boldog
   -ot, -ok, -abb
 
+  @Alimentation
 vin
 bor
   -t, -a, -ok
 
+  @Anatomie @Alimentation
 côte (anatomie et cuisine)
 borda
 
+  @Alimentation
 veau
 borjú
 
+  @Alimentation
 poivron
 bors
 
+  @Alimentation
 pois (légumineuse)
 borsó
 
+  @Redactionnel
 enveloppe
 boríték
 
+  @Hygiene
 se raser
 borotválkozik
 
+  @Hygiene
 rasoir (n)
 borotváló
 
+  @Socialisation
 compliment
 bók
   -ot, -ja, -ok
 
+  
 sage
 bölcs
 
@@ -353,18 +439,23 @@ bölcészkar
 valise
 bőrönd
 
+  @Alimentation
 pomme de terre
 burgonya
 
+  @Transport @Economie
 amende
 büntetés
 
+  @Accessoire
 crayon
 ceruza
 
+  @Faune
 chaton
 cica
 
+  @Habillement
 chaussure
 cipő
 
@@ -372,10 +463,12 @@ adresse, titre
 cím
   -et, -e, -ek
 
+  @Expression
 introduction d'une interrogation en exprimant la surprise
 Csak nem … ?
   Csak nem van beteg ?
-  
+
+  @Economie
 chèque
 csekk
   -et, -je -ek
@@ -393,6 +486,7 @@ csendes
 sonner
 csenget
 
+  @Alimentation
 betterave rouge
 cékla
 
@@ -400,6 +494,7 @@ cékla
 csillag
   -ot, -a, -ok
 
+  @Alimentation
 faire, cuisiner
 csinál
   -t, -jon, -na
@@ -413,6 +508,7 @@ csíp
 piquant (adj)
 csípős
 
+  @Alimentation
 poulet
 csirke
   csirkét, csirkéje, csirkék
@@ -424,6 +520,7 @@ merveilleux
 csodálatos
   -at, -ak, -abb
 
+  @Alimentation
 chocolat
 csokoládé
 
@@ -432,6 +529,7 @@ colis, paquet
 csomag
   egy csomag cigaretta
 
+  @Alimentation
 sorte de lasagne
 csusza
 
@@ -441,12 +539,15 @@ cszengő
 sonner 
 czendet
 
+  @Exclamation
 "Ah mais non"
 dehogy
 
+  @Alimentation
 dessert
 desszert
 
+  @Position
 sud, midi
   -
   à midi
@@ -454,13 +555,15 @@ dél
   -t, -jen, -ne
   délben
 
+  @Moment
 matin, matinée
 délelőtt
   -öt, -je, -ök
-  
+
+  @Faune
 cochon (appellation prosaïque)
 disznó
-  
+
 mode (phénomène mimétique)
 divat
 
@@ -474,24 +577,30 @@ fumer (du tabac)
 dohányzik
   dohányozni
 
+  @Metier
 travailler dans qqchose
 dolgozik vmin
 
 chose
 dolog
 
+  @Alimentation
 viande hachée
 dorálthús
 
+  @Socialisation
 fâché (1)
 dühös
 
+  @Repas
 déjeuner (n)
 ebéd
 
+  @Alimentation
 vinaigre
 ecet
 
+  @Medecine
 santé
 egészség
 
@@ -500,6 +609,7 @@ entièrement, assez, entier
 egész
   egész jól
 
+  @Politesse
 À {possessif} santé !
   À ta santé !
   À votre santé !
@@ -507,6 +617,7 @@ Egészsége{}re!
   Egészségedre!
   Egészségére!
 
+  @Medecine
 bon pour la santé, en bonne santé
 egészéges
 
@@ -515,6 +626,7 @@ ensemble (association)
 vmivel együtt
   a pénzemmel együtt az útlevelem is
 
+  @Negation
 pas du tout
   Je ne bois pas du tout de vin blanc.
 egyáltalán … nem
@@ -525,6 +637,7 @@ directement, tout droit
 egyenesen
   A nő egyenesen Paul szemébe nézett.
 
+  @Scolarite
 étudiant à l'université
 egyetemi hallgátó
 
@@ -533,30 +646,37 @@ L'un (quelconque), l'un (des deux)
 egyik
   Az egyik nő szendvicset evett, a másik vizet ivott.
 
+  @Socialisation
 l'un l'autre, réciproquement
   Ils s'aiment.
 egymás
   Szeretik egymást.
 
+  @Socialisation
 sortir ensemble (relation sentimentale)
   Ils sortent ensemble.
 együtt járni
   Együtt járnak.
 
+  @Exclamation
 "Zut !" (avec réprimande)
 Ejnye!
 
+  @Metier
 vendeur
 eladó
 
+  @Meteorologie @Deplacement
 s'arrêter (impersonnel)
   La pluie d'arrête.
 eláll
   Eláll az eső.
 
+  @Socialisation
 dire au revoir
 elbúcsúzik
 
+  
 élégant
 elegáns
   -ak, -ak, -abb
@@ -566,16 +686,20 @@ plutôt
 eléggé
   Eléggé szeretem az operát.
 
+  
 vivant, actif
 eleven
 
+  @Socialisation
 manger quelque chose devant quelqu'un
 eleszik vmit vki elől
   elenni
 
+  @Postposition
 vers devant
 elé
 
+  
 satisfait, content
   Ça suffit.
   J'en ai assez de qqchose.
@@ -586,69 +710,86 @@ elégedett
 oublier
 elfelejt
 
+  @Socialisation @Deplacement
 inviter quelqu'un pour qu'il vienne (interpellation)
   Je propose à mon ami de venir au cinéma.
 elhív
   elhívom barátomat moziba
 
+  @Redactionnel
 mal écrire, faire une faute
   Je fais toujours une faute à ce mot.
   (vient toujours avec un COD) 
 elír
   Mindig elírja ezt a szót.
 
+  @Deplacement
 venir
 eljön
   -jött, -jöjjön, -jönne
 
+  @Deplacement
 arriver quelque part
 eljut vhol
 
+  @Deplacement
 envoyer (avec acomplissement)
 elküld
 
+  @Postposition
 contre (adversatif, postp)
 ellen
 
+  @Transport @Metier
 contrôleur
 ellenőr
 
+  @Transport
 contrôler
 ellenőriz
 
+  @Transport
 contrôle, vérification
 ellenőrzés
 
+  @Grammaire
 antonyme (1)
 ellentét
 
+   @Socialisation
 antipathique
 ellenszenves
 
 voler, dérober
 ellop
 
+  @Deplacement
 partir
 elmegy
 
+  @Politesse
 excuse
   Je demande pardon !
 elnézés
   Elnézést kérek!
 
+  @Politesse
 indulgence, excuse
 elnézés
   -t, -e
 
+  @Redactionnel
 lire, action achevée
 elolvas
 
+  @Deplacement
 vers devant (préverbe)
 elő
 
 spectacle
 előadas
 
+  @Alimentation
 entrée (lors d'un repas)
 előetel
 
@@ -656,25 +797,32 @@ préparer (apprêter pour utilisation ultérieure)
 előkészít
   előkészítani
 
+  @Deplacement
 faire un pas vers devant
 előlép
 
+  @Temporalite
 en avance
 előre
 
+  @Architecture
 entrée
 előszoba
   -szobatt, -szobája, -szobák
 
+  @Temporalite
 d'abord
 először
 
+  @Postposition
 avant, devant
 előtt
 
+  @Transport
 doubler (en voiture)
 előz
 
+  @Socialisation
 perdre (un objet, un enjeu…)
 elveszít
 
@@ -689,18 +837,22 @@ disparaître
 eltűnik
   -tűnt, -tűnjon, -tűnne
 
+  @Temporalite
 première fois
 először
 
 premièrement, principalement
 elsősorban
 
+  @Deplacement
 s'enfuir
 elszalad
 
+  @Famille
 divorcé
 elvált
 
+  @Architecture
 étage
 emelet
   -et, -e, -ek
@@ -712,20 +864,25 @@ se souvenir de qqchose
 emlékszik vmire
   emlékezni
 
+  @Alimentation
 aliment
   voir :
 ennivaló
   etel
 
+  @Architecture
 balcon
 erkély
 
+  
 fort
 erős
 
+  @Alimentation
 soupe à base de bouillon de viande hâchée
 erősleves
 
+  @Expression
 "À ce propos…"
 Erről jut eszembe…
 
@@ -734,41 +891,52 @@ Erről jut eszembe…
 eset
   mindenesetre
 
+  @Sport
 ramer, canoter
 evez
 
+  @Moment
 soir
 este
   estét, estéje, esték
 
+  @Politesse
 "Félicitations !"
 Ez igen !
 
+  @Moment @Repas
 manger quelque chose au petit déjeuner/déjeuner/dîner
 reggelire/ebédre/vacsorára eszik vmit
 
+  @Repas
 déjeuner (v)
 ébedel
   ébedelni
 
+  
 réveillé, vigilant
 éber
 
+  @CycleBiologique
 se réveiller
 ébred
 
+  @CycleBiologique
 réveiller qqun/qqchose
 ébreszt vkit/vmit
 
+  @Moment
 la nuit
   dans la nuit
 éj
   éjjel
   -t, -, -ek
 
+  @Moment
 nuit
 éjszaka
 
+  @CycleBiologique
 vivre
 él
   -t, -jen, -ne ; élni
@@ -777,35 +945,43 @@ chant
 ének
   -et, -e, -ek
 
+  @Architecture
 bâtiment
 épület
   -et, -e, -ek
 
+  @Perception
 intéressé
 érdeklődő
 
+  @Perception @Socialisation
 intéresser
   L'exposition les intéresse.
 érdekel
   A kiállitás önt érdekli.
 
+  @Socialisation 
 intéressant
 érdekes
   -et, -ek, -ebb
 
+  @Deplacement
 arriver (action en cours)
 érkezik
   -kezett, -kezzen, -kezne
 
+  @Metier
 être expert en quelque chose
 ért vmihez
   érteni
 
+  @Transport
 valable
   Mon billet n'est plus valable.
 érvényes
   Berletem nem érvényes.
 
+  @Socialisation
 être d'accord avec quelqu'un à propos de quelque chose
   Je suis d'accord avec toi là-dessus.
   C'est avec toi que je suis d'accord.
@@ -813,13 +989,16 @@ egyet érteni vkivel vmiben
   Egyet értek veled ebben.
   Én veled értek egyet.
 
+  @Architecture
 salle à manger
 étkező
 
+  @Repas
 carte (au restaurant)
 étlap
   -ot, -ja, -ok
 
+  @Repas @Alimentation
 aliment, plat, repas
   -
   notre repas du jour
@@ -829,16 +1008,20 @@ aliment, plat, repas
   mai ételeink
   napi ételeink
 
+  @CycleBiologique @Repas
 appétit
 étvágy
 
+  @Alimentation
 glace
 fagylalt
 
+  @Architecture
 mur
 fal
   -at, -a, -ak
 
+  @Repas
 bouchée (quantité de nourriture)
 falat
 
@@ -849,21 +1032,26 @@ falu
 sculpté
 faragott
 
+  @Medecine
 antidouleur
 fájdalomcsillapító
 
+  @CycleBiologique
 avoir froid
 fázik
 
+  
 blanc
 fehér
   -et, -ek, -ebb
 
+  @Deplacement
 envoyer par la poste
   Il envoie la lettre.
 felad
   Felad a levelet.
 
+  @Deplacement
 se lever
 feláll
 
@@ -875,35 +1063,44 @@ comprendre
 felfogás
   lassú felfogású
 
+  @Socialisation
 appeler quelqu'un au téléphone, ou pour qu'il monte
 felhív vkit
 
+  @Deplacement
 monter quelque chose
 felhoz
   -ott, -zon, -na
 
+  @Redactionnel
 écrire dans (2)
 felírni
 
+  @Deplacement
 saisir, attrapper
 felkap
 
+  @Deplacement
 se lever
 felkel
   -t, -jen, -ne
 
+  @Deplacement
 faire un pas vers le haut, monter sur scène
 fellép
   fellépni
 
+  @Deplacement
 monter
 felmegy
   -ment, -menjen, -menne
 
+  @Perception
 regarder vers le haut, admirer
 felnéz vmire
   Felnézünk a felhőre.
 
+  @CycleBiologique
 grandir, devenir adulte
 felnő
   felnőni
@@ -911,37 +1108,43 @@ felnő
 adulte
 felnőtt
 
+  @Position
 en haut
 fent
 
+  @Socialisation
 répondre quelque chose
 felel vmit
 
+  @Redactionnel
 lire à haute voix
 felolvas
 
+  @Habillement
 s'habiller
 felöltözik
   -öltözött, -öltözzön, -öltözne
 
+  @Transport @Deplacement
 monter (dans un moyen de locomotion)
 felszáll
   -t, -jon, -na
 
+  @Alimentation
 charcuterie
-  voir
 felvágott
-  vágni
 
 peindre
   coloré, teint
 festeni
   festett
 
+  @Perception
 avoir peur
 fél (igek)
   -t, -jen, -ne
 
+  @Mesure
 demi
   un et demi
 fél
@@ -957,20 +1160,21 @@ fénykép
 photographier
 fényképez
 
+  
 masculin
 férfias
 
+  @Famille
 mariée (pour une femme)
   femme mariée
 férjes 
   férjes asszony
 
-jeune
-fiatal
-
+  @Perception
 faire attention à
 figyel vmire
 
+   @Alimentation
 délicieux, fin
 finom
   -at, -ak, -abb
@@ -986,22 +1190,27 @@ philosopher
 filozofál
   filozofálni
 
+  @Famille
 garçon, fils
 fiú
   -t, fia, -k
 
+  @Metier
 coiffeur
 fodrász
 
+  @Socialisation
 réception
 fogadás
   -t, -a, -ok
 
+  @Position @Socialisation
 réserver (une table, une chambre…), occuper (de l'espace)
   "Veuillez prendre place."
 foglalni
   Tessék helyet foglalni.
-  
+
+  @Metier
 profession, occupation
 foglalkozás
   
@@ -1010,21 +1219,25 @@ fleuve
 folyó
   -t, -ja, -k
 
+  @Transport
 circulation
 forgalom
 
 forme (contour) (2)
 forma
 
+  
 chaud, en fusion
   chocolat chaud
 forró
   forró csokoládé
 
+  @Mobilier
 fauteuil
 fotel
   -t, -e, -ek
 
+  @Postposition
 vers au-dessus
 fölé
 
@@ -1034,45 +1247,56 @@ fölösleges
 tête (mot ancien)
 fő
 
+  @Enseignement
 école supérieure
 főiskola
-
+  
+  @Transport
 métro (petit modèle, spécifique à Budapest)
 földalatti
 
 principalement
 főleg
-
+ 
 acteur principal (dans un spectacle)
 főszereplő
 
+  @Geographie
 capitale
 fővaros
 
+  @Alimentation
 cuisiner
 főz
 
+  @Alimentation
 légumes cuisinés
 főzelek
 
+  @Alimentation
 salade russe
 franciasaláta
 
+  
 frais, récent, en forme
 friss
 
 coiffure
 frizura
 
+  @Sport
 footballeur
 futballista
 
+  
 bizarre
 furcsa
 
+  @Deplacement
 vite (2)
 fúrge
 
+  @Sport
 se baigner
   -
   Puis-je me baigner ?
@@ -1082,6 +1306,7 @@ fürdik
   Megfürödhetek?
   Kell fürdeni.
 
+  @Architecture
 salle de bains
 fürdőszoba
   -szobát, -szobája, -szobák
@@ -1089,9 +1314,11 @@ fürdőszoba
 indépendant
 független
 
+  @Enseignement
 cahier
 füzet
 
+  @Alimentation
 pâtes fraîches
 galuska
 
@@ -1101,6 +1328,7 @@ gazdaság
 agriculture
 gazdálkodó
 
+  @Alimentation
 chataîgne (fruit)
 gesztenye
 
@@ -1112,6 +1340,7 @@ taper à la machine
 gépel
   gépelni
 
+  @Substance
 platre
 gipsz
 
@@ -1124,6 +1353,7 @@ golyóstoll
 bouton
 gomb
 
+  @Alimentation
 champignon
 gomba
 
@@ -1133,6 +1363,7 @@ gombóc
 rouler (comme une bille)
 gurul
 
+  @Alimentation
 goulache
 gulyás
   -t
@@ -1143,6 +1374,7 @@ gyakori
 souvent
 gyakran
 
+  @Deplacement @Transport
 à pied
 gyalog
 
@@ -1150,6 +1382,7 @@ usine
 gyár
   -at, -a, -ak
 
+  
 faible, chétif
 gyenge
 
@@ -1157,22 +1390,28 @@ enfant
 gyerek
   -et, -ek, -ek
 
+  @Enseignement
 lycée
 gymnazium
 
+  @Anatomie
 estomac
 gyomor
 
+   @Deplacement @Transport
 rapide
 gyors
   -at, -ak, -abb
 
+  @Medecine
 médicament
 gyógyszer
 
+  @Medecine
 pharmacie
 gyógyszertár
 
+  @Medecine
 se guérir (1)
 gyógyul
 
@@ -1184,25 +1423,31 @@ gyufa
 laisser
 hagy
 
+  @Moment
 aube
   à l’aube
 hajnal
   hajnalban
 
+  @Travail
 avancer sur qqchose
   J'avance bien dans mon travail.
 halad vmivel
   Jól haladok a munkámmal.
 
+  @Metier
 pêcheur
 halász
 
+  @Alimentation
 soupe du pêcheur
 halászlé
 
+  
 silencieux
 halk
 
+  @Musique
 entendre
   -
   Qu'as-tu vu à l'opéra?
@@ -1210,13 +1455,16 @@ hall
   hallott; hallani
   Mit hallott az Operában?
 
+  
 faux
 hamis
   -at, -ak, -abb
 
+  @Musique
 concert (musique classique seulement)
 hangverseny
 
+  @Medecine
 diarrhée
 hasmenés
 
@@ -1224,35 +1472,45 @@ utiliser
 használ
   használni
 
+  
 énorme, immense
 hatalmas
   -at, -ak, -abb
 
+  @Temporalite
 mensuel
 havi
 
+  @Temporalite
 par mois
 havonta
 
+  @Deplacement
 arriver à la maison
 hazaér
 
+  @Deplacement @Socialisation
 raccompagner à la maison
 hazakísér
 
+  @Mesure
 combien ?
 hány ?
 
+  @Architecture
 chambre à coucher
 hálószoba
   -szobát, -szobája, szobák
 
+  @Famille
 maîtresse de maison
 házasszony
 
+  @Geographie
 montagne
 hegy
 
+  @Position
 place, endroit
   -
   pas au même endroit
@@ -1265,37 +1523,45 @@ situation
 helyzet
   ura a helyzetnek
 
+  @Moment
 semaine
 hét
   hetet, hete, hetek
   
+  @Moment
 jour de semaine
 hétköznap
 
+  @Moment
 quotidien (n)
 hétköznapi
 
+  @Moment
 fin de semaine
 hétvége  
 
 en vain
 hiába
 
+  @Temporalite
 tout d'un coup
 hirtelen
 
 bureau (lieu clos pour travailler)
 hivatal
 
+  @Architecture
 pont
 híd
   hídat, -ja, hídak
 
+  @Socialisation
 nouvelle (n)
   connu, fameux, célèbre
 hír
   híres
 
+  @Socialisation
 s'appeler (porter pour nom)
   Je m'appelle Kata.
   utilisation impersonnelle
@@ -1311,26 +1577,33 @@ hogy
 "Comment ça te plaît ?" (question ouverte)
 "Hogy tetszik?"
 
+  @Moment
 demain
 holnap
  -ot, -ok
 
+    
 long
 hosszú
 
+  @Deplacement 
 où ? (vers où)
 hova 
 
+  @Deplacement
 apporter
 hoz
   -ott, -zon, -na
 
+  @Moment
 mois
 hónap
 
+  @Medecine
 fièvre (1)
 hőemelkedés
 
+  @Famille @Socialisation
 dame
 hőlgy
  -et, -e, -ek
@@ -1349,33 +1622,41 @@ sens de l'humour
 humor érszég
   Nincs humor érszége.
 
+  @Famille
 jeune sœur
   (toujours avec un possessif)
 húg
 
+  @Alimentation
 viandes (dans le cadre d'un menu)
 húsételek
 
+  @Deplacement
 vers ici
 ide
 
+  @Moment
 cette année
 az idén
 
+  @Anatomie
 nerf
 ideg
   idegek
 
+  @Temporalite @Meteorologie
 temps
 idő
   -t, időm időt ideje időnk időtök ideük, -k
 
+  @Temporalite @Moment
 de temps en temps
 időnként
 
 vrai
 igaz
 
+  @Socialisation
 avoir raison
   Tu as raison.
 igaz{} van
@@ -1384,6 +1665,7 @@ igaz{} van
 vraiment
 igazán  
 
+  @Metier
 directeur
 igazgató
   -t, -ja, -k
@@ -1391,12 +1673,15 @@ igazgató
 oui (poli)
 igenis
 
+  @Socialisation
 promettre quelque chose à quelqu'un
 igér vmit vkinek
 
+  @Expression
 "Et voilà" ou "C'est comme ça !" (pour signifier une action achevée)
 Így ni!
 
+  @Expression
 il convient de …
   Il convient d'être élégant pour aller à l'opéra.
 illik vmit csinálni
@@ -1405,62 +1690,78 @@ illik vmit csinálni
 adorer
 imád
 
+  @Deplacement
 partir, se mettre en route
 indul
   -t, -jon, na
 
+  @Medecine
 grippe
 influenza
 
+  @Habillement
 chemise
 ing
   inget
 
+  @Deplacement
 d'ici
 innen
 
+  @Alimentation
 boisson
   voir :
 innivaló
   ital
 
+  @Ameublement
 bureau
 iróasztal
   -t, -a, -ok
 
+  @Enseignement @Socialisation
 connaître
 ismer
   -t, -jen, -ne
 
+  @Religion
 Dieu
 Isten
 
+  @Alimentation
 boisson
 ital
   -t, -a, -ok
 
+  @Anatomie
 muscle
 izom
 
+  @Anatomie
 tendon
 izület
 
+  @Alimentation
 plaire (nourriture seulement)
   Cette soupe me plaît.
 ízlik
   Nekem ízlik ez a leves.
 
+  @Redactionnel
 écrire (action en cours)
   Je suis en train d'écrire un livre.
 ír
   Könyvet írok.
 
+  @Expression
 [exclamation de surprise]
 ja
 
+  @Expression
 "Comme c'est beau !"
 Jaj de szép !
 
+  @Deplacement
 marcher, aller
 jár
   -t, -jon, -na
@@ -1469,11 +1770,13 @@ jouet, jeu
 játék
   -ot, -a, -ok
 
+  @Metorologie
 verglacé
   route verglacée
 jeges
   jeges út
 
+  @Transport
 ticket, billet
 jegy
 
@@ -1483,6 +1786,7 @@ jelent vmit
 glaçon
 jég
 
+  @Politesse @Medecine
 "Bon rétablissement !"
 Jobbulást!
 
@@ -1492,13 +1796,16 @@ jog
 faculté de droit
 jogi kar
 
+  
 beau, charmant (que pour les hommes)
 jóképű
 
+  @Temporalite
 prochain, futur, à venir
 jövő
   -t, -je
 
+  @Deplacement
 arriver
   Ça me vient à l'esprit.
   À ce propos…
@@ -1508,22 +1815,26 @@ jut
   Erről jut eszembe…
   Hogy jutok el vmire?
 
-
+  @Habillement
 manteau
 kabát
 
+  @Habillement
 chapeau
 kaláp
 
 Noël
 karácsony
 
+   @Anatomie
 mince
 karcsú
 
+  @Architecture
 cathédrale (2)
 katedrális
 
+  @Alimentation
 caviar
 kaviár
   -t, -ja, -ok
@@ -1531,6 +1842,7 @@ kaviár
 exposition
 kállitás
 
+  @Mobilier
 poële (pour le chauffage)
 kályha
   kályhát, kalyhája, kályhák
@@ -1539,6 +1851,7 @@ café (établissement) (1)
 kávéház
   -at, -a, -ak
 
+  @Socialisation
 dommage, tort, préjudice
 kár
   -t, -a, -ok
@@ -1548,6 +1861,7 @@ humeur, envie
 kedv
   Nincs kedve.
 
+  @Socialisation
 avoir envie de qqchose
   Il a envie de quelque chose.
   Tu as envie de quoi ?
@@ -1555,6 +1869,7 @@ kedve van vmihez
   Van kedve vmihez.
   Mihez van kedved?
 
+  @Perception
 préféré, favori
   Mon livre préféré.
   C'est mon préféré.
@@ -1562,30 +1877,38 @@ kedvenc vmije
   A kedvenc könyvem.
   Ez a kedvencem.
 
+  @Economie @Socialisation
 cher
 kedves
   -et, -ek, -ebb
 
+  @Socialisation
 devoir
   Je dois acheter une nouvelle robe.
 kell
   Kell vennem  egy új ruhát.
 
+  @Perception 
 agréable
 kellemes
 
+  @Perception 
 désagréable
 kellemetlen
 
+  
 rond
 kerek
 
+  @Religion
 croix
 kerest
 
+  @Religion
 chrétien
 kerestény
 
+  @Transport
 vélo
 kerékpar
 
@@ -1593,30 +1916,38 @@ chercher
 keres
   keresni
 
+  @Architecture
 jardin
 kert
 
+  @Metier
 jardiner
 kertészkedik
 
+  @Economie
 coûter
   Les tickets coûte 1,80 €.
 kerül vmibe
   A jegyek 1 euró 80-ba kerülnek.
 
+  
 amer
 keserű
 
+  @Moment @Temporalite
 tard
 késő
 
+  @Mesure
 peu
 kevés
 
+  @Socialisation
 serrer la main
 kezet fog
   kezet : invariable
 
+  @Temporalite
 commencer
 kezdödik
   kezdödött, kezdödjön, kezdödne
@@ -1626,13 +1957,16 @@ traiter
 kezel
   Kezel a beteget.
 
+  
 bleu
 kék
   -et, -ek, -ebb
 
+  
 confortable
 kényelmes
 
+  
 inconfortable
 kényemetlen
 
@@ -1643,10 +1977,12 @@ kép
 carte postale
 képeslap
 
+  @Socialisation
 demander quelque chose à quelqu'un, prier quelqu'un de
 kér vkitől vmit
   -t, -jen, -ne ; kérni
 
+  @Socialisation
 demander quelque chose (poser une question)
 kérdez vmit
   -ett, -zen, -ne; kérdezni
@@ -1660,17 +1996,21 @@ se préparer
 készül
   Elkészülök.
 
+  @Metier
 se préparer à devenir [profession]
   Il sera médecin.
 készül vminek
   Orvosnak készül.
 
+  @Moment
 tard
 késő
 
+  @Temporalite
 plus tard
 később
 
+  @Temporalite
 en retard
 későn
 
@@ -1680,6 +2020,7 @@ kész
 appareil
 készülék
 
+  @Metier
 éditeur (de livres)
 kiadó
 
@@ -1688,11 +2029,13 @@ s'éteindre
 kialszik
   Kialszik a fény.
 
+  @CycleBiologique
 dormir suffisamment
   Je n'ai pas dormi suffisamment.
 kialudni magát
   Nem aludtam ki magamat.
 
+  @Deplacement
 sortir (et rester à l'arrêt ensuite)
   Il sort dans la rue. 
 kiáll
@@ -1702,6 +2045,7 @@ crier
 kiált
   -ott, -son, -ana
 
+  
 petit (attribut ou prédicat)
   Mon frère est de petite taille.
 kicsi
@@ -1712,29 +2056,36 @@ devenir clair, se révéler
 kiderül
   kiderül a titok
 
+  @Repas
 manger complètement
   J'ai mangé toute (tout ce qu'il y avait dans) l'assiette.
 kieszik
   Kiettem a tányért.
 
+  @Alimentation
 croissant (en pâte à pain)
 kifli
-  
+
+   @Socialisation @Deplacement
 appeler quelqu'un pour qu'il sorte
 kihív
 
+  @Deplacement
 sortir quelque chose
 kihoz
   -ott, -zon, -na
 
+  @Redactionnel
 recopier, écrire à un endroit visible
 kiír
   Kiírom a szovakat a könyvből
 
+  @Deplacement
 sortie (emplacement)
 kijárat
   -ot, -a, -ok
 
+  @Deplacement
 sortir (référence au dehors)
 kijön
 
@@ -1748,6 +2099,7 @@ kinez
 ouvrir
 kinyitni
 
+  @Redactionnel
 lire complètement (ex : un livre)
 kiolvas
 
@@ -1760,51 +2112,64 @@ király palata
 faire une excursion
 kirándul
 
+  
 petit (épithète)
 kis
 
+  @Famille
 femme enceinte
 kismáma
 
 déblayer
 kitakarít
 
+  
 excellent
 kitünő
   -t, -ek, -ebb
 
-aller s'asseoir dehors 
+  @Deplacement
+aller s'asseoir dehors
 kiül
   Kiül a kertbe.
 
+  @Deplacement
 sortir quelque chose
 kivisz
   kivitt, kivigyen, kivinne
 
+   @Perception
 curieux (de savoir)
 kíváncsi
 
+  @Alimentation
 saucisson
 kolbász
 
+  @Enseignement
 résidence universitaire
 kollégium
 
+  
 sérieux
 komoly
 
 musique classique
 komoly zene
 
+  @Moment @Temporalite
 tôt
 korán
 
+  @Medecine
 maladie (2)
 kór
 
+  @Medecine
 tousser
 köhög
 
+  @Deplacement
 déménager
 költözik
   költözött, költözzön, költözne
@@ -1822,16 +2187,20 @@ musique sauf classique
 könnyűzene
 
 cercle
-  boulevard circulaire
 kör
-  körül
+
+  @Urbanisme
+boulevard circulaire
+körül
 
 garniture
 körat
 
+  @Position
 environnement, alentours
 környék
 
+  @Position @Temporalite
 aux environs de
   autour de 4 heures
   abbréviation :
@@ -1840,34 +2209,42 @@ körülbelül
   körülbelül négy órakor
   kb.
 
+  @Politesse
 remercier pour (dialogue)
   Merci pour le déjeuner !
 kösszön vmit
   Kösszönöm az ebédet!
 
+  @Temporalite @Deplacement
 être le suivant
 következik
 
 conséquence
 következmény
 
+  @Temporalite @Deplacement
 prochain, suivant
 következő
 
+  @Anatomie 
 gros (pour les êtres vivants)
 kövér
 
+  @Position
 près de
 közel vmihez
 
+  @Transport
 code de la route
   acronyme
 közlehedése szabály
   KRETSZ
 
+  @Temporalite
 entre temps, pendant ce temps-là
 közben
 
+  @Position
 environs
   près de toi
   aux environs de l'hôtel
@@ -1875,24 +2252,30 @@ közel
   közeledben
   a szálloda közelében
 
+  @Deplacement
 approcher
 közeledik
   -ledett, -ledjen, -ledne
 
+  @Position
 au milieu de
   Kati est assise au milieu de la pièce.
 közepén (postp)
   Kati a terem közepén ül.
 
+  @Deplacement @Position
 entre ("vers entre")
 közé
 
+  @Enseignement
 lycée
 középiskola
 
+  @Metier
 économiste
 közgazdász
 
+  @Transport
 circulation
   bien desservi
 közlekedes
@@ -1904,19 +2287,25 @@ közönség
 indifférent
 közönyös
 
+  @Mesure
 centre
-  centre-ville
 központ
-  város központja
-  
+
+  @Urbanisme
+centre-ville
+város központja
+
+  @Alimentation
 dessert à base de crème compacte
 krémes
-  
+
+  @Deplacement
 envoyer
   voir :
 küld
   átküld, elküld, visszaküld
 
+  @Nationalite @Socialisation
 étranger
 külföldi
   -t, -ek
@@ -1924,15 +2313,18 @@ külföldi
 particulièrement
 különösen
 
+  @Sport
 ballon
 labda
 
+  @Sport
 jouer au ballon
 labdázik
 
 incertain, indécis (2)
 labilis
 
+  @Architecture
 appartement
 lakás
 
@@ -1946,9 +2338,11 @@ lako
 journal
 lap
 
+  @Metier
 éditeur (de journal)
 lapkiadó
 
+  
 lent
 lassú
 
@@ -1958,20 +2352,24 @@ lánc
 pair de jumelles
 látcsö
 
+  
 sembler (1)
   il semble
 látsani
   látsik
   (faux verbe en -ik)
 
+  
 se voir sur quelqu'un
   Ça se voit sur toi que tu es malade
 látszik vkin
   Látszik rajtad, hogy beteg vagy.
 
+  @Medecine
 fièvre (2)
 láz
 
+  @Medecine
 thermomètre
 lázmérő
 
@@ -1986,15 +2384,18 @@ lefekszik
 au moins
 legalább
 
+  @Deplacement
 dévaler
 legurul
 
 "c'est possible que" (impersonnel)
 lehet
 
+  @Deplacement
 appeler quelqu'un pour qu'il descende
 lehív
 
+  @Redactionnel
 écrire (action achevée)
 leír
 
@@ -2004,9 +2405,11 @@ leiszik maga
 descendre (référence en bas)
 lejön
 
+  @Deplacement
 faire un pas vers le bas, "se casser" (fam)
 lelép
 
+  @Deplacement
 descendre
 lemegy
   -ment, -menjen, -menne
@@ -2014,20 +2417,25 @@ lemegy
 disque
 lemez
 
+  @Nationalite
 polonais
 lengyel
 
+  @Redactionnel
 lire (une inscription)
 leolvas
 
+  @Deplacement @Transport
 descendre (d'un moyen de locomotion)
 leszáll
   -t, -jon, -na
 
+  @Deplacement
 poser
 letesz
   -tett, -teggen, -tenne
 
+  @Deplacement
 s'asseoir
 leül
   -t, -jon, -ne
@@ -2036,6 +2444,7 @@ se deshabiller
 levetkőzik
   -vetkőzőtt, -vetkőzzőn, -vetkőzne
 
+  @Alimentation
 jus
   -
   jus d'orange
@@ -2045,25 +2454,30 @@ lé
   narancslé
   paradicsomlé
 
+  @Accessoire
 bâton
 léc
 
+  @Architecture
 escalier
   monter par l'escalier
 lépcső
-  a ~n felmegy
+  a lépcsőn felmegy
 
 téléphérique
 libegő
 
+  @Architecture
 ascenseur
 lift
   -et, -e, -ek
 
+  @Alimentation
 farine
 líszt
   lísztet
 
+  @Mesure
 litre
 liter
   -t
@@ -2071,6 +2485,7 @@ liter
 tirer (avec une arme)
 lő
 
+  
 paresseux
 lusta
 
@@ -2081,6 +2496,7 @@ percer
 lyukaszt
   lyukasztani
 
+  @Moment
 aujourd'hui
   d'aujourd'hui
 ma
@@ -2096,9 +2512,11 @@ magáműgy
 magnétoscope
 magnó
 
+  @Temporalite
 après, ensuite
 majd
 
+  @Mesure
 presque
   "J'ai failli m'endormir."
 majdnem
@@ -2109,34 +2527,42 @@ cochon (appellation affectueuse)
 malac
   Malacam van.
 
+  @Repas
 rester sur quelque chose (lors d'un repas)
 vmi mellett marad
 
+  @Alimentation
 bœuf
 marha
 
+  @Alimentation
 foie
 máj
 
+  @Alimentation
 pâtes fraîches avec du foie
 májgaluska
 
+  @Temporalite
 déjà
 már
 
 marque (de fabrique)
 márka
 
+  @Negation
 ne … plus
   Depuis quelques années je n'aime plus mon mari.
 már nem …
   Néhány éve már nem szeretem a férjemet.
 
+  @Negation
 plus que
   Nous n'avons plus que 10 mn à attendre.
 már csak
   Már csak tiz percet kell várnunk.
 
+  @Temporalite
 tout de suite
   voir :
 máris
@@ -2146,35 +2572,45 @@ autre, l'autre
 másik
   -at
 
+  @Faune
 ours
 medve
 
+  @Socialisation
 convenir
 megfelel
 
+  @Sport
 se baigner
 megfürdik
 
+  @Deplacement @Transport
 s'arrêter
 megáll
   -t, -jon, -na
 
+  @Transport
 l'arrêt (exemple : de bus)
 megálló
 
+   @Socialisation
 en qui on peut avoir confiance
 megbízható
 
+  @Transport
 punir, faire payer une amende
 megbüntet
 
+  @Socialisation
 embrasser
 megcsókol
   -t, -jon, -na
 
+  @Medecine
 rhume
 megfázás
 
+  @Socialisation @Perception
 convenir (plaire)
   Est-ce que cette table vous convient ?
 megfelel
@@ -2183,26 +2619,33 @@ megfelel
 se retourer, tourner en restant en place ou en se déplaçant
 megfordul
 
+  @Alimentation
 griotte
 meggy
 
+  @Medecine
 se guérir (2)
 meggyógyul
 
+  @Socialisation
 invitation
 meghívás
 
+  @Socialisation
 inviter (invitation formelle)
   J'invite mes amis à mon anniversaire.
 meghív
   Meghívtom a barátoimat a születésnapomra.
 
+  @Mesure
 en plus
 méghozza
 
+  @Perception
 goûter (v)
 megkóstol
 
+  @Politesse
 remercier pour (hors dialogue)
   Kati remercie pour le déjeûner.
 megkösszön vmit
@@ -2211,38 +2654,48 @@ megkösszön vmit
 visiter
 meglátogatni
 
+  
 surpris (2)
 meglepett
 
+  
 surprise (n)
 meglepetés
 
+  @Perception
 regarder (action achevée)
 megnéz vmit
 
 résoudre
 megoldani
 
+  
 changer (devenir autre)
   Tu as changé.
 megváltozik
   Megváltoztál.
 
+  @Economie
 acheter (action terminer)
 megvesz
 
+  @Postposition @Position
 à côté (sans mouvement)
-mellett  
+mellett
 
+  @Postposition @Position
 vers à côté
 mellé
 
+  @Temporalite @Expression
 "Pendant combien de temps ?"
 Mennyi ideig?
 
+  @Famille
 belle-fille
 meny
 
+  @Famille
 fiancée (féminin seulement)
 menyasszony
 
@@ -2252,12 +2705,15 @@ mert
 conte
 mese
 
+  @Position
 loin de
 messze vmitől
 
+  @Transport
 station de métro
 metróállomás
 
+  @Negation @Temporalite
 pas encore
   Je m'amuse bien, je ne veux pas encore rentrer.
 még nem
@@ -2266,6 +2722,7 @@ még nem
 fâché (2)
 mérges
 
+  @Mesure
 mètre
 méter
   -t, -e, -ek
@@ -2279,18 +2736,23 @@ milyen
 minaret
 minaret
 
+  @Mesure
 tout
 minden
 
+  @Mesure
 tout le monde
 mindenki
 
+  @Mesure @Temporalite
 toujours
 mindig
 
+  @Mesure @Temporalite
 tout de suite
 mindjárt
 
+  @Metier
 ministre
 miniszter
   -t, -e, -ek
@@ -2321,12 +2783,15 @@ most
 jusqu'à maintenant
 mostanra
 
+  @Transport @Sport
 moto
 motorkerékpar
 
+  @Position @Postposition
 derrière ("vers derrière")
 möge
 
+  @Position @Postposition
 derrière (sans mouvement)
 mögött
 
@@ -2339,11 +2804,13 @@ il faut
   (pas de détachement du préfixe de l'autre verbe)
 muszáj
 
+  @Temporalite
 passé
   le dimanche dernier
 múlt
   múlt vasárnap
 
+  @Architecture
 monument
 müemlek
   -et, -e, -ek
@@ -2354,88 +2821,110 @@ műkodik
 programmation (suite d'événements)
 műsor
 
+  @Metier
 artiste
 művé
 
 art
 művészet
 
+  @Habillement
 pantalon
 nadrág
 
+  @Expression @Politesse
 "De rien"
   Merci pour l'eau - De rien.
 Nagyon szívesen
   Köszonöm a vizet - Nagyon szívesen.
 
+  @Famille
 tante
 nagynéni
 
+  @Expression
 exclamation pour souligner ce que dit l'autre est évident
 Na hallod!
 
+  @Alimentation
 orange (fruit)
 narancs
 
+  
 naif
 naív
 
+  @Moment
 jour, soleil
 nap
 
+  @Moment
 lever du soleil
 napfelkelte
 
+  @Moment
 coucher du soleil
 naplemente
 
 bronzer
 napoz
 
+  @Moment
 journée
   dans la journée
 nappal
   napközben
 
+  @Famille
 oncle
 nagybáty
 
+  @Medecine
 rhume
 náthá
 
+  @Medecine
 enrhumé
 náthás
 
+  @Mesure
 carré (n)
   mètre carré
 negyzet
   negyzetmeter
 
+  @Mesure
 quelques
   depuis quelques jours
 nehány
   nehány napja
 
+  
 difficile, lourd
 nehéz
   nehezet, nehezek, nehezebb
 
+  @Nationalite
 nation
 nemzet
 
 rire (v)
 nevet
 
+  @Mesure
 parfois
 néha
 
+  @Mesure @Negation
 sans
 nélkül
 
+  @Famille
 dame, tante
 néni
   -t, -je, -k
 
+  @Nationalite
 peuple
 nép
 
@@ -2449,73 +2938,92 @@ név
 saint-… (fête)
 névnap
 
+  @Perception
 regarder, considérer
 néz vmire
   -ett, -zen, -ne
 
+  @Alimentation
 pâte à base de farine et d'œuf
 nohedli
 
+  @Medecine
 infirmière, sœur (1)
 nő
 
+  @CycleBiologique
 grandir
 nő
 
+  @Famille
 marié (pour un homme)
   homme marié
 nős
   nős férfi
 
+  @Famille
 célibataire (pour les hommes seulement)
 nőtlen
 
+  @Medecine
 infirmière, sœur (2)
 nővér
 
 retraité
 nyudíjas
 
+  
 calme
 nyugodt
 
 tranquillement, calmement
 nyugodtan
 
+  @Position @Deplacement
 vers là-bas
 oda
 
+  @Deplacement
 arriver quelque part
 odaér
 
+  @Redactionnel
 écrire (en précisant la destination)
 odaír
   Odaírom a papírra.
 
+  @Deplacement
 aller vers
 odamegy vmihez
 
+  @Politesse
 désirer (dans la formule de politesse uniquement)
   Qu'est-ce que vous désirez ?
 ohajt
   Mit ohajt?
 
+  @Deplacement
 de là-bas
 onnan
 
+  
 intelligent
 okos
   -at, -ak, -abb
 
+  
 bon marché, peu cher
 olcsó
 
+  @Redactionnel @Position
 côté, page
 oldal
 
+  @Accessoire
 paire de ciseaux
 olló
 
+  @Redactionnel
 lire
 olvas
   -ott, -son, -na
@@ -2523,17 +3031,21 @@ olvas
 comment, comme, tellement
 olyan
 
+  @Anatomie
 nez
  Il a le nez qui coule.
 orr
   Folyik az orra.
 
+  @Medecine @Metier
 médecin
 orvos
 
+  
 classe, catégorie, rayon
 osztály
 
+  
 optimiste
 optimista
 
@@ -2545,13 +3057,16 @@ russe
 orosz
   oroszul
 
+  @Faune
 lion
 oroszlána
 
+  @Famille
 jeune frère
   (toujours avec un possessif)
 öcs
 
+  
 vieux (pour un être humain)
 öreg
   -et, -ek, -ebb
@@ -2563,29 +3078,34 @@ se réjouir
 se réjouir de quelque chose
 örül vkinek
 
+  @Architecture
 tout équipé (pour habitation)
 összkomfort
 
 créatif
 ötletes
 
+  @Famille
 veuf, veuve
 özvegy
 
-automne / gris-blanc (cheveux)
+  @Saison
+automne/gris-blanc (cheveux)
 ősz
 
+  @Economie @Restaurant
 en tout (pour une addition)
 összesen
 
+  
 franc, sincère
-  (rien à voir avec l'automne)
 őszinte
 
 heure, montre
 óra
   órát, órajá, órak
 
+  @Position
 là-dessus
 rá
 
@@ -2598,54 +3118,69 @@ rábeszél vkit vmibe
 allumer une cigarette
 rágyút
 
+  @Perception
 jeter un coup d'œil
 ránéz
 
+  @Ameublement
 banc (pour s'asseoir)
 pad
 
+  @Alimentation
 crêpe (mets)
 palacsinta
 
+  @Socialisation
 donner des ordres
   Que désirez-vous ? (Je vous prie d'ordonner.)
 parancsol
   Tessék, parancsolni.
 
+  @Geographie
 rive
 part
   -ot, -ja, -ok
 
+  @Sport
 piste, terrain
 pálya
 
+  @Mesure
 quelque (2)
 pár
   egy pár
 
+  @Alimentation
 cuit à la vapeur
 párolt
 
+  @Expression
 bien sûr
 persze
 
+  
 pessimiste
 pesszimista
 
+  @Alimentation
 champagne
 pezsgő
   -t, -je, -k
 
+  @Economie
 argent (monnaie)
 pénz
 
+  @Economie
 caisse (réserve d'argent)
 pénztár
 
+  @Architecture
 cave
 pince
   pincét, pincéje, pincék
 
+  @Metier
 garçon de café
 pincér
   -t, -e, -ek
@@ -2653,34 +3188,43 @@ pincér
 sale
 piszkos
 
+  @Transport
 parking
 parkoló
 
+  @Transport
 se garer
 parkol
   parkolni
 
+  @Metier
 réceptionniste
 portás
 
+  @Socialisation
 plainte
   Qu'est-ce qui ne va pas (pour lui) ?
 panasz
   Mi a panasza?
 
+  @Mesure
 plein (adj, invariable)
 tele
 
+  @Moment
 instant
 pillanat
 
+  
 affreux, très mauvais, très moche
 pocsék
 
+  
 exact
 pontos
   -at, -ak,-abb
 
+  @Faune @Alimentation
 poisson gras d'eau douce, pas très bon
 ponty
 
@@ -2690,9 +3234,11 @@ postaláda
 programme
 program
 
+  @Alimentation
 dinde
 pulyka
 
+   @Anatomie
 grand, élancé
 magas
   -at, -ak, -abb
@@ -2701,9 +3247,11 @@ arriver (action achevée)
 megérkezik
   -kezett, -kezzen, -kezne
 
+  @Economie
 porte-monnaie, portefeuille
 pénztárca
 
+  @CycleBiologique
 faire pipi
 pisil
 
@@ -2711,66 +3259,83 @@ poste (bureau de)
   à la poste
   aller à la poste
 postá
-  ~n
-  ~ra menni
+  postán
+  postára menni
 
+  @Alimentation
 ragoût
 pörkölt
 
+  @Restaurant
 café (établissement) (2)
 presszó
 
+  @Habillement
 chandail
 pulóver
 
+  @Economie
 voleur
 rabló
 
 avoir le temps, être libre
 ráérni
 
+  @Deplacement
 marcher dessus
 rálépni vmire
 
+  @Alimentation
 pané (culinaire)
 rántott
 
+  
 réaliste
 realista
 
+  @Alimentation @Medecine
 recette (de cuisine), ordonnance
 recept
 
+  @Moment
 matin
 reggel
   -t, -je, -k
 
+  @Repas
 petit-déjeuner (n)
 reggeli
   -t, -je, -k
 
+  @Repas
 petit-déjeuner (v)
 reggelizik
   reggelizni
 
+  @Position
 relatif (1)
 relatív
 
 ordre (l')
 rend
 
+  @Restaurant
 passer commande
 rendel
 
+  @Medecine
 consultation
 rendelnés
 
+  @Medecine
 centre médical
 rendelő
 
+  
 ordonné
 rendes
 
+  
 désordonné
 rendetlen
 
@@ -2792,6 +3357,7 @@ police, commissariat
 rendőrség
   -et, -e
 
+  @Transport
 numéro d'immatriculation
 rendszám
 
@@ -2801,6 +3367,7 @@ rendszeresen
 système
 rendszer
 
+  
 ancien (objet inanimé ou abstrait)
   -
   Mes vieux amis
@@ -2808,6 +3375,7 @@ régi
   -t, -ek, -bb
   Rége barátaim
 
+  @Mesure
 partie
   dans une grande partie du monde
 rész
@@ -2816,9 +3384,11 @@ rész
 ivre
 részeg
 
+  @Alimentation
 tourte
 rétes
 
+  
 rare
 ritka
   ritkább
@@ -2826,9 +3396,11 @@ ritka
 rarement
 ritkán
 
+  @Famille
 proche parent
 rokon
 
+  
 mauvais
 rossz
   -at, -ak, -abb
@@ -2836,12 +3408,14 @@ rossz
 mal (adv)
 rosszul
 
+  @Habillement
 robe, ou vêtement en général
 ruha
 
 bâton, mât
 rúd
 
+  @Possession
 à soi (possession accentuée)
   "C'est mon livre à moi."
   "Ce livre est à moi."
@@ -2851,40 +3425,51 @@ saját
   Ez a könyv a sajátam.
   A saját könyvem
 
+  @Perception @Socialisation
 se désoler
   Je suis désolé que ça ne (te) plaise pas.
 sajnal
   Sajnalom hogy nem tetszik.
 
+  @Alimentation
 salade
 saláta
   -salátát, salátája, saláták
 
+  
 jaune
 sárga
   sárgát, sárgák, sárgább
 
+  @Medecine
 blessure
 seb
 
+  @Medecine @Anatomie
 cicatrice
 sebhely
 
+  @Position
 null part
 sehol
 
+  @Position @Deplacement
 de nulle part
 sehonnan
 
+  @Position @Deplacement
 vers nulle part
 sehova
 
+  @Negation
 personne (privatif)
 senki
 
+  @Alimentation
 cochon (pour la viande)
 sertés
 
+  @Medecine
 blessé
 sérült
 
@@ -2892,63 +3477,79 @@ se promener
 sétál
   -t, -jon, -na
 
+  @Deplacement
 se dépêcher, être pressé
 sietni
 
+  @Socialisation
 succès, épanouissement
 siker
 
+  @Sport
 bâton de ski
 síléc
 
 écossais
 skót
 
+  @Negation
 jamais
   (contraction)
 soha… nem
   sosem
 
+  @Alimentation
 jambon
 sonka
 
+  @Deplacement @Socialisation @Transport
 faire la queue
 sorban áll
 
 destin, sort
 sors
 
+  @Anatomie
 maigre
 sovány
 
+  @Alimentation
 sel
 só  
 
+  @Famille
 beau-frère
 sógor
 
+  @Famille
 belle-sœur
 sógornő
 
+  @Alimentation
 salé
 sós 
 
+   @Apparence
 obscur, sombre
 sötet
 
+  @Sport
 sportif
 sportoló
 
 etc.
 stb. (és a többi)
 
+  @Alimentation
 cuit, grillé
 sült
 
+  @Alimentation
 briller, faire cuire
 süt
   -ött, süssön, -ne
 
+  @Alimentation
 gâteau
 sütemény
   -t
@@ -2959,22 +3560,27 @@ szab
 règle, prescription
 szabály
 
+  @Habillement
 coupe (vest.)
 szabás
 
+  @Anatomie
 barbe
 szaháll
 
+  @Metier
 cuisinier
   cuisinière
 szakács
   szakácsnő
 
+  @Alimentation
 salami
   un salami (quantité unitaire)
 szalámi
   egy rúd szalámi
 
+  @Alimentation
 lard
 szalonna
 
@@ -2984,9 +3590,11 @@ számol
 calculatrice
 számológép
 
+   @Alimentation
 sec (adj)
 száraz
 
+  @Transport
 transport (n)
 szállitas
 
@@ -2994,15 +3602,19 @@ hôtel
 szálloda
   szállodát, szállodája, szállodák
 
+  @Mesure
 chiffre, numéro, titre (musique)
 szám
 
+  @Mesure
 nombreux
 számos
 
+  @Economie
 pauvre
 szegény
 
+  @Ameublement
 armoire
 szekrény
   -t, -e, -ek
@@ -3010,6 +3622,7 @@ szekrény
 personne (individu)
 személy
 
+  @Nationalite
 carte d'identité
 szemely igazolvány
 
@@ -3020,31 +3633,39 @@ szemüveg
 réparer
 szerel
 
+  @Metier
 mécanicien, réparateur
 szerelő
 
+  @Socialisation
 aimer
 szeret
   -ett, szeressen, -ne
 
+  @Metier
 rédacteur, comité de rédaction
 szerkesztő
 
+  @Anatomie
 organe
 szerv
 
+  @Medecine
 avoir la tête qui tourne, être pris de vertige
   La tête me tourne.
 szédül
   Szédül a fejem.
 
+  @Ameublement
 chaise
 szék
   -et, -e, -ek
 
+  @Architecture
 cathédrale (1)
 székesegyház
 
+  @Geographie
 íle
 sziget
 
@@ -3052,17 +3673,23 @@ sévère
 szigorú
   -t, -ak, -bb
 
+  @Alimentation
 prune
-  au goût de prune
 szilva
-  szilvás
 
+  @Alimentation
+au goût de prune
+szilvás
+
+  @Metier
 comédien, acteur
 színész
 
+  @Anatomie
 coeur
 szív
 
+  @Socialisation
 service, faveur
 szívesség
 
@@ -3074,9 +3701,11 @@ avoir l'habitude de
 szok
   Péter nem szokott olvasni. (toujours au passé)
 
+  @Habillement
 jupe
 szoknya
 
+  @Moment
 samedi
 szombat
   -ot, -ja, -ok
@@ -3087,6 +3716,7 @@ szomjas
 triste
 szomorú
 
+  @Position
 voisin
 szomszéd
   -ot, -ja, -ok
@@ -3119,13 +3749,16 @@ szórakozást
 alors
 szóval
 
+  @Deplacement
 s'enfuir
 szökik
 
+  @Ameublement
 tapis
 szönyeg
  -et, -e, -ek
 
+  @Alimentation
 raisin
 szőlő
 
@@ -3134,13 +3767,15 @@ szőke
   szőket, szőkék, szőkebb
 
 besoin
-  avoir besoin de
+  {} a besoin de qqchose
 szükség
-  ~[possessif] van vmire
+  szükség{} van vmire
 
+  @Famille
 enfanter
 szülni
 
+  @Famille
 parent (père ou mère)
 szülő
   -t, -je, -k
@@ -3148,6 +3783,7 @@ szülő
 pause, vacances, récréation, entracte
 szünet
 
+  @Alimentation
 tablette de chocolat
 tábla csokoládé
 
@@ -3156,20 +3792,24 @@ nettoyer, faire le ménage
 takarít
   kitakarít
 
+  @Socialisation
 rencontrer
 találkozik vkivel
   -kozott, -kozzon, -kozna
 
+  @Transport
 service des objets trouvés
 talált tárgyak
 
 peut-être
 talán
 
+  @Enseignement
 apprendre
 tanul
   -t, -jon, -na (tanulni)
 
+  @Enseignement
 étudier
 tanulmányoz
 
@@ -3178,6 +3818,7 @@ applaudir
 tapsol
   Hogy tapsol a közönség!
 
+  @Transport
 station de taxi
 taxiállomás
 
@@ -3185,24 +3826,30 @@ danser
 táncol
   -t, -jon, -na
 
+  @Economie @Socialisation
 négocier
 tárgyal
 
+  @Architecture
 immeuble (habitation collective)
 társasház
 
+  @Position
 lointain
 távoli
 
 fardeau
 teher
 
+  @Transport
 camion
 teheraúto
 
+  @Alimentation
 crème fraîche
 tejföl
 
+  @Socialisation @Perception
 considérer quelqu'un comme
 tekint vkit vminek
   tekinteni
@@ -3210,9 +3857,11 @@ tekint vkit vminek
 téléphoner à quelqu'un
 telefonálni vkinek
 
+  @Mesure
 complètement
 teljesen
 
+  @Mesure
 plein (adj)
   C'est plein, il n'y a plus de place.
 telt
@@ -3223,35 +3872,44 @@ nature
 természet
   természetesen
 
+  @Expression
 "Je vous en prie, …"
   Veuillez entrer.
 tessék …
   Tessék bemenni.
 
+  @Deplacement
 faire, mettre, poser, faire (agir)
 tesz vmit
   tett, tegyen, tenne ; tenni
 
+  @Architecture
 toit
 tető
 
+  @Perception @Socialisation
 plaire à quelqu'un
 tetszik vkinek
   tetszett, tetsszen, tetszene
 
+  @Temporalite
 "il y a un an"/"depuis un an"
 egy teve
 
+  @Mesure
 vraiment
 tényleg
 
+  @Position @Geographie @Urbanisme
 place (endroit)
 tér
   terat, tere, terek
 
+  @Alimentation
 pâte (culinaire)
 tésztá
 
+  @Socialisation
 avoir tort
   Vous avez tort.
 téved
@@ -3262,7 +3920,7 @@ télévision
   à la télévision
 tévé
   -t, -je, -k
-  a ~ben
+  a tévében
 
 interdit
   (pas de détachement du préfixe de l'autre verbe)
@@ -3274,38 +3932,47 @@ tinédzser
 propre
 tiszta
 
+  @Metier
 secrétaire
 titkárnő
 
 secret (n)
 titok
 
+  @Anatomie
 double menton
 toka
 
 stylo
 toll
 
+  @Metier
 intérprète
 tolmács
 
+  @Anatomie
 gorge
 torok
 
+  @Deplacement @Temporalite
 plus loin, continuer à
 tovább
 
+  @Deplacement
 continuer à marcher
 továbbmegy
 
+  @Geographie
 lac
 tó
 
+  @Temporalite
 plus jamais
   Ils ne se sont plus jamais rencontrés.
 többet
   Többet nem találkoztam.
 
+  @Mesure
 le reste
   les autres (uniquement pour des personnes)
 többi
@@ -3321,6 +3988,7 @@ tölt
 stylà à plume
 töltőtoll
 
+  @Alimentation
 farci
 töltött  
 
@@ -3336,15 +4004,18 @@ trafik
 science
 tudomány
 
+  @Enseignement
 université des sciences
 tudományegyetem
 
 qualité, caractéristique
 tuladonság
 
+  @Alimentation
 fromage blanc
 túró
 
+  @Ameublement
 glace, miroir
 tükör
   tükröt, tükre, tükrök
@@ -3354,9 +4025,11 @@ patience
 türelem
   Kis türelemet kérek.
 
+  @Medecine
 éternuer
 tüsszög
 
+  @Perception
 sembler (2)
   il semble
 tűnik
@@ -3368,6 +4041,7 @@ tűzoltók
 feu (phénomène physique)
 tűz
 
+  @Alimentation
 concombre
 uborka
 
@@ -3377,28 +4051,35 @@ udvarias
 impoli
 udvariatlan
 
+  @Politesse
 "n'est-ce pas ?"
 ugye?
 
 ennuyeux
 unalmas
 
+  @Famille
 petit-fils, petite fille
 unoka
   unokát, unokája, unokák
 
+  @Famille
 neveu
 unokaöcs
 
+  @Famille
 cousin/cousine
 unokatestvér
 
+  @Famille
 nièce
 unokahúg
 
+  @Sport
 piscine
 uszoda
 
+  @Temporalite
 après
   après ça
   (voir)
@@ -3415,49 +4096,62 @@ utazik vmire
 voyage
 utaz
 
+  @Perception
 détester qqchose
 utál vmit
 
+  @Temporalite
 pour la dernière fois
 utoljára
 
+  @Temporalite @Position
 dernier
 utolsó
 
+  @Alimentation
 goûter, casser la croûte
 uzsonnázik
   -názott, -názzon, -názna
 
+  @Perception
 de cette façon-là
   il sent que …
 úgy
   úgy erzi, hogy…
 
+  @Temporalite
 nouveau
 új
   -at, -ak, -abb
 
+  @Temporalite
 de nouveau
 újra
 
+  @Metier
 vendeur de journaux
 újságos
 
+  @Nationalite
 passeport
 útlevél
   -levelet, -levele, -levelek
 
+  @Sport
 nager
 úszni
   úsznik
 
+  @Alimentation
 boisson non alcoolisée
 üditő
 
+  @Politesse
 saluer 
   (défectif) 
 üdvözni
 
+  @Economie
 affaire
 ügy
 
@@ -3467,9 +4161,11 @@ adroit
 maladroit
 ügyetlen
 
+  @Metier
 avocat (profession)
 ügyvéd
 
+  @Deplacement
 s'asseoir
 ül
 
@@ -3486,21 +4182,26 @@ envoyer un message
 üzen
   üzeni
 
+  @Economie
 affaire, magasin
 üzlet
 
+  @Metier
 homme d'affaires
 üzletember
 
 sauvage
 vad
 
+  @Alimentation
 marron (fruit)
 vadgesztenye
 
+  @Alimentation
 beurre
 vaj
 
+  @Position
 quelque part
 valahol
 
@@ -3521,15 +4222,18 @@ valójobam
 réalité
 valóság
 
+  @Transport
 chemin de fer
 vasút
 
 couper
 vág
 
+  @Perception
 désirer
 vágyik vmire
 
+  @Socialisation
 répondre
 válaszol
   -t, -jon, -na
@@ -3537,9 +4241,11 @@ válaszol
 choisir
 választani  
 
+  @Metier
 entreprise
 vállalat
 
+  @Metier
 entreprendre
 vállal vmit
   vállalni
@@ -3548,22 +4254,26 @@ attendre
 vár (igék)
   -t, -jon, -na
 
+  @Architecture
 château, forteresse
 vár (főnevek)
   -at, -a, ak
 
+  @Urbanisme
 visite d'une ville
 városnézés
 
 salle d'attente
 várósterem
 
+  @Alimentation
 mixte (pour la nourriture)  
 vegyes     
 
 concours
 versen
 
+  @Politesse
 invité
   -
   être quelque part en tant qu'invité
@@ -3571,13 +4281,16 @@ vendég
   -et, -e, -ek
   vendégéségben van  
 
+  @Anatomie
 vessie
 vese
 
+  @Economie
 acheter
 vesz
   venni
 
+  @Transport
 conduire
 vezetni
 
@@ -3585,14 +4298,17 @@ protéger
 véd
   védéni
 
+  @Temporalite
 fin
   C'est la fin de qqchose.
 vég
   Vége van vminek.
 
+  @Transport
 terminus
 végállomas
 
+  @Temporalite
 finalement (référence : maintenant)
 végén
 
@@ -3604,9 +4320,11 @@ hasard
 véletlen
   véletlenül
 
+  @Anatomie
 sang
 vér
 
+  @Socialisation
 blague, histoire drôle
 vicc
   -et, -e, -ek
@@ -3618,6 +4336,7 @@ campagne (lieu)
 vidék
   -et, -e, -ek
 
+  @Socialisation
 faire attention, surveiller qqun
   -
   "fais attention à toi"
@@ -3625,49 +4344,61 @@ vigyáz vkire
   vigyázni
   vigyazz magadra
 
+  @Transport
 arrêt de tramway
 villamosmegálló
 
+  @Socialisation
 se comporter
 viselkedik
 
 redemander
 visszakér vmit
 
+  @Deplacement
 renvoyer
 visszaküld
 
+  @Deplacement
 revenir (vers la référence)
 visszajön
 
+  @Deplacement
 revenir (en s'éloignant de la référence)
 visszamegy
 
+  @Position
 relatif (2)
 viszonylagos
 
 clair
 világos
 
+  @Alimentation
 vitamines
 vitamin
 
+  @Alimentation
 eau
 víz
   vizet, vize, vizek
 
+  @Transport
 tramway
 villamos
   -t, -a, -ok
 
+  @Deplacement
 amener
 visz
   vinni
 
+  @Enseignement
 examen scolaire
 vizsga
   vizsgát, vizsgája, vizsgak
 
+  @Medecine
 examen médical
 vizsgálat
 
@@ -3678,10 +4409,12 @@ vörös
   -et, -ek, -ebb
   vörös hajú
 
+  @Famille
 beau-fils
 vő
 
-fiancé (masculin seulement)  
+  @Famille
+fiancé (masculin seulement)
 vőlegénye
 
 bruit
@@ -3694,21 +4427,27 @@ orchestre
 zenekar
   -t, -a, -ok
 
+  @Metier
 musicien
 zenész
 
+  @Alimentation
 haricot vert
 zöldbab
 
+  @Ameublement
 piano
 zongora
   zongorát, zongorája, zongorák
 
+  @Habillement
 poche de vêtement
 zseb
 
+  @Alimentation
 gras (adj)
 zsiros
 
 rempli
 zsúfolt
+
