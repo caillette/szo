@@ -108,7 +108,18 @@
 
       this.pickRandomCard = function() {
         disclosure = 0 ;
-        currentCard = cards.length == 0 ? null : cards[ random( cards.length ) ] ;
+        if( cards.length == 0 ) {
+          currentCard = null ;
+        } else {
+          while( true ) {
+            // Don't pick the same Card two times in a row, except if there is only 1 Card at all.
+            pick = cards[ random( cards.length ) ] ;
+            if( pick != currentCard || cards.length == 1 ) {
+              currentCard = pick ;
+              return ;
+            }
+          }
+        }
       }
 
       // Returns 0 when disclosing a new Card, a greater value (starting by 1) otherwise.
