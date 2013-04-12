@@ -33,6 +33,7 @@
 
       this.parse = function( text ) {
         if( pegParser ) {
+          text = text.replace( /^#.*/gm, '' ) ; // Eat comments.
           return pegParser.parse( text ) ;
         } else {
           throw 'PEG parser instantiation previously failed. ' + this.problem() ;

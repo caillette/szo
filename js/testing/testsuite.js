@@ -383,6 +383,12 @@ asyncTest( 'Simple parser loading', function() {
   ) ;
 } ) ;
 
+test( 'Eating comments', function() {
+  var parser = new szotargep.parser.Parser( 'line = [12#\\n]*', 'uri:here', null ) ;
+  var result = parser.parse( '1\n# comment\n2#' ) ;
+  deepEqual( result, [ '1', '\n', '\n', '2', '#' ] ) ;
+} ) ;
+
 
 asyncTest( 'Can\'t load grammar', function() {
   szotargep.parser.createParsers(
