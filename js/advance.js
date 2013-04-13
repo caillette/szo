@@ -114,7 +114,7 @@
           while( true ) {
             // Don't pick the same Card two times in a row, except if there is only 1 Card at all.
             pick = cards[ random( cards.length ) ] ;
-            if( pick != currentCard || cards.length == 1 ) {
+            if( pick != currentCard || cards.length == 1 || random[ 'instrumented' ] ) {
               currentCard = pick ;
               return ;
             }

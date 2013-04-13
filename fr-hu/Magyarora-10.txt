@@ -13,7 +13,7 @@ ilyen
 préparer, produire, faire, fabriquer
 készít
 
-  @Sport @Montagne
+  @Sport
 skier
 síel
 

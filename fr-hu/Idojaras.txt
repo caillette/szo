@@ -17,23 +17,19 @@ fok
 prévision
 előrejelzés
 
- @Saison
 printemps
   au printemps
 tavasz
   tavasszal
 
- @Saison
 été (saison)
 nyár
 
- @Saison
 automne
   en automne
 ősz
   ősszel
 
- @Saison
 hiver
 tél
 

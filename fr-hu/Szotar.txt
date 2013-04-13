@@ -23,7 +23,7 @@ porte
 ajtó
   -t, -ajtaja, -k
 
-  @Intention
+  
 vouloir
 akar
   -t, -jon, -na
@@ -67,7 +67,7 @@ allóhelye
 sous (non-relatif)
 alól
 
-  @CycleBiologique
+  @Metabolisme
 dormir
   -
 alszik
@@ -98,7 +98,7 @@ arc
 dame (femme mariée)
 asszony
 
-  @Mobilier
+  @Ameublement
 table
 asztal
   -t, -a, -ok
@@ -115,7 +115,7 @@ azonnal
 puis, ensuite, ultérieurement, plus tard
 aztán
 
-  @Mobilier
+  @Ameublement
 lit
 ágy
   -at, -a, -ak
@@ -151,9 +151,11 @@ soigner
 infirmier
 ápoló
 
+  @Economie
 petite monnaie
 aprópénz
 
+  @Substance
 minéral (adj et nom)
 ásvány
 
@@ -240,6 +242,7 @@ bal
 à gauche
 balra
 
+  @Transport @Medecine
 accident
 baleset
 
@@ -256,11 +259,11 @@ barátsagos
 hostile
 barátsagtalan
 
-  @Economie @Socialisation
+  @Economie @Socialisation @Restaurant
 pourboire
 barravaló
 
-  @Amusement
+  @Spectacle
 marionnette (tenue par le bas)
 bábszínház
 
@@ -301,7 +304,7 @@ behív
 beír
   Kiírom a szovakat a füzetbe.
 
-  @Nation
+  @Nationalite
 interne au territoire national (pour les choses uniquement) (1)
   tourisme intérieur
 belföldi
@@ -351,6 +354,7 @@ bél
 louer (logement uniquement)
 bérel
 
+  @Transport
 carte, abonnement
 bérlet
 
@@ -433,6 +437,7 @@ bölcs
 relatif à la personne humaine
 bölcsész
 
+  @Enseignement
 faculté des sciences humaines
 bölcészkar
 
@@ -447,7 +452,7 @@ burgonya
 amende
 büntetés
 
-  @Accessoire
+  @Outillage
 crayon
 ceruza
 
@@ -539,7 +544,7 @@ cszengő
 sonner 
 czendet
 
-  @Exclamation
+  @Expression
 "Ah mais non"
 dehogy
 
@@ -564,12 +569,15 @@ délelőtt
 cochon (appellation prosaïque)
 disznó
 
+  @Habillement
 mode (phénomène mimétique)
 divat
 
+  @Habillement
 à la mode
 divatos
 
+  @Architecture @Ameublement
 décoration
 díszlet
 
@@ -604,6 +612,7 @@ ecet
 santé
 egészség
 
+  @Mesure
 entièrement, assez, entier
   assez bien
 egész
@@ -621,6 +630,7 @@ Egészsége{}re!
 bon pour la santé, en bonne santé
 egészéges
 
+  @Mesure
 ensemble (association)
   mon argent avec (en même temps que) mon passeport
 vmivel együtt
@@ -632,15 +642,17 @@ pas du tout
 egyáltalán … nem
   Egyáltalán nem szeretek feher bort.
 
+  @Deplacement
 directement, tout droit
   La femme a regardé Paul droit dans les yeux.
 egyenesen
   A nő egyenesen Paul szemébe nézett.
 
-  @Scolarite
+  @Enseignement
 étudiant à l'université
 egyetemi hallgátó
 
+  @Mesure
 L'un (quelconque), l'un (des deux)
   L'une des deux femmes mangeait un sandwich, l'autre buvait de l'eau.
 egyik
@@ -658,7 +670,7 @@ sortir ensemble (relation sentimentale)
 együtt járni
   Együtt járnak.
 
-  @Exclamation
+  @Expression
 "Zut !" (avec réprimande)
 Ejnye!
 
@@ -690,7 +702,7 @@ eléggé
 vivant, actif
 eleven
 
-  @Socialisation
+  @Socialisation @Repas
 manger quelque chose devant quelqu'un
 eleszik vmit vki elől
   elenni
@@ -900,11 +912,11 @@ soir
 este
   estét, estéje, esték
 
-  @Politesse
+  @Politesse @Expression
 "Félicitations !"
 Ez igen !
 
-  @Moment @Repas
+  @Repas
 manger quelque chose au petit déjeuner/déjeuner/dîner
 reggelire/ebédre/vacsorára eszik vmit
 
@@ -917,16 +929,16 @@ déjeuner (v)
 réveillé, vigilant
 éber
 
-  @CycleBiologique
+  @Metabolisme
 se réveiller
 ébred
 
-  @CycleBiologique
+  @Metabolisme
 réveiller qqun/qqchose
 ébreszt vkit/vmit
 
   @Moment
-la nuit
+nuit
   dans la nuit
 éj
   éjjel
@@ -936,7 +948,7 @@ la nuit
 nuit
 éjszaka
 
-  @CycleBiologique
+  @Metabolisme
 vivre
 él
   -t, -jen, -ne ; élni
@@ -1008,7 +1020,7 @@ aliment, plat, repas
   mai ételeink
   napi ételeink
 
-  @CycleBiologique @Repas
+  @Metabolisme @Repas
 appétit
 étvágy
 
@@ -1025,6 +1037,7 @@ fal
 bouchée (quantité de nourriture)
 falat
 
+  @Geographie @Urbanisme
 village
 falu
   -t, -ja, falvak
@@ -1036,7 +1049,7 @@ faragott
 antidouleur
 fájdalomcsillapító
 
-  @CycleBiologique
+  @Metabolisme
 avoir froid
 fázik
 
@@ -1100,7 +1113,7 @@ regarder vers le haut, admirer
 felnéz vmire
   Felnézünk a felhőre.
 
-  @CycleBiologique
+  @Metabolisme
 grandir, devenir adulte
 felnő
   felnőni
@@ -1214,7 +1227,7 @@ foglalni
 profession, occupation
 foglalkozás
   
-
+  @Geographie
 fleuve
 folyó
   -t, -ja, -k
@@ -1232,7 +1245,7 @@ chaud, en fusion
 forró
   forró csokoládé
 
-  @Mobilier
+  @Ameublement
 fauteuil
 fotel
   -t, -e, -ek
@@ -1340,7 +1353,7 @@ gépel
   gépelni
 
   @Substance
-platre
+plâtre
 gipsz
 
 bille
@@ -1359,6 +1372,7 @@ gomba
 boule
 gombóc
 
+  @Deplacement
 rouler (comme une bille)
 gurul
 
@@ -1471,7 +1485,7 @@ utiliser
 használ
   használni
 
-  
+  @Mesure
 énorme, immense
 hatalmas
   -at, -ak, -abb
@@ -1581,7 +1595,7 @@ demain
 holnap
  -ot, -ok
 
-    
+  @Mesure
 long
 hosszú
 
@@ -1769,7 +1783,7 @@ jouet, jeu
 játék
   -ot, -a, -ok
 
-  @Metorologie
+  @Meteorologie
 verglacé
   route verglacée
 jeges
@@ -1785,7 +1799,7 @@ jelent vmit
 glaçon
 jég
 
-  @Politesse @Medecine
+  @Politesse @Medecine @Expression
 "Bon rétablissement !"
 Jobbulást!
 
@@ -1841,7 +1855,7 @@ kaviár
 exposition
 kállitás
 
-  @Mobilier
+  @Ameublement
 poële (pour le chauffage)
 kályha
   kályhát, kalyhája, kályhák
@@ -1925,17 +1939,13 @@ kertészkedik
 
   @Economie
 coûter
-  Les tickets coûte 1,80 €.
+  Les tickets coûtent 1,80 €.
 kerül vmibe
   A jegyek 1 euró 80-ba kerülnek.
 
   
 amer
 keserű
-
-  @Moment @Temporalite
-tard
-késő
 
   @Mesure
 peu
@@ -2001,7 +2011,7 @@ se préparer à devenir [profession]
 készül vminek
   Orvosnak készül.
 
-  @Moment
+  @Moment @Temporalite
 tard
 késő
 
@@ -2028,7 +2038,7 @@ s'éteindre
 kialszik
   Kialszik a fény.
 
-  @CycleBiologique
+  @Metabolisme
 dormir suffisamment
   Je n'ai pas dormi suffisamment.
 kialudni magát
@@ -2173,6 +2183,7 @@ déménager
 költözik
   költözött, költözzön, költözne
 
+  @Economie
 frais, dépense
   frais de transport
 költség
@@ -2286,7 +2297,7 @@ közönség
 indifférent
 közönyös
 
-  @Mesure
+  @Position
 centre
 központ
 
@@ -2416,7 +2427,7 @@ lemegy
 disque
 lemez
 
-  @Nationalite
+  @Pays
 polonais
 lengyel
 
@@ -2453,7 +2464,7 @@ lé
   narancslé
   paradicsomlé
 
-  @Accessoire
+  @Outillage
 bâton
 léc
 
@@ -2645,7 +2656,7 @@ goûter (v)
 megkóstol
 
   @Politesse
-remercier pour (hors dialogue)
+remercier pour qqchose (hors dialogue)
   Kati remercie pour le déjeûner.
 megkösszön vmit
   Megkösszöni Kati az ebédet.
@@ -2950,7 +2961,7 @@ nohedli
 infirmière, sœur (1)
 nő
 
-  @CycleBiologique
+  @Metabolisme
 grandir
 nő
 
@@ -3018,7 +3029,7 @@ olcsó
 côté, page
 oldal
 
-  @Accessoire
+  @Outillage
 paire de ciseaux
 olló
 
@@ -3088,7 +3099,7 @@ créatif
 veuf, veuve
 özvegy
 
-  @Saison
+  @Meteorologie
 automne/gris-blanc (cheveux)
 ősz
 
@@ -3250,7 +3261,7 @@ megérkezik
 porte-monnaie, portefeuille
 pénztárca
 
-  @CycleBiologique
+  @Metabolisme
 faire pipi
 pisil
 
@@ -4272,7 +4283,7 @@ vegyes
 concours
 versen
 
-  @Politesse
+  @Socialisation
 invité
   -
   être quelque part en tant qu'invité

@@ -1,6 +1,6 @@
 title: Szótár-névek
 
-@Dictionnaire
+@NomsPropres
 
 
 Danube
