@@ -1,0 +1,178 @@
+<html xmlns="http://www.w3.org/1999/html">
+<head>
+  <meta http-equiv='Content-Type' content='text/html; charset=UTF-8' >
+  <link rel='stylesheet' href='css/about.css' type='text/css' media='screen' />
+
+  <title>Szótárgép – about</title>
+</head>
+
+<body>
+  <h1>What is Szótárgép</h1>
+
+  <p>
+    <b>Szótárgép</b> means <q>vocabulary machine</q> in Hungarian. It displays questions and answers interactively, and comes with a vocabulary list to learn Hungarian from French, but you can use your own.
+  </p>
+  <p>
+    You should pronounce it <q>so-o-taarrr-géép</q> with long vowels and <q>r</q> tapped like in Spanish, and the accent on the beginning of the word.
+  </p>
+  <p>
+    Szótárgép just needs a decent Web browser to run. Vocabulary files are text files and you don't need an Internet connexion to use Szótárgép, if you chose to install it locally. You can use the <a href='http://caillette.github.io/szotargep' >online version</a>, too.
+  </p>
+
+
+  <h1>Installation</h1>
+
+  <p>
+  To install Szótárgép, <a href='https://github.com/caillette/szotargep/zipball/gh-pages' >download the latest version</a> and unzip it somewhere and open the <code>index.html</code> file in a Web browser (see "Supported configurations" below).
+  </p>
+
+
+  <h1>Usage</h1>
+
+  <p>
+    To chose a langage for the user interface, add the following to the URL: <code>&lang=[code]</code> (or <code>?lang=[code]</code> if  this is the first parameter of the URL). You can bookmark the URL to skip this step the next time. Available codes are:
+  </p>
+  <ul>
+    <li><code>hu</code>: Hungarian (default),</li>
+    <li><code>en</code>: English,</li>
+    <li><code>fr</code>: French.</li>
+  </ul>
+
+  <p>
+    Vocabulary contains <em>Cards</em> which are a list of questions and answers. Cards have <em>Tags</em> which describe some kind of theme of usage for the Card. There can be several Tags for one Card.
+  </p>
+
+  <p>
+    On the left part of the display, there is a list of Tags to chose from.
+  </p>
+
+  <p>
+    By default, all the chosen Cards (corresponding to chosen Tags) show as a single list. To get interactive questions, uncheck <q>List</q>. Then click on <q>Next</q> to disclose answers or show another Card randomly taken from the list.
+  </p>
+
+
+
+  <h1>Define your own Vocabulary</h1>
+
+  <p>
+    Szótárgép loads a Vocabulary file which references Pack files. Pack files are lists of Cards, which are some kind of plain-text sentences.
+  </p>
+  <p>
+    All those files are text files in UTF-8 encoding and Unix line breaks. To create or edit them, use a decent text editor like <a href='http://notepad-plus-plus.org' >Notepad++</a> and take care of chosing UTF-8 encoding and Unix line breaks. Do not use Window's Notepad.
+  </p>
+  <p>
+    For Vocabulary and Pack file, any line becomes commented (its content being ignored) if starting by the hash (<code>#</code>) sign.
+  </p>
+  <p>
+    Pack and Vocabulary file names <em>must</em> end by <code>.txt</code>
+  </p>
+
+
+
+  <h2>Pack file</h2>
+
+  <p>
+    A Pack file contains Card definitions. A Card is a list of questions and answers keep together by indentations and no empty line. First question and first answer are unindented; other questions and answers are indented. There is at least one question and one answer per Card. A list of Tags (on the same line) may immediately precede the first question. The number of answer may be different than number of questions (there can be implicit questions or answers). Each Card has an optional list of Tags.
+  </p>
+  <p>
+    A Tag starts with an arrobas (<code>@</code>) and may contain any numerical or alphabetical character, without diacritics. It may also contain dash (<code>-</code>) or underscore (<code>_</code>). There must be no empty line between tags, questions, and answers of the same Card.
+  </p>
+  <p>
+    There can be a list of Tags applying to all the Cards in the Pack. This Tag list must appear first, with an empty line to separate it from Cards' tags.
+  </p>
+  <p>
+    Here is a sample of Pack file:
+  </p>
+
+  <pre>
+@tag0 @tag1
+
+  @tag2 @tag3
+Question 1
+  question 1.1
+Answer 1
+  answer 1.1
+  answer 1.2
+
+Question 2
+Answer 2
+  </pre>
+
+  <p>
+    In this sample we have the following Cards:
+  </p>
+  <ul>
+    <li>Card1 tagged with <code>tag0</code> <code>tag1</code> <code>tag2</code> <code>tag3</code></li>
+    <li>Card2 tagged with <code>tag0</code> <code>tag1</code>  (global tags)</li>
+  </ul>
+
+  <h2>Vocabulary file</h2>
+
+  <p>
+    A Vocabulary file references all Pack files. In addition it may define some nice appellations for Tags (which are restricted to a very poor set of characters). The appellations will appear in place of the raw Tag name in the Tag selection area. Here is a sample referencing two Pack files, and two Tag appellations:
+  </p>
+  <pre>
+fr-hu/file1.txt
+fr-hu/file2.txt
+
+@tag1 This is Tag one
+@tag2 This is Tag two
+  </pre>
+
+  <h2>Specifying alternate vocabulary file</h2>
+
+  <p>
+    It may be useful to define several Vocabulary files and switch between them, using a URL parameter: <code>?v=[relative file name]</code>. The path must be relative to <code>index.html</code> file. Use <code>&amp;v=</code> if this is not the first parameter in the URL. Of course such URL is bookmarkable.
+  </p>
+
+
+
+  <h1>Using with other languages</h1>
+
+  <p>
+    Szótárgép may be useful for learning other languages.
+  </p>
+  <p>
+    As it reads UTF-8 vocabulary files, Szótárgép accomodates with most of character sets, but it doesn't support right-to-left writing. If you need to add some characters to the supported set (mainly designed for French and Hungarian), please contact the author.
+  </p>
+
+  <h1>Supported configurations</h1>
+
+  <ul>
+    <li>Safari 6.03 on Mac OS X 10.6.8: works fine.</li>
+    <li>Firefox 20.0 on Mac OS X 10.6.8: works fine.</li>
+    <li>Chrome 26 on Mac OS X 10.6.8: doesn't work with local files.</li>
+  </ul>
+
+  <p>
+    Other configurations should probably work, including on Windows and Linux. There will be no effort to make Szótárgép run on any version of Internet Explorer.
+  </p>
+
+  <h2>The Chrome problem</h2>
+
+  <p>
+    (In simple words) Chrome forbids access to the local filesystem by default. Yes there is the <code>allow-file-access-from-files</code> command line option, that opens access to your filesystem to every other Web page, but since this options is potentially harmful Szótárgép refuses to run with Chrome <em>and</em> <code>file://</code>.
+  </p>
+
+  <h1>License</h1>
+
+  <p>
+    Szótárgép HTML and JavaScript code are released under <a href='http://www.gnu.org/licenses/gpl-3.0.html' >GNU Public License Version 3</a>.
+  </p>
+
+  <p>
+    Vocabulary files are released under <a href='http://creativecommons.org/licenses/by-sa/3.0' >Creative Commons Attribution-ShareAlike 3.0 license</a>. <q>This license lets others remix, tweak, and build upon your work even for commercial purposes, as long as they credit you and license their new creations under the identical terms.</q>
+  </p>
+  <p>
+    Other libraries are subject to their original licenses:
+  </p>
+  <ul>
+    <li>JQuery and its plugins come with a dual license: MIT or GPL Version 2.</li>
+    <li>Moment.js is freely distributable under the terms of the MIT license.</li>
+    <li>Modernizr is available under the MIT license.</li>
+    <li>PEG.js doesn't tell about its license.</li>
+  </ul>
+
+
+</body>
+</html>

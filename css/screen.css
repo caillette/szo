@@ -1,14 +1,5 @@
-/*
-  Sources of inspiration:
-  http://green-beast.com/blog/?p=199
-*/
 
-@import url( 'general.css' ) ;
-
-body {
-  background : #dddddd ;
-  font-family : Verdana, Geneva, 'DejaVu Sans', sans-serif ;
-}
+@import url( 'screen-basic.css' ) ;
 
 .no-selection {
   -webkit-touch-callout : none ;
@@ -215,5 +206,26 @@ td.undisclosed > span {
 
 #disclose {
   font-weight : bold ;
+}
+
+#about > a:link, #about > a:hover, #about > a:active, #about > a:visited  {
+  display : inline-block ;
+  height : 1em ;
+  width : 1em ;
+  border : solid #eeeeee 0.15em ;
+  border-radius : 2em ;
+  padding : 0.1em ;
+  font-size : 120% ;
+  font-family : Verdana, Geneva, DejaVu Sans, sans-serif ;
+  font-weight : bold ;
+  text-align : center ;
+  line-height : 0.98 ;
+  color : #999999 ;
+  text-decoration : none ;
+}
+
+#about > a:hover {
+  border : solid #ffffff 0.15em ;
+  color : #666 ;
 }
 

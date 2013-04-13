@@ -1,0 +1,53 @@
+@import url( 'screen-basic.css' ) ;
+
+body {
+  max-width : 600px ;
+  margin-left : 2em ;
+}
+
+p, ul, h1 {
+  line-height : 1.2 ;
+  margin : 1em ;
+}
+
+h1 {
+  font-size : 140% ;
+  margin : 2em 1em 1em 1em ;
+}
+
+h2 {
+  font-size : 125% ;
+  margin : 2em 1em 1em 1em ;
+}
+
+
+p {
+}
+
+code {
+  font-family : Courier New, Courier New, monospace ;
+  padding : 0.1em ;
+  background : #d6d6d6 ;
+}
+
+em {
+  text-decoration : italic ;
+}
+
+ul {
+  margin-left : 3em ;
+  list-style-type : square ;
+}
+
+pre {
+  margin-left : 3em ;
+  margin-right : 3em ;
+  background : #d6d6d6 ;
+  white-space : pre ;
+  font-family : Courier New, Courier New, monospace ;
+  display : block ;
+}
+
+q:before { content : '“' ; }
+q:after { content : '”' ; }
+

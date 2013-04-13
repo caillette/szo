@@ -289,6 +289,10 @@
         } ) ;
       }
 
+      $( '<span id="about" class="widget" ><a href="about.html" target="_blank" >?</a></span>' )
+          .appendTo( '#top' )
+      ;
+
       function nextAnswerOrCard( $this ) {
         if( ! advance.viewAsList() ) {
           var next = advance.nextAnswerOrCard() ;
