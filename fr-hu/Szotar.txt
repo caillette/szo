@@ -938,7 +938,7 @@ réveiller qqun/qqchose
 ébreszt vkit/vmit
 
   @Moment
-la nuit
+nuit
   dans la nuit
 éj
   éjjel
@@ -1947,10 +1947,6 @@ kerül vmibe
 amer
 keserű
 
-  @Moment @Temporalite
-tard
-késő
-
   @Mesure
 peu
 kevés
@@ -2015,7 +2011,7 @@ se préparer à devenir [profession]
 készül vminek
   Orvosnak készül.
 
-  @Moment
+  @Moment @Temporalite
 tard
 késő
 
