@@ -51,7 +51,7 @@
 
   szotargep.action.ShowList = function() {
 
-    var batchSize = 5 ;
+    var batchSize = 50 ;
 
     var constructor = function ShowList( advance ) {
 
@@ -95,7 +95,7 @@
             },
             function() { complete = true },
             cardIndex,
-            cardIndex + batchSize + 1
+            cardIndex + batchSize - 1
         ) ;
 
         html = html === '' ? noCardMessageHtml() : html ;
