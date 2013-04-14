@@ -542,7 +542,7 @@ sonnette
 cszengő
 
 sonner 
-czendet
+csendet
 
   @Expression
 "Ah mais non"
@@ -2116,7 +2116,7 @@ fils du roi
 királyfi
 
 palais royal
-király palata
+király palota
 
 faire une excursion
 kirándul
@@ -3865,7 +3865,7 @@ tekint vkit vminek
   tekinteni
 
 téléphoner à quelqu'un
-telefonálni vkinek
+telefonál vkinek
 
   @Mesure
 complètement
