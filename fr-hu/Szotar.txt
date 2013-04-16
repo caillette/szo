@@ -55,6 +55,9 @@ ne… guère
 alig
   Alig ismerem.
 
+dès que, difficilement
+alihogy
+
   @Alimentation
 alcool
 alkohol
@@ -117,6 +120,10 @@ azonnal
   @Temporalite
 puis, ensuite, ultérieurement, plus tard
 aztán
+
+  @Temporalite
+après
+azután
 
   @Ameublement
 lit
@@ -294,6 +301,9 @@ beáll
 fermer
 becsuk
 
+fin, conclusion
+befejezés
+
 se terminer
 befejeződik
 
@@ -331,6 +341,9 @@ benéz vkit
   @Perception @Socialisation
 reprocher à quelqu'un (argot)
 beolvas vkinek
+
+parler de qqchose
+beszél vmihez
 
   @Medecine
 malade
@@ -561,6 +574,10 @@ csendet
 "Ah mais non"
 dehogy
 
+  @Mesure
+décagramme
+deka
+
   @Alimentation
 dessert
 desszert
@@ -664,6 +681,11 @@ egyenesen
   @Enseignement
 étudiant à l'université
 egyetemi hallgátó
+
+  @Mesure @Differenciation
+un seul
+egytlen
+
 
   @Mesure
 L'un (quelconque), l'un (des deux)
@@ -925,6 +947,9 @@ Erről jut eszembe…
 eset
   mindenesetre
 
+par hasard
+esetleg
+
   @Deplacement
 tomber, faire une chute
 esik
@@ -977,6 +1002,10 @@ se réveiller
   @Metabolisme
 réveiller qqun/qqchose
 ébreszt vkit/vmit
+
+  @Alimentation @Socialisation
+doux, sucré, chéri
+édes
 
 ciel, firmament
 ég
@@ -1080,6 +1109,8 @@ appétit
 geler
 fagy
 
+sorte, espèce, marque
+fajta
 
 avoir froid
   (une seule conjugaison)
@@ -1282,6 +1313,10 @@ garçon, fils
 fiú
   -t, fia, -k
 
+  @Sport
+jouer au football
+focizik
+
   @Metier
 coiffeur
 fodrász
@@ -1355,7 +1390,11 @@ fő
   @Enseignement
 école supérieure
 főiskola
-  
+
+  @Alimentation
+cuisiner, faire cuire, distiller
+főz
+
   @Transport
 métro (petit modèle, spécifique à Budapest)
 földalatti
@@ -1784,6 +1823,9 @@ jeune sœur
   (toujours avec un possessif)
 húg
 
+viande, pulpe, chair
+hús
+
   @Alimentation
 viandes (dans le cadre d'un menu)
 húsételek
@@ -1891,6 +1933,9 @@ boisson
 innivaló
   ital
 
+faire signe de la main
+integet
+
   @Ameublement
 bureau
 iróasztal
@@ -1900,6 +1945,10 @@ iróasztal
 connaître
 ismer
   -t, -jen, -ne
+
+  @Socialisation
+familier
+ismerős
 
   @Religion
 Dieu
@@ -1946,6 +1995,10 @@ jár
 jouet, jeu
 játék
   -ot, -a, -ok
+
+  @Loisir
+jouer avec qqchose
+játsik vmit
 
   @Meteorologie
 verglacé
@@ -2217,6 +2270,9 @@ készülék
   @Anatomie
 main
 kéz
+
+crier
+kiabál
 
   @Metier
 éditeur (de livres)
@@ -2672,6 +2728,9 @@ s'asseoir
 leül
   -t, -jon, -ne
 
+soupe (n), juteux (adj)
+leves
+
 se deshabiller
 levetkőzik
   -vetkőzőtt, -vetkőzzőn, -vetkőzne
@@ -2837,6 +2896,9 @@ másik
 ours
 medve
 
+valoir
+megér
+
   @Socialisation
 convenir
 megfelel
@@ -2899,8 +2961,8 @@ meghív
   Meghívtom a barátoimat a születésnapomra.
 
   @Perception
-goûter (v)
-megkóstol
+goûter qqchose, essayer
+megkóstol vmit
 
   @Politesse
 remercier pour qqchose (hors dialogue)
@@ -2908,8 +2970,12 @@ remercier pour qqchose (hors dialogue)
 megkösszön vmit
   Megkösszöni Kati az ebédet.
 
+  @Perception
+apercevoir
+meglát
+
 visiter
-meglátogatni
+meglátogat
 
   
 surpris (2)
@@ -3032,6 +3098,12 @@ milyen
 minaret
 minaret
 
+  @Mesure @Differenciation
+chacun, chaque, tout, tous, de plus en plus
+  les deux yaourts (totalité)
+mind
+  minden a két joghurtot
+
   @Mesure
 tout
 minden
@@ -3056,6 +3128,11 @@ miniszter
 ministère
 minisztérium
 
+"Qu’est-ce que {pronom} {avoir} ?
+  Qu'est-ce que tu as ?
+Mi van vel{}?
+  Mi van veled?
+
 dire
 mond
   -ott -jon, -ana
@@ -3070,6 +3147,7 @@ mosakodik
 faire la vaisselle
 mosogat
 
+  @Sociabilite
 sourire (v)
 mosolyog
 
@@ -3290,6 +3368,9 @@ nyakkendő
 langue
 nyelv
 
+ouvrir qqchose
+nyit vmit
+
 retraité
 nyudíjas
 
@@ -3416,6 +3497,9 @@ se réjouir de quelque chose
   @Architecture
 tout équipé (pour habitation)
 összkomfort
+
+idée, suggestion, gag, boutade, inspiration
+ötlet
 
 créatif
 ötletes
@@ -3614,6 +3698,9 @@ pörkölt
 café (établissement) (2)
 presszó
 
+mou, tendre (viande)
+puha
+
   @Habillement
 chandail
 pulóver
@@ -3665,6 +3752,10 @@ remek
 
 ordre (l')
 rend
+
+  @Expression
+"D'accord", "Ça va", "C'est parfait"
+Rendben van.
 
   @Restaurant
 passer commande
@@ -3779,6 +3870,10 @@ sajnal
   Sajnalom hogy nem tetszik.
 
   @Alimentation
+fromage
+sajt
+
+  @Alimentation
 salade
 saláta
   -salátát, salátája, saláták
@@ -3786,6 +3881,10 @@ saláta
   @Anatomie
 talon
 sarok
+
+  @Metabolisme @Apparence
+être pâle
+sápadt
 
 jaune
 sárga
@@ -3851,6 +3950,9 @@ jamais
   (contraction)
 soha… nem
   sosem
+
+longtemps
+soká
 
   @Alimentation
 jambon
@@ -3949,6 +4051,10 @@ szalonna
 
 réciter, chahuter
 szaval
+
+  @Metier
+transporteur, fournisseur
+szállító
 
 compter
 számol
@@ -4080,7 +4186,11 @@ coeur
 szív
 
   @Socialisation
-service, faveur
+gentil, plaisant, aimable, amical
+szíves
+
+  @Socialisation
+service, faveur, cordialité, obligeance
 szívesség
 
 propre, sain
@@ -4269,6 +4379,12 @@ plein (adj)
   C'est plein, il n'y a plus de place.
 telt
   Telt haz van.
+
+fruits de mer
+tenger gyümölcsei
+
+produit (n)
+termék
 
 nature
   naturellement
@@ -4620,6 +4736,9 @@ affaire, magasin
 homme d'affaires
 üzletember
 
+dîner, souper
+vacsora
+
 sauvage
 vad
 
@@ -4885,6 +5004,10 @@ zongora
   @Habillement
 poche de vêtement
 zseb
+
+  @Habillement @Hygiene
+mouchoir
+zsebkendő
 
   @Alimentation
 gras (adj)
