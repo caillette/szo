@@ -1,4 +1,4 @@
-@K093
+@_K093
 
 allumer (une lampe uniquement), mettre le feu à qqchose
 felgyút vmit

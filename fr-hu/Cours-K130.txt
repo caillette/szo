@@ -1,4 +1,4 @@
-@K130
+@_K130
 
 articulation (anat)
 izület

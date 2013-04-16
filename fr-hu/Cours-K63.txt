@@ -1,4 +1,4 @@
-@K063
+@_K063
 
 allumer (un appareil électrique)
 bekapcsol

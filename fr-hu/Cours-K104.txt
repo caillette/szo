@@ -1,4 +1,4 @@
-@K104
+@_K104
 
 appareil
 készülék
