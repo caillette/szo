@@ -4244,6 +4244,10 @@ désirer
 vágyik vmire
 
   @Socialisation
+réponse
+válasz
+
+  @Socialisation
 répondre
 válaszol
   -t, -jon, -na
