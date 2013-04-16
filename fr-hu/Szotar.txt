@@ -691,12 +691,6 @@ Ejnye!
 vendeur
 eladó
 
-  @Meteorologie @Deplacement
-s'arrêter (impersonnel)
-  La pluie d'arrête.
-eláll
-  Eláll az eső.
-
   @Socialisation
 dire au revoir
 elbúcsúzik
@@ -933,7 +927,9 @@ esik
 
   @Meteorologie @Deplacement
 pluie (n), qui tombe (adj)
+  La pluie d'arrête.
 eső
+  Eláll az eső.
 
   @Meteorologie
 neiger
@@ -2883,7 +2879,7 @@ chaud
   il fait chaud
   avoir chaud
 meleg
-  ~ van
+  meleg van
   melege van
 
   @Postposition @Position
