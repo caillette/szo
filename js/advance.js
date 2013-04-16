@@ -161,10 +161,10 @@
           asList = viewAsList ;
         }
         if( asList ) {
-          currentCard = null ;
-          disclosure = -1 ;
+          // currentCard = null ;
+          disclosure = 0 ;
         } else if( oldAsList ) {
-          this.pickRandomCard() ;
+          // this.pickRandomCard() ;
         }
         return asList ;
       }
