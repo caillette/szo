@@ -86,6 +86,9 @@ anya
 belle-mère
 anyós
 
+maman
+anyu
+
   @Famille
 beau-père
 após
@@ -133,6 +136,9 @@ animal, créature
 rêveur
 álmodoró
 
+
+ensommeillé
+álmos
 
 rêve
 álom
@@ -521,7 +527,7 @@ csirke
 surpris (1)
 csodálkozo
 
-merveilleux
+miraculeux, merveilleux, admirable, étonnant, mirifique, pharamineux, bizarre, extravagant, singulier
 csodálatos
   -at, -ak, -abb
 
@@ -903,14 +909,22 @@ Erről jut eszembe…
 eset
   mindenesetre
 
-  @Sport
-ramer, canoter
-evez
+  @Deplacement
+tomber, faire une chute
+esik
+
+  @Meteorologie @Deplacement
+qui tombe (adj)
+eső
 
   @Moment
 soir
 este
   estét, estéje, esték
+
+  @Sport
+ramer, canoter
+evez
 
   @Politesse @Expression
 "Félicitations !"
@@ -956,6 +970,9 @@ vivre
 chant
 ének
   -et, -e, -ek
+
+exactement, juste (adv)
+éppen
 
   @Architecture
 bâtiment
@@ -1023,6 +1040,9 @@ aliment, plat, repas
   @Metabolisme @Repas
 appétit
 étvágy
+
+manger une glace
+fagyiz
 
   @Alimentation
 glace
@@ -1231,6 +1251,14 @@ foglalkozás
 fleuve
 folyó
   -t, -ja, -k
+
+tourner
+fordít
+  -ott, -son, -ana
+
+traduction
+fordítás
+  -t, -a, -ok
 
   @Transport
 circulation
@@ -1476,6 +1504,11 @@ hamis
   @Musique
 concert (musique classique seulement)
 hangverseny
+
+être de mauvaise humeur
+  Ne sois pas fou ; je suis désolé ; je demande excuse.
+haragszik
+  Ne haragudj.
 
   @Medecine
 diarrhée
@@ -1869,6 +1902,10 @@ dommage, tort, préjudice
 kár
   -t, -a, -ok
 
+  @Moment
+mardi
+kedd
+
 humeur, envie
   Il n'a pas envie.
 kedv
@@ -1881,6 +1918,12 @@ avoir envie de qqchose
 kedve van vmihez
   Van kedve vmihez.
   Mihez van kedved?
+
+aimer, apprécier, prendre soin de qqchose ou qqcun
+kedvel vkit/vmit
+
+(pour une personne) gentil, plaisant (adj), petit(e) ami(e), chéri(e) (n)
+kedves
 
   @Perception
 préféré, favori
@@ -1996,6 +2039,9 @@ demander quelque chose (poser une question)
 kérdez vmit
   -ett, -zen, -ne; kérdezni
 
+question
+kérdés
+
 fabriquer, produire
 készít
   készíteni
@@ -2014,6 +2060,10 @@ készül vminek
   @Moment @Temporalite
 tard
 késő
+
+  @Temporalite
+en retard (adv)
+későn
 
   @Temporalite
 plus tard
@@ -2150,6 +2200,9 @@ kivisz
    @Perception
 curieux (de savoir)
 kíváncsi
+
+voiture (fam)
+kocsi
 
   @Alimentation
 saucisson
@@ -2435,6 +2488,9 @@ lengyel
 lire (une inscription)
 leolvas
 
+devenir
+lesz
+
   @Deplacement @Transport
 descendre (d'un moyen de locomotion)
 leszáll
@@ -2578,6 +2634,31 @@ tout de suite
 máris
   azonnal
 
+  @Differenciation
+autre
+más
+
+  @Differenciation
+autrement
+máshogy
+
+  @Differenciation
+ailleurs, autre part
+máshol
+
+  @Differenciation
+à l’autre
+máshoz
+
+  @Differenciation
+les autres
+mások
+
+  @Differenciation
+avec l’autre
+mással
+
+  @Differenciation
 autre, l'autre
 másik
   -at
@@ -2646,10 +2727,6 @@ inviter (invitation formelle)
   J'invite mes amis à mon anniversaire.
 meghív
   Meghívtom a barátoimat a születésnapomra.
-
-  @Mesure
-en plus
-méghozza
 
   @Perception
 goûter (v)
@@ -2723,11 +2800,31 @@ messze vmitől
 station de métro
 metróállomás
 
+  @Temporalite @Repetition
+en plus (adv)
+még
+
+  @Temporalite @Repetition
+une fois de plus
+még egyszér
+
+  @Temporalite @Repetition
+toujours
+még mindig
+
+  @Temporalite
+avant la fin de la journée
+még ma
+
   @Negation @Temporalite
 pas encore
   Je m'amuse bien, je ne veux pas encore rentrer.
 még nem
   Én nagyon jól szórakozom, még nem akarok hazamenni.
+
+  @Mesure @Repetition
+en plus
+méghozza
 
 fâché (2)
 mérges
@@ -2796,6 +2893,9 @@ mostanra
   @Transport @Sport
 moto
 motorkerékpar
+
+cinéma
+mozi
 
   @Position @Postposition
 derrière ("vers derrière")
@@ -2979,6 +3079,9 @@ nőtlen
 infirmière, sœur (2)
 nővér
 
+cravate
+nyakkendő
+
 retraité
 nyudíjas
 
@@ -3080,6 +3183,11 @@ jeune frère
 vieux (pour un être humain)
 öreg
   -et, -ek, -ebb
+
+joie, bonheur, plaisir, délice
+  avec plaisir
+öröm
+  örömmel
 
 se réjouir
 örül
@@ -3325,6 +3433,9 @@ reggelizik
   @Position
 relatif (1)
 relatív
+
+chef-d'œuvre (n), superbe, splendide (adj)
+remek
 
 ordre (l')
 rend
@@ -3691,6 +3802,10 @@ szilva
 au goût de prune
 szilvás
 
+  @Couleur
+couleur
+szín
+
   @Metier
 comédien, acteur
 színész
@@ -3793,10 +3908,6 @@ szülő
 pause, vacances, récréation, entracte
 szünet
 
-  @Alimentation
-tablette de chocolat
-tábla csokoládé
-
 nettoyer, faire le ménage
   dérivé
 takarít
@@ -3843,6 +3954,13 @@ tárgyal
   @Architecture
 immeuble (habitation collective)
 társasház
+
+  @Alimentation
+tablette de chocolat
+tábla csokoládé
+
+sacoche
+táska
 
   @Position
 lointain
@@ -3987,6 +4105,9 @@ le reste
   les autres (uniquement pour des personnes)
 többi
   a többiek "A többiek már itt vannak."
+
+parfait, idéal, complet
+tökéletes
 
 verser, remplir
   -
