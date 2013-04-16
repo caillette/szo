@@ -346,6 +346,9 @@ mettre, introduire
 betesz
   -tett, -tegyen, -tenne
 
+agréer, admettre, recevoir, accepter, accueillir introduire
+bevesz
+
   @Deplacement @Position
 porter à l'intérieur
 bevisz
@@ -750,6 +753,10 @@ eljön
 arriver quelque part
 eljut vhol
 
+  @Deplacement @Socialisation
+accompagner
+elkísér
+
   @Deplacement
 envoyer (avec acomplissement)
 elküld
@@ -806,6 +813,9 @@ elő
 
 spectacle
 előadas
+
+autrefois, auparavant, avant de, d'abord, précédemment
+előbb
 
   @Alimentation
 entrée (lors d'un repas)
@@ -967,9 +977,14 @@ vivre
 él
   -t, -jen, -ne ; élni
 
+  @Musique
 chant
 ének
   -et, -e, -ek
+
+  @Musique
+chanter
+énekel
 
 exactement, juste (adv)
 éppen
@@ -1496,7 +1511,9 @@ hall
   hallott; hallani
   Mit hallott az Operában?
 
-  
+à la hâte, de bonne heure, hâtivement, sous peu, bientôt, tôt, vite
+hamar
+
 faux
 hamis
   -at, -ak, -abb
@@ -1547,6 +1564,10 @@ hány ?
 chambre à coucher
 hálószoba
   -szobát, -szobája, szobák
+
+  @Deplacement
+faire demi-tour, volte-face
+hátrafordul
 
   @Famille
 maîtresse de maison
@@ -2776,7 +2797,9 @@ megnéz vmit
 résoudre
 megoldani
 
-  
+foule
+megostromol
+
 changer (devenir autre)
   Tu as changé.
 megváltozik
@@ -3130,6 +3153,15 @@ oda
 arriver quelque part
 odaér
 
+  @Deplacement
+s'approcher
+  (sans COD)
+odamegy
+
+  @Deplacement
+se rendre qqpart
+odamedy vmire
+
   @Redactionnel
 écrire (en précisant la destination)
 odaír
@@ -3262,6 +3294,9 @@ ráad
 
 convaincre qqun de qqchose
 rábeszél vkit vmibe
+
+avoir le temps
+ráér
 
 allumer une cigarette
 rágyút
@@ -3657,6 +3692,9 @@ soha… nem
 jambon
 sonka
 
+condition, corde, cordon, défiler, ficelle, escalader, gravir, barème, escorte, chemin de fer, dresser, cortege, dressage, état, file d'attente, funiculaire, corde, ligne, rangée, rayon, série, suite, tour (de rôle)
+sor
+
   @Deplacement @Socialisation @Transport
 faire la queue
 sorban áll
@@ -3744,6 +3782,9 @@ szalámi
   @Alimentation
 lard
 szalonna
+
+réciter, chahuter
+szaval
 
 compter
 számol
@@ -4179,6 +4220,9 @@ törött
 
 bureau de tabac
 trafik
+
+connaissance
+tudás
 
 science
 tudomány

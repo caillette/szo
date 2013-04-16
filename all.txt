@@ -120,8 +120,6 @@ fr-hu/VieCourante.txt
 fr-hu/PronomsDemonstratifs.txt
 fr-hu/VerbesIrreguliers.txt
 fr-hu/VerbesIrreguliers2.txt
-fr-hu/Magyarora-10.txt
-fr-hu/Magyarora-Janikovsky.txt
 fr-hu/Szotar.txt
 fr-hu/Szotar-nevek.txt
 
