@@ -1,4 +1,4 @@
-title: Cours particulier K104
+@K104
 
 appareil
 készülék

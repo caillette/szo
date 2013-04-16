@@ -2972,6 +2972,12 @@ nap
 lever du soleil
 napfelkelte
 
+  @Repetition
+quotidien
+  notre repas quotidien
+napi
+  napi ételeink
+
   @Moment
 coucher du soleil
 naplemente
@@ -4024,6 +4030,10 @@ tetszik vkinek
 "il y a un an"/"depuis un an"
 egy teve
 
+  @Temporalite
+tout d'un coup (narration)
+egyszercsak
+
   @Mesure
 vraiment
 tényleg
@@ -4297,7 +4307,7 @@ avocat (profession)
 ügyvéd
 
   @Deplacement
-s'asseoir
+s'asseoir (action en cours)
 ül
 
 place assise

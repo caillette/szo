@@ -1,4 +1,4 @@
-title: Cours particulier K115
+@K115
 
 souci
   J'ai un grand souci.

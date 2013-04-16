@@ -1,4 +1,4 @@
-title: Cours particulier K116
+@K116
 
 compliqué
 bonyolult

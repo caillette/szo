@@ -1,4 +1,4 @@
-title: Cours particulier K153
+@K153
 
 deviner qqchose
 kitalál vmit

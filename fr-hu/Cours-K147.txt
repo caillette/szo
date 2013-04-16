@@ -1,4 +1,4 @@
-title: Cours particulier K147
+@K147
 
 avoir l'air de qqchose
   Le poisson a l'air cru.

@@ -1,4 +1,4 @@
-title: Cours particulier K101
+@K101
 
 signifier, vouloir dire qqchose
   Si tu ne sais plus où tu habites, cela veut dire que tu as trop bu.
