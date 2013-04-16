@@ -1268,7 +1268,7 @@ forme (contour) (2)
 forma
 
   
-chaud, en fusion
+chaud, en fusion, ardent, fervent, en effervescence, en fermentation, brûlant, surchauffé, bouillant, embrasé, torride
   chocolat chaud
 forró
   forró csokoládé
@@ -1732,6 +1732,18 @@ il convient de …
   Il convient d'être élégant pour aller à l'opéra.
 illik vmit csinálni
   Az opéraba illik elegánsan menni.
+
+  @Differenciation
+tel que
+  une si belle maison
+  C'est la vie.
+ilyen
+  ilyen szép ház.
+  Ilyen az élet.
+
+  @Differenciation
+"C'est sans précédent."
+Ilyen még nem volt.
 
 adorer
 imád
@@ -2223,6 +2235,10 @@ komoly zene
 tôt
 korán
 
+  @Sport
+patiner (sport)
+korcsolyázik
+
   @Medecine
 maladie (2)
 kór
@@ -2554,6 +2570,10 @@ lő
   
 paresseux
 lusta
+
+  @Loisir
+paresser
+lustálkod
 
 trou
 lyuk
@@ -2977,6 +2997,10 @@ quotidien
   notre repas quotidien
 napi
   napi ételeink
+
+  @Loisir
+prendre un bain de soleil
+napozik
 
   @Moment
 coucher du soleil
@@ -3613,6 +3637,10 @@ succès, épanouissement
 siker
 
   @Sport
+skier
+síel
+
+  @Sport
 bâton de ski
 síléc
 
@@ -3681,8 +3709,14 @@ gâteau
 sütemény
   -t
 
+  @Habillement
 couper (vest.)
 szab
+
+libre, licite, permis, légal
+  à l'air libre, dehors
+szabad
+  a szabadban
 
 règle, prescription
 szabály
@@ -3888,6 +3922,10 @@ szökik
 tapis
 szönyeg
  -et, -e, -ek
+
+  @Sport
+surfer
+szörfözik
 
   @Alimentation
 raisin
