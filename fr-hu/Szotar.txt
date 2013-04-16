@@ -673,6 +673,10 @@ l'un l'autre, réciproquement
 egymás
   Szeretik egymást.
 
+  @Temporalite
+tout d'un coup (narration)
+egyszercsak
+
   @Socialisation
 sortir ensemble (relation sentimentale)
   Ils sortent ensemble.
@@ -865,6 +869,10 @@ disparaître
 eltűnik
   -tűnt, -tűnjon, -tűnne
 
+  @Meteorologie
+prévision
+előrejelzés
+
   @Temporalite
 première fois
 először
@@ -924,8 +932,17 @@ tomber, faire une chute
 esik
 
   @Meteorologie @Deplacement
-qui tombe (adj)
+pluie (n), qui tombe (adj)
 eső
+
+  @Meteorologie
+neiger
+esik a hó
+
+  @Meteorologie
+pleuvoir
+esik az eső
+
 
   @Moment
 soir
@@ -960,6 +977,9 @@ se réveiller
   @Metabolisme
 réveiller qqun/qqchose
 ébreszt vkit/vmit
+
+ciel, firmament
+ég
 
   @Moment
 nuit
@@ -1056,6 +1076,17 @@ aliment, plat, repas
 appétit
 étvágy
 
+  @Meteorologie
+geler
+fagy
+
+
+avoir froid
+  (une seule conjugaison)
+fázik
+
+
+  @Alimentation
 manger une glace
 fagyiz
 
@@ -1119,6 +1150,10 @@ felhív vkit
 monter quelque chose
 felhoz
   -ott, -zon, -na
+
+  @Meteorologie
+nuage
+felhő
 
   @Redactionnel
 écrire dans (2)
@@ -1261,7 +1296,13 @@ foglalni
   @Metier
 profession, occupation
 foglalkozás
-  
+
+  @Meteorologie @Mesure @Architecture
+degré, échelle, escalier
+  "Quel température fait-il ?"
+fok
+  Hány fok van?
+
   @Geographie
 fleuve
 folyó
@@ -1351,6 +1392,10 @@ furcsa
   @Deplacement
 vite (2)
 fúrge
+
+  @Meteorologie
+il y a du vent
+fúj a szél
 
   @Sport
 se baigner
@@ -1610,6 +1655,12 @@ hétvége
 en vain
 hiába
 
+  @Sensation
+froid
+  il fait froid
+hideg
+  hideg van
+
   @Temporalite
 tout d'un coup
 hirtelen
@@ -1644,6 +1695,9 @@ hogy
 "Comment ça te plaît ?" (question ouverte)
 "Hogy tetszik?"
 
+lune
+hold
+
   @Moment
 demain
 holnap
@@ -1661,6 +1715,10 @@ hova
 apporter
 hoz
   -ott, -zon, -na
+
+  @Meteorologie
+neige
+hó
 
   @Moment
 mois
@@ -1715,6 +1773,14 @@ ideg
 temps
 idő
   -t, időm időt ideje időnk időtök ideük, -k
+
+  @Meteorologie
+temps (météo)
+  bulletin météo
+  "Quel temps fait-il ?"
+időjárás
+  időjárás jelentés
+  Milyen idő van?
 
   @Temporalite @Moment
 de temps en temps
@@ -2264,6 +2330,9 @@ korcsolyázik
 maladie (2)
 kór
 
+brouillard
+köd
+
   @Medecine
 tousser
 köhög
@@ -2809,6 +2878,14 @@ megváltozik
 acheter (action terminer)
 megvesz
 
+  @Sensation @Meteorologie
+chaud
+  il fait chaud
+  avoir chaud
+meleg
+  ~ van
+  melege van
+
   @Postposition @Position
 à côté (sans mouvement)
 mellett
@@ -3269,9 +3346,15 @@ créatif
 veuf, veuve
 özvegy
 
-  @Meteorologie
+  @Apparence @Moment @Meteorologie
 automne/gris-blanc (cheveux)
 ősz
+
+  @Moment @Meteorologie
+automne
+  en automne
+ősz
+  ősszel
 
   @Economie @Restaurant
 en tout (pour une addition)
@@ -3863,6 +3946,10 @@ chaise
 szék
   -et, -e, -ek
 
+  @Meteorologie
+vent
+szél
+
   @Architecture
 cathédrale (1)
 székesegyház
@@ -4024,6 +4111,12 @@ applaudir
 tapsol
   Hogy tapsol a közönség!
 
+  @Moment
+printemps
+  au printemps
+tavasz
+  tavasszal
+
   @Transport
 station de taxi
 taxiállomás
@@ -4109,9 +4202,9 @@ tetszik vkinek
 "il y a un an"/"depuis un an"
 egy teve
 
-  @Temporalite
-tout d'un coup (narration)
-egyszercsak
+  @Moment @Meteorologie
+hiver
+tél
 
   @Mesure
 vraiment
@@ -4570,6 +4663,10 @@ faire attention, surveiller qqun
 vigyáz vkire
   vigyázni
   vigyazz magadra
+
+  @Meteorologie
+orage
+vihar
 
   @Transport
 arrêt de tramway
