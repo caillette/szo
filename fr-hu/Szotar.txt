@@ -135,7 +135,7 @@ lit
 áll
   állni
 
-  @Faune
+  @Animal
 animal, créature
 állat
 
@@ -383,11 +383,11 @@ bérlet
 timbre-poste
 bélyeg
 
-  @Faune
+  @Animal
 taureau
 bika
 
-  @Faune
+  @Animal
 mouton
 birka
 
@@ -478,7 +478,7 @@ büntetés
 crayon
 ceruza
 
-  @Faune
+  @Animal
 chaton
 cica
 
@@ -595,7 +595,7 @@ matin, matinée
 délelőtt
   -öt, -je, -ök
 
-  @Faune
+  @Animal
 cochon (appellation prosaïque)
 disznó
 
@@ -2892,7 +2892,7 @@ autre, l'autre
 másik
   -at
 
-  @Faune
+  @Animal
 ours
 medve
 
@@ -3468,7 +3468,7 @@ russe
 orosz
   oroszul
 
-  @Faune
+  @Animal
 lion
 oroszlána
 
@@ -3652,7 +3652,7 @@ exact
 pontos
   -at, -ak,-abb
 
-  @Faune @Alimentation
+  @Animal @Alimentation
 poisson gras d'eau douce, pas très bon
 ponty
 
