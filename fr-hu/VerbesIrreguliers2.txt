@@ -1,4 +1,4 @@
-title: Verbes irréguliers 2
+@VerbesIrreguliers
 
 aller, indicatif présent
   én

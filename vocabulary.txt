@@ -1,5 +1,10 @@
 fr-hu/Szotar.txt
 
+fr-hu/PronomsDemonstratifs.txt
+fr-hu/VerbesIrreguliers.txt
+fr-hu/VerbesIrreguliers2.txt
+
+
 
 #@Anatomie Testrész
 #@Coordination Mellekmondatok
