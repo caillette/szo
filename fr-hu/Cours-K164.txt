@@ -45,11 +45,11 @@ reklám
 
 diminuer qqchose (revoir un réglage à la baisse)
   Le concierge a baissé le chauffage.
-lejebb vmit venni
+legjebb vmit venni
   A portás a legjebb vette a fűtést.
 
 diminuer, baisser qqchose (un réglage)
-lejebb kapcsol vmit
+legjebb kapcsol vmit
 
 gaspiller qqchose
   Je lui fais perdre son temps.
