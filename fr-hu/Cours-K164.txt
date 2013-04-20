@@ -8,7 +8,7 @@ lekésik vmit
 valable
   Le billet est valable pour le train suivant.
 érvényes
-  A jegy érvényes következő vonatra.
+  A jegy érvényes a következő vonatra.
 
 de plus en plus (intensité)
 egyre inkább
@@ -105,7 +105,7 @@ edény
 
   @Cuisine
 instrument de cuisine
-konyhafelszrelés
+konyhafelszerelés
 
   @Alimentation
 alimentation
