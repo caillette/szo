@@ -500,7 +500,7 @@ cím
   -et, -e, -ek
 
   @Expression
-introduction d'une interrogation en exprimant la surprise
+[introduction d'une interrogation en exprimant la surprise]
 Csak nem … ?
   Csak nem van beteg ?
 
@@ -964,6 +964,7 @@ erősleves
 "À ce propos…"
 Erről jut eszembe…
 
+  @Metabolisme
 faim
 éhesség
 
@@ -1922,7 +1923,7 @@ igér vmit vkinek
 Így ni!
 
   @Expression
-il convient de …
+"Il convient de …"
   Il convient d'être élégant pour aller à l'opéra.
 illik vmit csinálni
   Az opéraba illik elegánsan menni.
@@ -3216,7 +3217,7 @@ mosakodik
 faire la vaisselle
 mosogat
 
-  @Sociabilite
+  @Socialisation
 sourire (v)
 mosolyog
 
@@ -3289,7 +3290,7 @@ tante
 nagynéni
 
   @Expression
-exclamation pour souligner ce que dit l'autre est évident
+[exclamation pour souligner ce que dit l'autre est évident]
 Na hallod!
 
   @Alimentation
@@ -3582,10 +3583,6 @@ veuf, veuve
 
   @Apparence @Moment @Meteorologie
 automne/gris-blanc (cheveux)
-ősz
-
-  @Moment @Meteorologie
-automne
   en automne
 ősz
   ősszel
@@ -3659,7 +3656,7 @@ cuit à la vapeur
 párolt
 
   @Expression
-Bien sûr, …
+"Bien sûr, …"
 Persze, …
 
   
@@ -4407,7 +4404,7 @@ tanul
 étudier
 tanulmányoz
 
-  @Repas
+  @Cuisine
 assiette
 tányér
 
@@ -4496,7 +4493,7 @@ természet
   @Expression
 "Je vous en prie, …"
   Veuillez entrer.
-tessék …
+Tessék…
   Tessék bemenni.
 
   @Anatomie
@@ -4704,8 +4701,8 @@ impoli
 udvariatlan
 
   @Politesse
-"n'est-ce pas ?"
-ugye?
+"N'est-ce pas ?"
+Ugye?
 
   @Anatomie
 doigt

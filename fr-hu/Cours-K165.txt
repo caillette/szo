@@ -28,7 +28,7 @@ condition
 feltétel
 
   @Expression
-à condition que …
+"à condition que …"
 azzal a feltéllel, hogy…
 
 à tout prix, sans condition
