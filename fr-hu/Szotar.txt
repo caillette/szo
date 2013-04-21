@@ -405,6 +405,11 @@ biztos
 sûrement
 biztosan
 
+avoir confiance en qqchose
+  Il a confiance en un bel avenir.
+bízik vmiben
+  Bízik egy szép jövőben.
+
   @Habillement
 corsage
 bluz
@@ -413,6 +418,10 @@ bluz
 heureux
 boldog
   -ot, -ok, -abb
+
+  @Urbanisme
+magasin, boutique
+bolt
 
   @Alimentation
 vin
@@ -570,6 +579,10 @@ cszengő
 sonner 
 csendet
 
+  @Transport @Cuisine
+canot, embarcation, bateau, coque, tasse
+csésze
+
   @Expression
 "Ah mais non"
 dehogy
@@ -610,6 +623,15 @@ divatos
   @Architecture @Ameublement
 décoration
 díszlet
+
+  @Contenant
+boîte, carton
+doboz
+
+tabagisme
+  défense de fumer
+dohányzás
+  tilos a dohányzás
 
 fumer (du tabac)
 dohányzik
@@ -942,6 +964,9 @@ erősleves
 "À ce propos…"
 Erről jut eszembe…
 
+faim
+éhesség
+
 événement, occasion
   dans tous les cas
 eset
@@ -1073,6 +1098,10 @@ valable
   Mon billet n'est plus valable.
 érvényes
   Berletem nem érvényes.
+
+  @Position
+nord
+észak
 
   @Socialisation
 être d'accord avec quelqu'un à propos de quelque chose
@@ -1376,6 +1405,10 @@ forró
 fauteuil
 fotel
   -t, -e, -ek
+
+  @Architecture
+rez-de-chaussée
+földszint
 
   @Postposition
 vers au-dessus
@@ -1936,6 +1969,9 @@ innivaló
 faire signe de la main
 integet
 
+bureau (fonction, emploi, magasin, boutique permanence, agence)
+iroda
+
   @Ameublement
 bureau
 iróasztal
@@ -2053,6 +2089,10 @@ kabát
 chapeau
 kaláp
 
+  @Alimentation
+chou (légume)
+káposzta
+
   @Anatomie
 bras
 kar
@@ -2126,6 +2166,10 @@ cher
 kedves
   -et, -ek, -ebb
 
+  @Position
+est
+kelet
+
   @Socialisation
 devoir
   Je dois acheter une nouvelle robe.
@@ -2140,7 +2184,10 @@ kellemes
 désagréable
 kellemetlen
 
-  
+  @Alimentation
+pain
+kenyér
+
 rond
 kerek
 
@@ -2590,6 +2637,10 @@ külföldi
 particulièrement
 különösen
 
+  @Urbanisme
+banlieue
+külváros
+
   @Sport
 ballon
 labda
@@ -2772,6 +2823,11 @@ líszt
 litre
 liter
   -t
+
+  @Animal
+cheval
+ló
+  lovat, lova, lovak
 
 tirer (avec une arme)
 lő
@@ -3055,6 +3111,12 @@ messze vmitől
 station de métro
 metróállomás
 
+  @Temporalite
+à partir de quand (postp)
+  à partir de quand jusqu'à quand
+mettől
+  mettől meddig
+
   @Temporalite @Repetition
 en plus (adv)
 még
@@ -3128,10 +3190,17 @@ miniszter
 ministère
 minisztérium
 
+de bonne qualité
+minőség
+
 "Qu’est-ce que {pronom} {avoir} ?
   Qu'est-ce que tu as ?
 Mi van vel{}?
   Mi van veled?
+
+  @Alimentation
+noix, noisette
+mogyoró
 
 dire
 mond
@@ -3374,7 +3443,10 @@ nyit vmit
 retraité
 nyudíjas
 
-  
+  @Position
+ouest
+nyugat
+
 calme
 nyugodt
 
@@ -3558,6 +3630,10 @@ pad
 crêpe (mets)
 palacsinta
 
+  @Transport
+gare, station
+pályaudvar
+
   @Socialisation
 donner des ordres
   Que désirez-vous ? (Je vous prie d'ordonner.)
@@ -3602,6 +3678,10 @@ pénz
   @Economie
 caisse (réserve d'argent)
 pénztár
+
+  @Urbanisme
+marché
+piac
 
   @Architecture
 cave
@@ -3954,6 +4034,10 @@ soha… nem
 longtemps
 soká
 
+  @Temporalite
+souvent
+sokszor
+
   @Alimentation
 jambon
 sonka
@@ -4094,6 +4178,12 @@ szegény
 armoire
 szekrény
   -t, -e, -ek
+
+  @Mesure
+tranche
+  une tranche de pain
+szelet
+  egy szelet kenyer
 
   @Anatomie
 œil
@@ -4270,6 +4360,10 @@ blond
 szőke
   szőket, szőkék, szőkebb
 
+  @Travail
+être en grève, faire la grève
+sztrájkol
+
 besoin
   {} a besoin de qqchose
 szükség
@@ -4312,6 +4406,10 @@ tanul
   @Enseignement
 étudier
 tanulmányoz
+
+  @Repas
+assiette
+tányér
 
 applaudir
   Comme le public applaudit !
@@ -4357,6 +4455,10 @@ teher
   @Transport
 camion
 teheraúto
+
+  @Alimentation
+lait
+tej
 
   @Alimentation
 crème fraîche
@@ -4420,6 +4522,10 @@ plaire à quelqu'un
 tetszik vkinek
   tetszett, tetsszen, tetszene
 
+  @Animal
+chameau
+teve
+
   @Temporalite
 "il y a un an"/"depuis un an"
 egy teve
@@ -4474,6 +4580,10 @@ titkárnő
 
 secret (n)
 titok
+
+  @Alimentation
+œuf
+tojás
 
   @Anatomie
 double menton
@@ -4724,6 +4834,9 @@ fête
 vide
 üres
 
+verre (matériau), bouteille
+üveg
+
 envoyer un message
 üzen
   üzeni
@@ -4963,6 +5076,10 @@ vizsga
 examen médical
 vizsgálat
 
+  @Transport
+train
+vonat
+
 rouge, roux
   -
   aux cheveux roux
@@ -4977,6 +5094,10 @@ vő
   @Famille
 fiancé (masculin seulement)
 vőlegénye
+
+  @Contenant
+sac
+zacskó
 
 bruit
 zaj

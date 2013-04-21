@@ -6,9 +6,6 @@ fr-hu/AKorhazban-5.txt
 fr-hu/Mellekmondatok-1.txt
 fr-hu/Mellekmondatok-2.txt
 fr-hu/Mellekmondatok-3.txt
-fr-hu/Cours-V07.txt
-fr-hu/Cours-V08.txt
-fr-hu/Cours-V09.txt
 fr-hu/Cours-V12.txt
 fr-hu/Cours-K53.txt
 fr-hu/Cours-K54.txt
