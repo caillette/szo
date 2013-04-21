@@ -648,7 +648,7 @@ dolog
 viande hachée
 dorálthús
 
-  @Socialisation
+  @Socialisation @Temperament
 fâché (1)
 dühös
 
@@ -3144,6 +3144,7 @@ még nem
 en plus
 méghozza
 
+  @Temperament
 fâché (2)
 mérges
 
@@ -3441,6 +3442,7 @@ nyelv
 ouvrir qqchose
 nyit vmit
 
+  @Travail
 retraité
 nyudíjas
 
@@ -3448,9 +3450,11 @@ nyudíjas
 ouest
 nyugat
 
+  @Temperament
 calme
 nyugodt
 
+  @Temperament
 tranquillement, calmement
 nyugodtan
 
@@ -3490,12 +3494,12 @@ ohajt
 de là-bas
 onnan
 
-  
+  @Temperament
 intelligent
 okos
   -at, -ak, -abb
 
-  
+  @Economie
 bon marché, peu cher
 olcsó
 
@@ -3529,13 +3533,14 @@ orvos
 classe, catégorie, rayon
 osztály
 
-  
+  @Temperament
 optimiste
 optimista
 
 grande roue (attraction foraine)
 oriáskerék
 
+  @Nationalite
 russe
   en russe
 orosz
@@ -3574,6 +3579,7 @@ tout équipé (pour habitation)
 idée, suggestion, gag, boutade, inspiration
 ötlet
 
+  @Temperament
 créatif
 ötletes
 
@@ -3739,7 +3745,7 @@ postaláda
 programme
 program
 
-  @Alimentation
+  @Alimentation @Animal
 dinde
 pulyka
 
@@ -3748,6 +3754,7 @@ grand, élancé
 magas
   -at, -ak, -abb
 
+  @Deplacement
 arriver (action achevée)
 megérkezik
   -kezett, -kezzen, -kezne
@@ -4248,6 +4255,7 @@ székesegyház
 íle
 sziget
 
+  @Temperament
 sévère
 szigorú
   -t, -ak, -bb
@@ -4297,9 +4305,11 @@ samedi
 szombat
   -ot, -ja, -ok
 
+  @Metabolisme
 assoifé
 szomjas
 
+  @Temperament
 triste
 szomorú
 
@@ -4308,13 +4318,16 @@ voisin
 szomszéd
   -ot, -ja, -ok
 
+  @Temperament @Enseignement
 assidû
 szorgalmas
 
+  @Redactionnel
 mot
 szó
   -t, szava, szavak
 
+  @Socialisation @Musique
 dire, émettre en continu des sons à l'intention d'êtres humains
   -
   On entend la radio.
@@ -4996,6 +5009,7 @@ blague, histoire drôle
 vicc
   -et, -e, -ek
 
+  @Temperament
 joyeux
 vidám
 

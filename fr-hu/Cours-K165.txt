@@ -29,7 +29,7 @@ feltétel
 
   @Expression
 "à condition que …"
-azzal a feltéllel, hogy…
+azzal a feltétellel, hogy…
 
 à tout prix, sans condition
 feltétlenül
@@ -55,7 +55,7 @@ impressionnant
 lenyűgöző
 
 apercevoir
-  Je voyais cette pancarte de la cuisine.
+  J'apercevais cette pancarte depuis la cuisine.
 kilát vmire
-  Kiláttam erre a táblára a konyhába.
+  Kiláttam erre a táblára a konyhából.
 
