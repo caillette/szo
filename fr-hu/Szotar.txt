@@ -66,6 +66,10 @@ alkohol
 place debout
 allóhelye
 
+  @Alimentation
+pomme (fruit)
+alma
+
   @Postposition
 sous (non-relatif)
 alól
@@ -258,6 +262,10 @@ balra
   @Transport @Medecine
 accident
 baleset
+
+  @Alimentation
+banane
+banán
 
   @Economie
 banque
@@ -582,6 +590,14 @@ csendet
   @Transport @Cuisine
 canot, embarcation, bateau, coque, tasse
 csésze
+
+  @Alimentation
+sucre, bonbon
+cukor
+
+  @Mesure
+décilitre
+deci
 
   @Expression
 "Ah mais non"
@@ -947,6 +963,10 @@ aliment
   voir :
 ennivaló
   etel
+
+  @Alimentation
+fraise
+eper
 
   @Architecture
 balcon
@@ -2090,10 +2110,6 @@ kabát
 chapeau
 kaláp
 
-  @Alimentation
-chou (légume)
-káposzta
-
   @Anatomie
 bras
 kar
@@ -2122,6 +2138,10 @@ poële (pour le chauffage)
 kályha
   kályhát, kalyhája, kályhák
 
+  @Alimentation
+chou (légume)
+káposzta
+
 café (établissement) (1)
 kávéház
   -at, -a, -ak
@@ -2130,6 +2150,10 @@ kávéház
 dommage, tort, préjudice
 kár
   -t, -a, -ok
+
+  @Alimentation
+café (boisson)
+kávé
 
   @Moment
 mardi
@@ -2217,12 +2241,17 @@ jardiner
 kertészkedik
 
   @Economie
-coûter
+coûter qqchose
+  Combien ça coûte ?
   Les tickets coûtent 1,80 €.
 kerül vmibe
+  Mennyibe kerül ?
   A jegyek 1 euró 80-ba kerülnek.
 
-  
+  @Deplacement
+éviter qqchose
+kerül vmit
+
 amer
 keserű
 
@@ -2391,8 +2420,13 @@ kijárat
 sortir (référence au dehors)
 kijön
 
+  @Perception
 vue, point de vue (sens propre)
 kilátás
+
+  @Mesure
+kilogramme
+kiló
 
 regarder dehors
 kinez
@@ -2469,6 +2503,10 @@ korán
   @Sport
 patiner (sport)
 korcsolyázik
+
+  @Contenant
+bocal, cruche, pot
+korsó
 
   @Medecine
 maladie (2)
@@ -3090,6 +3128,12 @@ mellé
 "Pendant combien de temps ?"
 Mennyi ideig?
 
+  @Expression @Restaurant
+payer
+  Combien vous dois-je ?
+fizet
+  Mennyit fizetek ?
+
   @Famille
 belle-fille
 meny
@@ -3633,9 +3677,9 @@ pad
 crêpe (mets)
 palacsinta
 
-  @Transport
-gare, station
-pályaudvar
+  @Alimentation @Religion
+nue, ciel, paradis, tomate
+paradicsom
 
   @Socialisation
 donner des ordres
@@ -3651,6 +3695,10 @@ part
   @Sport
 piste, terrain
 pálya
+
+  @Transport
+gare, station
+pályaudvar
 
   @Mesure
 quelque (2)
@@ -3718,6 +3766,10 @@ plainte
 panasz
   Mi a panasza?
 
+  @Alimentation
+thé
+tea
+
   @Mesure
 plein (adj, invariable)
 tele
@@ -3730,7 +3782,10 @@ pillanat
 affreux, très mauvais, très moche
 pocsék
 
-  
+  @Contenant
+verre (récipient individuel)
+pohár
+
 exact
 pontos
   -at, -ak,-abb
@@ -4075,6 +4130,10 @@ sógornő
   @Alimentation
 salé
 sós 
+
+  @Alimentation
+bière (boisson)
+sör
 
    @Apparence
 obscur, sombre
@@ -4780,7 +4839,7 @@ uzsonnázik
   -názott, -názzon, -názna
 
   @Perception
-de cette façon-là
+de cette façon-là, ainsi, tellement
   il sent que …
 úgy
   úgy erzi, hogy…
@@ -4893,6 +4952,10 @@ valójobam
 
 réalité
 valóság
+
+  @Economie
+acheter, faire des courses
+vásárol
 
   @Transport
 chemin de fer
@@ -5140,6 +5203,10 @@ zseb
   @Habillement @Hygiene
 mouchoir
 zsebkendő
+
+  @Alimentation
+chignon, petit pain
+zsemle
 
   @Alimentation
 gras (adj)
