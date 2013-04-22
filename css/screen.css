@@ -119,6 +119,10 @@
   border-bottom : solid 2px #dddddd ;
 }
 
+#board > table span {
+  line-height : 1.1 ;
+}
+
 #board > table.card-list > tbody > tr {
   border : none ;
 }
