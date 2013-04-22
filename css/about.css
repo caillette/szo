@@ -51,3 +51,8 @@ pre {
 q:before { content : '“' ; }
 q:after { content : '”' ; }
 
+
+#qrcode {
+  float : right ;
+  margin : 0 1em 1em 1em ;
+}
