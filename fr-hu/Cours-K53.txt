@@ -45,6 +45,7 @@ körülbelül
   körülbelül négy órakor
   kb.
 
+  @Postposition
 ensemble (association)
   mon argent avec (en même temps que) mon passeport
 vmivel együtt 
