@@ -5,9 +5,9 @@ rater quelque chose (à cause d'un retard)
 lekésik vmit
   Lekéstem a vonatomat.
 
-valable
+valable pour qqchose
   Le billet est valable pour le train suivant.
-érvényes
+érvényes vmire
   A jegy érvényes a következő vonatra.
 
 de plus en plus (intensité)
@@ -35,7 +35,7 @@ al{}
   Szépségszalon volt az épület alján.
 
 
-en haut (de qqchose)
+en haut {de qqchose}
   Il y avait un bar en haut de l'hôtel.
 tet{}
   Bár volt a szallóda tetején.
