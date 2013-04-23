@@ -156,6 +156,20 @@ URL will be: http://caillette.github.com/szotargep
 Use a `?vocabulary=my-file.txt` parameter in the URL (yes it works with `file://`). Default is `vocabulary.txt`.
 
 
+== Chrome integration
+
+Chrome Apps http://developer.chrome.com/trunk/apps/app_deprecated.html[forbid] access to Browser history. So Chrome Apps aren't what we need.
+
+What we need: some Chrome Extension that can read the files in a user-specified directory.
+
+There is an API for http://stackoverflow.com/a/7645775/1923328[that] but only for files under Extension's root directory.
+
+https://developer.chrome.com/extensions/npapi.html[NPAPI] plugins seem too much permissive.
+
+HTML 5 http://www.html5rocks.com/en/tutorials/file/dndfiles[manual selection] could do the job if there are not too many files (can't select a whole directory, need to pick files one by one).
+
+Clever guy already found that: http://jorgecardoso.eu/htmlblog/2012-08-30-Listing%20a%20user%20directory%20with%20javascript%20in%20a%20Chrome%20extension.html[Listing a user directory with javascript in a Chrome extension]
+
 
 
 == Rearchitecture code

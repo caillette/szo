@@ -11,7 +11,7 @@ több … mint
 parmi (postp)
   Parmi eux il y a un magazine.
 közül  
-  Közülük az egyk magazin.
+  Közülük az egyik magazin.
  
 pour (postp)
   pour moi
