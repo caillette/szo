@@ -1,0 +1,39 @@
+@_K166
+
+  @Materiau
+fourrure (matériau)
+  Ce manteau (fait) de fourrure est très chaud.
+szőrme
+  A szőrmeből készített kabát nagyon meleg.
+
+  @Famille
+veuf, veuve
+  Le cambrioleur a rendu veuve la femme du millionnaire.
+öszvegy
+  A betörő öszveggyé tette a milliomos feleségét.
+
+objet
+tárgy
+
+mosquée
+mecset
+
+prostituée
+  Les femmes qui attendent (se tiennent debout) dans la rue ne sont pas toutes des prostituées.
+prostituált
+  Nem minden utcán alló nő prostituált.
+
+prostituée (fam)
+kurvá
+
+
+réussir quelque chose
+  Judith a réussi son examen.
+vmi sikerül vkinek
+  Juditnak sikerült a vizsgája.
+
+réussir à faire qqchose
+  J'ai réussi à résoudre le problème.
+sikerül vmit csinálni
+  Sikerült a problémát megoldanom.
+
