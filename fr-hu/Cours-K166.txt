@@ -8,9 +8,7 @@ szőrme
 
   @Famille
 veuf, veuve
-  Le cambrioleur a rendu veuve la femme du millionnaire.
 öszvegy
-  A betörő öszveggyé tette a milliomos feleségét.
 
 objet
 tárgy
@@ -24,7 +22,7 @@ prostituált
   Nem minden utcán alló nő prostituált.
 
 prostituée (fam)
-kurvá
+kurva
 
 
 réussir quelque chose
@@ -37,3 +35,7 @@ réussir à faire qqchose
 sikerül vmit csinálni
   Sikerült a problémát megoldanom.
 
+rendre qqun qqchose
+  Le cambrioleur a rendu veuve la femme du millionnaire.
+tesz vkit vmivé
+  A betörő öszveggyé tette a milliomos feleségét.

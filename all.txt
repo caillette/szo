@@ -112,6 +112,8 @@ fr-hu/Cours-K163.txt
 fr-hu/Cours-K164.txt
 fr-hu/Cours-K165.txt
 fr-hu/Cours-K166.txt
+fr-hu/Cours-K167.txt
+fr-hu/Cours-K168.txt
 fr-hu/VieCourante.txt
 fr-hu/PronomsDemonstratifs.txt
 fr-hu/VerbesIrreguliers.txt
