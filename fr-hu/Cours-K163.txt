@@ -87,7 +87,7 @@ se reconstruire en qqchose
 átépül vmivé
 
 transformer qqchose, effectuer un tour de magie
-  La sorcière transforme le fils du roi en crapaud.
+  La sorcière a transformé le fils du roi en crapaud.
 varászol vmit
   A boszorkány a királyfit békává varászolta.
 

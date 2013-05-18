@@ -1,0 +1,34 @@
+@_K172
+
+  @Expression
+"Il s'agit de qqchose."
+Szó van vmiről.
+
+  @Expression
+"Il y a un mot pour décrire [qqchose]"
+  Il n'y a pas de mot pour décrire cela.
+Szó van vmire.
+  Erre nincs szó.
+
+fête (vieillot)
+mulatság
+
+  @Expression
+"Amuse-toi bien !"
+Mulass jól!
+
+en l'honneur de qqun
+  Il organise une fête en l'honneur d'un couple hollandais.
+vkinek a tiszteletere
+   Rendez egy mulatság egy holland házapsár tisteletere.
+
+respecter qqun
+tisztel vkit
+
+accueillir qqun
+  Ce chien nous a accueilli très inamicalement.
+fogad vkit
+  Ez a kutya nagyon barátságtalanul fogatott minket.
+
+
+
