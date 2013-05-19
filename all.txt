@@ -1,4 +1,3 @@
-fr-hu/AKorhazban-2.txt
 fr-hu/AKorhazban-3.txt
 fr-hu/AKorhazban-4.txt
 fr-hu/AKorhazban-5.txt

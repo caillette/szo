@@ -104,6 +104,9 @@ após
 visage
 arc
 
+là-dessus, sur ces entrefaites
+arra
+
   @Famille
 dame (femme mariée)
 asszony
@@ -120,6 +123,9 @@ atlétika
   @Temporalite
 tout de suite
 azonnal
+
+depuis lors, à partir de là, dès cet instant
+azóta
 
   @Temporalite
 puis, ensuite, ultérieurement, plus tard
@@ -328,6 +334,10 @@ behív
 beír
   Kiírom a szovakat a füzetbe.
 
+  @Perception @Position
+regarder à travers qqchose, appliquer un oeil à qqchose (2)
+belenéz vmibe
+
   @Nationalite
 interne au territoire national (pour les choses uniquement) (1)
   tourisme intérieur
@@ -339,7 +349,7 @@ interne (adj)
 belső
 
   @Perception @Position
-regarder qqchose d'en haut
+regarder qqchose d'en haut, regarder à travers qqchose, appliquer un oeil à qqchose (1)
 benéz vmibe
 
   @Perception @Socialisation
@@ -1319,10 +1329,12 @@ peindre
 festeni
   festett
 
+nid, repaire, foyer
+fészek
+
   @Perception
-avoir peur
-fél (igek)
-  -t, -jen, -ne
+avoir peur de qqchose
+fél vmitől
 
   @Mesure
 demi
@@ -1534,6 +1546,9 @@ független
 
 cahier
 füzet
+
+herbe, herbage, gazon
+fű
 
   @Alimentation
 pâtes fraîches
@@ -1801,6 +1816,15 @@ hideg
 tout d'un coup
 hirtelen
 
+avoir foi en quelque chose ou quelqu'un
+hisz vkiben, vmiben
+
+croire quelqu'un, ce que dit quelqu'un
+hisz vkinek
+
+croire quelque chose
+hisz vmit
+
 bureau (lieu clos pour travailler)
 hivatal
 
@@ -1827,6 +1851,9 @@ hív
 
 comment, que
 hogy
+
+comment, de quelle manière
+hogyan
 
 "Comment ça te plaît ?" (question ouverte)
 "Hogy tetszik?"
@@ -1991,6 +2018,9 @@ influenza
 chemise
 ing
   inget
+
+plutôt, de préférence
+inkább
 
   @Deplacement
 d'ici
@@ -2247,6 +2277,9 @@ kerest
   @Religion
 chrétien
 kerestény
+
+en travers, d'outre en outre
+keresztül
 
   @Transport
 vélo
@@ -2532,14 +2565,17 @@ patiner (sport)
 korcsolyázik
 
 
+  @Contenant
+bocal, cruche, pot
+korsó
+
   @Medecine
 hôpital
 kórház
 
-
-  @Contenant
-bocal, cruche, pot
-korsó
+  @Medecine
+salle d'hôpital
+kórterem
 
   @Medecine
 maladie (2)
@@ -2760,7 +2796,9 @@ lánc
 pair de jumelles
 látcsö
 
-  
+visite
+látogatás
+
 sembler (1)
   il semble
 látsani
@@ -2924,6 +2962,10 @@ aujourd'hui
   d'aujourd'hui
 ma
   mai
+
+oiseau
+madár
+  madarak, madara, madarat
 
 sûr de lui
 magabiztos
@@ -3296,6 +3338,9 @@ mos
 se laver
 mosakodik
 
+laver, baigner
+mosdat
+
 faire la vaisselle
 mosogat
 
@@ -3417,6 +3462,9 @@ journée
   dans la journée
 nappal
   napközben
+
+jour après jour
+napról napra
 
   @Famille
 oncle
@@ -3689,6 +3737,9 @@ franc, sincère
 heure, montre
 óra
   órát, órajá, órak
+
+par exemple
+például
 
   @Position
 là-dessus
@@ -3992,7 +4043,9 @@ rendszeresen
 système
 rendszer
 
-  
+sacré, fichu, drôle de…
+rettentő
+
 ancien (objet inanimé ou abstrait)
   -
   Mes vieux amis
@@ -4055,6 +4108,9 @@ se désoler
   Je suis désolé que ça ne (te) plaise pas.
 sajnal
   Sajnalom hogy nem tetszik.
+
+malheureusement, par malheur, hélas
+sajnos
 
   @Alimentation
 fromage
@@ -4847,6 +4903,9 @@ ujj
 ennuyeux
 unalmas
 
+s'ennuyer, être blasé
+unatkozik
+
   @Famille
 petit-fils, petite fille
 unoka
@@ -5250,6 +5309,10 @@ zenekar
   @Metier
 musicien
 zenész
+
+  @Couleur
+vert (n)
+zöld
 
   @Alimentation
 haricot vert
