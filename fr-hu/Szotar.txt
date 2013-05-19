@@ -710,6 +710,9 @@ pas du tout
 egyáltalán … nem
   Egyáltalán nem szeretek feher bort.
 
+seul, seulement
+egyedül
+
   @Deplacement
 directement, tout droit
   La femme a regardé Paul droit dans les yeux.
@@ -1210,6 +1213,11 @@ tête
 fej
 
   @Deplacement
+être couché
+fekszik
+  feküdt, feküdjon, feküdne
+
+  @Deplacement
 envoyer par la poste
   Il envoie la lettre.
 felad
@@ -1218,6 +1226,10 @@ felad
   @Deplacement
 se lever
 feláll
+
+  @Deplacement
+en montant, en amont
+felfelé
 
 consultation, entretien
 felfogadás
@@ -1568,6 +1580,9 @@ gomba
 
 boule
 gombóc
+
+penser à qqun, qqch
+gondol
 
   @Deplacement
 rouler (comme une bille)
@@ -2077,13 +2092,19 @@ jég
 "Bon rétablissement !"
 Jobbulást!
 
+  @Expression
+"Il vaudrait mieux que …"
+Jobb volna…, ha…
+
 droit (domaine juridique)
 jog
 
 faculté de droit
 jogi kar
 
-  
+joyeux
+jókedvű
+
 beau, charmant (que pour les hommes)
 jóképű
 
@@ -2158,6 +2179,9 @@ kávé
   @Moment
 mardi
 kedd
+
+humeur, tempérament
+kedély
 
 humeur, envie
   Il n'a pas envie.
@@ -2476,7 +2500,10 @@ kivisz
 
    @Perception
 curieux (de savoir)
-kíváncsi
+kiváncsi
+
+au dehors, à l'extérieur, en outre
+kivül
 
 voiture (fam)
 kocsi
@@ -2503,6 +2530,12 @@ korán
   @Sport
 patiner (sport)
 korcsolyázik
+
+
+  @Medecine
+hôpital
+kórház
+
 
   @Contenant
 bocal, cruche, pot
@@ -3090,6 +3123,10 @@ megoldani
 foule
 megostromol
 
+  @Medecine
+s'avarier, s'endommager
+megsérül
+
 changer (devenir autre)
   Tu as changé.
 megváltozik
@@ -3278,6 +3315,10 @@ motorkerékpar
 
 cinéma
 mozi
+
+  @Deplacemnt
+bouger, se mouvoir, remuer, se déplacer
+mozog
 
   @Position @Postposition
 derrière ("vers derrière")
@@ -3687,6 +3728,21 @@ donner des ordres
 parancsol
   Tessék, parancsolni.
 
+  @Transport
+parking
+parkoló
+
+  @Transport
+se garer
+parkol
+  parkolni
+
+  @Socialisation
+plainte
+  Qu'est-ce qui ne va pas (pour lui) ?
+panasz
+  Mi a panasza?
+
   @Geographie
 rive
 part
@@ -3747,24 +3803,13 @@ pincér
 sale
 piszkos
 
-  @Transport
-parking
-parkoló
-
-  @Transport
-se garer
-parkol
-  parkolni
+  @Architecture
+plafond
+plafon
 
   @Metier
 réceptionniste
 portás
-
-  @Socialisation
-plainte
-  Qu'est-ce qui ne va pas (pour lui) ?
-panasz
-  Mi a panasza?
 
   @Alimentation
 thé
@@ -3796,6 +3841,9 @@ ponty
 
 boîte aux lettres
 postaláda
+
+problème
+probléma
 
 programme
 program
@@ -4278,10 +4326,23 @@ szerel
 mécanicien, réparateur
 szerelő
 
+heureusement
+szerencsére
+
   @Socialisation
 aimer
 szeret
   -ett, szeressen, -ne
+
+  @Postposition
+d'après, selon (postposition)
+  d'après ceci
+  dire la vérité
+  d'après moi
+szerint
+  ezek szerint
+  igazság szerint
+  szerintem
 
   @Metier
 rédacteur, comité de rédaction
@@ -4346,6 +4407,9 @@ szíves
   @Socialisation
 service, faveur, cordialité, obligeance
 szívesség
+
+camarade de chambre
+szobatárs
 
 propre, sain
 szobatiszta
