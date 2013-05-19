@@ -1,0 +1,11 @@
+@_K174
+
+s'occuper de/se préoccuper de qqchose
+  Tu ne t'occupes pas de moi !
+törödik vmivel
+  De ne törödsz velem!
+
+  @Expression
+"Donne-moi ton n° de téléphone."
+Add meg a telefonszámodat.
+
