@@ -727,22 +727,23 @@ Egészsége{}re!
 bon pour la santé, en bonne santé
 egészéges
 
-  @Mesure
+  @Mesure @egy-
 ensemble (association)
   mon argent avec (en même temps que) mon passeport
 vmivel együtt
   a pénzemmel együtt az útlevelem is
 
-  @Negation
+  @Negation @egy-
 pas du tout
   Je ne bois pas du tout de vin blanc.
 egyáltalán … nem
   Egyáltalán nem szeretek feher bort.
 
+  @egy-
 seul, seulement
 egyedül
 
-  @Deplacement
+  @Deplacement @egy-
 directement, tout droit
   La femme a regardé Paul droit dans les yeux.
 egyenesen
@@ -752,28 +753,28 @@ egyenesen
 étudiant à l'université
 egyetemi hallgátó
 
-  @Mesure @Differenciation
+  @Mesure @Differenciation @egy-
 seul, unique, vrai
 egytlen
 
 
-  @Mesure
+  @Mesure  @egy-
 L'un (quelconque), l'un (des deux)
   L'une des deux femmes mangeait un sandwich, l'autre buvait de l'eau.
 egyik
   Az egyik nő szendvicset evett, a másik vizet ivott.
 
-  @Socialisation
+  @Socialisation @egy-
 l'un l'autre, réciproquement
   Ils s'aiment.
 egymás
   Szeretik egymást.
 
-  @Temporalite
+  @Temporalite @egy-
 tout d'un coup (narration)
 egyszercsak
 
-  @Socialisation
+  @Socialisation @egy-
 sortir ensemble (relation sentimentale)
   Ils sortent ensemble.
 együtt járni
@@ -1171,7 +1172,7 @@ valable
 nord
 észak
 
-  @Socialisation
+  @Socialisation @egy-
 être d'accord avec quelqu'un à propos de quelque chose
   Je suis d'accord avec toi là-dessus.
   C'est avec toi que je suis d'accord.
@@ -2323,7 +2324,7 @@ kelet
 devoir
   Je dois acheter une nouvelle robe.
 kell
-  Kell vennem  egy új ruhát.
+  Kell vennem egy új ruhát.
 
   @Perception 
 agréable
@@ -3332,7 +3333,7 @@ mettől
 en plus (adv)
 még
 
-  @Temporalite @Repetition
+  @Temporalite @Repetition @egy-
 une fois de plus
 még egyszér
 
