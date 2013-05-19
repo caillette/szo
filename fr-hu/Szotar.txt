@@ -55,7 +55,7 @@ ne… guère
 alig
   Alig ismerem.
 
-dès que, difficilement
+dès que, difficilement, pratiquement pas
 alihogy
 
   @Alimentation
@@ -119,6 +119,10 @@ asztal
   @Sport
 athlétisme
 atlétika
+
+  @Temporalite
+à partir de là, dès ce moment
+attól fogva
 
   @Temporalite
 tout de suite
@@ -363,6 +367,9 @@ beolvas vkinek
 parler de qqchose
 beszél vmihez
 
+converser, bavarder, causer
+beszélget
+
   @Medecine
 malade
 beteg
@@ -567,6 +574,11 @@ poulet
 csirke
   csirkét, csirkéje, csirkék
 
+miracle, prodige, merveille, phénomène
+  Ce n’est pas étonnant.
+csoda
+  Nem csoda.
+
 surpris (1)
 csodálkozo
 
@@ -577,6 +589,9 @@ csodálatos
   @Alimentation
 chocolat
 csokoládé
+
+agiter, brandir, balancer qc, branler, hocher
+csóvál
 
   @Anatomie
 cuisse
@@ -604,6 +619,10 @@ csésze
   @Alimentation
 sucre, bonbon
 cukor
+
+  @Mesure
+morceau, pièce
+darab
 
   @Mesure
 décilitre
@@ -734,7 +753,7 @@ egyenesen
 egyetemi hallgátó
 
   @Mesure @Differenciation
-un seul
+seul, unique, vrai
 egytlen
 
 
@@ -867,6 +886,9 @@ ellop
 partir
 elmegy
 
+raconter, conter, narrer, relater (2)
+elmesél
+
   @Politesse
 excuse
   Je demande pardon !
@@ -924,6 +946,10 @@ előtt
   @Transport
 doubler (en voiture)
 előz
+
+devenir trise, avoir le cœur qui chavire
+elszomorodik
+
 
   @Socialisation
 perdre (un objet, un enjeu…)
@@ -1045,6 +1071,9 @@ Ez igen !
 manger quelque chose au petit déjeuner/déjeuner/dîner
 reggelire/ebédre/vacsorára eszik vmit
 
+après cela, ensuite, à l'avenir, désormais, dorénavant
+ezután
+
   @Repas
 déjeuner (v)
 ébedel
@@ -1117,6 +1146,11 @@ intéressant
 érdekes
   -et, -ek, -ebb
 
+se sentir
+  Je me sens bien.
+érez magát
+ Jól érzem magamat.
+
   @Deplacement
 arriver (action en cours)
 érkezik
@@ -1174,6 +1208,9 @@ fagy
 
 sorte, espèce, marque
 fajta
+
+mur
+fal
 
 avoir froid
   (une seule conjugaison)
@@ -1236,6 +1273,9 @@ felad
   @Deplacement
 se lever
 feláll
+
+se réveiller, s’éveiller
+felébred
 
   @Deplacement
 en montant, en amont
@@ -1425,6 +1465,9 @@ fleuve
 folyó
   -t, -ja, -k
 
+continuer par qqchose, enchaîner avec qqchose
+folytat vmivel
+
 tourner
 fordít
   -ott, -son, -ana
@@ -1514,6 +1557,9 @@ futballista
 bizarre
 furcsa
 
+étrangement
+furcsán
+
   @Deplacement
 vite (2)
 fúrge
@@ -1596,8 +1642,11 @@ gomba
 boule
 gombóc
 
-penser à qqun, qqch
-gondol
+penser quelque chose
+gondol vmit
+
+penser à quelque chose
+gondol vmire
 
   @Deplacement
 rouler (comme une bille)
@@ -1702,6 +1751,10 @@ hall
 à la hâte, de bonne heure, hâtivement, sous peu, bientôt, tôt, vite
 hamar
 
+  @Temporalite
+sous peu, sans tarder
+hamarosan
+
 faux
 hamis
   -at, -ak, -abb
@@ -1780,6 +1833,10 @@ place, endroit
 helye
   -et, -e, -ek
   nem egy helyen
+
+  @Postposition
+à la place de, au lieu de (postposition)
+helyett
 
 situation
   maître de la situation
@@ -2032,11 +2089,17 @@ boisson
 innivaló
   ital
 
+  @Socialisation
 faire signe de la main
 integet
 
+  @Administratif
 bureau (fonction, emploi, magasin, boutique permanence, agence)
 iroda
+
+  @Redactionnel
+auteur
+író
 
   @Ameublement
 bureau
@@ -2112,6 +2175,10 @@ jeges
 ticket, billet
 jegy
 
+  @Temporalite
+présent, actuel
+jelen
+
 signifier quelque chose
 jelent vmit
 
@@ -2160,6 +2227,9 @@ kabát
   @Habillement
 chapeau
 kaláp
+
+relation, rapport
+kapcsolat
 
   @Anatomie
 bras
@@ -2778,7 +2848,9 @@ lap
 éditeur (de journal)
 lapkiadó
 
-  
+lentement, à pas lents, modérément
+lassan
+
 lent
 lassú
 
@@ -2910,6 +2982,9 @@ lé
 bâton
 léc
 
+marcher, faire un pas
+lép
+
   @Architecture
 escalier
   monter par l'escalier
@@ -2995,6 +3070,9 @@ malac
   @Repas
 rester sur quelque chose (lors d'un repas)
 vmi mellett marad
+
+raconter, conter, narrer, relater (2)
+elmesél
 
   @Alimentation
 bœuf
@@ -3094,6 +3172,9 @@ megbízható
 punir, faire payer une amende
 megbüntet
 
+donner le change, tromper
+megcsal
+
   @Socialisation
 embrasser
 megcsókol
@@ -3168,6 +3249,12 @@ megostromol
   @Medecine
 s'avarier, s'endommager
 megsérül
+
+apprendre à aimer
+megszeret
+
+professer, avouer
+megvall
 
 changer (devenir autre)
   Tu as changé.
@@ -3388,6 +3475,9 @@ passé
 múlt
   múlt vasárnap
 
+au bout de, dans
+múlva
+
   @Architecture
 monument
 müemlek
@@ -3495,6 +3585,9 @@ difficile, lourd
 nehéz
   nehezet, nehezek, nehezebb
 
+bientôt, tôt, un peu plus tard
+nemsokára
+
   @Nationalite
 nation
 nemzet
@@ -3505,6 +3598,10 @@ nevet
   @Mesure
 parfois
 néha
+
+  @Mesure
+plusieurs (adj), peu (n)
+néhány
 
   @Mesure @Negation
 sans
@@ -3575,6 +3672,9 @@ nyelv
 ouvrir qqchose
 nyit vmit
 
+donner sur, s'ouvrir
+nyílik
+
   @Travail
 retraité
 nyudíjas
@@ -3598,6 +3698,10 @@ oda
   @Deplacement
 arriver quelque part
 odaér
+
+  @Position
+là-dehors, au dehors
+odakinn
 
   @Deplacement
 s'approcher
@@ -3639,6 +3743,9 @@ olcsó
   @Redactionnel @Position
 côté, page
 oldal
+
+de côté
+oldalról
 
   @Outillage
 paire de ciseaux
@@ -3833,6 +3940,9 @@ pezsgő
 argent (monnaie)
 pénz
 
+vendredi
+péntek
+
   @Economie
 caisse (réserve d'argent)
 pénztár
@@ -3869,6 +3979,10 @@ tea
   @Mesure
 plein (adj, invariable)
 tele
+
+  @Mesure @Temporalite
+minute
+perc
 
   @Moment
 instant
@@ -3946,6 +4060,9 @@ pulóver
   @Economie
 voleur
 rabló
+
+construire
+rak
 
 avoir le temps, être libre
 ráérni
@@ -4042,6 +4159,11 @@ rendszeresen
 
 système
 rendszer
+
+beaucoup de
+  beaucoup de gens
+rengeteg
+  rengeteg ember
 
 sacré, fichu, drôle de…
 rettentő
@@ -4141,6 +4263,12 @@ seb
 cicatrice
 sebhely
 
+secours, aide, assistance
+segitség
+
+aider, prêter aide, porter secours
+segít
+
   @Position
 null part
 sehol
@@ -4152,6 +4280,10 @@ sehonnan
   @Position @Deplacement
 vers nulle part
 sehova
+
+  @Negation
+d'aucune sorte
+semmilyen
 
   @Negation
 personne (privatif)
@@ -4570,6 +4702,11 @@ szülő
 pause, vacances, récréation, entracte
 szünet
 
+  @Couleur
+gris
+szürke
+
+
 nettoyer, faire le ménage
   dérivé
 takarít
@@ -4673,6 +4810,9 @@ telt
 
 fruits de mer
 tenger gyümölcsei
+
+salle, galerie
+terem
 
 produit (n)
 termék
@@ -4835,6 +4975,15 @@ tömeg
 
 cassé (adj)
 törött
+
+histoire, anecdote, conte, récit
+történet
+
+se passer, se produire, avoir lieu, se faire
+történik
+
+quelque chose arrive à qqun
+vmit történik vkivel
 
 bureau de tabac
 trafik
@@ -5054,6 +5203,9 @@ vadgesztenye
   @Alimentation
 beurre
 vaj
+
+aveugle
+vak
 
   @Position
 quelque part
