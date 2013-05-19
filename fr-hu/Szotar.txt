@@ -755,7 +755,7 @@ egyetemi hallgátó
 
   @Mesure @Differenciation @egy-
 seul, unique, vrai
-egytlen
+egyetlen
 
 
   @Mesure  @egy-
