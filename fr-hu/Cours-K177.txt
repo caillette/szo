@@ -1,0 +1,36 @@
+@_K177
+
+intéressant, donne envie d'en connaître la fin
+  Ce film policier est passionnant.
+izgalmas
+  Ez a krimi izgalmas.
+
+régler qqchose (une affaire)
+elintéz vmit
+
+désirer
+  J'ai tellement envie de chocolat.
+kíván
+  Kívánom a csokoládét.
+
+allumer qqchose (la lumière)
+felkapcsol vmit
+
+allumer qqchose (la lumière ou un feu)
+meggyút vmit
+
+  @Expression
+s'il te plaît
+  S'il te plaît, allume la lumière, je ne vois plus rien.
+legy szíves
+  Legy szíves, kapcsold fel a lampát, már semmit sem látok.
+
+  @Expression
+s'il te plaît (rare)
+legyél szíves
+
+se laver
+mosakodik
+
+mettre qqchose (un vêtement)
+felvesz vmit
