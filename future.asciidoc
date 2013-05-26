@@ -1,21 +1,7 @@
 This document describes the features of the next major version of Szótárgép.
 
 
-== Use tags instead of files
-
-A tag is a special marker attached to a card or a file. Each can have several tags. A tags represents some learning theme.
-
-The purpose is to select tags instead of files, because the same theme may appear across different files and the same card may appear in different themes.
-
-Syntax of a tag: `@Ccc`.
-
-A file may have a global tag `@@Ggg` that affects all contained cards.
-
-A tag may not contain spaces but non-breakable spaces as `_`.
-
-There is a special "tagless" tag to see orphans.
-
-Since we don't see files, there must be a message listing badly-referenced files.
+== Hierarchical tags
 
 Tag may belong to groups. With `@Foo/Bar` and `@Foo/Baz` somewhere, infer a tag group:
 
@@ -28,25 +14,9 @@ Tag may belong to groups. With `@Foo/Bar` and `@Foo/Baz` somewhere, infer a tag 
 
 == Content-aware URL
 
-Store current state within the URL instead of using cookies or HTML 5 storage API.
+Only store tag selection, list view activation and stuff that doesn't take too much space.
 
-This would have following advantages:
-
-* Support browser's "back" button.
-* Store various configurations (through bookmarks or whatever) instead of a single one.
-
-This  http://saadnawaz.blogspot.fr/2010/10/change-url-dynamically-through.html[blog post] tells that one can use `window.location.hash` and there are http://stackoverflow.com/a/3354511/1923328[tricks] to prevent the page from reloading then.
-
-The http://www.boutell.com/newfaq/misc/urllength.html[practical limit] of URL length is 2048 characters. Application state might fit, considering:
-
-* Card count (see below).
-* Tag count (see below).
-* Compression.
-* Dropping some state (like the "deck" described below).
-
-100 selected tags of an average length of 20 barely fit. Hierarchical selection can reduce the number of selected tags.
-
-Keeping the deck makes sense only when refreshing the page (not even sure). As a matter of fact, deck deals with user's short term memory. So we have some "session" scope that can go outside of the URL. The good choice isn't obvious here because we don't know how to deal with URL copy-paste.
+Deck state: no way.
 
 
 == Link to Wiktionary
@@ -62,6 +32,15 @@ This is an option, disabled by default for saving queries on a mobile device.
 Because of potential high number of cards, there is no check until the card detail appears. The check occurs in background using `XmlHttpRequest` but not in the Worker, which would make the update difficult.
 
 There is a map for every card telling if the check did occur, and its success. Even better: use browser's local storage to keep this on the long term.
+
+
+Recent finding:
+http://szotar.sztaki.hu/search?fromlang=hun&tolang=fre
+Really good dictionary. Magyar-English is more furnished, though.
+
+Because online dictionaries don't all return a 404 (sztaki.hu doesn't) we need to use dictionary-specific logic. The solution is to hardcode all of that logic in a map. Then the vocabulary file choses to activate those dictionaries.
+
+
 
 
 == Support mobile devices
