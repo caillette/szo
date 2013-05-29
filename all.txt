@@ -124,6 +124,7 @@ fr-hu/Cours-K174.txt
 fr-hu/Cours-K175.txt
 fr-hu/Cours-K176.txt
 fr-hu/Cours-K177.txt
+fr-hu/Cours-K178.txt
 
 
 #@Anatomie Testrész
