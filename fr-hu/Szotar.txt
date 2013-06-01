@@ -956,6 +956,11 @@ elszomorodik
 perdre (un objet, un enjeu…)
 elveszít
 
+terminer, exécuter
+  Il exécute une tâche.
+elvégez
+  Elvegéz a feladatot.
+
 ranger
 elrak
   elrakni
@@ -1275,6 +1280,9 @@ felad
 se lever
 feláll
 
+prendre pour époux
+feleségül menni vkihez
+
 se réveiller, s’éveiller
 felébred
 
@@ -1402,6 +1410,9 @@ mariée (pour une femme)
   femme mariée
 férjes 
   férjes asszony
+
+prendre pour mari
+férjhez menni vkihez
 
   @Perception
 faire attention à
@@ -2098,6 +2109,9 @@ integet
 bureau (fonction, emploi, magasin, boutique permanence, agence)
 iroda
 
+littérature
+irodalom
+
   @Redactionnel
 auteur
 író
@@ -2626,6 +2640,9 @@ komoly
 
 musique classique
 komoly zene
+
+époque, âge
+kor
 
   @Moment @Temporalite
 tôt
@@ -3409,6 +3426,11 @@ minisztérium
 de bonne qualité
 minőség
 
+après quoi
+  Tu vas dîner près avoir étudié le hongrois.
+miután
+  Miután magyarul tanultam, megvacsorázol.
+
 "Qu’est-ce que {pronom} {avoir} ?
   Qu'est-ce que tu as ?
 Mi van vel{}?
@@ -3794,6 +3816,9 @@ orosz
 lion
 oroszlána
 
+depuis
+óta
+
   @Famille
 jeune frère
   (toujours avec un possessif)
@@ -3813,8 +3838,8 @@ se réjouir
 örül
   -t, -jön, -ne
 
-se réjouir de quelque chose
-örül vkinek
+se réjouir de quelque chose/de la présence de qqun
+örül vminek/vkinek
 
   @Architecture
 tout équipé (pour habitation)
@@ -4416,6 +4441,10 @@ szabály
 coupe (vest.)
 szabás
 
+  @Enseignement
+faculté (école)
+szak
+
   @Anatomie
 barbe
 szaháll
@@ -4737,6 +4766,9 @@ tanul
 étudier
 tanulmányoz
 
+l'année dernière
+tavaly
+
   @Cuisine
 assiette
 tányér
@@ -4979,6 +5011,9 @@ tömeg
 
 cassé (adj)
 törött
+
+(l')histoire (en tant que science humaine)
+történelem
 
 histoire, anecdote, conte, récit
 történet
