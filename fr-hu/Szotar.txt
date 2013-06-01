@@ -991,7 +991,7 @@ elvált
 emelet
   -et, -e, -ek
 
-souvenir (n)
+souvenir
 emlék
 
 se souvenir de qqchose
@@ -2786,6 +2786,9 @@ közlekedes
 
 public (n)
 közönség
+
+commun
+közös
 
 indifférent
 közönyös

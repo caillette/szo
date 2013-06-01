@@ -7,7 +7,6 @@ fr-hu/VerbesIrreguliers.txt
 fr-hu/VerbesIrreguliers2.txt
 fr-hu/Szotar.txt
 fr-hu/Szotar-nevek.txt
-fr-hu/Cours-K53.txt
 fr-hu/Cours-K54.txt
 fr-hu/Cours-K55.txt
 fr-hu/Cours-K56.txt
