@@ -249,6 +249,17 @@ Dynatree-1.2.4 behaves well with JQuery-1.9.
 Minified version weights 45 kb.
 
 
+
+
+== Animating
+
+Somebody showed me the "word fishing" with various words in the foreign language falling down the screen. You pick those that you don't know.
+
+Nice library for fluid translation + rotation:
+http://www.jstween.org
+
+
+
 == Glossary
 
 "Equivalence" sucks.
