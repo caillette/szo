@@ -352,6 +352,9 @@ belföldi
 interne (adj)
 belső
 
+présenter qqun à qqun
+bemutat vkit vkinek
+
   @Perception @Position
 regarder qqchose d'en haut, regarder à travers qqchose, appliquer un oeil à qqchose (1)
 benéz vmibe
@@ -1805,7 +1808,7 @@ havi
 par mois
 havonta
 
-  @Deplacement
+  @Deplacement @-er
 arriver à la maison
 hazaér
 
@@ -2111,6 +2114,12 @@ iroda
 
 littérature
 irodalom
+
+littéraire
+írodalmi
+
+de cette façon-ci
+így
 
   @Redactionnel
 auteur
@@ -3165,6 +3174,7 @@ másik
 ours
 medve
 
+  @-er
 valoir
 megér
 
@@ -3721,7 +3731,7 @@ nyugodtan
 vers là-bas
 oda
 
-  @Deplacement
+  @Deplacement @-er
 arriver quelque part
 odaér
 
@@ -3876,26 +3886,6 @@ heure, montre
 
 par exemple
 például
-
-  @Position
-là-dessus
-rá
-
-habiller
-ráad
-
-convaincre qqun de qqchose
-rábeszél vkit vmibe
-
-avoir le temps
-ráér
-
-allumer une cigarette
-rágyút
-
-  @Perception
-jeter un coup d'œil
-ránéz
 
   @Ameublement
 banc (pour s'asseoir)
@@ -4093,8 +4083,27 @@ rabló
 construire
 rak
 
-avoir le temps, être libre
-ráérni
+  @Position
+là-dessus
+rá
+
+habiller
+ráad
+
+convaincre qqun de qqchose
+rábeszél vkit vmibe
+
+  @-er
+avoir le temps
+ráér
+
+allumer une cigarette
+rágyút
+
+  @Perception
+jeter un coup d'œil
+ránéz
+
 
   @Deplacement
 marcher dessus

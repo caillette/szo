@@ -127,6 +127,8 @@ fr-hu/Cours-K179.txt
 fr-hu/Cours-K180.txt
 
 
+@-er -ér
+
 #@Anatomie Testrész
 #@Coordination Mellekmondatok
 #@Meteorologie Időjárás
