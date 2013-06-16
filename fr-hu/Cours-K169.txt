@@ -17,7 +17,7 @@ lákosság
 pourcent
   20% de la population habite ici.
 százalék
-  Itt lakik a lakosság százaléka.
+  Itt lakik a 20 lakosság százaléka.
 
 se transformer en qqchose
 válik vmivé

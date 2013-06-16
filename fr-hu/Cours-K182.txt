@@ -1,13 +1,66 @@
-@_K182
+@_K183
 
-cercle polaire arctique
-észak sarkkör
+avoir besoin de qqchose pour qqchose
+  Il faut de l'argent pour le voyage.
+szüksége van vmire vmihez
+  Az utazáshoz pénzre szükség van.
 
-prêter qqchose à qqun
-kölcsönad vmit vkinek
+diminuer, descendre
+  Les prix sont en baisse
+csökken
+  Csökennek az árak.
 
-emprunter qqchose à qqun sans demander la permission
-kölcsönvesz vmit vkitől
+approvisionnement
+  L'approvisionnement en pétrole va diminuer graduellement.
+ellátás
+  Az olaj ellátás fokosatosan csökkeni fog.
 
-demander qqchose à qqun pour emprunt
-kölcsönkér vmit vkitől
+huile, pétrole
+olaj
+  olajat
+
+désormais
+  À partir de maintenant je ne bois plus d'eau.
+ezután
+  Ezután már nem iszom vizet.
+
+chez nous, dans notre pays
+itthon
+
+ça dépend
+attól függ
+
+dépendre de qqchose/de qqun
+függ vmitől/vkitől
+
+meilleurs les uns que les autres
+  Les prospectus sont plein de conseils tous meilleurs les uns que les autres.
+jobbnál jobb
+  A prospektusak tele vannak jobbnál jobb ajánlatokkal.
+
+différent, divers
+különböző
+
+quand même
+azért
+
+particulier
+különleges
+
+jusqu'au bout, tout du long
+  Je me suis senti mal tout le voyage.
+végig
+  Végig rosszul voltam az úton.
+
+retenir, mémoriser qqchose
+megjegyez vmit
+
+noter qqchose pour s'en souvenir (1)
+fejegyez vmit
+
+noter qqchose pour s'en souvenir (2)
+lejegyez vmit
+
+éventer, se rafraîchir
+legyez
+
