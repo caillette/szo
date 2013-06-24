@@ -18,6 +18,7 @@ tanfolyam
 cours de langue
 nyelvtanfolyam
 
+  @egy-
 pour l'instant
 egyelőre
 

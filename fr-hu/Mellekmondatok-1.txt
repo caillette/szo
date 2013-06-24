@@ -55,9 +55,10 @@ non seulement …, mais … aussi (coord. copulative)
 nemcsak …, hanem … is
   Nemcsak a leves volt hideg, hanem a hús is.
 
+  @egy-
 d’une part …, d’autre part … (coord. copulative)
   Je n’aime pas vivre ici. D’une part l’air est pollué, d’autre part c’est très bruyant.
-égyrészt …, másrészt
+egyrészt …, másrészt
   Nem szeretek itt látni. Egyrészt rossz a levegő, másrészt nagyon zajos.
 
 puis (coord. copulative)

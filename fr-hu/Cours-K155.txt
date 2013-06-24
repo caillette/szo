@@ -33,6 +33,7 @@ barkácsol
 satisfait
 elégedett
 
+  @egy-
 en même temps
 egyszerre
 

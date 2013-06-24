@@ -71,6 +71,7 @@ se retrouver (être arrivé là)
 kerül
   Hogy kerül a cipő az asztalra?
 
+  @egy-
 individuel
 egyéni
 

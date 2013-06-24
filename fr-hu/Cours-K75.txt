@@ -17,6 +17,7 @@ elromlott
 se noyer
 fulladni
 
+  @egy-
 qui correspond
 egyenlő
 

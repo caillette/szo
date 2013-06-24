@@ -10,14 +10,17 @@ valable pour qqchose
 érvényes vmire
   A jegy érvényes a következő vonatra.
 
+  @egy-
 de plus en plus (intensité)
 egyre inkább
 
+  @egy-
 de plus en plus de gens
   De plus en plus de gens parlent le hongrois.
 egyre többen
   Egyre többen beszéltek magyarul.
 
+  @egy-
 de plus en plus (quantité)
   On parlait de plus en plus hongrois.
 egyre többet

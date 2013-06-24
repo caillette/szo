@@ -24,6 +24,7 @@ egész
 ainsi, donc
 így
 
+  @egy-
 simple
 egyszerű
 

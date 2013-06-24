@@ -21,6 +21,7 @@ telefonfülke
 téléphoner au numéro x
 x-es számon telefonálni
 
+  @egy-
 de plus en plus
   Tu es plus beau d'année en année.
 egyre
