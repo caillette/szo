@@ -1,10 +1,12 @@
 @_K087
 
+  @egy-
 en premier (1)
   Qui est arrivé en premier ce matin ?
 elsőként
   Ki érkezik meg elsőként reggel?
 
+  @egy-
 en premier (2)
 elsőnek
 

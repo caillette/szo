@@ -2580,7 +2580,8 @@ kilogramme
 kiló
 
 regarder dehors
-kinez
+  Nous regardons (vers) dans la rue.
+kinéz
   Kinézünk az utcára.
 
 ouvrir
