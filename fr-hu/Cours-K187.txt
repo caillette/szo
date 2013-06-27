@@ -1,0 +1,38 @@
+@_K187
+
+s'occuper de qqchose
+  Ça mériterait qu'ils s'occupent plus de politique.
+foglalkozik vmivel
+  Nekik érdemes lenne többet foglalkozniuk a politikával.
+
+jaloux
+féltékeny
+
+salutation
+köszöneés
+
+décider qqchose
+elhatárhoz vmit
+
+accepter qqchose
+  Pour faire plaisir à Marta il a accepté qu'ils aillent à la mer.
+beleegyez vmibe
+  Márta kedveért most is beleegyezett, hogy a tengerhez menjenek.
+
+rajouter en versant
+  Il manque un peut d'huile. Dois-je en rajouter ?
+hozzátölt
+  Egy kevés olaj hianyzik. Hozzátöltsek?
+
+  @Expression
+"Tenez ! Et gardez la monnaie."
+Tessék! A többi a magáé.
+
+  @Expression
+"Il ne manquait plus que ça !"
+Már csak ez hiányzott!
+
+aller chercher {qqchose}
+  Je vais te chercher.
+ért{} menni
+  Érted megyek.
