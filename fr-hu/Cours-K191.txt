@@ -27,7 +27,7 @@ marad vmi vmiből
 
 erreur
   Il ne reste que les erreurs.
-tévestés
+tévesztés
   Csak maradnak a tévesztések.
 
 blessure (morale)
