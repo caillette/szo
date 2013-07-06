@@ -39,6 +39,10 @@ Array.prototype.isArray = function ( object ) {
 // Resources
 // =========
 
+  $.ajaxSetup( {
+      cache : false // Disable caching of AJAX responses.
+  } ) ;
+
   szotargep.resource = {} ;
 
   // [ operands ] --> operator( operand, operatorCompletion ) --> onCompletion[ results ]
