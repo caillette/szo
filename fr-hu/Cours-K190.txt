@@ -38,7 +38,8 @@ hazugság
 ridicule
 idétlen
 
-merde ! ("fuck it")
+  @Expression
+et puis merde ("fuck it")
 bassza meg
 
 tirer (un rideau)
