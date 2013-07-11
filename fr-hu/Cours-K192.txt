@@ -40,7 +40,7 @@ chevelu
 hajas
 
 grandir d'une certaine mesure
-  Mes enfants ont grandi de 10 cm.
+  Mon fils a grandi de 10 cm.
 nő vmi vmivel
   A kisfiam tiz centivel nőt.
 
