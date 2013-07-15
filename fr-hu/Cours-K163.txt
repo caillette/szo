@@ -67,30 +67,37 @@ vmi elpusztul
 détruire qqchose (un animal)
 elpusztít
 
+  @Transformation
 devenir qqchose
   Il est presque devenu Hongrois.
 válik vmivé
   Szinte magyarrá vált.
 
+  @Transformation
 reconstruire qqchose en qqchose
   On a transformé le palais en musée.
 átépít vmit vmivé
   A palotát muzeummá epítteték át.
 
+  @Transformation
 changer l'arrangement, l'organisation de qqchose
 átalakít vmit vmivé
 
+  @Transformation
 changer qqchose en qqchose (modifier une caractéristique)
 változtat vmit vmivé
 
+  @Transformation
 se reconstruire en qqchose
 átépül vmivé
 
+  @Transformation
 transformer qqchose, effectuer un tour de magie
   La sorcière a transformé le fils du roi en crapaud.
-varászol vmit
-  A boszorkány a királyfit békává varászolta.
+varázsol vmit
+  A boszorkány a királyfit békává varázsolta.
 
+  @Transformation
 rendre (faire devenir) {adjectif/nom}
   Tu me rends heureux.
 tesz {}vé
