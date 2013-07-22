@@ -1,0 +1,18 @@
+@_K196
+
+  @Transport
+billet hebdomadaire
+havijegy
+
+  @Transport
+carte hebdomadaire
+hetiberlyet
+
+morceau (de musique)
+szám
+
+numéro, performance de spectacle
+szám
+
+résultat
+eredmény
