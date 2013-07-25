@@ -1,0 +1,28 @@
+@_K197
+
+toucher qqchose
+érint vmit
+
+faire toucher le sol à qqun de ses deux épaules
+két vállra fekteti vkit
+
+joueur (participant à un sport)
+játékos
+
+frotter qqchose
+  Les joueurs de curlink frottent la glace.
+dörzsöl vmit
+  A curling játékosok a jegyet dörzsölik.
+
+gagner {n} à {m}
+  Nous avons gagné 6-5 contre la FTC.
+győz {n}-{m}-re
+  Győztünk hat-ötre az FTC ellen.
+
+  @Coordination
+même si
+  Si vous ne vous entraînez pas, vous allez perdre, même si vous êtes parmi les meilleurs du monde.
+mégakkor is
+  Ha nem edzetek veszíteni fogtak, még akkor is ha a világon a legjobbak közé tartoztak.
+
+
