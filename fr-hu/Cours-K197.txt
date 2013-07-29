@@ -14,9 +14,9 @@ frotter qqchose
 dörzsöl vmit
   A curling játékosok a jéget dörzsölik.
 
-gagner {n} à {m}
+gagner N à M
   Nous avons gagné 6-5 contre la FTC.
-győz {n}-{m}-re
+győz N-M-re
   Győztünk hat-ötre az FTC ellen.
 
   @Coordination
