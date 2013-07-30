@@ -28,15 +28,17 @@ pour cette raison, à cause de cela
 ezért
   Jól főz, ezért feleségül veszem.
 
-pourtant, malgré que (coordination adversative)
+  @Coordination
+pourtant, malgré que
   Le temps passe vite avec toi, pourtant tu as l'air ennuyeuse.
-  (introduit une subordonnée décrivant une cause qui diverge de celle attendue)
+  (introduit un contexte inattendu dans la subordonnée, d'après le résultat énoncé dans la proposition principale)
 pedig
   Veled répül az idő, pedig unalmasnak látszol.
 
+  @Coordination
 pourtant, malgré que
   Tu as l'air ennuyeuse, pourtant le temps passe vite avec toi.
-  (introduit une subordonnée qui diverge par rapport à la conséquence attendue)
+  (introduit un résultat inattendu dans la subordonnée, d'après le contexte énoncé dans la proposition principale)
 mégis
   Unalmasnak látszol, mégis répűl veled az idő.
 
