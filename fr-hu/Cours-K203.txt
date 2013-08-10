@@ -1,0 +1,55 @@
+@_K203
+
+kérdez valakit valamiről
+  Je te demande ce que tu penses de ça.
+questionner qqun à propos de qqchose
+  Téged kérdezlek arról, hogy mit gondolsz.
+
+demander (poser une question) qqchose à qqun
+kérdez valamit valakitől
+
+apprendre qqchose à qqun (2)
+  Je t'apprends le hongrois.
+tanít valakit valamire
+  Magyarra tanítalak.
+
+apprendre qqchose à qqun (2)
+  Je t'apprends le hongrois.
+tanít valakinek valamit
+  Magyart tanítok neked.
+
+petite maison
+házikó
+
+miel
+méz
+  mezet
+
+honte
+szégyen
+
+szégyell vmit
+  J'ai honte.
+avoir honte de qqchose
+  Szegyellem magamat.
+
+dépense, frais
+költség
+
+  @Expression
+couvrir les frais de qqchose
+állni a költségét valaminek
+
+se nourrir
+étkez
+
+repas
+étkezés
+
+correct, convenable, qui est à sa place
+helyénvaló
+
+orphelin
+  le moindre sou
+árva
+  árva fillér
