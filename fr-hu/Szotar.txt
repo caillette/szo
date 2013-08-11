@@ -777,6 +777,10 @@ egymás
 tout d'un coup (narration)
 egyszercsak
 
+  @Expression
+ne rien dire de qqchose à qqun
+egy szót sem szól vmiről vkinek
+
   @Socialisation @egy-
 sortir ensemble (relation sentimentale)
   Ils sortent ensemble.
@@ -795,6 +799,11 @@ eladó
 dire au revoir
 elbúcsúzik
 
+vivre
+él
+
+vie
+élet
   
 élégant
 elegáns
@@ -959,10 +968,10 @@ elszomorodik
 perdre (un objet, un enjeu…)
 elveszít
 
-terminer, exécuter
-  Il exécute une tâche.
+terminer, exécuter complètement
+  Il a terminé l'exercice.
 elvégez
-  Elvegéz a feladatot.
+  Elvégezte a feladatot.
 
 ranger
 elrak
@@ -1132,6 +1141,12 @@ chant
 chanter
 énekel
 
+architecte (1)
+építész
+
+architecte (2)
+építészmernő
+
 exactement, juste (adv)
 éppen
 
@@ -1154,6 +1169,15 @@ intéresser
 intéressant
 érdekes
   -et, -ek, -ebb
+
+mûr
+érett
+
+maturité
+érettség
+
+baccalauréat
+érettségi
 
 se sentir
   Je me sens bien.
@@ -1283,8 +1307,13 @@ felad
 se lever
 feláll
 
+  @Famille
 prendre pour époux
 feleségül menni vkihez
+
+  @Famille
+prender qqun pour épouse
+feleségül vesz vkit
 
 se réveiller, s’éveiller
 felébred
@@ -1375,6 +1404,13 @@ felszáll
   @Alimentation
 charcuterie
 felvágott
+
+admettre, recevoir
+  -
+  J'ai été admis à l'université.
+felvesz
+  felvenni
+  Felvettek az egyetemre.
 
 peindre
   coloré, teint
@@ -1885,7 +1921,7 @@ hideg
   hideg van
 
   @Temporalite
-tout d'un coup
+brusquement, tout d'un coup
 hirtelen
 
 avoir foi en quelque chose ou quelqu'un
@@ -2995,6 +3031,9 @@ leül
 soupe (n), juteux (adj)
 leves
 
+correspondre (par courrier)
+levelez
+
 se deshabiller
 levetkőzik
   -vetkőzőtt, -vetkőzzőn, -vetkőzne
@@ -3222,6 +3261,9 @@ convenir (plaire)
 megfelel
   Megfelel önnek az az asztal ?
 
+coiffer
+megfésül
+
 se retourer, tourner en restant en place ou en se déplaçant
 megfordul
 
@@ -3272,6 +3314,10 @@ meglepetés
 regarder (action achevée)
 megnéz vmit
 
+  @Famille
+se marier (pour les hommes seulement)
+megnősül
+
 résoudre
 megoldani
 
@@ -3299,11 +3345,11 @@ megvesz
 
   @Sensation @Meteorologie
 chaud
-  il fait chaud
-  avoir chaud
+  Il fait chaud.
+  Il a chaud.
 meleg
-  meleg van
-  melege van
+  Meleg van.
+  Melege van.
 
   @Anatomie
 sein
@@ -3671,6 +3717,9 @@ néz vmire
   @Alimentation
 pâte à base de farine et d'œuf
 nohedli
+
+plante (végétal)
+növeny
 
   @Medecine
 infirmière, sœur (1)
@@ -4368,6 +4417,9 @@ soha… nem
 longtemps
 soká
 
+jusqu'à tard, pendant longtemps
+sokáig
+
   @Temporalite
 souvent
 sokszor
@@ -4458,6 +4510,10 @@ szak
   @Anatomie
 barbe
 szaháll
+
+  @Enseignement
+faculté, département
+szak
 
   @Metier
 cuisinier
@@ -4602,6 +4658,11 @@ szél
 cathédrale (1)
 székesegyház
 
+  @Coordination
+de cette façon-ci
+  (coord. explicative)
+így
+
   @Geographie
 íle
 sziget
@@ -4734,8 +4795,14 @@ szükség
   szükség{} van vmire
 
   @Famille
-enfanter
-szülni
+naître
+szület
+
+  @Famille
+enfanter, donner naissance à
+  Elle a donné naissance à un garçon.
+szül vkit
+  Fiút szült.
 
   @Famille
 parent (père ou mère)
@@ -4793,6 +4860,9 @@ printemps
   au printemps
 tavasz
   tavasszal
+
+loin
+távol
 
   @Transport
 station de taxi
@@ -4987,11 +5057,16 @@ továbbmegy
 lac
 tó
 
-  @Temporalite
-plus jamais
+  @Temporalite @Mesure
+plus que (COD), plus jamais
   Ils ne se sont plus jamais rencontrés.
+  Je mange plus que toi.
+  Je ne le vois plus jamais.
 többet
   Többet nem találkoztam.
+  Többet eszem mint te.
+  Többet nem találkoztom.
+
 
   @Mesure
 le reste
@@ -5160,10 +5235,16 @@ uzsonnázik
   -názott, -názzon, -názna
 
   @Perception
+sentir que …
+  Il sent que …
+úgy erezni
+  Úgy erzi, hogy…
+
+  @Coordination
 de cette façon-là, ainsi, tellement
-  il sent que …
+  (antécédant)
 úgy
-  úgy erzi, hogy…
+
 
   @Temporalite
 nouveau
@@ -5419,6 +5500,11 @@ vihar
   @Transport
 arrêt de tramway
 villamosmegálló
+
+lumière (éclairage ambiant), électricité
+  Il a éteint la lumière.
+villany
+  Lekaposta a villanyt.
 
   @Socialisation
 se comporter
