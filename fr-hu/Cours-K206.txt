@@ -1,0 +1,30 @@
+@_K206
+
+cage
+  C'est dans une cage qu'on enferme les oiseaux.
+kalitká
+  A kalitkába zárják a madarakat.
+
+rembourser (de l'argent)
+megad vmit
+
+donner, transmettre
+odaad vmit
+
+supporter qqchose (une situation)
+  Je ne peux plus supporter cette situation.
+elvisel vmit
+  Nem bírom tovább elviselni ezt a helyzetet.
+
+répondre qqchose
+felel vmit
+
+se diriger vers qqchose en se dépêchant
+igyekszik vhova
+
+  @Expression
+"Ça arrive."
+Ez előfordul
+
+courir en se dépêchant
+rohan
