@@ -17,7 +17,7 @@ quitter qqun
   Ils se sont quittés.
   J'ai laissé la clé sur la table.
 elhagy vkit
-  Elhagyták egymâst.
+  Elhagyták egymást.
   A kulcsot az asztalon hagytam.
   
 mignon (adj)

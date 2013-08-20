@@ -13,9 +13,9 @@ félmeztelen
 presque nu
 majdnem meztelen
 
-fizet vmit vmiért
-  Je paye le ticket 500 forint.
 payer qqchose (une somme) pour qqchose
+  Je paye le ticket 500 forint.
+fizet vmit vmiért
   500 ft-ot fizetek a jegyért.
 
 charger qqchose avec une capacité d'accumution, au sens figuré.
