@@ -1,5 +1,6 @@
 @_K207
 
+  @Grammaire
 sujet (grammaire)
 alany
 
@@ -10,7 +11,7 @@ sens, signification
 értelem
 
 mûrir
-  Les abricots non-mûrs ce n'est pas bon.
+  Les abricots pas mûrs ce n'est pas bon.
 érik
   Az éretlen barack nem finom.
 
