@@ -30,10 +30,10 @@ cserél vmit
 supporter qqchose
 kibír vmit
 
-bír {igék}
-supporter de faire qqchose (verbe auxiliaire)
-Je n'arrive plus à marcher (avec une incapacité liée à la douleur).
-Nem bírok járni.
+supporter de {faire qqchose}
+  Je n'arrive plus à marcher (avec une incapacité liée à la douleur).
+bír {}
+  Nem bírok járni.
 
 deviner qqchose
 kitalál vmit
