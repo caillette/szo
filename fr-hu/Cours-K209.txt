@@ -4,21 +4,21 @@ animal empaillé
 kitömött állat
 
 détruire, rendre à l'état de ruine
-lerombol
   Les Turcs ont détruit le château de Visegrád.
+lerombol
   A törökök a visegrádi várat lerombolták.
 
 tourner sur soi-même
-forog
   Les étoiles à neutrons tournent très vite sur elle-mêmes.
+forog
   A neutroncsillag nagyon gyorsan forog.
 
 axe de rotation
 forgási tengely
 
 attirer qqchose
-vonz vmit
   Les planètes s'attirent mutuellement.
+vonz vmit
   A bolygók vonzzák egymást.
 
 se tromper de chemin
@@ -34,8 +34,8 @@ fenêtre coulissante
 tolóablak
 
 seulement
-mindössze
   Si tu apprends le hongrois ne serait-ce que deux ans, tu sais déjà beaucoup de choses.
+mindössze
   Mindössze két éve tanulsz magyarul, de már nagyon sokat tudsz.
 
 une sorte de {}
@@ -64,8 +64,8 @@ elnéz vmerre
 laisser tomber qqchose (sens propre et figuré)
 elejt vmit
 
-kivétel
 exception
+kivétel
 
 examiner qqchose
 kivizsgál vmit

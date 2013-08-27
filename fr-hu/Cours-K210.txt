@@ -1,0 +1,64 @@
+@_K210
+
+fondation (organisation)
+alapítvány
+
+examiner qqchose/qqun (à des fins d'investigations)
+  Le médecin fait des recherches sur la maladie.
+  La police a examiné l'affaire de fond en comble.
+kiviszgál vkit/vmit
+  Az orvos kivizsgálja a betegségét.
+  Az ügyet a rendőrség alaposan kivizsgálta.
+
+examiner, fouiller à travers
+átvizsgál
+
+désirer qqchose
+  Que désire monsieur le client ?
+kiván vmit
+  Mit kíván a kedves vevő?
+
+discret, modeste
+szolid
+
+large
+széles
+
+bord, pourtour
+  Un chapeau à bord large
+karima
+  Egy széles karimas kalap
+
+  @Exression
+Avec plaisir ("en étant prêt pour ça")
+Készséggel
+
+oser faire qqchose
+mer vmit csinálni
+
+complimenter, dire du bien de qqchose
+dicsér vmit
+
+comme, aussi
+éppoly
+
+essayer qqchose (un vêtement)
+felprobál vmit
+
+essayer qqchose (faire un essai)
+kiprobál vmit
+
+avantage
+előny
+
+mépriser qqchose
+lebecsül vmit
+
+apprécier, estimer qqchose (1)
+megbecsül vmit
+
+apprécier, estimer qqchose (2)
+felbecsül vmit
+
+tenir à qqchose
+kitart vmit mellett
