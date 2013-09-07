@@ -1,18 +1,18 @@
 @_K212
 
-s'interesser à, s'interroger
+s'intéresser à, s'interroger
   Je voudrais savoir si vous vous sentez bien.
   J'aimerais savoir vers où est la gare.
 erdeklődik vmiről
-  Edeklődni seretnék, hogy jól érzi-e magát.
-  Erdeklődni seretnék, (hogy) merre van a palyaudvár.
+  Erdeklődni szeretnék, hogy jól érzi-e magát.
+  Erdeklődni szeretnék, (hogy) merre van a palyaudvár.
 
 plainte
   De quoi souffrez-vous ? (De quoi vous plaignez-vous ?)
 panasz
   Mi a panasza?
 
-causer qqchose
+cause, raison de qqchose
   Je n'ai pas de raison de me plaindre.
 ok vmire
   Nincs okom a panaszra.
