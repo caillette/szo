@@ -1,4 +1,4 @@
-This document describes the features of the next major version of Szótárgép.
+This document describes the features of the next major version of Szó.
 
 
 == Hierarchical tags
@@ -58,7 +58,7 @@ There are tons of crappy vocabulary-learning apps. Among the less stupid:
 * http://itunes.apple.com/fr/app/vocabulary-trainer-english/id377911662[Vocabulary Trainer: English - Hungarian]
 
 Vocab Pro HD mentions the http://itunes.apple.com/fr/app/vocab-pro-hd/id497950298[ProVoc File Format] .
-ProVoc is a binary format, so it is not easy as Szótárgép. And it seems abandoned.
+ProVoc is a binary format, so it is not easy as Szó. And it seems abandoned.
 
 
 
