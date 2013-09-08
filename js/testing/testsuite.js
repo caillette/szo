@@ -12,13 +12,13 @@ function vocabulary1() {
     url : function() { return 'some://where' }
   } ;
 
-  var card1 = new szotargep.vocabulary.Card(
+  var card1 = new szo.vocabulary.Card(
       [ 'Question', 'And more' ], [ 'Választ' ], 'Jó', fakePackA, 1 ) ;
-  var card2 = new szotargep.vocabulary.Card(
+  var card2 = new szo.vocabulary.Card(
       [ 'rien' ], [ 'semmi' ], [ 'Rossz', 'Rémes', 'Pocsék' ], fakePackA, 2 ) ;
-  var card3 = new szotargep.vocabulary.Card(
+  var card3 = new szo.vocabulary.Card(
       [ 'Sans étiquette' ], [ 'jegy nélkül' ], [], fakePackA, 3 ) ;
-  var packA = new szotargep.vocabulary.Pack(
+  var packA = new szo.vocabulary.Pack(
       'some://where', [ card1, card2, card3 ] ) ;
 
   return {
@@ -27,7 +27,7 @@ function vocabulary1() {
     card2 : card2,
     card3 : card3,
     packA : packA,
-    vocabulary : new szotargep.vocabulary.Vocabulary( 'some://vocabulary', [ packA ], [] ),
+    vocabulary : new szo.vocabulary.Vocabulary( 'some://vocabulary', [ packA ], [] ),
     allDeclaredTags : [ 'Jó', 'Pocsék', 'Rossz', 'Rémes' ]
   }
 }
@@ -39,9 +39,9 @@ function vocabularyBundle2() {
     url : function() { return 'some://pack' }
   }
 
-  var packA = new szotargep.vocabulary.Pack(
+  var packA = new szo.vocabulary.Pack(
       'some://pack',
-      [ new szotargep.vocabulary.Card(
+      [ new szo.vocabulary.Card(
           [ 'Question' ],
           [ 'Answer' ],
           [ 't1', 't2' ],
@@ -51,7 +51,7 @@ function vocabularyBundle2() {
   ) ;
 
   return {
-    vocabulary : new szotargep.vocabulary.Vocabulary(
+    vocabulary : new szo.vocabulary.Vocabulary(
         'vocabulary.txt',
         [ packA ],
         [ [ 't1', 'Tag one' ], [ 't2', 'Tag two' ] ]
@@ -66,7 +66,7 @@ test( 'Instantiate Vocabulary from predefined Cards', function() {
   deepEqual( v.vocabulary.cards(), [ v.card1, v.card2, v.card3 ], 'All Cards' ) ;
   deepEqual( v.vocabulary.cards( 'Jó' ), [ v.card1 ], 'Cards by tag' ) ;
   deepEqual(
-      v.vocabulary.cards( [ szotargep.vocabulary.UNTAGGED ] ),
+      v.vocabulary.cards( [ szo.vocabulary.UNTAGGED ] ),
       [ v.card3 ],
       'Untagged Cards'
   ) ;
@@ -102,20 +102,20 @@ test( 'Visiting Vocabulary cards', function() {
 
 
 test( 'Instantiate Pack with problem', function() {
-  var pack1 = new szotargep.vocabulary.Pack(
+  var pack1 = new szo.vocabulary.Pack(
       'url:whatever',
       'ignored content',
       { problem : function() { return  'Problem here' } }
   ) ;
   equal( pack1.problem(), 'Problem here', 'Propagate Parser problem to the Pack' ) ;
 
-  var pack2 = new szotargep.vocabulary.Pack( 'url:whatever', 'My problem', null ) ;
+  var pack2 = new szo.vocabulary.Pack( 'url:whatever', 'My problem', null ) ;
   equal( pack2.problem(), 'My problem', 'Support null parser' ) ;
 } ) ;
 
 test( 'Instantiate Pack from parsed content', function() {
 
-  var pack = new szotargep.vocabulary.Pack( 'url:whatever', 'any content', {
+  var pack = new szo.vocabulary.Pack( 'url:whatever', 'any content', {
     problem : function() { return null ; },
     parse : function( text ) {
       return [
@@ -167,8 +167,8 @@ function advance1( fixedRandomValue ) {
 
 function advance( vocabulary, random ) {
 
-  if( szotargep.i18n.initialize ) {
-    szotargep.i18n.initialize( { i18nCode : function() { return 'def' } } ) ;
+  if( szo.i18n.initialize ) {
+    szo.i18n.initialize( { i18nCode : function() { return 'def' } } ) ;
   }
 
   function createRandomFunction( fixedRandomValue ) {
@@ -182,7 +182,7 @@ function advance( vocabulary, random ) {
   } else if( typeof random === 'number' ) {
     random = createRandomFunction( random ) ;
   }
-  return new szotargep.advance.Advance(
+  return new szo.advance.Advance(
       vocabulary,
       {
           tags : function() { return null },
@@ -262,7 +262,7 @@ test( 'initialState', function() {
 
   deepEqual(
       a.tagSelection(),
-      [].concat( v.allDeclaredTags ).concat( szotargep.vocabulary.UNTAGGED ),
+      [].concat( v.allDeclaredTags ).concat( szo.vocabulary.UNTAGGED ),
       'all tags selected (using an empty array)' ) ;
 } ) ;
 
@@ -271,7 +271,7 @@ test( 'location seach and tag selection', function() {
   a.deselectAllTags() ;
   equal( a.locationSearch(), '?tags=' ) ;
 
-  a.toggleTag( szotargep.vocabulary.UNTAGGED, true ) ;
+  a.toggleTag( szo.vocabulary.UNTAGGED, true ) ;
   equal( a.locationSearch(), '?tags=$Untagged' ) ;
 
   a.toggleTag( 't1', true ) ;
@@ -382,7 +382,7 @@ test( 'deck ', function() {
 module( 'Parser' )
 
 asyncTest( 'Simple parser loading', function() {
-  szotargep.parser.createParsers(
+  szo.parser.createParsers(
       [ 'js/testing/simplest.peg.txt' ],
       function( parsers ) {
         ok( ! parsers[ 0 ].problem() ) ;
@@ -393,14 +393,14 @@ asyncTest( 'Simple parser loading', function() {
 } ) ;
 
 test( 'Eating comments', function() {
-  var parser = new szotargep.parser.Parser( 'line = [12#\\n]*', 'uri:here', null ) ;
+  var parser = new szo.parser.Parser( 'line = [12#\\n]*', 'uri:here', null ) ;
   var result = parser.parse( '1\n# comment\n2#' ) ;
   deepEqual( result, [ '1', '\n', '\n', '2', '#' ] ) ;
 } ) ;
 
 
 asyncTest( 'Can\'t load grammar', function() {
-  szotargep.parser.createParsers(
+  szo.parser.createParsers(
       [ 'bad:url' ],
       function( parsers ) {
         ok( parsers[ 0 ].problem(), 'Parser has problem' ) ;
@@ -410,7 +410,7 @@ asyncTest( 'Can\'t load grammar', function() {
 } ) ;
 
 asyncTest( 'Can\'t parse grammar', function() {
-  szotargep.parser.createParsers(
+  szo.parser.createParsers(
       [ 'js/testing/broken.peg.txt' ],
       function( parsers ) {
         ok( parsers[ 0 ].problem(), 'Parser has problem' ) ;
@@ -420,7 +420,7 @@ asyncTest( 'Can\'t parse grammar', function() {
 } ) ;
 
 asyncTest( 'Parallel parser loading', function() {
-  szotargep.parser.createDefaultParsers(
+  szo.parser.createDefaultParsers(
       function( parsers ) {
         equal( parsers.length, 3, 'Parser count' ) ;
         ok( parsers[ 0 ] != null, 'Non-null parser[ 0 ]' ) ;
@@ -438,7 +438,7 @@ function parseEqual( testName, grammarUri, text, tree ) {
   test( testName, function() {
     expect( 1 ) ;
     stop() ;
-    szotargep.parser.createParsers(
+    szo.parser.createParsers(
         [ grammarUri ],
         function( parsers ) {
           deepEqual( parsers[ 0 ].parse( text ), tree, 'text parsing' ) ;
@@ -449,7 +449,7 @@ function parseEqual( testName, grammarUri, text, tree ) {
 }
 
 function parsePackEqual( testName, text, tree ) {
-  parseEqual( testName, szotargep.parser.PACK_GRAMMAR_URI, text, tree ) ;
+  parseEqual( testName, szo.parser.PACK_GRAMMAR_URI, text, tree ) ;
 }
 
 parsePackEqual( 'Canonical Pack',
@@ -561,10 +561,10 @@ asyncTest( 'Merge global and local tags', function() {
     + 'A1'
   ;
 
-  szotargep.parser.createParsers(
-      [ szotargep.parser.PACK_GRAMMAR_URI ],
+  szo.parser.createParsers(
+      [ szo.parser.PACK_GRAMMAR_URI ],
       function( parsers ) {
-        var pack = new szotargep.vocabulary.Pack( 'some-uri', packAsText, parsers[ 0 ] ) ;
+        var pack = new szo.vocabulary.Pack( 'some-uri', packAsText, parsers[ 0 ] ) ;
         deepEqual( pack.cards()[ 0 ].tags(), [ 't', 'tt' ]  ) ;
         start() ;
       }
@@ -574,7 +574,7 @@ asyncTest( 'Merge global and local tags', function() {
 module( 'Vocabulary list grammar' ) ;
 
 function parseVocabularyEqual( testName, text, tree ) {
-  parseEqual( testName, szotargep.parser.VOCABULARY_GRAMMAR_URI, text, tree ) ;
+  parseEqual( testName, szo.parser.VOCABULARY_GRAMMAR_URI, text, tree ) ;
 }
 
 parseVocabularyEqual( 'Simple Vocabulary list',
@@ -606,7 +606,7 @@ parseVocabularyEqual( 'Simple Vocabulary list',
 module( 'Search parameters grammar' ) ;
 
 function parseSearchEqual( testName, text, tree ) {
-  parseEqual( testName, szotargep.parser.SEARCH_GRAMMAR_URI, text, tree ) ;
+  parseEqual( testName, szo.parser.SEARCH_GRAMMAR_URI, text, tree ) ;
 }
 
 parseSearchEqual( 'Empty search', '' , [] ) ;
@@ -632,37 +632,37 @@ parseSearchEqual( 'Language', '?lang=hun' , [  [ 'lang', 'hun' ] ] ) ;
 module( 'Location Search' ) ;
 
 test( 'Defaults', function() {
-  equal( new szotargep.loader.LocationSearch( [] ).vocabulary(), 'vocabulary.txt' ) ;
-  equal( new szotargep.loader.LocationSearch( []  ).tags(), null ) ;
-  equal( new szotargep.loader.LocationSearch( []  ).single(), false ) ;
-  equal( new szotargep.loader.LocationSearch( []  ).flip(), false ) ;
+  equal( new szo.loader.LocationSearch( [] ).vocabulary(), 'vocabulary.txt' ) ;
+  equal( new szo.loader.LocationSearch( []  ).tags(), null ) ;
+  equal( new szo.loader.LocationSearch( []  ).single(), false ) ;
+  equal( new szo.loader.LocationSearch( []  ).flip(), false ) ;
 } ) ;
 
 test( 'Explicit vocabulary', function() {
   equal(
-      new szotargep.loader.LocationSearch( [ [ 'v', 'myvocabulary.txt' ] ] ).vocabulary(),
+      new szo.loader.LocationSearch( [ [ 'v', 'myvocabulary.txt' ] ] ).vocabulary(),
       'myvocabulary.txt'
   ) ;
 } ) ;
 
 test( 'Skip', function() {
-  equal( new szotargep.loader.LocationSearch( [ [ 'flip' ] ]  ).flip(), true ) ;
+  equal( new szo.loader.LocationSearch( [ [ 'flip' ] ]  ).flip(), true ) ;
 } ) ;
 
 test( 'Single', function() {
-  equal( new szotargep.loader.LocationSearch( [ [ 'single' ] ]  ).single(), true ) ;
+  equal( new szo.loader.LocationSearch( [ [ 'single' ] ]  ).single(), true ) ;
 } ) ;
 
 test( 'Tags', function() {
   deepEqual(
-      new szotargep.loader.LocationSearch( [ [ 'tags', [ 't' ] ] ]  ).tags(),
+      new szo.loader.LocationSearch( [ [ 'tags', [ 't' ] ] ]  ).tags(),
       [ 't' ]
   ) ;
 } ) ;
 
 test( 'Language', function() {
   deepEqual(
-      new szotargep.loader.LocationSearch( [ [ 'lang', 'foo' ] ]  ).language(),
+      new szo.loader.LocationSearch( [ [ 'lang', 'foo' ] ]  ).language(),
       'foo'
   ) ;
 } ) ;
@@ -672,7 +672,7 @@ module( 'Loader' ) ;
 
 asyncTest( 'Load vocabulary', function() {
   expect( 1 ) ;
-  szotargep.loader.load(
+  szo.loader.load(
       null,
       '?v=js/testing/vocabulary-mixed.txt',
       function( vocabulary ) {

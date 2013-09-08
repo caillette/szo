@@ -1,22 +1,22 @@
-( function ( szotargep ) {
+( function ( szo ) {
 
-  szotargep.main = {} ;
+  szo.main = {} ;
 
-  szotargep.main.documentReady = function() {
+  szo.main.documentReady = function() {
 
     var showLanguageSelector = false ;
 
-    if( new szotargep.browser.Capabilities( '#browser-capabilities' ).capable() ) {
+    if( new szo.browser.Capabilities( '#browser-capabilities' ).capable() ) {
       $( '#browser-capabilities' ).hide() ;
 
       console.debug( 'Initializing ...' ) ;
 
-      szotargep.loader.load(
+      szo.loader.load(
           '#problems',
           window.location.search,
           function( vocabulary, locationSearch ) {
             $( '.initialization' ).css( 'display', 'none' ) ;
-            var advance = new szotargep.advance.Advance( vocabulary, locationSearch ) ;
+            var advance = new szo.advance.Advance( vocabulary, locationSearch ) ;
             initializeI18n( advance ) ;
             reportProblems( vocabulary ) ;
             createCardIndex( vocabulary ) ;
@@ -33,7 +33,7 @@
     }
 
     function initializeI18n( i18nSupplier ) {
-      szotargep.i18n.initialize( i18nSupplier ) ;
+      szo.i18n.initialize( i18nSupplier ) ;
     }
 
     function reportProblems( vocabulary ) {
@@ -60,11 +60,11 @@
     function createCardIndex( vocabulary ) {
       var cards = vocabulary.cards() ;
 
-      szotargep.index.cardOfIndex = function( index ) {
+      szo.index.cardOfIndex = function( index ) {
         return cards[ index ] ;
       } ;
 
-      szotargep.index.indexOfCard = function( card ) {
+      szo.index.indexOfCard = function( card ) {
         var index = cards.indexOf( card ) ;
         if( index < 0 ) throw 'Unknown Card: ' + card ;
         return index ;
@@ -118,9 +118,9 @@
       }
 
       createTagWidget(
-          szotargep.vocabulary.UNTAGGED,
+          szo.vocabulary.UNTAGGED,
           '-untagged-',
-          function( checked ) { advance.toggleTag( szotargep.vocabulary.UNTAGGED, checked ) }
+          function( checked ) { advance.toggleTag( szo.vocabulary.UNTAGGED, checked ) }
       ) ;
       var tags = advance.vocabulary().tags() ;
       for( var t = 0 ; t < tags.length ; t ++ ) {
@@ -138,9 +138,9 @@
 
     function updateBoard( advance ) {
       if( advance.viewAsList() ) {
-        performAction( new szotargep.action.ShowList( advance ) ) ;
+        performAction( new szo.action.ShowList( advance ) ) ;
       } else {
-        performAction( new szotargep.action.ShowSingleCard( advance ) ) ;
+        performAction( new szo.action.ShowSingleCard( advance ) ) ;
       }
       updateTagCheckedState( advance ) ;
 
@@ -276,14 +276,14 @@
                 updateLabels() ;
                 if( advance.viewAsList() ) {
                   // The list may contain some elements subject to change.
-                  performAction( new szotargep.action.ShowList( advance ) ) ;
+                  performAction( new szo.action.ShowList( advance ) ) ;
                 }
                 updateBrowserHistory( advance )
             } )
             .appendTo( '#top' )
         ;
 
-        szotargep.i18n.visitLanguages( function( language ) {
+        szo.i18n.visitLanguages( function( language ) {
           $( '#language-selection').append(
               '<option value="' + language.code639_1 + '" >' + language.name + '</option>' ) ;
         } ) ;
@@ -361,18 +361,18 @@
     }
 
     function updateLabels( i18nCode ) {
-      $( '#select-all-tags' ).text( szotargep.i18n.resource( 'all' ) ) ;
-      $( '#deselect-all-tags' ).text( szotargep.i18n.resource( 'none' ) ) ;
-      $( '#next-answer-or-card' ).html( '<b>' + szotargep.i18n.resource( 'next' ) + '</b>' ) ;
-      $( '#label-toggle-list' ).text( szotargep.i18n.resource( 'list' ) ) ;
-      $( '#label-toggle-flip' ).text( szotargep.i18n.resource( 'flip' ) ) ;
+      $( '#select-all-tags' ).text( szo.i18n.resource( 'all' ) ) ;
+      $( '#deselect-all-tags' ).text( szo.i18n.resource( 'none' ) ) ;
+      $( '#next-answer-or-card' ).html( '<b>' + szo.i18n.resource( 'next' ) + '</b>' ) ;
+      $( '#label-toggle-list' ).text( szo.i18n.resource( 'list' ) ) ;
+      $( '#label-toggle-flip' ).text( szo.i18n.resource( 'flip' ) ) ;
 
-      $( '#label-toggle-deck' ).text( szotargep.i18n.resource( 'deck' ) ) ;
-      $( '#add-to-deck' ).text( szotargep.i18n.resource( 'addToDeck' ) ) ;
-      $( '#remove-from-deck' ).text( szotargep.i18n.resource( 'removeFromDeck' ) ) ;
+      $( '#label-toggle-deck' ).text( szo.i18n.resource( 'deck' ) ) ;
+      $( '#add-to-deck' ).text( szo.i18n.resource( 'addToDeck' ) ) ;
+      $( '#remove-from-deck' ).text( szo.i18n.resource( 'removeFromDeck' ) ) ;
 
-      $( '#label-' + szotargep.vocabulary.UNTAGGED.replace( '$', '\\$' ) )
-          .html( '<em>' + szotargep.i18n.resource( 'untagged' ) + '</em>' ) ;
+      $( '#label-' + szo.vocabulary.UNTAGGED.replace( '$', '\\$' ) )
+          .html( '<em>' + szo.i18n.resource( 'untagged' ) + '</em>' ) ;
 
       if( i18nCode ) $( '#language-selection' ).val( i18nCode ) ;
     }
@@ -416,7 +416,7 @@
         actionInProgress( true ) ;
         $( '#board' ).empty() ;
 
-        performer = new szotargep.action.Performer(
+        performer = new szo.action.Performer(
             {
               id : nextActionId(), // Just for debugging.
               onStepComplete : function() {
@@ -440,4 +440,4 @@
 
   }
 
-} ( window.szotargep = window.szotargep || {} ) ) ;
+} ( window.szo = window.szo || {} ) ) ;

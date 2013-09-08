@@ -1,8 +1,8 @@
-( function ( szotargep ) {
+( function ( szo ) {
 
-  szotargep.loader = {} ;
+  szo.loader = {} ;
 
-  szotargep.loader.load = function( div, search, onSuccess, onFailure ) {
+  szo.loader.load = function( div, search, onSuccess, onFailure ) {
 
     function report( exception, message ) {
       html = '<p>' ;
@@ -19,7 +19,7 @@
 
     }
 
-    szotargep.parser.createDefaultParsers(
+    szo.parser.createDefaultParsers(
       function( parsers ) {
         var parsersHealthy = true ;
         for( p = 0 ; p < parsers.length ; p ++ ) {
@@ -32,15 +32,15 @@
 
         if( parsersHealthy ) {
 
-          function find( parsers, uri ) { return szotargep.parser.findParser( parsers, uri ) }
+          function find( parsers, uri ) { return szo.parser.findParser( parsers, uri ) }
 
           try {
-            var searchParser = find( parsers, szotargep.parser.SEARCH_GRAMMAR_URI ) ;
-            var vocabularyParser = find( parsers, szotargep.parser.VOCABULARY_GRAMMAR_URI ) ;
-            var packParser = find( parsers, szotargep.parser.PACK_GRAMMAR_URI ) ;
+            var searchParser = find( parsers, szo.parser.SEARCH_GRAMMAR_URI ) ;
+            var vocabularyParser = find( parsers, szo.parser.VOCABULARY_GRAMMAR_URI ) ;
+            var packParser = find( parsers, szo.parser.PACK_GRAMMAR_URI ) ;
             try {
               var locationSearch =
-                  new szotargep.loader.LocationSearch( searchParser.parse( search ) ) ;
+                  new szo.loader.LocationSearch( searchParser.parse( search ) ) ;
             } catch( e ) {
               report( e, 'Could not interpret this part of the URL: ' + search ) ;
               return ;
@@ -48,7 +48,7 @@
             var vocabularyUri = locationSearch.vocabulary() ;
             window.console.info( 'Loading vocabulary from ' + vocabularyUri + ' ...' ) ;
 
-            szotargep.resource.loadResources(
+            szo.resource.loadResources(
                 [ vocabularyUri ],
                 function( resources ) {
                   var vocabularyList = resources[ 0 ].content ;
@@ -66,20 +66,20 @@
                     window.console.debug( 'Loaded ' + parsedVocabulary.length +
                       ' pack reference' + ( parsedVocabulary.length > 1 ? 's' : '' ) ) ;
 
-                    szotargep.resource.processResources(
+                    szo.resource.processResources(
                         parsedVocabulary[ 0 ],
                         function( transformable ) {
                           if( transformable.problem ) {
-                            return new szotargep.vocabulary.Pack(
+                            return new szo.vocabulary.Pack(
                                 transformable.uri, transformable.problem, null ) ;
                           } else {
-                            return new szotargep.vocabulary.Pack(
+                            return new szo.vocabulary.Pack(
                                 transformable.uri, transformable.content, packParser ) ;
                           }
                         },
                         function( packs ) {
                           onSuccess(
-                              new szotargep.vocabulary.Vocabulary(
+                              new szo.vocabulary.Vocabulary(
                                   vocabularyUri,
                                   packs,
                                   parsedVocabulary[ 1 ]
@@ -106,13 +106,13 @@
 
   var defaultVocabulary = 'vocabulary.txt' ;
 
-  szotargep.loader.isDefaultVocabulary = function( string ) {
+  szo.loader.isDefaultVocabulary = function( string ) {
     return defaultVocabulary === string ;
   }
 
 
   // JavaScript defines window.location.search as the way to get the parameters of window's URL.
-  szotargep.loader.LocationSearch = function() {
+  szo.loader.LocationSearch = function() {
 
     var constructor = function LocationSearch( parseResult ) {
 
@@ -133,7 +133,7 @@
 
       this.language = function() {
         var l = byKey( 'lang' ) ;
-        return l ? l : szotargep.i18n.defaultLanguage() ;
+        return l ? l : szo.i18n.defaultLanguage() ;
       }
 
       this.flip = function() {
@@ -153,4 +153,4 @@
     return constructor ;
   }() ;
 
-} ( window.szotargep = window.szotargep || {} ) ) ;
+} ( window.szo = window.szo || {} ) ) ;

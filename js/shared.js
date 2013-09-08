@@ -33,7 +33,7 @@ Array.prototype.isArray = function ( object ) {
 
 
 
-( function ( szotargep ) {
+( function ( szo ) {
 
 // =========
 // Resources
@@ -43,10 +43,10 @@ Array.prototype.isArray = function ( object ) {
       cache : false // Disable caching of AJAX responses.
   } ) ;
 
-  szotargep.resource = {} ;
+  szo.resource = {} ;
 
   // [ operands ] --> operator( operand, operatorCompletion ) --> onCompletion[ results ]
-  szotargep.resource.batchApply = function( operands, operator, onCompletion ) {
+  szo.resource.batchApply = function( operands, operator, onCompletion ) {
     var results = new Array( operands.length ) ;
     var completion = 0 ;
 
@@ -66,8 +66,8 @@ Array.prototype.isArray = function ( object ) {
     }
   } ;
 
-  szotargep.resource.loadResources = function( uris, onCompletion ) {
-    szotargep.resource.processResources( uris, function( any ) { return any }, onCompletion ) ;
+  szo.resource.loadResources = function( uris, onCompletion ) {
+    szo.resource.processResources( uris, function( any ) { return any }, onCompletion ) ;
   }
 
   // Given an array of URIs, loads each of them as a text resource using AJAX,
@@ -76,9 +76,9 @@ Array.prototype.isArray = function ( object ) {
   //     [ uri, ... ]
   // --> transformer( { uri, content, problem } ) --> transformed
   // --> [ transformed, ... ]
-  szotargep.resource.processResources = function( uris, transformer, onCompletion ) {
+  szo.resource.processResources = function( uris, transformer, onCompletion ) {
 
-    szotargep.resource.batchApply(
+    szo.resource.batchApply(
         uris,
         function( uri, notifyBatchApply ) {
           $.get(
@@ -113,18 +113,18 @@ Array.prototype.isArray = function ( object ) {
 // Index
 // =====
 
-  // Enriched with useful functions by szotargep.main after vocabulary loaded.
-  szotargep.index = {} ;
+  // Enriched with useful functions by szo.main after vocabulary loaded.
+  szo.index = {} ;
 
 
 // ====
 // HTML
 // ====
 
-  szotargep.html = {} ;
+  szo.html = {} ;
 
-  szotargep.html.showCardDetail = function( card ) {
-    if( typeof card === 'number' ) card = szotargep.index.cardOfIndex( card ) ;
+  szo.html.showCardDetail = function( card ) {
+    if( typeof card === 'number' ) card = szo.index.cardOfIndex( card ) ;
 
     var html = '' ;
     if( card ) {
@@ -140,7 +140,7 @@ Array.prototype.isArray = function ( object ) {
   }
 
 
-} ( window.szotargep = window.szotargep || {} ) ) ;
+} ( window.szo = window.szo || {} ) ) ;
 
 
 

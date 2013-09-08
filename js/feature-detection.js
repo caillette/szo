@@ -1,8 +1,8 @@
-( function ( szotargep ) {
+( function ( szo ) {
 
-  szotargep.browser = {} ;
+  szo.browser = {} ;
 
-  szotargep.browser.Capabilities = function() {
+  szo.browser.Capabilities = function() {
     var constructor = function( div ) {
 
       reportHtml( '<h3>Verifying browser features...</h3>' ) ;
@@ -43,4 +43,4 @@
     return constructor ;
   }() ;
 
-} ( window.szotargep = window.szotargep || {} ) ) ;
+} ( window.szo = window.szo || {} ) ) ;

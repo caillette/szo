@@ -1,10 +1,10 @@
-( function ( szotargep ) {
+( function ( szo ) {
 
-  szotargep.advance = {} ;
+  szo.advance = {} ;
 
   // Represents the state that user put the application into by its various actions.
   // There is no notification because the HTML-bound part controls the whole kinematics.
-  szotargep.advance.Advance = function() {
+  szo.advance.Advance = function() {
     // vocabulary: a Vocabulary instance.
     // locationSearch: reflects the state of another session.
     // random: an optional random generator for testing.
@@ -24,7 +24,7 @@
       var disclosure = 0 ;
       var asList ;
       var flipView ;
-      var currentI18nCode = szotargep.i18n.defaultLanguage() ;
+      var currentI18nCode = szo.i18n.defaultLanguage() ;
 
       // tags: a value understood by Card.hasTag method.
       this.selectTags = function( tags ) {
@@ -210,7 +210,7 @@
 
       this.selectAllTags = function() {
         this.selectTags( vocabularyTags ) ;
-        this.toggleTag( szotargep.vocabulary.UNTAGGED, true ) ;
+        this.toggleTag( szo.vocabulary.UNTAGGED, true ) ;
       }
 
       this.deselectAllTags = function() {
@@ -233,12 +233,12 @@
       // representing the current state of this Advance object.
       this.locationSearch = function() {
         var result = [] ;
-        if( ! szotargep.loader.isDefaultVocabulary( vocabulary.url() ) ) {
+        if( ! szo.loader.isDefaultVocabulary( vocabulary.url() ) ) {
           result.push( 'v=' + vocabulary.url() ) ;
         }
         if( ! this.viewAsList() ) result.push( 'single' ) ;
         if( this.viewFlip() ) result.push( 'flip' ) ;
-        if( this.i18nCode() != szotargep.i18n.defaultLanguage() ) {
+        if( this.i18nCode() != szo.i18n.defaultLanguage() ) {
           result.push( 'lang=' + this.i18nCode() ) ;
         }
         if( tagSelection.length <= vocabularyTags.length ) {
@@ -260,7 +260,7 @@
         } else {
           for( var t = 0 ; t < requestedTags.length ; t ++ ) {
             var requestedTag = requestedTags[ t ] ;
-            if( requestedTag === szotargep.vocabulary.UNTAGGED
+            if( requestedTag === szo.vocabulary.UNTAGGED
              || vocabularyTags.indexOf( requestedTag ) >= 0
             ) {
               this.toggleTag( requestedTag, true ) ;
@@ -279,5 +279,5 @@
     return constructor ;
   }() ;
 
-} ( window.szotargep = window.szotargep || {} ) ) ;
+} ( window.szo = window.szo || {} ) ) ;
 

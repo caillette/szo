@@ -127,7 +127,7 @@ No more `rsync` to SourceForge! Github hosts static pages as https://github.com/
 
 Development must occur in`gh-pages` branch.
 
-URL will be: http://caillette.github.com/szotargep
+URL will be: http://caillette.github.com/szo
 
 
 == Pameterized vocabulary file in the URL

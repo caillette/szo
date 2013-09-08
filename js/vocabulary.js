@@ -1,9 +1,9 @@
-( function ( szotargep ) {
+( function ( szo ) {
 
-  szotargep.vocabulary = {} ;
+  szo.vocabulary = {} ;
 
   // A loadable resource containing Cards.
-  szotargep.vocabulary.Pack = function() {
+  szo.vocabulary.Pack = function() {
 
     // url: originating URL (for humans only).
     // content:
@@ -33,7 +33,7 @@
           cards = new Array( cardsAsArray.length ) ;
           for( cardIndex = 0 ; cardIndex < cardsAsArray.length ; cardIndex ++ ) {
             var cardAsArray = cardsAsArray[ cardIndex ] ;
-            cards[ cardIndex ] = new szotargep.vocabulary.Card(
+            cards[ cardIndex ] = new szo.vocabulary.Card(
                 cardAsArray[ 2 ],
                 cardAsArray[ 3 ],
                 merge( globalTags, cardAsArray[ 1 ] ),
@@ -92,18 +92,18 @@
   }() ;
 
   // Magic tag representing there is no tag.
-  szotargep.vocabulary.UNTAGGED = '$Untagged' ;
+  szo.vocabulary.UNTAGGED = '$Untagged' ;
 
 
   // A set of questions and answers that came out from a Pack.
-  szotargep.vocabulary.Card = function() {
+  szo.vocabulary.Card = function() {
 
     var constructor = function Card( questions, answers, tags, pack, lineInPack ) {
       if( ! Array.isArray( questions ) ) throw 'Not an array: ' + questions ;
       if( ! Array.isArray( answers ) ) throw 'Not an array: ' + answers ;
       if( ! tags ) tags = [] ;
       if( typeof tags === 'string' ) tags = [ tags ] ;
-      if( tags.indexOf( szotargep.vocabulary.UNTAGGED ) >= 0 ) {
+      if( tags.indexOf( szo.vocabulary.UNTAGGED ) >= 0 ) {
         throw 'Don\'t create a Card with UNTAGGED tag' ;
       }
 
@@ -181,7 +181,7 @@
             found = true ;
           }
         } ) ;
-        return found || ( tagCount === 0 && tags.indexOf( szotargep.vocabulary.UNTAGGED ) >= 0 ) ;
+        return found || ( tagCount === 0 && tags.indexOf( szo.vocabulary.UNTAGGED ) >= 0 ) ;
       }
     }
 
@@ -189,7 +189,7 @@
   }() ;
 
   // A queryable collection of Cards.
-  szotargep.vocabulary.Vocabulary = function() {
+  szo.vocabulary.Vocabulary = function() {
 
     var constructor = function Vocabulary( url, packs, tagAppellations ) {
 
@@ -280,4 +280,4 @@
     return constructor ;
   }() ;
 
-} ( window.szotargep = window.szotargep || {} ) ) ;
+} ( window.szo = window.szo || {} ) ) ;

@@ -1,1 +1,1 @@
-Use the http://caillette.github.io/szotargep[online version] (help included).
+Use the http://caillette.github.io/szo[online version] (help included).

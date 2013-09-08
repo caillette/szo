@@ -1,11 +1,11 @@
-( function ( szotargep ) {
+( function ( szo ) {
 
-  szotargep.parser = {} ;
+  szo.parser = {} ;
 
 
   // Encapsulate PEG.js parser and handles grammar loading.
   // Because grammar loading occurs with AJAX there must be a callback to tell it's ready.
-  szotargep.parser.Parser = function() {
+  szo.parser.Parser = function() {
 
     function pegExceptionToString( e, uri ) {
       return e.toString()
@@ -60,14 +60,14 @@
 
 
   // [ uri, ... ] --> [ parser, ... ]
-  szotargep.parser.createParsers = function( grammarSourceUris, onGeneralCompletion ) {
-    szotargep.resource.processResources(
+  szo.parser.createParsers = function( grammarSourceUris, onGeneralCompletion ) {
+    szo.resource.processResources(
         grammarSourceUris,
         function( transformable ) {
           if( transformable.problem ) {
-            return new szotargep.parser.Parser( null, transformable.uri, transformable.problem )
+            return new szo.parser.Parser( null, transformable.uri, transformable.problem )
           } else {
-            return new szotargep.parser.Parser( transformable.content, transformable.uri ) ;
+            return new szo.parser.Parser( transformable.content, transformable.uri ) ;
           }
         },
         onGeneralCompletion
@@ -76,23 +76,23 @@
 
 
 
-  szotargep.parser.SEARCH_GRAMMAR_URI = 'js/search.peg.txt' ;
-  szotargep.parser.VOCABULARY_GRAMMAR_URI = 'js/vocabulary.peg.txt' ;
-  szotargep.parser.PACK_GRAMMAR_URI = 'js/pack.peg.txt' ;
+  szo.parser.SEARCH_GRAMMAR_URI = 'js/search.peg.txt' ;
+  szo.parser.VOCABULARY_GRAMMAR_URI = 'js/vocabulary.peg.txt' ;
+  szo.parser.PACK_GRAMMAR_URI = 'js/pack.peg.txt' ;
 
-  szotargep.parser.createDefaultParsers = function( onCompletion ) {
-    szotargep.parser.createParsers(
+  szo.parser.createDefaultParsers = function( onCompletion ) {
+    szo.parser.createParsers(
         [
-            szotargep.parser.SEARCH_GRAMMAR_URI,
-            szotargep.parser.VOCABULARY_GRAMMAR_URI,
-            szotargep.parser.PACK_GRAMMAR_URI
+            szo.parser.SEARCH_GRAMMAR_URI,
+            szo.parser.VOCABULARY_GRAMMAR_URI,
+            szo.parser.PACK_GRAMMAR_URI
         ],
         onCompletion
     ) ;
   }
 
 
-  szotargep.parser.findParser = function( parsers, uri ) {
+  szo.parser.findParser = function( parsers, uri ) {
     for( var i = 0 ; i < parsers.length ; i ++ ) {
       if( parsers[ i ].uri() === uri ) {
         return parsers[ i ] ;
@@ -101,5 +101,5 @@
     throw 'Unknown uri "' + uri + '" in ' + parsers ;
   }
 
-} ( window.szotargep = window.szotargep || {} ) ) ;
+} ( window.szo = window.szo || {} ) ) ;
 

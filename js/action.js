@@ -1,6 +1,6 @@
-( function ( szotargep ) {
+( function ( szo ) {
 
-  szotargep.action = {} ;
+  szo.action = {} ;
 
   // Performs an action that may take several steps to complete.
   // This lets window thread decide to start the next step, or simply not because another action
@@ -9,7 +9,7 @@
   // taking longer in cumulated time, let the window thread "breath" and quickly respond to
   // the user adjusting his choice, before the whole result finished a lengthy DOM update.
   // The ActionPerformer supports single-stepped actions as a simplification of the multi-step case.
-  szotargep.action.Performer = function() {
+  szo.action.Performer = function() {
 
     var constructor = function Performer( context, action ) {
 
@@ -49,13 +49,13 @@
   }() ;
 
 
-  szotargep.action.ShowList = function() {
+  szo.action.ShowList = function() {
 
     var batchSize = 50 ;
 
     var constructor = function ShowList( advance ) {
 
-      szotargep.html.showCardDetail( null ) ;
+      szo.html.showCardDetail( null ) ;
 
       var cardIndex = 0 ;
       var complete = false ;
@@ -74,7 +74,7 @@
           html += '<p class="report-header" >' ;
 
           html += '<span class="screen-only" >' ;
-          html += szotargep.i18n.resource( 'total' ) + ' ' ;
+          html += szo.i18n.resource( 'total' ) + ' ' ;
           html += total ;
           html += '</span>' ;
 
@@ -110,7 +110,7 @@
   }() ;
 
 
-  szotargep.action.ShowSingleCard = function() {
+  szo.action.ShowSingleCard = function() {
 
     var constructor = function ShowSingleCard( advance ) {
 
@@ -119,7 +119,7 @@
         var card = advance.currentCard() ;
         html += cardAsHtml( card, advance.viewAsList(), advance.viewFlip() ) ;
         $( '#board' ).html( html ) ;
-        szotargep.html.showCardDetail( card ) ;
+        szo.html.showCardDetail( card ) ;
       }
     }
 
@@ -127,7 +127,7 @@
   }() ;
 
   function noCardMessageHtml() {
-    return '<p class="empty" >' + szotargep.i18n.resource( 'noSelection' ) + '</p>' ;
+    return '<p class="empty" >' + szo.i18n.resource( 'noSelection' ) + '</p>' ;
   }
 
   function cardAsHtml( card, listView, viewFlip ) {
@@ -150,9 +150,9 @@
       var tableAttributes = '' ;
       if( listView ) {
         tableAttributes += ' class="card-list" ' ;
-        tableAttributes += 'onMouseOver="szotargep.html.showCardDetail('
-            + szotargep.index.indexOfCard( card ) + ')" ' ;
-        tableAttributes += 'onMouseOut="szotargep.html.showCardDetail()" ' ;
+        tableAttributes += 'onMouseOver="szo.html.showCardDetail('
+            + szo.index.indexOfCard( card ) + ')" ' ;
+        tableAttributes += 'onMouseOut="szo.html.showCardDetail()" ' ;
       }
 
       html += '<table' + tableAttributes + '>\n' ;
@@ -180,4 +180,4 @@
     return html ;
   }
 
-} ( window.szotargep = window.szotargep || {} ) ) ;
+} ( window.szo = window.szo || {} ) ) ;

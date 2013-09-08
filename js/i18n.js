@@ -1,10 +1,10 @@
-( function ( szotargep ) {
+( function ( szo ) {
 
-  szotargep.i18n = {} ;
+  szo.i18n = {} ;
 
-  szotargep.i18n.defaultLanguage = function() { return 'hu' }
+  szo.i18n.defaultLanguage = function() { return 'hu' }
 
-  szotargep.i18n.visitLanguages = function( visitor ) {
+  szo.i18n.visitLanguages = function( visitor ) {
     for( var l = 0 ; l < languages.length ; l ++ ) {
       var language = languages[ l ] ;
       visitor( language ) ;
@@ -22,16 +22,16 @@
 
   var codeSupplier ;
 
-  szotargep.i18n.initialize = function( languageCodeSupplier ) {
+  szo.i18n.initialize = function( languageCodeSupplier ) {
     codeSupplier = languageCodeSupplier ;
-    szotargep.i18n.initialize = null ; // So nobody will call it again.
+    szo.i18n.initialize = null ; // So nobody will call it again.
   }
 
-  szotargep.i18n.currentI18nCode = function() {
+  szo.i18n.currentI18nCode = function() {
 
   }
 
-  szotargep.i18n.resource = function( key ) {
+  szo.i18n.resource = function( key ) {
     return resources[ key ][ codeSupplier.i18nCode() ] ;
   }
 
@@ -95,4 +95,4 @@
   }
 
 
-} ( window.szotargep = window.szotargep || {} ) ) ;
+} ( window.szo = window.szo || {} ) ) ;
