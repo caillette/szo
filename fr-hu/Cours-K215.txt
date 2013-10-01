@@ -5,7 +5,7 @@ simogad vmit
 
 ordures, poubelle
 szemét
-  semetet
+  szemetet
 
 s'enregistrer, demander un rendez-vous
 jelentkezik
