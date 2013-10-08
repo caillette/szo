@@ -1,0 +1,44 @@
+@_K222
+
+  @NomsPropres
+Voie Lactée
+Tejútrendszer
+
+
+dédommager qqun pour qqchose
+kártótol vkit vmiért
+
+événement
+esemény
+
+large
+széles
+
+à moitié
+  Il est à moitié fou.
+  Le verre est à moitié vide.
+  Je suis arrivé à mi-chemin.
+félig
+  Félig bolond.
+  A pohár félig üres.
+  Eljutottam az út feléig.
+
+entourer qqchose
+körülvesz vmit
+
+pourvu d'un certain nombre de degrés, de marches
+  un escalier de 5 marches
+fokú
+  egy öt fokú lepcső
+
+chaud d'un certain nombre de degrés
+  une étoile à 10.000°c
+fokos
+  egy 10.000 fokos csillag
+
+vitesse de {} km/s
+  L'étoile se déplace à une vitesse de 780 km/s.
+masodpercként {} kilométeres sebesség
+  A csillag masodpercként 780 kilometeres sebességgel.
+
+
