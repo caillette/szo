@@ -189,7 +189,23 @@
       $( '<button type="button" id="show-dialog" class="widget" >-show-dialog-</button>'
       )
           .click( function( event ) {
-            $( '#tags' ).modal() ;
+            $( '#tags' ).modal( {
+                opacity : 20,
+                overlayClose : true,
+                overlayCss : { backgroundColor : '#000' },
+                onOpen : function( dialog ) {
+                  dialog.overlay.fadeIn( 'fast' ) ;
+                  dialog.container.fadeIn( 'fast' ) ;
+                  dialog.data.fadeIn( 'fast' ) ;
+                },
+                onClose : function( dialog ) {
+                  dialog.overlay.fadeOut( 'fast' ) ;
+                  dialog.container.fadeOut( 'fast' ) ;
+                  dialog.data.fadeOut( 'fast', function( dialog ) { $.modal.close() } ) ;
+                },
+                minWidth : '80%',
+                minHeight : '50%'
+            } )
           } )
           .appendTo( '#top' )
       ;

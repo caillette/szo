@@ -55,6 +55,34 @@ Vocab Pro HD mentions the http://itunes.apple.com/fr/app/vocab-pro-hd/id49795029
 ProVoc is a binary format, so it is not easy as Szó. And it seems abandoned.
 
 
+== Dialog
+
+A dialog for chosing tags and other options reduces space consumption.
+
+
+=== Calculate the width of some HTML element
+
+http://stackoverflow.com/questions/118241/calculate-text-width-with-javascript[Here] :
+
+---
+#Test
+{
+    position: absolute;
+    visibility: hidden;
+    height: auto;
+    width: auto;
+}
+
+var test = document.getElementById("Test");
+test.style.fontSize = fontSize;
+var height = (test.clientHeight + 1) + "px";
+var width = (test.clientWidth + 1) + "px";
+---
+
+Putting each tag inside a div (combo + label), an inline-block style will allow a fluid layout with multiple aligned columns.
+
+
+
 
 
 == Multilingual user interface

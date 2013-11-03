@@ -89,11 +89,11 @@
 
 
 #board {
-  display : inline-block ;
+  display : block ;
   vertical-align : top ;
   width : 40em ;
-  margin-left : 1em ;
-  margin-right : 1em ;
+  margin-left : auto ;
+  margin-right : auto ;
 }
 
 #board > table.card-list {
