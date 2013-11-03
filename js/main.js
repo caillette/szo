@@ -190,9 +190,8 @@
       )
           .click( function( event ) {
             $( '#tags' ).modal( {
-                opacity : 20,
+                opacity : 30,
                 overlayClose : true,
-                overlayCss : { backgroundColor : '#000' },
                 onOpen : function( dialog ) {
                   dialog.overlay.fadeIn( 'fast' ) ;
                   dialog.container.fadeIn( 'fast' ) ;
