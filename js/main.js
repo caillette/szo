@@ -103,9 +103,7 @@
             + 'type="checkbox" '
             + 'id="' + id + '"'
             + '</input>'
-        )
-          .click( click )
-//          .appendTo( '#tags' )
+        ) .click( click )
         ;
 
         var label = $( '<label '
@@ -113,9 +111,7 @@
             + 'for="' + id + '" >'
             + ( special ? '<em>' + title + '</em>' : title )
             + '</label>'
-//            + '<br>'
         )
-//            .appendTo( '#tags' )
         ;
 
         var div = $( '<div/>' ) ;
@@ -193,10 +189,10 @@
 
     function createTopWidgets( advance ) {
 
-      $( '<button type="button" id="show-dialog" class="widget" >-show-dialog-</button>'
+      $( '<button type="button" id="show-configuration-dialog" class="widget" >-configure-</button>'
       )
           .click( function( event ) {
-            $( '#tags' ).modal( {
+            $( '#dialog' ).modal( {
                 opacity : 30,
                 overlayClose : true,
                 onOpen : function( dialog ) {
@@ -227,10 +223,12 @@
             advance.viewFlip( $( '#toggle-flip' ).prop( 'checked' ) ) ;
             updateBoard( advance ) ;
           } )
-          .appendTo( '#top' )
+          .appendTo( '#dialog-buttons' )
       ;
 
-      $( '<label id="label-toggle-flip" for="toggle-flip" >-flip-</label>' ).appendTo( '#top' ) ;
+      $( '<label id="label-toggle-flip" for="toggle-flip" >-flip-</label>' )
+          .appendTo( '#dialog-buttons' )
+      ;
 
 
       $( '<button type="button" id="select-all-tags" class="widget" >-all-</button>'
@@ -240,7 +238,7 @@
               updateBoard( advance ) ;
               animateColor( $( this ) ) ;
           } )
-          .appendTo( '#top' )
+          .appendTo( '#dialog-buttons' )
       ;
 
       $( '<button type="button" id="deselect-all-tags" class="widget" >-none-</button>' )
@@ -249,7 +247,7 @@
               updateBoard( advance ) ;
               animateColor( $( this ) ) ;
           } )
-          .appendTo( '#top' )
+          .appendTo( '#dialog-buttons' )
       ;
 
       $( '<input '
@@ -391,6 +389,8 @@
     }
 
     function updateLabels( i18nCode ) {
+      $( '#show-configuration-dialog' ).text( szo.i18n.resource( 'configure' ) ) ;
+
       $( '#select-all-tags' ).text( szo.i18n.resource( 'all' ) ) ;
       $( '#deselect-all-tags' ).text( szo.i18n.resource( 'none' ) ) ;
       $( '#next-answer-or-card' ).html( '<b>' + szo.i18n.resource( 'next' ) + '</b>' ) ;

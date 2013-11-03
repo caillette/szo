@@ -36,6 +36,11 @@
   }
 
   var resources = {
+    configure : {
+      en : 'Configure',
+      fr : 'Configurer',
+      hu : 'Kiallítás'
+    },
     list : {
       en : 'List',
       fr : 'Liste',

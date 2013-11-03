@@ -55,7 +55,7 @@
   <div id='top' class='no-selection' >
     <div id='action-performing' class='no-selection' >
       <!-- http://spiffygif.com/?width=2&radius=8&color=757575&bgColor=DDDDDD&halo=false -->
-      <img src='images/spiffygif_32x32_thinner.gif' height='32' width='32' >
+      <img class='widget' src='images/spiffygif_32x32_thinner.gif' height='32' width='32' >
     </div>
     <label class='initialization widget' >Loading ...</label>
     <!-- Force calculated margin to its actual value after adding widgets -->
@@ -69,8 +69,11 @@
 
   <div id='board' ></div>
 
-  <div id='hidden' style='visibility:collapse;' >
-      <div id='tags' class='no-selection' ></div>
+  <div id='hidden' style='visibility:collapse;' class='no-selection' >
+      <div id='dialog' >
+        <div id='tags' ></div>
+        <div id='dialog-buttons' ></div>
+      </div>
   </div>
 
 
