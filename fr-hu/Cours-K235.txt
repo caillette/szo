@@ -1,0 +1,98 @@
+@_K235
+
+  @Chimie
+fumée
+füst
+
+  @Chimie
+vapeur d'eau
+vízgőz
+
+  @Chimie
+acide (n)
+sav
+
+  @Chimie
+soufre
+kén
+
+  @Chimie
+dioxyde de soufre
+kéndioxyd
+
+  @Chimie
+acide sulfurique
+kénsav
+
+  @Chimie
+chimie
+kémia
+
+enfer
+pokol
+
+infernal
+pokoli
+
+qui ressemble à
+  une exoplanète qui ressemble à la Terre
+-szerű
+  egy Föld-szerű exobolygó
+
+considérer qqchose comme qqchose
+értékel vmit vmiként
+
+découvrir qqchose
+felfedez vmit
+
+frère jumeau/sœur jumelle
+ikertestvér
+
+adéquat pour qqchose
+alkalmas vmire
+
+espoir
+remény
+
+être caché dans qqchose
+rejtőzködik vhol
+
+virgule (numérique)
+  1,3
+egész
+  egy egész három
+
+par qqchose (postp)
+  le télescope spatial envoyé par la NASA
+vmi által
+  a NASA által indított űrteleskóp
+
+mission
+küldetés
+
+candidat
+jelölt
+
+  @Chimie
+pierre (substance)
+kőzet
+
+  @Astronomie
+planète tellurique
+kőzetbolygó
+
+taille, dimension
+méret
+
+relativement
+visonylag
+
+identique, pareil
+azonos
+
+identifier
+azonosít
+
+caractéristique (n)
+jellemző
+
