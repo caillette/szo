@@ -99,22 +99,29 @@
         }( tag, special ) ;
 
         var id = 'tag$' + tag ;
-        $( '<input '
+        var input = $( '<input '
             + 'type="checkbox" '
             + 'id="' + id + '"'
             + '</input>'
         )
           .click( click )
-          .appendTo( '#tags' )
+//          .appendTo( '#tags' )
         ;
 
-        $( '<label '
+        var label = $( '<label '
             + ( special ? 'id="label-' + tag + '"' : '' )
             + 'for="' + id + '" >'
             + ( special ? '<em>' + title + '</em>' : title )
-            + '</label><br>'
-        ).appendTo( '#tags' ) ;
+            + '</label>'
+//            + '<br>'
+        )
+//            .appendTo( '#tags' )
+        ;
 
+        var div = $( '<div/>' ) ;
+        $( div ).append( input ) ;
+        $( div ).append( label ) ;
+        $( div ).appendTo( '#tags' ) ;
       }
 
       createTagWidget(

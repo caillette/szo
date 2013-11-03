@@ -34,13 +34,14 @@
 }
 
 #tags {
-  display : inline-block ;
   background : #cccccc ;
-  float : left ;
-  line-height : 1.5 ;
-  padding : 0.1em 0.4em 0.1em 0.1em ;
 }
 
+#tags div {
+  display : inline-block ;
+  line-height : 1.6 ;
+  padding : 0.1em 0.4em 0.1em 0.1em ;
+}
 
 #tags p {
   margin : 0.3em ;
