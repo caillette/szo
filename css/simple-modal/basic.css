@@ -20,8 +20,14 @@
 /* Container */
 #simplemodal-container {
   background-color : #ccc ;
-  height : 360px ;
+  position : fixed !important ;
+  position : absolute ;
+  top : 5em ;
+  right : 5em ;
+  bottom : 5em ;
+  left : 5em ;
 /*
+  height : 360px ;
   width : 600px ;
   color : #bbb ;
 */
