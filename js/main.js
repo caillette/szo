@@ -186,6 +186,14 @@
 
     function createTopWidgets( advance ) {
 
+      $( '<button type="button" id="show-dialog" class="widget" >-show-dialog-</button>'
+      )
+          .click( function( event ) {
+            $( '#tags' ).modal() ;
+          } )
+          .appendTo( '#top' )
+      ;
+
 
       $( '<input '
           + 'type="checkbox" '

@@ -3,6 +3,7 @@
   <meta http-equiv='Content-Type' content='text/html; charset=UTF-8' >
 
   <link rel='stylesheet' href='css/general.css' type='text/css' media='screen' />
+  <link rel='stylesheet' href='css/simple-modal/basic.css' type='text/css' media='screen' />
   <link rel='stylesheet' href='css/screen.css' type='text/css' media='screen' />
   <link rel="stylesheet" href="css/print.css" type="text/css" media="print" />
 
@@ -14,6 +15,7 @@
   <script type='text/javascript' src='js/min/jquery.color-2.1.1.min.js' ></script>
   <script type='text/javascript' src='js/min/moment-2.0.0.min.js' ></script>
   <script type='text/javascript' src='js/full/moment-2.0.0.lang.js' ></script>
+  <script type='text/javascript' src='js/min/jquery.simplemodal-1.4.4.js' ></script>
   <script type='text/javascript' src='js/shared.js' ></script>
   <script type='text/javascript' src='js/feature-detection.js' ></script>
   <script type='text/javascript' src='js/parser.js' ></script>
@@ -63,7 +65,10 @@
 
   <div id='problems' ></div>
 
-  <div id='tags' class='no-selection' ></div>
+  <div id='hidden' style='visibility:collapse;' >
+    <div id='tags' class='no-selection' ></div>
+  </div>
+
 
   <div id='board' ></div>
 
