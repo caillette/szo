@@ -20,22 +20,18 @@
 /* Container */
 #simplemodal-container {
   background-color : #ccc ;
+
+  /* After much research this seems the best approach. */
   position : fixed !important ;
   position : absolute ;
-  top : 5em ;
-  right : 5em ;
-  bottom : 5em ;
-  left : 5em ;
-/*
-  height : 360px ;
-  width : 600px ;
-  color : #bbb ;
-*/
-  border : 0.2em solid yellow ;
-  -webkit-border-radius : 1em ;
-  -moz-border-radius : 1em ;
-  border-radius : 1em ;
+  top : 12% ;
+  bottom : 12% ;
+  right : 10% ;
+  left : 10% ;
+
   padding : 0.4em ;
+  border : 0.2em solid white ;
+  border-radius : 1em ;
 }
 
 
