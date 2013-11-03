@@ -1,0 +1,61 @@
+@_K232
+
+devoir qqchose à qqun
+  Tu me dois un euro.
+tartozik vmivel vkinek
+  Tartozol egy euróval.
+
+accompagner qqun en s'éloignant de qqchose
+elvisz vkit vhonnan
+
+être un peu triste
+szomorkodik
+
+introduction (pour un livre)
+bevezető
+
+significatif, important
+jelentős
+
+faire qqchose (chose abstraite avec notion d'accomplissement)
+  Cette femme a voulu se suicider, finalement elle l'a vraiment fait.
+tesz vmit
+  Öngyilkos akart lenni ez a nő, és végül igazán megteszi.
+
+juste (en tant que juge)
+igazságos
+
+vérité, justice
+igazság
+
+chef
+  chef d'armée
+vezér
+  hadvezér
+
+choisir, nommer qqun en tant que qqchose
+választ vkit vmivé/vminek
+
+  @Coordination
+aussi
+szintén
+
+  @Fruit
+noix
+dió
+
+peau, coque (pour un fruit)
+héj
+
+coquille de noix
+dióhéj
+
+solde (paye du militaire)
+zsold
+
+armée de métier
+zsoldos hadsereg
+
+
+
+
