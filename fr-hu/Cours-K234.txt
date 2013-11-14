@@ -17,14 +17,14 @@ felel vmit
 offrir qqchose comme repas à qqun d'invité
 megvendégel vkit vmivel
 
-kend
-  Il vous a invités à manger.
 vous (pronom personnel, archaïque)
+  Il vous a invités à manger.
+kend
   Kendteket megvendégelte.
 
 poule (animal)
-tyújkanyó
   Eh vous, vieille poule, vous êtes sûre que vous vivez ici ?
+tyújkanyó
   Hej tyúkanyó, kend, a szobában lakik itt bent? (S. Pétőfi)
 
 émouvoir qqun

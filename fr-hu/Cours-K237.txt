@@ -1,0 +1,63 @@
+@_K237
+
+bureau (métaphore informatique)
+asztal
+
+appeler qqun pour (venir au secours) de qqun
+hív vkit vkhez
+
+tremblement de terre
+földrenges
+
+à une vitesse de {} km/h
+  une vitesse de 60 km/h
+  à une vitesse de 60 km/h
+{} km/h sebességgel
+  hatvan kilometer per orá
+  hatvan kilometer per orás sébességgel
+
+endommager qqchose
+kárt tesz vmiben
+
+s'effondrer
+kidőlt
+
+s'allonger, s'effondrer
+dől
+
+s'effondrer, s'affaler
+  L'arbre s'est affalé.
+ledől
+  Ledőlt a fa.
+
+faire s'effondrer qqchose
+  Il a démoli la maison.
+ledönt vmit
+  Ledönti a házat.
+
+signifier qqchose
+jelent vmit
+
+présent, immédiat
+jelen
+
+présentement, maintenant
+jelenleg
+
+chance, occasion
+esély
+
+surface
+felszín
+
+encourager qqun
+biztat vkit
+
+signe
+jel
+
+enquêter, faire des recherches sur qqchose
+kutat vmi után
+
+résumer qqchose
+összegez vmit
