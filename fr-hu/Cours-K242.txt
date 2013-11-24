@@ -1,0 +1,87 @@
+@_K242
+
+être en retard pour qqchose
+  Si tu t’étais réveillé à temps, tu n’aurais pas été en retard pour le cours.
+  Je me suis retrouvé en retard pour mon rendez-vous.
+elkésik vmiről
+  Ha időben felkeltél volna, nem késtél volna el az óráról.
+  Elkéstem a randevúmról
+
+arriver en retard pour qqchose 
+  J’ai raté le bus.
+lekésik vmit
+  Lekéstem a buszt.
+
+être arrivé à épuisement
+  La lampe de poche ne fonctionne pas car les piles sont épuisées.
+lemerül
+  A zseblámpa nem működik, mert lemerült benne az elem. 
+
+être plongé dans qqchose.
+  J’étais plongé dans la lecture, c’est pour ça que je n’ai pas entendu quand tu es arrivé.
+belemerül vmibe
+  Belemerültem az olvasásba, azért nem hallottam, amikor megjöttél.
+  
+tomber en panne
+  Nous avons attendu presque une heure au bord de la route, parce que le bus était tombé en panne.
+lerobban
+  Majdnem egy órát vártunk az út szélén, mert lerobbant a busz. 
+  
+accepter qqchose
+  J'ai voulu donner un pourboire au technicien, mais il n'en a pas voulu.
+elfogad vmit
+  Akartam adni a szerelőnek borravalót, de nem akarta elfogadni. 
+  
+être à la disposition de qqun  
+  La piscine de l'hôtel est à la disposition des clients (hôtes).
+vkinek vmi rendelkezésére áll
+  A szállodában úszómedence is áll a vendégeknek rendelkezésere.
+  
+convaincre qqun de qqchose
+  Il n’y a pas moyen de convaincre Feri de se reposer.
+rábeszél valakit valamire
+  Ferit nem lehet rábeszélni a pihenésre.
+
+discuter de qqchose avec qqun (1)
+  Je discute de mes problèmes avec toi.
+megbeszél valamit valakivel
+  Megbeszélem veled a problémáimat.
+
+discuter de qqchose avec qqun (2)
+  Je discute de mes problèmes avec toi.
+beszél vmiról vkivel
+  Beszélek veled a problémáimról.
+
+cacher, dissimuler qqchose
+elrejt vmit
+
+faire la queue
+sorban áll
+
+garder qqchose, en assurer la conservation
+őriz vmit
+
+se retrouver qqpart (uniquement dans une question)
+  Comment les chaussures se sont-elles retrouvées sur la table ?
+kerül vhova
+  Hogy kerül a vipő az asztalra?
+  visszakerül : être de retour à sa place
+
+se retrouver dans qqchose
+bekerült vhova
+
+prince
+herceg
+
+grimper (s’utilise surtout avec un préverbe)
+mász
+
+immeuble
+ingatlan
+
+probablement
+valószínűleg
+
+  @NomPropre
+Irlande
+írország
