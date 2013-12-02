@@ -183,6 +183,8 @@ fr-hu/Cours-K239.txt
 fr-hu/Cours-K240.txt
 fr-hu/Cours-K241.txt
 fr-hu/Cours-K242.txt
+fr-hu/Cours-K243.txt
+fr-hu/Cours-K244.txt
 
 
 @-er -ér

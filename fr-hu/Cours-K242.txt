@@ -65,10 +65,12 @@ se retrouver qqpart (uniquement dans une question)
   Comment les chaussures se sont-elles retrouvées sur la table ?
 kerül vhova
   Hogy kerül a vipő az asztalra?
-  visszakerül : être de retour à sa place
+
+être de retour à sa place
+visszakerül
 
 se retrouver dans qqchose
-bekerült vhova
+bekerül vhova
 
 prince
 herceg
