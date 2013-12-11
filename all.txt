@@ -185,6 +185,10 @@ fr-hu/Cours-K241.txt
 fr-hu/Cours-K242.txt
 fr-hu/Cours-K243.txt
 fr-hu/Cours-K244.txt
+fr-hu/Cours-K245.txt
+fr-hu/Cours-K246.txt
+fr-hu/Cours-K247.txt
+fr-hu/Cours-K248.txt
 
 
 @-er -ér

@@ -1,0 +1,31 @@
+@_K246
+
+  @Anatomie
+articulation (anat)
+izület
+
+choc
+sokk
+
+  @Anatomie
+bassin (anat)
+csipő
+
+protéger de qqchose
+véd vmitől
+
+couverture
+takoró
+
+  @Anatomie
+veine (anat)
+ér
+  erek
+
+liquide (n)
+folyadék
+
+canal
+csattorna
+
+

@@ -6,9 +6,9 @@ taxis
 trébucher
 elbotlik
 
-belebotlik vmibe
-  J'ai trébuché sur le soulier que tu as laissé (traîner) devant la porte.
 trébucher sur qqchose
+  J'ai trébuché sur le soulier que tu as laissé (traîner) devant la porte.
+belebotlik vmibe
   Belebotlottam a cipődbe, amit az ajtó előtt hagytál.
 
 rencontrer qqun par hasard

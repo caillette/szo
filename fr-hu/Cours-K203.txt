@@ -28,9 +28,9 @@ méz
 honte
 szégyen
 
-szégyell vmit
-  J'ai honte.
 avoir honte de qqchose
+  J'ai honte.
+szégyell vmit
   Szegyellem magamat.
 
 dépense, frais
