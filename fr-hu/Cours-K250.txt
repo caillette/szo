@@ -2,10 +2,10 @@
 
 apprendre qqchose de qqun/qqchose sur qqchose
   Nous apprenons avec (de) ce livre.
-  C'est grâce à toi que j'ai appris que les étoiles à neutrons se transformaient en trous noirs.
+  J'ai appris ça sur les étoiles à neutrons grâce à toi, qu'elles pouvaient se transformer en trous noirs.
 tanul vmit vkitől/vmiből vmiről
   Ebből a könyvből tanultunk.
-  Azt tanultam tőled a neutron csillagokról, hogy fekete lyukakká változnak.
+  Azt tanultam tőled a neutron csillagokról, hogy fekete lyukakká változni tudnak.
 
 menteur
 hazug
@@ -16,7 +16,7 @@ hazudos
 orgueilleux
 nagyképű
 
-sourire
+sourire (v)
 mosolyog
 
 une sorte de
@@ -34,7 +34,7 @@ odorat
 szaglás
 
 raconter une blague, plaisanter
-tréfalkozol Ø
+tréfalkozik
 
 présent (n, adj)
 jelen
@@ -66,7 +66,7 @@ megdöbben
   Ha kutyát látod, ami újságot olvas, akkor megdöbbensz.
 
 s'apercevoir de qqchose
-észlen vmit
+észlel vmit
 
 occasionnel
 alkalmi
