@@ -1,10 +1,10 @@
 @_K255
 
-@Alimentation
+  @Alimentation
 glace (confiserie)
 fagylalt
 
-@Expression
+  @Expression
 à l'exception de qqchose
 vmi kivételével
 

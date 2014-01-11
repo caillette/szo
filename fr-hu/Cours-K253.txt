@@ -1,0 +1,99 @@
+@_K253
+
+  @Animal
+chenille
+hernyó
+
+  @Animal
+papillon (1)
+lepke
+
+  @Animal
+papillon (2)
+pillangó
+
+  @Deplacement
+grimper
+mászik
+
+  @Deplacement
+avancer lentement
+araszol
+
+  @Deplacement
+ramper
+kúszik
+
+  @Mesure
+empan
+arasz
+
+  @Geometrie
+sphérique
+gömbölyű
+
+  @Geometrie
+bulle, sphère
+gömb
+
+  @Astronomie
+globe terrestre
+földgömb
+
+  @Spatialite
+se rouler en boule
+  Le hérisson s'est roulé en boule.
+összegömbölyődik
+  Összegömbölyődött a sün.
+
+  @Animal
+hirondelle
+  Une hirondelle ne fait pas le printemps.
+fecske
+  Egy fecske nem csinál tavaszt.
+
+migrer
+elköltözik
+
+se cacher en s'aplatissant
+lapul
+
+se cacher
+ejbujik
+
+marcher lentement
+bandukol
+
+brillant, éblouissant, magnifique, merveilleux
+ragyogó
+
+briller (sens propre/figuré)
+ragyog
+
+  @Urbanisme
+baraque, habitation pauvre
+viskó
+
+petit (fam)
+pici
+
+tout petit (fam)
+ici-pici
+
+tout petit-petit (fam)
+icurka-picurka
+
+effectuer une tâche répétitive sur quelque chose de minuscule
+szöszmötöl
+
+toute petite chose
+szösz
+
+enfoncer qqchose, pénétrer dans qqchose (tournure officielle)
+  Les pompiers ont pénétré dans l'appartement en feu par la fenêtre.
+behatol vhova
+  A tűzoltok az ablakon át hatoltak be az égő lakásba.
+
+tanière, endroit pour se cacher
+búvóhelye
+
