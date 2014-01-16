@@ -56,9 +56,11 @@ tapaszt vmit
 étrangler/noyer qqun
 fojt vkit
 
+  @Grammaire
 consonne
 mással hangzó
 
+  @Grammaire
 voyelle
 magán hangzó
 
