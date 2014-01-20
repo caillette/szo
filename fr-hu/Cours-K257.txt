@@ -14,7 +14,7 @@ jeunesse
 ifjúság
 
 maçon
-kőművesz
+kőműves
 
 éclair
 villám
@@ -55,7 +55,7 @@ gyom
 
 être utile à qqun, avoir l'effet souhaité sur qqun
   Ce médicament ne me fait pas d'effet.
-hazsznál vkinek vmi
+használ vkinek vmi
   Ez a gyogyszer nem használ nekem.
 
 haïr qqun
