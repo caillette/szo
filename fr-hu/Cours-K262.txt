@@ -1,0 +1,70 @@
+@_K262
+
+compresser qqchose
+  YouTube compresse les films.
+összetömörít vmit
+  YouTube a filmeket összetömöríti.
+
+  @Informatique
+télécharger qqchose (récupération à partir d'un serveur)
+letölteni vmit
+
+  @Informatique
+télécharger qqchose (envoi vers un serveur)
+feltölteni vmit
+
+principe
+  Ce logiciel repose sur deux principes.
+elf
+  Két elvre épült ez a szoftvér.
+  elve
+
+  @Geometrie
+carré
+negyzet
+
+  @Grammaire
+défini
+határozott
+
+  @Grammaire
+indéfini
+határozatlan
+
+chasser qqun, le forcer à partir
+elűz vkit
+
+cru (adj)
+nyers
+
+outil
+kellék
+
+rafraîchir qqchose
+udít vmit
+
+réguler qqchose
+  La pomme râpée régule l'intestin.
+szobalyóz vmit
+  A reszelt álma szobayózza a beleket.
+
+avoir un effet sur qqchose
+hat vmire
+
+soucieux
+gondos
+
+arroser qqchose
+megöntöz vmit
+
+nourriture
+tápszer
+
+doux, apprivoisé
+széled
+
+reconnaissant
+hálás
+
+
+
