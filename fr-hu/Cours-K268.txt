@@ -1,0 +1,116 @@
+@_K268
+
+s'efforcer de faire qqchose
+  Je m'efforce d'apprendre correctement.
+igyekszik vmit csinálni
+  Igyeksem jól tanulni.
+
+  @Expression
+bien gagner sa vie, avoir un revenu confortable
+jól keresni
+
+prétexte
+ürügy
+
+être à disposition
+vki rendelkezése áll
+
+  @Expression
+faire passer un message
+üzenetet követíteni
+
+séparer qqchose de qqchose
+elkülonít vmit vmitől
+
+séparément
+  Nous allons à Budapest chacun de notre côté.
+külön
+  Külön utázunk Budapestre.
+
+  @Spatialisation
+à l'intérieur de qqchose
+vmin belül
+
+  @Spatialisation
+à l'extérieur de qqchose
+vmin kivül
+
+apercevoir ou trouver qqchose par hasard
+rátéved
+
+  @Informatique
+fichier
+fájl
+
+  @Bureautique @Typographiie
+mise en page
+testreszabás
+
+  @Typographie
+interligne
+sorköz
+
+insérer qqchose
+beszúrás vmit
+
+  @Typographie
+caractère (typographie)
+karakter
+
+document
+dokumentum
+
+action d'ouvrir
+megnyítás
+
+  @Bureautique @Typographie
+tableau (mise en forme tabulaire)
+táblázat
+
+  @Bureautique
+dossier
+mappa
+
+penché
+dőlt
+
+  @Typographie
+demi-gras
+félkövér
+
+  @Typographie
+souligné
+aláhúz
+
+  @Informatique
+sauvegarde
+mentés
+
+  @Informatique
+action de quitter un programme en cours d'exécution
+kilépés
+
+aide, rappel
+súgó
+
+  @Bureautique
+action de couper
+kivágás
+
+  @Bureautique
+action de copier
+másolás
+
+  @Bureautique
+action de coller
+beillesztés
+
+  @Informatique
+moteur de recherche
+böngesző
+
+  @Bureautique @Typographie
+police de caractère
+betűtípus
+
+

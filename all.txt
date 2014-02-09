@@ -203,6 +203,10 @@ fr-hu/Cours-K261.txt
 fr-hu/Cours-K262.txt
 fr-hu/Cours-K263.txt
 fr-hu/Cours-K264.txt
+fr-hu/Cours-K265.txt
+fr-hu/Cours-K266.txt
+fr-hu/Cours-K267.txt
+fr-hu/Cours-K268.txt
 
 
 @-er -ér
