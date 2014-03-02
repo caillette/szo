@@ -32,8 +32,8 @@ néz vmit
 regarder dans qqchose
   Il regarde dans la chambre.
   (Pas de COD.)
-benéz vmibe
-  Benéz a szóbába.
+belenéz vmibe
+  Belenéz a szóbába.
   
 apercevoir, voir dans le futur
   On verra bien.

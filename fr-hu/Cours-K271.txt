@@ -1,8 +1,8 @@
 @_K271
 
 coller qqchose
-ragaszt vmit
   Tu peux coller les caractères hongrois sur les touches (de clavier).
+ragaszt vmit
   A billentyűkre rá tudod ragasztani a magyar betűket.
 
 proverbe

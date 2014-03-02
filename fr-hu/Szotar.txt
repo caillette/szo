@@ -56,7 +56,7 @@ alig
   Alig ismerem.
 
 dès que, difficilement, pratiquement pas
-alihogy
+alighogy
 
   @Alimentation
 alcool
@@ -64,7 +64,7 @@ alkohol
 
   @Position
 place debout
-allóhelye
+állóhelye
 
   @Alimentation
 pomme (fruit)
@@ -155,7 +155,7 @@ animal, créature
 
   
 rêveur
-álmodoró
+álmodozó
 
 
 ensommeillé
@@ -192,8 +192,9 @@ minéral (adj et nom)
 
   @Deplacement @Position
 traverser (avec arrêt une fois de l'autre côté)
-átall
-  Átall a másik oldara.
+  Il traverse (pour aller de l'autre côté).
+átáll
+  Átáll a másik oldara.
 
   @Economie
 transmettre, céder
@@ -314,7 +315,7 @@ báty
 entrer (sans déplacement qui suit)
   Il entre dans le garage.
 beáll
-  Beáll a garazsba.
+  Beáll a garázsba.
 
 fermer
 becsuk
@@ -336,7 +337,7 @@ behív
   @Redactionnel
 écrire dans (1)
 beír
-  Kiírom a szovakat a füzetbe.
+  Beírom a szovakat a füzetbe.
 
   @Perception @Position
 regarder à travers qqchose, appliquer un oeil à qqchose (2)
@@ -440,7 +441,7 @@ bízik vmiben
 
   @Habillement
 corsage
-bluz
+blúz
 
   
 heureux
@@ -583,7 +584,7 @@ csoda
   Nem csoda.
 
 surpris (1)
-csodálkozo
+csodálkozó
 
 miraculeux, merveilleux, admirable, étonnant, mirifique, pharamineux, bizarre, extravagant, singulier
 csodálatos
@@ -610,7 +611,7 @@ sorte de lasagne
 csusza
 
 sonnette
-cszengő
+csengő
 
 sonner 
 csendet
@@ -694,7 +695,7 @@ dolog
 
   @Alimentation
 viande hachée
-dorálthús
+darálthús
 
   @Socialisation @Temperament
 fâché (1)
@@ -740,7 +741,7 @@ vmivel együtt
 pas du tout
   Je ne bois pas du tout de vin blanc.
 egyáltalán … nem
-  Egyáltalán nem szeretek feher bort.
+  Egyáltalán nem szeretem a feher bort.
 
   @egy-
 seul, seulement
@@ -754,7 +755,7 @@ egyenesen
 
   @Enseignement
 étudiant à l'université
-egyetemi hallgátó
+egyetemi hallgató
 
   @Mesure @Differenciation @egy-
 seul, unique, vrai
@@ -842,7 +843,7 @@ elfelejt
 inviter quelqu'un pour qu'il vienne (interpellation)
   Je propose à mon ami de venir au cinéma.
 elhív
-  elhívom barátomat moziba
+  elhívom a barátomat moziba
 
   @Redactionnel
 mal écrire, faire une faute
@@ -858,7 +859,7 @@ eljön
 
   @Deplacement
 arriver quelque part
-eljut vhol
+eljut vhova
 
   @Deplacement @Socialisation
 accompagner
@@ -929,11 +930,11 @@ előbb
 
   @Alimentation
 entrée (lors d'un repas)
-előetel
+előétel
 
 préparer (apprêter pour utilisation ultérieure)
 előkészít
-  előkészítani
+  előkészíteni
 
   @Deplacement
 faire un pas vers devant
@@ -1019,7 +1020,7 @@ emlékszik vmire
 aliment
   voir :
 ennivaló
-  etel
+  étel
 
   @Alimentation
 fraise
@@ -1035,7 +1036,7 @@ erős
 
   @Alimentation
 soupe à base de bouillon de viande hâchée
-erősleves
+erőleves
 
   @Expression
 "À ce propos…"
@@ -1043,7 +1044,7 @@ Erről jut eszembe…
 
   @Metabolisme
 faim
-éhesség
+éhség
 
 événement, occasion
   dans tous les cas
@@ -1094,8 +1095,8 @@ ezután
 
   @Repas
 déjeuner (v)
-ébedel
-  ébedelni
+ebédel
+  ebédelni
 
   
 réveillé, vigilant

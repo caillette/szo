@@ -49,7 +49,7 @@ megbeszél valamit valakivel
 
 discuter de qqchose avec qqun (2)
   Je discute de mes problèmes avec toi.
-beszél vmiról vkivel
+beszél vmiről vkivel
   Beszélek veled a problémáimról.
 
 cacher, dissimuler qqchose

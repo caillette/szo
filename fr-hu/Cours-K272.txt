@@ -1,0 +1,16 @@
+@_K272
+
+türelmes
+  Elle a beaucoup de patience.
+  Elle est très patiente.
+patience
+  Sok türelme van.
+  Ő nagyon türelmes.
+
+mère
+anya
+  anyja
+
+apa
+père
+  apja
