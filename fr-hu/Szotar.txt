@@ -1,4 +1,4 @@
-  @Temporalite @Causalite
+@Temporalite @Causalite
 jusqu'à ce que, en attendant
   Je joue avec lui tant qu'il se comporte bien.
 addig … amíg
@@ -1614,7 +1614,7 @@ furcsán
 
   @Deplacement
 vite (2)
-fúrge
+fürge
 
   @Meteorologie
 il y a du vent
@@ -1632,7 +1632,7 @@ se baigner
 fürdik
   fürdeni/fürödni
   Megfürödhetek?
-  Kell fürdeni.
+  Meg kell fürdeni./Fürödni kell.
 
   @Architecture
 salle de bains
@@ -1653,14 +1653,14 @@ pâtes fraîches
 galuska
 
 exploitation agricole
-gazdaság  
+mezőgazdaság  
 
-agriculture
+agriculteur
 gazdálkodó
 
   @Anatomie
 colonne vertébrale
-gerinc
+gerincoszlop
 
   @Alimentation
 chataîgne (fruit)
@@ -1700,16 +1700,19 @@ gondol vmit
 penser à quelque chose
 gondol vmire
 
+penser à quelque chose
+gondolkozik vmin
+
   @Deplacement
 rouler (comme une bille)
 gurul
 
   @Alimentation
 goulache
-gulyás
+gulyás(leves)
   -t
 
-fréquence
+fréquent
 gyakori
 
 souvent
@@ -1729,11 +1732,11 @@ gyenge
 
 enfant
 gyerek
-  -et, -ek, -ek
+  -et, -e, -ek
 
   @Enseignement
 lycée (1)
-gymnazium
+gimnázium
 
   @Anatomie
 estomac
@@ -1804,7 +1807,7 @@ hall
 hamar
 
   @Temporalite
-sous peu, sans tarder
+sous peu, sans tarder (1)
 hamarosan
 
 faux
@@ -1815,7 +1818,7 @@ hamis
 concert (musique classique seulement)
 hangverseny
 
-être de mauvaise humeur
+être furieux
   Ne sois pas fou ; je suis désolé ; je demande excuse.
 haragszik
   Ne haragudj.
@@ -1872,7 +1875,7 @@ hátrafordul
 
   @Famille
 maîtresse de maison
-házasszony
+háziasszony
 
   @Geographie
 montagne
@@ -1882,7 +1885,7 @@ hegy
 place, endroit
   -
   pas au même endroit
-helye
+hely
   -et, -e, -ek
   nem egy helyen
 
@@ -1932,7 +1935,7 @@ croire quelqu'un, ce que dit quelqu'un
 hisz vkinek
 
 croire quelque chose
-hisz vmit
+(el)hisz vmit
 
 bureau (lieu clos pour travailler)
 hivatal
@@ -1940,7 +1943,7 @@ hivatal
   @Architecture
 pont
 híd
-  hídat, -ja, hídak
+  hidat, -ja, hidak
 
   @Socialisation
 nouvelle (n)
@@ -1951,10 +1954,11 @@ hír
   @Socialisation
 s'appeler (porter pour nom)
   Je m'appelle Kata.
+  Elle s'appelle K.
   utilisation impersonnelle
-hív
-  Engem Katának hívnak.
-  [név]nak/nek hívnak
+hív (vminek)
+  Engem/Téged/Minket/Titeket Katának hívnak.
+  Őt/Önt Katának hívják.
   hívott, hívjon, hívna
 
 
@@ -1978,6 +1982,7 @@ holnap
   @Anatomie
 front (partie du corps)
 homlok
+ -ot, -a, -ok
 
   @Mesure
 long
@@ -1995,6 +2000,7 @@ hoz
   @Meteorologie
 neige
 hó
+ havat, hava, havas
 
   @Moment
 mois
@@ -2006,22 +2012,22 @@ hőemelkedés
 
   @Famille @Socialisation
 dame
-hőlgy
+hölgy
  -et, -e, -ek
 
 vague (n)
-hulám
+hullám
 
 montagnes russes (attraction foraine)
-hulámvasút
+hullámvasút
 
 humour
 humor
 
 sens de l'humour
   Il n'a pas le sens de l'humour.
-humor érszég
-  Nincs humor érszége.
+humorérzék
+  Nincs humorérzéke.
 
   @Famille
 jeune sœur
@@ -2046,12 +2052,12 @@ az idén
   @Anatomie
 nerf
 ideg
-  idegek
+  idege, idegek
 
   @Temporalite @Meteorologie
 temps
 idő
-  -t, időm időt ideje időnk időtök ideük, -k
+  -t, időm időt ideje időnk időtök idejük, -k
 
   @Meteorologie
 temps (météo)
@@ -2071,7 +2077,7 @@ igaz
   @Socialisation
 avoir raison
   Tu as raison.
-igaz{} van
+igaza van
   Igazad van.
   
 vraiment
@@ -2083,11 +2089,11 @@ igazgató
   -t, -ja, -k
 
 oui (poli)
-igenis
+igenis (parancsra adott válasz)
 
   @Socialisation
 promettre quelque chose à quelqu'un
-igér vmit vkinek
+ígér vmit vkinek
 
   @Expression
 "Et voilà" ou "C'est comme ça !" (pour signifier une action achevée)
@@ -2097,16 +2103,16 @@ igér vmit vkinek
 "Il convient de …"
   Il convient d'être élégant pour aller à l'opéra.
 illik vmit csinálni
-  Az opéraba illik elegánsan menni.
+  Az operába illik elegánsan menni.
 
   @Differenciation
 tel que
   une si belle maison
   C'est la vie.
 ilyen
-  ilyen szép ház.
+  egy ilyen szép ház
   Ilyen az élet.
-
+ 
   @Differenciation
 "C'est sans précédent."
 Ilyen még nem volt.
@@ -2116,7 +2122,7 @@ imád
 
   @Deplacement
 partir, se mettre en route
-indul
+(el)indul
   -t, -jon, na
 
   @Medecine
@@ -2126,7 +2132,7 @@ influenza
   @Habillement
 chemise
 ing
-  inget
+  inget, inge
 
 plutôt, de préférence
 inkább
@@ -2136,8 +2142,8 @@ d'ici
 innen
 
   @Alimentation
-boisson
-  voir :
+chose à boire
+  boisson
 innivaló
   ital
 
@@ -2153,7 +2159,7 @@ littérature
 irodalom
 
 littéraire
-írodalmi
+irodalmi
 
 de cette façon-ci
 így
@@ -2173,7 +2179,7 @@ ismer
   -t, -jen, -ne
 
   @Socialisation
-familier
+familier, relation, connaissance
 ismerős
 
   @Religion
@@ -2191,7 +2197,7 @@ izom
 
   @Anatomie
 tendon
-izület
+ízület
 
   @Alimentation
 plaire (nourriture seulement)
@@ -2207,11 +2213,16 @@ plaire (nourriture seulement)
 
   @Expression
 [exclamation de surprise]
-ja
+  Ah, je vois!
+ja!
+  Ja, vagy úgy!
 
   @Expression
 "Comme c'est beau !"
-Jaj de szép !
+Jaj, de szép !
+
+ah!
+Jaj! Au!
 
   @Deplacement
 marcher, aller
@@ -2224,7 +2235,7 @@ játék
 
   @Loisir
 jouer avec qqchose
-játsik vmit
+játszik vmit
 
   @Meteorologie
 verglacé
@@ -2252,7 +2263,7 @@ Jobbulást!
 
   @Expression
 "Il vaudrait mieux que …"
-Jobb volna…, ha…
+Jobb volna/lenne, ha…
 
 droit (domaine juridique)
 jog
@@ -2278,8 +2289,8 @@ arriver
   "Comment vais-je à … ?"
 jut
   Eszembe jut.
-  Erről jut eszembe…
-  Hogy jutok el vmire?
+  Erről jut eszembe, …
+  Hogy jutok el vhova?
 
   @Habillement
 manteau
@@ -2287,7 +2298,7 @@ kabát
 
   @Habillement
 chapeau
-kaláp
+kalap
 
 relation, rapport
 kapcsolat
@@ -2331,7 +2342,7 @@ kávéház
   @Socialisation
 dommage, tort, préjudice
 kár
-  -t, -a, -ok
+  -t, -ja, -ok
 
   @Alimentation
 café (boisson)
@@ -2374,7 +2385,7 @@ kedvenc vmije
   @Economie @Socialisation
 cher
 kedves
-  -et, -ek, -ebb
+  -t, -ek, -ebb
 
   @Position
 est
@@ -2403,11 +2414,11 @@ kerek
 
   @Religion
 croix
-kerest
+kereszt
 
   @Religion
 chrétien
-kerestény
+keresztény
 
 en travers, d'outre en outre
 keresztül
@@ -2644,6 +2655,10 @@ kis
   @Famille
 femme enceinte
 kismáma
+
+sous peu, sans tarder (2)
+kisvártatva
+
 
 déblayer
 kitakarít
@@ -3469,8 +3484,8 @@ mindenki
 toujours
 mindig
 
-  @Mesure @Temporalite
-tout de suite
+  @Temporalite
+sous peu, sans tarder (3)
 mindjárt
 
   @Metier
@@ -3669,12 +3684,20 @@ difficile, lourd
 nehéz
   nehezet, nehezek, nehezebb
 
+  @Temporalité
 bientôt, tôt, un peu plus tard
-nemsokára
+nem sokára
+
+  @Politesse
+"N'est-ce pas ?" (1)
+Nemde (bár)?
 
   @Nationalite
 nation
 nemzet
+
+bureau de tabac (2)
+nemzeti dohánybolt
 
 rire (v)
 nevet
@@ -5063,16 +5086,16 @@ plus que (COD), plus jamais
   Ils ne se sont plus jamais rencontrés.
   Je mange plus que toi.
   Je ne le vois plus jamais.
-többet
-  Többet nem találkoztam.
-  Többet eszem mint te.
-  Többet nem találkoztom.
+többet, többet nem
+  Többet nem találkoztak.
+  Többet eszem, mint te.
+  Többet nem találkoztam vele.
 
 
   @Mesure
 le reste
   les autres (uniquement pour des personnes)
-többi
+többi - a többi (dolog)
   a többiek "A többiek már itt vannak."
 
 parfait, idéal, complet
@@ -5083,7 +5106,7 @@ verser, remplir
   passer du temps avec
 tölt
   tölteni
-  idő tolt vkivel
+  időt tölt vkivel
   
 stylà à plume
 töltőtoll
@@ -5108,9 +5131,9 @@ se passer, se produire, avoir lieu, se faire
 történik
 
 quelque chose arrive à qqun
-vmit történik vkivel
+vmi történik vkivel
 
-bureau de tabac
+bureau de tabac (2)
 trafik
 
 connaissance
@@ -5124,7 +5147,7 @@ université des sciences
 tudományegyetem
 
 qualité, caractéristique
-tuladonság
+tulajdonság
 
   @Alimentation
 fromage blanc
@@ -5138,17 +5161,21 @@ tükör
 patience
   Je demande un peu de patience.
 türelem
-  Kis türelemet kérek.
+  Egy kis türelemet kérek.
 
   @Medecine
-éternuer
-tüsszög
+éternuer (1)
+tüsszent
+
+  @Medecine
+éternuer (2)
+tüsszög, tüsszent
 
   @Perception
 sembler (2)
   il semble
-tűnik
-  tűni (faux verbe en -ik)
+tűnik (úgy tűnik,...)
+  tűnni (faux verbe en -ik)
 
 les pompiers
 tűzoltók
@@ -5167,7 +5194,7 @@ impoli
 udvariatlan
 
   @Politesse
-"N'est-ce pas ?"
+"N'est-ce pas ?" (2)
 Ugye?
 
   @Anatomie
@@ -5213,10 +5240,10 @@ voyageur
 utas
 
 voyager
-utazik vmire
+utazik vhova
 
 voyage
-utaz
+utazás
 
   @Perception
 détester qqchose
@@ -5239,7 +5266,7 @@ uzsonnázik
 sentir que …
   Il sent que …
 úgy erezni
-  Úgy erzi, hogy…
+  Úgy érzi, hogy…
 
   @Coordination
 de cette façon-là, ainsi, tellement
@@ -5267,17 +5294,17 @@ passeport
 
   @Sport
 nager
-úszni
-  úsznik
+úszik
+  úszni
 
   @Alimentation
 boisson non alcoolisée
-üditő
+üdítő
 
   @Politesse
 saluer 
   (défectif) 
-üdvözni
+üdvözöl
 
   @Economie
 affaire
@@ -5298,7 +5325,8 @@ s'asseoir (action en cours)
 ül
 
 place assise
-ülőhelye
+ülőhely
+  -et, -e, -ek
 
 fête
 ünnep
@@ -5345,7 +5373,7 @@ valahol
 espèce de, sorte de
   Il y avait là une espèce de panneau.
 valamilyen
-  Volt ott egy valamilyen táblá.
+  Volt ott valamilyen tábla.
 
 vérité
 való
@@ -5354,7 +5382,7 @@ vraiment
 valóban
 
 en réalité
-valójobam
+valójában
 
 réalité
 valóság
@@ -5377,6 +5405,7 @@ vágyik vmire
   @Socialisation
 réponse
 válasz
+  -t, -a, -ok
 
   @Socialisation
 répondre
@@ -5384,7 +5413,8 @@ válaszol
   -t, -jon, -na
   
 choisir
-választani  
+választ
+  választani
 
   @Anatomie
 épaule
@@ -5413,14 +5443,14 @@ visite d'une ville
 városnézés
 
 salle d'attente
-várósterem
+váróterem
 
   @Alimentation
 mixte (pour la nourriture)  
 vegyes     
 
 concours
-versen
+verseny
 
   @Socialisation
 invité
@@ -5441,11 +5471,11 @@ vesz
 
   @Transport
 conduire
-vezetni
+vezet
 
 protéger
 véd
-  védéni
+  védeni
 
   @Temporalite
 fin
@@ -5455,11 +5485,16 @@ vég
 
   @Transport
 terminus
-végállomas
+végállomás
 
   @Temporalite
 finalement (référence : maintenant)
-végén
+a végén
+
+  @Temporalite
+finalement (sans référence à l'instant où ça se fait)
+végül
+
 
 opinion
 vélemény
@@ -5492,7 +5527,7 @@ faire attention, surveiller qqun
   "fais attention à toi"
 vigyáz vkire
   vigyázni
-  vigyazz magadra
+  vigyázz magadra
 
   @Meteorologie
 orage
@@ -5505,7 +5540,7 @@ villamosmegálló
 lumière (éclairage ambiant), électricité
   Il a éteint la lumière.
 villany
-  Lekaposta a villanyt.
+  Lekapcsolta a villanyt.
 
   @Socialisation
 se comporter
@@ -5528,14 +5563,15 @@ visszamegy
 
   @Position
 relatif (2)
-viszonylagos
+viszonylagos, relatív
 
 clair
 világos
 
   @Alimentation
-vitamines
+vitamine
 vitamin
+  vitamint, vitaminja, vitaminok
 
   @Alimentation
 eau
@@ -5554,12 +5590,12 @@ visz
 
   @Enseignement
 examen scolaire
-vizsga
-  vizsgát, vizsgája, vizsgak
+vizsga (iskolában)
+  vizsgát, vizsgája, vizsgák
 
   @Medecine
 examen médical
-vizsgálat
+vizsgálat (orvosnál)
 
   @Transport
 train
@@ -5625,7 +5661,7 @@ zsemle
 
   @Alimentation
 gras (adj)
-zsiros
+zsíros
 
 rempli
 zsúfolt
