@@ -3684,7 +3684,7 @@ difficile, lourd
 nehéz
   nehezet, nehezek, nehezebb
 
-  @Temporalité
+  @Temporalite
 bientôt, tôt, un peu plus tard
 nem sokára
 
