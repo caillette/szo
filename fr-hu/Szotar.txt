@@ -2324,7 +2324,7 @@ kaviár
   -t, -ja, -ok
 
 exposition
-kállitás
+kállítás
 
   @Ameublement
 poële (pour le chauffage)
@@ -2368,8 +2368,8 @@ kedve van vmihez
   Van kedve vmihez.
   Mihez van kedved?
 
-aimer, apprécier, prendre soin de qqchose ou qqcun
-kedvel vkit/vmit
+aimer, apprécier, prendre soin de qqchose/qqcun
+kedvel van vkit/vmit
 
 (pour une personne) gentil, plaisant (adj), petit(e) ami(e), chéri(e) (n)
 kedves
@@ -2465,13 +2465,13 @@ kezet fog
 
   @Temporalite
 commencer
-kezdödik
-  kezdödött, kezdödjön, kezdödne
+kezdődik
+  kezdődött, kezdődjön, kezdődne
 
 traiter
-  Il traite la maladie.
+  Il traite la maladie/le malade.
 kezel
-  Kezel a beteget.
+  Kezeli a betegséget/a beteget.
 
   
 bleu
@@ -2546,6 +2546,7 @@ készülék
   @Anatomie
 main
 kéz
+ kezet, keze, kezek
 
 crier
 kiabál
@@ -2587,17 +2588,19 @@ kiderül
   kiderül a titok
 
   @Repas
-manger complètement
+manger complètement seulement qqchose
   J'ai mangé toute (tout ce qu'il y avait dans) l'assiette.
+  J'ai mangé toutes les carottes dans la soupe.
 kieszik
-  Kiettem a tányért.
+  Kiettem mindent a tányérból.
+  Kiettem mindent az összes répát a levesből.
 
   @Alimentation
 croissant (en pâte à pain)
 kifli
 
    @Socialisation @Deplacement
-appeler quelqu'un pour qu'il sorte
+appeler quelqu'un pour qu'il sorte afin de le rencontrer
 kihív
 
   @Deplacement
@@ -2607,8 +2610,9 @@ kihoz
 
   @Redactionnel
 recopier, écrire à un endroit visible
+  J'ai recopié les phrases du livre.
 kiír
-  Kiírom a szovakat a könyvből
+  Kiírom a szavakat a könyvből.
 
   @Deplacement
 sortie (emplacement)
@@ -2633,7 +2637,7 @@ kinéz
   Kinézünk az utcára.
 
 ouvrir
-kinyitni
+kinyit
 
   @Redactionnel
 lire complètement (ex : un livre)
@@ -2643,7 +2647,7 @@ fils du roi
 királyfi
 
 palais royal
-király palota
+királyi palota
 
 faire une excursion
 kirándul
@@ -2654,7 +2658,7 @@ kis
 
   @Famille
 femme enceinte
-kismáma
+kismama
 
 sous peu, sans tarder (2)
 kisvártatva
@@ -2665,8 +2669,8 @@ kitakarít
 
   
 excellent
-kitünő
-  -t, -ek, -ebb
+kitűnő
+  -t, -ek, -bb
 
   @Deplacement
 aller s'asseoir dehors
@@ -2680,10 +2684,10 @@ kivisz
 
    @Perception
 curieux (de savoir)
-kiváncsi
+kíváncsi
 
 au dehors, à l'extérieur, en outre
-kivül
+kívül
 
 voiture (fam)
 kocsi
@@ -2701,7 +2705,7 @@ sérieux
 komoly
 
 musique classique
-komoly zene
+komolyzene
 
 époque, âge
 kor
@@ -2751,7 +2755,7 @@ költözik
 frais, dépense
   frais de transport
 költség
-  szállitási költség
+  szállítási költség
 
 facile, léger
 könnyű
@@ -2773,10 +2777,10 @@ köröm
 
   @Urbanisme
 boulevard circulaire
-körül
+körút
 
 garniture
-körat
+köret
 
   @Position
 environnement, alentours
@@ -2794,8 +2798,8 @@ körülbelül
   @Politesse
 remercier pour (dialogue)
   Merci pour le déjeuner !
-kösszön vmit
-  Kösszönöm az ebédet!
+köszön vmit
+  Köszönöm az ebédet!
 
   @Temporalite @Deplacement
 être le suivant
@@ -2819,8 +2823,8 @@ közel vmihez
   @Transport
 code de la route
   acronyme
-közlehedése szabály
-  KRETSZ
+közlekedési (rend)szabály
+  KRESZ
 
   @Temporalite
 entre temps, pendant ce temps-là
@@ -2831,7 +2835,7 @@ environs
   près de toi
   aux environs de l'hôtel
 közel
-  közeledben
+  a közeledben
   a szálloda közelében
 
   @Deplacement
@@ -2860,8 +2864,8 @@ közgazdász
   @Transport
 circulation
   bien desservi
-közlekedes
-  jó közlekedes
+közlekedés
+  jó közlekedés
 
 public (n)
 közönség
@@ -2878,7 +2882,7 @@ központ
 
   @Urbanisme
 centre-ville
-város központja
+város-központ
 
   @Alimentation
 dessert à base de crème compacte
@@ -2922,7 +2926,10 @@ lakik
   lakott, lakjon, lakna
 
 habitant (n)
-lako
+lakos (2)
+
+habitant (n) (1)
+lakó
 
 journal
 lap
@@ -2949,16 +2956,15 @@ chaîne
 lánc
 
 pair de jumelles
-látcsö
+látcső
 
 visite
 látogatás
 
 sembler (1)
   il semble
-látsani
-  látsik
-  (faux verbe en -ik)
+látszik
+  látszani (faux verbe en -ik)
 
   
 se voir sur quelqu'un
@@ -2976,7 +2982,7 @@ lázmérő
 
 ne plus fonctionner
 leáll
-  Leállt a szamitogép.
+  Leállt a számítógép.
 
 se coucher
 lefekszik
@@ -2989,8 +2995,8 @@ legalább
 dévaler
 legurul
 
-"c'est possible que" (impersonnel)
-lehet
+"c'est possible que …" (impersonnel)
+lehet, hogy…
 
   @Deplacement
 appeler quelqu'un pour qu'il descende
@@ -3001,7 +3007,7 @@ lehív
 leír
 
 se saouler, s'en renverser dessus en buvant
-leiszik maga
+leissza magát
 
 descendre (référence en bas)
 lejön
@@ -3037,12 +3043,12 @@ leszáll
   @Deplacement
 poser
 letesz
-  -tett, -teggen, -tenne
+  -tett, -tegyen, -tenne
 
   @Deplacement
 s'asseoir
 leül
-  -t, -jon, -ne
+  -t, -jön, -ne
 
 soupe (n), juteux (adj)
 leves
@@ -3060,13 +3066,14 @@ jus
   jus d'orange
   jus de tomate
 lé
-  levet
+  levet, leve, levek
   narancslé
   paradicsomlé
 
   @Outillage
 bâton
 léc
+  -et, -e, -ek
 
 marcher, faire un pas
 lép
@@ -3083,17 +3090,17 @@ libegő
   @Architecture
 ascenseur
 lift
-  -et, -e, -ek
+  -et, -je, -ek
 
   @Alimentation
 farine
-líszt
-  lísztet
+liszt
+  lisztet
 
   @Mesure
 litre
 liter
-  -t
+  -t, -je
 
   @Animal
 cheval
@@ -3102,6 +3109,7 @@ ló
 
 tirer (avec une arme)
 lő
+ lőtt, lőjön, lőne
 
   
 paresseux
@@ -3109,7 +3117,7 @@ lusta
 
   @Loisir
 paresser
-lustálkod
+  lustálkodik
 
 trou
 lyuk
@@ -3132,7 +3140,7 @@ sûr de lui
 magabiztos
 
 affaire privée
-magáműgy
+magánügy
   -et, -e, -ek
 
 magnétoscope
@@ -3151,7 +3159,7 @@ majdnem
 cochon (appellation affectueuse)
   J'ai de la chance.
 malac
-  Malacam van.
+  Malacom van.
 
   @Repas
 rester sur quelque chose (lors d'un repas)
@@ -3189,7 +3197,7 @@ már nem …
 plus que
   Nous n'avons plus que 10 mn à attendre.
 már csak
-  Már csak tiz percet kell várnunk.
+  Már csak tíz percet kell várnunk.
 
   @Temporalite
 tout de suite
@@ -3211,15 +3219,11 @@ máshol
 
   @Differenciation
 à l’autre
-máshoz
-
-  @Differenciation
-les autres
-mások
+a másikhoz (képest?)
 
   @Differenciation
 avec l’autre
-mással
+a másikkal
 
   @Differenciation
 autre, l'autre
@@ -3299,7 +3303,7 @@ meghívás
 inviter (invitation formelle)
   J'invite mes amis à mon anniversaire.
 meghív
-  Meghívtom a barátoimat a születésnapomra.
+  Meghívtam a barátaimat a születésnapomra.
 
   @Perception
 goûter qqchose, essayer
@@ -3308,8 +3312,8 @@ megkóstol vmit
   @Politesse
 remercier pour qqchose (hors dialogue)
   Kati remercie pour le déjeûner.
-megkösszön vmit
-  Megkösszöni Kati az ebédet.
+megköszön vmit
+  Kati megköszöni az ebédet.
 
   @Perception
 apercevoir
@@ -3428,7 +3432,7 @@ még
 
   @Temporalite @Repetition @egy-
 une fois de plus
-még egyszér
+még egyszer
 
   @Temporalite @Repetition
 toujours
@@ -3446,7 +3450,7 @@ még nem
 
   @Mesure @Repetition
 en plus
-méghozza
+méghozzá
 
   @Temperament
 fâché (2)
@@ -3461,7 +3465,7 @@ pourquoi ?
 miért ?
 
 comment ? comme !
-milyen
+milyen? milyen…!
 
 minaret
 minaret
@@ -3470,7 +3474,7 @@ minaret
 chacun, chaque, tout, tous, de plus en plus
   les deux yaourts (totalité)
 mind
-  minden a két joghurtot
+  mind a két joghurtot
 
   @Mesure
 tout
@@ -3497,12 +3501,12 @@ ministère
 minisztérium
 
 de bonne qualité
-minőség
+minőségi
 
 après quoi
   Tu vas dîner près avoir étudié le hongrois.
 miután
-  Miután magyarul tanultam, megvacsorázol.
+  Miután magyarul tanultál, megvacsorázol.
 
 "Qu’est-ce que {pronom} {avoir} ?
   Qu'est-ce que tu as ?
@@ -3553,7 +3557,7 @@ mozog
 
   @Position @Postposition
 derrière ("vers derrière")
-möge
+mögé
 
   @Position @Postposition
 derrière (sans mouvement)
@@ -3571,26 +3575,30 @@ muszáj
   @Temporalite
 passé
   le dimanche dernier
-múlt
+  la semaine dernière
+  le mois dernier
+múlt (idő)
   múlt vasárnap
+  múlt hét
+  múlt hónap
 
 au bout de, dans
 múlva
 
   @Architecture
 monument
-müemlek
+műemlék
   -et, -e, -ek
 
 agir
-műkodik
+működik
 
 programmation (suite d'événements)
 műsor
 
   @Metier
 artiste
-művé
+művész
 
 art
 művészet
@@ -3603,7 +3611,7 @@ nadrág
 "De rien"
   Merci pour l'eau - De rien.
 Nagyon szívesen
-  Köszonöm a vizet - Nagyon szívesen.
+  Köszönöm a vizet - Nagyon szívesen.
 
   @Famille
 tante
@@ -3632,8 +3640,8 @@ napfelkelte
   @Repetition
 quotidien
   notre repas quotidien
-napi
-  napi ételeink
+mindennapi
+  mindennapi ételeink
 
   @Loisir
 prendre un bain de soleil
@@ -3643,7 +3651,7 @@ napozik
 coucher du soleil
 naplemente
 
-bronzer
+prendre le soleil
 napoz
 
   @Moment
@@ -3661,7 +3669,7 @@ nagybáty
 
   @Medecine
 rhume
-náthá
+nátha
 
   @Medecine
 enrhumé
@@ -3670,14 +3678,14 @@ náthás
   @Mesure
 carré (n)
   mètre carré
-negyzet
-  negyzetmeter
+négyzet
+  négyzetméter
 
   @Mesure
 quelques
   depuis quelques jours
-nehány
-  nehány napja
+néhány
+  néhány napja
 
   
 difficile, lourd
@@ -3686,7 +3694,7 @@ nehéz
 
   @Temporalite
 bientôt, tôt, un peu plus tard
-nem sokára
+nemsokára
 
   @Politesse
 "N'est-ce pas ?" (1)
@@ -3724,7 +3732,7 @@ peuple
 nép
 
 populaire
-népszérű
+népszerű
 
 nom
 név
@@ -3740,14 +3748,14 @@ néz vmire
 
   @Alimentation
 pâte à base de farine et d'œuf
-nohedli
+nokedli
 
 plante (végétal)
-növeny
+növény
 
   @Medecine
 infirmière, sœur (1)
-nő
+nővér
 
   @Metabolisme
 grandir
@@ -3820,7 +3828,7 @@ odamegy
 
   @Deplacement
 se rendre qqpart
-odamedy vmire
+odamegy vmire
 
   @Redactionnel
 écrire (en précisant la destination)
@@ -3828,14 +3836,14 @@ odaír
   Odaírom a papírra.
 
   @Deplacement
-aller vers
-odamegy vmihez
+aller vers qqchose/qqun
+odamegy vmihez/vkihez
 
   @Politesse
 désirer (dans la formule de politesse uniquement)
   Qu'est-ce que vous désirez ?
-ohajt
-  Mit ohajt?
+óhajt
+  Mit óhajt?
 
   @Deplacement
 de là-bas
@@ -3888,7 +3896,7 @@ optimiste
 optimista
 
 grande roue (attraction foraine)
-oriáskerék
+óriáskerék
 
   @Nationalite
 russe
@@ -3898,7 +3906,7 @@ orosz
 
   @Animal
 lion
-oroszlána
+oroszlán
 
 depuis
 óta
@@ -3927,7 +3935,7 @@ se réjouir de quelque chose/de la présence de qqun
 
   @Architecture
 tout équipé (pour habitation)
-összkomfort
+összkomfortos
 
 idée, suggestion, gag, boutade, inspiration
 ötlet
@@ -3956,7 +3964,7 @@ franc, sincère
 
 heure, montre
 óra
-  órát, órajá, órak
+  órát, óraja, órak
 
 par exemple
 például
@@ -3977,7 +3985,7 @@ paradicsom
 donner des ordres
   Que désirez-vous ? (Je vous prie d'ordonner.)
 parancsol
-  Tessék, parancsolni.
+  Mit parancsol? (Tessék parancsolni.)
 
   @Transport
 parking
@@ -4052,7 +4060,7 @@ pince
   @Metier
 garçon de café
 pincér
-  -t, -e, -ek
+  -t, -je, -ek
 
 sale
 piszkos
@@ -4131,7 +4139,7 @@ pisil
 poste (bureau de)
   à la poste
   aller à la poste
-postá
+posta
   postán
   postára menni
 
@@ -4165,14 +4173,14 @@ habiller
 ráad
 
 convaincre qqun de qqchose
-rábeszél vkit vmibe
+rábeszél vkit vmire
 
   @-er
 avoir le temps
 ráér
 
 allumer une cigarette
-rágyút
+rágyújt
 
   @Perception
 jeter un coup d'œil
@@ -4198,7 +4206,7 @@ recept
   @Moment
 matin
 reggel
-  -t, -je, -k
+  -t, -e, -ek
 
   @Repas
 petit-déjeuner (n)
@@ -4230,7 +4238,7 @@ rendel
 
   @Medecine
 consultation
-rendelnés
+rendelés
 
   @Medecine
 centre médical
@@ -4252,8 +4260,8 @@ ranger
   J'ai rangé mon appartement. (1)
   J'ai rangé mon appartement. (2)
 rendet rakni
-  Rendet raktam a lakásamban.
-  Rendbe raktam a lakásamat.
+  Rendet raktam a lakásomban.
+  Rendbe raktam a lakásomat.
 
 mise en scène
 rendezés
@@ -4284,8 +4292,8 @@ ancien (objet inanimé ou abstrait)
   -
   Mes vieux amis
 régi
-  -t, -ek, -bb
-  Rége barátaim
+  -t, -ek, régebbi
+  Régi barátaim
 
   @Mesure
 partie
@@ -4310,7 +4318,7 @@ ritkán
 
   @Famille
 proche parent
-rokon
+közeli rokon
 
   
 mauvais
@@ -4334,14 +4342,14 @@ rúd
   "mon propre livre"
 saját
   Ez a saját könyvem.
-  Ez a könyv a sajátam.
+  Ez a könyv a sajátom.
   A saját könyvem
 
   @Perception @Socialisation
 se désoler
   Je suis désolé que ça ne (te) plaise pas.
-sajnal
-  Sajnalom hogy nem tetszik.
+sajnál
+  Sajnálom hogy nem tetszik.
 
 malheureusement, par malheur, hélas
 sajnos
@@ -4353,7 +4361,7 @@ sajt
   @Alimentation
 salade
 saláta
-  -salátát, salátája, saláták
+  salátát, salátája, saláták
 
   @Anatomie
 talon
@@ -4376,7 +4384,7 @@ cicatrice
 sebhely
 
 secours, aide, assistance
-segitség
+segítség
 
 aider, prêter aide, porter secours
 segít
@@ -4488,7 +4496,7 @@ sör
 
    @Apparence
 obscur, sombre
-sötet
+sötét
 
   @Sport
 sportif
@@ -4529,14 +4537,14 @@ szabás
 
   @Enseignement
 faculté (école)
-szak
+kar
 
   @Anatomie
 barbe
-szaháll
+szakáll
 
   @Enseignement
-faculté, département
+département (école)
 szak
 
   @Metier
@@ -4578,7 +4586,7 @@ száraz
 
   @Transport
 transport (n)
-szállitas
+szállítás
 
 hôtel
 szálloda
@@ -4624,7 +4632,7 @@ személy
 
   @Nationalite
 carte d'identité
-szemely igazolvány
+személyi igazolvány
 
 paire de lunettes
 szemüveg
@@ -4677,6 +4685,7 @@ szék
   @Meteorologie
 vent
 szél
+  szelet, szele, szelek
 
   @Architecture
 cathédrale (1)
@@ -4707,6 +4716,7 @@ szilvás
   @Couleur
 couleur
 szín
+ -t, -e, -ek
 
   @Metier
 comédien, acteur
@@ -4732,8 +4742,8 @@ szobatiszta
 
 avoir l'habitude de
   Péter n'a pas l'habitude de lire.
-szok
-  Péter nem szokott olvasni. (toujours au passé)
+szok (toujours au passé)
+  Péter nem szokott olvasni.
 
   @Habillement
 jupe
@@ -4807,7 +4817,7 @@ szőlő
 
 blond
 szőke
-  szőket, szőkék, szőkebb
+  szőkét, szőkék, szőkébb
 
   @Travail
 être en grève, faire la grève
@@ -4820,7 +4830,8 @@ szükség
 
   @Famille
 naître
-szület
+születik
+  született
 
   @Famille
 enfanter, donner naissance à
@@ -4920,7 +4931,7 @@ teher
 
   @Transport
 camion
-teheraúto
+teherautó
 
   @Alimentation
 lait
@@ -4997,7 +5008,7 @@ teve
 
   @Temporalite
 "il y a un an"/"depuis un an"
-egy teve
+egy éve
 
   @Moment @Meteorologie
 hiver
@@ -5010,7 +5021,7 @@ tényleg
   @Position @Geographie @Urbanisme
 place (endroit)
 tér
-  terat, tere, terek
+  teret, tere, terek
 
   @Anatomie
 genou
@@ -5018,7 +5029,7 @@ térd
 
   @Alimentation
 pâte (culinaire)
-tésztá
+tészta
 
   @Socialisation
 avoir tort
@@ -5339,7 +5350,7 @@ verre (matériau), bouteille
 
 envoyer un message
 üzen
-  üzeni
+  üzenni
 
   @Economie
 affaire, magasin
