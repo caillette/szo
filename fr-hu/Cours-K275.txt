@@ -1,0 +1,84 @@
+@_K275
+
+recommander qqchose
+ajánl vmit
+
+recommandé (adj)
+ajánlott
+
+recommandation
+ajánlat
+
+arbre
+fa
+  fát, fák
+
+nid
+fészek
+  fészket
+
+pourchasser qqchose
+  Le faucon poursuit l'écureuil
+üldöz vkit
+  A héja a mókust üldözi.
+
+avoir envie de qqchose
+vágyik vmire
+
+avoir du goût pour qqchose, avoir envie de qqchose (pour de la nourriture ou de la boisson)
+gusztusa van vmire
+
+improvisation
+rögtönzés
+
+capricieux
+szeszélyes
+
+caprice
+szeszély
+
+avoir assez de place pour entrer dans qqchose
+belefér vmi vmibe
+
+ne pas être compatible avec qqchose, ne pas être juxtaposable
+  Le chien et le chat ne vont pas ensemble
+összefér vmi vmivel
+  A kutya és a macska nem férnek össze.
+
+brusque, inattendu
+kósza
+
+glouton
+haspók
+
+araignée
+pók
+
+  @Expression
+ne pas savoir s'arrêter
+nem ismerni megállást
+
+  @Expression
+ne pas connaître l'impossible
+nem ismerni lehetetlent
+
+  @Expression
+ne pas accepter la plaisanterie
+nem ismerni tréfát
+
+rêver (durant le sommeil)
+álmodik
+
+rêver (éveillé)
+álmodozik
+
+  @Alimentation
+petit gâteau apéritif à goûter absolument
+pogácsa
+
+  @Repas
+plat (unité de consommation lors d'un repas)
+tálca
+
+noix
+dió
