@@ -9,7 +9,7 @@ eszeget
 arriver qqpart avec un retard d'une certaine durée
   Je suis arrivé au cours avec 2 mn de retard.
 késik vhonnan vmennyit (vmennyi időt)
-  öt percet késtem az óráról.
+  Két percet késtem az óráról.
 
 regarder qqchose/qqun à la dérobée
 les vmit/vkit
