@@ -64,7 +64,7 @@ alkohol
 
   @Position
 place debout
-állóhelye
+állóhely
 
   @Alimentation
 pomme (fruit)
