@@ -11,12 +11,12 @@ source: http://fr.wikipedia.org/wiki/Syntaxe_du_hongrois_–_la_phrase_complexe#
   Un bon réfrigirateur peut même durer 20 ans.
 … is
   Gábor magyar, Ilona is az.
-  Egy jó hűtőszekrény húsz évig is müködik.
+  Egy jó hűtőszekrény húsz évig is működik.
 
 …, … aussi (coord. copulative)
   Le moteur est en panne, le frein aussi.
 … is, … is
-  A motor is elmorott, a fék is.
+  A motor is elromlott, a fék is.
 
 … de même (coord. copulative)
   Gábor est hongrois, Ilona l’est de même.
