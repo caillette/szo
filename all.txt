@@ -215,6 +215,7 @@ fr-hu/Cours-K275.txt
 fr-hu/Cours-K276.txt
 fr-hu/Cours-K277.txt
 fr-hu/Cours-K278.txt
+fr-hu/Cours-K279.txt
 fr-hu/Cours-K280.txt
 
 
