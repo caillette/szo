@@ -217,6 +217,13 @@ fr-hu/Cours-K277.txt
 fr-hu/Cours-K278.txt
 fr-hu/Cours-K279.txt
 fr-hu/Cours-K280.txt
+fr-hu/Cours-K281.txt
+fr-hu/Cours-K282.txt
+fr-hu/Cours-K283.txt
+fr-hu/Cours-K284.txt
+fr-hu/Cours-K285.txt
+fr-hu/Cours-K286.txt
+fr-hu/Cours-K287.txt
 
 
 @-er -ér
