@@ -224,6 +224,7 @@ fr-hu/Cours-K284.txt
 fr-hu/Cours-K285.txt
 fr-hu/Cours-K286.txt
 fr-hu/Cours-K287.txt
+fr-hu/Cours-K288.txt
 
 
 @-er -ér
