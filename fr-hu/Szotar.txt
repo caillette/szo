@@ -4151,6 +4151,9 @@ pörkölt
 café (établissement) (2)
 presszó
 
+essayer, effectuer une répétition
+probál
+
 mou, tendre (viande)
 puha
 
@@ -4308,7 +4311,9 @@ részeg
 tourte
 rétes
 
-  
+réaliser un reportage
+riportot készíteni
+
 rare
 ritka
   ritkább
@@ -4570,6 +4575,11 @@ szaval
 transporteur, fournisseur
 szállító
 
+pour (postp)
+  pour moi
+számára
+  az (én) számomra
+
 compter
 számol
 
@@ -4713,6 +4723,9 @@ szilva
 au goût de prune
 szilvás
 
+presque
+szinte
+
   @Couleur
 couleur
 szín
@@ -4787,6 +4800,9 @@ szól
   Szól a radió.
   Szól a zene.
   Nem szól a radió.
+
+prévenir quelqu'un
+szól vkinek
 
 s'amuser, se distraire
 szórakozik
@@ -4868,6 +4884,9 @@ talált tárgyak
 
 peut-être
 talán
+
+conseil (assemblée ou recommandation)
+tanács
 
   @Enseignement
 apprendre
@@ -5092,6 +5111,12 @@ továbbmegy
 lac
 tó
 
+plusieurs
+  Paul travaille pour plusieurs journaux.
+több
+  Paul több lapnak dolgozik.
+
+
   @Temporalite @Mesure
 plus que (COD), plus jamais
   Ils ne se sont plus jamais rencontrés.
@@ -5108,6 +5133,9 @@ le reste
   les autres (uniquement pour des personnes)
 többi - a többi (dolog)
   a többiek "A többiek már itt vannak."
+
+plus que …
+több … mint
 
 parfait, idéal, complet
 tökéletes
@@ -5156,6 +5184,9 @@ tudomány
   @Enseignement
 université des sciences
 tudományegyetem
+
+envoyé spécial (journaliste)
+tudósitó
 
 qualité, caractéristique
 tulajdonság
