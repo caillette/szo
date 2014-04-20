@@ -1,0 +1,58 @@
+@_K290
+
+avoir honte de qqchose
+restell vmit
+
+autorité
+  J'étais une autorité à leurs yeux.
+tekintély
+  Tekintély voltam elöttük.
+
+s'adresser à qqun
+megszólít vkit
+
+interpeller qqun
+felszólít vkit
+
+pique-nique
+majális
+
+monstre, cauchemar
+rém
+
+décrire qqchose
+leír vmit
+
+description
+leírás
+
+feuillu, verdoyant
+lombos
+
+feuillage
+lomb
+
+argent (métal)
+ezüst
+
+étincelle
+szikra
+
+pâle, de couleur atténuée
+halvány
+
+mélanger qqchose
+összekever vmit
+
+  @Expression
+prendre qqchose naturellement, tenir qqchose pour naturel
+  Il considère comme normal que son chien mange dans son assiette.
+természetesnek venni vmit
+  Természetesnek veszi, hogy a kutyája a tanyéréból eszik.
+
+  @Postposition @Socialisation
+envers qqun, à l'égard de qqun (postp)
+  Il n'a autour de lui que des gens animés de sentiments tendres.
+iránt
+  Olyan emberek vannak körülötte, akiknek gyengéd érzelmeik vannak iránta.
+

@@ -58,6 +58,10 @@ alig
 dès que, difficilement, pratiquement pas
 alighogy
 
+s'adapter à qqchose/qqun
+alkalmazkodik vmihez/vkihez
+  alkalmazkodni
+
   @Alimentation
 alcool
 alkohol
@@ -153,6 +157,8 @@ lit
 animal, créature
 állat
 
+poste, emploi
+állás
   
 rêveur
 álmodozó
@@ -657,6 +663,9 @@ matin, matinée
 délelőtt
   -öt, -je, -ök
 
+dicter
+diktál
+
   @Animal
 cochon (appellation prosaïque)
 disznó
@@ -708,6 +717,12 @@ ebéd
   @Alimentation
 vinaigre
 ecet
+
+s'entraîner
+edz
+
+entraîneur (sportif)
+edző
 
   @Medecine
 santé
@@ -944,6 +959,10 @@ előlép
 en avance
 előre
 
+  @Expression @Politesse
+"Je vous remercie d'avance."
+Előre is köszönöm.
+
   @Architecture
 entrée
 előszoba
@@ -964,6 +983,9 @@ előz
 devenir trise, avoir le cœur qui chavire
 elszomorodik
 
+se séparer de qqun
+elvál vkitől
+  elválni
 
   @Socialisation
 perdre (un objet, un enjeu…)
@@ -1418,6 +1440,9 @@ peindre
 festeni
   festett
 
+peintre
+festő
+
 nid, repaire, foyer
 fészek
 
@@ -1479,6 +1504,9 @@ garçon, fils
 fiú
   -t, fia, -k
 
+physicien
+fizikus
+
   @Sport
 jouer au football
 focizik
@@ -1495,6 +1523,10 @@ fog
 réception
 fogadás
   -t, -a, -ok
+
+  @Ameublement
+perroquet, portemanteau
+fogas
 
   @Position @Socialisation
 réserver (une table, une chambre…), occuper (de l'espace)
@@ -1535,7 +1567,9 @@ forgalom
 forme (contour) (2)
 forma
 
-  
+révolution
+forradolom
+
 chaud, en fusion, ardent, fervent, en effervescence, en fermentation, brûlant, surchauffé, bouillant, embrasé, torride
   chocolat chaud
 forró
@@ -1556,6 +1590,9 @@ fölé
 
 inutile, dénué de sens
 fölösleges
+
+principal (adj)
+fő
 
 tête (mot ancien)
 fő
@@ -2278,7 +2315,7 @@ beau, charmant (que pour les hommes)
 jóképű
 
   @Temporalite
-prochain, futur, à venir
+avenir (n), prochain/futur/à venir (adj)
 jövő
   -t, -je
 
@@ -2750,6 +2787,9 @@ köldök
 déménager
 költözik
   költözött, költözzön, költözne
+
+poète
+költő
 
   @Economie
 frais, dépense
@@ -3234,17 +3274,8 @@ másik
 ours
 medve
 
-  @-er
-valoir
-megér
-
-  @Socialisation
-convenir
-megfelel
-
-  @Sport
-se baigner
-megfürdik
+rembourser (de l'argent), donner (un n° de téléphone)
+megad
 
   @Deplacement @Transport
 s'arrêter
@@ -3254,6 +3285,18 @@ megáll
   @Transport
 l'arrêt (exemple : de bus)
 megálló
+
+  @-er
+valoir
+megér
+
+  @Socialisation
+convenir à quelqu'un
+megfelel vkinek
+
+  @Sport
+se baigner
+megfürdik
 
    @Socialisation
 en qui on peut avoir confiance
@@ -3294,6 +3337,9 @@ meggy
   @Medecine
 se guérir (2)
 meggyógyul
+
+mourir
+meghal
 
   @Socialisation
 invitation
@@ -4097,6 +4143,10 @@ pocsék
 verre (récipient individuel)
 pohár
 
+  @Profession
+homme politique
+politikus
+
 exact
 pontos
   -at, -ak,-abb
@@ -4107,6 +4157,14 @@ ponty
 
 boîte aux lettres
 postaláda
+
+essayer de faire quelque chose
+probál vmit csinálni
+
+avoir une répétition
+  L'actrice est en répétition.
+probál
+  A színésznő probál.
 
 problème
 probléma
@@ -4332,6 +4390,9 @@ rossz
 
 mal (adv)
 rosszul
+
+tout de suite
+rögtön
 
   @Habillement
 robe, ou vêtement en général
@@ -4803,6 +4864,9 @@ szól
 
 prévenir quelqu'un
 szól vkinek
+
+il est question de qqchose
+szól van vmiről
 
 s'amuser, se distraire
 szórakozik
@@ -5512,8 +5576,11 @@ vesz
   venni
 
   @Transport
-conduire
+guider, conduire
 vezet
+
+chef d'équipe
+vezető
 
 protéger
 véd
@@ -5614,6 +5681,9 @@ világos
 vitamine
 vitamin
   vitamint, vitaminja, vitaminok
+
+faire passer un examen
+vizsgáztat
 
   @Alimentation
 eau

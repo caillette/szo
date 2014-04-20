@@ -18,7 +18,7 @@ bonne
 plainte
 panasz
 
-se plaindre
+se plaindre de qqchose
 panaszkodik vmire
 
   @Expression
