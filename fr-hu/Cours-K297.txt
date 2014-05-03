@@ -1,0 +1,72 @@
+@_K297
+
+finance, affaires financières
+pénzügy
+
+dictature
+diktatúra
+
+citoyen
+állampolgár
+
+fermer qqchose (uniquement un rideau)
+  Les rideaux du voisin sont fermés.
+behúz vmit
+  A szomszéd függönyei be vannak húzva.
+
+ouvrir qqchose (uniquement un rideau)
+  Le voisin a tiré les rideaux.
+elhúz vmit
+  A szomszéd a függönyt elhúzott.
+
+jouer qqchose (un morceau de musique, une pièce de théâtre)
+játszik vmin
+
+s'extasier, s'étonner de qqchose
+csodálkozik vmin
+
+sortir du lot, s'élever au-dessus de la moyenne
+kiemelkedik
+
+  @egy-
+individu
+egyén
+
+personnalité (individu marquant)
+egyéniség
+
+  @Expression
+rendre qqun dépendant de qqchose
+vkit/vminek rabjává tenni
+
+accorder qqchose à qqun
+  Les jeunes firent un triomphe au vieux musicien.
+vkit részesít vmiben
+  Az öreg zenészt a fiatalok nagy ünneplésben részesítették.
+
+domaine artistique
+műfaj
+
+se répandre dans qqchose
+elterjed vmiben/vhol
+
+levure boulangère
+élesztő
+
+levure chimique
+sütőpor
+
+réseau
+halózat
+
+  @Informatique
+routeur
+router
+
+  @Informatique
+modem
+modem
+
+configurer qqchose
+beállít vmit
+

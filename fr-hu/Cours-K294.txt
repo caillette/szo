@@ -1,0 +1,34 @@
+@_K294
+
+combattre qqun
+harcol vkivel/vki ellen
+
+battre qqun (action achevée)
+  Il battit sa femme et la chassa.
+elűz vkit
+  Megverte a feleségét, és elűzte.
+
+baignoire
+fürdőkád
+
+pierre
+kő
+  kővet
+
+calcaire
+vízkő
+
+gourmand, glouton
+falánk
+
+duel
+párbaj
+
+défier qqun dans qqchose
+  Je te provoque en duel.
+kihív vkit vmire
+  Kihívlak egy párbajra.
+
+parier qqchose avec qqun
+fogad vkivel vmiben
+
