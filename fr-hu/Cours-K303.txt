@@ -1,0 +1,97 @@
+@_K303
+
+appartenir à qqchose/qqun
+tartozik vmihez/vkihez
+
+devoir qqchose à qqun
+tartozik vmivel vkinek
+
+garder, conserver qqchose
+tart vmit
+
+piéton, passant
+járókelő
+
+provoquer, causer qqchose
+előidez vmit
+
+esprit
+lélek
+
+spirituel, du registre de l'esprit
+lélki
+
+s'éloigner
+távolodik
+
+s'inquiéter pour qqun/qqchose
+aggodik vkiért/vmi miatt
+
+inquiétude
+aggodalom
+
+de nouveau
+ismét
+
+avancer en faisant un pas
+toppant
+
+s'effondrer
+  Mon épouse s'est aussitôt effondrée dans mes bras.
+omlik
+  A feleségem rögtön karaimba omlott.
+
+fond, fondement
+alap
+
+s'avérer qqchose
+  Je suis heureux que mon soupçon s'avère sans fondement.
+bizonyul vminek/vmilyennek
+  Boldog vagyok, hogy gyanúm alaptalannak bizonyult.
+
+faire souffrir qqun, lui infliger une torture mentale
+gyötör vkit
+
+abstrait
+elvont
+
+joyeux
+víg
+
+ruelle
+sikátor
+
+sécateur
+metszőolló
+
+attaquer qqun
+rohamoz vkit
+
+section d'assaut
+rohamcsapat
+
+puanteur
+bűz
+
+menthe
+menta
+
+âne
+szamár
+
+merde (substance) (1)
+szar
+
+merde (substance) (2)
+anéj
+
+  @Expression
+"Merde !"
+"Bassz meg!"
+
+  @Animal
+chèvre
+kekske
+
+faire tomber qqchose
+hullajt vmit
