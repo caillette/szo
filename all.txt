@@ -237,6 +237,10 @@ fr-hu/Cours-K301.txt
 fr-hu/Cours-K303.txt
 fr-hu/Cours-K306.txt
 fr-hu/Cours-K308.txt
+fr-hu/Cours-K309.txt
+fr-hu/Cours-K310.txt
+fr-hu/Cours-K311.txt
+fr-hu/Cours-K312.txt
 
 
 @-er -ér
