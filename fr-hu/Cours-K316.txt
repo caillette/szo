@@ -1,0 +1,40 @@
+@_K316
+
+  @Materiau
+craie
+kréta
+
+répondre qqchose
+felel vmit
+
+regarder, considérer qqchose
+tekint vmit
+
+contrat
+szerződés
+
+renaissance, réincarnation
+újjaszületés
+
+raisonnement, argumentation
+érvelés
+
+argument
+érv
+
+vaincre qqun
+legyőz vkit
+
+convaincre qqun de qqchose
+  Je te convainc que j'ai raison.
+meggyőz vkit vmiről
+  Meggyőzlek, hogy igazam van.
+
+convaincre qqun de qqchose (action à accomplir)
+  Si tu es malade, je te convaincrai d'aller chez le médecin.
+rábeszél vkit vmiről
+  Ha beteg vagy, rábeszélek, hogy menj el orvoshoz.
+
+  @Expression
+Il ne me manque rien.
+Mindenem meg van.
