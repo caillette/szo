@@ -28,7 +28,7 @@ ajánlás
 effort
   Devenir un footballeur célèbre demande beaucoup d'efforts.
 fáradság
-  Sok fárdságba kérült híres focistának lenni.
+  Sok fáradságba kérül híres focistának lenni.
 
 fatigue
   Je suis tellement fatigué que je n'y vois plus rien.
