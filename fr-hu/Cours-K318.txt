@@ -1,8 +1,8 @@
 @_K318
 
-avertir de qqchose (avec une nuance de menace)
+avertir qqun de qqchose (avec une nuance de menace)
   Je te préviens, si tu ne travailles pas bien alors je te vire.
-figyelmez vmire
+figyelmez vkit vmire
   Figyelmezlek arra, hogy ha nem jól dolgozol, akkor kirúglak.
 
 très bien, très convenable (que pour les gens)
