@@ -256,6 +256,9 @@ fr-hu/Cours-K324.txt
 fr-hu/Cours-K325.txt
 fr-hu/Cours-K326.txt
 fr-hu/Cours-K327.txt
+fr-hu/Cours-K328.txt
+fr-hu/Cours-K329.txt
+fr-hu/Cours-K330.txt
 
 
 @-er -ér
