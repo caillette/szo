@@ -1,0 +1,48 @@
+@_K331
+
+ramasser qqchose
+felszed vmit
+
+prélever, prendre qqchose (uniquement un médicament ou un imppôt)
+beszed vmit
+
+draguer qqun (avec succès)
+felszed vkit
+
+convoquer qqun
+behív vkit
+
+accent (élément typographique)
+ékezet
+
+savoir qqchose par qqun/de qqchose/de qqpart
+ismer vmit vkitől/vmiből/vhonnan
+
+se servir de qqchose pour qqchose
+  Tu te sers de ton stylo pour écrire.
+használ vmit vmire
+  A tollad használod az írásra.
+
+minorité
+kisebbség
+
+majorité
+többség
+
+pronom
+névmás
+
+text écrit
+fogalmazás
+
+conséquence
+következmény
+
+parler qqchose (une langue uniquement)
+  Je parle la langue anglaise.
+  Quelles langues parles-tu ?
+beszél vmin
+  Angol nyelven beszélek.
+  Milyen nyelven beszélsz?
+
+
