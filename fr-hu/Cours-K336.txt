@@ -1,0 +1,44 @@
+@_K336
+
+reste, résidu
+maradék
+
+paysage (dans une représentation)
+látkép
+
+paysage (en vrai)
+táj
+
+brique
+tégla
+
+maison
+ház
+  házak
+
+grue (oiseau ou instrument de levage)
+daru
+
+piéton
+gyalogos
+
+voie (pour un train)
+vágány
+
+quai (pour un bateau)
+part
+
+quai (pour un train)
+peron
+
+être en retard pour quelque chose (1)
+lekésni valamit
+
+être en retard pour quelque chose (2)
+késni valahonnan
+
+semer qqchose (laisser derrière soi)
+szór vmit
+
+mettre de côté qqchose
+félretesz vmit
