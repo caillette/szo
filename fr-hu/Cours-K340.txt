@@ -33,7 +33,7 @@ longitude
 hosszúság
 
 latitude
-sélesség
+szélesség
 
 puanteur (peu usité)
 büdösség
