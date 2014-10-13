@@ -60,7 +60,7 @@ sur la trace de
 nyomán
 
 servant, domestique
-szolgaló
+szolgáló
 
 se réveiller très lentement
 ébredezik
@@ -71,6 +71,10 @@ onnét
 
 obéir
 szót fogad
+
+  @Expression
+Laisse tomber !
+Na hadd el!
 
 
 
