@@ -1,30 +1,56 @@
-@_K348
+@_K350
 
-sauter plusieurs fois, sautiller
-ugrál
+avoir de la peine
+kínlódik
 
-pré
-kaszáló
+torture
+kín
 
-  @Animal
-agneau
-birka
+transporter qqchose
+hordoz vmit
 
-  @Animal
-taureau
-bika
+"Que le diable l'emporte" (juron ancien)
+A nyavalya törjön ki
 
-glouton (adj), pour la nourriture ou autre chose
-mohó
+donner un coup à qqchose/qqun
+rávág vmire/vkire
 
-glouton (adjà, pour la nourriture uniquement
-falánk
+revenir à la raison
+  Sois raisonnable !
+észre tér
+  Térj észre!
 
-libellule
-szitakötő
+étole de prêtre
+stólá
 
-anguille
-angolna
+revêtir/enlever quelque chose (un vêtement)
+átvet vmit magán
 
-étouffer qqun
-megfojt vkit
+prier qqun (un dieu)
+imádkozik vkihez
+
+être obligé de faire qqchose
+  Il était obligé d'aller là-bas.
+kénytelen tesz vmit
+  Kénytelen volt odamenni.
+
+aller qqpart avec difficulté
+odavergődik vhova
+
+faire tomber qqchose
+leejt vmit
+
+mouton
+juh
+
+plat en bois
+véka
+
+contrat
+szerződés
+
+signer, nouer un contrat
+szerződést kötni
+
+fouet
+ostor

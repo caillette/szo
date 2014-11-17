@@ -1,33 +1,32 @@
-@_K357
+@_K358
 
-discuter de qqchose avec lequel on n'a rien à voir
-belebeszélni vmibe
+tomber par terre (de pas plus haut que sa propre hauteur)
+elesik
 
-bande dessinée
-képregény
+enfanter
+szül
 
-pirate (n)
-kalóz
+naître
+születik
 
-avoir la tête qui tourne
-szédül
+main
+kéz
+  kezét kezek kezet
 
-avoir des douleurs
-fajdalmai vannak
+tourner, prendre un virage
+megfordít
 
-faire bouillir
-  Elle fait bouillir de l'eau.
-forral
-  Vizet forral.
+traduire qqchose
+lefordít vmit
 
-perdre les eaux
-elment a vize
+coude
+könyök
 
-devoir qqchose à qqun pour qqchose
-tartozik vminek vmivel vmiért
+tournant, virage
+kanyar
 
-fêter qqchose
-ünnepel vmit
+réciter un poème
+verset mondani
 
-parrain
-keresztapa
+bec
+csőr

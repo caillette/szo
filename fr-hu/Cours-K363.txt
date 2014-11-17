@@ -1,44 +1,45 @@
-@_K362
+@_K363
 
-grimper sur qqchose
-felmászik vmire
+écouter qqchose
+hallgat vmit
 
-murir
-érik
+entendre
+hall vmit
+  hallani
 
-cravate
-nyakkendő
+mourir
+meghal
+  meghalni
 
-voiture à cheval
-lovaskocsi
+fraise
+eper
 
-charbon
-szén
-  szenet
+contrebandier
+csempész
 
-clairon
-kürt
+faire de la contrebande de qqchose
+csempész vmit
 
-têtu (1)
-makacs
+éboueur
+szemetes
 
-őnfejű (2)
-têtu
+avare
+zsugori
 
-commun (au sens d'une possibilité de partage)
-közös
+paysan, péquenot
+paraszt
 
-commun, courant
-gyakori
+cultivateur
+földműves
 
-filleule
-keresztlány
+agriculteur
+mezőgazdász
 
-ramasser qqchose (avec l'idée de mettre en tas)
-összeszed vmit
+très mauvais
+pocsék
 
-livraison
-szállitás
+se déplacer
+mozdul
 
-kiürít vmit
-vider
+bouger, faire des gestes
+mozog

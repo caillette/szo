@@ -1,52 +1,15 @@
-@_K345
+@_K346
 
-pain d'épices
-mézes kalács
+clin d'œil
+pillantás
 
-brioche
-kalács
+apercevoir qqchose
+megpillant vmit
 
-peureux
-gyáva
+piquer qqchose
+szúr vmit
 
-s'enfuir devant qqchose
-  Il fuyait devant le danger.
-szalad vmi elöl
-  Elszaladt a veszély elől.
-
-devant (s'utilise comme complément de lieu, pas comme postposition)
-  Je m'assieds devant.
-elöl
-  Elöl ülök.
-
-derrière (s'utilise comme complément de lieu, pas comme postposition)
-  Je m'assieds derrière.
-hátul
-  Hátul ülök.
-
-se pousser sur le côté.
-félrehúzódik
-
-crier
-kiabál
-
-aider qqun
-segít vkinek/vkin
-
-dépêcher, envoyer qqun faire qqchose (les 2 compléments sont obligatoires)
-utasít vkit vmire
-
-courage, tripes
-mersz
-
-sortir qqchose (qu'on avait sur soi)
-előhúz vmit
-
-aller lentement, doucement
-mendegél
-
-se lamenter
-sirankozik
-
-être en route vers
-tart vmerre/vhova
+se faire piquer (sur une partie du corps)
+  Je me suis fait piquer à la jambe.
+megszúr vmit
+  Megszúrtam a lábam.

@@ -1,32 +1,15 @@
-@_K358
+@_K360
 
-tomber par terre (de pas plus haut que sa propre hauteur)
-elesik
+ne rien avoir à fiche de qqchose
+leszar valamit
 
-enfanter
-szül
+cueillir qqchose
+  Ils cueillent des cerises.
+szed vmit
+  Meggyet szednek.
 
-naître
-születik
+élever qqun
+felnevel vkit
 
-main
-kéz
-  kezét kezek kezet
-
-tourner, prendre un virage
-megfordít
-
-traduire qqchose
-lefordít vmit
-
-coude
-könyök
-
-tournant, virage
-kanyar
-
-réciter un poème
-verset mondani
-
-bec
-csőr
+orphelinat
+árvaház

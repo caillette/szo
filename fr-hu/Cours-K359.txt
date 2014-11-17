@@ -1,44 +1,32 @@
-@_K361
+@_K359
 
-donner son accord pour quelque chose
-beleegyezik vmibe
+  @Animal @Anatomie
+bec
+csőr
 
-être d'accord avec qqchose ou qqun
-egyetért vmivel/vkivel
+s'ouvrir
+nyílik
 
-lendemain
-másnap
+ouvrir qqchose
+nyit vmit
 
-l'autre jour (un moment indéfini dans le passé, mais assez proche)
-múltkor
+dessus, toit
+tető
+  teteje
 
-quitter qqun
-  Il a quitté sa femme.
-elhagy vkit
-  Elhagyta a feleségét.
+salle de classe
+iskolatér
 
-abandonner qqun qqpart
-  Il a laissé ses enfants à l'orphelinat.
-hagy vkit vhol
-  A gyerekeit az árvaházban hagyta.
+  @Animal
+cafard
+csótány
 
-enlever qqchose (un vêtement)
-levesz vmit
+plumier
+tolltartó
 
-baisser qqchose
-  Baissez vos pantalons !
-letol vmit
-  Toljátok le a nadrágotokat!
+encrier
+tintatartó
 
-battre qqchose
-üt vmit
-
-chasser qqchose (de qqpart)
-üz vmit
-
-être en retard pour qqchose
-elkésni vmiből
-
-voiture à cheval
-lovaskocsi
-
+  @Animal
+âne
+szamár

@@ -1,56 +1,58 @@
-@_K350
+@_K351
 
-avoir de la peine
-kínlódik
+à travers qqchose
+vmin át
 
-torture
-kín
+centre de gravité
+súlypont
 
-transporter qqchose
-hordoz vmit
+favorable, approprié
+legelőnyös
 
-"Que le diable l'emporte" (juron ancien)
-A nyavalya törjön ki
+casque
+bukósisak
 
-donner un coup à qqchose/qqun
-rávág vmire/vkire
+ridicule
+nevetséges
 
-revenir à la raison
-  Sois raisonnable !
-észre tér
-  Térj észre!
+petit pois
+borsó
 
-étole de prêtre
-stólá
+bénir qqchose
+  Que Dieu le bénisse.
+áld vmit
+  Az Isten áldja meg.
 
-revêtir/enlever quelque chose (un vêtement)
-átvet vmit magán
+chose à dire
+mondanivaló
 
-prier qqun (un dieu)
-imádkozik vkihez
+"À votre service" (tournure désuète)
+"Alászolgája"
 
-être obligé de faire qqchose
-  Il était obligé d'aller là-bas.
-kénytelen tesz vmit
-  Kénytelen volt odamenni.
+pause
+szünet
 
-aller qqpart avec difficulté
-odavergődik vhova
+plaisir
+élvezet
 
-faire tomber qqchose
-leejt vmit
+euuuh (comme son d'hésitation), machin (n)
+  Donne-moi ce machin.
+izé
+  Add ide azt az izét.
 
-mouton
-juh
+majesté (n)
+  sa majesté votre épouse
+őnagyság
+  a kedves felesége őnagysága
 
-plat en bois
-véka
+votre majesté
+felség
 
-contrat
-szerződés
+autre
+  (synonyme: más)
+egyéb
 
-signer, nouer un contrat
-szerződést kötni
-
-fouet
-ostor
+pas du tout
+  pas du tout rare
+fenét
+  fenét ritka

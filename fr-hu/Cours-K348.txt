@@ -1,15 +1,30 @@
-@_K346
+@_K348
 
-clin d'œil
-pillantás
+sauter plusieurs fois, sautiller
+ugrál
 
-apercevoir qqchose
-megpillant vmit
+pré
+kaszáló
 
-piquer qqchose
-szúr vmit
+  @Animal
+agneau
+birka
 
-se faire piquer (sur une partie du corps)
-  Je me suis fait piquer à la jambe.
-megszúr vmit
-  Megszúrtam a lábam.
+  @Animal
+taureau
+bika
+
+glouton (adj), pour la nourriture ou autre chose
+mohó
+
+glouton (adjà, pour la nourriture uniquement
+falánk
+
+libellule
+szitakötő
+
+anguille
+angolna
+
+étouffer qqun
+megfojt vkit

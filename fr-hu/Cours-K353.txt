@@ -1,58 +1,22 @@
-@_K351
+@_K353
 
-à travers qqchose
-vmin át
+avoir pour origine qqchose
+vmit ered
 
-centre de gravité
-súlypont
+pendre, en étant accroché à qqchose
+lóg
 
-favorable, approprié
-legelőnyös
+dépasser de qqchose
+kilóg vmi alól
 
-casque
-bukósisak
+mettre qqchose dehors, le faire dépasser vers le dehors
+kidug vmit
 
-ridicule
-nevetséges
+diversité
+változatosság
 
-petit pois
-borsó
+changement
+változás
 
-bénir qqchose
-  Que Dieu le bénisse.
-áld vmit
-  Az Isten áldja meg.
-
-chose à dire
-mondanivaló
-
-"À votre service" (tournure désuète)
-"Alászolgája"
-
-pause
-szünet
-
-plaisir
-élvezet
-
-euuuh (comme son d'hésitation), machin (n)
-  Donne-moi ce machin.
-izé
-  Add ide azt az izét.
-
-majesté (n)
-  sa majesté votre épouse
-őnagyság
-  a kedves felesége őnagysága
-
-votre majesté
-felség
-
-autre
-  (synonyme: más)
-egyéb
-
-pas du tout
-  pas du tout rare
-fenét
-  fenét ritka
+contenu, sens
+tartalom
