@@ -290,6 +290,8 @@ fr-hu/Cours-K366.txt
 fr-hu/Cours-K367.txt
 fr-hu/Cours-K368.txt
 fr-hu/Cours-K369.txt
+fr-hu/Cours-K370.txt
+fr-hu/Cours-K371.txt
 
 
 @-er -ér
