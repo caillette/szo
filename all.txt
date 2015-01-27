@@ -295,6 +295,18 @@ fr-hu/Cours-K371.txt
 fr-hu/Cours-K372.txt
 fr-hu/Cours-K373.txt
 fr-hu/Cours-K374.txt
+fr-hu/Cours-K375.txt
+fr-hu/Cours-K376.txt
+fr-hu/Cours-K377.txt
+fr-hu/Cours-K378.txt
+fr-hu/Cours-K379.txt
+fr-hu/Cours-K380.txt
+fr-hu/Cours-K381.txt
+fr-hu/Cours-K382.txt
+fr-hu/Cours-K383.txt
+fr-hu/Cours-K384.txt
+fr-hu/Cours-K385.txt
+fr-hu/Cours-K386.txt
 
 
 @-er -ér

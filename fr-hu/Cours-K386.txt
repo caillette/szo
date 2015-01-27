@@ -1,0 +1,45 @@
+@_K386
+
+se réchauffer
+  -
+  Réchauffe-toi
+melegszik
+  melegedni
+  Melegedj meg.
+
+spécification
+előírás
+
+profondeur
+  Je recherche la profondeur de l'inconscient.
+mély
+  A tudalatti mélyét keresem.
+
+profond
+  L'eau est profonde.
+mély
+  Mély a víz.
+
+boîter
+sántít
+
+labourer qqchose
+szánt vmit
+
+travailler qqchose (la terre)
+művel vmit
+
+agriculteur
+födművelő
+
+  @Expression @Argot
+Qu'est-ce que tu branles ?
+Mit művelsz?
+
+courant d'air
+huzat
+
+
+
+
+

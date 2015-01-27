@@ -1,0 +1,68 @@
+@_K381
+
+peinture, tableau
+festmény
+
+poisson
+hal
+
+mort (la)
+halál
+
+regretter qqchose (1)
+bán vmit
+
+regretter qqchose (2)
+megbán vmit
+
+pardoner qqchose à qqun
+megbocsát vmit vkinek
+
+  @Expression
+Je n'ai rien contre.
+Nem bánom.
+
+pour {verbe à l'infinitif}
+  Je mange pour vivre, et ne vis pas pour manger.
+azért, hogy…
+  Azért eszem hogy éljek, nem azért élek hogy egyek.
+
+se suicider
+öngyilkos lenni
+
+prendre part à qqchose
+részt venni vmiben
+
+chantage
+zsarolás
+
+payer qqchose (régler une consommation)
+kifizet vmit
+
+rembourser qqchose (une dette)
+megfizet vmit
+
+régler une facture
+befizet vmit
+
+corrompre qqun
+lefizet vkit
+
+se faire avoir avec qqchose
+  J'a acheté un téléphone mais je me suis fait avoir car il fonctionne mal.
+ráfizet vmire
+  Vettem egy telefon, de nagyon ráfizettem, mert nem jól működik.
+
+  @Argot @Anatomie
+cul
+segg
+
+
+  @Argot
+tête de cul
+seggfej
+
+  @Expression
+Quel rêve !
+Micsóda álom!
+
