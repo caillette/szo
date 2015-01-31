@@ -27,10 +27,11 @@ digraph G {
     rank = same ;
     Húgom [ label = "a húgom ♀" ] 
     Fivérem [ label = "a fivérem ♂" ] 
-    Én[ label = "én ♂" ] [ constraint=false ]
-    Feleségem[ label = "a feleségem ♀" ] [ constraint=false ]
+    Én[ label = "én ♂" ]
+    Feleségem[ label = "a feleségem ♀" ] 
     Sogórom [ label = "a sogórom ♂" ] 
-		Fivérem -> Húgom -> Én -> Feleségem -> Sogórom [ style = invis ]
+    Sogórnőm [ label = "a sogórnőm ♀" ] 
+		Fivérem -> Húgom -> Én -> Feleségem -> Sogórom -> Sogórnőm [ style = invis ]
   }
 
   subgraph level_3 {
@@ -62,6 +63,9 @@ digraph G {
 	
   Sogórom -> Apósam [ weight = 10 ]
   Sogórom -> Anyósam [ weight = 10 ]
+	
+  Sogórnőm -> Apósam [ weight = 10 ]
+  Sogórnőm -> Anyósam [ weight = 10 ]
 	
 	Apósam -> Anyósam [ style = dotted ; dir = none ; arrowhead = none ; weight = 0 ]
 
