@@ -1,0 +1,131 @@
+  <!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Viz.js</title>
+  </head>
+  <body>
+    
+    <script type="text/vnd.graphviz" id="cluster">
+digraph G {
+
+  node [ shape=Msqure ] ;
+
+  rankdir = BT ; 
+	
+	subgraph level_1 {
+			rank = same ;
+	    Apám [ label = "az apám ♂" ] 
+	    Anyjám [ label = "az anyjám ♀" ] 
+	    Apósam[ label = "az aposam ♂" ] 
+	    Anyósam[ label = "az anyosam ♀" ] 
+			Apám -> Anyjám -> Apósam -> Anyósam [ style = invis ]
+	}
+
+
+  subgraph level_2 {
+    rank = same ;
+    Húgom [ label = "a húgom ♀" ] 
+    Fivérem [ label = "a fivérem ♂" ] 
+    Én[ label = "én ♂" ] [ constraint=false ]
+    Feleségem[ label = "a feleségem ♀" ] [ constraint=false ]
+    Sogórom [ label = "a sogórom ♂" ] 
+		Fivérem -> Húgom -> Én -> Feleségem -> Sogórom [ style = invis ]
+  }
+
+  subgraph level_3 {
+    rank = same ;
+		Unokaöccsém [ label = "az unokaöccsém ♂"]
+		Unokahúgom [ label = "az unokahúgom ♀"]
+	  Lányom [ label = "a lányom ♀" ] 	
+	  Fiam [ label = "a fiam ♂" ] 
+	  Menyem [ label = "a menyem ♀" ] 
+	  Vőm [ label = "a vőm ♂" ] 
+  }
+		
+  subgraph level_4 {
+    rank = same ;
+	  Unokám1 [ label = "az unokám ♂♀" ] 
+	  Unokám2 [ label = "az unokám ♂♀" ] 
+  }
+		
+	
+	
+	Én -> Feleségem [ style = dotted ; dir = none ; arrowhead = none ; weight = 10 ]
+  Én -> Apám [ weight = 10 ]
+  Én -> Anyjám [ weight = 10 ]  
+
+  Anyjám -> Apám [ style = dotted ; dir = none ; arrowhead = none ; weight = 0 ]
+
+  Feleségem -> Apósam [ weight = 10 ]
+  Feleségem -> Anyósam [ weight = 10 ]
+	
+  Sogórom -> Apósam [ weight = 10 ]
+  Sogórom -> Anyósam [ weight = 10 ]
+	
+	Apósam -> Anyósam [ style = dotted ; dir = none ; arrowhead = none ; weight = 0 ]
+
+  Lányom -> Én [ weight = 0 ]
+  Lányom -> Feleségem [ weight = 0 ]
+
+  Fiam -> Én [ weight = 0 ]
+  Fiam -> Feleségem  [ weight = 0 ]
+
+	Fiam -> Menyem [ style = dotted ; dir = none ; arrowhead = none ; weight = 0 ]
+
+	Fivérem -> Apám  [ weight = 0 ]
+	Fivérem -> Anyjám  [ weight = 0 ]
+	
+	Húgom -> Apám [ weight = 0 ]
+	Húgom -> Anyjám [ weight = 0 ]
+	
+	Unokaöccsém -> Fivérem [ weight = 0 ]
+	Unokahúgom -> Fivérem [ weight = 0 ]
+	
+  Lányom -> Vőm [ style = dotted ; dir = none ; arrowhead = none ; weight = 0 ]
+	
+	Unokám1 -> Lányom [ weight = 0 ]
+	Unokám1 -> Vőm [ weight = 0 ]
+
+	Unokám2 -> Fiam [ weight = 0 ]
+	Unokám2 -> Menyem [ weight = 0 ]
+
+  
+
+}
+</script>
+    
+      
+    <script src="viz.js"></script>
+    <script>
+      
+      function inspect(s) {
+        return "<pre>" + s.replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/\"/g, "&quot;") + "</pre>"
+      }
+      
+      function src(id) {
+        return document.getElementById(id).innerHTML;
+      }
+      
+      function example(id, format, engine) {
+        var result;
+        try {
+          result = Viz(src(id), format, engine);
+          if (format === "svg")
+            return result;
+          else
+            return inspect(result);
+        } catch(e) {
+          return inspect(e.toString());
+        }
+      }
+      
+      
+      document.body.innerHTML += "<h1>A család</h1>";
+      document.body.innerHTML += example("cluster", "svg");
+      
+      
+    </script>
+    
+  </body>
+</html>
