@@ -13,31 +13,43 @@ digraph G {
 
   rankdir = BT ; 
 	
+	subgraph level_0 {
+			rank = same ;
+	    Nagyapám1 [ label = "a nagyapám ♂" ] 
+	    Nagyanyjám1 [ label = "a angyanyjám ♀" ] 
+	    Nagyapám2 [ label = "a nagyapám ♂" ] 
+	    Nagyanyjám2 [ label = "a angyanyjám ♀" ] 
+			Nagyapám1 -> Nagyanyjám1 -> Nagyapám2 -> Nagyanyjám2 [ style = invis ]
+	}
+	
 	subgraph level_1 {
 			rank = same ;
+	    Nagybatyám [ label = "a nagybatyám ♂" ] 
+	    Nagynénim [ label = "a nagynénim ♀" ] 
 	    Apám [ label = "az apám ♂" ] 
 	    Anyjám [ label = "az anyjám ♀" ] 
 	    Apósam[ label = "az aposam ♂" ] 
 	    Anyósam[ label = "az anyosam ♀" ] 
-			Apám -> Anyjám -> Apósam -> Anyósam [ style = invis ]
+      Nagybatyám -> Nagynénim -> Apám -> Anyjám -> Apósam -> Anyósam [ style = invis ]
 	}
-
 
   subgraph level_2 {
     rank = same ;
+		Unokaöccsém1 [ label = "az unokaöccsém ♂"]
+		Unokahúgom1 [ label = "az unokahúgom ♀"]
     Húgom [ label = "a húgom ♀" ] 
     Fivérem [ label = "a fivérem ♂" ] 
     Én[ label = "én ♂" ]
     Feleségem[ label = "a feleségem ♀" ] 
     Sogórom [ label = "a sogórom ♂" ] 
     Sogórnőm [ label = "a sogórnőm ♀" ] 
-		Fivérem -> Húgom -> Én -> Feleségem -> Sogórom -> Sogórnőm [ style = invis ]
+		Unokaöccsém1 -> Unokahúgom1 -> Fivérem -> Húgom -> Én -> Feleségem -> Sogórom -> Sogórnőm [ style = invis ]
   }
 
   subgraph level_3 {
     rank = same ;
-		Unokaöccsém [ label = "az unokaöccsém ♂"]
-		Unokahúgom [ label = "az unokahúgom ♀"]
+		Unokaöccsém2 [ label = "az unokaöccsém ♂"]
+		Unokahúgom2 [ label = "az unokahúgom ♀"]
 	  Lányom [ label = "a lányom ♀" ] 	
 	  Fiam [ label = "a fiam ♂" ] 
 	  Menyem [ label = "a menyem ♀" ] 
@@ -50,49 +62,65 @@ digraph G {
 	  Unokám2 [ label = "az unokám ♂♀" ] 
   }
 		
+	Nagyapám1 -> Nagyanyjám1 [ style = dotted ; dir = none ; arrowhead = none ; weight = 0 ]	
+
+	Nagyapám2 -> Nagyanyjám2 [ style = dotted ; dir = none ; arrowhead = none ; weight = 0 ]	
 	
-	
-	Én -> Feleségem [ style = dotted ; dir = none ; arrowhead = none ; weight = 10 ]
-  Én -> Apám [ weight = 10 ]
-  Én -> Anyjám [ weight = 10 ]  
+	Apám -> Nagyapám1 
+	Apám -> Nagyanyjám1 
+	Anyjám -> Nagyapám2 
+	Anyjám -> Nagyanyjám2 
 
   Anyjám -> Apám [ style = dotted ; dir = none ; arrowhead = none ; weight = 0 ]
 
+  Nagybatyám -> Nagyapám1
+  Nagybatyám -> Nagyanyjám1
+	
+  Nagynénim -> Nagyapám1 
+  Nagynénim -> Nagyanyjám1
+		
+	Én -> Feleségem [ style = dotted ; dir = none ; arrowhead = none ; weight = 10 ]
+  Én -> Apám [ weight = 10 ]
+  Én -> Anyjám [ weight = 10 ]
+		
   Feleségem -> Apósam [ weight = 10 ]
   Feleségem -> Anyósam [ weight = 10 ]
 	
-  Sogórom -> Apósam [ weight = 10 ]
-  Sogórom -> Anyósam [ weight = 10 ]
+  Sogórom -> Apósam 
+  Sogórom -> Anyósam
 	
-  Sogórnőm -> Apósam [ weight = 10 ]
-  Sogórnőm -> Anyósam [ weight = 10 ]
+  Sogórnőm -> Apósam 
+  Sogórnőm -> Anyósam 
 	
 	Apósam -> Anyósam [ style = dotted ; dir = none ; arrowhead = none ; weight = 0 ]
 
-  Lányom -> Én [ weight = 0 ]
-  Lányom -> Feleségem [ weight = 0 ]
+  Lányom -> Én [ weight = 10 ]
+  Lányom -> Feleségem 
 
-  Fiam -> Én [ weight = 0 ]
-  Fiam -> Feleségem  [ weight = 0 ]
+  Fiam -> Én [ weight = 10 ]
+  Fiam -> Feleségem  
 
 	Fiam -> Menyem [ style = dotted ; dir = none ; arrowhead = none ; weight = 0 ]
 
-	Fivérem -> Apám  [ weight = 0 ]
-	Fivérem -> Anyjám  [ weight = 0 ]
+	Fivérem -> Apám  
+	Fivérem -> Anyjám 
 	
-	Húgom -> Apám [ weight = 0 ]
-	Húgom -> Anyjám [ weight = 0 ]
+	Húgom -> Apám 
+	Húgom -> Anyjám
 	
-	Unokaöccsém -> Fivérem [ weight = 0 ]
-	Unokahúgom -> Fivérem [ weight = 0 ]
+	Unokaöccsém1 -> Nagybatyám
+	Unokahúgom1 -> Nagybatyám
+	
+	Unokaöccsém2 -> Fivérem
+	Unokahúgom2 -> Fivérem 
 	
   Lányom -> Vőm [ style = dotted ; dir = none ; arrowhead = none ; weight = 0 ]
 	
-	Unokám1 -> Lányom [ weight = 0 ]
-	Unokám1 -> Vőm [ weight = 0 ]
+	Unokám1 -> Lányom
+	Unokám1 -> Vőm 
 
-	Unokám2 -> Fiam [ weight = 0 ]
-	Unokám2 -> Menyem [ weight = 0 ]
+	Unokám2 -> Fiam
+	Unokám2 -> Menyem
 
   
 
