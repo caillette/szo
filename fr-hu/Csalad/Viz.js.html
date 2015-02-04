@@ -28,22 +28,21 @@ digraph G {
     Nagynénim [ label = "a nagynénim ♀" ]
     Apám [ label = "az apám ♂" ]
     Anyjám [ label = "az anyjám ♀" ]
-    Apósam[ label = "az aposam ♂" ]
-    Anyósam[ label = "az anyosam ♀" ]
+    Apósam[ label = "az apósom ♂" ]
+    Anyósam[ label = "az anyósom ♀" ]
     Nagybatyám -> Nagynénim -> Apám -> Anyjám -> Apósam -> Anyósam [ style = invis ]
   }
 
   subgraph level_2 {
     rank = same ;
-    Unokaöccsém1 [ label = "az unokaöccsém ♂"]
-    Unokahúgom1 [ label = "az unokahúgom ♀"]
-    Húgom [ label = "a húgom ♀" ] 
+    Unokatestvérem [ label = "az unokatestvérem ♂ ♀"]
+    Húgom [ label = "a húgom ♀" ]
     Fivérem [ label = "a fivérem ♂" ] 
     Én[ label = "én ♂" ]
     Feleségem[ label = "a feleségem ♀" ] 
     Sogórom [ label = "a sogórom ♂" ] 
     Sogórnőm [ label = "a sogórnőm ♀" ] 
-    Unokaöccsém1 -> Unokahúgom1 -> Fivérem -> Húgom -> Én -> Feleségem -> Sogórom -> Sogórnőm [ style = invis ]
+    Unokatestvérem -> Fivérem -> Húgom -> Én -> Feleségem -> Sogórom -> Sogórnőm [ style = invis ]
   }
 
   subgraph level_3 {
@@ -108,9 +107,8 @@ digraph G {
   Húgom -> Apám 
   Húgom -> Anyjám
   
-  Unokaöccsém1 -> Nagybatyám
-  Unokahúgom1 -> Nagybatyám
-  
+  Unokatestvérem -> Nagybatyám
+
   Unokaöccsém2 -> Fivérem
   Unokahúgom2 -> Fivérem 
   
