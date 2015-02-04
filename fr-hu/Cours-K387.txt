@@ -1,0 +1,18 @@
+@_K387
+
+spécification, description détaillée
+részletes leírás
+
+risqué
+kockázatos
+
+prescription ("description d’exigence")
+követelmény
+
+
+sauf si, à l'exception de
+  Tout le monde aime le porc, sauf moi.
+  Il ne veut pas quitter l'autre projet, à moins qu'on le paye très cher.
+kivéve vkit
+  Mindenki szereti a disznóhúst kivéve engem.
+  Nem akarja otthagyni a másik projektet kivéve, ha sokat fizettek neki.

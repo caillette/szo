@@ -307,6 +307,9 @@ fr-hu/Cours-K383.txt
 fr-hu/Cours-K384.txt
 fr-hu/Cours-K385.txt
 fr-hu/Cours-K386.txt
+fr-hu/Cours-K387.txt
+fr-hu/Cours-K388.txt
+fr-hu/Cours-K390.txt
 
 
 @-er -ér
