@@ -1,0 +1,37 @@
+@_K392
+
+cave
+  Tout le monde rêve d'avoir des trésors dans sa cave.
+pince
+  Mindenkinek almodozik arról, hogy kincsek vannak a pincéjében.
+
+objet
+tárgy
+  tárgyak
+
+fourmi
+hangya
+
+désert
+sivatag
+
+fourmilière
+hangyaboly
+
+empreinte, trace
+nyom
+
+saluer
+üdvözöl
+
+Salomon
+Salomon
+
+se plier, se pencher
+hajlik
+
+grain de sable
+homokszem
+
+l'un après l'autre
+egymás után
