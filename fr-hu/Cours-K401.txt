@@ -9,8 +9,10 @@ rest
 maigre, pointu
 filigrán
 
-extérieur 	l'apparence de qqun 	vkinek külseje
+extérieur
+  l'apparence de qqun
 külsö
+  vkinek külseje
 
 se contracter
 összeszorul
@@ -24,7 +26,8 @@ szorít vmit
 petit objet inutile
 limlom
 
-Il est parti pour un monde meilleur ("Il s'est endormi pour une meilleure vie.")
+Il est parti pour un monde meilleur
+  ("Il s'est endormi pour une meilleure vie.")
 jobblétre szenderült
 
 avec indifférence

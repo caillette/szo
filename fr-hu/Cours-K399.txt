@@ -9,33 +9,80 @@ megold vmit
 afficher qqchose, projeter son image
 kijelez vmit
 
-megcsal vkit : tromper qqun (dans une relation de couple)
-becsap vmit : tromper qqchose, en abuser.
-csicseriborsó : pois chiche
-beáztat vmit : faire tremper qqchose
-szezám : sésame
-hízik : grossir, prendre du poids
-hízlal : faire grossir, faire engraisser
-Vkinek aztán {igék}hetek! : J'ai beau {verbe} ça n'a aucun effet!
-	J'ai beau te parler, de toutes façons tu n'écoutes pas!
-	Neked aztán beszélhetek!
-fedezék : abri
-szolid : modeste
-rendszerető : qui aime l'ordre
-löncs : déjeuner du midi
-némi : quelques
-vmi vmivel egybekötött : quelque chose se passe en même temps que qqchose
-	une conversation ayant lieu au cours du repas
-	vacsorával egybekötött beszlgetés
-boka : cheville (partie du corps)
-tájék : alentours
-meg van : j'ai trouvé (tournure impersonnelle)
-	Au bout de deux jours je lui avais trouvé un nom.
-	Két nap múlva már megvolt a neve.
-megijed : prendre peur, s'effrayer
-félsz : peur (n)
-szerény : modeste
-elszunyókál : s'endormir un petit peu
-tisztesség : honneur
-tisztességesen : normalement, dans l'ordre, comme il faut
-szövet : tissu
+tromper qqun (dans une relation de couple)
+megcsal vkit
+
+tromper qqchose, en abuser.
+becsap vmit
+
+pois chiche
+csicseriborsó
+
+faire tremper qqchose
+beáztat vmit
+
+sésame
+szezám
+
+grossir, prendre du poids
+hízik
+
+faire grossir, faire engraisser
+hízlal
+
+J'ai beau {verbe} ça n'a aucun effet!
+  J'ai beau te parler, de toutes façons tu n'écoutes pas!
+Vkinek aztán {igék}hetek!
+  Neked aztán beszélhetek!
+
+abri
+fedezék
+
+modeste
+szolid
+
+qui aime l'ordre
+rendszerető
+
+déjeuner du midi
+löncs
+
+quelques
+némi
+
+quelque chose se passe en même temps que qqchose
+  une conversation ayant lieu au cours du repas
+vmi vmivel egybekötött
+  vacsorával egybekötött beszlgetés
+
+cheville (partie du corps)
+boka
+
+alentours
+tájék
+
+j'ai trouvé (tournure impersonnelle)
+  Au bout de deux jours je lui avais trouvé un nom.
+meg van
+  Két nap múlva már megvolt a neve.
+
+prendre peur, s'effrayer
+megijed
+
+peur (n)
+félsz
+
+modeste
+szerény
+
+s'endormir un petit peu
+elszunyókál
+
+honneur
+tisztesség
+
+normalement, dans l'ordre, comme il faut
+tisztességesen
+
+tissu
+szövet

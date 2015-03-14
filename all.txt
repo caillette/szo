@@ -315,6 +315,13 @@ fr-hu/Cours-K392.txt
 fr-hu/Cours-K393.txt
 fr-hu/Cours-K394.txt
 fr-hu/Cours-K395.txt
+fr-hu/Cours-K396.txt
+fr-hu/Cours-K397.txt
+fr-hu/Cours-K398.txt
+fr-hu/Cours-K399.txt
+fr-hu/Cours-K400.txt
+fr-hu/Cours-K401.txt
+fr-hu/Cours-K402.txt
 
 
 @-er -ér
