@@ -338,6 +338,11 @@ fr-hu/Cours-K415.txt
 fr-hu/Cours-K416.txt
 fr-hu/Cours-K417.txt
 fr-hu/Cours-K418.txt
+fr-hu/Cours-K419.txt
+fr-hu/Cours-K420.txt
+fr-hu/Cours-K421.txt
+fr-hu/Cours-K422.txt
+fr-hu/Cours-K423.txt
 
 
 @-er -ér
