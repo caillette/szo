@@ -1,0 +1,44 @@
+@_K424
+
+dialogue
+párbeszéd
+
+ @NomsPropres
+Vienne
+Bécs
+
+ronfler
+horkol
+
+capable de quelque chose
+képes vmire
+
+mais voilà
+csakhogy
+
+se rappeler de qqchose (avec une nuance d'intention)
+felidéz vmit
+
+citer qqchose/qqun
+idéz vmit/vkit
+
+de plus
+  (en ajoutant à cela)
+méghozzá
+
+mot à mot
+szó szerint
+
+mot de passe, slogan
+jelszó
+
+grossier
+trágár
+
+comptine
+mondóka
+
+  @Coordination
+d'ailleurs (coordination)
+különben
+
