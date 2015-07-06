@@ -354,6 +354,10 @@ fr-hu/Cours-K431.txt
 fr-hu/Cours-K432.txt
 fr-hu/Cours-K434.txt
 fr-hu/Cours-K435.txt
+fr-hu/Cours-K437.txt
+fr-hu/Cours-K438.txt
+fr-hu/Cours-K439.txt
+fr-hu/Cours-K440.txt
 
 
 @-er -ér
