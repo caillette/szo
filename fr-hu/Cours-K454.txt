@@ -1,0 +1,42 @@
+@_K454
+
+entendre qqun/qqchose effectuer une action
+  Ils ont entendu le lion rugir.
+  Ils ont entendu le voleur (en train de) voler la voiture.
+meghal vkit/vmit csinálni
+  Meghallották az oroszlánt ordítani.
+  Meghallották a rablót, amint az autót lopja.
+
+enculé
+seggbe baszott
+
+enculer qqun
+seggbe basz vkit
+
+intime
+meghitt
+
+parasite
+elősködő
+
+exécuter (tuer) qqun
+kivégez vkit
+
+exécuter qqchose (une tâche)
+elvégez vmit
+
+de plus
+méghozzá
+
+nu
+csupasz
+
+coton (utilisé comme compresse)
+vatta
+
+désinfectant
+fertőtlenítős
+
+désinfecter qqchose
+fertőtlenít vmit
+

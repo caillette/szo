@@ -372,6 +372,20 @@ fr-hu/Cours-K450.txt
 fr-hu/Cours-K451.txt
 fr-hu/Cours-K452.txt
 fr-hu/Cours-K453.txt
+fr-hu/Cours-K454.txt
+fr-hu/Cours-K455.txt
+fr-hu/Cours-K456.txt
+fr-hu/Cours-K457.txt
+fr-hu/Cours-K458.txt
+fr-hu/Cours-K459.txt
+fr-hu/Cours-K460.txt
+fr-hu/Cours-K462.txt
+fr-hu/Cours-K463.txt
+fr-hu/Cours-K464.txt
+fr-hu/Cours-K465.txt
+fr-hu/Cours-K466.txt
+fr-hu/Cours-K467.txt
+fr-hu/Cours-K468.txt
 
 
 
