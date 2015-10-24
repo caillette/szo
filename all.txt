@@ -387,6 +387,7 @@ fr-hu/Cours-K466.txt
 fr-hu/Cours-K467.txt
 fr-hu/Cours-K468.txt
 fr-hu/Cours-K469.txt
+fr-hu/Cours-K470.txt
 
 
 
