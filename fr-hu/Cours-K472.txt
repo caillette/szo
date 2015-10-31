@@ -1,0 +1,28 @@
+@_K472
+
+interdire, exclure qqchose (dans le contexte informatique)
+  J’ai banni un de mes contacts sur Facebook, parce qu’il écrit trop de bêtises.
+letilt vmit
+  Letiltottam az egyik ismerősömet a Facebookon, mert hülyeségeket ír.
+
+interdire qqchose
+  Il a interdit aux enfants de manger du chocolat.
+megtilt vmit
+  Megtiltja a gyerekeknek, hogy csokoládét egyenek.
+
+censurer qqchose
+betilt vmit
+
+exclure qqchose d’un lieu
+  Ils lui ont interdit de remettre les pieds au café, parce qu’il s’est bagarré.
+kitilt vmit vmiből
+  Kitiltották a kávéházból, mert verekedett.
+
+faille de sécurité
+biztonsági fenyegetés
+
+entrer par effraction dans qqchose (un lieu physique)
+betör vmibe
+
+obtenir un accès à l’intérieur de qqchose mais sans y rentrer physiquement (s’applique à un programme informatique, ou une voiture quand on y dérobe qqchose)
+feltör vmit
