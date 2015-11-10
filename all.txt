@@ -391,6 +391,9 @@ fr-hu/Cours-K470.txt
 fr-hu/Cours-K471.txt
 fr-hu/Cours-K472.txt
 fr-hu/Cours-K473.txt
+fr-hu/Cours-K474.txt
+fr-hu/Cours-K475.txt
+fr-hu/Cours-K476.txt
 
 
 
