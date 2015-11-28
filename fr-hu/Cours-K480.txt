@@ -16,11 +16,11 @@ vmiből ítélve
 
 destiner qqchose à qqun
   C’est à toi ce que j’ai destiné ce cadeau.
-szán vmit vminek
+szán vmit vkinek
   Ezt az ajándékot neked szántam.
 
-elhalaszt vmit
 repousser qqchose dans le temps
+elhalaszt vmit
 
 revendication
 igény
@@ -56,7 +56,7 @@ ourdir une conspiration
 összeesküvést szőni
 
 Ah s’il y avait moyen de ne pas faire qqchose!
-  (forme d’usage de l’impératif)
   Que n’ai-je besoin de travailler !
+  (forme d’usage de l’impératif)
 Hadd ne kelljen vmit csinálni!
   Hadd ne kelljen dolgoznom!
