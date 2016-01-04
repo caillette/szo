@@ -404,6 +404,7 @@ fr-hu/Cours-K483.txt
 fr-hu/Cours-K484.txt
 fr-hu/Cours-K485.txt
 fr-hu/Cours-K486.txt
+fr-hu/Cours-K487.txt
 
 
 
