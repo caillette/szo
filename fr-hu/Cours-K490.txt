@@ -1,0 +1,22 @@
+@_K490
+
+se passer, se dérouler
+  Le temps passe.
+telik
+  Telik az idő.
+
+cousin
+unokatestvér
+
+à une altitude de {}
+  Le village se situe à 600 m d'altitude.
+{} magasan van
+  A falu 600 méter magasan van.
+
+équilibre
+  Ils ne veulent rien changer à cet équilibre.
+egyensúly
+  Ezt az egyensúlyt nem akarják megváltoztatni.
+
+
+
