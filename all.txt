@@ -408,6 +408,7 @@ fr-hu/Cours-K487.txt
 fr-hu/Cours-K488.txt
 fr-hu/Cours-K490.txt
 fr-hu/Cours-K491.txt
+fr-hu/Cours-K492.txt
 
 
 

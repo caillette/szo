@@ -1,0 +1,49 @@
+@_K492
+
+adjectif (1)
+melleknév
+
+adjectif (2)
+jelző
+
+commander qqchose
+rendel vmit
+
+ordonner qqchose (placer dans un certain ordre)
+rendez vmit
+
+énerver, fatiguer qqun
+halálba visz vkit
+
+mourir de qqchose
+  Il se meurt d'amour.
+belehal vmibe
+  Belehal a szerelembe.
+
+entrer en contact avec qqun
+összeköttetésbe lép vkivel
+
+interdire qqchose
+  Ils ont interdit ma carte bancaire.
+  (Nécessite un nom comme COD)
+letilt vmit
+  Letiltották a bankkartyámat.
+
+interdire qqchose
+megakadályoz vmit
+
+empêcher l'accès à qqchose
+  Ils ont invalidé mon mot de passe.
+  (COD obligatoire)
+letilt vmit
+  Letiltották a jelszavamat.
+
+Interdire qqchose (de concret) à qqun
+  Je t'interdis de rencontrer ce garçon.
+Megtiltom, hogy találkozzál ezzel a fiúval.
+
+autoriser qqchose
+engedélyez vmit
+
+
+
