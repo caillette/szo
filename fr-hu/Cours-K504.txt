@@ -1,0 +1,42 @@
+@_K504
+
+tondeuse (pour les cheveux)
+nullás gép
+
+accrocher qqchose sur qqchose
+  Tu accroches un sabot sur la tondeuse, afin de modifier l’épaisseur de la coupe.
+hozzáillesz vmit vmihez
+  Hozzáillesztesz egy fésűt a nullás géphez, hogy megváltoztasd a vágás hosszúságát.
+
+peigne
+fésű
+
+clé à molette
+csavarkulcs
+
+raccorder, jointoyer, sceller
+tömít
+
+joint
+tömítés
+
+joint rondelle
+tömítő gyűrű
+
+joint d’isolation
+szigetelés
+
+tournevis
+csavarhúzó
+
+vertical
+függőleges
+
+horizontal
+vízsszintes
+
+humidité (dans l’air)
+párá
+
+absorbeur d’humidité
+párátlanító

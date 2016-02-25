@@ -415,6 +415,11 @@ fr-hu/Cours-K498.txt
 fr-hu/Cours-K499.txt
 fr-hu/Cours-K500.txt
 fr-hu/Cours-K501.txt
+fr-hu/Cours-K502.txt
+fr-hu/Cours-K503.txt
+fr-hu/Cours-K504.txt
+fr-hu/Cours-K505.txt
+fr-hu/Cours-K506.txt
 
 
 
