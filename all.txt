@@ -420,6 +420,7 @@ fr-hu/Cours-K503.txt
 fr-hu/Cours-K504.txt
 fr-hu/Cours-K505.txt
 fr-hu/Cours-K506.txt
+fr-hu/Cours-K507.txt
 
 
 
