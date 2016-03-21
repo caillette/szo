@@ -1,0 +1,68 @@
+
+body {
+  background : #dddddd ;
+}
+
+#tags {
+  background : #cccccc ;
+}
+
+
+#dialog-buttons {
+  background : #cccccc ;
+}
+
+
+#card-location > span, #card-location > em {
+  color : #555555 ;
+}
+
+
+#card-location > span {
+  border : 1px solid grey ;
+}
+
+
+/********
+  Board
+*********/
+
+
+#board > table.card-list {
+  background : #eeeeee ;
+}
+
+
+#board > table td {
+  border-bottom : solid 2px #dddddd ;
+}
+
+
+td.undisclosed {
+  background : #cccccc ;
+  border-bottom : solid 2px #dddddd ;
+}
+
+.empty {
+  color : #999999 ;
+}
+
+#problems > h2, #problems > h2 > a {
+  color : #cc0000 ;
+}
+
+#problems > h2 :hover {
+  color : #ff1111 ;
+}
+
+
+#about > a:link, #about > a:hover, #about > a:active, #about > a:visited  {
+  border : solid #eeeeee 0.15em ;
+  color : #999999 ;
+}
+
+#about > a:hover {
+  border : solid #ffffff 0.15em ;
+  color : #666 ;
+}
+
