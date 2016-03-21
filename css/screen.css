@@ -58,8 +58,9 @@
 #dialog-buttons {
   position : absolute ;
   bottom : 0 ;
+  padding-top : 0.2em ;
   background : #cccccc ;
-  width : 100% ;
+  width : 99% ;
 }
 
 #card-location {
