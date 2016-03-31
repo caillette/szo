@@ -23,6 +23,7 @@ elismer vmit
 embêtement, qqchose de désagréable
 bosszúság
 
+  @egy-
 pour l’instant, jusqu’ici (ça peut encore arriver mais pour l’instant non)
 egyelőre
 
@@ -32,9 +33,11 @@ vadonatúj
 s’apercevoir de qqchose
 észre vesz vmit
 
+  @egy-
 tout d’un coup, soudainement (1)
 egyszercsak
 
+  @egy-
 tout d’un coup, soudainement (2)
 egyszerre csak
 
