@@ -431,6 +431,9 @@ fr-hu/Cours-K514.txt
 fr-hu/Cours-K515.txt
 fr-hu/Cours-K516.txt
 fr-hu/Cours-K517.txt
+fr-hu/Cours-K518.txt
+fr-hu/Cours-K519.txt
+
 
 
 
