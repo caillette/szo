@@ -1,0 +1,63 @@
+@_K522
+
+temps (état météorologique)
+időjárás
+
+prévision météorologique
+időjárás jelentés
+
+longuement
+hosszan
+
+lentement
+lassan
+
+message
+  Il n’a pas encore lu mon message.
+üzenet
+  Még nem olvasta az üzenetemet.
+
+géographie
+földrajz
+
+plan, carte (pour une zone géographique)
+térkép
+
+plan (pour un bâtiment)
+alaprajz
+
+plan (en vue d’une réalisation)
+tervrajz
+
+flambant neuf
+vadonatúj
+
+logiciel
+szoftver
+
+viril
+férfias
+
+prénom masculin
+férfi név
+
+prénom masculin
+fiúnév
+
+prénom féminin
+lánynév
+
+prénom masculin
+férfinév
+
+sécurité publique
+közbiztonság
+
+confondre qqun/qqchose avec qqun/qqchose
+összetevesz vkit/vmit vmivel/vkivel
+
+immobilier
+ingantlan
+
+exigence
+igényem

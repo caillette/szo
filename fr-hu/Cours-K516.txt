@@ -4,7 +4,7 @@ primaire (principal)
 elsődleges
 
 secondaire
-másodleges
+másodlagos
 
 copie (résultat de l'action de copier)
 másolat
