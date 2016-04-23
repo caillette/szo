@@ -440,6 +440,7 @@ fr-hu/Cours-K523.txt
 fr-hu/Cours-K524.txt
 fr-hu/Cours-K525.txt
 fr-hu/Cours-K526.txt
+fr-hu/Cours-K527.txt
 
 
 

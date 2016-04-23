@@ -10,7 +10,7 @@ essayer qqchose (une action)
 megpróbál vmit
   Megpróbálok elmenni a bankba.
 
-plutót … que …
+plutôt … que …
 inkább … , mint …
 
 preuve de qqchose
@@ -39,7 +39,7 @@ capter l'attention
 lekötni a figyelmet
 
 attirer l'attention
-felkelteni a figylemedet
+felkelteni a figyelmedet
 
 dresser qqchose (un animal)
 kiképez vmit
