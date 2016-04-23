@@ -436,6 +436,11 @@ fr-hu/Cours-K519.txt
 fr-hu/Cours-K520.txt
 fr-hu/Cours-K521.txt
 fr-hu/Cours-K522.txt
+fr-hu/Cours-K523.txt
+fr-hu/Cours-K524.txt
+fr-hu/Cours-K525.txt
+fr-hu/Cours-K526.txt
+
 
 
 
