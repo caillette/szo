@@ -37,7 +37,7 @@ egyéniség
 
   @Expression
 rendre qqun dépendant de qqchose
-vkit/vminek rabjává tenni
+vkit vminek rabjává tenni
 
 accorder qqchose à qqun
   Les jeunes firent un triomphe au vieux musicien.
