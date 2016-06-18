@@ -447,6 +447,12 @@ fr-hu/Cours-K530.txt
 fr-hu/Cours-K531.txt
 fr-hu/Cours-K532.txt
 fr-hu/Cours-K533.txt
+fr-hu/Cours-K534.txt
+fr-hu/Cours-K535.txt
+fr-hu/Cours-K537.txt
+fr-hu/Cours-K538.txt
+fr-hu/Cours-K539.txt
+fr-hu/Cours-K540.txt
 
 
 
