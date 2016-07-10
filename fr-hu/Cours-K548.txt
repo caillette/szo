@@ -1,0 +1,74 @@
+@_K548
+
+haut-parleur
+hangszóró
+
+adapter qqchose (une œuvre, un film, un livre)
+feldolgoz vmit
+
+transformation
+  La viande subit une tranformation lorsqu'on fabrique du salami.
+feldolgozás
+  A húst is feldolgozzák, amikor szalamít keszítenek.
+
+adaptation (s'applique uniquement aux êtres vivants)
+alkalmazkodás
+
+prise, connecteur
+csatlakozó
+
+bricoler qqchose, l'adapter
+átdolgoz vmin
+
+travailler sur qqchose
+dolgozik vmin
+
+tomber 
+belesik
+
+faire tomber qqchose
+  J'ai fait tomber une vis dans le haut-parleur.
+beleejt vmit
+  Beleejtettem egy csavart a hangszóróba.
+
+secouer qqchose
+ráz vmit
+
+baiser avec qqun (COD obligatoire)
+megdug vkit
+
+baiser
+  J'entendais la voisine baiser.
+dug
+  Halottam a szomszédnőt dugni.
+
+tuer qqchose/qqun
+elpusztít vmit/vkit
+
+détruire qqchose
+tönkre tenni valamit
+
+endommager qqchose (qui peut éventuellement être réparé ensuite)
+elront vmit
+
+fragile
+törékeny
+
+  @Expression
+Tu as bien travaillé! (pour arriver à un certain résultat)
+Megdolgoztál érte!
+
+bricoler
+barkácsol
+
+jugement
+ítélet
+
+émettre un jugement négatif sur qqchose (1)
+rossznak ítél vmit
+
+émettre un jugement négatif sur qqchose (2)
+rosszall vmit
+
+exprimer qqchose
+kifejez vmit

@@ -453,6 +453,17 @@ fr-hu/Cours-K537.txt
 fr-hu/Cours-K538.txt
 fr-hu/Cours-K539.txt
 fr-hu/Cours-K540.txt
+fr-hu/Cours-K541.txt
+fr-hu/Cours-K542.txt
+fr-hu/Cours-K543.txt
+fr-hu/Cours-K544.txt
+fr-hu/Cours-K545.txt
+fr-hu/Cours-K546.txt
+fr-hu/Cours-K547.txt
+fr-hu/Cours-K548.txt
+fr-hu/Cours-K549.txt
+
+
 
 
 
