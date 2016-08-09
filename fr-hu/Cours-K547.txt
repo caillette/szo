@@ -31,7 +31,7 @@ lavage de cerveau
 agymosás
   A könyv olyan hadifoglyokról szól, akiken agymosást végeztek.
 
-gombra kattint
-  J’appuie sur le bouton.
 appuyer sur le bouton
+  J’appuie sur le bouton.
+gombra kattintani
   A gombra kattintok.

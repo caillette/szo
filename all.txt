@@ -463,6 +463,15 @@ fr-hu/Cours-K547.txt
 fr-hu/Cours-K548.txt
 fr-hu/Cours-K549.txt
 fr-hu/Cours-K550.txt
+fr-hu/Cours-K551.txt
+fr-hu/Cours-K552.txt
+fr-hu/Cours-K553.txt
+fr-hu/Cours-K554.txt
+fr-hu/Cours-K555.txt
+fr-hu/Cours-K556.txt
+fr-hu/Cours-K557.txt
+fr-hu/Cours-K558.txt
+fr-hu/Cours-K559.txt
 
 
 
