@@ -1,0 +1,23 @@
+@_K560
+
+cadenas
+lakat
+
+croire qqun/qqchose
+  Je te crois.
+  Je n’en crois pas mes yeux !
+hisz vkinek/vminek
+  Hiszek neked.
+  Nem hiszek a szememnek!
+
+croire en qqchose
+  Crois-tu en Dieu ?
+  Je crois dans les principes du communisme.
+hisz vmiben
+  Hiszel Istenben?
+  Hiszek a kommunizmus elveiben.
+
+croire qqun à propos de qqchose (COD obligatoire)
+  Je te crois quand tu dis que tu as mangé un kilo de chou.
+elhisz vkinek vmit
+  Elhiszem neked, hogy megettél három kiló káposztát.
