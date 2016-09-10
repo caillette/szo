@@ -1,0 +1,62 @@
+@_K566
+
+s'en sortir mal
+rosszul jár
+
+se mettre d’accord sur qqchose
+  Les parties se sont mises d’accord.
+  Les deux parties se sont mises d’accord.
+megegyezik vmiben
+  A felek megegyeznek egymással.
+  A két fél megegyezik egymással.
+
+négocier qqchose (un prix)
+alkud vmit
+
+négocier un prix
+lealkudni egy árat
+
+payer qqun
+  J’ai payé l’intermédiaire.
+megfizet vkit
+  Megfizettem az ügynököt.
+
+payer qqchose à qqun
+  Tu as réglé sa commission à l’intermédiaire.
+kifizet vmit vkinek
+  Kifizetted a pénzt (jutalékot) az ügynöknek.
+
+c’est sans précédent
+meg nem volt rá példa
+
+ministère
+minisztérium
+
+ministre
+miniszter
+
+mairie
+városháza
+
+maire
+polgármester
+
+addition
+  Ajoute trois et deux.
+összeadás
+  Adj össze hármat kettővel.
+
+soustraction
+  Soustrais deux de trois.
+kivonás
+  Vonj ki kettőt háromból.
+
+multiplication
+  Multiplie trois et trois.
+szorzás
+  Szorozz meg hármat hárommal.
+
+division
+  Divise huit par quatre.
+osztás
+  Ossz el nyolcat néggyel.

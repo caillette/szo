@@ -1,0 +1,23 @@
+@_K565
+
+immatériel
+nem kézzel fogható
+
+classifier qqchose
+osztályoz vmit
+
+distribution des cartes
+kártya leosztás
+
+distribution des rôles
+szerepek leosztás
+
+disperser qqchose
+  Après la Seconde Guerre Mondial, les grandes puissances divisèrent la Hongrie.
+feloszlat vmit
+  Az első világháború után Magyarországot felosztották a nagyhatalmak.
+
+répartir qqchose
+  La Croix-Rouge répartit les dons entre les réfugiés.
+szétoszt vmit
+  A Vörös Kereszt szétosztotta az adományokat a menekültek között.
