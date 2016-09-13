@@ -481,6 +481,7 @@ fr-hu/Cours-K565.txt
 fr-hu/Cours-K566.txt
 fr-hu/Cours-K567.txt
 fr-hu/Cours-K568.txt
+fr-hu/Cours-K569.txt
 
 
 
