@@ -482,6 +482,12 @@ fr-hu/Cours-K566.txt
 fr-hu/Cours-K567.txt
 fr-hu/Cours-K568.txt
 fr-hu/Cours-K569.txt
+fr-hu/Cours-K570.txt
+fr-hu/Cours-K571.txt
+fr-hu/Cours-K572.txt
+fr-hu/Cours-K573.txt
+fr-hu/Cours-K574.txt
+fr-hu/Cours-K575.txt
 
 
 
