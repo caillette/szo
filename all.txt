@@ -488,6 +488,23 @@ fr-hu/Cours-K572.txt
 fr-hu/Cours-K573.txt
 fr-hu/Cours-K574.txt
 fr-hu/Cours-K575.txt
+fr-hu/Cours-K576.txt
+fr-hu/Cours-K577.txt
+fr-hu/Cours-K578.txt
+fr-hu/Cours-K579.txt
+fr-hu/Cours-K580.txt
+fr-hu/Cours-K581.txt
+fr-hu/Cours-K582.txt
+fr-hu/Cours-K583.txt
+fr-hu/Cours-K584.txt
+fr-hu/Cours-K585.txt
+fr-hu/Cours-K586.txt
+fr-hu/Cours-K587.txt
+fr-hu/Cours-K588.txt
+fr-hu/Cours-K589.txt
+fr-hu/Cours-K590.txt
+fr-hu/Cours-K591.txt
+fr-hu/Cours-K592.txt
 
 
 

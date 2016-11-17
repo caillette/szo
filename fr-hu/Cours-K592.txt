@@ -1,0 +1,55 @@
+@_K592
+
+constitution
+alkotmány
+
+citoyenneté
+  Le Jobbik ne veut pas que les étrangers puissent acheter la citoyenneté hongroise.
+állampolgárság
+  A Jobbik nem akarja azt, hogy a külföldiek a magyar állampolgárságot meg tudják venni.
+
+appartenance nationale
+  En Transylvannie les gens ont la nationalité roumaine, même si leur appartenance nationale est hongroise.
+nemzetiség
+  Az Erdélyben az emberek román állampolgárok, még akkor is ha magyar nemzetiségük van.
+
+voter pour qqun
+szavaz vkire
+
+voter qqchose
+  Le Jobbik n’a pas voté le changement de la constitution.
+megszavaz vmit
+  A Jobbik nem szavazta meg az alkotmány módosítást.
+
+proposer qqchose
+javasol vmit
+
+faire paraître qqchose, rendre public qqchose
+megjelentet vmit
+
+publier qqchose
+publikál
+
+rendre public qqchose
+nyilvánosságra hoz vmit
+
+campagne (action de conquête)
+kampány
+
+quelqu’un de gentil, de sympathique
+helyes ember
+
+adversaire
+ellenfél
+
+choisir un candidat
+jelöltet állít
+
+appliquer une stratégie
+stratégiát folytat
+
+influence qqchose
+befolyásol valamit
+
+exercer une pression sur qqun
+nyomást gyakorol vkire
