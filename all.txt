@@ -505,6 +505,14 @@ fr-hu/Cours-K589.txt
 fr-hu/Cours-K590.txt
 fr-hu/Cours-K591.txt
 fr-hu/Cours-K592.txt
+fr-hu/Cours-K593.txt
+fr-hu/Cours-K594.txt
+fr-hu/Cours-K595.txt
+fr-hu/Cours-K596.txt
+fr-hu/Cours-K597.txt
+fr-hu/Cours-K598.txt
+fr-hu/Cours-K599.txt
+fr-hu/Cours-K600.txt
 
 
 
