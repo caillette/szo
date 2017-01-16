@@ -1,6 +1,7 @@
 @_K603
 
-boire la tasse (avaler de l’eau par mégarde en nageant)
+boire la tasse
+  (avaler de l’eau par mégarde en nageant)
 vizet nyelni
 
 négocier un prix
