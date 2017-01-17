@@ -523,6 +523,7 @@ fr-hu/Cours-K607.txt
 fr-hu/Cours-K608.txt
 fr-hu/Cours-K609.txt
 fr-hu/Cours-K610.txt
+fr-hu/Cours-K611.txt
 
 
 
