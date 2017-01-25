@@ -524,6 +524,9 @@ fr-hu/Cours-K608.txt
 fr-hu/Cours-K609.txt
 fr-hu/Cours-K610.txt
 fr-hu/Cours-K611.txt
+fr-hu/Cours-K612.txt
+fr-hu/Cours-K613.txt
+fr-hu/Cours-K614.txt
 
 
 

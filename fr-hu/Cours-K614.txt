@@ -1,0 +1,38 @@
+@_K614
+
+inaugurer qqchose
+elavat vmit
+
+introniser qqun en tant que qqchose
+avat vkit vmivé
+
+  @Expression
+Je ne te le fais pas dire !
+Ne is mondd!
+
+  @Grammaire
+participe (présent ou passé)
+melléknevi igenév
+
+  @Informatique
+attaque par déni de service
+szerver ellen indított túlterhelési támadás
+
+technique (n)
+technika
+
+reconnaissance faciale
+arcfelismerés
+
+utilisateur (n)
+felhasználó
+
+  @Grammaire
+participe passé
+befejezett melleknévi igenev
+
+geste
+mozdulat
+
+mouvement
+mozgás
