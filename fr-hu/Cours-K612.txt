@@ -15,9 +15,11 @@ egér
 aux sources ouvertes ("open-source")
 nyílt forráskódú
 
+  @Informatique
 pilote de périphérique
 készülék kezelő program
 
+  @Informatique
 périphérique d'entrée
 bemeneti periferia
 

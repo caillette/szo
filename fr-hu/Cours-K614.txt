@@ -29,7 +29,7 @@ felhasználó
 
   @Grammaire
 participe passé
-befejezett melleknévi igenev
+befejezett melléknevi igenév
 
 geste
 mozdulat
