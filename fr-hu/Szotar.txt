@@ -752,11 +752,24 @@ ensemble (association)
 vmivel együtt
   a pénzemmel együtt az útlevelem is
 
+  @Temporalite
+"il y a un an"/"depuis un an"
+egy éve
+
+
   @Negation @egy-
 pas du tout
   Je ne bois pas du tout de vin blanc.
 egyáltalán … nem
   Egyáltalán nem szeretem a feher bort.
+
+  @egy-
+le reste
+egyéb
+
+  @egy-
+par ailleurs
+egyébként
 
   @egy-
 seul, seulement
@@ -1435,6 +1448,10 @@ felvesz
   felvenni
   Felvettek az egyetemre.
 
+  @Habillement
+s'habiller avec qqchose
+felvesz vmit
+
 peindre
   coloré, teint
 festeni
@@ -1692,6 +1709,9 @@ galuska
 exploitation agricole
 mezőgazdaság  
 
+nu, dénudé
+meztelen
+
 agriculteur
 gazdálkodó
 
@@ -1930,6 +1950,10 @@ hely
 à la place de, au lieu de (postposition)
 helyett
 
+  @Transport
+réservation (pour une place)
+helyjegy
+
 situation
   maître de la situation
 helyzet
@@ -1973,6 +1997,10 @@ hisz vkinek
 
 croire quelque chose
 (el)hisz vmit
+
+  @Coordination
+puisque
+hiszen
 
 bureau (lieu clos pour travailler)
 hivatal
@@ -2020,6 +2048,9 @@ holnap
 front (partie du corps)
 homlok
  -ot, -a, -ok
+
+pêcher (du poisson)
+horgász
 
   @Mesure
 long
@@ -3028,6 +3059,10 @@ se coucher
 lefekszik
   -fekűdt, -fekűdjon, -fekűdne
 
+  @Temporalite
+la prochaine fois
+legközelebb
+
 au moins
 legalább
 
@@ -3792,6 +3827,10 @@ regarder, considérer
 néz vmire
   -ett, -zen, -ne
 
+  @Expression
+"Je n'ai rien à faire."
+Nincs semmi dolgom.
+
   @Alimentation
 pâte à base de farine et d'œuf
 nokedli
@@ -4264,6 +4303,17 @@ realista
 recette (de cuisine), ordonnance
 recept
 
+il y a longtemps
+régen
+
+ancien (objet inanimé ou abstrait)
+  -
+  Mes vieux amis
+régi
+  -t, -ek, régebbi
+  Régi barátaim
+
+
   @Moment
 matin
 reggel
@@ -4349,13 +4399,6 @@ rengeteg
 sacré, fichu, drôle de…
 rettentő
 
-ancien (objet inanimé ou abstrait)
-  -
-  Mes vieux amis
-régi
-  -t, -ek, régebbi
-  Régi barátaim
-
   @Mesure
 partie
   dans une grande partie du monde
@@ -4368,6 +4411,10 @@ részeg
   @Alimentation
 tourte
 rétes
+
+  @Transport
+billet aller-retour
+retúr jegy
 
 réaliser un reportage
 riportot készíteni
@@ -4689,6 +4736,10 @@ szelet
   @Anatomie
 œil
 szem
+
+  @Transport
+train omnibus
+személly vonat
 
   @Anatomie
 cil
@@ -5056,6 +5107,9 @@ nature
 természet
   természetesen
 
+planifier, prévoir
+tervez vmit
+
   @Expression
 "Je vous en prie, …"
   Veuillez entrer.
@@ -5088,10 +5142,6 @@ tetszik vkinek
   @Animal
 chameau
 teve
-
-  @Temporalite
-"il y a un an"/"depuis un an"
-egy éve
 
   @Moment @Meteorologie
 hiver
@@ -5299,6 +5349,10 @@ udvarias
 impoli
 udvariatlan
 
+  @Coordination
+de toutes façons
+úgyis
+
   @Politesse
 "N'est-ce pas ?" (2)
 Ugye?
@@ -5503,6 +5557,11 @@ vasút
 
 couper
 vág
+
+  @Transport
+quai
+vágány
+
 
   @Perception
 désirer
@@ -5737,6 +5796,16 @@ zaj
 
 bruyant
 zajos
+
+  @Socialisation
+déranger qqun
+  -
+  Ça ne vous dérange pas si j'ouvre la fenêtre ?
+  Ça ne te dérange pas si je fume ?
+zavar vkit
+  zavarni
+  Nem zavarja, ha ablakot nyitom?
+  Nem zavar, ha dohánysom?
 
 orchestre
 zenekar
