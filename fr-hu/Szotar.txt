@@ -8,6 +8,11 @@ addig … amíg
 cerveau
 agy
 
+  @Ameublement
+lit
+ágy
+  -at, -a, -ak
+
   @Socialisation
 cadeau
 ajándék
@@ -67,8 +72,21 @@ alcool
 alkohol
 
   @Position
+être debout
+áll
+  állni
+
+  @Animal
+animal, créature
+állat
+
+poste, emploi
+állás
+
+  @Position
 place debout
 állóhely
+
 
   @Alimentation
 pomme (fruit)
@@ -143,23 +161,6 @@ aztán
 après
 azután
 
-  @Ameublement
-lit
-ágy
-  -at, -a, -ak
-
-  @Position
-être debout
-áll
-  állni
-
-  @Animal
-animal, créature
-állat
-
-poste, emploi
-állás
-  
 rêveur
 álmodozó
 
@@ -322,6 +323,9 @@ entrer (sans déplacement qui suit)
   Il entre dans le garage.
 beáll
   Beáll a garázsba.
+
+allumer qqchose (un appareil électrique uniquement)
+bekapcsol vmit
 
 fermer
 becsuk
@@ -2521,6 +2525,9 @@ kerül vmit
 
 amer
 keserű
+
+appareil
+készülék
 
   @Mesure
 peu
