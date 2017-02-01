@@ -324,7 +324,7 @@ entrer (sans déplacement qui suit)
 beáll
   Beáll a garázsba.
 
-allumer qqchose (un appareil électrique uniquement)
+allumer qqchose (un appareil électrique uniquement, éclairage exclu)
 bekapcsol vmit
 
 fermer
@@ -534,6 +534,9 @@ cica
 chaussure
 cipő
 
+lacet de chaussure
+cipőfűző
+
 adresse, titre
 cím
   -et, -e, -ek
@@ -542,6 +545,10 @@ cím
 [introduction d'une interrogation en exprimant la surprise]
 Csak nem … ?
   Csak nem van beteg ?
+
+  @Transport
+aller simple
+csak oda
 
   @Economie
 chèque
@@ -1000,9 +1007,15 @@ előz
 devenir trise, avoir le cœur qui chavire
 elszomorodik
 
+ranger qqchose
+eltesz vmit
+
 se séparer de qqun
 elvál vkitől
   elválni
+
+prendre qqchose (attraper un objet)
+elvesz vmit
 
   @Socialisation
 perdre (un objet, un enjeu…)
@@ -1084,6 +1097,12 @@ Erről jut eszembe…
   @Metabolisme
 faim
 éhség
+
+parapluie (1)
+ernyő
+
+parapluie (2)
+esernyő
 
 événement, occasion
   dans tous les cas
@@ -1832,11 +1851,15 @@ hagy
 cheveux
 haj
 
+
   @Moment
 aube
   à l’aube
 hajnal
   hajnalban
+
+bateau
+hajó
 
   @Travail
 avancer sur qqchose
@@ -1979,6 +2002,10 @@ hétköznapi
   @Moment
 fin de semaine
 hétvége  
+
+  @Transport
+RER (Réseau Express Régional)
+HÉV
 
 en vain
 hiába
@@ -2526,6 +2553,9 @@ kerül vmit
 amer
 keserű
 
+gant (paire de gants)
+kesztyű
+
 appareil
 készülék
 
@@ -2717,6 +2747,9 @@ kinyit
   @Redactionnel
 lire complètement (ex : un livre)
 kiolvas
+
+roi
+király
 
 fils du roi
 királyfi
@@ -3403,6 +3436,9 @@ remercier pour qqchose (hors dialogue)
 megköszön vmit
   Kati megköszöni az ebédet.
 
+tenir en laisse, nouer qqchose (un lacet de chaussure)
+megköt vmit
+
   @Perception
 apercevoir
 meglát
@@ -3721,6 +3757,9 @@ naív
 jour, soleil
 nap
 
+parasol
+napernyő
+
   @Moment
 lever du soleil
 napfelkelte
@@ -3930,6 +3969,9 @@ odaír
   @Deplacement
 aller vers qqchose/qqun
 odamegy vmihez/vkihez
+
+aller-retour (n)
+oda-vissza
 
   @Politesse
 désirer (dans la formule de politesse uniquement)
@@ -4782,6 +4824,10 @@ aimer
 szeret
   -ett, szeressen, -ne
 
+préférer qqchose
+jobban szeretni vmit
+
+
   @Postposition
 d'après, selon (postposition)
   d'après ceci
@@ -5114,7 +5160,7 @@ nature
 természet
   természetesen
 
-planifier, prévoir
+planifier, prévoir qqchose
 tervez vmit
 
   @Expression
@@ -5616,6 +5662,10 @@ városnézés
 
 salle d'attente
 váróterem
+
+  @Ameublement
+vase (pièce de mobilier)
+váza
 
   @Alimentation
 mixte (pour la nourriture)  
