@@ -39,7 +39,7 @@
     configure : {
       en : 'Configure',
       fr : 'Configurer',
-      hu : 'Kiallítás'
+      hu : 'Válogatás'
     },
     list : {
       en : 'List',
@@ -64,18 +64,18 @@
     next : {
       en : 'Next',
       fr : 'Suivant',
-      hu : 'Felfel'
+      hu : 'Következő'
     },
     flip : {
       en : 'Flip',
       fr : 'Inverser',
-      hu : 'Megfordít'
+      hu : 'Hatrafordít'
 
     },
     noSelection : {
       en : 'Nothing to show',
       fr : 'Aucune sélection',
-      hu : 'Nincs kiválasztás'
+      hu : 'Nincs válotagatás'
     },
     total : {
       en : 'Total',
