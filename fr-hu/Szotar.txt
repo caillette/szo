@@ -92,15 +92,31 @@ place debout
 pomme (fruit)
 alma
 
+rêveur
+álmodozó
+
+ensommeillé
+álmos
+
   @Postposition
 sous (non-relatif)
 alól
+
+rêve
+álom
 
   @Metabolisme
 dormir
   -
 alszik
   aludt, aludjon, aludna ; aludni
+
+
+en général
+általában
+
+général (adj)
+általános
 
   @Grammaire
 antonyme (2)
@@ -118,9 +134,22 @@ anyós
 maman
 anyu
 
+
+  @Medecine
+soigner
+ápol
+
+  @Medecine @Metier
+infirmier
+ápoló
+
   @Famille
 beau-père
 após
+
+  @Economie
+petite monnaie
+aprópénz
 
   @Anatomie
 visage
@@ -133,18 +162,84 @@ arra
 dame (femme mariée)
 asszony
 
+  @Substance
+minéral (adj et nom)
+ásvány
+
   @Ameublement
 table
 asztal
   -t, -a, -ok
 
+  @Deplacement
+à travers
+át
+
+
+  @Economie
+transmettre, céder
+átad
+  átadni
+
+  @Deplacement @Position
+traverser (avec arrêt une fois de l'autre côté)
+  Il traverse pour aller de l'autre côté.
+átáll
+  Átáll a másik oldara.
+
+  @Deplacement
+envoyer à travers
+átküld
+
+  @Redactionnel
+corriger (à l'écrit)
+átír
+
+moyen, médiocre
+átlagos
+
+  @Perception
+voir quelque chose dans son intégralité (fig. comprendre)
+  Je comprends le problème.
+átlát vmit
+  Átlátom a problémát.
+
+  @Perception
+voir qqchose à travers quelque chose
+  Je vois à travers la fenêtre.
+átlát vmit vmin
+  Átlátom az ablakon.
+
+  @Perception
+parcourir qqchose (le lire rapidement)
+átnéz vmit
+
+  @Deplacement
+mettre un pied au-dessus de qqchose
+átlép vmin
+  átlépni
+
+  @Deplacement
+traverser qqchose
+átmegy vmin
+
   @Sport
 athlétisme
 atlétika
 
+  @Transport
+effectuer un changement (de transport)
+átszáll
+
   @Temporalite
 à partir de là, dès ce moment
 attól fogva
+
+  @Deplacement
+changer de place (assise)
+  Il a changé de place pour l'autre chaise.
+átül
+  Átülöt a másik székre.
 
   @Temporalite
 tout de suite
@@ -161,105 +256,11 @@ aztán
 après
 azután
 
-rêveur
-álmodozó
 
 
-ensommeillé
-álmos
 
-rêve
-álom
 
-en général
-általában
 
-général (adj)
-általános
-
-  @Medecine
-soigner
-ápol
-
-  @Medecine @Metier
-infirmier
-ápoló
-
-  @Economie
-petite monnaie
-aprópénz
-
-  @Substance
-minéral (adj et nom)
-ásvány
-
-  @Deplacement
-à travers
-át
-
-  @Deplacement @Position
-traverser (avec arrêt une fois de l'autre côté)
-  Il traverse (pour aller de l'autre côté).
-átáll
-  Átáll a másik oldara.
-
-  @Economie
-transmettre, céder
-átad
-  átadni
-
-  @Redactionnel
-corriger (à l'écrit)
-átír
-
-  @Deplacement
-envoyer à travers
-átküld
-
-  
-moyen, médiocre
-átlagos
-
-  @Perception
-voir à travers quelque chose
-  Je vois à travers la fenêtre.
-átlát vmin
-  Átlátok az ablakon.
-
-  @Perception
-voir quelque chose dans son intégralité (fig. comprendre)
-  Je comprends le problème.
-átlát vmit
-  Átlátom a problémát.
-
-  @Deplacement
-mettre un pied au-dessus de qqchose
-átlép vmin
-  átlépni 
-
-  @Deplacement
-traverser
-átmegy
-
-  @Perception
-regarder au travers, parcourir (lire rapidement)
-  Nous regardons à travers la fenêtre.
-átnéz
-  Átnézünk az ablakon.    
-
-  @Redactionnel
-effetuer une relecture
-átolvas
-
-  @Transport
-changer (de transport)
-átszáll
-
-  @Deplacement
-changer de place (assise)
-  Il a changé de place pour l'autre chaise.
-átül
-  Átülöt a másik székre.
 
   @Alimentation
 haricot
