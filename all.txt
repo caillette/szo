@@ -526,6 +526,11 @@ fr-hu/Cours-K613.txt
 fr-hu/Cours-K614.txt
 fr-hu/Cours-K615.txt
 fr-hu/Cours-K616.txt
+fr-hu/Cours-K617.txt
+fr-hu/Cours-K618.txt
+fr-hu/Cours-K619.txt
+fr-hu/Cours-K620.txt
+fr-hu/Cours-K621.txt
 
 
 
