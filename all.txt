@@ -531,6 +531,8 @@ fr-hu/Cours-K618.txt
 fr-hu/Cours-K619.txt
 fr-hu/Cours-K620.txt
 fr-hu/Cours-K621.txt
+fr-hu/Cours-K622.txt
+fr-hu/Cours-K623.txt
 
 
 
