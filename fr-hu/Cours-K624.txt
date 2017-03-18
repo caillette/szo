@@ -1,12 +1,13 @@
 @_K624
 
+  @Expression
 C'est quoi ?
 Mi fán terem?
 
 trouver qqchose
   Trouve de l'or celui qui se lève tôt.
-  Ki korán kel aranyat lel.
 lel vmit
+  Ki korán kel aranyat lel.
 
 faire un trou dans qqchose (de solide)
 váj vmit
@@ -27,7 +28,7 @@ gondolkozik vmin
 tűnődik vmin
 
 lutter avec qqchose, avoir du mal à faire qqchose
-küszködni vmivel
+küszködik vmivel
 
 poser une question à qqun à propos de qqchose
 kérdést intéz vkihez vmiről

@@ -534,6 +534,7 @@ fr-hu/Cours-K621.txt
 fr-hu/Cours-K622.txt
 fr-hu/Cours-K623.txt
 fr-hu/Cours-K624.txt
+fr-hu/Cours-K625.txt
 
 
 
