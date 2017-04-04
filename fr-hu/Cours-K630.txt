@@ -1,0 +1,46 @@
+@_K630
+
+déléguer son pouvoir, sa responsabilité à qqun pour faire qqchose
+meghatalmaz vkit vmire
+
+autoriser qqchose à qqun (vocabulaire officiel)
+engedélyez vmit vkinek
+
+autoriser qqchose à qqun (vocabulaire courant)
+megenged vmit vkinek
+
+ @Fiscalite
+déclaration d’impôt
+adóbevallás
+
+ @Fiscalite
+avis d’impôt
+adóigazolás
+
+tenir une promesse (1)
+betartani egy igéretet
+
+tenir une promesse (2)
+megtartani egy igéretet
+
+rancunier, vengeur
+bosszúálló
+
+  @Argent @Fiscalite
+argent liquide
+készpénz
+
+  @Argent @Fiscalite
+payer en liquide
+készpénzben kifizetni
+
+approximatif
+hozzávetőleges
+
+  @Coordination
+et (coordination)
+valamint
+
+  @Coordination
+et (coordination)
+továbbá
