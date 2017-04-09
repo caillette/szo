@@ -1,0 +1,26 @@
+@_K633
+
+vmi után
+vmi követően
+
+  @Juridique
+déclaration
+nyilatkozat
+
+  @Juridique
+conserver qqchose (un document, tournure juridique)
+vmit letétbe helyez
+
+  @Juridique
+valeur courante
+forgalmi érték
+
+  @Juridique
+paiement (tournure juridique)
+ellen szolgaltatás
+
+  @Juridique
+comprendre, intégrer qqchose (tournure juridique)
+  Le prix de vente comprend les meubles.
+magában foglal vmit
+  A vételár magában foglalja az ingóságokat.
