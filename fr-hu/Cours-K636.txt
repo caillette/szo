@@ -1,0 +1,35 @@
+@_K636
+
+funiculaire
+fogaskerekű
+
+dommages et intérêts
+kártérítés
+
+payer des dommages et intérêts
+megtérít egy kárt
+
+manuellement
+manuálisan
+
+opération manuelle
+kézi beállítás
+
+à l’aide d’une machine
+automatikusán
+
+décade
+évtized
+
+qqchose réussit.
+  La soupe de pommes de terres aux saucisses était réussie.
+valami sikerül vkinek
+  Jól sikerült a kolbászos krumpileves.
+
+réussir à faire qqchose
+  L'installation de Windows a réussi.
+vkinek sikerül vmit csinálni
+  Sikerült belállítani a Windows-t.
+
+ouvert 24 heures sur 24
+éjjelnappali

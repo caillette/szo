@@ -543,8 +543,14 @@ fr-hu/Cours-K630.txt
 fr-hu/Cours-K631.txt
 fr-hu/Cours-K632.txt
 fr-hu/Cours-K633.txt
+fr-hu/Cours-K634.txt
+fr-hu/Cours-K635.txt
+fr-hu/Cours-K636.txt
+fr-hu/Cours-K637.txt
+fr-hu/Cours-K638.txt
 
-
+hu-hu/szinonimus.txt
+hu-hu/definicio.txt
 
 
 
