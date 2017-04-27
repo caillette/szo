@@ -1,0 +1,49 @@
+@Phrase
+
+  @VieCourante
+L'addition s'il vous plaît.
+A számlát legyen szíves.
+
+  @VieCourante
+Combien je vous dois ?
+Mennyivel tartozom?
+
+  @VieCourante
+Vous pouvez répéter s'il vous plaît?
+Még tudná ismételni, legyen szíves?
+
+
+Je me sens comme si j’avais 40 ans au lieu de 46.
+46 helyett 40 évesnek érzem magam.
+
+On peut trouver du plus mauvais vin pour le même prix.
+Rosszabb bor található, ami ugyanennyibe kerül.
+
+Il n’y a qu’à moi que je ne pense pas.
+  (Sous-entendu : je pense à tous les autres.)
+Csak magamra nem gondolok.
+
+Je ne pense pas qu’à moi.
+Nem csak magamra nem gondolok.
+
+Si la Hongrie se mettait à plus ressembler à la France, ma vie serait plus facile mais ce n’est pas ce que je désire.
+Ha Magyarország jobban hasonlítana Franciára, az életem könnyebb lenne, de ezt nem kívánom.
+
+Ce n’était pas aussi difficile que ce que je croyais.
+  -
+  Tournure officielle
+Nem volt olyan nehéz, ahogy hittem.
+  Nem volt olyan nehéz mint hittem.
+  Nem volt olyan nehéz amilyennek hittem.
+
+Le poids de la farine est le quart de celui des pommes de terres.
+A liszt súlya a krumpli súlyának a negyede.
+
+  @_K616
+L’important c’est ce qu’il fait, et non pas qui il est.
+Az a lényeg, amit csinál, nem az, aki.
+
+  @_K615
+Un char à voile peut aller à plus de 60 km/h.
+Egy vitorlás kocsi 60 kilometer per órás sebességgel megy.
+
