@@ -192,3 +192,14 @@ A Pack represents a file containing a list of Cards, and reading/parsing errors.
 The whole set of Cards and Packs is a Vocabulary.
 
 
+== Navigation/history
+
+Rewrite the URL with current Card and its disclosure state.
+
+Then we gain sound "backward" for free, using a reasonable shortcut (Command-left).
+
+
+== Keyboard shortcuts
+
+At least they should be parameterizable.
+
