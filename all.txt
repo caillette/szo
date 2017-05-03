@@ -548,6 +548,7 @@ fr-hu/Cours-K635.txt
 fr-hu/Cours-K636.txt
 fr-hu/Cours-K637.txt
 fr-hu/Cours-K638.txt
+fr-hu/Cours-K639.txt
 
 hu-hu/szinonimus.txt
 hu-hu/definicio.txt

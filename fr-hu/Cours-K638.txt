@@ -7,6 +7,7 @@ calmer quelqu’un
 megnyugtat vkit
 
 se calmer
+  -
   Après le coup de fil de vendredi à ma banque, j’ai eu besoin d’écrire de la documentation technique pour me calmer.
 megnyugszik
   megnyugodni
