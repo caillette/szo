@@ -47,3 +47,6 @@ Az a lényeg, amit csinál, nem az, aki.
 Un char à voile peut aller à plus de 60 km/h.
 Egy vitorlás kocsi 60 kilometer per órás sebességgel megy.
 
+  @_K643
+Il est de plus en plus nerveux car le projet n'avance pas comme il voudrait.
+Egyre idegesebb, meg nem úgy halad a projekt, mint rémelte.

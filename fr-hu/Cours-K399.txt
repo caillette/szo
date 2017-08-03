@@ -53,7 +53,7 @@ némi
 quelque chose se passe en même temps que qqchose
   une conversation ayant lieu au cours du repas
 vmi vmivel egybekötött
-  vacsorával egybekötött beszlgetés
+  vacsorával egybekötött beszélgetés
 
 cheville (partie du corps)
 boka
@@ -64,7 +64,7 @@ tájék
 j'ai trouvé (tournure impersonnelle)
   Au bout de deux jours je lui avais trouvé un nom.
 meg van
-  Két nap múlva már megvolt a neve.
+  Két nap múlva már meg volt a neve.
 
 prendre peur, s'effrayer
 megijed

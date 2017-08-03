@@ -1,0 +1,23 @@
+@_K641
+
+  @Informatique
+service
+szolgaltatás
+
+équivalent
+egyenértekű
+
+qqchose d'équivalent à qqchose
+vmivel egyenértekű vmi
+
+  @Informatique
+somme de contrôle
+ellenőrző összegzés
+
+  @Informatique
+réseau pair-à-pair ("peer-to-peer")
+egyenrangú társak közti hálózat
+
+  @Informatique
+implanter qqchose
+megvalósít vmit

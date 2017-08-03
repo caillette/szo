@@ -6,7 +6,7 @@ eltelik
 préférer faire qqchose plutôt que…
 szívesebben csinál vmit, mint…
 
-mort (n)
+mort (fait de ne plus être en vie)
 halál
 
 causer qqchose
@@ -25,7 +25,7 @@ vitrine (pour un magasin)
 kirakot
 
 valoir son prix
-megéri az arát
+megéri az árat
 
 rendu monnaie
 visszajáró
