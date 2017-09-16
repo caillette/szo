@@ -551,6 +551,8 @@ fr-hu/Cours-K638.txt
 fr-hu/Cours-K639.txt
 fr-hu/Cours-K640.txt
 fr-hu/Cours-K641.txt
+fr-hu/Cours-K642.txt
+fr-hu/Cours-K643.txt
 
 hu-hu/szinonimus.txt
 hu-hu/definicio.txt
