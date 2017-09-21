@@ -553,9 +553,12 @@ fr-hu/Cours-K640.txt
 fr-hu/Cours-K641.txt
 fr-hu/Cours-K642.txt
 fr-hu/Cours-K643.txt
+fr-hu/Cours-K644.txt
+fr-hu/Cours-K645.txt
 
 hu-hu/szinonimus.txt
 hu-hu/definicio.txt
+hu-hu/kifejezes.txt
 
 
 
