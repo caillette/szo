@@ -1,0 +1,47 @@
+@_K646
+
+transition
+átmenet
+
+arriver à bout de qqchose
+  Je suis arrivé à bout de ce projet.
+végigcsinál vmit
+  Végigcsináltam ezt a projektet.
+
+charge (notion abstraite)
+  Il faut faire plus de tests pour vérifier si le serveur tient la charge.
+terhelés
+  Szükségünk van több tesztre, hogy ellenőrizzük, hogy a szerver kibírja-e a terhelést.
+
+se fatiguer de qqchose
+belefárad vmibe
+
+il arrive un malheur à qqun (tournure maladroite)
+baja esik vkinek
+
+il arrive un malheur à qqun
+baja lenne vkinek
+
+prendre part à qqchose
+  Il prend part au déjeûner.
+részt venni vmin
+  Részt vesz az ebéden.
+
+prendre part à qqchose
+  Je prends part à un projet.
+részt venni vmiben
+  Részt veszek egy játékban.
+
+jeu de hasard (inclut les jeux d’argent)
+szerencsejáték
+
+appartenir à qqun
+  En Afrique de l’Ouest les jeux d’argents appartiennent à la Mafia Corse.
+tartozik vkihez
+  Nyugat-Afrikában a szerencsejáték a Korzikái Mafiához tartozik.
+
+Corse
+Korzika
+
+parier sur qqchose
+fogad vmire

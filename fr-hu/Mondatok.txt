@@ -49,3 +49,7 @@ Egy vitorlás kocsi 60 kilometer per órás sebességgel megy.
 
 Il est de plus en plus nerveux car le projet n'avance pas comme il voudrait.
 Egyre idegesebb, meg nem úgy halad a projekt, mint rémelte.
+
+  @_K646
+Je vais rencontrer d'autres gens qui ont des projets passionnants.
+Találkozni fogok más emberekkel, akiknek izgalmas projekteik vannak.
