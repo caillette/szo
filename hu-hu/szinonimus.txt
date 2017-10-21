@@ -31,3 +31,16 @@ agyag
   @K_648
 udvarias
 előzékeny
+
+  @K_650
+eszköz, de bonyolultabb (egy gép, peldául)
+műszer
+
+  @K_650
+tárgy, dolog
+holmi
+
+  @K_650
+keskeny
+vékony (keskeny: inkább egy dologról mondható)
+
