@@ -1,0 +1,54 @@
+@_K656
+
+bordel, désordre (anciennement : maison close)
+kupleráj
+
+faire fonctionner qqchose (un appareil)
+működtet vmit
+
+exécuter qqchose (un programme informatique)
+futtat vmit
+
+être vivant
+élőlény
+
+dangereux pour qqchose/qqun
+  dangereux pour les êtres vivants
+veszélyes vminek/vkinek számára
+  veszélyes az előlények számára
+
+faire du mal à qqun
+kárt okozni vkinek
+
+ralentir qqchose
+lelássít vmit
+
+rendre qqchose plus lent (tournure un peu lourde)
+lassabbít vmit
+
+se venger de qqun
+bosszút áll vkin
+
+enrôler qqun
+toboroz vkit
+
+inculper {} pour qqchose (tournure courante), dire qqchose de {} en tordant la vérité
+  J’ai volé quelque chose, et après je dis que c’est toi.
+rá{}fog vkit
+  Én loptam valamit, ezután rád fogom.
+
+grand, costaud
+jókora
+
+très jeune (pour un humain), de mauvaise race (pour un chien)
+vakarcs
+
+insignifiant
+jelentégtelen
+
+  @Expression
+Et ta sœur!
+A családja!
+
+à l’âge de l’adolescence
+suhanc korában

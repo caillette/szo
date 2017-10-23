@@ -23,3 +23,26 @@ NAV
 szétfagy
 annyira megyfagy, hogy szétesik
 
+  @K_653
+elhanyagol vmit
+nem törődik vmivel
+
+  @K_654
+hanyatlás
+fejlődés ellentéte
+
+  @K_654
+nem túl meleg, nem túl hideg
+enyhe
+
+  @K_656
+jókora
+nagy darab
+
+  @K_656
+csakugyan
+tényleg, valóban
+
+  @K_656
+tejfölösképű
+úgy látszik, mint egy gyerek

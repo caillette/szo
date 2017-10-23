@@ -44,3 +44,18 @@ holmi
 keskeny
 vékony (keskeny: inkább egy dologról mondható)
 
+  @K_653
+magatartás
+viselkedés
+
+  @K_653
+tusa
+harc
+
+  @K_653
+a haláltusáját vívja
+haldoklik
+
+  @K_656
+csontos
+erős

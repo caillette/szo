@@ -1,4 +1,4 @@
-@HuHu
+@HuHu @Expression
 
 Sok szerencsét!
 Kéz- és lábtörést !
@@ -6,3 +6,11 @@ Kéz- és lábtörést !
   @K_650
 A fenébe! (öreges)
 A mindenségit!
+
+  @K_651
+majd csak…
+rémelem, hogy valami megtörténik, de nem vagyok benne biztos
+
+  @K_656
+fülig ér a szaja
+nagyon mosolyog

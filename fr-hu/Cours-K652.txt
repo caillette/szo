@@ -1,0 +1,29 @@
+@_K652
+
+bilan (pour une entreprise)
+számvetés
+
+bilan trimestriel
+negyedéves számvetés
+
+bilan annuel
+éves számvetés
+
+employé (d’une entreprise)
+alkalmazott
+
+se moquer de qqun
+röhög vkin
+
+se moquer de qqun
+kiröhög vkit
+
+verbe auxiliaire
+  Le verbe être est un auxiliaire.
+segédigék
+  A "lehet" egy segédige.
+
+prendre qqchose en considération
+  Le système GPS ne pourrait pas fonctionner si on ne prenait pas en compte la différence d’écoulement du temps entre les satellites et la surface de la Terre.
+figyelembe vesz vmit
+  A GPS rendszer nem működhetne, ha nem vennék figyelembe az idő sebesség különbségét a műholdak és a Föld felszíne között.
