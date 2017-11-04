@@ -5,7 +5,7 @@ házigazda
 
 avant-dernier
   L’avant-dernier n’avait pas beaucoup plus de points que moi.
-  L’avant-dernier n’avait pas (gagné) beaucoup plus de points que moi.
+  L’avant-dernier n’avait pas (gagné) beaucoup plus (de points) que moi.
 utolsó előtti
   Az utolsó előttinek nem volt sokkal több pontja, mint nekem.
   Az utolsó előtti nem nyert sokkal többet, mint én.
@@ -19,12 +19,12 @@ recevoir qqchose
   Notre logiciel traite 4000 messages par seconde.
   Je reçois les invités.
 fogad vmit
-  A szoftverünk 2400 üzenetet fogad másodpercenként.
+  A szoftverünk 4000 üzenetet fogad másodpercenként.
   Fogadom a vendégeket.
 
 en face de qqchose
   la librairie Alexandra en face de la gare Nyugati.
-szemben vmivel
+vmivel szemben
   Alexandra Nyugati palyaudvarral szemben
 
 à ce moment-ci
