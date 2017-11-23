@@ -77,3 +77,20 @@ csúnya
   @K_658
 felöltő
 öltöny
+
+
+  @K_660
+ad magára
+nagyon fontos neki, hogy hogy néz ki
+
+  @K_660
+fürgeség
+gyorsaság
+
+  @K_660
+lepény
+kenyér, palacsinta
+
+  @K_660
+hurka
+kolbsasz
