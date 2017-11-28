@@ -3,6 +3,7 @@
 botte
 bakancs
 
+  @Anatomie
 gencive
 íny
 
@@ -70,4 +71,4 @@ semblable (au sein de la gente humaine)
 embertárs
 
 se moquer un peu méchamment de qqun
-kicsufol vkit
+kicsúfol vkit

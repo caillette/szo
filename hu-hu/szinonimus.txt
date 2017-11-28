@@ -94,3 +94,7 @@ kenyér, palacsinta
   @K_660
 hurka
 kolbsasz
+
+  @K_662
+nem vonatkozik vmire
+nem igaz vmire

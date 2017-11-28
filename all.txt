@@ -571,6 +571,7 @@ fr-hu/Cours-K658.txt
 fr-hu/Cours-K659.txt
 fr-hu/Cours-K660.txt
 fr-hu/Cours-K661.txt
+fr-hu/Cours-K662.txt
 
 hu-hu/szinonimus.txt
 hu-hu/definicio.txt
