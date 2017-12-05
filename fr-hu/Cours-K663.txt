@@ -1,0 +1,42 @@
+@_K663
+
+particulier (personne physique, individu)
+magánszemély
+
+se plaindre de quelque chose (1)
+panaszkodik vmire
+
+se plaindre de quelque chose (2)
+  Il se plaint que le projet n'ait jamais de fin.
+panaszkodik vmi miatt
+  Amiatt panaszkodik, hogy a projektnek nincs vége.
+
+casser qqchose (un code, un système informatique) pour pénétrer quelque part
+  Il a cassé le code.
+  Ils racontent comment ils ont pénétré dans un système soi-disant inviolable.
+feltör vmit
+  Feltörte a kódot.
+  Elmesélik, hogy törtek fel egy állítoloag feltörhetetlen rendszert.
+
+  @Expression
+pendant plusieurs jours
+több napon keresztül
+
+  @Expression
+plus de détails à venir (formule de report dans un texte)
+több szó lesz róla késöbb
+
+don (forme de cadeau)
+adomány
+
+don (forme de talent)
+tehetség
+
+écouter qqchose clandestinement
+lehallgat vmit
+
+en-dehors de qqchose
+  en-dehors du laboratoire
+vmin kívül
+  a laboratoriumon kívül
+

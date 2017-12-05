@@ -98,3 +98,11 @@ kolbsasz
   @K_662
 nem vonatkozik vmire
 nem igaz vmire
+
+  @K_665
+úrhölgy
+előkelő hölgy
+
+  @K_664
+kikandikál
+kinéz
