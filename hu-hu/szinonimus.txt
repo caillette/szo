@@ -106,3 +106,15 @@ előkelő hölgy
   @K_664
 kikandikál
 kinéz
+
+  @K_666
+ezennel
+most
+
+  @K_666
+szerteszét
+mindenhol
+
+  @K_667
+kiakad
+kiborul
