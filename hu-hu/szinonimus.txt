@@ -118,3 +118,7 @@ mindenhol
   @K_667
 kiakad
 kiborul
+
+  @K_669
+vmire szorul
+vmire szüksége van
