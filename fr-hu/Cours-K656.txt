@@ -9,7 +9,7 @@ működtet vmit
 exécuter qqchose (un programme informatique)
 futtat vmit
 
-être vivant
+être vivant (n)
 élőlény
 
 dangereux pour qqchose/qqun
@@ -34,7 +34,7 @@ toboroz vkit
 
 inculper {} pour qqchose (tournure courante), dire qqchose de {} en tordant la vérité
   J’ai volé quelque chose, et après je dis que c’est toi.
-rá{}fog vkit
+rá{}fog vmit
   Én loptam valamit, ezután rád fogom.
 
 grand, costaud

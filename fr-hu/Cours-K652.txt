@@ -18,9 +18,10 @@ röhög vkin
 se moquer de qqun
 kiröhög vkit
 
+  @Grammaire
 verbe auxiliaire
   Le verbe être est un auxiliaire.
-segédigék
+segédige
   A "lehet" egy segédige.
 
 prendre qqchose en considération
