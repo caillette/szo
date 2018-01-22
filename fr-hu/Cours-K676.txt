@@ -1,0 +1,37 @@
+@_K676
+
+couche (revêtement de faible épaisseur)
+  La tourte est faite de plusieurs couches.
+réteg
+  A rétesbe is több réteg van.
+
+râpe
+reszelő
+
+jeu de cartes
+kártyajáték
+
+arriver à expiration
+  Le lait est périmé.
+lejár
+  Lejárt a tej.
+
+procédure
+eljárás
+
+description
+leírás
+
+jeton, pièce
+zseton
+
+champ, case (emplacement)
+mező
+
+explication
+magyarázat
+
+respecter qqchose (une règle)
+  Le logiciel te fait respecter les règles.
+betart vmit
+  A szoftver betartatja a szabályokat veled.

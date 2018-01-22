@@ -1,4 +1,4 @@
-@HuHu
+@HuHu @Synonymes
 
 erény
 jó tulajdonság
@@ -130,3 +130,28 @@ elít, arisztokráta
   @K_673
 nagy szabású
 fontos, nagy
+
+
+  @K_677
+mutatkozik
+megjelenik, mutatja magát
+
+  @K_677
+pottyan
+esik
+
+  @K_677
+kiált
+kiabál
+
+  @K_677
+liheg
+hangosan lélegzik, mint a kutya
+
+  @K_677
+összecsődül
+összegyűl
+
+  @K_678
+hajlék
+otthon
