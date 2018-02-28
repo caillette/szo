@@ -1,0 +1,30 @@
+@_K681
+
+auditionner qqun, prendre la déposition de qqun
+kihallgat vkit
+
+déposition
+jegyzőkönyv
+
+assurance-vie
+életbiztosítás
+
+mandataire
+meghatalmazott
+
+procuration
+meghatalmazás
+
+divulguer une donnée
+  À cause de la procuration il n'a pas le droit de divulguer les comptes de ta mère.
+kiadni egy adatot
+  A meghatalmazás miatt neki nem szabad kiadnia az édesanyád bankszámlájainak adatait.
+
+héritier
+örökös
+
+héritage
+örökség
+
+légataire
+örökbehagyó

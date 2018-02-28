@@ -589,6 +589,13 @@ fr-hu/Cours-K676.txt
 fr-hu/Cours-K677.txt
 fr-hu/Cours-K678.txt
 fr-hu/Cours-K679.txt
+fr-hu/Cours-K680.txt
+fr-hu/Cours-K681.txt
+fr-hu/Cours-K682.txt
+fr-hu/Cours-K683.txt
+fr-hu/Cours-K684.txt
+fr-hu/Cours-K685.txt
+fr-hu/Cours-K686.txt
 
 hu-hu/szinonimus.txt
 hu-hu/definicio.txt

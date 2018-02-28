@@ -1,0 +1,25 @@
+@_K686
+
+cachette (pour quelque chose)
+rejtekhely
+
+cachette (pour quelqu'un)
+búvóhely
+
+billet de banque
+bankjegy
+
+évident
+  Il est évident que ce sont des voleurs.
+nyilvanvaló
+  Nyilvanvaló, hogy rablók.
+
+visiblement
+  Ce sont visiblement des voleurs.
+szemmel láthatólag
+  Szemmel láthatólag rablók.
+
+confondre qqchose (un coupable)
+  Le policier confond le voleur.
+leleplez vmit
+  A rendőr leleplezi a rablót.
