@@ -168,3 +168,39 @@ majdnem
   @K_485
 pajtás
 haver, barát
+
+  @K_688
+szemlélő
+néző
+
+  @K_688
+hurcol vmit
+kivisz vmit
+
+  @K_688
+hajlong
+többször meghajol
+
+  @K_688
+nekimegy vminek
+összeütközik vmivel
+
+  @K_690
+kenetteljesen
+ünnepelyesen
+
+  @K_690
+ugyebár
+igazán
+
+  @K_690
+ütlegel vkit
+ver vkit
+
+  @K_690
+odasóz vkinek
+ver vkit
+
+  @K_690
+szintén
+is
