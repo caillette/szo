@@ -5,10 +5,10 @@ féliciter qqun pour qqchose
 gratulál vkinek vmihez
   Gratulálok (Neked) az új honlapodhoz.
 
-házhoz jönni
-  Ez az orvos házhoz jön.
 se déplacer à domicile
   Ce médecin se déplace à domicile.
+házhoz jönni
+  Ez az orvos házhoz jön.
 
 tutelle
 gyámság
