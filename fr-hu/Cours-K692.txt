@@ -28,9 +28,9 @@ avenant de contrat
 szerződés módosítás
 
 depuis le début
-  A ház eladása gyanús volt az elejétől fogva.
-az elejétől fogva
   La vente de la maison était suspecte depuis le début.
+az elejétől fogva
+  A ház eladása gyanús volt az elejétől fogva.
 
 mettre son nez dans qqchose
 beledugni az orrát vmibe
