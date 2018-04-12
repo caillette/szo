@@ -604,6 +604,8 @@ fr-hu/Cours-K691.txt
 fr-hu/Cours-K692.txt
 fr-hu/Cours-K693.txt
 fr-hu/Cours-K694.txt
+fr-hu/Cours-K695.txt
+fr-hu/Cours-K696.txt
 
 hu-hu/szinonimus.txt
 hu-hu/definicio.txt

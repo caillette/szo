@@ -204,3 +204,7 @@ ver vkit
   @K_690
 szintén
 is
+
+  @K_696
+felelet
+választ
