@@ -208,3 +208,7 @@ is
   @K_696
 felelet
 választ
+
+  @K_697
+viselet
+ruha
