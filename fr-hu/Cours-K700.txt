@@ -1,0 +1,113 @@
+@_K700
+
+incontinent
+inkontinens
+
+délai de prescription
+elévülési idő
+
+atteindre son délai de prescription
+  Le délai de prescription pour un crime ou un empoisonnement est de 20 ans.
+vmi elévül
+  A gyilkosság vagy a megmergezés 20 év után évül el.
+
+se rendre fou à cause de qqchose
+  Cette affaire me rend fou.
+megőrül vmitől
+  Megőrülök ettől az ügytől.
+
+élargir qqchose
+bővít vmit
+
+servir qqchose (un plat)
+kitálal vmit
+
+pelle
+lapát
+
+faire savoir officiellement qqchose à qqun
+közöl vmit vkivel
+
+sujet à l'endormissement
+aluszékony
+
+s'aggraver
+súlyosbodik
+
+juste, exactement (pour indiquer une simultanéité)
+éppen most
+
+se répandre (pour une épidémie)
+elharapódik
+
+symptôme
+tünet
+
+être faible
+gyengélkedik
+
+fuseau horaire
+időszámítás
+
+longitude
+hosszúság
+
+latitude
+szélesség
+
+correspondre à qqchose
+megfelel vminek
+
+pont, partie ouverte (pour un navire)
+feldézet
+
+pont-promenade
+sétafeldézet
+
+s'occuper d'une affaire, la régler
+intézked vmilyen ügyben
+
+susmentionné
+fenti
+
+se souvenir de qqchose (du fait d'une action volontaire)
+felidéz vmit
+
+marmonner qqchose
+mormol vmit
+
+enregistrer qqchose (écrire dans un registre)
+nyilvantart vmit
+
+essuyer qqchose
+töröl vmit
+
+effacer, supprimer qqchose de cqqchose
+kitöröl vmit vhonnan
+
+tourner une page de qqchose
+lapoz vmit
+
+feuilleter qqchose (un livre)
+lapozgat vmit
+
+apparaître
+megjelen
+
+apparition, action d'apparaître
+megjelensés
+
+éparpillé
+szórványos
+
+tomber malade
+megbetegedik
+
+fait de tomber malade
+megbetegedés
+
+symptôme
+kísérő tünet
+
+devenir flou
+elmosódik

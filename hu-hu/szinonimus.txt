@@ -212,3 +212,16 @@ választ
   @K_697
 viselet
 ruha
+
+  @K_700
+közöl vmit vkivel
+hivatalosan elmond vmit vkinek
+
+  @K_700
+súlyosbodik
+súlyosabbá válik
+
+  @K_700
+vmi elharapódik
+vmi elterjed
+
