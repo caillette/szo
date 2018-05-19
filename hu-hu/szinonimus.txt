@@ -217,11 +217,44 @@ ruha
 közöl vmit vkivel
 hivatalosan elmond vmit vkinek
 
-  @K_700
+  @_K700
 súlyosbodik
 súlyosabbá válik
 
-  @K_700
+  @_K700
 vmi elharapódik
 vmi elterjed
+  
+  @_K701
+hortyog
+horkol
+
+  @_K701
+felriad
+hirtelen felébred
+
+  @_K701
+nagyon erős
+heveny
+
+  @_K701
+üvölt
+kiált
+
+  @_K701
+sűrűn
+gyakran
+
+  @_K701
+itt, ezen a környéken
+errefelé
+
+  @_K701
+étel
+táplálék
+
+  @_K701
+midőn
+amikor
+
 

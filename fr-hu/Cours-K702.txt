@@ -1,0 +1,33 @@
+@_K702
+
+se décaler
+  Il y a un décalage dans l’emploi du temps.
+elcsúszik
+  Elcsúszik a napi rend.
+
+activité
+tevékenység
+
+courses, approvisionnement
+bevásárlás
+
+démodé
+idejétmúlt
+
+se remonter le moral
+felfidul
+
+marchand à domicile
+házaló eladó
+
+marchand ambulant (dans la rue, ne rentre pas dans les maisons)
+utcai eladó
+
+bavarder avec qqun
+cseveg vkivel
+
+agent conversationnel (chatterbot)
+csevegési ügynök
+
+poétique
+költői
