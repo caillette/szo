@@ -55,7 +55,7 @@ Des choses comme ça…
 "Meg minden ilyesmi..."
 
 lancer (faire éprouver une douleur lancinante)
-  Ça me lance au niveau de la côté.
+  Ça me lance au niveau de la côte.
 nyilall
   Itt a bordánál nyilall.
 
@@ -105,5 +105,5 @@ uzsonna
 intimer qqchose (un ordre)
 felszólít vmit
 
-élesztés
 aide à la résurrection
+élesztés

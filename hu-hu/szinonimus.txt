@@ -234,8 +234,8 @@ felriad
 hirtelen felébred
 
   @_K701
-nagyon erős
 heveny
+nagyon erős
 
   @_K701
 üvölt
@@ -246,12 +246,12 @@ sűrűn
 gyakran
 
   @_K701
-itt, ezen a környéken
 errefelé
+itt, ezen a környéken
 
   @_K701
-étel
 táplálék
+étel
 
   @_K701
 midőn
