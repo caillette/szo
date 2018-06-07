@@ -257,4 +257,44 @@ táplálék
 midőn
 amikor
 
+  @_K707
+tetőfok
+csuszpont
+
+  @_K707
+bekukkant
+benéz, beles
+
+  @_K707
+hőn
+igazán, nagyon
+
+  @_K707
+van vmi
+vmi akad
+
+  @_K707
+közöl vmit
+vmit mondani, hogy a többet tudják
+
+  @_K707
+szemle
+ellenőrzés
+
+  @_K707
+érdemrend
+kitüntetés
+
+  @_K707
+durva szavakat mond
+szikozódik
+
+  @_K707
+elkezd vmit
+hozzáfog vmihez
+
+  @_K707
+határozottan
+erélyesen
+
 
