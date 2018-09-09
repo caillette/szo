@@ -616,6 +616,12 @@ fr-hu/Cours-K703.txt
 fr-hu/Cours-K704.txt
 fr-hu/Cours-K705.txt
 fr-hu/Cours-K706.txt
+fr-hu/Cours-K707.txt
+fr-hu/Cours-K708.txt
+fr-hu/Cours-K709.txt
+fr-hu/Cours-K710.txt
+fr-hu/Cours-K711.txt
+fr-hu/Cours-K712.txt
 
 hu-hu/szinonimus.txt
 hu-hu/definicio.txt

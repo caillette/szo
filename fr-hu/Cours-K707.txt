@@ -30,7 +30,7 @@ arménien
 maigrir
   Il avait perdu la moitié de son poids en peu de temps.
 fogy
-  Élősúlyának felére fogyott rövid idő alatt
+  Élősúlyának felére fogyott rövid idő alatt
 
 répondre qqchose
 felel vmit
@@ -51,9 +51,9 @@ couler (suite à un renversement, un basculement)
 kiömlik
 
 qui boit beaucoup de vin
-borízű
+borízű
   une voix avinée
-  borízű hang
+  borízű hang
 
 voyageur clandestin
 potyautas

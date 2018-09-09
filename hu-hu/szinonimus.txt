@@ -270,8 +270,8 @@ hőn
 igazán, nagyon
 
   @_K707
-van vmi
 vmi akad
+van vmi
 
   @_K707
 közöl vmit
@@ -286,15 +286,32 @@ ellenőrzés
 kitüntetés
 
   @_K707
-durva szavakat mond
 szikozódik
+durva szavakat mond
 
   @_K707
-elkezd vmit
 hozzáfog vmihez
+elkezd vmit
 
   @_K707
-határozottan
 erélyesen
+határozottan
+
+  @_K712
+vmi szoba kerül
+beszélnek róla
+
+  @_K712
+egyaránt
+is
+
+  @_K712
+lóg
+csüng
+
+  @_K712
+ritka
+gyér
+
 
 
