@@ -16,7 +16,7 @@ csal vmiben
 regretter qqchose
   Tu m'as déçu.
 csalódik vmiben
-  Csálodtam benned.
+  Csalódtam benned.
 
 complément grammatical
 vonzat
@@ -56,8 +56,8 @@ töpreng vmin
 pensée, réflexion
 töprengés
 
-mintha
 mintegy
+mintha
 
 jouer avec qqchose pour s'occuper les mains
 játszadozik vmivel
