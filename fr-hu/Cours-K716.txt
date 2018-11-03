@@ -1,0 +1,94 @@
+@_K716
+
+page de couverture
+kezdőlap
+
+couverture (pour un livre)
+borító
+
+quatrième de couverture
+hatsó borító
+
+reliure (zone de la couverture d'un livre)
+gerinc
+
+de forme carrée
+negyzet alakú
+
+[mesure] × [mesure] unité
+  Un livre de format carré, au format 19 × 19 cm.
+[méret][méret]szer [egység]
+  Egy negyzet alakú, 19-szer 19 cm-es könyv.
+
+fossé, grand trou
+szakadék
+
+Il ne raconte que des mensonges.
+  Ne crois pas ces gens ! Ils ne racontent que des mensonges.
+Egy szava nem igaz.
+  Ne higgy ennek az ebernek! Egy szava sem igaz!
+
+Ce n'est pas la peine d'en parler.
+Szóra nem érdemes.
+
+à vrai dire
+szó, ami szó
+
+échanger un mot, s'adresser la parole.
+  Les voisin se sont juste dit un mot, et sont partis en se dépêchant.
+szót valtani
+  A szomszédok épp csak szót váltanak egymással, és már siettek is tovább.
+
+reprocher qqchose
+  Notre chef s'est plaint que Géza arrivait tous les matins avec un quart d'heure de retard.
+szóva tenni vmit
+  A főnökünk szóva tette, hogy Géza minden reggel negyedórát késik.
+
+sans dire un mot, sans en parler à personne.
+  Notre ami, petit à petit, s'est installé à la campagne sans en parler à personne.
+se szó se beszéd
+  A barátunk egyik napról a másikra, se szó se beszéd vidékre költözött.
+
+il est question de qqchose
+  Lors de la réunion de la semaine dernière il a été question de la situation financière de l'entreprise.
+vmi szóba kerül
+  A múlt heti megbeszélésen a cég pénzügyi helyzete is szóba került.
+
+grand secret
+misztérium
+
+hirtelen
+futólag
+
+soudainement
+futólag
+
+deviner qqchose
+kitalál vmit
+
+lavage, nettoyage de soi
+mosdás
+
+nettoyage 
+mosás
+
+se laver
+mosdik
+
+se laver
+mosakodik
+
+de son propre chef
+önként
+
+instinctivement, par réflexe
+önkéntelenül
+
+création, œuvre
+alkotás
+
+confirmation (cérémonie religieuse)
+bérma
+
+jeune fille (en référence à la tête nue, signifiant la virginté)
+hajadon

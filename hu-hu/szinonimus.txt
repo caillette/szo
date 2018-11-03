@@ -313,5 +313,18 @@ lóg
 ritka
 gyér
 
+  @_K715
+megránt vmit
+hirtelen meghúz vmit
 
+  @_K715
+közönyös
+senki nem érdekel
 
+  @_K715
+szembeötlő
+nagyon feltűnő
+
+  @_K715
+szorul vmire
+szüksége van vmire
