@@ -23,32 +23,39 @@ negyzet alakú
 fossé, grand trou
 szakadék
 
-Il ne raconte que des mensonges.
+  @Expression
+Quelqu'un ne raconte que des mensonges.
   Ne crois pas ces gens ! Ils ne racontent que des mensonges.
-Egy szava nem igaz.
+Valakinek egy szava nem igaz.
   Ne higgy ennek az ebernek! Egy szava sem igaz!
 
+  @Expression
 Ce n'est pas la peine d'en parler.
 Szóra nem érdemes.
 
+  @Expression
 à vrai dire
 szó, ami szó
 
+  @Expression
 échanger un mot, s'adresser la parole.
   Les voisin se sont juste dit un mot, et sont partis en se dépêchant.
 szót valtani
   A szomszédok épp csak szót váltanak egymással, és már siettek is tovább.
 
+  @Expression
 reprocher qqchose
   Notre chef s'est plaint que Géza arrivait tous les matins avec un quart d'heure de retard.
 szóva tenni vmit
   A főnökünk szóva tette, hogy Géza minden reggel negyedórát késik.
 
+  @Expression
 sans dire un mot, sans en parler à personne.
   Notre ami, petit à petit, s'est installé à la campagne sans en parler à personne.
 se szó se beszéd
   A barátunk egyik napról a másikra, se szó se beszéd vidékre költözött.
 
+  @Expression
 il est question de qqchose
   Lors de la réunion de la semaine dernière il a été question de la situation financière de l'entreprise.
 vmi szóba kerül

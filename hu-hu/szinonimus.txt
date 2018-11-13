@@ -328,3 +328,24 @@ nagyon feltűnő
   @_K715
 szorul vmire
 szüksége van vmire
+
+  @_K719
+okvetlenül
+mindenképpen
+
+  @_K719
+ügyetlen
+ormótlan
+
+  @_K719
+hirtelen berakta a kezét a zsebébe (kifejezés)
+zsebre csapta a kezét
+
+  @_K719
+felel vmit
+válaszol vmit
+
+  @_K719
+mélabúsan
+szomorúan
+
