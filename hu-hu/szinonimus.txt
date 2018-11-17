@@ -334,8 +334,8 @@ okvetlenül
 mindenképpen
 
   @_K719
-ügyetlen
 ormótlan
+ügyetlen
 
   @_K719
 hirtelen berakta a kezét a zsebébe (kifejezés)
@@ -349,3 +349,36 @@ válaszol vmit
 mélabúsan
 szomorúan
 
+  @_K719
+előbújik
+kibújik
+
+
+
+  @_K720
+talál valamit
+lel valamit
+
+  @_K720
+meglepő, szokatlan
+feltűnést keltő
+
+  @_K720
+mindenhol
+széltében-hosszában
+
+  @_K720
+fekszik
+hever
+
+  @_K720
+becsap vkit
+megtéveszt vkit
+
+  @_K720
+kegyetlen
+irgalmatlan
+
+  @_K720
+nagyon díszes
+cifra

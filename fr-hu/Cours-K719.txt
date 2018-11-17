@@ -18,9 +18,6 @@ valamicskét
 négociation
 ülés
 
-kibújik
-előbújik
-
 sortir de qqpart où on était caché (1)
 kibújik vhonnan
 
