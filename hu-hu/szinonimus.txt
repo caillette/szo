@@ -356,16 +356,16 @@ kibújik
 
 
   @_K720
-talál valamit
 lel valamit
+talál valamit
 
   @_K720
-meglepő, szokatlan
 feltűnést keltő
+meglepő, szokatlan
 
   @_K720
-mindenhol
 széltében-hosszában
+mindenhol
 
   @_K720
 fekszik
@@ -376,8 +376,8 @@ becsap vkit
 megtéveszt vkit
 
   @_K720
-kegyetlen
 irgalmatlan
+kegyetlen
 
   @_K720
 nagyon díszes
