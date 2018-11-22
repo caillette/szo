@@ -3,25 +3,16 @@
 fouille archéologique
 ásatás
 
-őszinte hittel
-lelkesen
-
 avec enthousiasme
 lelkesen
-
-hasányan
-nagyon hangosan
 
 d'une voix puissante
 hasányan
 
-szabályzat
+règlement (1)
 rendtartás
 
-règlement
-rendtartás
-
-règlement
+règlement (2)
 szabályzat
 
 étui à violon
@@ -66,9 +57,6 @@ kizsákmányol vkit
 recompter qqchose
 átszámol vmit
 
-újra megszámol vmit
-átszámol vmit
-
 exiger qqchose
 megkövet vmit
 
@@ -81,9 +69,6 @@ félt vkit
 tout savoir sur qqun
 vkinek a veséjébe lát
 
-kezd vmit
-hozzálát vmihez
-
 commencer qqchose
 hozzálát vmihez
 
@@ -91,9 +76,6 @@ remplir qqchose
   Il commença à bourrer sa pipe.
 megtöm vmit
   Hozzálátott, hogy megtömje a pipáját.
-
-legyőz vkit
-elbán vkivel
 
 l’emporter sur qqun, régler son compte à qqun
 elbán vkivel
@@ -104,5 +86,3 @@ sorompó
 s’enflammer
 fellobog
 
-védi a szemét
-hunyorog

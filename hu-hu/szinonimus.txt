@@ -382,3 +382,32 @@ kegyetlen
   @_K720
 nagyon díszes
 cifra
+
+  @_K721
+őszinte hittel
+lelkesen
+
+  @_K721
+hasányan
+nagyon hangosan
+
+  @_K721
+szabályzat
+rendtartás
+
+  @_K721
+átszámol vmit
+újra megszámol vmit
+
+  @_K721
+hozzálát vmihez
+kezd vmit
+
+  @_K721
+legyőz vkit
+elbán vkivel
+
+  @_K721
+hunyorog
+védi a szemét
+
