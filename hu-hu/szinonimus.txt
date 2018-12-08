@@ -411,3 +411,35 @@ elbán vkivel
 hunyorog
 védi a szemét
 
+  @_K722
+intenszív
+heveny
+
+  @_K722
+ragály
+fertöző betegség
+
+  @_K724
+tömören
+röviden
+
+  @_K724
+örökösen
+állandóan
+
+  @_K724
+pregnáns
+fontos, jelentős
+
+  @_K724
+kiabálás
+sikoltozás
+
+  @_K724
+különc
+furcsa
+
+  @_K727
+nagy probléma/veszély van
+nagy gáz van
+
