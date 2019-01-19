@@ -432,8 +432,8 @@ pregnáns
 fontos, jelentős
 
   @_K724
-kiabálás
 sikoltozás
+kiabálás
 
   @_K724
 különc
@@ -442,4 +442,14 @@ furcsa
   @_K727
 nagy gáz van
 nagy probléma/veszély van
+
+  @_K732
+van fény
+világos van
+
+tetem
+holttest
+
+tétova
+nem biztos magában
 
