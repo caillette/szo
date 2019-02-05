@@ -447,9 +447,28 @@ nagy probléma/veszély van
 van fény
 világos van
 
+  @_K732
 tetem
 holttest
 
+  @_K732
 tétova
 nem biztos magában
+
+  @_K734
+ődöngött
+ide-oda menni
+
+  @_K734
+roppant
+hatalmas
+
+
+  @_K737
+tán
+talán
+
+  @_K737
+ér
+érkez
 

@@ -1,0 +1,59 @@
+@_K736
+
+prouver qqchose
+bebizonyít vmit
+
+effet spécial
+speciális effekt
+
+qqchose dispose de nombreuses fonctionnalités
+  Ce logiciel d'animation est puissant.
+vminek sok funkciója van
+  Ennek az animació szoftvernek sok funkciója van.
+
+alkalmazni egy effektet
+appliquer un effet
+
+sphérique
+gömbölyű
+
+intermédiaire
+köztes
+
+image-clé ("keyframe")
+kulcsképkocka
+
+dessin vectoriel
+vektor rajz
+
+dessin en mode point
+raszter rajz
+
+interpolation
+interpolació
+
+transition
+átmenet
+
+apparaître qqpart
+feltűnik vmin/vhol
+
+disparaître de qqpart
+eltűnik vmrő/vhonnan
+
+organiser qqchose
+rendez vmit
+
+durée
+tartam
+
+numériser qqchose
+beszkennel vmit
+
+perdre du temps avec qqchose à cause de qqun
+  Ils m'ont fait perdre du temps.
+vki időt veszít vmivel vki miatt
+  Sok időt veszítek miattuk.
+
+perdre du temps avec qqchose
+időt veszíteni vmivel
