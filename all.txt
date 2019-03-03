@@ -648,6 +648,15 @@ fr-hu/Cours-K735.txt
 fr-hu/Cours-K736.txt
 fr-hu/Cours-K737.txt
 fr-hu/Cours-K738.txt
+fr-hu/Cours-K739.txt
+fr-hu/Cours-K740.txt
+fr-hu/Cours-K741.txt
+fr-hu/Cours-K742.txt
+fr-hu/Cours-K743.txt
+fr-hu/Cours-K744.txt
+fr-hu/Cours-K745.txt
+fr-hu/Cours-K746.txt
+fr-hu/Cours-K747.txt
 
 hu-hu/szinonimus.txt
 hu-hu/definicio.txt

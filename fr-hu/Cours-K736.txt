@@ -11,8 +11,8 @@ qqchose dispose de nombreuses fonctionnalités
 vminek sok funkciója van
   Ennek az animació szoftvernek sok funkciója van.
 
-alkalmazni egy effektet
 appliquer un effet
+alkalmazni egy effektet
 
 sphérique
 gömbölyű

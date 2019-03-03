@@ -472,3 +472,118 @@ talán
 ér
 érkez
 
+  @_K740
+hozzátartozó
+rokon
+
+  @_K740
+felel vmit
+válaszol vmit
+
+
+  @_K741
+óv vmit
+véd mit
+
+
+  @_K742
+pusztán
+csak
+
+  @_K742
+csúf
+csúnya
+
+  @_K742
+vétség
+vmi a hiba és a bűn között
+
+  @_K742
+jó modor
+udvariasság
+
+  @_K742
+mellő vmit
+nem foglalkozni vmit
+
+  @_K742
+éledő
+ami feléled
+
+  @_K742
+vonszol vmit
+visz vmit
+
+  @_K742
+meg-meg-{igék}
+néha {igék}
+
+  @_K742
+ízzik
+majdnem ég, de nincsenek langok
+
+  @_K742
+szelence
+kis doboz
+
+  @_K742
+mennybolt
+ég
+
+
+  @_K743
+töviről-hegyire
+részletesen
+
+  @_K743
+goromba
+durva
+
+  @_K743
+faggatás
+kérdezősködés
+
+  @_K743
+ráförmed vkire
+mérgesen rákiált vkire
+
+  @_K743
+kezel a beteget
+gyógyítja a beteget
+
+  @_K743
+hogyne!
+hát persze!
+
+  @_K743
+nesztelen
+hajtalan
+
+  @_K744
+vminek dolgában
+vminek kapcsolatban
+
+  @_K744
+habozik
+nem tud dönteni
+
+  @_K744
+ránt vmit
+hírtelen meghúz vmit
+
+  @_K744
+olyasféle
+olyasmi
+
+  @_K744
+kajüt
+kabín
+
+  @_K744
+lezuhan
+leesik
+
+  @_K744
+átdöf vmit
+átszúr vmit
+
