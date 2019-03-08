@@ -571,6 +571,15 @@ nem tud dönteni
 ránt vmit
 hírtelen meghúz vmit
 
+  @_K750
+kitárul
+kinyílik
+
+  @_K750
+sodor vmit
+elvisz vmit
+
+
   @_K744
 olyasféle
 olyasmi
@@ -579,11 +588,14 @@ olyasmi
 kajüt
 kabín
 
-  @_K744
+  @_K750
 lezuhan
 leesik
 
-  @_K744
+  @_K750
 átdöf vmit
 átszúr vmit
 
+  @_K750
+orkán
+vihár
