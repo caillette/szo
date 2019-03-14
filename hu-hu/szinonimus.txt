@@ -599,3 +599,7 @@ leesik
   @_K750
 orkán
 vihár
+
+  @_K752
+vmi kapcsán
+vmivel kapscolatban
