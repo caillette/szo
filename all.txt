@@ -662,6 +662,7 @@ fr-hu/Cours-K749.txt
 fr-hu/Cours-K750.txt
 fr-hu/Cours-K751.txt
 fr-hu/Cours-K752.txt
+fr-hu/Cours-K753.txt
 
 hu-hu/szinonimus.txt
 hu-hu/definicio.txt
